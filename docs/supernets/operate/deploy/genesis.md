@@ -37,11 +37,14 @@ Keep in mind that allowlists must be enabled prior to launching the network. Aft
 
 To create the chain configuration, we use the `polygon-edge genesis` command, which generates the genesis file.
 
-:::caution ChainID no longer configurable
+:::caution Difference between `chain-id` and `supernet-id`
 
-Previously, the ChainID was specified in the genesis command. However, this is no longer the case. Instead, the value for ChainID should come from the rootchain deployment, specifically from the `StakeManager` contract, when the Supernet is registered. This value is then automatically written to the genesis file during the deployment process. Please note that this means that the ChainID is no longer configurable through the genesis command, but rather through the `StakeManager` contract during Supernet registration.
+Supernets differentiates `chain-id` and `supernet-id` within the genesis file. 
 
-The `--chain-id` flag remains present in some commands because the old IBFT implementation has not yet been removed from the codebase. As a result, the decision was made not to deprecate the flag until the removal process is complete.
+- The `chain-id` is a unique identifier for a Supernet.
+- The `supernet-id` is a unique identifier that is automatically populated during the Supernet's registration process with the `StakeManager` contract. There can be multiple Supernets registered within the same `StakeManager` - the `supernet-id` is used to distinguish them.
+
+Users can assign a custom `chain-id` to their Supernet via the genesis command. However, `supernet-id` doesn't function as a flag within this command. Instead, its value is derived from the `rootchain deploy` command during the Supernet's registration process with the `StakeManager` contract.
 
 :::
 
@@ -73,19 +76,10 @@ The `--chain-id` flag remains present in some commands because the old IBFT impl
 | `--block-time`                             | Predefined period determining block creation frequency    | `--block-time 5s`                                |
 | `--epoch-reward`                           | Reward size for block sealing                             | `--epoch-reward 1000000000000000000`             |
 | `--trie-root`                              | Trie root from the corresponding triedb                   | `--trie-root 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef`|
-| `--mintable-token`                         | Flag to indicate whether mintable or non-mintable native token is deployed | `--mintable-token true`          |
-| `--native-token-config`                    | Configuration of native token                             | `--native-token-config "MyToken:MTK:18"`         |
+| `--native-token-config`                    | Configuration of native token                             | `--native-token-config "MyToken:MTK:18:true/false"`         |
 | `--reward-token-code`                      | Hex encoded reward token byte code                        | `--reward-token-code 0x606060...`                |
 | `--reward-wallet`                          | Configuration of reward wallet                            | `--reward-wallet 0x742d35Cc6634C0532925a3b844Bc454e4438f44e:1000000000000000000`|
-| `--chain-rpc-addr`                         | RPC address for the chain                                  | `--chain-rpc-addr http://localhost:8545`         |
-| `--api-endpoint`                           | API endpoint for the chain                                 | `--api-endpoint http://localhost:8080`           |
-| `--ethash-dataset-dir`                     | Directory for the Ethash dataset                           | `--ethash-dataset-dir ./dataset`                 |
-| `--ethash-dataset-mbytes`                  | Size of the Ethash dataset in megabytes                    | `--ethash-dataset-mbytes 256`                    |
-| `--validator-set`                          | Validator set contract address                             | `--validator-set 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--treasury-address`                       | Address of the treasury contract                           | `--treasury-address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--treasury-public-key`                    | Public key of the treasury contract                        | `--treasury-public-key 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef`|
-| `--chain-config-path`                      | Path to the chain configuration file                       | `--chain-config-path ./config.json`              |
-| `--data-dir`                               | Data directory for the Polygon SDK node                    | `--data-dir ./node_data`                         |
+| `--grpc-address`                           | The GRPC interface     
 
 </details>
 
