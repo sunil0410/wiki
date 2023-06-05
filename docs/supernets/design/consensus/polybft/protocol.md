@@ -121,9 +121,23 @@ Examples of malicious activities are double-signing and equivocation:
 
 :::
 
+## Block timestamp drift validation
+
+In the PolyBFT consensus mechanism, an important security feature is the validation of block timestamps. This 
+feature prevents malicious actors from creating blocks with timestamps far in the future, which could disrupt the 
+blockchain's operation.
+
+The block time drift validation works by checking if the block's timestamp is within a predefined time slot. If the 
+timestamp is outside this window, the block is considered a future block and is rejected. This time slot is defined by 
+a parameter called `blockTimeDrift`, which is nominated in seconds, and can be set during the genesis of the blockchain. 
+The default value for `blockTimeDrift` is 1 second.
+
+This feature ensures that all blocks in the blockchain have valid timestamps, preventing potential attacks and maintaining 
+the integrity of the blockchain.
+
 ## Native bridge integration
 
-With the help of PolyBFT, the Polygon Supernets support an
+With the help of PolyBFT, Supernets support an
 [in-built bridging mechanism (a two-way bridge)](/supernets/design/bridge/overview.md),
 which enables arbitrary message passing between a Supernet and another Proof-of-Stake
 blockchain (`rootchain`). Transfers can occur without mapping.
