@@ -109,7 +109,7 @@ for your dApps and backend system to get blockchain events in realtime over a so
 
 ### Infrastructure Providers
 
-Public RPCs may have traffic or rate-limits depending on usage.
+Public RPCs may have traffic or rate-limits depending on usage. 
 You can sign up for a dedicated free RPC URL at the following:
 
 * [Alchemy](https://www.alchemy.com/)
@@ -133,3 +133,5 @@ You can sign up for a dedicated free RPC URL at the following:
 * [WatchData](https://docs.watchdata.io/blockchain-apis/polygon-api)
 * [NOWNodes](https://nownodes.io/nodes/polygon-matic)
 * [Kriptonio](https://kriptonio.com/)
+
+View all public endpoints on [Alchemy's Chain Connect](https://www.alchemy.com/chain-connect/chain/polygon-pos) and [Chainlist](https://chainlist.org/?search=Polygon+Mainnet). 
