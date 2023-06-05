@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 In this section, we'll configure the associated rootchain of the Supernet and deploy the necessary rootchain core contracts.
 
-### i. Deploy and initialize rootchain contracts
+## i. Deploy and initialize rootchain contracts
 
 After generating the initial chain state for your Supernet, the next step is to connect and initialize the rootchain contracts. This can be done using either a demo Geth instance or the Mumbai testnet. The demo Geth instance is a local instance of a Geth node running in development mode, which simulates the Ethereum network and is **only intended for testing purposes**. The Mumbai testnet, on the other hand, is the live test network for Polygon PoS mainnet and allows for testing and development with real transactions and contract deployments.
 
@@ -46,7 +46,9 @@ values={[
 
 <TabItem value="geth">
 
-#### Configure the rootchain
+### Configure the rootchain
+
+#### Start the geth node
 
 The `polygon-edge` rootchain server command starts an ethereum/client-go container, which runs a new Geth node.
 To do this, open a new terminal session and run:
@@ -150,7 +152,41 @@ You should see output similar to the following, indicating that the rootchain se
 
 This will start the rootchain server on the default JSON-RPC port of `8545`.
 
-#### Initialize rootchain contracts
+### Initialize rootchain contracts
+
+**If you have already deployed the StakeManager, you may skip the step and move onto [Deploy rootchain contracts](#deploy-rootchain-contracts).**
+
+#### Deploy StakeManager contract
+
+If the `StakeManager` hasn't been deployed to the rootchain, you need to carry out this step. This command also contains a test flag. This flag is strictly for testing purposes, and its usage results in deploying a mock ERC-20 token that will serve for staking.
+
+  ```bash
+  ./polygon-edge polybft stake-manager-deploy \
+  --deployer-key <hex_encoded_rootchain_account_private_key> \
+  [--genesis ./genesis.json] \
+  [--json-rpc http://127.0.0.1:8545] \
+  [--stake-token 0xaddressOfStakeToken] \
+  [--test]
+  ```
+
+<details>
+<summary>Flags ↓</summary>
+
+| Flag                   | Description                                                                      | Example |
+|------------------------|----------------------------------------------------------------------------------|---------|
+| `register-validator`   | Registers a whitelisted validator to supernet manager on rootchain               | `register-validator --validator-address 0xB16D...8DAB` |
+| `stake`                | Stakes the amount sent for validator on rootchain                                | `stake --amount 1000 --validator 0xB16D...8DAB` |
+| `supernet`             | Performs supernet initialization & finalization command                          | `--` |
+| `unstake`              | Unstakes the amount sent for validator or undelegates amount from validator      | `unstake --validator 0xB16D...8DAB` |
+| `validator-info`       | Retrieves validator information                                                  | `validator-info --validator 0xB16D...8DAB` |
+| `whitelist-validators` | Whitelists new validators                                                        | `whitelist-validators --validator-address 0xB16D...8DAB` |
+| `withdraw-child`       | Withdraws pending withdrawals on child chain for a given validator               | `withdraw-child --validator 0xB16D...8DAB` |
+| `withdraw-rewards`     | Withdraws pending rewards on child chain for a given validator                   | `withdraw-rewards --validator 0xB16D...8DAB` |
+| `withdraw-root`        | Withdraws sender's withdrawable amount to a specified address on the root chain  | `withdraw-root --address 0xB16D...8DAB` |
+
+</details>
+
+#### Deploy rootchain contracts
 
 To deploy the rootchain contracts, we use the `polygon-edge rootchain deploy` command. 
 
@@ -174,13 +210,6 @@ To run the deployment in test mode and use the test account provided by the Geth
 | `--erc20-token`       | Existing rootchain ERC-20 token address                                  | `--erc20-token <ERC_20_ADDRESS>`               |
 | `--erc721-token`      | Existing rootchain ERC-721 token address                                 | `--erc721-token <ERC_721_ADDRESS>`             |
 | `--test`              | Indicates whether rootchain contracts deployer is hardcoded test account | `--test`                                      |
-
-Global flags:
-
-| Flag                  | Description                                                               | Example                                       |
-|-----------------------|---------------------------------------------------------------------------|-----------------------------------------------|
-| `--grpc-address`      | The GRPC interface                                                        | `--grpc-address 127.0.0.1:9632`                |
-| `--json`              | Get all outputs in JSON format                                            | `--json`                                      |
 
 </details>
 
@@ -336,6 +365,43 @@ Address=0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570; Balance=10000000000000000000
 <!-- =================================================== MUMBAI ROOTCHAIN ================================================ -->
 
 <TabItem value="mumbai">
+
+### Configure the rootchain
+
+**If you have already deployed the StakeManager, you may skip the step and move onto [Deploy rootchain contracts](#deploy-rootchain-contracts).**
+
+#### Deploy StakeManager contract
+
+If the `StakeManager` hasn't been deployed to the rootchain, you need to carry out this step.
+This command includes a test flag, which is intended solely for testing scenarios. When this flag is used, a mock ERC-20 token is deployed for staking. However, in non-testing environments, remember to specify the `stake-token` flag with the address of the token that's already deployed on the rootchain and will be used for staking.
+
+  ```bash
+  ./polygon-edge polybft stake-manager-deploy \
+  --deployer-key <hex_encoded_rootchain_account_private_key> \
+  [--genesis ./genesis.json] \
+  [--json-rpc http://127.0.0.1:8545] \
+  [--stake-token 0xaddressOfStakeToken] \
+  [--test]
+  ```
+
+<details>
+<summary>Flags ↓</summary>
+
+| Flag                   | Description                                                                      | Example |
+|------------------------|----------------------------------------------------------------------------------|---------|
+| `register-validator`   | Registers a whitelisted validator to supernet manager on rootchain               | `register-validator --validator-address 0xB16D...8DAB` |
+| `stake`                | Stakes the amount sent for validator on rootchain                                | `stake --amount 1000 --validator 0xB16D...8DAB` |
+| `supernet`             | Performs supernet initialization & finalization command                          | `--` |
+| `unstake`              | Unstakes the amount sent for validator or undelegates amount from validator      | `unstake --validator 0xB16D...8DAB` |
+| `validator-info`       | Retrieves validator information                                                  | `validator-info --validator 0xB16D...8DAB` |
+| `whitelist-validators` | Whitelists new validators                                                        | `whitelist-validators --validator-address 0xB16D...8DAB` |
+| `withdraw-child`       | Withdraws pending withdrawals on child chain for a given validator               | `withdraw-child --validator 0xB16D...8DAB` |
+| `withdraw-rewards`     | Withdraws pending rewards on child chain for a given validator                   | `withdraw-rewards --validator 0xB16D...8DAB` |
+| `withdraw-root`        | Withdraws sender's withdrawable amount to a specified address on the root chain  | `withdraw-root --address 0xB16D...8DAB` |
+
+</details>
+
+#### Deploy rootchain contracts
 
 To deploy the rootchain contracts, we use the `polygon-edge rootchain deploy` command. 
 
@@ -515,7 +581,7 @@ Address=0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570; Balance=10000000000000000000
 </Tabs>
 <br/>
 
-### ii. Funding validators on the rootchain
+## ii. Funding validators on the rootchain
 
 Before deploying validator nodes on the Supernet, we need to ensure that the validators have sufficient funds on the rootchain network. It's crucial to have enough funds in the validator account, as they need to cover the gas fees associated with their transactions on the rootchain.
 
