@@ -21,9 +21,9 @@ This document outlines the different methods available for installing the Polygo
 
 Supernets are rapidly evolving towards a production-ready state, and, as a result, instructions and concepts in these guides are subject to change.
 
-Test releases include breaking changes and offer no guarantees, including backward compatibility. Use the current test releases for testing and familiarization only.
+Test releases include breaking changes and are not backward compatibility. Use the current test releases for testing and familiarization only.
 
-It is highly recommended that you do not attempt deployments on your own; for support, please reach out to the Supernets team.
+It is highly recommended that reach out to the Supernets team for support.
 :::
 
 To install and run Supernets, you have several options. The tabs below provide guides for each installation method. You can choose to use pre-built releases, a Docker image, or build from source.
@@ -38,9 +38,9 @@ The Docker image is also a convenient option for containerized deployment. Build
 
 If you encounter any issues during the installation process, refer to the troubleshooting guide which will be available soon.
 
-:::info Latest release: v0.9.0
+:::info Latest release: 1.0.0-rc1
 
-**The latest stable test release is [v0.9.0](https://github.com/0xPolygon/polygon-edge/releases/tag/v0.9.0)**
+**The latest stable test release is [v1.0.0-rc1](https://github.com/0xPolygon/polygon-edge/releases/tag/v1.0.0-rc1)**
 
 :::
 

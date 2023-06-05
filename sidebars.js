@@ -1020,7 +1020,7 @@ module.exports = {
         "supernets/get-started/why-supernets",
       ],
     },
-    //"supernets/operate/supernets-quick-start",
+    "supernets/operate/supernets-quick-start",
     {
       type: "category",
       label: "System Design",

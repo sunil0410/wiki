@@ -112,7 +112,7 @@ As the Supernets ecosystem evolves, the bridge will support additional assets, e
 
 **There is no mainnet for Supernets** - Supernets are a product suite. The production release of Supernets is currently **targeted for Q2 2023, subject to the completion of an ongoing audit**.
 
-The development team is committed to ensuring that the platform is thoroughly tested and secure before release. In the meantime, developers and users can experiment with the latest test release, [v0.9.0](https://github.com/0xPolygon/./polygon-edge/releases/tag/v0.9.0), which serves as a valuable testing ground for applications on the platform.
+The development team is committed to ensuring that the platform is thoroughly tested and secure before release. In the meantime, developers and users can experiment with the latest test release, [v1.0.0-rc1](https://github.com/0xPolygon/polygon-edge/releases/tag/v1.0.0-rc1), which serves as a valuable testing ground for applications on the platform.
 
 ## When are the audits taking place?
 

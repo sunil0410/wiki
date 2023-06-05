@@ -20,11 +20,11 @@ This serves as an index for the Supernet deployment guides.
 The guides explain the end-to-end process for setting up and deploying a local Supernet.
 
 :::warning Breaking changes
-Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change. For production releases, we plan to version the documentation.
+Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change.
 
-Test releases include breaking changes and offer no guarantees, including backward compatibility. Use the current test releases for testing and familiarization only.
+Test releases include breaking changes and are not backward compatibility. Use the current test releases for testing and familiarization only.
 
-It is highly recommended that you do not attempt deployments on your own; for support, please reach out to the Supernets team.
+It is highly recommended that reach out to the Supernets team for support.
 :::
 
 :::caution No more non-bridge mode deployment

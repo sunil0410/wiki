@@ -18,21 +18,21 @@ keywords:
 This document provides an overview of what Polygon Supernets are through multiple perspectives.
 
 :::warning Breaking changes
-Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change. For production releases, we plan to version the documentation.
+Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change.
 
-Test releases include breaking changes and offer no guarantees, including backward compatibility. Use the current test releases for testing and familiarization only.
+Test releases include breaking changes and are not backward compatibility. Use the current test releases for testing and familiarization only.
 
-It is highly recommended that you do not attempt deployments on your own; for support, please reach out to the Supernets team.
+It is highly recommended that reach out to the Supernets team for support.
 
 <details>
 <summary>The following components are available for testing ↓</summary>
 
-- Local deployment.
+- Local deployments.
 - Cloud deployments.
 - Smart contract and validator allowlisting.
 - Smart contract and validator blocklisting.
 - Minting a native ERC-20 token.
-- Rootchain MATIC staking.
+- Rootchain staking.
 - Transfers of ERC-20, ERC-721, ERC-1155 tokens and arbitrary message passing using the native bridge.
 - Migration support from older versions of the original Edge consensus client that use IBFT consensus to PolyBFT.
 
