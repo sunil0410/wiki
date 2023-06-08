@@ -1889,7 +1889,7 @@ code {
   color: #F8F8F8;
   padding: 0.2em 0.4em;
   border-radius: 4px;
-  white-space: nowrap;
+  white-space: pre;
   font-weight: normal;
 }
 
