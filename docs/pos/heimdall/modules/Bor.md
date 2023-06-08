@@ -91,12 +91,15 @@ type Span struct {
 
 The Bor module contains the following parameters:
 
-|Key                   |Type  |Default value     |
-|----------------------|------|------------------|
-|SprintDuration        |uint64|64                |
-|SpanDuration          |uint64|100 * SprintDuration|
-|ProducerCount         |uint64|4                 |
+|Key                   |Type  |Default value                      | Duration (*)                 |
+|----------------------|------|-----------------------------------|------------------------------|
+|SprintDuration.       |uint64|16 blocks                          |32 seconds                    |
+|SpanDuration          |uint64|100 * SprintDuration = 1,600 blocks|3,200 seconds (53min and 20s)|
+|ProducerCount         |uint64|4 blocks                           |8 seconds                     |
 
+(*): Given that blocks are produced every [2 seconds](https://github.com/maticnetwork/bor/blob/4d23e6de3387e18c5f9f55b40ed37189ce82a7aa/params/config.go#L416) on Bor.
+
+Previously, a sprint would last [64 blocks](https://github.com/maticnetwork/bor/blob/4d23e6de3387e18c5f9f55b40ed37189ce82a7aa/params/config.go#L423) but it was agreed to decrease this number to [16 blocks](https://github.com/maticnetwork/bor/blob/4d23e6de3387e18c5f9f55b40ed37189ce82a7aa/params/config.go#L424) on the [Delhi hard fork](https://polygon.technology/blog/hardfork-incoming-upgrading-polygon-pos-chain-to-boost-performance) of January 17th, 2023, precisely starting at block number [38,189,056](https://polygonscan.com/block/38189056).
 
 ## CLI Commands
 
