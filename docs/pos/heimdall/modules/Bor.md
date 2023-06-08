@@ -183,8 +183,8 @@ heimdalldcli query bor params
 Expected Result:
 
 ```go
-sprint_duration: 64
-span_duration: 6400
+sprint_duration: 16
+span_duration: 1600
 producer_count: 4
 ```
 
