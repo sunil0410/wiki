@@ -1125,105 +1125,103 @@ module.exports = {
         "supernets/operate/supernets-setup-dev-env",
         "supernets/operate/supernets-cross-chain",
         "supernets/operate/deploy/staking/supernets-unstake",
-        {
-          type: "category",
-          label: "Supernet Interfaces",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            {
-              type: "category",
-              label: "ERC-20",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "supernets/interfaces/erc20/native-erc20",
-                "supernets/interfaces/erc20/childerc20",
-                "supernets/interfaces/erc20/childerc20-predicate",
-                "supernets/interfaces/erc20/rooterc20-predicate",
-              ],
-            },
-            {
-              type: "category",
-              label: "ERC-721",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "supernets/interfaces/erc721/childerc721",
-                "supernets/interfaces/erc721/childerc721-predicate",
-                "supernets/interfaces/erc721/rooterc721-predicate",
-              ],
-            },
-            {
-              type: "category",
-              label: "ERC-1155",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "supernets/interfaces/erc1155/childerc1155",
-                "supernets/interfaces/erc1155/childerc1155-predicate",
-                "supernets/interfaces/erc1155/rooterc1155-predicate",
-              ],
-            },
-            {
-              type: "category",
-              label: "Network",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "supernets/interfaces/network/checkpoint-manager",
-                "supernets/interfaces/network/exit-helper",
-                "supernets/interfaces/network/state-receiver",
-                "supernets/interfaces/network/state-sender",
-              ],
-            },
-            {
-              type: "category",
-              label: "Validators",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "supernets/interfaces/validators/validator",
-                "supernets/interfaces/validators/validator-set-base",
-                "supernets/interfaces/validators/root-validator-set",
-              ],
-            },
-            {
-              type: "category",
-              label: "Cryptography",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "supernets/interfaces/cryptography/bls",
-                "supernets/interfaces/cryptography/bn256g2",
-              ],
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Supernet Modules",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "supernets/modules/access-control",
-            "supernets/modules/staking",
-            //"supernets/modules/delegation",
-            "supernets/modules/withdraw",
-            "supernets/modules/storage",
-          ],
-        },
         "supernets/operate/supernets-performance",
+      ],
+    },
+    {
+      type: "category",
+      label: "Supernet Interfaces",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "ERC-20",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/interfaces/erc20/native-erc20",
+            "supernets/interfaces/erc20/childerc20",
+            "supernets/interfaces/erc20/childerc20-predicate",
+            "supernets/interfaces/erc20/rooterc20-predicate",
+          ],
+        },
+        {
+          type: "category",
+          label: "ERC-721",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/interfaces/erc721/childerc721",
+            "supernets/interfaces/erc721/childerc721-predicate",
+            "supernets/interfaces/erc721/rooterc721-predicate",
+          ],
+        },
+        {
+          type: "category",
+          label: "ERC-1155",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/interfaces/erc1155/childerc1155",
+            "supernets/interfaces/erc1155/childerc1155-predicate",
+            "supernets/interfaces/erc1155/rooterc1155-predicate",
+          ],
+        },
+        "supernets/interfaces/eip1559-interface",
+        {
+          type: "category",
+          label: "Network",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/interfaces/network/checkpoint-manager",
+            "supernets/interfaces/network/exit-helper",
+            "supernets/interfaces/network/state-receiver",
+            "supernets/interfaces/network/state-sender",
+          ],
+        },
+        {
+          type: "category",
+          label: "Validators",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/interfaces/validators/validator",
+            "supernets/interfaces/validators/validator-set-base",
+            "supernets/interfaces/validators/root-validator-set",
+          ],
+        },
+        {
+          type: "category",
+          label: "Staking",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/interfaces/staking/stake-manager-interface",
+            "supernets/interfaces/staking/supernet-manager-interface",
+            "supernets/interfaces/staking/custom-supernet-manager-interface",
+          ],
+        },
+        {
+          type: "category",
+          label: "Cryptography",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/interfaces/cryptography/bls",
+            "supernets/interfaces/cryptography/bn256g2",
+          ],
+        },
       ],
     },
     {
