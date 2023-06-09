@@ -6,6 +6,8 @@
  */
 
 module.exports = {
+
+  /*
   basics: [
     {
       type: "html",
@@ -51,7 +53,7 @@ module.exports = {
     },
     "home/faq",
   ],
-
+*/
   delegate: [
     "maintain/delegate/delegate",
     //"maintain/delegate/delegator-faq"

@@ -432,22 +432,10 @@ module.exports = {
       },
       items: [
         {
-          label: "Explore",
-          position: "left",
-          items: [
-            {
-              to: '/docs/home/new-to-polygon',
-              label: 'Polygon Basics',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: 'https://university.polygon.technology/',
-              label: 'Polygon University',
-              target: '_blank',
-              rel: null,
-            }
-          ],
+          to: 'https://university.polygon.technology/',
+          label: 'Polygon University',
+          target: '_blank',
+          rel: null,
         },
         {
           label: "Build",
