@@ -76,7 +76,8 @@ values={[
 
 ## Deposit
 
-This command deposits ERC-20 tokens from a rootchain to a Supernet.
+This command deposits ERC-20 tokens from a rootchain to a Supernet. 
+It sends deposit transaction to the `RootERC20Predicate` contract.
 
 - Replace `hex_encoded_depositor_private_key` with the private key of the account that will be depositing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
@@ -84,6 +85,7 @@ This command deposits ERC-20 tokens from a rootchain to a Supernet.
 - Replace `root_erc20_token_address` with the address of the ERC-20 token contract on the rootchain.
 - Replace `root_erc20_predicate_address` with the address of the ERC-20 predicate contract on the rootchain.
 - Replace `root_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the rootchain.
+- Replace `minter-key` with the private key of the minter account. If the private key is provided, tokens are minted to the sender account prior to depositing them.
 
 ```bash
 ./polygon-edge bridge deposit-erc20 \
@@ -93,6 +95,7 @@ This command deposits ERC-20 tokens from a rootchain to a Supernet.
     --root-token <root_erc20_token_address> \
     --root-predicate <root_erc20_predicate_address> \
     --json-rpc <root_chain_json_rpc_endpoint>
+    --minter-key <minter account hex encoded private key>
 ```
 
 <details>
@@ -106,6 +109,7 @@ In this example, we're depositing ERC-20 tokens to a test Supernet instance:
 - The address of the ERC-20 token contract on the rootchain is `0x123456789abcdef0123456789abcdef01234567`.
 - The address of the ERC-20 predicate contract on the rootchain is `0x23456789abcdef0123456789abcdef012345678`.
 - The JSON-RPC endpoint for the rootchain is `http://root-chain-json-rpc-endpoint.com:8545`.
+- We're using a minter key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 
 ```bash
 ./polygon-edge bridge deposit-erc20 \
@@ -115,6 +119,7 @@ In this example, we're depositing ERC-20 tokens to a test Supernet instance:
     --root-token 0x123456789abcdef0123456789abcdef01234567 \
     --root-predicate 0x23456789abcdef0123456789abcdef012345678 \
     --json-rpc http://root-chain-json-rpc-endpoint.com:8545
+    --minter-key 0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
 ```
 
 </details>
@@ -220,6 +225,7 @@ This command deposits ERC-721 tokens from a rootchain to a Supernet.
 - Replace `root_erc721_token_address` with the address of the ERC-721 token contract on the rootchain.
 - Replace `root_erc721_predicate_address` with the address of the ERC-721 predicate contract on the rootchain.
 - Replace `root_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the rootchain.
+- Replace `minter-key` with the private key of the minter account. If the private key is provided, tokens are minted to the sender account prior to depositing them.
 
 ```bash
 ./polygon-edge bridge deposit-erc721 \
@@ -229,6 +235,7 @@ This command deposits ERC-721 tokens from a rootchain to a Supernet.
     --root-token <root_erc721_token_address> \
     --root-predicate <root_erc721_predicate_address> \
     --json-rpc <root_chain_json_rpc_endpoint>
+    --minter-key <minter account hex encoded private key>
 ```
 
 <details>
@@ -241,6 +248,7 @@ In this example, we're depositing ERC-721 tokens to a test Supernet instance:
 - The address of the ERC-721 token contract on the rootchain is `0x0123456789abcdef0123456789abcdef01234567`.
 - The address of the ERC-721 predicate contract on the rootchain is `0x0123456789abcdef0123456789abcdef01234568`.
 - The JSON-RPC endpoint for the rootchain is `https://rpc-mainnet.maticvigil.com`.
+- We're using a minter key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 
 ```bash
 ./polygon-edge bridge deposit-erc721 \
@@ -250,6 +258,7 @@ In this example, we're depositing ERC-721 tokens to a test Supernet instance:
     --root-token 0x0123456789abcdef0123456789abcdef01234567 \
     --root-predicate 0x0123456789abcdef0123456789abcdef01234568 \
     --json-rpc https://rpc-mainnet.maticvigil.com
+    --minter-key 0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
 ```
 </details>
 
@@ -286,6 +295,7 @@ In this example, we're withdrawing ERC-721 tokens from a test Supernet instance:
 - The JSON-RPC endpoint for the Supernet is `http://json-rpc-endpoint.com:8545`.
 
 </details>
+
 ## Exit
 
 This command sends an exit transaction to the `ExitHelper` contract on the rootchain for a token that was deposited on the Supernet. It basically finalizes a withdrawal (initiated on the Supernets) and transfers assets to receiving address on a rootchain.
@@ -345,6 +355,7 @@ This command deposits ERC-1155 tokens from the rootchain to the Supernet.
 - Replace `root_erc1155_token_address` with the address of the ERC-1155 token contract on the rootchain.
 - Replace `root_erc1155_predicate_address` with the address of the ERC-1155 predicate contract on the rootchain.
 - Replace `root_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the rootchain.
+- Replace `minter-key` with the private key of the minter account. If the private key is provided, tokens are minted to the sender account prior to depositing them.
 
 ```bash
 ./polygon-edge bridge deposit-erc1155 \
@@ -355,6 +366,7 @@ This command deposits ERC-1155 tokens from the rootchain to the Supernet.
     --root-token <root_erc1155_token_address> \
     --root-predicate <root_erc1155_predicate_address> \
     --json-rpc <root_chain_json_rpc_endpoint>
+    --minter-key <minter account hex encoded private key>
 ```
 
 <details>
@@ -368,6 +380,7 @@ In this example, we're depositing ERC-1155 tokens to a test Supernet instance:
 - The address of the ERC-1155 token contract on the rootchain is `0x0123456789abcdef0123456789abcdef01234567`.
 - The address of the ERC-1155 predicate contract on the rootchain is `0x89abcdef0123456789abcdef0123456789abcdef`.
 - The JSON-RPC endpoint for the rootchain is `http://localhost:8545`.
+- We're using a minter key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 
 ```bash
 ./polygon-edge bridge deposit-erc1155 \
@@ -378,6 +391,7 @@ In this example, we're depositing ERC-1155 tokens to a test Supernet instance:
     --root-token 0x0123456789abcdef0123456789abcdef01234567 \
     --root-predicate 0x89abcdef0123456789abcdef0123456789abcdef \
     --json-rpc http://localhost:8545
+    --minter-key 0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
 ```
 
 </details>
