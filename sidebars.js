@@ -1010,9 +1010,10 @@ module.exports = {
       className: "sidebar-title",
     },
     "supernets/index",
+    "supernets/operate/supernets-quick-start",
     {
       type: "category",
-      label: "Introduction",
+      label: "Introduction to Supernets",
       link: {
         type: "generated-index",
       },
@@ -1022,10 +1023,9 @@ module.exports = {
         "supernets/get-started/why-supernets",
       ],
     },
-    "supernets/operate/supernets-quick-start",
     {
       type: "category",
-      label: "System Design",
+      label: "Learn about the Supernets Product Suite",
       link: {
         type: "generated-index",
       },
@@ -1090,46 +1090,46 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Build a Supernet",
+      label: "Prepare Your Environment",
       link: {
         type: "generated-index",
       },
       collapsed: true,
       items: [
+          "supernets/operate/supernets-requirements",
+          "supernets/operate/supernets-install",
+        ],
+    },
+    "supernets/operate/supernets-ibft-to-polybft",
+    {
+      type: "category",
+      label: "Build a Local Private Supernet",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "supernets/operate/deploy/supernets-deploy-index",
+        "supernets/operate/deploy/supernets-spawn-test-chain",
+        "supernets/operate/deploy/supernets-how-to-generate-genesis",
+        "supernets/operate/deploy/supernets-how-to-configure-rootchain",
+        "supernets/operate/deploy/access-control/supernets-how-to-allowlist",
         {
           type: "category",
-          label: "Setup & Installation",
+          label: "Staking on the Rootchain",
           link: {
             type: "generated-index",
           },
+          collapsed: true,
           items: [
-            "supernets/operate/supernets-requirements",
-            "supernets/operate/supernets-install",
-          ],
+              "supernets/operate/deploy/staking/supernets-how-to-stake",
+              "supernets/operate/deploy/staking/supernets-unstake",
+            ],
         },
-        "supernets/operate/supernets-ibft-to-polybft",
-        {
-          type: "category",
-          label: "Launch a Local Private Supernet",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "supernets/operate/deploy/supernets-deploy-index",
-            "supernets/operate/deploy/supernets-spawn-test-chain",
-            "supernets/operate/deploy/supernets-how-to-generate-genesis",
-            "supernets/operate/deploy/supernets-how-to-configure-rootchain",
-            "supernets/operate/deploy/access-control/supernets-how-to-allowlist",
-            "supernets/operate/deploy/staking/supernets-how-to-stake",
-            "supernets/operate/deploy/supernets-how-to-start",
-          ],
-        },
-        "supernets/operate/supernets-setup-dev-env",
-        "supernets/operate/supernets-cross-chain",
-        "supernets/operate/deploy/staking/supernets-unstake",
-        "supernets/operate/supernets-performance",
+        "supernets/operate/deploy/supernets-how-to-start",
       ],
     },
+    "supernets/operate/supernets-setup-dev-env",
+    "supernets/operate/supernets-cross-chain",
     {
       type: "category",
       label: "Supernet Interfaces",
@@ -1226,6 +1226,7 @@ module.exports = {
         },
       ],
     },
+    "supernets/operate/supernets-performance",
     {
       type: "category",
       label: "RPC API Reference",

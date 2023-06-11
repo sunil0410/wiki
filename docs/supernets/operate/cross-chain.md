@@ -1,7 +1,7 @@
 ---
 id: supernets-cross-chain
 title: How To Perform Cross-Chain Asset Transfers
-sidebar_label: Cross-Chain Asset Transfers
+sidebar_label: Transfers Assets Across Your Supernet
 description: "A guide on the available bridge transactions."
 keywords:
   - docs

@@ -1,7 +1,7 @@
 ---
 id: supernets-quick-start
 title: Quick Start
-sidebar_label: Quick Start
+sidebar_label: Deploy a local Supernet in 2 minutes
 description: "Spin up a new childchain instance with one-click."
 keywords:
   - docs
@@ -29,7 +29,7 @@ It is highly recommended that reach out to the Supernets team for support.
 
 Before proceeding, ensure that your system meets the necessary [system requirements](/docs/supernets/operate/system.md).
 
-## Spawn a local Supernet in 2 minutes
+## Spawn a local Supernet
 
 <!--
 <div class="download-container">

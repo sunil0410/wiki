@@ -1,7 +1,7 @@
 ---
 id: supernets-ibft-to-polybft
 title: State Trie Migration and Regenesis to PolyBFT
-sidebar_label: Transition to Supernets through Regenesis
+sidebar_label: Migrate from Edge PoA to Supernets
 description: "Transition to a New Blockchain with PolyBFT Consensus from a Blockchain using IBFT Consensus with Edge."
 keywords:
   - docs

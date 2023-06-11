@@ -1,7 +1,7 @@
 ---
 id: supernets-faq
 title: Frequently Asked Questions
-sidebar_label: FAQs
+sidebar_label: Frequently Asked Questions
 description: "The most common questions and answers about Supernets"
 keywords:
   - docs

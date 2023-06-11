@@ -1,7 +1,7 @@
 ---
 id: supernets-deploy-index
 title: Get Started
-sidebar_label: Get started
+sidebar_label: Get Started
 description: "Learn how to deploy a local test Supernet."
 keywords:
   - docs

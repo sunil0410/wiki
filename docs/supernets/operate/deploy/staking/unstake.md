@@ -1,7 +1,7 @@
 ---
 id: supernets-unstake
 title: How to Unstake
-sidebar_label: Unstake and Withdraw
+sidebar_label: How to Unstake on the Rootchain
 description: "A guide on the how to unstake validator stake."
 keywords:
   - docs

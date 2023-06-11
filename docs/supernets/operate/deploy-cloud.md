@@ -1,7 +1,7 @@
 ---
 id: supernets-setup-dev-env
 title: Deploy a Polygon Supernet Devnet to the Cloud
-sidebar_label: Deploy a Supernet Devnet to the Cloud
+sidebar_label: Deploy Your Supernet to the Cloud
 description: "Learn how to deploy a test Supernet instance to the cloud."
 keywords:
   - docs

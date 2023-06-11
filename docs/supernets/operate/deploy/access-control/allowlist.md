@@ -1,7 +1,7 @@
 ---
 id: supernets-how-to-allowlist
 title: How to Allowlist Validators
-sidebar_label: How to allowlist validators
+sidebar_label: How to Allowlist Validators
 description: "Learn how to allowlist addresses on a Supernet."
 keywords:
   - docs

@@ -1,7 +1,7 @@
 ---
 id: supernets-how-to-configure-rootchain
 title: How to Configure the Rootchain
-sidebar_label: How to configure the rootchain
+sidebar_label: How to Configure the Rootchain
 description: "Learn how to configure the rootchain that is associated with your Supernet."
 keywords:
   - docs

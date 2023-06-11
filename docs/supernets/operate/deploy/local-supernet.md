@@ -1,7 +1,7 @@
 ---
 id: supernets-spawn-test-chain
 title: How to Generate New Account Secrets
-sidebar_label: How to spawn a new Supernet
+sidebar_label: How to Spawn a New Childchain
 description: "Learn how to deploy a local test Supernet."
 keywords:
   - docs
