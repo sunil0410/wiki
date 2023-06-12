@@ -65,7 +65,7 @@ Users can assign a custom `chain-id` to their Supernet via the genesis command. 
 | `--ibft-validator-type`                    | Type of validators in IBFT                                | `--ibft-validator-type ecdsa`                    |
 | `--ibft-validator-prefix-path`             | Prefix path for validator folder directory                | `--ibft-validator-prefix-path ./validators`      |
 | `--ibft-validator`                         | Addresses to be used as IBFT validators                   | `--ibft-validator 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--is-pos`                                 | Flag to use Proof of Stake IBFT                           | `--is-pos true`                                  |
+| `--pos`                                    | Flag to use Proof of Stake IBFT                           | `--is-pos true`                                  |
 | `--min-validator-count`                    | Minimum number of validators in the validator set for PoS | `--min-validator-count 4`                        |
 | `--max-validator-count`                    | Maximum number of validators in the validator set for PoS | `--max-validator-count 100`                      |
 | `--validators-path`                        | Root path containing polybft validators secrets           | `--validators-path ./validators`                 |
@@ -75,7 +75,7 @@ Users can assign a custom `chain-id` to their Supernet via the genesis command. 
 | `--sprint-size`                            | Number of blocks included into a sprint                   | `--sprint-size 10`                               |
 | `--block-time`                             | Predefined period determining block creation frequency    | `--block-time 5s`                                |
 | `--epoch-reward`                           | Reward size for block sealing                             | `--epoch-reward 1000000000000000000`             |
-| `--trie-root`                              | Trie root from the corresponding triedb                   | `--trie-root 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef`|
+| `--trieroot`                               | Trie root from the corresponding triedb                   | `--trie-root 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef`|
 | `--native-token-config`                    | Configuration of native token                             | `--native-token-config "MyToken:MTK:18:true/false"`         |
 | `--reward-token-code`                      | Hex encoded reward token byte code                        | `--reward-token-code 0x606060...`                |
 | `--reward-wallet`                          | Configuration of reward wallet                            | `--reward-wallet 0x742d35Cc6634C0532925a3b844Bc454e4438f44e:1000000000000000000`|

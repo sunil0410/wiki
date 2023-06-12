@@ -176,6 +176,7 @@ If the `StakeManager` hasn't been deployed to the rootchain, you need to carry o
 |------------------------|----------------------------------------------------------------------------------|---------|
 | `register-validator`   | Registers a whitelisted validator to supernet manager on rootchain               | `register-validator --validator-address 0xB16D...8DAB` |
 | `stake`                | Stakes the amount sent for validator on rootchain                                | `stake --amount 1000 --validator 0xB16D...8DAB` |
+| `stake-manager-deploy` | Command for deploying stake manager contract on rootchain                        | `--` |
 | `supernet`             | Performs supernet initialization & finalization command                          | `--` |
 | `unstake`              | Unstakes the amount sent for validator or undelegates amount from validator      | `unstake --validator 0xB16D...8DAB` |
 | `validator-info`       | Retrieves validator information                                                  | `validator-info --validator 0xB16D...8DAB` |
@@ -209,6 +210,8 @@ To run the deployment in test mode and use the test account provided by the Geth
 | `--erc1155-token`     | Existing rootchain ERC-1155 token address                                | `--erc1155-token <ERC_1155_ADDRESS>`           |
 | `--erc20-token`       | Existing rootchain ERC-20 token address                                  | `--erc20-token <ERC_20_ADDRESS>`               |
 | `--erc721-token`      | Existing rootchain ERC-721 token address                                 | `--erc721-token <ERC_721_ADDRESS>`             |
+| `--stake-manager`     | Address of stake manager contract                                             | `--stake-manager <STAKE_MANAGER_ADDRESS>`                     |
+| `--stake-token`       | Address of ERC20 token used for staking on rootchain                         | `--stake-token <STAKE_TOKEN_ADDRESS>`                         |
 | `--test`              | Indicates whether rootchain contracts deployer is hardcoded test account | `--test`                                      |
 
 </details>
@@ -420,13 +423,8 @@ You also need to specify the path to the genesis file using the `--genesis` opti
 | `--erc1155-token`     | Existing rootchain ERC-1155 token address                                | `--erc1155-token <ERC_1155_ADDRESS>`           |
 | `--erc20-token`       | Existing rootchain ERC-20 token address                                  | `--erc20-token <ERC_20_ADDRESS>`               |
 | `--erc721-token`      | Existing rootchain ERC-721 token address                                 | `--erc721-token <ERC_721_ADDRESS>`             |
-
-Global flags:
-
-| Flag                  | Description                                                               | Example                                       |
-|-----------------------|---------------------------------------------------------------------------|-----------------------------------------------|
-| `--grpc-address`      | The GRPC interface                                                        | `--grpc-address 127.0.0.1:9632`                |
-| `--json`              | Get all outputs in JSON format                                            | `--json`                                      |
+| `--stake-manager`     | Address of stake manager contract                                             | `--stake-manager <STAKE_MANAGER_ADDRESS>`                     |
+| `--stake-token`       | Address of ERC20 token used for staking on rootchain                         | `--stake-token <STAKE_TOKEN_ADDRESS>`                         |
 
 </details>
 
