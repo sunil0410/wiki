@@ -1147,6 +1147,7 @@ module.exports = {
       },
       collapsed: true,
       items: [
+        "supernets/operate/supernets-param-reference",
         {
           type: "category",
           label: "Smart Contract Interfaces",
