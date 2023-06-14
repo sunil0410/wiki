@@ -1,7 +1,7 @@
 ---
 id: checkpoint
 title: Ensuring Data Integrity through Checkpoint Management
-sidebar_label: Ensuring data integrity through checkpoint management
+sidebar_label: Checkpoints
 description: "An overview of the checkpointing mechanism of Supernets."
 keywords:
   - docs
@@ -11,8 +11,6 @@ keywords:
   - fxportal
   - checkpoint
 ---
-
-This documents provides an overview on how checkpointing works when using the native Supernets bridge.
 
 ## Introduction
 

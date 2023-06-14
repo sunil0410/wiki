@@ -1,7 +1,7 @@
 ---
 id: statesync
 title: Synchronizing Chain State between Rootchain and Supernet
-sidebar_label:  Synchronizing chain state between rootchain and Supernet
+sidebar_label:  StateSyncs
 description: "Learn about the StateSync mechanism of Supernets."
 keywords:
   - docs
@@ -13,8 +13,6 @@ keywords:
   - rootchain
   - statesync
 ---
-
-This document provides an overview of how StateSync works for Supernets.
 
 ## Introduction
 

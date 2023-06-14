@@ -1,7 +1,7 @@
 ---
 id: overview
 title: Architecture Overview
-sidebar_label: Supernets Overview
+sidebar_label: Architecture Overview
 description: "Introduction to the architecture of Supernets."
 keywords:
   - docs
@@ -14,7 +14,6 @@ keywords:
   - extensible
 ---
 
-This document provides a system design overview of Polygon Supernets. 
 The diagram below illustrates the major coomponents of Supernets.
 
 <div align="center">

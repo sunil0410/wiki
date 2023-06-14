@@ -13,9 +13,11 @@ keywords:
   - cross chain
 ---
 
-This document provides an overview of the native cross-chain bridge in Supernets.
-
 :::warning The bridge should not yet be used in production environments
+:::
+
+:::caution Bridge as an Attack Vector
+The cross-chain bridge can be an attack vector if not properly managed. Ensure you fully understand its functionality, potential vulnerabilities, and security measures before use. Expertise in this area is crucial for maintaining system security.
 :::
 
 :::caution Arbitrary message transfers

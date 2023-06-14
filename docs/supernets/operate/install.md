@@ -15,8 +15,6 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import DownloadButton from '@site/src/data/DownloadButton';
 
-This document outlines the different methods available for installing the Polygon Supernet binaries.
-
 :::warning Breaking changes
 
 Supernets are rapidly evolving towards a production-ready state, and, as a result, instructions and concepts in these guides are subject to change.
@@ -92,26 +90,14 @@ To access the pre-built releases, visit the [GitHub releases page](https://githu
 Extract the downloaded package using your file system's extraction tool or the provided commands below, and navigate to the pre-built release in your preferred interface or text editor.
 
 <Tabs
-defaultValue="linux"
+defaultValue="linux-mac"
 values={[
-{ label: 'Linux', value: 'linux', },
-{ label: 'Mac', value: 'mac', },
+{ label: 'Linux/Mac', value: 'linux-mac', },
 { label: 'Windows', value: 'windows', },
 ]
 }>
 
-<TabItem value="linux">
-
-```bash
-# replace <downloaded_package> with the actual package filename
-
-tar -xzf <downloaded_package>
-cd <downloaded_package>
-```
-
-</TabItem>
-
-<TabItem value="mac">
+<TabItem value="linux-mac">
 
 ```bash
 # replace <downloaded_package> with the actual package filename

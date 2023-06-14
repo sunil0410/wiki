@@ -14,8 +14,6 @@ keywords:
   - transaction
 ---
 
-This document provides an overview of the authorization capabilities of Supernets.
-
 ## Overview
 
 Supernets offer access control lists (ACLs) to manage and control access to specific network resources, contracts, or functionalities. Network operators can limit access to certain addresses using ACLs, ensuring a controlled and secure environment for their applications.

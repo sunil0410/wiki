@@ -12,8 +12,6 @@ keywords:
   - pos
 ---
 
-This document provides an overview of Polygon Byzantine Fault Tolerance (PolyBFT), the consensus mechanism of Polygon Supernets.
-
 ## Overview
 
 PolyBFT is a sophisticated and robust consensus mechanism employed by Polygon Supernets.

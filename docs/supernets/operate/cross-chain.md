@@ -18,8 +18,6 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This document provides an overview of the cross-chain transfer options available for the ERC standards supported on Supernets.
-
 :::warning Breaking changes
 Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change.
 

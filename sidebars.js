@@ -1013,7 +1013,7 @@ module.exports = {
     "supernets/operate/supernets-quick-start",
     {
       type: "category",
-      label: "Introduction to Supernets",
+      label: "Introduction",
       link: {
         type: "generated-index",
       },
@@ -1025,7 +1025,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Learn about the Supernets Product Suite",
+      label: "System Design",
       link: {
         type: "generated-index",
       },
@@ -1041,7 +1041,6 @@ module.exports = {
           items: [
             "supernets/design/consensus/polybft/polybft-overview",
             "supernets/design/consensus/polybft/ibft-overview",
-            "supernets/design/consensus/validator/polybft-allowlist",
           ],
         },
         {
@@ -1090,49 +1089,59 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Prepare Your Environment",
+      label: "Build a Supernet",
       link: {
         type: "generated-index",
       },
       collapsed: true,
       items: [
-          "supernets/operate/supernets-requirements",
-          "supernets/operate/supernets-install",
-        ],
-    },
-    "supernets/operate/supernets-ibft-to-polybft",
-    {
-      type: "category",
-      label: "Build a Local Private Supernet",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "supernets/operate/deploy/supernets-deploy-index",
-        "supernets/operate/deploy/supernets-spawn-test-chain",
-        "supernets/operate/deploy/supernets-how-to-generate-genesis",
-        "supernets/operate/deploy/supernets-how-to-configure-rootchain",
-        "supernets/operate/deploy/access-control/supernets-how-to-allowlist",
         {
           type: "category",
-          label: "Staking on the Rootchain",
+          label: "Prepare Your Environment",
           link: {
             type: "generated-index",
           },
           collapsed: true,
           items: [
-              "supernets/operate/deploy/staking/supernets-how-to-stake",
-              "supernets/operate/deploy/staking/supernets-unstake",
+              "supernets/operate/supernets-requirements",
+              "supernets/operate/supernets-install",
             ],
         },
-        "supernets/operate/deploy/supernets-how-to-start",
-      ],
+        "supernets/operate/supernets-ibft-to-polybft",
+        {
+          type: "category",
+          label: "Deploy a Local Supernet",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "supernets/operate/deploy/supernets-deploy-index",
+            "supernets/operate/deploy/supernets-spawn-test-chain",
+            "supernets/operate/deploy/supernets-how-to-generate-genesis",
+            "supernets/operate/deploy/supernets-how-to-configure-rootchain",
+            "supernets/operate/deploy/access-control/supernets-how-to-allowlist",
+            {
+              type: "category",
+              label: "Staking on the Rootchain",
+              link: {
+                type: "generated-index",
+              },
+              collapsed: true,
+              items: [
+                  "supernets/operate/deploy/staking/supernets-how-to-stake",
+                  "supernets/operate/deploy/staking/supernets-unstake",
+                ],
+            },
+            "supernets/operate/deploy/supernets-how-to-start",
+          ],
+        },
+        "supernets/operate/supernets-setup-dev-env",
+        "supernets/operate/supernets-cross-chain",
+        ],
     },
-    "supernets/operate/supernets-setup-dev-env",
-    "supernets/operate/supernets-cross-chain",
     {
       type: "category",
-      label: "Supernet Interfaces",
+      label: "Reference",
       link: {
         type: "generated-index",
       },
@@ -1140,107 +1149,117 @@ module.exports = {
       items: [
         {
           type: "category",
-          label: "ERC-20",
+          label: "Smart Contract Interfaces",
           link: {
             type: "generated-index",
           },
+          collapsed: true,
           items: [
-            "supernets/interfaces/erc20/native-erc20",
-            "supernets/interfaces/erc20/childerc20",
-            "supernets/interfaces/erc20/childerc20-predicate",
-            "supernets/interfaces/erc20/rooterc20-predicate",
+            {
+              type: "category",
+              label: "ERC-20",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/interfaces/erc20/native-erc20",
+                "supernets/interfaces/erc20/childerc20",
+                "supernets/interfaces/erc20/childerc20-predicate",
+                "supernets/interfaces/erc20/rooterc20-predicate",
+              ],
+            },
+            {
+              type: "category",
+              label: "ERC-721",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/interfaces/erc721/childerc721",
+                "supernets/interfaces/erc721/childerc721-predicate",
+                "supernets/interfaces/erc721/rooterc721-predicate",
+              ],
+            },
+            {
+              type: "category",
+              label: "ERC-1155",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/interfaces/erc1155/childerc1155",
+                "supernets/interfaces/erc1155/childerc1155-predicate",
+                "supernets/interfaces/erc1155/rooterc1155-predicate",
+              ],
+            },
+            "supernets/interfaces/eip1559-interface",
+            {
+              type: "category",
+              label: "Network",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/interfaces/network/checkpoint-manager",
+                "supernets/interfaces/network/exit-helper",
+                "supernets/interfaces/network/state-receiver",
+                "supernets/interfaces/network/state-sender",
+              ],
+            },
+            {
+              type: "category",
+              label: "Validators",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/interfaces/validators/validator",
+                "supernets/interfaces/validators/validator-set-base",
+                "supernets/interfaces/validators/root-validator-set",
+              ],
+            },
+            {
+              type: "category",
+              label: "Staking",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/interfaces/staking/stake-manager-interface",
+                "supernets/interfaces/staking/supernet-manager-interface",
+                "supernets/interfaces/staking/custom-supernet-manager-interface",
+              ],
+            },
+            {
+              type: "category",
+              label: "Cryptography",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "supernets/interfaces/cryptography/bls",
+                "supernets/interfaces/cryptography/bn256g2",
+              ],
+            },
           ],
         },
         {
           type: "category",
-          label: "ERC-721",
+          label: "RPC API Reference",
           link: {
             type: "generated-index",
           },
+          collapsed: true,
           items: [
-            "supernets/interfaces/erc721/childerc721",
-            "supernets/interfaces/erc721/childerc721-predicate",
-            "supernets/interfaces/erc721/rooterc721-predicate",
+            "supernets/api/json-rpc-eth",
+            "supernets/api/json-rpc-net",
+            "supernets/api/json-rpc-web3",
+            "supernets/api/json-rpc-txpool",
+            "supernets/api/json-rpc-debug",
+            "supernets/api/json-rpc-bridge",
           ],
         },
-        {
-          type: "category",
-          label: "ERC-1155",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "supernets/interfaces/erc1155/childerc1155",
-            "supernets/interfaces/erc1155/childerc1155-predicate",
-            "supernets/interfaces/erc1155/rooterc1155-predicate",
-          ],
-        },
-        "supernets/interfaces/eip1559-interface",
-        {
-          type: "category",
-          label: "Network",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "supernets/interfaces/network/checkpoint-manager",
-            "supernets/interfaces/network/exit-helper",
-            "supernets/interfaces/network/state-receiver",
-            "supernets/interfaces/network/state-sender",
-          ],
-        },
-        {
-          type: "category",
-          label: "Validators",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "supernets/interfaces/validators/validator",
-            "supernets/interfaces/validators/validator-set-base",
-            "supernets/interfaces/validators/root-validator-set",
-          ],
-        },
-        {
-          type: "category",
-          label: "Staking",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "supernets/interfaces/staking/stake-manager-interface",
-            "supernets/interfaces/staking/supernet-manager-interface",
-            "supernets/interfaces/staking/custom-supernet-manager-interface",
-          ],
-        },
-        {
-          type: "category",
-          label: "Cryptography",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "supernets/interfaces/cryptography/bls",
-            "supernets/interfaces/cryptography/bn256g2",
-          ],
-        },
-      ],
-    },
-    "supernets/operate/supernets-performance",
-    {
-      type: "category",
-      label: "RPC API Reference",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "supernets/api/json-rpc-eth",
-        "supernets/api/json-rpc-net",
-        "supernets/api/json-rpc-web3",
-        "supernets/api/json-rpc-txpool",
-        "supernets/api/json-rpc-debug",
-        "supernets/api/json-rpc-bridge",
+        "supernets/operate/supernets-performance",
       ],
     },
     "supernets/supernets-faq",

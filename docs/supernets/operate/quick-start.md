@@ -1,7 +1,7 @@
 ---
 id: supernets-quick-start
 title: Quick Start
-sidebar_label: Deploy a local Supernet in 2 minutes
+sidebar_label: Quick Start
 description: "Spin up a new childchain instance with one-click."
 keywords:
   - docs
@@ -16,8 +16,6 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import DownloadButton from '@site/src/data/DownloadButton';
-
-This document offers a quick start guide to assist users in setting up a local Supernet test environment using a pre-packaged Edge consensus client script.
 
 :::warning Breaking changes
 Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change.
@@ -56,26 +54,14 @@ To access the pre-built releases, visit the [GitHub releases page](https://githu
 Extract the downloaded package using your file system's extraction tool or the provided commands below, and navigate to the pre-built release in your preferred interface or text editor.
 
 <Tabs
-defaultValue="linux"
+defaultValue="linux-mac"
 values={[
-{ label: 'Linux', value: 'linux', },
-{ label: 'Mac', value: 'mac', },
+{ label: 'Linux/Mac', value: 'linux-mac', },
 { label: 'Windows', value: 'windows', },
 ]
 }>
 
-<TabItem value="linux">
-
-```bash
-# replace <downloaded_package> with the actual package filename
-
-tar -xzf <downloaded_package>
-cd <downloaded_package>
-```
-
-</TabItem>
-
-<TabItem value="mac">
+<TabItem value="linux-mac">
 
 ```bash
 # replace <downloaded_package> with the actual package filename
@@ -157,6 +143,8 @@ The nodes will continue to run until stopped manually. To stop the network, open
   ./scripts/cluster polybft stop
   ```
 
+go
+go
 If you want to destroy the environment, use the following command:
 
   ```bash

@@ -11,8 +11,6 @@ keywords:
   - installation
 ---
 
-This document provides guidance on the minimum hardware requirements and required prerequisites to run and maintain a Supernet.
-
 :::warning Breaking changes
 Supernets are rapidly evolving towards a production-ready state, and, as a result, instructions and concepts in these guides are subject to change.
 

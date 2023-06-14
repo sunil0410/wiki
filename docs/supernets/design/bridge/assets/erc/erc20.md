@@ -13,8 +13,6 @@ keywords:
   - native
 ---
 
-This document presents an overview on the ERC-20 standard available in Supernets.
-
 Supernets provide developers with two standards for creating ERC-20 fungible tokens on their networks: `NativeERC20` and `ChildERC20`. These standards are based on the widely-used ERC-20 standard and offer similar functionality, including the ability to transfer tokens between addresses, approve others to spend tokens on your behalf, and check your balance. However, there are significant differences in their deployment and management.
 
 ## ChildERC20
