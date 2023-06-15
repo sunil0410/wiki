@@ -27,8 +27,8 @@ Ang [FxChild](https://github.com/fx-portal/contracts/blob/main/contracts/FxChild
 
 Kung hindi, maaari mong piliin na mapa ang iyong mga token gamit ang mga naka-deploy na kontrata ng tunnel. Ang mga detalye ng deployment ng default na FxTunnel para sa Polygon Mainnet at Mumbai Testnet ay ang mga sumusunod:
 
-- [Polygon Mainnet](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon Mainnet](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Hahanapin ang keyword sa mga link sa itaas para hanapin ang lahat ng default na kontrata ng tunnel at iba pang mahahalagang pag-deploy ng kontrata `FxPortalContracts`ng FxPortal.
 
@@ -138,16 +138,16 @@ Pagkatapos mong magtanghal `withdraw()`sa chain ng bata, aabutin ng 30-90 minuto
 
 1. Bumuo ng patunay na sunog gamit ang **tx hash** at **MESSAGE_SENT_EVENT_SIG**. Para makabuo ng patunay, maaari mong gamitin ang proof generation API na naka-host ng Polygon o maaari mo ring i-spin ang sarili mong proof generation API sa pamamagitan ng pagsunod [sa](https://github.com/maticnetwork/proof-generation-api) mga tagubilin dito.
 
-Available ang endpoint ng generation ng proof generation na naka-host ng Polygon [dito.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Available ang endpoint ng generation ng proof generation na naka-host ng Polygon [dito.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
   - `burnTxHash`ay ang transaksyon hash ng `withdraw()`transaksyong sinimulan mo sa Polygon.
   - `eventSignature`ay ang lagda ng event na nilabas ng `withdraw()`function. Ang lagda ng kaganapan para sa MESSAGE_SENT_EVENT_SIG ay `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Ang mga halimbawa ng paggamit ng proof generation API para sa Mainnet at Testnet ay ang mga sumusunod:-
 
-→ [generation ng Polygon Mainnet Proof](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [generation ng Polygon Mainnet Proof](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [generation ng Mumbai Testnet Proof](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [generation ng Mumbai Testnet Proof](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. I-feed ang nabuong payload bilang argument `receiveMessage()`sa kani-kanilang root tunnel contract sa Goerli o Ethereum.
 
@@ -218,7 +218,7 @@ Ang **ERC721** at **ERC1155** Minimum FxTunnel examples ay ang mga sumusunod :-
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-Makikita [ang](https://static.matic.network/network/mainnet/v1/index.json) mga kaukulang pag-deploy ng Mainnet dito. Hahanapin ang keyword `FxPortalContracts`para hanapin ang lahat ng default na kontrata ng tunnel at iba pang mahahalagang pag-deploy ng kontrata ng FxPortal. Maaari mong gamitin ang [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)package para ma-access ang mga contract address at ABI.
+Makikita [ang](https://static.polygon.technology/network/mainnet/v1/index.json) mga kaukulang pag-deploy ng Mainnet dito. Hahanapin ang keyword `FxPortalContracts`para hanapin ang lahat ng default na kontrata ng tunnel at iba pang mahahalagang pag-deploy ng kontrata ng FxPortal. Maaari mong gamitin ang [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)package para ma-access ang mga contract address at ABI.
 
 ## Mga Address ng Kontrata {#contract-addresses}
 

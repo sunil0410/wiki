@@ -62,16 +62,16 @@ Pansinin ang transaksyon hash dahil gagamitin ito para makabuo ng patunay pagkat
 
 2. **Proof Generation para makumpleto ang lumabas sa root chain**: Bumuo ng patunay gamit ang **tx hash** at **MESSAGE_SENT_EVENT_SIG**. Para makabuo ng patunay, maaari mong gamitin ang proof generation API na naka-host ng Polygon o maaari mo ring i-spin ang sarili mong proof generation API sa pamamagitan ng pagsunod [sa](https://github.com/maticnetwork/proof-generation-api) mga tagubilin dito.
 
-Available ang endpoint ng generation ng proof generation na naka-host ng Polygon [dito.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Available ang endpoint ng generation ng proof generation na naka-host ng Polygon [dito.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Ang mga halimbawa ng paggamit ng proof generation API para sa Mainnet at Testnet ay ang mga sumusunod:-
 
-→ [generation ng Mumbai Testnet Proof](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [generation ng Mumbai Testnet Proof](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [generation ng Polygon Mainnet Proof](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [generation ng Polygon Mainnet Proof](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. Ipatupad ang `_processMessageFromChild()` sa kontrata ng root mo.
 

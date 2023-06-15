@@ -17,7 +17,7 @@ Beberapa fungsi dalam matic.js tercekik dengan istilah lebih cepat. Seperti yang
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 Memanfaatkan layanan API Proof Generation akan menawarkan kinerja yang lebih baik dibandingkan dengan yang dipandu ke publik.

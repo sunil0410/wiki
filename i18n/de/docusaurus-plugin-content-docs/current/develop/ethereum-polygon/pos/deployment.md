@@ -16,6 +16,6 @@ Zusammengefasste Verträge: [https://github.com/maticnetwork/pos-portal/tree/v1.
 
 Maticjs-Beispiele: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-Contracts Adressen auf Mumbai: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). Benutze die `Proxy`Adresse, wo immer sie verfügbar ist.
+Contracts Adressen auf Mumbai: [https://static.polygon.technology/network/testnet/mumbai/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json). Benutze die `Proxy`Adresse, wo immer sie verfügbar ist.
 
-Contracts Adressen auf Polygon Mainnet: [https://static.matic.network/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Benutze die `Proxy`Adresse, wo immer sie verfügbar ist.
+Contracts Adressen auf Polygon Mainnet: [https://static.polygon.technology/network/mainnet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json). Benutze die `Proxy`Adresse, wo immer sie verfügbar ist.

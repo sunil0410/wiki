@@ -251,7 +251,7 @@ Isto pode ser verificado usando a seguinte API. O número de blocos da transaç�
 
 ```js
 // Testnet
-https://apis.matic.network/api/v1/mumbai/block-included/block-number
+https://proof-generator.polygon.technology/api/v1/mumbai/block-included/block-number
 // Mainnet
-https://apis.matic.network/api/v1/matic/block-included/block-number
+https://proof-generator.polygon.technology/api/v1/matic/block-included/block-number
 ```

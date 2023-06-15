@@ -27,8 +27,8 @@ PolygonからEthereumデータをネイティブに読み込むための通常�
 
 そうでない場合は、すでに展開されているトンネルコントラクトでトークンをマッピングすることができます。PolygonメインネットとムンバイテストネットのデフォルトのFxTunnel展開の詳細は次のとおりです：
 
-- [Polygon Mainnet](https://static.matic.network/network/mainnet/v1/index.json)
-- [ムンバイテストネット](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon Mainnet](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [ムンバイテストネット](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 上記のリンク`FxPortalContracts`からキーワードをご覧ください。すべてのデフォルトのトンネルコントラクトやその他の重要なFxPortalコントラクト展開を確認することができます。
 
@@ -138,16 +138,16 @@ PolygonからEthereumデータをネイティブに読み込むための通常�
 
 1. **txハッシュ**と**MESSAGE_SENT_EVENT_SIG**を使用して、書き込み証明を生成します。プルーフを生成するには、Polygonがホストするプルーフ生成APIを使用するか、[こちら](https://github.com/maticnetwork/proof-generation-api)で説明したら、プルーフ生成APIをスピンアップすることもできます。
 
-Polygonがホストする証拠生成エンドポイントは[こちら](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})からご覧いただけます。
+Polygonがホストする証拠生成エンドポイントは[こちら](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})からご覧いただけます。
 
   - `burnTxHash`Polygonで開始したトランザクションの`withdraw()`トランザクションハッシュです。
   - `eventSignature`機能によって発信されるイベントの署名です`withdraw()`。MESSAGE_SENT_EVENT_SIGのイベント署名は次のとおりです`0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`。
 
 メインネットとテストネットのプルーフ生成APIを使用する例は次のとおりです：-
 
-→ [Polygonメインネットプルーフ生成](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygonメインネットプルーフ生成](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Mumbaiテストネット証明生成](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbaiテストネット証明生成](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. GoerliまたはEthereum上のルートトンネルコントラクト`receiveMessage()`で、生成されたペイロードを引数としてフィードします。
 
@@ -218,7 +218,7 @@ MintableトークンFxTunnelの場合、子トークンが最初に展開され�
 - FxERC1155：[0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel：[0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-対応するメインネットデプロイメントは[こちら](https://static.matic.network/network/mainnet/v1/index.json)からご覧いただけます。すべてのデフォルトのトンネルコントラクトとその他の重要なFxPortalコントラクトデプロイを確認するキーワードを`FxPortalContracts`探してください。[`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)コントラクトアドレスとABIにアクセスすることができます。
+対応するメインネットデプロイメントは[こちら](https://static.polygon.technology/network/mainnet/v1/index.json)からご覧いただけます。すべてのデフォルトのトンネルコントラクトとその他の重要なFxPortalコントラクトデプロイを確認するキーワードを`FxPortalContracts`探してください。[`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)コントラクトアドレスとABIにアクセスすることができます。
 
 ## コントラクトのアドレス {#contract-addresses}
 

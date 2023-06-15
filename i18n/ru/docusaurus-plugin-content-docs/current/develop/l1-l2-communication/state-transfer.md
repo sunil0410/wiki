@@ -62,16 +62,16 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 
 2. **Поколение доказательства для завершения выхода в корневой цепочке**: Создайте доказательства с помощью **хэша tx** и **MESSAGE_SENT_EVENT_SIG**. Чтобы создать доказательство, можно использовать API генерации доказательства, размещенный в Polygon, или вы также можете вращать API собственного поколения доказательств, следуя [инструкциям](https://github.com/maticnetwork/proof-generation-api).
 
-Конечная точка поколения, размещенная в Polygon, доступна [здесь.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Конечная точка поколения, размещенная в Polygon, доступна [здесь.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Примеры использования API поколения доказательства для Mainnet и Testnet следующие:-
 
-→ [Генерация доказательства Mumbai Testnet](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Генерация доказательства Mumbai Testnet](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Появление доказательства Polygon](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Появление доказательства Polygon](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. Реализуйте `_processMessageFromChild()` в корневом контракте.
 

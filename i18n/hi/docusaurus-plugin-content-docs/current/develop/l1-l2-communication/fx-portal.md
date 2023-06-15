@@ -27,8 +27,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 अन्यथा, आप पहले से ही तैनात सुरंग कॉन्ट्रैक्ट के साथ अपने टोकन को मैप करने के लिए चुन सकते हैं. पॉलीगॉन मैननेट और मुंबई टेस्टनेट के लिए डिफ़ॉल्ट FxTunnel deployment र विवरण इस प्रकार हैं:
 
-- [पॉलीगॉन मैनेट](https://static.matic.network/network/mainnet/v1/index.json)
-- [मुंबई टेस्टनेट](https://static.matic.network/network/testnet/mumbai/index.json)
+- [पॉलीगॉन मैनेट](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [मुंबई टेस्टनेट](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 सभी डिफॉल्ट सुरंग कॉन्ट्रैक्ट और अन्य महत्वपूर्ण FxPortal कॉन्ट्रैक्ट डिप्लॉयमेंट खोजने के लिए उपरोक्त कड़ियों `FxPortalContracts`में कीवर्ड को देखें.
 
@@ -138,16 +138,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 1. **tx हैश** और मैसेज **MESSAGE_SENT_EVENT_SIG**. का इस्तेमाल करके बर्न प्रूफ जनरेट करें सबूत उत्पन्न करने के लिए, आप या तो पॉलीगॉन द्वारा होस्ट किए गए प्रूफ पीढ़ी एपीआई का इस्तेमाल कर सकते हैं या आप [यहां](https://github.com/maticnetwork/proof-generation-api) के निर्देश का पालन करके अपने स्वयं के प्रूफ पीढ़ी API को भी स्पिन कर सकते हैं.
 
-पॉलीगॉन द्वारा होस्ट की जाने वाली proof र का एंडपॉइंट [यहाँ](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) उपलब्ध है.
+पॉलीगॉन द्वारा होस्ट की जाने वाली proof र का एंडपॉइंट [यहाँ](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) उपलब्ध है.
 
   - `burnTxHash`पॉलीगॉन पर शुरू किए गए `withdraw()`transaction transaction हैश है.
   - `eventSignature`समारोह द्वारा उत्सर्जित घटना का इवेंट सिग्नेचर `withdraw()`है. MESSAGE_SENT_EVENT_SIG के लिए इवेंट सिग्नेचर `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`है.
 
 मैननेट और टेस्टनेट के लिए प्रूफ पीढ़ी API का इस्तेमाल उदाहरण इस प्रकार है: -
 
-→ [पॉलीगॉन मेननेट Polygon जेनरेशन](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [पॉलीगॉन मेननेट Polygon जेनरेशन](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [मुंबई टेस्टनेट प्रूफ पीढ़ी](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [मुंबई टेस्टनेट प्रूफ पीढ़ी](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. generated payload को गोएर्ली या Ethereum. पर संबंधित रूट टनल कॉन्ट्रैक्ट में होने वाले तर्क के रूप `receiveMessage()`में खिलाएँ.
 
@@ -218,7 +218,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 - FxERC155: [0x80be8CF927047A40d3f5791BF7436D8c95b3A5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC155चाइल्डसुरंग: [0x3A00D3905601501652फी925e96d8B294243ईEf](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-इस प्रकार की मैनेट की तैनाती [यहाँ](https://static.matic.network/network/mainnet/v1/index.json) देखी जा सकती है. सभी डिफॉल्ट सुरंग कॉन्ट्रैक्ट और अन्य महत्वपूर्ण FxPortal कॉन्ट्रैक्ट डिप्लॉयमेंट खोजने `FxPortalContracts`के लिए कीवर्ड को देखें. आप कॉन्ट्रैक्ट पते और ABI तक पहुंचने के लिए [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)पैकेज का इस्तेमाल कर सकते हैं.
+इस प्रकार की मैनेट की तैनाती [यहाँ](https://static.polygon.technology/network/mainnet/v1/index.json) देखी जा सकती है. सभी डिफॉल्ट सुरंग कॉन्ट्रैक्ट और अन्य महत्वपूर्ण FxPortal कॉन्ट्रैक्ट डिप्लॉयमेंट खोजने `FxPortalContracts`के लिए कीवर्ड को देखें. आप कॉन्ट्रैक्ट पते और ABI तक पहुंचने के लिए [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)पैकेज का इस्तेमाल कर सकते हैं.
 
 ## कॉन्ट्रैक्ट अड्रेस {#contract-addresses}
 

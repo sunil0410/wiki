@@ -17,7 +17,7 @@ Bu `setProofApi`yöntem, Proof Generation API'nin URL'sini matic.js örneğine a
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 Kendi kendine barındırılan Proof Generation API hizmetini kullanmak, kamuya açık bir şekilde barındırılan bir API hizmetine kıyasla daha iyi bir performans sunacaktır.

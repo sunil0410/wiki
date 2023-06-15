@@ -27,8 +27,8 @@ Du kannst das [GitHub Repository](https://github.com/fx-portal/contracts) für V
 
 Andernfalls kannst du deine Token mit den bereits bereitgestellten tunnel kartieren. Default für Polygon Mainnet und Mumbai Testnet sind wie folgt:
 
-- [Polygon Mainnet](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon Mainnet](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Suchen Sie nach dem Keyword `FxPortalContracts`in den obigen Links, um alle default und andere wichtige FxPortal zu finden.
 
@@ -138,16 +138,16 @@ Nachdem du `withdraw()`auf der Child-Chain durchgeführt hast, dauert es 30-90 M
 
 1. Erstelle den burn mit dem **tx hash** und **MESSAGE_SENT_EVENT_SIG**. Um den Proof zu generieren, kannst du entweder die von Polygon gehostete proof verwenden, oder du kannst deine eigene [generation](https://github.com/maticnetwork/proof-generation-api) auch drehen, indem du den Anweisungen folgend.
 
-Der proof der von Polygon gehostet wird, ist [hier](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) verfügbar.
+Der proof der von Polygon gehostet wird, ist [hier](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) verfügbar.
 
   - `burnTxHash`ist der transaction der `withdraw()`Transaktion, die du auf Polygon initiiert hast.
   - `eventSignature`ist die event des Ereignisses, das von der Funktion ausgesandt `withdraw()`wird. Die event für die MESSAGE_SENT_EVENT_SIG `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`ist.
 
 Die proof API Nutzungsbeispiele für Mainnet und Testnet sind wie folgt:
 
-→ [Polygon Mainnet Proof Generierung](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon Mainnet Proof Generierung](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Mumbai Testnet Proof Generation](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbai Testnet Proof Generation](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Füge die generierte Nutzlast als Argument `receiveMessage()`in dem jeweiligen Root-Tunnel-Vertrag auf Goerli oder Ethereum ein.
 
@@ -218,7 +218,7 @@ Die Beispiele **ERC721** und **ERC1155** Mintable FxTunnel sind wie folgt:
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-Die entsprechenden Mainnet findest du [hier](https://static.matic.network/network/mainnet/v1/index.json). Suchen Sie nach dem Keyword, `FxPortalContracts`um alle default und andere wichtige FxPortal zu finden. Du kannst das [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)Paket nutzen, um auf die Vertragsadressen und ABIs zuzugreifen.
+Die entsprechenden Mainnet findest du [hier](https://static.polygon.technology/network/mainnet/v1/index.json). Suchen Sie nach dem Keyword, `FxPortalContracts`um alle default und andere wichtige FxPortal zu finden. Du kannst das [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)Paket nutzen, um auf die Vertragsadressen und ABIs zuzugreifen.
 
 ## Vertragsadressen {#contract-addresses}
 

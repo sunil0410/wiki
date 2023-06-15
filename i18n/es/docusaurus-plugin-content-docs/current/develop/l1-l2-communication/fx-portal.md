@@ -27,8 +27,8 @@ Puedes revisar el [repositorio de GitHub](https://github.com/fx-portal/contracts
 
 De lo contrario, puedes elegir mapear tus tokens con los contratos de túnel ya desplegados. Los detalles de despliegue por defecto de  para Polygon Mainnet y Mumbai son los siguientes:
 
-- [Red principal de Polygon](https://static.matic.network/network/mainnet/v1/index.json)
-- [Testnet de Mumbai](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Red principal de Polygon](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Testnet de Mumbai](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Busca la palabra clave `FxPortalContracts`en los enlaces anteriores para encontrar todos los contratos de túnel por defecto y otras despliegues importantes de contratos de FxPortal.
 
@@ -138,16 +138,16 @@ Después de haber realizado `withdraw()`en la cadena infantil, tomará 30 a 90 m
 
 1. Genera la prueba de quemado utilizando el **hash de**  y **MESSAGE_SENT_EVENT_SIG**. Para generar la prueba, puedes utilizar la API de generación de pruebas alojada por Polygon o también puedes hacer crecer tu propia API de generación de pruebas siguiendo las instrucciones [aquí](https://github.com/maticnetwork/proof-generation-api).
 
-El extremo de generación de pruebas alojado por Polygon está disponible [aquí.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+El extremo de generación de pruebas alojado por Polygon está disponible [aquí.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
   - `burnTxHash`es el hash de la `withdraw()`transacción que inició en Polygon.
   - `eventSignature`es la firma del evento del evento emitido por la `withdraw()`función. La firma del evento para el  es `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Los ejemplos de uso de la API de generación de pruebas para la  y Testnet son los siguientes:
 
-→ [Generación de   ](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Generación de   ](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Generación de prueba de Testnet](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Generación de prueba de Testnet](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Alimenta la carga útil generada como el argumento `receiveMessage()`a en el contrato de túnel raíz correspondiente en Goerli o Ethereum.
 
@@ -218,7 +218,7 @@ Los ejemplos **de** FxTunnel Mintable ERC-721 y **ERC-1155** son los siguientes 
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-Las correspondientes despliegues de Mainnet se pueden encontrar [aquí](https://static.matic.network/network/mainnet/v1/index.json). Busca la palabra clave `FxPortalContracts`para encontrar todos los contratos de túnel por defecto y otras implementaciones importantes de contratos de FxPortal. Puedes hacer uso del [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)paquete para acceder a las direcciones del contrato y ABIs.
+Las correspondientes despliegues de Mainnet se pueden encontrar [aquí](https://static.polygon.technology/network/mainnet/v1/index.json). Busca la palabra clave `FxPortalContracts`para encontrar todos los contratos de túnel por defecto y otras implementaciones importantes de contratos de FxPortal. Puedes hacer uso del [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)paquete para acceder a las direcciones del contrato y ABIs.
 
 ## Direcciones de contratos {#contract-addresses}
 

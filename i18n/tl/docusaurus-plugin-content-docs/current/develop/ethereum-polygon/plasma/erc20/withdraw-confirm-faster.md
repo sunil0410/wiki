@@ -21,7 +21,7 @@ Ang panahon ng hamon ay 7 araw para sa mainnet.
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 
 const erc20Token = plasmaClient.erc20(<token address>, true);
 

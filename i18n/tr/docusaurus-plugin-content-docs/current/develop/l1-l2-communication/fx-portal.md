@@ -27,8 +27,8 @@ Sözleşmeler ve örnekler için [GitHub](https://github.com/fx-portal/contracts
 
 Aksi takdirde, your zaten konuşlandırılmış tünel sözleşmeleri ile haritalandırmayı seçebilirsiniz. Polygon Mainnet ve Mumbai Testnet için varsayılan FxTunnel dağıtım detayları aşağıdaki gibidir:
 
-- [Polygon Mainnet](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon Mainnet](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Varsayılan tünel sözleşmelerini ve diğer önemli FxPortal sözleşme dağıtımlarını bulmak için yukarıdaki `FxPortalContracts`bağlantılardaki anahtar kelimeyi arayın.
 
@@ -138,16 +138,16 @@ Kök zincirinde `deposit()`gerçekleştirdikten sonra, devlet senkronizasyonu i�
 
 1. **tx hash** ve **the** kullanarak yanık kanıtı üretin. Bu kanıtı oluşturmak için Polygon tarafından barındırılan proof oluşturma API'sini kullanabilirsiniz veya [buradaki](https://github.com/maticnetwork/proof-generation-api) talimatları izleyerek kendi proof oluşturma API'nizi de döndürebilirsiniz.
 
-Polygon tarafından barındırılan proof nesil uç noktası [burada](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) mevcuttur.
+Polygon tarafından barındırılan proof nesil uç noktası [burada](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) mevcuttur.
 
   - `burnTxHash`Polygon'da başlattığınız işlemin `withdraw()`işlem the
   - `eventSignature`Bu olay için verilen bir olay `withdraw()`imzası. for olay imzası `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`(!)
 
 Mainnet ve Testnet için proof nesil API kullanım örnekleri aşağıdaki gibidir:
 
-→ [Polygon Mainnet Proof üretimi](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon Mainnet Proof üretimi](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Mumbai Testnet Proof üretimi](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbai Testnet Proof üretimi](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Goerli veya Ethereum üzerindeki kök tüneli sözleşmesinde `receiveMessage()`argüman olarak üretilen yükü, besleyin.
 
@@ -218,7 +218,7 @@ Mintable Token FxTunnels durumunda çocuk tokeni ilk olarak konuşlandırılır 
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunn: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-İlgili Mainnet dağıtımları [burada](https://static.matic.network/network/mainnet/v1/index.json) bulunabilir. Varsayılan tünel sözleşmelerini ve diğer önemli FxPortal sözleşme dağıtımlarını bulmak `FxPortalContracts`için anahtar kelimeyi arayın. Sözleşme adreslerine ve and erişmek için [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)paketten yararlanabilirsiniz.
+İlgili Mainnet dağıtımları [burada](https://static.polygon.technology/network/mainnet/v1/index.json) bulunabilir. Varsayılan tünel sözleşmelerini ve diğer önemli FxPortal sözleşme dağıtımlarını bulmak `FxPortalContracts`için anahtar kelimeyi arayın. Sözleşme adreslerine ve and erişmek için [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)paketten yararlanabilirsiniz.
 
 ## Sözleşme Adresleri {#contract-addresses}
 

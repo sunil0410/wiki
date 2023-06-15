@@ -51,7 +51,7 @@ values={[
 
 :::note Более подробная информация
 
-См. следующие [**данные JSON,**](https://static.matic.network/network/testnet/mumbai/index.json) содержащие
+См. следующие [**данные JSON,**](https://static.polygon.technology/network/testnet/mumbai/index.json) содержащие
 детали сети.
 
 :::

@@ -48,7 +48,7 @@ Mumbaiテストネットは、テストに使用されるPolygon Mainnetを複�
 
 :::note 詳細
 
-ネットワークの詳細を含む次の[**JSON データ**](https://static.matic.network/network/testnet/mumbai/index.json)をを参照してください。
+ネットワークの詳細を含む次の[**JSON データ**](https://static.polygon.technology/network/testnet/mumbai/index.json)をを参照してください。
 
 :::
 

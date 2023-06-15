@@ -16,6 +16,6 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 Примеры Maticjs: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-Адреса контрактов в Мумбаи: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). Используйте `Proxy`адрес где он доступен.
+Адреса контрактов в Мумбаи: [https://static.polygon.technology/network/testnet/mumbai/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json). Используйте `Proxy`адрес где он доступен.
 
-Адреса контрактов в Polygon [Mainnet: https://static.matic.net/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Используйте `Proxy`адрес где он доступен.
+Адреса контрактов в Polygon [Mainnet: https://static.matic.net/network/mainnet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json). Используйте `Proxy`адрес где он доступен.

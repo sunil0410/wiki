@@ -37,8 +37,8 @@ ETHEREUM_CHAINID: 루트 체인의 체인 ID
 ```
 
 - Polygon 메인넷 및 뭄바이 테스트넷의 구성 및 키 값은 여기에서 확인할 수 있습니다.
-  1. [Mumbai Testnet Config](https://static.matic.network/network/testnet/mumbai/index.json)
-  2. [Polygon Mainnet Config](https://static.matic.network/network/mainnet/v1/index.json)
+  1. [Mumbai Testnet Config](https://static.polygon.technology/network/testnet/mumbai/index.json)
+  2. [Polygon Mainnet Config](https://static.polygon.technology/network/mainnet/v1/index.json)
 
 4. `npm start` 를 이용하여 프로젝트 실행합니다.
 

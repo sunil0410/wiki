@@ -62,16 +62,16 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 
 2. **Proof Generation เพื่อเสร็จสิ้นการออกจากห่วงโซ่ราก**: สร้างหลักฐานโดยใช้**แฮช**และ**เมสเวน_EVENT**เพื่อสร้างหลักฐาน, คุณสามารถใช้ API รุ่นหลักฐานที่เป็นเจ้าภาพจัดการโดย Polygon หรือคุณยังสามารถหมุนรุ่นหลักฐานของคุณเองได้โดยทำตามคำแนะนำ[ที่นี่](https://github.com/maticnetwork/proof-generation-api)
 
-endpoint รุ่นพิสูจน์ความปลอดภัยมีให้เลือกใช้ Polygon มีใช้งาน[ที่นี่](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+endpoint รุ่นพิสูจน์ความปลอดภัยมีให้เลือกใช้ Polygon มีใช้งาน[ที่นี่](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 ตัวอย่าง API สำหรับการใช้งานสำหรับ Maainnet และ Tesnet มีดังนี้:
 
-→ [รุ่นพิสูจน์ของ Mubi Testnet](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [รุ่นพิสูจน์ของ Mubi Testnet](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [รุ่นของ Polygon Maainnet](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [รุ่นของ Polygon Maainnet](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. นำ `_processMessageFromChild()` ไปใช้ในสัญญาต้นทางของคุณ
 

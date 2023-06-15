@@ -14,11 +14,11 @@ image: https://wiki.polygon.technology/img/polygon-logo.png
 # Reading Network Details
 
 You can have the network details by visting the below shared support links.
-- Network config: <static.matic.network/network/"network_name"/"version"/index.json>
+- Network config: <static.polygon.technology/network/"network_name"/"version"/index.json>
 
 ## Example
 
-For TestnetV3: https://static.matic.network/network/testnet/v3/index.json
+For TestnetV3: https://static.polygon.technology/network/testnet/v3/index.json
 
 ```js
 {

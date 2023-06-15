@@ -27,8 +27,8 @@ Polygon [상태 동기화](../../pos/state-sync/state-sync-mechanism.md) 메커�
 
 그렇지 않으면 이미 배포된 터널 계약을 통해 토큰을 매핑할 수 있습니다. Polygon 메인넷과 Mumbai 테스트넷을 위한 기본 Fxunnel 배포 세부 사항은 다음과 같습니다.
 
-- [Polygon 메인넷](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon 메인넷](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 위의 `FxPortalContracts`링크에서 키워드를 검색하여 모든 기본 터널 계약 및 기타 중요한 FxPortal 계약 배포와 함께 배포되는 모든 기본 FxPortal 계약 배열을 확인하십시오.
 
@@ -138,16 +138,16 @@ Polygon [상태 동기화](../../pos/state-sync/state-sync-mechanism.md) 메커�
 
 1. **tx 해시와** **MESSAGE_SENT_EVENT_SIG를** 사용하여 화상 증거를 생성합니다. 증거를 생성하기 위해 Polygon이 호스팅한 증명 생성 API를 사용할 수 있거나 [여기에](https://github.com/maticnetwork/proof-generation-api) 지시서에 따라 자체 증명 생성 API를 스핀화할 수 있습니다.
 
-Polygon에서 호스팅하는 증명 생성 끝점 [여기에서](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) 확인할 수 있습니다.
+Polygon에서 호스팅하는 증명 생성 끝점 [여기에서](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) 확인할 수 있습니다.
 
   - `burnTxHash`Polygon에서 시작한 `withdraw()`트랜잭션 해시입니다.
   - `eventSignature`이 함수는 함수가 발산하는 이벤트의 이벤트 `withdraw()`서명입니다. MESCAGE_SENT_EVENT_SIG의 이벤트 서명은 IS `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`입니다.
 
 메인넷과 테스트넷의 증명 API 사용 예는 다음과 같습니다. -
 
-→ [Polygon 메인넷 Pro 생성](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon 메인넷 Pro 생성](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Mumbai Testnet Pro 생성](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbai Testnet Pro 생성](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Goerli 또는 이더리움에서 각 루트 터널 `receiveMessage()`계약에서 인수로 생성된 페이로드를 피하십시오.
 
@@ -218,7 +218,7 @@ Mintable Token FxTunnels의 경우 먼저 아이용 토큰을 배포하고 첫 �
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-해당 메인넷 배포는 [여기에서](https://static.matic.network/network/mainnet/v1/index.json) 확인할 수 있습니다. `FxPortalContracts`키워드를 사용하여 모든 기본 터널 계약 및 기타 중요한 FxPortal 계약 배포와 함께 배포되는 모든 기본 FxPortal 계약 계약을 확인하십시오. 계약 주소와 ABI에 액세스하는 데 대한 [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)패키지를 사용할 수 있습니다.
+해당 메인넷 배포는 [여기에서](https://static.polygon.technology/network/mainnet/v1/index.json) 확인할 수 있습니다. `FxPortalContracts`키워드를 사용하여 모든 기본 터널 계약 및 기타 중요한 FxPortal 계약 배포와 함께 배포되는 모든 기본 FxPortal 계약 계약을 확인하십시오. 계약 주소와 ABI에 액세스하는 데 대한 [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)패키지를 사용할 수 있습니다.
 
 ## 계약 주소 {#contract-addresses}
 

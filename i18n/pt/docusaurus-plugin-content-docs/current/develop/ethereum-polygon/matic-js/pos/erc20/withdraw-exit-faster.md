@@ -15,7 +15,7 @@ O método `withdrawExitFaster` pode ser usado para sair do processo de retirada 
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 
 const erc20RootToken = posClient.erc20(<root token address>, true);
 

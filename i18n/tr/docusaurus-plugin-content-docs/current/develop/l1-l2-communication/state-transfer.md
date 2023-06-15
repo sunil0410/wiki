@@ -62,16 +62,16 @@ Bu 2 mekanizma, Ethereum ve Polygon arasında iki yönlü veri (devlet) aktarım
 
 2. **Proof Generation (Proof Generation) kök zincirinde çıkışı tamamlamak için**: **Tx hash** ve **the** kullanarak kanıtı üretin. Bu kanıtı oluşturmak için Polygon tarafından barındırılan proof oluşturma API'sini kullanabilirsiniz veya [buradaki](https://github.com/maticnetwork/proof-generation-api) talimatları izleyerek kendi proof oluşturma API'nizi de döndürebilirsiniz.
 
-Polygon tarafından barındırılan proof nesil uç noktası [burada](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) mevcuttur.
+Polygon tarafından barındırılan proof nesil uç noktası [burada](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) mevcuttur.
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Mainnet ve Testnet için proof nesil API kullanım örnekleri aşağıdaki gibidir:
 
-→ [Mumbai Testnet Proof üretimi](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbai Testnet Proof üretimi](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Polygon Mainnet Proof üretimi](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon Mainnet Proof üretimi](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. Kök sözleşmeniz içinde `_processMessageFromChild()` uygulayın.
 

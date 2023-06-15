@@ -37,8 +37,8 @@ ETHEREUM_CHAINID: Chain ID of root chain
 ```
 
 - The configuration and key values for Polygon mainnet and mumbai testnet can be found here
-  1. [Mumbai Testnet Config](https://static.matic.network/network/testnet/mumbai/index.json)
-  2. [Polygon Mainnet Config](https://static.matic.network/network/mainnet/v1/index.json)
+  1. [Mumbai Testnet Config](https://static.polygon.technology/network/testnet/mumbai/index.json)
+  2. [Polygon Mainnet Config](https://static.polygon.technology/network/mainnet/v1/index.json)
 
 4. Run the project using `npm start` .
 

@@ -48,7 +48,7 @@ values={[
 
 :::note আরো বিস্তারিত তথ্য
 
-নিম্নলিখিত [**JSON ডেটা**](https://static.matic.network/network/testnet/mumbai/index.json) দেখুন যেগুলোতে রয়েছে
+নিম্নলিখিত [**JSON ডেটা**](https://static.polygon.technology/network/testnet/mumbai/index.json) দেখুন যেগুলোতে রয়েছে
 নেটওয়ার্কের বিস্তারিত তথ্য।
 
 :::

@@ -10,14 +10,14 @@ description: Config proof api
 
 You will see some of the APIs with **faster** suffix, which makes the process faster. It does so by using proof generation api in the backend which can be hosted by anyone.
 
-Polygon has hosted the proof generation api which can be used by anyone. The API url is - [https://apis.matic.network/](https://apis.matic.network/)
+Polygon has hosted the proof generation api which can be used by anyone. The API url is - [https://proof-generator.polygon.technology/](https://proof-generator.polygon.technology/)
 
 The `setProofApi` can be used to set the proof api url.
 
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 👉 We recommend to host the proof API by yourself which will give you better performance. The default api provided by Polygon might have performance issue as it is being used by multiple people.

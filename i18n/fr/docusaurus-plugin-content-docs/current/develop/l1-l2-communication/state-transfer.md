@@ -62,16 +62,16 @@ Notez le hachage de transaction car il sera utilisé pour générer des preuves 
 
 2. **Génération de preuve pour terminer la sortie sur la chaîne racine**: Générer la preuve à l'aide du **hash tx** et **MESSAGE_SENT_EVENT_SIG**. Pour générer la preuve, vous pouvez utiliser l'API de génération de preuve hébergée par Polygon ou vous pouvez également faire tourner votre propre API de génération de preuve en suivant les instructions [ici](https://github.com/maticnetwork/proof-generation-api).
 
-Le point de terminaison de génération de preuve hébergé par Polygon est disponible [ici.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Le point de terminaison de génération de preuve hébergé par Polygon est disponible [ici.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Les exemples d'utilisation d'API de génération de preuves pour le Mainnet et Testnet sont les suivants :-
 
-→ [Génération Mumbai Testnet Proof](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Génération Mumbai Testnet Proof](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Génération Polygon Mainnet Proof](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Génération Polygon Mainnet Proof](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. Implémentez `_processMessageFromChild()` dans votre contrat root.
 

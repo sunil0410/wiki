@@ -14,11 +14,11 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 # Việc tìm thông tin Mạng {#reading-network-details}
 
 Bạn có thể tìm hiểu thông tin chi tiết về mạng lưới bằng cách truy cập vào các liên kết hỗ trợ được chia sẻ bên dưới.
-- Cấu hình mạng lưới:<static.matic.network/network/"network_name"/"version"/index.json>
+- Cấu hình mạng lưới:<static.polygon.technology/network/"network_name"/"version"/index.json>
 
 ## Ví dụ {#example}
 
-Đối với TestnetV3: https://static.matic.network/network/testnet/v3/index.json
+Đối với TestnetV3: https://static.polygon.technology/network/testnet/v3/index.json
 
 ```js
 {

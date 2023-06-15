@@ -51,7 +51,7 @@ Ini memungkinkan pengembang atau pemelihara jaringan untuk menguji konfigurasi d
 
 :::note Detail selengkapnya
 
-Lihat [**data JSON**](https://static.matic.network/network/testnet/mumbai/index.json) berikut yang berisi
+Lihat [**data JSON**](https://static.polygon.technology/network/testnet/mumbai/index.json) berikut yang berisi
 detail jaringan.
 
 :::

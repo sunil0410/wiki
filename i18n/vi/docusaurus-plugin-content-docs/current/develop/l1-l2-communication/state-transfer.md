@@ -62,16 +62,16 @@ Ghi chú sự huyên thuyên khi nó sẽ được sử dụng để tạo bằn
 
 2. **Bằng chứng generation để hoàn thành sự ra trên chuỗi route**: Tạo ra bằng chứng bằng cách sử dụng **tx hash**, và **thông điệp_SENT_EVENT_SIG**. Để tạo chứng cứ, bạn có thể sử dụng API hoặc sử dụng API bằng chứng được tổ chức bởi Polygon hoặc bạn cũng có thể xoay xở cho hệ thống API của riêng mình bằng cách tuân theo các hướng dẫn [ở đây](https://github.com/maticnetwork/proof-generation-api).
 
-Điểm cuối bằng chứng được tổ chức bởi Polygon có sẵn ở [đây.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Điểm cuối bằng chứng được tổ chức bởi Polygon có sẵn ở [đây.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Ví dụ API thế hệ thông minh cho Mainnet và Testnet như sau:
 
-→ [Mumbai, Testnet Proof generation](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbai, Testnet Proof generation](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Polygon Mainnet Production](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon Mainnet Production](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. Thực hiện `_processMessageFromChild()` trong hợp đồng gốc của bạn.
 

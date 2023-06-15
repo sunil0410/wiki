@@ -62,16 +62,16 @@ Note the हैश को नोट करें क्योंकि इसे
 
 2. **रूट चेन पर निकलने को पूरा करने का Proof **: **tx हैश** और मैसेज **MESSAGE_SENT_EVENT_SIG**. का इस्तेमाल करके सबूत जनरेट करें सबूत उत्पन्न करने के लिए, आप या तो पॉलीगॉन द्वारा होस्ट किए गए प्रूफ पीढ़ी एपीआई का इस्तेमाल कर सकते हैं या आप [यहां](https://github.com/maticnetwork/proof-generation-api) के निर्देश का पालन करके अपने स्वयं के प्रूफ पीढ़ी API को भी स्पिन कर सकते हैं.
 
-पॉलीगॉन द्वारा होस्ट की जाने वाली proof र का एंडपॉइंट [यहाँ](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) उपलब्ध है.
+पॉलीगॉन द्वारा होस्ट की जाने वाली proof र का एंडपॉइंट [यहाँ](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) उपलब्ध है.
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 मैननेट और टेस्टनेट के लिए प्रूफ पीढ़ी API का इस्तेमाल उदाहरण इस प्रकार है: -
 
-→ [मुंबई टेस्टनेट प्रूफ पीढ़ी](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [मुंबई टेस्टनेट प्रूफ पीढ़ी](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [पॉलीगॉन मेननेट Polygon जेनरेशन](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [पॉलीगॉन मेननेट Polygon जेनरेशन](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. अपने रूट अनुबंध में `_processMessageFromChild()` को लागू करें.
 

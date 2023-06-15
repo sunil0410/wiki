@@ -27,8 +27,8 @@ Puoi controllare il [repository di GitHub](https://github.com/fx-portal/contract
 
 Altrimenti, puoi scegliere di mappare i tuoi token con i già implementati contratti di tunnel. I dettagli di distribuzione di FxTunnel per Polygon Mainnet e Mumbai Testnet sono i seguenti:
 
-- [Polygon Mainnet](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon Mainnet](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Cerca la parola chiave `FxPortalContracts`nei link di cui sopra per trovare tutti i contratti di tunnel predefinito e altre importanti implementazioni del contratto FxPortal.
 
@@ -138,16 +138,16 @@ Dopo che avrai eseguito `withdraw()`sulla catena di bambino, ci vorranno 30-90 m
 
 1. Generare la prova di ustione utilizzando **l'hash tx** e **MESSAGE_SENT_EVENT_SIG**. Per generare la prova, puoi utilizzare le API di generazione di prova ospitate da Polygon o puoi anche creare le tue API di generazione di prova seguendo le istruzioni [qui](https://github.com/maticnetwork/proof-generation-api) indicate.
 
-L'endpoint di generazione di prova ospitato da Polygon è disponibile [qui.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+L'endpoint di generazione di prova ospitato da Polygon è disponibile [qui.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
   - `burnTxHash`è l'hash della `withdraw()`transazione che hai avviato su Polygon.
   - `eventSignature`è la firma dell'evento emesso dalla `withdraw()`funzione. La firma dell'evento per MESSAGE_SENT_EVENT_SIG è `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Gli esempi di utilizzo delle API di generazione di prova per la Mainnet e Testnet sono i seguenti:-
 
-→ [Generazione di Polygon Mainnet](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Generazione di Polygon Mainnet](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [generazione di test di Mumbai](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [generazione di test di Mumbai](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Dai il payload generato come argomento `receiveMessage()`a cui si riferisce nel rispettivo contratto di tunnel di radice su Goerli o Ethereum.
 
@@ -218,7 +218,7 @@ Gli esempi di **ERC721** e **ERC1155** FxTunnel sono i seguenti::-
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-Le corrispondenti implementazioni di Mainnet sono disponibili [qui](https://static.matic.network/network/mainnet/v1/index.json). Cerca la parola chiave `FxPortalContracts`per trovare tutti i contratti di tunnel predefinito e altre importanti implementazioni del contratto FxPortal. Puoi utilizzare il [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)pacchetto per accedere agli indirizzi del contratto e agli ABI.
+Le corrispondenti implementazioni di Mainnet sono disponibili [qui](https://static.polygon.technology/network/mainnet/v1/index.json). Cerca la parola chiave `FxPortalContracts`per trovare tutti i contratti di tunnel predefinito e altre importanti implementazioni del contratto FxPortal. Puoi utilizzare il [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)pacchetto per accedere agli indirizzi del contratto e agli ABI.
 
 ## Indirizzi del contratto {#contract-addresses}
 

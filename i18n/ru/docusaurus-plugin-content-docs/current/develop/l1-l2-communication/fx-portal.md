@@ -27,8 +27,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 В противном случае вы можете выбрать карту ваших токенов с уже развернутыми контрактами туннели. Данные развертывания FxTunnel по умолчанию для Polygon Mainnet и Mumbai Testnet следующие:
 
-- [Polygon Mainnet](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon Mainnet](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Искать ключевое слово `FxPortalContracts`в вышеуказанных ссылках, чтобы найти все контракты туннеля по умолчанию и другие важные развертывание контракта FxPortal.
 
@@ -138,16 +138,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 1. Сгенерируйте доказательство записи с помощью **хэша tx** и **MESSAGE_SENT_EVENT_SIG**. Чтобы создать доказательство, можно использовать API генерации доказательства, размещенный в Polygon, или вы также можете вращать API собственного поколения доказательств, следуя [инструкциям](https://github.com/maticnetwork/proof-generation-api).
 
-Конечная точка поколения, размещенная в Polygon, доступна [здесь.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Конечная точка поколения, размещенная в Polygon, доступна [здесь.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
   - `burnTxHash`это хэш `withdraw()`транзакции, которую вы инициировали в Polygon.
   - `eventSignature` — это подпись события, испускаемого `withdraw()`функцией. Сигнатура события для MESSAGE_SENT_EVENT_SIG — `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Примеры использования API поколения доказательства для Mainnet и Testnet следующие:-
 
-→ [Появление доказательства Polygon](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Появление доказательства Polygon](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Генерация доказательства Mumbai Testnet](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Генерация доказательства Mumbai Testnet](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Пополнение генерируемой полезной нагрузки в качестве аргумента, к которому следует `receiveMessage()`в соответствующем контракте root tunnel на Goerli или Ethereum.
 
@@ -218,7 +218,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-Соответствующие развертывания Mainnet можно найти [здесь](https://static.matic.network/network/mainnet/v1/index.json). Искать ключевое слово, `FxPortalContracts`чтобы найти все контракты туннеля по умолчанию и другие важные развертывание контракта FxPortal. Можно использовать [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)пакет для доступа к адресам контракта и ABI.
+Соответствующие развертывания Mainnet можно найти [здесь](https://static.polygon.technology/network/mainnet/v1/index.json). Искать ключевое слово, `FxPortalContracts`чтобы найти все контракты туннеля по умолчанию и другие важные развертывание контракта FxPortal. Можно использовать [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)пакет для доступа к адресам контракта и ABI.
 
 ## Адреса контрактов {#contract-addresses}
 

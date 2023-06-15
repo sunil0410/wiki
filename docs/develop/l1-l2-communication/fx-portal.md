@@ -28,8 +28,8 @@ You can check out the [GitHub repository](https://github.com/fx-portal/contracts
 
 Otherwise, you can choose to map your tokens with the already deployed tunnel contracts. Default FxTunnel deployment details for Polygon Mainnet and Mumbai Testnet are as follows:
 
-- [Polygon Mainnet](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon Mainnet](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Look for the keyword `FxPortalContracts` in the above links to find all the default tunnel contracts and other important FxPortal contract deployments.
 
@@ -139,16 +139,16 @@ After you have performed `withdraw()` on the child chain, it will take 30-90 min
 
 1. Generate the burn proof using the **tx hash** and **MESSAGE_SENT_EVENT_SIG**. To generate the proof, you can either use the proof generation API hosted by Polygon or you can also spin up your own proof generation API by following the instructions [here](https://github.com/maticnetwork/proof-generation-api).
 
-  The proof generation endpoint hosted by Polygon is available [here](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}).
+  The proof generation endpoint hosted by Polygon is available [here](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}).
 
   - `burnTxHash` is the transaction hash of the `withdraw()` transaction you initiated on Polygon.
   - `eventSignature` is the event signature of the event emitted by the `withdraw()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
   The proof generation API usage examples for the Mainnet and Testnet are as follows:-
 
-  &rarr; [Polygon Mainnet Proof generation](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+  &rarr; [Polygon Mainnet Proof generation](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-  &rarr; [Mumbai Testnet Proof generation](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+  &rarr; [Mumbai Testnet Proof generation](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Feed the generated payload as the argument to `receiveMessage()` in the respective root tunnel contract on Goerli or Ethereum.
 
@@ -219,7 +219,7 @@ The **ERC721** and **ERC1155** Mintable FxTunnel examples are as follows :-
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-The corresponding Mainnet deployments can be found [here](https://static.matic.network/network/mainnet/v1/index.json). Look for the keyword `FxPortalContracts` to find all the default tunnel contracts and other important FxPortal contract deployments. You can make use of the [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta) package to access the contract addresses and ABIs.
+The corresponding Mainnet deployments can be found [here](https://static.polygon.technology/network/mainnet/v1/index.json). Look for the keyword `FxPortalContracts` to find all the default tunnel contracts and other important FxPortal contract deployments. You can make use of the [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta) package to access the contract addresses and ABIs.
 
 ## Contract Addresses
 

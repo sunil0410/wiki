@@ -48,7 +48,7 @@ Mumbai Testnet reproduit le Réseau Principal de Polygone et est utilisé pour l
 
 :::note Plus de Détails
 
-Voir les [**données JSON**](https://static.matic.network/network/testnet/mumbai/index.json) suivantes qui contiennent détails du réseau.
+Voir les [**données JSON**](https://static.polygon.technology/network/testnet/mumbai/index.json) suivantes qui contiennent détails du réseau.
 
 :::
 

@@ -17,7 +17,7 @@ matic.js에서 일부 기능은 용어 더 빨리 가득 차 있습니다. 이�
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 자체 호스팅의 Pro Generation API 서비스를 활용하여 공개적으로 호스팅된 하나에 비해 더 나은 성능을 제공합니다.

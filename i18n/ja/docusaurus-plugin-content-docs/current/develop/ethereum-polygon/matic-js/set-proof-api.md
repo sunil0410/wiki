@@ -17,7 +17,7 @@ matic.js内のいくつかの機能は、より速く用語で充分に設定さ
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 セルフホスト型のプルーフ生成APIサービスを利用することで、公開型のプルーフ生成APIと比較してパフォーマンスが向上します。

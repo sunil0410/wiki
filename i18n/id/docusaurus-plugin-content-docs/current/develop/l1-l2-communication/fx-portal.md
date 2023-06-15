@@ -27,8 +27,8 @@ Anda dapat memeriksa [repositori GitHub](https://github.com/fx-portal/contracts)
 
 Jika tidak, Anda dapat memilih untuk memetakan token dengan kontrak terowongan yang sudah disebarkan. Rincian penyebaran FxTunnel untuk Polygon Mainnet dan Mumbai Testnet sebagai berikut:
 
-- [Mainnet Polygon](https://static.matic.network/network/mainnet/v1/index.json)
-- [Testnet Mumbai](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Mainnet Polygon](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Testnet Mumbai](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Cari kata kunci `FxPortalContracts`dalam tautan di atas untuk menemukan semua kontrak terowongan default dan penyebaran kontrak penting FxPortal lainnya.
 
@@ -138,16 +138,16 @@ Setelah Anda telah melakukan `withdraw()`pada rantai anak akan memakan waktu 30-
 
 1. Buat pembakaran pembakaran menggunakan **hash tx** dan **MESSAGE_SENT_EVENT_SIG**. Untuk menghasilkan bukti, Anda dapat menggunakan API generasi bukti yang diselenggarakan oleh Polygon atau Anda juga dapat memutar API pembuktian Anda sendiri dengan mengikuti instruksi [di sini](https://github.com/maticnetwork/proof-generation-api).
 
-Titik akhir pembuka yang dibawakan oleh Polygon tersedia [di sini.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Titik akhir pembuka yang dibawakan oleh Polygon tersedia [di sini.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
   - `burnTxHash`adalah hash transaksi dari `withdraw()`transaksi yang Anda inisiasi pada Polygon.
   - `eventSignature`adalah tanda tangan peristiwa yang dipancarkan oleh `withdraw()`fungsi. Tanda tangan peristiwa untuk MESSAGE_SENT_EVENT_SIG adalah `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Pembuka penggunaan API untuk Mainnet dan Testnet adalah sebagai berikut:
 
-→ [Polygon Mainnet Proof Generasi](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon Mainnet Proof Generasi](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Pembuka Proof Mumbai Testnet Proof Generation](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Pembuka Proof Mumbai Testnet Proof Generation](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Memberi makan payload yang dihasilkan sebagai argumen untuk `receiveMessage()`dalam kontrak terowongan root masing-masing di Goerli atau Ethereum.
 
@@ -218,7 +218,7 @@ Contoh **ERC721** dan **ERC1155** Mintable FxTunnel adalah sebagai berikut:
 - [FxERC1155:](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C) 0x80be8Cf927047A40d3f5791BF7436D85b3Ae5C
 - [FxERC11555ChildTunnel:](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc) 0x3A0f900d39005005005000500050150050500505550250250250050505005005050050505
 
-Penempatan Mainnet yang sesuai dapat ditemukan [di sini](https://static.matic.network/network/mainnet/v1/index.json). Cari kata kunci `FxPortalContracts`untuk menemukan semua kontrak terowongan default dan penyebaran kontrak penting lainnya. Anda dapat menggunakan [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)paket untuk mengakses alamat kontrak dan ABIs.
+Penempatan Mainnet yang sesuai dapat ditemukan [di sini](https://static.polygon.technology/network/mainnet/v1/index.json). Cari kata kunci `FxPortalContracts`untuk menemukan semua kontrak terowongan default dan penyebaran kontrak penting lainnya. Anda dapat menggunakan [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)paket untuk mengakses alamat kontrak dan ABIs.
 
 ## Alamat Kontrak {#contract-addresses}
 

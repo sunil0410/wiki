@@ -50,7 +50,7 @@ I token di Testnet sono privi di valore e sono diversi dagli asset che detengono
 
 :::note Altri dettagli
 
-Consulta i seguenti [**dati JSON**](https://static.matic.network/network/testnet/mumbai/index.json) contenenti
+Consulta i seguenti [**dati JSON**](https://static.polygon.technology/network/testnet/mumbai/index.json) contenenti
 i dettagli di rete.
 
 :::

@@ -16,6 +16,6 @@ Contratos aplanados: [https://github.com/maticnetwork/pos-portal/tree/v1.1.0/fla
 
 Ejemplos de Matic.js: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-Direcciones de contratos en Mumbai: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). Utiliza la `Proxy`dirección donde esté disponible.
+Direcciones de contratos en Mumbai: [https://static.polygon.technology/network/testnet/mumbai/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json). Utiliza la `Proxy`dirección donde esté disponible.
 
-Direcciones de contratos en Polygon Mainnet: [https://static.matic.network/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Utiliza la `Proxy`dirección donde esté disponible.
+Direcciones de contratos en Polygon Mainnet: [https://static.polygon.technology/network/mainnet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json). Utiliza la `Proxy`dirección donde esté disponible.

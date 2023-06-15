@@ -51,7 +51,7 @@ Eso les permite a los desarrolladores o los mantenedores de redes poner a prueba
 
 :::note Más información
 
-Consulta los siguientes [**datos de JSON**](https://static.matic.network/network/testnet/mumbai/index.json) que contienen
+Consulta los siguientes [**datos de JSON**](https://static.polygon.technology/network/testnet/mumbai/index.json) que contienen
 información de la red.
 
 :::

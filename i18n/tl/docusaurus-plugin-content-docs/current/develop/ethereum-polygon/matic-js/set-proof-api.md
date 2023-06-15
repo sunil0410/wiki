@@ -17,7 +17,7 @@ Makakatulong ang `setProofApi`paraan sa pagtatakda ng URL ng Proof Generation AP
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 Mag-aalok ang paggamit ng self-host na Proof Generation API service ng Proof Generation API para sa isang naka-host na isapubliko.

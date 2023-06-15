@@ -51,7 +51,7 @@ values={[
 
 :::note अधिक जानकारी
 
-नीचे दिया गया [**JSON डेटा**](https://static.matic.network/network/testnet/mumbai/index.json) देखें
+नीचे दिया गया [**JSON डेटा**](https://static.polygon.technology/network/testnet/mumbai/index.json) देखें
 जिसमें नेटवर्क का विवरण है.
 
 :::

@@ -62,16 +62,16 @@ Polygonバリデータは、Ethereumチェーン上で継続的にコントラ�
 
 2. **ルートチェーンでの終了を完了するためのプルーフ生成：****txハッシュ**と**MESSAGE_SENT_EVENT_SIG**を使用してプルーフを生成します。プルーフを生成するには、Polygonがホストするプルーフ生成APIを使用するか、[こちら](https://github.com/maticnetwork/proof-generation-api)で説明したら、プルーフ生成APIをスピンアップすることもできます。
 
-Polygonがホストする証拠生成エンドポイントは[こちら](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})からご覧いただけます。
+Polygonがホストする証拠生成エンドポイントは[こちら](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})からご覧いただけます。
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 メインネットとテストネットのプルーフ生成APIを使用する例は次のとおりです：-
 
-→ [Mumbaiテストネット証明生成](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbaiテストネット証明生成](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Polygonメインネットプルーフ生成](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygonメインネットプルーフ生成](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. ルートコントラクトに`_processMessageFromChild()`を実装します。
 

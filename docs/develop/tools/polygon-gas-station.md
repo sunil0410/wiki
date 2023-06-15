@@ -33,18 +33,18 @@ We received a lot of requests from dApp developers for building a gas price reco
 }>
 <TabItem value="mumbai">
 
-For getting gas price recommendation from this oracle (Polygon Mumbai), send **GET** request to [https://gasstation-mumbai.matic.today/v2](https://gasstation-mumbai.matic.today/v2)
+For getting gas price recommendation from this oracle (Polygon Mumbai), send **GET** request to [https://gasstation-testnet.polygon.technology/v2](https://gasstation-testnet.polygon.technology/v2)
 
 #### cURL
 
 ```bash
-curl https://gasstation-mumbai.matic.today/v2
+curl https://gasstation-testnet.polygon.technology/v2
 ```
 
 #### JavaScript
 
 ```javascript
-fetch('https://gasstation-mumbai.matic.today/v2')
+fetch('https://gasstation-testnet.polygon.technology/v2')
   .then(response => response.json())
   .then(json => console.log(json))
 ```
@@ -53,24 +53,24 @@ fetch('https://gasstation-mumbai.matic.today/v2')
 
 ```python
 import requests
-requests.get('https://gasstation-mumbai.matic.today/v2').json()
+requests.get('https://gasstation-testnet.polygon.technology/v2').json()
 ```
 
 </TabItem>
 <TabItem value="mainnet">
 
-For getting gas price recommendation from this oracle (Polygon Mainnet), send **GET** request to the Polygon Gas Station V2 to get the gas fee estimates. Polygon Gas Station V2 Endpoint: [https://gasstation-mainnet.matic.network/v2](https://gasstation-mainnet.matic.network/v2)
+For getting gas price recommendation from this oracle (Polygon Mainnet), send **GET** request to the Polygon Gas Station V2 to get the gas fee estimates. Polygon Gas Station V2 Endpoint: [https://gasstation.polygon.technology/v2](https://gasstation.polygon.technology/v2)
 
 #### cURL
 
 ```bash
-curl https://gasstation-mainnet.matic.network/v2
+curl https://gasstation.polygon.technology/v2
 ```
 
 #### JavaScript
 
 ```javascript
-fetch('https://gasstation-mainnet.matic.network/v2')
+fetch('https://gasstation.polygon.technology/v2')
   .then(response => response.json())
   .then(json => console.log(json))
 ```
@@ -79,7 +79,7 @@ fetch('https://gasstation-mainnet.matic.network/v2')
 
 ```python
 import requests
-requests.get('https://gasstation-mainnet.matic.network/v2').json()
+requests.get('https://gasstation.polygon.technology/v2').json()
 ```
 
 </TabItem>

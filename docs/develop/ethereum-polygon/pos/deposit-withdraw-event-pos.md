@@ -251,7 +251,7 @@ This can be checked using the following API. The block number of the burn transa
 
 ```js
 // Testnet
-https://apis.matic.network/api/v1/mumbai/block-included/block-number
+https://proof-generator.polygon.technology/api/v1/mumbai/block-included/block-number
 // Mainnet
-https://apis.matic.network/api/v1/matic/block-included/block-number
+https://proof-generator.polygon.technology/api/v1/matic/block-included/block-number
 ```

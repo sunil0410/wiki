@@ -15,7 +15,7 @@ Mabilis ito sa pangkalahatan dahil nag-ge-generate ito ng proof sa backend. Kail
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 
 const erc20RootToken = posClient.erc20(<root token address>, true);
 

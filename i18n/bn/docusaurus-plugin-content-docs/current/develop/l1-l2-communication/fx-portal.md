@@ -27,8 +27,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 অন্যথায়, আপনি ইতিমধ্যে মোতায়েন করা টানেলের কন্ট্র্যাক্ট নিয়ে আপনার টোকেন ম্যাপ করতে চয়ন করতে পারেন। Polygon Mainnet এবং Mumbai for জন্য ডিফল্ট FxTunnel deployment মেন্ট বিস্তারিত নিম্নরূপ রয়েছে:
 
-- [Polygon মেইননেট](https://static.matic.network/network/mainnet/v1/index.json)
-- [মুম্বাই Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Polygon মেইননেট](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [মুম্বাই Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 সমস্ত ডিফল্ট টানেল চুক্তি এবং অন্যান্য গুরুত্বপূর্ণ FxPortal চুক্তি deployments. খুঁজে পেতে উপরের `FxPortalContracts`লিঙ্কটিতে কীওয়ার্ড খুঁজ. ।
 
@@ -138,16 +138,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 1. **tx হ্যাশ** এবং **MESSAGE_SENT_EVENT_SIG** ব্যবহার করে বার্ন প্রমাণ তৈরি করুন। প্রমাণ তৈরি করতে, আপনি Polygon দ্বারা হোস্ট করা প্রুফ জেনারেশন API ব্যবহার করতে পারেন বা আপনি [এখানে](https://github.com/maticnetwork/proof-generation-api) নির্দেশাবলী অনুসরণ করে আপনার নিজের প্রুফ জেনারেশন API স্পিন করতে পারেন।
 
-Polygon দ্বারা হোস্ট করা প্রুফ জেনারেশন endpoint [এখানে](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) পাওয়া গি. াই।
+Polygon দ্বারা হোস্ট করা প্রুফ জেনারেশন endpoint [এখানে](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) পাওয়া গি. াই।
 
   - `burnTxHash`আপনি Polygon-এ শুরু করা `withdraw()`লেনদেনের হ্যাশ।
   - `eventSignature`ফাংশনের দ্বারা নির্গত ইভেন্টের ইভেন্ট `withdraw()`স্বাক্ষর। MESSAGE_SENT_EVENT_SIG এর জন্য ইভেন্ট স্বাক্ষর `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`।
 
 মেইননেট এবং Testnet জন্য প্রমাণ প্রজন্মের API ব্যবহারের উদাহরণ নিম্নরূপ:
 
-→ [Polygon মেইননেট প্রুফ জেনারেশন](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon মেইননেট প্রুফ জেনারেশন](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [মুম্বাই Testnet প্রুফ জেনারেশন](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [মুম্বাই Testnet প্রুফ জেনারেশন](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Goerli বা Ethereum-এ সংশ্লিষ্ট রুট টানেলের চুক্তির `receiveMessage()`আর্গুমেন্ট হিসাবে জেনারেট পেলোডটি ফিড করুন।
 
@@ -218,7 +218,7 @@ Mintable Token FxTunnels এর ক্ষেত্রে, চাইল্ড ট
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-সংশ্লিষ্ট মেইননেট deployments [এখানে](https://static.matic.network/network/mainnet/v1/index.json) পাওয়া যাবে। সমস্ত ডিফল্ট টানেল চুক্তি এবং অন্যান্য গুরুত্বপূর্ণ FxPortal চুক্তি deployments. খুঁজে পেতে `FxPortalContracts`কীওয়ার্ড খুঁজ. । আপনি চুক্তি ঠিকানা এবং ABIs অ্যাক্সেস করতে [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)প্যাকেজের ব্যবহার করতে পারেন।
+সংশ্লিষ্ট মেইননেট deployments [এখানে](https://static.polygon.technology/network/mainnet/v1/index.json) পাওয়া যাবে। সমস্ত ডিফল্ট টানেল চুক্তি এবং অন্যান্য গুরুত্বপূর্ণ FxPortal চুক্তি deployments. খুঁজে পেতে `FxPortalContracts`কীওয়ার্ড খুঁজ. । আপনি চুক্তি ঠিকানা এবং ABIs অ্যাক্সেস করতে [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)প্যাকেজের ব্যবহার করতে পারেন।
 
 ## চুক্তির ঠিকানা {#contract-addresses}
 

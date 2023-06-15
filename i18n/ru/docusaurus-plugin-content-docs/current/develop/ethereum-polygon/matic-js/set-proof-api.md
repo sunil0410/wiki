@@ -17,7 +17,7 @@ description: Конфигурируйте API доказательства.
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 Использование сервиса API для создания собственно поддерживаемого доказательства обеспечит лучшую производительность по сравнению с размещённым.

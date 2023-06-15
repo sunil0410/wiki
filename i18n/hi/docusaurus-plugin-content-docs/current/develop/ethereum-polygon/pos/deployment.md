@@ -16,6 +16,6 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 maticjs के उदाहरण: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-कॉन्ट्रैक्ट मुंबई पर पता चलता है: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). /index.json. `Proxy`पता का इस्तेमाल करें जहां कभी भी यह उपलब्ध हो
+कॉन्ट्रैक्ट मुंबई पर पता चलता है: [https://static.polygon.technology/network/testnet/mumbai/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json). /index.json. `Proxy`पता का इस्तेमाल करें जहां कभी भी यह उपलब्ध हो
 
-पॉलीगॉन मैननेट पर कॉन्ट्रैक्ट को पता चलता है: [https:/static.mattic.net/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). `Proxy`पता का इस्तेमाल करें जहां कभी भी यह उपलब्ध हो
+पॉलीगॉन मैननेट पर कॉन्ट्रैक्ट को पता चलता है: [https:/static.mattic.net/network/mainnet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json). `Proxy`पता का इस्तेमाल करें जहां कभी भी यह उपलब्ध हो

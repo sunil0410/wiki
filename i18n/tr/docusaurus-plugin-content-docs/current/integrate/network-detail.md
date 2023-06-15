@@ -14,11 +14,11 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 # Ağ Detaylarını Okuma {#reading-network-details}
 
 Ağ ayrıntılarını aşağıda paylaşılan destek bağlantılarını ziyaret ederek görebilirsiniz.
-- Ağ yapılandırma: <static.matic.network/network/"network_name"/"version"/index.json>
+- Ağ yapılandırma: <static.polygon.technology/network/"network_name"/"version"/index.json>
 
 ## Örnek {#example}
 
-TestnetV3 için: https://static.matic.network/network/testnet/v3/index.json
+TestnetV3 için: https://static.polygon.technology/network/testnet/v3/index.json
 
 ```js
 {

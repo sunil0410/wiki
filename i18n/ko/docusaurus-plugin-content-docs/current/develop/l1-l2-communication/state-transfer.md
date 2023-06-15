@@ -62,16 +62,16 @@ Polygon 유효성 검사자는 계속해서 이라는 이더리움 체인에서 
 
 2. **rot체인에서 종료를 완료하는 증명 생성 **: **tx 해시와** **MESSAGE_SENT_EVENT_SIG를** 사용하여 증거를 생성합니다. 증거를 생성하기 위해 Polygon이 호스팅한 증명 생성 API를 사용할 수 있거나 [여기에](https://github.com/maticnetwork/proof-generation-api) 지시서에 따라 자체 증명 생성 API를 스핀화할 수 있습니다.
 
-Polygon에서 호스팅하는 증명 생성 끝점 [여기에서](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) 확인할 수 있습니다.
+Polygon에서 호스팅하는 증명 생성 끝점 [여기에서](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature}) 확인할 수 있습니다.
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 메인넷과 테스트넷의 증명 API 사용 예는 다음과 같습니다. -
 
-→ [Mumbai Testnet Pro 생성](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbai Testnet Pro 생성](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Polygon 메인넷 Pro 생성](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon 메인넷 Pro 생성](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. 루트 계약에서 `_processMessageFromChild()`를 구현합니다.
 

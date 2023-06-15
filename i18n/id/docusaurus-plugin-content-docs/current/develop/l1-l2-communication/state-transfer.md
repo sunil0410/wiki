@@ -62,16 +62,16 @@ Perhatikan hash transaksi karena akan digunakan untuk menghasilkan bukti setelah
 
 2. **Proof Generation untuk menyelesaikan keluaran pada rantai root**: Buat bukti menggunakan **hash tx** dan **MESSAGE_SENT_EVENT_SIG**. Untuk menghasilkan bukti, Anda dapat menggunakan API generasi bukti yang diselenggarakan oleh Polygon atau Anda juga dapat memutar API pembuktian Anda sendiri dengan mengikuti instruksi [di sini](https://github.com/maticnetwork/proof-generation-api).
 
-Titik akhir pembuka yang dibawakan oleh Polygon tersedia [di sini.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Titik akhir pembuka yang dibawakan oleh Polygon tersedia [di sini.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
     - `burnTxHash` is the transaction hash of the `_sendMessageToRoot()` transaction you initiated on Polygon.
     - `eventSignature` is the event signature of the event emitted by the `_sendMessageToRoot()` function. The event signature for the MESSAGE_SENT_EVENT_SIG is `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Pembuka penggunaan API untuk Mainnet dan Testnet adalah sebagai berikut:
 
-→ [Pembuka Proof Mumbai Testnet Proof Generation](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Pembuka Proof Mumbai Testnet Proof Generation](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Polygon Mainnet Proof Generasi](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon Mainnet Proof Generasi](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 3. Implementasikan `_processMessageFromChild()` dalam kontrak root.
 

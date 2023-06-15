@@ -16,6 +16,6 @@ Kontrak yang dipadatkan: [https://github.com/maticnetwork/pos-portal/tree/v1.1.0
 
 Contoh Maticjs: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-Kontrak Address on Mumbai: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). Gunakan `Proxy`alamat tempat yang tersedia.
+Kontrak Address on Mumbai: [https://static.polygon.technology/network/testnet/mumbai/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json). Gunakan `Proxy`alamat tempat yang tersedia.
 
-Kontrak Address di Polygon Mainnet: [https://static.matic.net/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Gunakan `Proxy`alamat tempat yang tersedia.
+Kontrak Address di Polygon Mainnet: [https://static.matic.net/network/mainnet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json). Gunakan `Proxy`alamat tempat yang tersedia.

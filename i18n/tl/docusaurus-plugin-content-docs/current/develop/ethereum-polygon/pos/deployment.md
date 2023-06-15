@@ -16,6 +16,6 @@ Mga flattened contract: [https://github.com/maticnetwork/pos-portal/tree/v1.1.0/
 
 Mga halimbawa ng Maticjs: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-Mga Kontrata Addresses sa Mumbai: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). Gamitin ang `Proxy`address kung saan man ito magagamit.
+Mga Kontrata Addresses sa Mumbai: [https://static.polygon.technology/network/testnet/mumbai/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json). Gamitin ang `Proxy`address kung saan man ito magagamit.
 
-Mga Kontrata Addresses sa Polygon Mainnet: [https://static.matic.network/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Gamitin ang `Proxy`address kung saan man ito magagamit.
+Mga Kontrata Addresses sa Polygon Mainnet: [https://static.polygon.technology/network/mainnet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json). Gamitin ang `Proxy`address kung saan man ito magagamit.

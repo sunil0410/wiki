@@ -251,7 +251,7 @@ Ceci peut être vérifié en utilisant l'API suivante. Le numéro de bloc de la 
 
 ```js
 // Testnet
-https://apis.matic.network/api/v1/mumbai/block-included/block-number
+https://proof-generator.polygon.technology/api/v1/mumbai/block-included/block-number
 // Mainnet
-https://apis.matic.network/api/v1/matic/block-included/block-number
+https://proof-generator.polygon.technology/api/v1/matic/block-included/block-number
 ```

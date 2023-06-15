@@ -17,7 +17,7 @@ La `setProofApi`méthode peut aider à définir l'URL de l'API Proof Generation 
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 L'utilisation d'un service API Proof Generation auto-hébergé offrira de meilleures performances par rapport à un service hébergé publiquement.

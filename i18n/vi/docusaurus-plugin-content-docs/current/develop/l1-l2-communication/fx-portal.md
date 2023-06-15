@@ -27,8 +27,8 @@ Bạn có thể kiểm tra kho [lưu trữ Github](https://github.com/fx-portal/
 
 Nếu không, bạn có thể chọn bản đồ các dấu của mình với các hợp đồng đường hầm đã triển khai. Thông tin triển khai FxTunnel mặc định cho Polygon Mainnet và Testnet theo cách sau:
 
-- [Mạng lưới chính Polygon](https://static.matic.network/network/mainnet/v1/index.json)
-- [MumbaiName](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Mạng lưới chính Polygon](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [MumbaiName](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Tìm kiếm từ khóa `FxPortalContracts`trong liên kết trên để tìm tất cả các hợp đồng đường hầm mặc định và các triển khai hợp đồng của FxPortal quan trọng khác.
 
@@ -138,16 +138,16 @@ Sau khi bạn thực hiện `withdraw()`trên chuỗi trẻ em, sẽ mất 30-90
 
 1. Tạo bằng chứng đốt bằng cách sử dụng **tx hash**, và **thông điệp_SENT_EVENT_SIG**. Để tạo chứng cứ, bạn có thể sử dụng API hoặc sử dụng API bằng chứng được tổ chức bởi Polygon hoặc bạn cũng có thể xoay xở cho hệ thống API của riêng mình bằng cách tuân theo các hướng dẫn [ở đây](https://github.com/maticnetwork/proof-generation-api).
 
-Điểm cuối bằng chứng được tổ chức bởi Polygon có sẵn ở [đây.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Điểm cuối bằng chứng được tổ chức bởi Polygon có sẵn ở [đây.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
   - `burnTxHash`là sự hời hợt của giao `withdraw()`dịch bạn đã khởi động trên Polygon.
   - `eventSignature`là dấu hiệu sự kiện của sự kiện được phát hiện bởi chức năng`withdraw()`. Chữ ký sự kiện cho thông điệp_SENT_EVENT_SIG là `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Ví dụ API thế hệ thông minh cho Mainnet và Testnet như sau:
 
-→ [Polygon Mainnet Production](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Polygon Mainnet Production](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Mumbai, Testnet Proof generation](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Mumbai, Testnet Proof generation](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Nạp tải payfounce đã tạo ra như cuộc đối số `receiveMessage()`trong hợp đồng đường hầm tương ứng trên Goerli hoặc Ethereum.
 
@@ -218,7 +218,7 @@ Các ví dụ **ERC721** và **ERC1155** Mintable FxTunnel như sau:
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b35C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155Childnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-Có thể tìm thấy sự triển khai của Mainnet tương ứng [ở đây](https://static.matic.network/network/mainnet/v1/index.json). Tìm từ khóa `FxPortalContracts`để tìm tất cả các hợp đồng đường hầm mặc định và sự triển khai hợp đồng FxPortal quan trọng khác. Bạn có thể sử dụng [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)gói để truy cập vào địa chỉ hợp đồng và ABIS.
+Có thể tìm thấy sự triển khai của Mainnet tương ứng [ở đây](https://static.polygon.technology/network/mainnet/v1/index.json). Tìm từ khóa `FxPortalContracts`để tìm tất cả các hợp đồng đường hầm mặc định và sự triển khai hợp đồng FxPortal quan trọng khác. Bạn có thể sử dụng [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)gói để truy cập vào địa chỉ hợp đồng và ABIS.
 
 ## Địa chỉ Hợp đồng {#contract-addresses}
 

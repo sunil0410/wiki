@@ -17,7 +17,7 @@ Một số chức năng trong matic. J được chấp nhận với thuật ng�
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 Sử dụng một dịch vụ bằng chứng về Hệ thống API tự chủ sẽ cung cấp hiệu suất tốt hơn so với một máy chủ công khai.

@@ -17,7 +17,7 @@ description: กำหนดค่า API หลักฐาน
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 การใช้บริการ Proof Generation จะนำเสนอประสิทธิภาพที่ดีขึ้นเมื่อเทียบกับบริการ Proof Generation ที่ได้รับการรับรองจากสาธารณะแล้ว

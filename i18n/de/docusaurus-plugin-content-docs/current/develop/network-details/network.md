@@ -51,7 +51,7 @@ So können Entwickler oder Netzwerk-Instandhalter Konfigurationen testen und Imp
 
 :::note Weitere Informationen
 
-Lies die folgenden [**JSON-Daten**](https://static.matic.network/network/testnet/mumbai/index.json), die
+Lies die folgenden [**JSON-Daten**](https://static.polygon.technology/network/testnet/mumbai/index.json), die
 Netzwerkdaten enthalten.
 
 :::

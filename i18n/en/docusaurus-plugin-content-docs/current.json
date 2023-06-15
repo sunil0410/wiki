@@ -205,7 +205,7 @@
   },
   "sidebar.integrate.link.Mumbai": {
     "message": "Mumbai",
-    "description": "The label for link Mumbai in sidebar integrate, linking to https://static.matic.network/network/testnet/mumbai/index.json"
+    "description": "The label for link Mumbai in sidebar integrate, linking to https://static.polygon.technology/network/testnet/mumbai/index.json"
   },
   "sidebar.integrate.link.Polygon Faucet": {
     "message": "Polygon Faucet",

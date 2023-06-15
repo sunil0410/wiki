@@ -512,7 +512,7 @@ module.exports = {
             {
               type: "link",
               label: "Mumbai",
-              href: "https://static.matic.network/network/testnet/mumbai/index.json",
+              href: "https://static.polygon.technology/network/testnet/mumbai/index.json",
             },
           ],
         },

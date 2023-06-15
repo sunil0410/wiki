@@ -17,7 +17,7 @@ description: API के सबूत को कॉन्फ़िगर कर�
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 एक self-hosted की Proof Generation API सर्विस का इस्तेमाल करने से सार्वजनिक रूप से होस्ट किए गए एक की तुलना में बेहतर प्रदर्शन की पेशकश होगी.

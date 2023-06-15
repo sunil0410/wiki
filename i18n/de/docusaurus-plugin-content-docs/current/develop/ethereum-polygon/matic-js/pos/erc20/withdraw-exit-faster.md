@@ -15,7 +15,7 @@ Das geht generell schnell, da der Nachweis im Backend generiert wird. Du musst [
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 
 const erc20RootToken = posClient.erc20(<root token address>, true);
 

@@ -27,8 +27,8 @@ Vous pouvez consulter le [répertoire GitHub](https://github.com/fx-portal/contr
 
 Sinon, vous pouvez choisir de cartographier vos jetons avec les contrats tunnels déjà déployés. Les détails de déploiement FxTunnel par défaut pour Polygon Mainnet et Mumbai Testnet sont les suivants:
 
-- [Réseau principal de Polygon](https://static.matic.network/network/mainnet/v1/index.json)
-- [Mumbai Testnet](https://static.matic.network/network/testnet/mumbai/index.json)
+- [Réseau principal de Polygon](https://static.polygon.technology/network/mainnet/v1/index.json)
+- [Mumbai Testnet](https://static.polygon.technology/network/testnet/mumbai/index.json)
 
 Recherchez le mot-clé `FxPortalContracts`dans les liens ci-dessus pour trouver tous les contrats de tunnels par défaut et d'autres déploiements importants de contrats FxPortal.
 
@@ -138,16 +138,16 @@ Après avoir effectué `withdraw()`sur la chaîne enfant, il faudra 30 à 90 min
 
 1. Générez la preuve de gravure à l'aide du **hash tx** et **MESSAGE_SENT_EVENT_SIG**. Pour générer la preuve, vous pouvez utiliser l'API de génération de preuve hébergée par Polygon ou vous pouvez également faire tourner votre propre API de génération de preuve en suivant les instructions [ici](https://github.com/maticnetwork/proof-generation-api).
 
-Le point de terminaison de génération de preuve hébergé par Polygon est disponible [ici.](https://apis.matic.network/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
+Le point de terminaison de génération de preuve hébergé par Polygon est disponible [ici.](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/{burnTxHash}?eventSignature={eventSignature})
 
   - `burnTxHash`est le hachage de la `withdraw()`transaction que vous avez initiée sur Polygon.
   - `eventSignature`est la signature d'événement de l'événement émis par la `withdraw()`fonction. La signature d'événement pour le MESSAGE_SENT_EVENT_SIG est `0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036`.
 
 Les exemples d'utilisation d'API de génération de preuves pour le Mainnet et Testnet sont les suivants :-
 
-→ [Génération Polygon Mainnet Proof](https://apis.matic.network/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Génération Polygon Mainnet Proof](https://proof-generator.polygon.technology/api/v1/matic/exit-payload/0x70bb6dbee84bd4ef1cd1891c666733d0803d81ac762ff7fdc4726e4525c1e23b?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
-→ [Génération Mumbai Testnet Proof](https://apis.matic.network/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
+→ [Génération Mumbai Testnet Proof](https://proof-generator.polygon.technology/api/v1/mumbai/exit-payload/0x4756b76a9611cffee3d2eb645819e988c34615621ea256f818ab788d81e1f838?eventSignature=0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036)
 
 2. Feed la charge utile générée comme argument pour `receiveMessage()`dans le contrat de tunnel root respectif sur Goerli ou Ethereum.
 
@@ -218,7 +218,7 @@ Les exemples **ERC721** et **ERC1155** Mintable FxTunnel sont les suivants :-
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
 
-Les déploiements Mainnet correspondants peuvent être trouvés [ici](https://static.matic.network/network/mainnet/v1/index.json). Recherchez le mot-clé `FxPortalContracts`pour trouver tous les contrats tunnels par défaut et d'autres déploiements importants de contrats FxPortal. Vous pouvez utiliser le [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)package pour accéder aux adresses du contrat et aux ABI.
+Les déploiements Mainnet correspondants peuvent être trouvés [ici](https://static.polygon.technology/network/mainnet/v1/index.json). Recherchez le mot-clé `FxPortalContracts`pour trouver tous les contrats tunnels par défaut et d'autres déploiements importants de contrats FxPortal. Vous pouvez utiliser le [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta)package pour accéder aux adresses du contrat et aux ABI.
 
 ## Les Adresses du Contrat {#contract-addresses}
 

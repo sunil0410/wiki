@@ -10,14 +10,14 @@ description: Configure proof API.
 
 Some of the functions in matic.js are suffixed with the term faster. As the name suggests, they generate results faster compared to their non-faster counterparts. They do so by utilizing the Proof Generation API as the backend which can be hosted by anyone.
 
-[https://apis/matic.network](https://apis/matic.network) is a publicly available Proof Generation API, hosted by Polygon.
+[https://proof-generator.polygon.technology/](https://proof-generator.polygon.technology/) is a publicly available Proof Generation API, hosted by Polygon.
 
 The `setProofApi` method can help in setting the Proof Generation API’s URL to the matic.js instance.
 
 ```
 import { setProofApi } from '@maticnetwork/maticjs'
 
-setProofApi("https://apis.matic.network/");
+setProofApi("https://proof-generator.polygon.technology/");
 ```
 
 Utilizing a self-hosted Proof Generation API service will offer better performance compared to a publicly hosted one.

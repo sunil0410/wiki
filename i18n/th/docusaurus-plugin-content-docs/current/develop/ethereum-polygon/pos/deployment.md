@@ -16,6 +16,6 @@ Artifacts: [https://github.com/maticnetwork/static/tree/master/network/testnet/m
 
 ตัวอย่าง Maticjs: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-การดำเนินการบน มุมไบ: [https://static.matic.net/net/mumby/index.json](https://static.matic.network/network/testnet/mumbai/index.json)ใช้`Proxy`ที่อยู่ที่เคยมีไว้
+การดำเนินการบน มุมไบ: [https://static.matic.net/net/mumby/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json)ใช้`Proxy`ที่อยู่ที่เคยมีไว้
 
-ที่อยู่บนเมนเนต: [https://static.matic.net/mainet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json)ใช้`Proxy`ที่อยู่ที่เคยมีไว้
+ที่อยู่บนเมนเนต: [https://static.matic.net/mainet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json)ใช้`Proxy`ที่อยู่ที่เคยมีไว้

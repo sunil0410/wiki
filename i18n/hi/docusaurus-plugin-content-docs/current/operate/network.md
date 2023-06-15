@@ -52,7 +52,7 @@ This allows developers or network maintainers to test configurations and experim
 
 :::note More details
 
-See the following [**JSON data**](https://static.matic.network/network/testnet/mumbai/index.json) containing
+See the following [**JSON data**](https://static.polygon.technology/network/testnet/mumbai/index.json) containing
 network details.
 
 :::

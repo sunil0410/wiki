@@ -16,6 +16,6 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 Matic[j](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)sの例：https://github.com/maticnetwork/matic.js/tree/master/examples/pos
 
-ムンバイでの契約の[アドレス：https://static.matic.network/testnet/mumbai/index.json。](https://static.matic.network/network/testnet/mumbai/index.json)利用可能な場所に`Proxy`住所を使用してください。
+ムンバイでの契約の[アドレス：https://static.polygon.technology/testnet/mumbai/index.json。](https://static.polygon.technology/network/testnet/mumbai/index.json)利用可能な場所に`Proxy`住所を使用してください。
 
-Polygonメインネット上のコントラクトアドレス：[https://static.matic.network/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json)。利用可能な場所に`Proxy`住所を使用してください。
+Polygonメインネット上のコントラクトアドレス：[https://static.polygon.technology/network/mainnet/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json)。利用可能な場所に`Proxy`住所を使用してください。

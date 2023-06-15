@@ -16,6 +16,6 @@ Hợp đồng san phẳng: [https://github.com/maticnetwork/pos-portal/tree/v1.1
 
 Ví dụ Maticjs: [https://github.com/maticnetwork/matic.js/tree/master/examples/pos](https://github.com/maticnetwork/matic.js/tree/master/examples/pos)
 
-Concts Addesses trên Mumbai: [https://static.mạng lưới/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). Sử dụng `Proxy`địa chỉ nơi nó có sẵn.
+Concts Addesses trên Mumbai: [https://static.mạng lưới/testnet/mumbai/index.json](https://static.polygon.technology/network/testnet/mumbai/index.json). Sử dụng `Proxy`địa chỉ nơi nó có sẵn.
 
-Kết quả Addicesses trên Polygon Mainnet: [https://static.net/matic.net/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Sử dụng `Proxy`địa chỉ nơi nó có sẵn.
+Kết quả Addicesses trên Polygon Mainnet: [https://static.net/matic.net/v1/index.json](https://static.polygon.technology/network/mainnet/v1/index.json). Sử dụng `Proxy`địa chỉ nơi nó có sẵn.
