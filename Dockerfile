@@ -1,5 +1,5 @@
 # Stage 1: Build the React app
-FROM node:14-alpine AS build
+FROM node:18-alpine AS build
 
 # Install python/pip and build tools cuz node-gyp is horrible
 ENV PYTHONUNBUFFERED=1
@@ -11,7 +11,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm ci 
 
 # Copy the React app files
 COPY . .
