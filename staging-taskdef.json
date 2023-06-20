@@ -106,7 +106,7 @@
     ],
     "volumes": [],
     "networkMode": "awsvpc",
-    "memory": "4096",
+    "memory": "8192",
     "cpu": "2048",
     "executionRoleArn": "arn:aws:iam::070528468658:role/wiki-staging-TaskRole",
     "family": "wiki-staging-taskdefinition",
