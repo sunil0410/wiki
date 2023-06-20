@@ -1,26 +1,29 @@
-# Use the official Node.js 14 image as the base
-FROM node:18-alpine
+FROM node:18-alpine AS builder
 
-# Install docker dependencies
+# Install python/pip and build tools cuz node-gyp is horrible
+ENV PYTHONUNBUFFERED=1
 RUN apk add --update --no-cache python3 py3-pip build-base autoconf automake libtool
 
-# Set the working directory
+WORKDIR /app
+COPY package.json .
+# copy lock file (styled-components dependency)
+COPY yarn.lock .
+
+RUN yarn install --ignore-scripts
+
+# Copy what we built into a clean image
+FROM node:18-alpine
+
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-
-# Install project dependencies
-RUN npm ci
-
-# Copy the entire project to the working directory
+COPY --from=builder /app/node_modules ./node_modules
 COPY . .
 
-# Build the Docusaurus application
-RUN npm run build
+# Run as a non-root user
+RUN adduser -D polygon
+RUN chown -R polygon /app
+USER polygon
 
-# Expose port 3000 for the application
 EXPOSE 3000
 
-# Start the Docusaurus application
-CMD ["npx", "http-server", "build", "-p", "3000"]
+CMD [ "sh", "-c", "npx next build && npx next start -p 3000" ]
