@@ -1,151 +1,101 @@
 {
-    "requiresCompatibilities": [
-      "FARGATE"
-    ],
-    "inferenceAccelerators": [],
-    "containerDefinitions": [
-      {
-        "dnsSearchDomains": null,
-        "environmentFiles": [],
-        "logConfiguration": {
-          "logDriver": "awsfirelens",
-          "options": {
-            "@type": "null"
-          }
-        },
-        "entryPoint": null,
-        "portMappings": [
-          {
-            "hostPort": 3000,
-            "protocol": "tcp",
-            "containerPort": 3000
-          }
-        ],
-        "command": null,
-        "linuxParameters": null,
-        "cpu": 0,
-        "environment": null,
-        "resourceRequirements": null,
-        "ulimits": null,
-        "dnsServers": null,
-        "mountPoints": null,
-        "workingDirectory": null,
-        "secrets": null,
-        "dockerSecurityOptions": null,
-        "memory": null,
-        "memoryReservation": null,
-        "volumesFrom": null,
-        "stopTimeout": null,
-        "image": "test",
-        "startTimeout": null,
-        "firelensConfiguration": null,
-        "dependsOn": null,
-        "disableNetworking": null,
-        "interactive": null,
-        "healthCheck": null,
-        "essential": true,
-        "links": null,
-        "hostname": null,
-        "extraHosts": null,
-        "pseudoTerminal": null,
-        "user": null,
-        "readonlyRootFilesystem": null,
-        "dockerLabels": null,
-        "systemControls": null,
-        "privileged": null,
-        "name": "wiki-staging",
-        "repositoryCredentials": {
-          "credentialsParameter": ""
-        }
-      },
-      {
-        "name": "log_router_coralogix",
-        "image": "docker.io/coralogixrepo/fluentd-coralogix-ecs:v1.15.2",
-        "cpu": 0,
-        "portMappings": [],
-        "essential": true,
-        "entryPoint": [],
-        "command": [],
-        "environment": [
-          {
-            "name": "APP_NAME",
-            "value": "wiki-staging"
-          },
-          {
-            "name": "ENDPOINT",
-            "value": "api.coralogix.com"
-          },
-          {
-            "name": "log_level",
-            "value": "error"
-          },
-          {
-            "name": "SUB_SYSTEM",
-            "value": "app-container"
-          }
-        ],
-        "secrets": [
-          {
-            "valueFrom": "arn:aws:ssm:eu-west-1:070528468658:parameter/wiki-staging/CORALOGIX_PRIVATE_KEY",
-            "name": "PRIVATE_KEY"
-          }
-        ],
-        "mountPoints": [],
-        "volumesFrom": [],
-        "user": "0",
-        "logConfiguration": null,
-        "firelensConfiguration": {
-          "type": "fluentd",
-          "options": {
-            "config-file-type": "file",
-            "config-file-value": "/fluentd/etc/firelens.conf"
-          }
-        }
-      }
-  
-    ],
-    "volumes": [],
-    "networkMode": "awsvpc",
-    "memory": "8192",
-    "cpu": "2048",
-    "executionRoleArn": "arn:aws:iam::070528468658:role/wiki-staging-TaskRole",
-    "family": "wiki-staging-taskdefinition",
-    "taskRoleArn": "arn:aws:iam::070528468658:role/wiki-staging-TaskRole",
-    "runtimePlatform": {
-      "operatingSystemFamily": "LINUX"
-    },
-    "tags": [
-      {
-        "key": "Role",
-        "value": "frontend-application"
-      },
-      {
-        "key": "ParentService",
-        "value": "wiki-staging"
-      },
-      {
-        "key": "Environment",
-        "value": "staging"
-      },
-      {
-        "key": "Service",
-        "value": "wiki-staging.polygon.technology"
-      },
-      {
-        "key": "Host",
-        "value": "AWS"
-      },
-      {
-        "key": "IAC",
-        "value": "terraform-workspace-aws-test-applications-eu-west-1-apps-wiki-staging-polygon-technology"
-      },
-      {
-        "key": "Team",
-        "value": "documentation"
-      },
-      {
-        "key": "Name",
-        "value": "wiki-staging-taskdefinition"
-      }
-    ]
-  }
+	"requiresCompatibilities": [
+		"FARGATE"
+	],
+	"inferenceAccelerators": [],
+	"containerDefinitions": [{
+		"dnsSearchDomains": null,
+		"environmentFiles": [],
+		"logConfiguration": {
+			"logDriver": "awsfirelens",
+			"options": {
+				"@type": "null"
+			}
+		},
+		"entryPoint": null,
+		"portMappings": [{
+			"hostPort": 3000,
+			"protocol": "tcp",
+			"containerPort": 3000
+		}],
+		"command": null,
+		"linuxParameters": null,
+		"cpu": 0,
+		"environment": null,
+		"resourceRequirements": null,
+		"ulimits": null,
+		"dnsServers": null,
+		"mountPoints": null,
+		"workingDirectory": null,
+		"secrets": null,
+		"dockerSecurityOptions": null,
+		"memory": null,
+		"memoryReservation": null,
+		"volumesFrom": null,
+		"stopTimeout": null,
+		"image": "test",
+		"startTimeout": null,
+		"firelensConfiguration": null,
+		"dependsOn": null,
+		"disableNetworking": null,
+		"interactive": null,
+		"healthCheck": null,
+		"essential": true,
+		"links": null,
+		"hostname": null,
+		"extraHosts": null,
+		"pseudoTerminal": null,
+		"user": null,
+		"readonlyRootFilesystem": null,
+		"dockerLabels": null,
+		"systemControls": null,
+		"privileged": null,
+		"name": "wiki-staging",
+		"repositoryCredentials": {
+			"credentialsParameter": ""
+		}
+	}],
+	"volumes": [],
+	"networkMode": "awsvpc",
+	"memory": "8192",
+	"cpu": "2048",
+	"executionRoleArn": "arn:aws:iam::070528468658:role/wiki-staging-TaskRole",
+	"family": "wiki-staging-taskdefinition",
+	"taskRoleArn": "arn:aws:iam::070528468658:role/wiki-staging-TaskRole",
+	"runtimePlatform": {
+		"operatingSystemFamily": "LINUX"
+	},
+	"tags": [{
+			"key": "Role",
+			"value": "frontend-application"
+		},
+		{
+			"key": "ParentService",
+			"value": "wiki-staging"
+		},
+		{
+			"key": "Environment",
+			"value": "staging"
+		},
+		{
+			"key": "Service",
+			"value": "wiki-staging.polygon.technology"
+		},
+		{
+			"key": "Host",
+			"value": "AWS"
+		},
+		{
+			"key": "IAC",
+			"value": "terraform-workspace-aws-test-applications-eu-west-1-apps-wiki-staging-polygon-technology"
+		},
+		{
+			"key": "Team",
+			"value": "documentation"
+		},
+		{
+			"key": "Name",
+			"value": "wiki-staging-taskdefinition"
+		}
+	]
+}
