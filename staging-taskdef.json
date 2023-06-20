@@ -6,9 +6,6 @@
 	"containerDefinitions": [{
 		"dnsSearchDomains": null,
 		"environmentFiles": [],
-		"logConfiguration": {
-			"logDriver": "awslogs"
-		},
 		"entryPoint": null,
 		"portMappings": [{
 			"hostPort": 3000,
