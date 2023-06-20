@@ -7,10 +7,7 @@
 		"dnsSearchDomains": null,
 		"environmentFiles": [],
 		"logConfiguration": {
-			"logDriver": "awsfirelens",
-			"options": {
-				"@type": "null"
-			}
+			"logDriver": "awslogs"
 		},
 		"entryPoint": null,
 		"portMappings": [{
