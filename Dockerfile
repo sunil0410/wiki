@@ -1,6 +1,10 @@
 # Stage 1: Build the React app
 FROM node:14-alpine AS build
 
+# Install python/pip and build tools cuz node-gyp is horrible
+ENV PYTHONUNBUFFERED=1
+RUN apk add --update --no-cache python3 py3-pip build-base autoconf automake libtool
+
 WORKDIR /app
 
 # Copy package.json and package-lock.json
