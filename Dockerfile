@@ -1,29 +1,28 @@
-FROM node:18-alpine AS builder
-
-# Install python/pip and build tools cuz node-gyp is horrible
-ENV PYTHONUNBUFFERED=1
-RUN apk add --update --no-cache python3 py3-pip build-base autoconf automake libtool
-
-WORKDIR /app
-COPY package.json .
-# copy lock file (styled-components dependency)
-COPY yarn.lock .
-
-RUN yarn install --ignore-scripts
-
-# Copy what we built into a clean image
-FROM node:18-alpine
+# Stage 1: Build the React app
+FROM node:14-alpine AS build
 
 WORKDIR /app
 
-COPY --from=builder /app/node_modules ./node_modules
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci --only=production
+
+# Copy the React app files
 COPY . .
 
-# Run as a non-root user
-RUN adduser -D polygon
-RUN chown -R polygon /app
-USER polygon
+# Build the React app
+RUN npm run build
 
-EXPOSE 3000
+# Stage 2: Serve the app with NGINX
+FROM nginx:alpine
 
-CMD [ "sh", "-c", "npx next build && npx next start -p 3000" ]
+# Copy the build files from the previous stage
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Expose the desired port (default is 80 for NGINX)
+EXPOSE 80
+
+# Start NGINX
+CMD ["nginx", "-g", "daemon off;"]
