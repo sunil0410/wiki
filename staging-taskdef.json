@@ -8,9 +8,9 @@
 		"environmentFiles": [],
 		"entryPoint": null,
 		"portMappings": [{
-			"hostPort": 3000,
+			"hostPort": 80,
 			"protocol": "tcp",
-			"containerPort": 3000
+			"containerPort": 80
 		}],
 		"command": null,
 		"linuxParameters": null,
