@@ -1,4 +1,4 @@
-name: Wiki Staging Deployment
+name: Wiki Prod Deployment
 on:
   push:
     branches: ['main']
