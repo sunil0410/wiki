@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy_staging:
-    name: Staging Deployment
+    name: Prod Deployment
     permissions:
       id-token: write
       contents: write
