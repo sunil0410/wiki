@@ -8,7 +8,7 @@ module.exports = {
   baseUrl: "/",
   favicon: "img/logo-round-purple.png",
   organizationName: "Polygon Labs",
-  projectName: "matic-docs",
+  projectName: "wiki",
   customFields: {
     description: "Build your next blockchain app on Polygon.",
   },
@@ -510,7 +510,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/maticnetwork/matic-docs/tree/master/",
+          editUrl: "https://github.com/0xPolygon/wiki/tree/master/",
           path: "docs",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
