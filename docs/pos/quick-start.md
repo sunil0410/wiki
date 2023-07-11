@@ -30,15 +30,15 @@ team and the community by subscribing to the
 
 If you are an Ethereum developer, you are already a Polygon developer. Simply switch to the [Polygon RPC](https://polygon-rpc.com/) and get started. All the tools you are familiar with on the Ethereum blockchain are supported on Polygon by default, such as Truffle, Remix, and Web3js.
 
-You can deploy decentralized applications to either Polygon Mumbai Testnet or the Mainnet. The Polygon Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details in the [network documentation](https://github.com/maticnetwork/matic-docs/blob/master/docs/operate/network.md).
+You can deploy decentralized applications to either Polygon Mumbai Testnet or the Mainnet. The Polygon Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details in the [network documentation](https://github.com/0xPolygon/wiki/blob/master/docs/operate/network.md).
 
 ### Wallets
 
-To interact with the Polygon Network, you need to have an Ethereum-based wallet because Polygon runs on Ethereum Virtual Machine (EVM). You can choose to set up a [Metamask](https://github.com/maticnetwork/matic-docs/blob/master/docs/tools/wallets/metamask/overview.md) or [Arkane](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/wallets/arkane/intro_arkane.md) Wallet. More on wallet-related information and why you need one can be found in our [wallet documentation](https://docs.polygon.technology/docs/develop/wallets/getting-started).
+To interact with the Polygon Network, you need to have an Ethereum-based wallet because Polygon runs on Ethereum Virtual Machine (EVM). You can choose to set up a [Metamask](https://github.com/0xPolygon/wiki/blob/master/docs/tools/wallets/metamask/overview.md) or [Arkane](https://github.com/0xPolygon/wiki/blob/master/docs/develop/wallets/arkane/intro_arkane.md) Wallet. More on wallet-related information and why you need one can be found in our [wallet documentation](https://docs.polygon.technology/docs/develop/wallets/getting-started).
 
 ### Smart Contracts
 
-Polygon supports many services you can use to test, compile, debug, and deploy decentralized applications onto the Polygon Network. These include deployment using [thirdweb](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/thirdweb.md), [Alchemy](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/alchemy.md), [Chainstack](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/chainstack.md), [QuickNode](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/quicknode.md), [Remix](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/remix.md), [Truffle](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/truffle.md), [Hardhat](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/hardhat.md), and [Replit](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/replit.md).
+Polygon supports many services you can use to test, compile, debug, and deploy decentralized applications onto the Polygon Network. These include deployment using [thirdweb](https://github.com/0xPolygon/wiki/blob/master/docs/develop/thirdweb.md), [Alchemy](https://github.com/0xPolygon/wiki/blob/master/docs/develop/alchemy.md), [Chainstack](https://github.com/0xPolygon/wiki/blob/master/docs/develop/chainstack.md), [QuickNode](https://github.com/0xPolygon/wiki/blob/master/docs/develop/quicknode.md), [Remix](https://github.com/0xPolygon/wiki/blob/master/docs/develop/remix.md), [Truffle](https://github.com/0xPolygon/wiki/blob/master/docs/develop/truffle.md), [Hardhat](https://github.com/0xPolygon/wiki/blob/master/docs/develop/hardhat.md), and [Replit](https://github.com/0xPolygon/wiki/blob/master/docs/develop/replit.md).
 
 ### Connecting to Polygon
 
@@ -112,7 +112,7 @@ Decentralized application development encourages network decentralization. Follo
 
 :::caution Content disclaimer
 
-Please view the third-party content disclaimer [<ins>here</ins>](https://github.com/maticnetwork/matic-docs/blob/master/CONTENT_DISCLAIMER.md).
+Please view the third-party content disclaimer [<ins>here</ins>](https://github.com/0xPolygon/wiki/blob/master/CONTENT_DISCLAIMER.md).
 
 :::
 
