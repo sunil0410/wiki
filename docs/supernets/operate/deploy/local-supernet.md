@@ -14,6 +14,8 @@ keywords:
 
 In this section, we'll prepare initiate a new chain with PolyBFT consensus and prepare the initial Supernet nodes.
 
+## 1. Generate Keys
+
 To initialize PolyBFT consensus, we need to generate the necessary secrets for each node.
 
 The `polygon-edge polybft-secrets` command is used to generate account secrets for validators. The command initializes private keys for the consensus client (validators + networking) to a Secrets Manager config file.
@@ -23,17 +25,16 @@ The `polygon-edge polybft-secrets` command is used to generate account secrets f
 <details>
 <summary>Flags ↓</summary>
 
-| Flag            | Description                                                                                               | Example           |
-|-----------------|-----------------------------------------------------------------------------------------------------------|-------------------|
-| `--account`     | Indicates whether a new account should be created (default true).                                         |                   |
-| `--chain-id`    | Specifies the ID of the chain (default 100).                                                              | `--chain-id 333`  |
+| Flag            | Description                                                                                               | Example                    |
+|-----------------|-----------------------------------------------------------------------------------------------------------|----------------------------|
+| `--account`     | Indicates whether a new account should be created (default true).                                         |                            |
 | `--config`      | The path to the SecretsManager config file. If omitted, the local file system secrets manager is used.    | `--config /path/to/config` |
-| `--data-dir`    | The directory for the Polygon Edge data if the local file system is used.                                 | `--data-dir test-chain-` |
-| `--insecure`    | Indicates whether the secrets stored on the local storage should be encrypted. Intended for testing purposes only. | `--insecure` |
-| `--network`     | Indicates whether a new Network key should be created (default true).                                     |                   |
-| `--num`         | Indicates how many secrets should be created, only for the local file system (default 1).                 | `--num 4`         |
-| `--output`      | Indicates whether to output existing secrets.                                                             | `--output`        |
-| `--private`     | Indicates whether the private key should be printed.                                                      | `--private`       |
+| `--data-dir`    | The directory for the Polygon Edge data if the local file system is used.                                 | `--data-dir test-chain-`   |
+| `--insecure`    | Indicates whether the secrets stored on the local storage should be encrypted. Intended for testing purposes only. |                   |
+| `--network`     | Indicates whether a new Network key should be created (default true).                                     |                            |
+| `--num`         | Indicates how many secrets should be created, only for the local file system (default 1).                 | `--num 4`                  |
+| `--output`      | Indicates whether to output existing secrets.                                                             | `--output`                 |
+| `--private`     | Indicates whether the private key should be printed.                                                      | `--private`                |
 
 **Global Flags:**
 
@@ -102,6 +103,8 @@ The generated secrets include the following information for each validator node:
 - **BLS Private and Public Keys**: These keys are used in the Byzantine fault-tolerant (BFT) consensus protocol to aggregate and verify signatures efficiently.
 - **P2P Networking Node ID**: This is a unique identifier for each validator node in the network, allowing them to establish and maintain connections with other nodes.
 
-> The secrets output can be retrieved again if needed by running the following command: `./polygon-edge secrets output --data-dir test-chain-X`
+> The secrets output can be retrieved again if needed by running the following command: `./polygon-edge polybft-secrets --data-dir test-chain-X/ --insecure`
 
-<br/>
+## 2. Next Steps
+
+As the next step, navigate to the [Configure a New Childchain](/docs/supernets/operate/deploy/genesis.md) deployment guide. This will enable you to generate a new genesis file and define the initial validator set, facilitating the setup and configuration of the childchain's initial state.

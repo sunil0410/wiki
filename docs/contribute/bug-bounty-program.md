@@ -1,8 +1,8 @@
 ---
 id: bug-bounty-program
 title: Bug Bounty Program
-sidebar_label: Bug bounty program
-description: Know more about Polygon's Bug Bounty Program.
+sidebar_label: Bug Bounty Program
+description: "Learn about Polygon's Bug Bounty Program."
 keywords:
   - docs
   - matic
@@ -30,10 +30,10 @@ Explore the [code on GitHub](https://github.com/maticnetwork). There are 3 main 
 
 Set up a test network locally. See [Running a node on the local environment](https://github.com/maticnetwork/matic-cli)
 
-The Polygon CLI repository is an easy way to setup and manage the entire Polygon stack, including **Heimdall**, **Bor**, and the **Staking & Plasma smart contracts** on a local environment. This would help in simulating tests and attacks locally.
+The Polygon CLI repository is an easy way to setup and manage the entire Polygon stack, including **Heimdall**, **Bor**, and the **Staking smart contracts** on a local environment. This would help in simulating tests and attacks locally.
 
 If you want to run a full node on the Polygon Mainnet or Mumbai Testnet, you can follow the
-[Run a Validator Node](/docs/maintain/validate/run-validator) guide.
+[Run a Validator Node](/docs/pos/operate/validator/run-validator) guide.
 
 ## Obtaining tokens for testing
 

@@ -16,10 +16,6 @@ Polygon is a scaling solution for public blockchain networks. Polygon PoS chain 
 
 Blockchain is a shared, immutable ledger for recording transactions, tracking assets and building trust. Head over to [Blockchain Basics](blockchain-basics/basics-blockchain.md) section to read more.
 
-## What is a Sidechain?
-
-Think of a Sidechain as a clone of a **parent blockchain**, supporting transfer of assets to and from the main chain. It is simply an alternate to parent chain that creates a new blockchain with its own mechanism of creating blocks (consensus mechanism). Connecting a sidechain to a parent chain involves setting up a method of moving assets between the chains.
-
 ## Types of Interaction on Polygon
 
 - [Polygon PoS chain](/develop/getting-started.md)
@@ -59,14 +55,14 @@ On the Polygon Network, you can be a validator or a delegator. See:
 
 If your goal is to become a validator, it is essential that you understand the Polygon architecture.
 
-See [Polygon Architecture](/maintain/validator/architecture.md).
+See [Polygon Architecture](/pos/design/validator/architecture.md).
 
 ### Components
 
 To have a granular understanding of the Polygon architecture, see core components:
 
-- [Heimdall](/pos/heimdall/overview.md)
-- [Bor](/pos/bor/overview.md)
+- [Heimdall](/pos/design/heimdall/overview.md)
+- [Bor](/pos/design/bor/overview.md)
 - [Contracts](/pos/contracts/stakingmanager.md)
 
 ### Codebases
@@ -82,11 +78,11 @@ To have a granular understanding of the core components, check out their codebas
 ### Node setup
 
 If you want to run a full node on the Polygon Mainnet or Mumbai Testnet, you can follow the
-[Run a Validator Node](/maintain/validate/run-validator.md) guide.
+[Run a Validator Node](/pos/operate/validator/run-validator.md) guide.
 
 ### Staking operations
 
-- [Validator Staking Operations](/docs/maintain/validate/validator-staking-operations)
+- [Validator Staking Operations](/docs/pos/operate/validator/validator-staking-operations)
 - [Delegate](/docs/maintain/delegate/delegate)
 
 ### External Resources

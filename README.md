@@ -10,13 +10,13 @@
 <br>
 
 <p align="center">
-   <a href="https://github.com/maticnetwork/matic-docs/network/members"><img src="https://img.shields.io/github/forks/maticnetwork/matic-docs?style=social"></a>
-   <img src="https://img.shields.io/github/stars/maticnetwork/matic-docs?style=social">
-   <img src="https://img.shields.io/github/languages/count/maticnetwork/matic-docs">
-   <a href="https://github.com/maticnetwork/matic-docs/issues"><img src="https://img.shields.io/github/issues/maticnetwork/matic-docs"></a>
-   <a href="https://github.com/maticnetwork/matic-docs/pulls"><img src="https://img.shields.io/github/issues-pr-raw/maticnetwork/matic-docs"></a>
-   <a href="https://github.com/maticnetwork/matic-docs/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/maticnetwork/matic-docs"></a>
-   <img src="https://img.shields.io/github/languages/code-size/maticnetwork/matic-docs">
+   <a href="https://github.com/0xPolygon/wiki/network/members"><img src="https://img.shields.io/github/forks/0xPolygon/wiki?style=social"></a>
+   <img src="https://img.shields.io/github/stars/0xPolygon/wiki?style=social">
+   <img src="https://img.shields.io/github/languages/count/0xPolygon/wiki">
+   <a href="https://github.com/0xPolygon/wiki/issues"><img src="https://img.shields.io/github/issues/0xPolygon/wiki"></a>
+   <a href="https://github.com/0xPolygon/wiki/pulls"><img src="https://img.shields.io/github/issues-pr-raw/0xPolygon/wiki"></a>
+   <a href="https://github.com/0xPolygon/wiki/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/0xPolygon/wiki"></a>
+   <img src="https://img.shields.io/github/languages/code-size/0xPolygon/wiki">
    <a href="https://discord.gg/zdwkdvMNY2"><img src="https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=Polygon%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square"></a>
    <a href="https://twitter.com/0xPolygon"><img src="https://img.shields.io/twitter/follow/0xPolygon.svg?style=social"></a>
    
@@ -49,20 +49,20 @@ Wiki from the outset.
 2. Clone your forked repo.
    
     ```
-    git clone git@github.com:[your_github_handle]/matic-docs
+    git clone git@github.com:[your_github_handle]/wiki
     ```
 
 3. Navigate into the cloned folder.
    
     ```
-    cd matic-docs
+    cd wiki
     ```
 
 4. Link your cloned repo to the upstream repo.
    > For help, see [GitHub Docs: Configuring a remote for a fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork).
    
     ```
-    git remote add upstream https://github.com/maticnetwork/matic-docs
+    git remote add upstream https://github.com/0xPolygon/wiki
     ```
 
 5. If you have already cloned the repository, be sure to sync your fork with the latest changes. 
@@ -125,7 +125,7 @@ your PR. Note that you must have a GitHub account and an understanding of Markdo
     git push
     ```
 
-4. Submit a PR against the `master` branch of the `maticnetwork/matic-docs` repo
+4. Submit a PR against the `master` branch of the `0xPolygon/wiki` repo
    
 5. Add a title to your PR. 
    > For example, if you want to suggest edits to the "Getting Started" page, name your PR: *Update /docs/develop/getting-started.md*.
@@ -164,7 +164,7 @@ Acceptable PRs will be approved & merged into the `master` branch.
 
 ## Submit an Issue
 
-- Create a [new issue](https://github.com/maticnetwork/matic-docs/issues/new/choose) to report a bug, request a feature, 
+- Create a [new issue](https://github.com/0xPolygon/wiki/issues/new/choose) to report a bug, request a feature, 
   or suggest changes.
 - Comment on the issue if you want to be assigned to it so [our team can assign the issue to you](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
 - If you do not have a specific contribution in mind, you can also browse current issues.

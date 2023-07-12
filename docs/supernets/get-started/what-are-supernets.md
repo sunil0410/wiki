@@ -13,51 +13,9 @@ keywords:
   - modular
 ---
 
-## A distributed network design to build scalable application-specific blockchains
-
-:::warning Breaking changes
-Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change.
-
-Test releases include breaking changes and are not backward compatibility. Use the current test releases for testing and familiarization only.
-
-It is highly recommended that reach out to the Supernets team for support.
-
-<details>
-<summary>The following components are available for testing ↓</summary>
-
-- Local deployments.
-- Cloud deployments.
-- Smart contract and validator allowlisting.
-- Smart contract and validator blocklisting.
-- Minting a native ERC-20 token.
-- Rootchain staking.
-- Transfers of ERC-20, ERC-721, ERC-1155 tokens and arbitrary message passing using the native bridge.
-- Migration support from older versions of the original Edge consensus client that use IBFT consensus to PolyBFT.
-
-Additional components, including on-chain governance and account abstraction, are currently in progress.
-
-If you have any questions or are interested in using Supernets in a production environment, please get in touch with the Supernets team for guidance and support.
-
-</details>
-
-:::
-
 ## Introduction
 
-Supernets are application-specific chains that operate on the Polygons Edge consensus client with [PolyBFT consensus](/docs/supernets/design/consensus/polybft/overview.md). They leverage a [native bridge](/docs/supernets/design/bridge/overview.md) to connect with an associated rootchain, namely, Polygon PoS mainnet, enabling them to inherit its security and capabilities. Additionally, Supernets extend the block space available on the rootchain, providing scalability and interoperability for decentralized applications. With on-chain governance mechanisms, Supernets empower communities to make decisions and upgrade the network in a transparent and compliant manner.
-
-:::info Edge + Supernets = Geth + Ethereum
-
-Before diving into the documentation, please keep the following points in mind:
-
-- **The Polygon Supernets product suite was officially introduced in v0.7.x of the Polygon Edge client.**
-- **The Polygon team will prioritize the latest version of the Edge client and as a result, will no longer provide support for older versions (v0.6.2 and earlier).**
-
-  The Edge repository will remain accessible, and users may fork it and use it as they wish, subject to applicable open-source license terms. It is **highly recommended to upgrade to the latest version**, which includes the most up-to-date features and fixes. However, users who prefer to stay on older versions may continue to do so.
-
-- **Polygon Edge serves as a consensus client implementation for Polygon Supernets, much like how Geth serves as a client implementation for Ethereum.** Both Geth and Edge serve as intermediaries between nodes and their respective blockchains, allowing users to interact with the network and take advantage of its benefits. To draw an analogy, Geth and Edge are to Ethereum and Supernets what web browsers are to the internet, enabling users to access and interact with the network.
-
-:::
+Supernets are application-specific chains that operate on the Polygons Edge consensus client with [PolyBFT consensus](/docs/supernets/design/consensus/polybft/overview.md). They leverage a [native bridge](/docs/supernets/design/bridge/overview.md) to connect with an associated rootchain, enabling them to inherit its security and capabilities. Additionally, Supernets extend the block space available on the rootchain, providing scalability and interoperability for decentralized applications. With on-chain governance mechanisms, Supernets empower communities to make decisions and upgrade the network in a transparent and compliant manner.
 
 The following table offers a comprehensive overview on what Supernets are through different perspectives.
 
@@ -133,3 +91,33 @@ Get started with deploying a local private supernet on the cloud by checking out
 available [<ins>here</ins>](/docs/supernets/operate/deploy-cloud.md).
 
 :::
+
+## Why Supernets?
+
+### Regulatory Compliance and Network Sovereignty
+
+Supernets offer network sovereignty and regulatory compliance by allowing maintainers to select network administrators that meet local regulations. This enables global networks to tailor their configurations to maintain compliance with regional regulatory requirements.
+
+### A New Approach to Infrastructure
+
+Supernets offer a cutting-edge approach to system infrastructure, backed by an ecosystem of premium service providers. This empowers organizations with control over network properties and access while applying permissioned or permissionless infrastructure models. The integration of blockchain technology and industry-leading partners provides additional guarantees in security and efficiency, transforming traditional infrastructure designs and models.
+
+### Tokenization and Asset Management
+
+Supernets facilitate the creation and management of utility tokens, incentivizing network participation and promoting efficient transactions. The ability to mint additional tokens provides flexibility to adjust token supply and distribution dynamically, ensuring network incentives remain aligned with user needs.
+
+### EVM Compatibility and Customization
+
+Supernets focus on flexibility, adaptability, and EVM compatibility, streamlining the development process for developers. This design enables tailored blockchain solutions optimized for specific use cases while allowing the use of existing code and familiar programming languages. Developers can customize their networks with features such as default transaction fees and their own gas tokens, fine-tuning network performance and user experience.
+
+### Robust Consensus
+
+Supernets utilize the PolyBFT consensus mechanism for exceptional throughput, minimal latency, and immediate network finality. This positions them as a highly suitable platform for a variety of use cases.
+
+### Cross-Chain Interoperability for Enhanced Efficiency
+
+Supernets support cross-chain interoperability through their native bridge, enabling seamless asset transfers between different blockchains. This interconnected ecosystem allows developers to build on existing blockchain infrastructures and provides users with access to a broad range of applications and services. Cross-chain interoperability also facilitates increased collaboration and innovation between various blockchain networks.
+
+### On-chain Governance
+
+Supernets enable on-chain governance, enabling participants to vote on changes to system parameters and promote transparency, accountability, and fairness. On-chain governance also allows for the creation of proto-jurisdictions to meet the needs of the community, defining rules and protocols for network operation, and promoting stability, security, innovation, and growth.
