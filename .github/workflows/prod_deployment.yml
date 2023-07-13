@@ -9,8 +9,7 @@ on:
         required: true
       run_production:
         description: 'Staging deployment completed (yes, no)'
-        required: false
-        default: no
+        required: true
 
 jobs:
   deploy_prod:
