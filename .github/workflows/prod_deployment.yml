@@ -20,7 +20,7 @@ jobs:
       contents: write
     environment: prod
     runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.stage == 'production' && github.event.inputs.run_production == 'yes' && github.event_name == 'push'
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.stage == 'production' && github.event.inputs.run_production == 'yes'
     env:
       AWS_REGION: eu-west-1
       ECR_REPOSITORY: wiki-ecr
