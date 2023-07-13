@@ -80,4 +80,4 @@ jobs:
        with:
          cf_zone: ${{ secrets.CLOUDFLARE_ZONE }}
          cf_auth: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
-         hosts: wiki-staging.polygon.technology
+         hosts: wiki.polygon.technology
