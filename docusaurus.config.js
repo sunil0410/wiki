@@ -3,14 +3,14 @@ const katex = require('rehype-katex');
 
 module.exports = {
   title: "Polygon Wiki",
-  tagline: "The official documentation for all Polygon products.",
+  tagline: "The official documentation for Polygon and its protocols.",
   url: "https://wiki.polygon.technology",
   baseUrl: "/",
   favicon: "img/logo-round-purple.png",
   organizationName: "Polygon Labs",
   projectName: "wiki",
   customFields: {
-    description: "Build your next blockchain app on Polygon.",
+    description: "Build your next blockchain application on Polygon.",
   },
   plugins: [
     [
