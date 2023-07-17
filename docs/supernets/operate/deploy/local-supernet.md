@@ -93,7 +93,7 @@ Node ID              = 16Uiu2HAm42EFMhJPGcMRFHPaWWxBzoEsWRbGxJnBHMu4VFojg99U
 
 </details>
 
-:::info Example with AWS SSO
+:::info Example with AWS Secrets
 
 ### Prerequisites
 
