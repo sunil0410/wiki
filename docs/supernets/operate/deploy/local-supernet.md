@@ -97,9 +97,8 @@ Node ID              = 16Uiu2HAm42EFMhJPGcMRFHPaWWxBzoEsWRbGxJnBHMu4VFojg99U
 
 ### Prerequisites
 
-1. You need to have AWS CLI installed and configured on your machine.
-2. Ensure you have cloned the polygon-edge repository and navigated to it in your terminal.
-3. An AWS SSO account with the right permissions to access the SSM Parameter Store is required.
+1. You need to have [AWS CLI](https://aws.amazon.com/cli/) installed and configured on your machine.
+2. An [AWS SSO account](https://aws.amazon.com/iam/identity-center/) with the right permissions to access the SSM Parameter Store is required.
 
 ### Step 1: AWS SSO Login
 
