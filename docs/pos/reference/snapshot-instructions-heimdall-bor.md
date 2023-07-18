@@ -129,7 +129,7 @@ extract_files $client-$network-incremental-compiled-files.txt
 aria2c -c -m 0 -x6 -s6 -i heimdall-$network-incremental-compiled-files.txt --max-concurrent-downloads=1
 ```
 
-Once the extraction is complete, ensure that you update the datadir configuration of your Heimdall/Bor/Erigon client to point to the path where the extracted data is located.
+Once the extraction is complete, ensure that you update the datadir configuration of your client to point to the path where the extracted data is located.
 This ensures that the systemd services can correctly register the snapshot data when the client starts. 
 If you wish to preserve the default client configuration settings, you can use symbolic links (symlinks).
 
