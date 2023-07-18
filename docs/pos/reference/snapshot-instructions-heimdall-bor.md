@@ -32,7 +32,7 @@ For the latest snapshot, please visit [<ins>Polygon Chains Snapshots</ins>](http
 To begin, ensure that your node environment meets the **prerequisites** outlined [here](https://wiki.polygon.technology/docs/operate/full-node-binaries/). Before starting any services, execute the shell script provided below. This script will download and extract the snapshot data, which allows for faster bootstrapping. In our example, we will be using an Ubuntu Linux m5d.4xlarge machine with an 8TB block device attached.
 To transfer the correct chaindata to your disk, follow these steps:
 
-- When prompted, specify the network (mainnet or mumbai) and the client type (heimdall or bor or erigon).
+- When prompted, specify the network ("mainnet" or "mumbai") and the client type ("heimdall" or "bor" or "erigon").
 > The script will automatically handle the download and extraction phases, optimizing disk space by deleting already extracted files.
 - Consider using a Screen session to prevent accidental interruptions during the chaindata download and extraction process.
 
