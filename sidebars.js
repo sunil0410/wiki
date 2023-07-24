@@ -902,7 +902,18 @@ module.exports = {
                   "supernets/operate/deploy/transfers/supernets-cross-chain-withdraw",
                 ],
             },
-            "supernets/operate/deploy/supernets-how-to-upgrade",
+            ],
+        },
+        {
+          type: "category",
+          label: "Upgrade Your Supernet",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "supernets/operate/deploy/upgrades/supernets-how-to-upgrade",
+            "supernets/operate/deploy/upgrades/supernets-v1.1-hardforks",
             ],
         },
         ],
