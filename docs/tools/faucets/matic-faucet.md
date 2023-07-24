@@ -44,7 +44,7 @@ In addition, Polygon faucet also provides **Polygon zkEVM Testnet ETH tokens**.
 - Select one of the blockchain testnet networks, where:
     - **Mumbai** - Polygon Testnet
     - **Goerli** - Ethereum Testnet
-    - **Polygon zkEVM (New)** - Polygon zkEVM Testnet
+    - **Polygon zkEVM** - Polygon zkEVM Testnet
 
 - Select the type of Testnet token that you want to receive, where:
     - **MATIC Token** - Testnet token of Polygon network
