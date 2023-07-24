@@ -46,9 +46,9 @@ values={[
 
 To access the pre-built releases, visit the [GitHub releases page](https://github.com/0xPolygon/polygon-edge/releases). The client provides cross-compiled AMD64/ARM64 binaries for Darwin and Linux.
 
-:::info Latest release: 1.0.0
+:::info Latest release: 1.1.0
 
-**The latest stable test release is [<ins>v1.0.0</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v1.0.0).**
+**The latest stable test release is [<ins>v1.1.0</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v1.1.0).**
 
 :::
 
