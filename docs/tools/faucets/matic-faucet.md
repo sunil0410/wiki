@@ -1,8 +1,8 @@
 ---
 id: matic-faucet
-title: MATIC Faucet
-sidebar_label: Test MATIC Faucet
-description: Request MATIC tokens on the Mumbai Testnet using Polygon, Alchemy, and Quicknode.
+title: Polygon Faucet
+sidebar_label: Test Faucet
+description: Request test tokens on the Mumbai, Goerli or zkEVM Testnet using Polygon, Alchemy, and Quicknode.
 keywords:
   - docs
   - polygon
@@ -20,19 +20,23 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **Polygon Faucet** is a tool provided by **Polygon** and its ecosystem partners such as **Alchemy** and **Quicknode** that **allows you to obtain free MATIC tokens on the Mumbai Testnet** and get started with the Polygon network. **These test tokens enable you to work with Polygon features without having to spend actual MATIC tokens** on the Mainnet.
 
+Additionally, you can also receive **Polygon zkEVM Testnet ETH** on Polygon Faucet.
+
 :::info
 
-Tokens on Testnet networks like Mumbai and Goerli have no value as they are only used for testing purposes.
+Tokens on Testnet networks like Mumbai, Goerli & Polygon zkEVM Testnet have no value as they are only used for testing purposes.
 
 :::
 
 We have listed three faucet tools you can use to receive **MATIC Testnet tokens**, along with their usage guides, in the sections below.
 
-- [Polygon MATIC Faucet](https://faucet.polygon.technology/)
+- [Polygon Faucet](https://faucet.polygon.technology/)
 - [Alchemy MATIC Faucet](https://mumbaifaucet.com/)
 - [QuickNode Multi-chain Faucet](https://faucet.quicknode.com/drip)
 
-## Polygon MATIC Faucet
+In addition, Polygon faucet also provides **Polygon zkEVM Testnet ETH tokens**.
+
+## Polygon Faucet
 
 - Navigate to [**faucet.polygon.technology**](https://faucet.polygon.technology/)
    <img src={useBaseUrl("img/tools/faucet.png")} />
@@ -40,12 +44,14 @@ We have listed three faucet tools you can use to receive **MATIC Testnet tokens*
 - Select one of the blockchain testnet networks, where:
     - **Mumbai** - Polygon Testnet
     - **Goerli** - Ethereum Testnet
+    - **Polygon zkEVM** - Polygon zkEVM Testnet
 
 - Select the type of Testnet token that you want to receive, where:
     - **MATIC Token** - Testnet token of Polygon network
     - **Test ERC20** - Standard testnet token on the Ethereum network
     - **Test ERC1155** - Standard testnet token used for NFTs
     - **LINK** - ERC677 testnet token that inherits functionality from the ERC20
+    - **zkEVM ETH** - Testnet ETH on the Polygon zkEVM testnet network
 
 - Enter your wallet address (you can copy it from your MetaMask or Polygon wallet)
 
@@ -54,6 +60,7 @@ We have listed three faucet tools you can use to receive **MATIC Testnet tokens*
 - Click **Confirm** to finalize the transaction
 
    <img src={useBaseUrl("img/tools/confirm-transaction.png")} />
+   
 
 :::caution
 
