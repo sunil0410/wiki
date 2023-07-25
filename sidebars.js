@@ -487,6 +487,7 @@ module.exports = {
             //"maintain/glossary",
           ],
         },
+        "pos/operate/frequent-node-commands",
       ],
     },
     {
