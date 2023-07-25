@@ -22,6 +22,8 @@ We received a lot of requests from dApp developers for building a gas price reco
 
 **Polygon Gas Station** has been deployed both on the Polygon Mainnet & Mumbai Testnet. It queries the RPC for `eth_feeHistory` and fetches the 10th, 25th, and 50th percentiles of priority fees for transactions in each of the last 15 blocks. The average value of the 10th, 25th, and 50th percentiles become the `safeLow`, `standard`, and fast fee predictions.
 
+**Important Note: On Polygon PoS Mainnet, it is mandatory to pass a minimum priority fees of 30 gwei**
+
 ## Usage
 
 <Tabs
@@ -112,3 +114,4 @@ An example JSON response will look like this:
 - {'safelow', 'standard', 'fast', 'estimatedBaseFee'} are gas prices in GWei. You can use these prices before sending transaction off to Polygon, depending upon your needs.
 - `blockNumber` tells what was latest block mined when recommendation was made.
 - `blockTime`, in second, gives average block time of the network.
+-  On Polygon PoS Mainnet, it is mandatory to pass a **minimum priority fees of 30 gwei**
