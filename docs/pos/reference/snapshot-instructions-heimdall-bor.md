@@ -183,7 +183,7 @@ sudo service bor start
 | suggested disk size (2.5x buffer) | 925 GB * 2.5 (natural chain growth) | 2.5 TB | 
 
 **NOTE**
-POS Network is deprecating Archive Node snapshots we request users to move to the Erigon Client and make use of Erigon Snapshots.
+PoS Network is deprecating Archive Node snapshots we request users to move to the Erigon Client and make use of Erigon Snapshots.
 
 **Polygon Mainnet Erigon Archive**
 
