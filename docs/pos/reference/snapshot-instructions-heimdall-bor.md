@@ -182,6 +182,9 @@ sudo service bor start
 | approx. total extracted size | 875 GB (erigon) + 50 GB (heimdall) | 925 GB |
 | suggested disk size (2.5x buffer) | 925 GB * 2.5 (natural chain growth) | 2.5 TB | 
 
+**NOTE**
+PoS Network is deprecating Archive Node snapshots we request users to move to the Erigon Client and make use of Erigon Snapshots.
+
 **Polygon Mainnet Erigon Archive**
 
 Currently under maintenance. ETA Aug 2023 for Erigon bor-mainnet incremental snapshots.
