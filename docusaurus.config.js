@@ -289,16 +289,16 @@ module.exports = {
           title: "Community",
           items: [
             {
+              href: 'https://forum.polygon.technology/',
+              label: 'Forum',
+            },
+            {
               href: 'https://twitter.com/0xPolygon',
               label: 'Twitter',
             },
             {
               href: 'https://discord.com/invite/0xPolygon',
               label: 'Discord',
-            },
-            {
-              href: 'https://forum.polygon.technology/',
-              label: 'Forum',
             },
             {
               href: 'https://www.reddit.com/r/0xPolygon/',
@@ -328,6 +328,23 @@ module.exports = {
             {
               label: "Brand Kit",
               href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+            },
+          ]
+        },
+        {
+          title: "Legal",
+          items: [
+            {
+              label: "Content Disclaimer",
+              href: "https://github.com/0xPolygon/wiki/blob/main/CONTENT_DISCLAIMER.md"
+            },
+            {
+              label: "Terms of Use",
+              href: "https://polygon.technology/terms-of-use"
+            },
+            {
+              label: "Privacy Policy",
+              href: "https://polygon.technology/privacy-policy"
             },
           ]
         },
