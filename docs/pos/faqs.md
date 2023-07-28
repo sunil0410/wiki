@@ -347,7 +347,7 @@ A new auction process for validator replacement will be rolled out.
 
 ## Heimdall shows "Failed Sanity Checks"
 
-`Addressbook` warnings can be ignored without an issue most of the time. If your node is connected to sufficient number of peers, these kind of errors can be ignored. Your `pex` is just trying to re-establish its connections with peers already present in `addrbook.json`.
+`Addressbook` warnings can be ignored without an issue most of the time. If your node is connected to a sufficient number of peers, these kinds of errors can be ignored. Your `pex` is just trying to re-establish its connections with peers already present in `addrbook.json`.
 
 ## Heimdall and Bor logs are fine and even my bridge is running correctly but my node is not signing any checkpoints
 
@@ -558,6 +558,18 @@ It's a generic statement that synchronization can fail due to many reasons like 
 ## Bor shows "Peer discarded announcement"
 
 If a peer tries to serve the node with an old block, then the node doesn't accept it and it throws this message.
+
+## Bor shows "Deep froze chain segment"
+
+This is not an error/warning. it's an info statement basically, this is some operation of Bor which is like a data transfer of ancient data.
+
+## Bor shows "Snapshot extension registration failed"
+
+It's an error that is received from the peer and that has nothing to do with  our own node.
+
+## Heimdall shows "Blocks not in continuity"
+
+This might happen when any node proposes the wrong span, in that condition other nodes give this error.
 
 ## How to connect to a Web Socket?
 
