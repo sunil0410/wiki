@@ -166,7 +166,7 @@ Bor:
 
 ### 8. How many validators can be active concurrently?
 
-There will be upto 100 active validators at a time. We will bring in more participants if the limit is reached mid-way through the event as well. Note that active validators is mostly those whose uptime is high. Participants with high downtime will be forced out.
+There will be upto 105 active validators at a time. We will bring in more participants if the limit is reached mid-way through the event as well. Note that active validators is mostly those whose uptime is high. Participants with high downtime will be forced out.
 
 ### 9. How much should I stake?
 
@@ -343,7 +343,7 @@ However, since we will be moving to a robust replacement strategy as the number 
 
 There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
 
-A new auction process for validator replacement will be rolled out.
+There is an automated application and admission process please reach out to Polygon Team for more details
 
 ## Heimdall shows "Failed Sanity Checks"
 
