@@ -208,7 +208,8 @@ We also add the `--transactions-allow-list-admin` flag to specify the admin addr
     --consensus polybft \
     --reward-wallet 0x61324166B0202DB1E7502924326262274Fa4358F:1000000 \
     --transactions-allow-list-admin 0x61324166B0202DB1E7502924326262274Fa4358F,0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570 \
-    --transactions-allow-list-enabled 0x61324166B0202DB1E7502924326262274Fa4358F,0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570
+    --transactions-allow-list-enabled 0x61324166B0202DB1E7502924326262274Fa4358F,0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570 \
+    --premine 0x0:1000000000000000000000 
 ```
 
 By customizing these flags, we can tailor the network to meet our specific requirements. Remember to consider the impact of these parameters carefully, as they can significantly affect the network's performance, security, and scalability.
@@ -436,7 +437,8 @@ We also add the `--transactions-allow-list-admin` flag to specify the admin addr
     --consensus polybft \
     --reward-wallet 0x61324166B0202DB1E7502924326262274Fa4358F:1000000 \
     --transactions-allow-list-admin 0x61324166B0202DB1E7502924326262274Fa4358F,0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570 \
-    --transactions-allow-list-enabled 0x61324166B0202DB1E7502924326262274Fa4358F,0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570
+    --transactions-allow-list-enabled 0x61324166B0202DB1E7502924326262274Fa4358F,0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570 \
+    --premine 0x0:1000000000000000000000 
 ```
 
 By customizing these flags, we can tailor the network to meet our specific requirements. Remember to consider the impact of these parameters carefully, as they can significantly affect the network's performance, security, and scalability.
