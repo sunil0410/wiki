@@ -14,7 +14,7 @@ keywords:
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This document provides instructions on how to topup the Heimdall fee for a PoS Validator. This guide requires basic experience with Etherscan along with key details like Validator signer address.
+This document provides instructions on how to top up the Heimdall fee for a PoS Validator. This guide requires basic experience with Etherscan along with key details like the Validator signer address.
 
 :::info
 
@@ -22,17 +22,17 @@ We are working to add the **Topup Heimdall Fee** feature in the Staking UI. The 
 
 :::
 
-In order to top up your Heimdall fee balance, we recommend Validators to follow the below provided steps:
+In order to top up your Heimdall fee balance, we recommend Validators follow the below steps:
 
 1. Head over to [Etherscan.io](https://etherscan.io)
 
 2. Enter the `StakeManagerProxy` contract address in the search box: [0x5e3Ef299fDDf15eAa0432E6e66473ace8c13D908](https://etherscan.io/address/0x5e3Ef299fDDf15eAa0432E6e66473ace8c13D908)
 
-3. Under the **Code** menu, select the **Write as Proxy** tab. COnnect your Web3 wallet using the **Connect to Web3** button.
+3. Under the **Code** menu, select the **Write as Proxy** tab. Connect your Web3 wallet using the **Connect to Web3** button.
 
     <img src={useBaseUrl("img/connect-wallet-etherscan.png")} />
 
-4. Scroll down to `topUpForFee` method (#26 in the list) and select it. You will see something like the below screenshot.
+4. Scroll down to the `topUpForFee` method (#26 in the list) and select it. You will see something like the below screenshot.
 
     <img src={useBaseUrl("img/topup-heimdall-fee.png")} />
 
