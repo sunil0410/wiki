@@ -39,7 +39,7 @@ In order to top up your Heimdall fee balance, we recommend Validators follow the
 5. Fill in the details:
 
     - `user`: Validator's Signer Address
-    - `heimdallFee`: Topup fee (**minimum 1 ETH**)
+    - `heimdallFee`: Topup fee (**minimum 1 MATIC**)
 
 6. After filling in the details, click on **Write** to sign the transaction.
 
