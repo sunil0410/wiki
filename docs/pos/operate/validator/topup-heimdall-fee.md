@@ -14,15 +14,11 @@ keywords:
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This document provides instructions on how to top up the Heimdall fee for a PoS Validator. This guide requires basic experience with Etherscan along with key details like the Validator signer address.
+This document provides instructions on how to top up the Heimdall fee for a PoS Validator. 
 
-:::info
+The easiest way is via the [STAKING UI](https://staking.polygon.technology/account).
 
-We are working to add the **Topup Heimdall Fee** feature in the Staking UI. The instructions will be available here once the feature is live.
-
-:::
-
-In order to top up your Heimdall fee balance, we recommend Validators follow the below steps:
+It can also be done manually, by following the below steps. This method requires basic experience with Etherscan along with key details like the Validator signer address.
 
 1. Head over to [Etherscan.io](https://etherscan.io)
 
