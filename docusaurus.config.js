@@ -175,6 +175,24 @@ module.exports = {
             to: '/docs/pos/operate/validator/validator-node-system-requirements',
             from: '/docs/operate/technical-requirements',
           },
+          //faqs
+          {
+            to: '/docs/pos/pos-faqs',
+            from: '/docs/faq/technical-faqs',
+          },
+          //wallets
+          {
+            to: '/docs/tools/wallets/getting-started',
+            from: '/docs/develop/wallets/getting-started',
+          },
+          {
+            to: '/docs/tools/wallets/polygon-web-wallet/web-wallet-v3-guide',
+            from: '/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide',
+          },
+          {
+            to: '/docs/tools/wallets/adding-a-custom-token',
+            from: '/docs/develop/wallets/adding-a-custom-token',
+          },
         ],
       },
     ],
