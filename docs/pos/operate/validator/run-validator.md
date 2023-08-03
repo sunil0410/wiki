@@ -257,11 +257,11 @@ Save the changes in `config.toml`.
 Open the Bor configuration file for editing:
 
 ```sh
-`vi ~/node/bor/start.sh`
+`vi var/lib/bor/config.toml`
 ```
 
-In `start.sh`, add the boot node addresses consisting of a node ID, an IP address, and a port
-by adding the following line at the end of the file:
+In `config.toml`, add the boot node addresses consisting of a node ID, an IP address, and a port
+by adding them under bootnodes in [p2p.discovery] section:
 
 ```config
 --bootnodes "enode://0cb82b395094ee4a2915e9714894627de9ed8498fb881cec6db7c65e8b9a5bd7f2f25cc84e71e89d0947e51c76e85d0847de848c7782b13c0255247a6758178c@44.232.55.71:30303,enode://88116f4295f5a31538ae409e4d44ad40d22e44ee9342869e7d68bdec55b0f83c1530355ce8b41fbec0928a7d75a5745d528450d30aec92066ab6ba1ee351d710@159.203.9.164:30303,enode://3178257cd1e1ab8f95eeb7cc45e28b6047a0432b2f9412cff1db9bb31426eac30edeb81fedc30b7cd3059f0902b5350f75d1b376d2c632e1b375af0553813e6f@35.221.13.28:30303,enode://16d9a28eadbd247a09ff53b7b1f22231f6deaf10b86d4b23924023aea49bfdd51465b36d79d29be46a5497a96151a1a1ea448f8a8666266284e004306b2afb6e@35.199.4.13:30303,enode://ef271e1c28382daa6ac2d1006dd1924356cfd843dbe88a7397d53396e0741ca1a8da0a113913dee52d9071f0ad8d39e3ce87aa81ebc190776432ee7ddc9d9470@35.230.116.151:30303"
@@ -301,12 +301,7 @@ Start the Heimdall service:
 ```sh
 sudo service heimdalld start
 ```
-
-Start the Heimdall rest-server:
-
-```sh
-sudo service heimdalld-rest-server start
-```
+:::note The heimdall-rest service starts along with heimdall.
 
 Check the Heimdall service logs:
 
@@ -376,7 +371,7 @@ node ready.
 
 Log in to the remote validator machine.
 
-Open for editing `vi ~/.heimdalld/config/config.toml`.
+Open for editing `vi /var/lib/heimdall/config/config.toml`.
 
 In `config.toml`, change the following:
 
@@ -395,7 +390,7 @@ Example: `persistent_peers = "sentry_machineNodeID@sentry_instance_ip:26656"`
 
 Save the changes in `config.toml`.
 
-Open for editing `vi ~/.heimdalld/config/heimdall-config.toml`.
+Open for editing `vi /var/lib/heimdall/config/heimdall-config.toml`.
 
 In `heimdall-config.toml`, change the following:
 
@@ -408,7 +403,7 @@ Save the changes in `heimdall-config.toml`.
 
 ### Configuring the Bor service
 
-Open for editing `vi ~/.bor/data/bor/static-nodes.json`.
+Open for editing `vi /var/lib/bor/data/bor/static-nodes.json`.
 
 In `static-nodes.json`, change the following:
 
@@ -511,17 +506,7 @@ Start the Heimdall service:
 sudo service heimdalld start
 ```
 
-Start the Heimdall rest-server:
-
-```sh
-sudo service heimdalld-rest-server start
-```
-
-Start the Heimdall bridge:
-
-```sh
-sudo service heimdalld-bridge start
-```
+:::note The heimdall-rest service and heimdall-bridge starts along with heimdall.
 
 Check the Heimdall service logs:
 
