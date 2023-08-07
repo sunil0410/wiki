@@ -14,7 +14,7 @@ description: Polygon state-sync mechanism with no mapping.
 
 FxPortal Bridge is similar to POS Bridge with a feature of using ERC standardized tokens without mapping.
 
-For more info about FxPortal, please read - [FxPortal Overview](https://wiki.polygon.technology/docs/pos/design/bridge/l1-l2-communication/fx-portal/)
+For more info about FxPortal, please read - [FxPortal Overview](/docs/pos/design/bridge/l1-l2-communication/fx-portal/)
 
 FxPortal bridge functionality is available in a [separate repository](https://github.com/0xPolygon/maticjs-fxportal) as a plugin for maticjs. The package provides different API's for interacting with bridge.
 
