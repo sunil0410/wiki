@@ -67,12 +67,6 @@ To elaborate further, a Supernets program offers a range of service providers th
 
 - **Fiat On-Ramps**: These services bridge fiat currencies and digital assets, enabling users to purchase and use digital assets on Supernets-based networks. Fiat on-ramps can help increase accessibility and adoption of Supernets-based networks.
 
-:::note Services will become available shortly
-
-As partnerships develop and the ecosystem comes to life, new services will be ready for use. These services will become available shortly, and tutorials and other resources will be provided to help users make the most of them. Keep an eye out for updates as the ecosystem continues to grow and evolve.
-
-:::
-
 ### Easy deployments
 
 Supernets provide hassle-free deployment for blockchain networks with Terraform scripts "one-click" deployments, allowing developers to seamlessly set up a childchain.

@@ -81,7 +81,7 @@ To request data, your contract builds a `request` object which it provides to an
 
     These are decentralized data reference points already aggregated on-chain, and the quickest, easiest, and cheapest way to get data from the real world. Currently supports some of the most popular cryptocurrency and fiat pairs.
 
-    For working with Data Feeds, use the [**Polygon Data Feeds**](https://docs.chain.link/data-feeds/price-feeds/addresses/?network=polygon) from the Chainlink documenation.
+    For working with Data Feeds, use the [**Polygon Data Feeds**](https://docs.chain.link/data-feeds/price-feeds/addresses/?network=polygon) from the Chainlink documentation.
 
 2. **Chainlink Verifiable Randomness Function**
 

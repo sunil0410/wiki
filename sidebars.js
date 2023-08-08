@@ -470,6 +470,7 @@ module.exports = {
               items: [
                 "pos/operate/validator/validator-staking-operations",
                 "pos/operate/validator/validator-commission-operations",
+                "pos/operate/validator/topup-heimdall-fee"
               ],
             },
             {
