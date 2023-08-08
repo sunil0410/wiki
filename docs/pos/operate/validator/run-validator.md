@@ -323,12 +323,6 @@ to address these errors.
 
 :::
 
-Check the Heimdall rest-server logs:
-
-```sh
-journalctl -u heimdalld-rest-server.service -f
-```
-
 Check the sync status of Heimdall:
 
 ```sh
@@ -510,18 +504,6 @@ Check the Heimdall service logs:
 
 ```sh
 journalctl -u heimdalld.service -f
-```
-
-Check the Heimdall rest-server logs:
-
-```sh
-journalctl -u heimdalld-rest-server.service -f
-```
-
-Check the Heimdall bridge logs:
-
-```sh
-journalctl -u heimdalld-bridge.service -f
 ```
 
 Check the sync status of Heimdall:
@@ -909,13 +891,6 @@ Start the Heimdall service:
 sudo service heimdalld start
 ```
 
-From v.0.3.0 the Heimdall rest-server is incorporated into Heimdall. Versions before v.0.3.0  will need to start the heimdall rest-server. Later versions can skip this action
-Start the Heimdall rest-server:
-
-```sh
-sudo service heimdalld-rest-server start
-```
-
 Check the Heimdall service logs:
 
 ```sh
@@ -933,12 +908,6 @@ In the logs, you may see the following errors:
 These mean that one of the nodes on the network refused a connection to your node. You do not need to do anything with these errors. Wait for your node to crawl more nodes on the network.
 
 :::
-
-Check the Heimdall rest-server logs if your install is before v.0.3.0:
-
-```sh
-journalctl -u heimdalld-rest-server.service -f
-```
 
 Check the sync status of Heimdall:
 
@@ -1131,42 +1100,11 @@ Start the Heimdall service:
 sudo service heimdalld start
 ```
 
-Start the Heimdall rest-server (Versions before v.0.3.0):
-
-```sh
-sudo service heimdalld-rest-server start
-```
-
-Start the Heimdall bridge (Versions before v.0.3.0):
-
-```sh
-sudo service heimdalld-bridge start
-```
-
 Check the Heimdall service logs:
 
 ```sh
 journalctl -u heimdalld.service -f
 ```
-
-Check the Heimdall rest-server logs (Versions before v.0.3.0):
-
-```sh
-journalctl -u heimdalld-rest-server.service -f
-```
-
-Check the Heimdall bridge logs (Versions before v.0.3.0):
-
-```sh-
-journalctl -u heimdalld-bridge.service -f
-```
-
-:::note
-
-If your Heimdall version is after v.0.3.0 then the logs of heimdalld-rest-server and heimdalld-bridge are in the heimdalld service logs as these three were combined into one service from v.0.3.0.
-
-:::
-
 
 Check the sync status of Heimdall:
 
