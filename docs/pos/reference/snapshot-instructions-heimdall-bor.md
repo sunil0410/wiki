@@ -32,7 +32,7 @@ For the latest snapshot, please visit [<ins>Polygon Chains Snapshots</ins>](http
 To begin, ensure that your node environment meets the **prerequisites** outlined [here](https://wiki.polygon.technology/docs/operate/full-node-binaries/). Before starting any services, execute the shell script provided below. This script will download and extract the snapshot data, which allows for faster bootstrapping. In our example, we will be using an Ubuntu Linux m5d.4xlarge machine with an 8TB block device attached.
 To transfer the correct chaindata to your disk, follow these steps:
 
-- Specify the network ("mainnet" or "mumbai") and client type ("heimdall" or "bor" or "erigon") of your desired snapshot and run the following command:
+- All one has to do is specify the network ("mainnet" or "mumbai") and client type ("heimdall" or "bor" or "erigon") of your desired snapshot and run the following command:
 ```
 curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --network {{ network }} --client {{ client }} --extract-dir chaindata --validate-checksum true
 ```
@@ -175,7 +175,7 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
 
 **Note:** If experiencing intermittent aria2c download errors, try reducing concurrency as exampled here:
 ```
-aria2c -c -m 0 -x6 -s6 -i heimdall-$network-incremental-compiled-files.txt --max-concurrent-downloads=1
+aria2c -c -m 0 -x6 -s6 -i $client-$network-parts.txt --max-concurrent-downloads=1
 ```
 
 Once the extraction is complete, ensure that you update the datadir configuration of your client to point to the path where the extracted data is located.
