@@ -52,7 +52,7 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
 
 <details> 
 <summary>View script here ↓</summary>
-  
+
 ```bash
   #!/bin/bash
 
