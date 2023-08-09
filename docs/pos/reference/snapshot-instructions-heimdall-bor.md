@@ -34,7 +34,11 @@ To transfer the correct chaindata to your disk, follow these steps:
 
 - All one has to do is specify the network ("mainnet" or "mumbai") and client type ("heimdall" or "bor" or "erigon") of your desired snapshot and run the following command:
 ```
-curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --network {{ network }} --client {{ client }} --extract-dir chaindata --validate-checksum true
+curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --network {{ network }} --client {{ client }} --extract-dir {{ extract_dir }} --validate-checksum {{ true / false }}
+```
+For example:
+```
+curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --network mainnet --client heimdall --extract-dir data --validate-checksum true
 ```
 > This bash script automatically handles all download and extraction phases, as well as optimizing disk space by deleting already extracted files along the way.
 - --extract-dir and --validate-checksum flags are optional.
