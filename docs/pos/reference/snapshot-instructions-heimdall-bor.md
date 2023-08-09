@@ -246,7 +246,7 @@ Currently under maintenance. ETA Aug 2023 for Erigon bor-mainnet incremental sna
 ## Recommended disk type and IOPS guidance
 - Disk IOPS will impact speed of downloading/extracting snapshots,
   getting in sync, and performing LevelDB compaction
-- To minimize disk latency, direct attached storage is ideal
+- To minimize disk latency, direct attached storage is ideal.
 - In AWS, when using gp3 disk types, we recommend provisioning IOPS of 16000 and
   throughput of 1000 - this minimizes cost and adds a lot of performance. io2 EBS volumes with matching IOPS and throughput values are similarly performant
 - For GCP, we recommend using performance (SSD) persistent disks (`pd-ssd`) or extreme persistent disks (`pd-extreme`) with similar IOPS and throughput values as seen above
