@@ -29,7 +29,7 @@ Moving Stake from the foundation node to external node is a single transaction. 
 
 Please note that Moving Stake is only allowed from Foundation node to External nodes. If you want to move your stake from an External node to another External node, you will have to Unbond first and then Delegate on the new external node.
 
-Also, the Move Stake function is a temporary function developed by the Polygon team to ensure smooth transistioning of funds from the Foundation nodes to External. And will only stay active until the foundation nodes are turned off.
+Also, the Move Stake function is a temporary function developed by the Polygon team to ensure smooth transitioning of funds from the Foundation nodes to External. And will only stay active until the foundation nodes are turned off.
 
 ## How to Move Stake
 

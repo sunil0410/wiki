@@ -581,7 +581,7 @@ datadir = "/bor-home"
 [heimdall]
   url = "http://heimdallrest:1317"
 
-# Assumming you want to access the RPC, you'll need to make a change here as well
+# Assuming you want to access the RPC, you'll need to make a change here as well
 [jsonrpc]
   [jsonrpc.http]
     enabled = true
