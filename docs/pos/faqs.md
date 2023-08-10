@@ -68,7 +68,7 @@ We currently have an easy to dive-in list for you for the Linux packages. We wil
 
 #### Logs
 
-- How to retreive Heimdall logs: `/var/log/matic-logs/`
+- How to retrieve Heimdall logs: `/var/log/matic-logs/`
 
 - How to check heimdall logs: `tail -f heimdalld.log`
 

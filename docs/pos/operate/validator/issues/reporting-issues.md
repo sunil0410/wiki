@@ -16,7 +16,7 @@ image: https://wiki.polygon.technology/img/polygon-logo.png
 
 ## Where to report a bug
 
-For any bugs or attacks that are discovered, you need to report them to the [Immunefi bug bountry program](https://immunefi.com/bounty/polygon/). **Performing an attack and not providing submission of your proof will result in disqualification of your attempt.**
+For any bugs or attacks that are discovered, you need to report them to the [Immunefi bug bounty program](https://immunefi.com/bounty/polygon/). **Performing an attack and not providing submission of your proof will result in disqualification of your attempt.**
 
 You need to make sure that you add all relevant details, such as an email address and Discord ID in order to maintain a rapport of communication in case it is required. You also need to provide as many details as possible so that the Polygon team can appropriately evaluate your submission.
 
