@@ -14,6 +14,16 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import {useState} from 'react';
 
+To enable the debug route namespace, you need to modify the configuration and add the "debug" parameter as shown below:
+
+```
+[jsonrpc.http]
+    enabled = true
+    port = 8545
+    host = "0.0.0.0"
+    api = ["eth", "net", "web3", "txpool", "bor", "debug"]
+```
+
 ## debug_traceBlockByNumber
 
 Executes all transactions in the block specified by number with a tracer and returns the tracing result.
