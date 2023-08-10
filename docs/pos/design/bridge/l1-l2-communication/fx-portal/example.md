@@ -61,19 +61,19 @@ Here is an overview of the following contracts used:
    This will be the ERC20 token to test the FxPortal functionality.
 
 2. Deploy an
-   [FxERC20 contract](https://github.com/fx-portal/contracts/blob/main/contracts/tokens/FxERC20.sol)
+   [FxERC20 contract](hhttps://github.com/0xPolygon/fx-portal/blob/main/contracts/tokens/FxERC20.sol)
    on the Goerli network. This contract will be used as a template to create child tokens on the
    Mumbai network. The FxERC20 contract should be initialized with the address of the FxPortal
    contract and the address of the corresponding token on the root network.
 
 3. Deploy an
-   [FxERC20Child contract](https://github.com/fx-portal/contracts/blob/main/contracts/tokens/FxERC20.sol)
+   [FxERC20Child contract](https://github.com/0xPolygon/fx-portal/blob/main/contracts/tokens/FxERC20.sol)
    on the Mumbai network. This contract will be the child token minted by the root network contract.
    It should be initialized with the address of the FxPortal contract, the address of the corresponding
    token on the root network, and the token's name, symbol, and decimals.
 
 4. Deploy an
-   [FxERC20RootTunnel contract](https://github.com/fx-portal/contracts/blob/main/contracts/examples/erc20-transfer/FxERC20RootTunnel.sol) on the Goerli network. This contract will map tokens
+   [FxERC20RootTunnel contract](https://github.com/0xPolygon/fx-portal/blob/main/contracts/examples/erc20-transfer/FxERC20RootTunnel.sol) on the Goerli network. This contract will map tokens
    from the root network to the child network and send deposits to the child network. When a new
    token is mapped, the contract deploys a new child token contract using the FxERC20 template and
    then maps the root token to the child token. The contract sends a message
@@ -84,7 +84,7 @@ Here is an overview of the following contracts used:
      - **_fxERC20Token** : SafeToken (address of ERC20 token created in step 1)
 
 5. Deploy an
-   [FxERC20ChildTunnel contract](https://github.com/fx-portal/contracts/blob/main/contracts/examples/erc20-transfer/FxERC20ChildTunnel.sol) on the Mumbai network. This contract will be responsible for
+   [FxERC20ChildTunnel contract](https://github.com/0xPolygon/fx-portal/blob/main/contracts/examples/erc20-transfer/FxERC20ChildTunnel.sol) on the Mumbai network. This contract will be responsible for
    processing messages from the root network, minting new child tokens, and handling
    child-to-root withdrawals. When a new token is mapped, the contract deploys a new child token
    contract using the FxERC20 template and then maps the root token to the child token. When a

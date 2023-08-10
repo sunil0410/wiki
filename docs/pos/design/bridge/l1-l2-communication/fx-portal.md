@@ -18,13 +18,13 @@ The usual mechanism to natively read Ethereum data from Polygon is using **State
 
 ## What is FxPortal?
 
-It is a powerful yet simple implementation of the Polygon [state sync](/pos/design/validator/core-components/state-sync-mechanism.md) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the [examples](https://github.com/fx-portal/contracts/tree/main/contracts/examples) folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-sync without mapping.
+It is a powerful yet simple implementation of the Polygon [state sync](/pos/design/validator/core-components/state-sync-mechanism.md) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the [examples](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples) folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-sync without mapping.
 
-You can check out the [GitHub repository](https://github.com/fx-portal/contracts) for contracts and examples.
+You can check out the [GitHub's repository folder](https://github.com/0xPolygon/fx-portal/tree/main/contracts) for contracts and examples.
 
 ## How does it work?
 
-[FxChild](https://github.com/fx-portal/contracts/blob/main/contracts/FxChild.sol) and [FxRoot](https://github.com/fx-portal/contracts/blob/main/contracts/FxRoot.sol) are the main contracts on which FxPortal works. It calls and passes data to user-defined methods on the other chain without any mapping using the state sync mechanism. To use the deployed main contracts, you can implement FxPortal's base contracts in the smart contracts you deploy - [FxBaseRootTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseRootTunnel.sol) and [FxBaseChildTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseChildTunnel.sol). By building on these contracts, your deployed contracts will be able to communicate with each other using the data tunnel mechanism.
+[FxChild](https://github.com/0xPolygon/fx-portal/blob/main/contracts/FxChild.sol) and [FxRoot](https://github.com/0xPolygon/fx-portal/blob/main/contracts/FxRoot.sol) are the main contracts on which FxPortal works. It calls and passes data to user-defined methods on the other chain without any mapping using the state sync mechanism. To use the deployed main contracts, you can implement FxPortal's base contracts in the smart contracts you deploy - [FxBaseRootTunnel](https://github.com/0xPolygon/fx-portal/blob/main/contracts/tunnel/FxBaseRootTunnel.sol) and [FxBaseChildTunnel](https://github.com/0xPolygon/fx-portal/blob/main/contracts/tunnel/FxBaseChildTunnel.sol). By building on these contracts, your deployed contracts will be able to communicate with each other using the data tunnel mechanism.
 
 Otherwise, you can choose to map your tokens with the already deployed tunnel contracts. Default FxTunnel deployment details for Polygon Mainnet and Mumbai Testnet are as follows:
 
@@ -35,13 +35,13 @@ Look for the keyword `FxPortalContracts` in the above links to find all the defa
 
 ## Do I need a Custom FxTunnel Implementation ?
 
-You must go for a **custom FxTunnel implementation** only if the default tunnel implementations do not align with your use case. When you use the default FxPortal tunnels, you can not modify the child contract code. The bytecode for the child token contract is always fixed and always remains the same for the [default FxTunnel deployments](https://github.com/fx-portal/contracts/tree/main/contracts/examples). In case you need a custom child token, you must go for your own custom FxTunnel, and reading the next part will guide you more in deploying your own custom FxTunnels.
+You must go for a **custom FxTunnel implementation** only if the default tunnel implementations do not align with your use case. When you use the default FxPortal tunnels, you can not modify the child contract code. The bytecode for the child token contract is always fixed and always remains the same for the [default FxTunnel deployments](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples). In case you need a custom child token, you must go for your own custom FxTunnel, and reading the next part will guide you more in deploying your own custom FxTunnels.
 
 It is highly recommended to read and understand [FxPortal State Transfer](state-transfer.md) before you read the upcoming section. Each of these upcoming sections will have example tunnel contract links attached to it. These examples can be taken as a reference while building your own custom fx-tunnels.
 
 ## ERC20 Transfer
 
-The [child and root tunnel contracts](https://github.com/fx-portal/contracts/tree/main/contracts/examples/erc20-transfer) enable the deposit of tokens on the root chain and withdrawal on the child chain.
+The [child and root tunnel contracts](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples/erc20-transfer) enable the deposit of tokens on the root chain and withdrawal on the child chain.
 
 #### `FxERC20RootTunnel`
 
@@ -74,7 +74,7 @@ After you have performed `deposit()` on the root chain, it will take 22-30 minut
 
 ## ERC721 Transfer
 
-In case you need an example, please check out this [ERC721 Root and Child Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/erc721-transfer) guide.
+In case you need an example, please check out this [ERC721 Root and Child Tunnels](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples/erc721-transfer) guide.
 
 ### From Ethereum &rarr; Polygon
 
@@ -96,7 +96,7 @@ After you have performed `deposit()` on the root chain, it will take 22-30 minut
 
 ## ERC1155 Transfer
 
-In case you need an example, please check out this [ERC1155 Root and Child Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/erc1155-transfer) guide.
+In case you need an example, please check out this [ERC1155 Root and Child Tunnels](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples/erc1155-transfer) guide.
 
 #### `FxERC1155RootTunnel`
 
@@ -154,7 +154,7 @@ After you have performed `withdraw()` on the child chain, it will take 30-90 min
 
 ## Mintable ERC-20 Transfer
 
-In case you need an example, please check out this [Mintable ERC20 Root and Child Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/mintable-erc20-transfer) guide.
+In case you need an example, please check out these [Mintable ERC20 Root and Child Tunnels](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples/mintable-erc20-transfer) examples.
 
 :::info
 
@@ -192,8 +192,8 @@ Feed the generated burn proof as the argument to `receiveMessage()` in `FxMintab
 
 The **ERC721** and **ERC1155** Mintable FxTunnel examples are as follows :-
 
-- [FxMintableERC721Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/mintable-erc721-transfer)
-- [FxMintableERC1155Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/mintable-erc1155-transfer)
+- [FxMintableERC721Tunnels](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples/mintable-erc721-transfer)
+- [FxMintableERC1155Tunnels](https://github.com/0xPolygon/fx-portal/tree/main/contracts/examples/mintable-erc1155-transfer)
 
 ## Example Deployments
 
