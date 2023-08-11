@@ -485,6 +485,7 @@ module.exports = {
               ],
             },
             "pos/operate/validator/validator-performance-overview",
+            "pos/operate/validator/bloxroute"
             //"maintain/glossary",
           ],
         },

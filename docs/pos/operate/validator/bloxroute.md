@@ -46,5 +46,3 @@ sudo service bor restart
 ```
 
 **Step 4**: Inform the Polygon team on the Discord channel **#mainnet-validator-queries** once you are done adding the trusted peer. bloXroute will activate the hosted gateway and confirm the success of the connection within the next 24 hours.
-
-
