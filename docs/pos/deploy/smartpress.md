@@ -24,7 +24,7 @@ SmartPress is a smart contract development ai tool that builds your dream contra
 
 > For more information on different contracts SmartPress can build, check out [smartpress’s website](https://smartpress.ai).
 
-## Create a contract using SmartPress
+## Create a Smart Contract using SmartPress
 
 To create a new smart contract using SmartPress, follow the steps below.
 
