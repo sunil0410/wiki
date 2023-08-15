@@ -31,7 +31,7 @@ To create a new smart contract with SmartPress, follow these steps:
 1. In your browser, navigate to smartpress.ai
 2. Enter the requirements for the contract you want to build.
 3. SmartPress will handle it from there and produce your contract for you without you having to use a IDE or a code editor.
-4. If you are happy with the output, move onto validating your idea and testing. If you arent happy, edit your prompt and start again.
+4. Review the output. If satisfied, proceed to validation and testing. If not, modify your input and repeat the process.
 
 ![Screenshot 2023-08-15 at 12 33 59 pm](https://github.com/crokau/wiki/assets/71380821/c43ccb48-3b1b-4cad-814b-8eddc0f735c1)
 
