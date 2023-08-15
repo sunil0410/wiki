@@ -47,7 +47,6 @@ To deploy your smart contract on Polygon PoS:
 
 Press 'view code', copy flattened bytecode to clipboard, in your preffered block explorer navigate to verification screen (usually under contracts/code), select compiler version specified in the deployment page, optimizer: TRUE, Runs: 200, choose preffered licence, paste flat code, verification should complete shortly.
 
----
 
 ### Need help?
 
