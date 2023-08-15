@@ -20,7 +20,7 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 :::
 
-SmartPress is a smart contract development ai tool that builds your dream contract from a language prompt.
+SmartPress is an AI tool that crafts custom smart contracts from language prompts.
 
 > For more information on different contracts SmartPress can build, check out [smartpress’s website](https://smartpress.ai).
 
