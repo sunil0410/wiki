@@ -2,7 +2,7 @@
 id: smartpress
 title: How to Deploy a Smart Contract Using SmartPress
 sidebar_label: How to Deploy a Smart Contract Using SmartPress
-description: "Lean how to deploy smart contracts on Polygon PoS mainnet using SmartPress."
+description: "Learn how to deploy smart contracts on Polygon PoS mainnet using SmartPress."
 keywords:
   - docs
   - matic
