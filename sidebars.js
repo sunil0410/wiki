@@ -436,6 +436,7 @@ module.exports = {
         "pos/deploy/chainstack",
         "pos/deploy/getblock",
         "pos/deploy/quicknode",
+        "pos/deploy/smartpress",
         "pos/deploy/thirdweb",
       ],
     },
