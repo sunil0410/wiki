@@ -197,5 +197,4 @@ implemented:
 - `build`: caches the static assets to avoid regenerating any pages that have not changed
 - `node_modules`: caches node_modules based on the hash of `yarn.lock`. Any changes to package dependencies will invalidate and rebuild this cache
 
-Current cache config is defined in [build.yml](.github/workflows/build.yml#22). Caches can be viewed or invalidated in the 
-GitHub repo settings.
+Caches can be viewed or invalidated in the GitHub repo settings.
