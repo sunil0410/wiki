@@ -7,7 +7,7 @@ export const firstRow = [
     },
     {
         title: "Build a dApp on zkEVM",
-        linkUrl: "https://zkevm.polygon.technology/docs/develop",
+        linkUrl: "docs/zkevm/develop",
         imageUrl: "img/logo-round-dark.png",
         description: "Empower the world by building next-gen dApps using ZK tech."
     },
@@ -25,7 +25,7 @@ export const firstRow = [
     },
     {
         title: "Run a zkEVM node",
-        linkUrl: "https://zkevm.polygon.technology/docs/category/setup-zknode",
+        linkUrl: "docs/zkevm/category/setup-zknode",
         imageUrl: "img/logo-round-dark.png",
         description: "Contribute to decentralized computing by running your own ZK node."
     },
