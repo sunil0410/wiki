@@ -14,7 +14,7 @@ Continue with the **Sixth Step** of this Deployment-Guide where you activate for
 
 ## Activate Forced Transactions
 
-You can check out [this](/protocol/sequencer-resistance.md) document to learn more about Forced Batches of transactions.
+You can check out [this](/zkevm/protocol/sequencer-resistance.md) document to learn more about Forced Batches of transactions.
 
 ```bash
 npx hardhat console --network goerli

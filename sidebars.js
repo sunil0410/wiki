@@ -1061,6 +1061,20 @@ module.exports = {
       collapsed: true,
       items: ["zkevm/releases/july-release"],
     },
+    {
+      type: "category",
+      label: "FAQs",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "zkevm/faq/zkevm-general-faq",
+        "zkevm/faq/zkevm-protocol-faq",
+        "zkevm/faq/zkevm-eth-faq",
+        "zkevm/risk-disclosure",
+      ],
+    },
     "zkevm/open-source-repos",
   ],
 

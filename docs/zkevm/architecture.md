@@ -135,7 +135,7 @@ The two permissionless participants of the zkEVM network are: **Sequencers** and
    - Static Cost: L1 call cost + Server cost (to build a proof)
    - Profitable if: `MATIC fee` > `L1 call` + `Server cost`
 
-## [zkProver](/zkProver/overview.md)
+## [zkProver](/zkevm/zkProver/overview.md)
 
 zkEVM employs advanced zero-knowledge technology to create validity proofs. It uses a **zero-knowledge prover (zkProver)**, which is intended to run on any server and is being engineered to be compatible with most consumer hardware. Every **Aggregator** will use this zkProver to validate batches and provide Validity Proofs.
 
@@ -143,9 +143,9 @@ It consists of a **Main State Machine Executor**, a collection of **secondary St
 
 ![Skeletal Overview of zkProver](figures/fig4-zkProv-arch.png)
 
-In a nutshell, **the zkEVM expresses state changes in a polynomial form**. As a result, the constraints that each proposed batch must meet are polynomial constraints or polynomial identities. To put it another way, all valid batches must satisfy specific polynomial constraints. Check out the detailed architecture of zkProver [here](/zkProver/overview.md).
+In a nutshell, **the zkEVM expresses state changes in a polynomial form**. As a result, the constraints that each proposed batch must meet are polynomial constraints or polynomial identities. To put it another way, all valid batches must satisfy specific polynomial constraints. Check out the detailed architecture of zkProver [here](/zkevm/zkProver/overview.md).
 
-## [zkEVM Bridge](/protocol/zkevm-bridge.md)
+## [zkEVM Bridge](/zkevm/protocol/zkevm-bridge.md)
 
 The **zkEVM bridge** is a Smart Contract that lets users transfer their assets between two layers, LX and LY. The L1-L2 in zkEVM is a decentralized bridge for secure deposits and withdrawal of assets. It is a combination of two smart contracts, one deployed on one chain and the second on the other.
 
@@ -159,7 +159,7 @@ Verifier is a Smart Contract which is able to verify any ZK-SNARK cryptographic 
 
 The Verifier contract is currently deployed on the [Ethereum Mainnet](https://etherscan.io/address/0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9) and [Goerli Testnet](https://goerli.etherscan.io/address/0x8EdA1d8c254a77a57A6A7A1C0262e9A44A7C6D6d).
 
-## [Transaction Life Cycle](/protocol/l2-transaction-cycle-intro.md)
+## [Transaction Life Cycle](/zkevm/protocol/l2-transaction-cycle-intro.md)
 
 Before getting into a transaction flow in L2, users need some funds to perform any L2 transaction. In order to do so, users need to transfer some ether from L1 to L2 through the zkEVM Bridge dApp.
 
@@ -176,7 +176,7 @@ Before getting into a transaction flow in L2, users need some funds to perform a
    - Aggregator will take pending transactions to be verified and build a Proof in order to achieve finality on L1
    - Once the Proof is validated, user's transactions will attain L1 finality (important for withdrawals). This is called the **consolidated state**.
 
-The above process is a summarized version of how transactions are processed in zkEVM. We recommend you to take a look at the complete [transaction life cycle](/protocol/l2-transaction-cycle-intro.md) document.
+The above process is a summarized version of how transactions are processed in zkEVM. We recommend you to take a look at the complete [transaction life cycle](/zkevm/protocol/l2-transaction-cycle-intro.md) document.
 
 ## Design Characteristics
 

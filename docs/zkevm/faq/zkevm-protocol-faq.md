@@ -17,7 +17,7 @@ keywords:
   - emergency state
 ---
 
-This document compiles some of the frequently asked questions related to the Polygon zkEVM protocol. For more details, check out [this documentation](/protocol/introduction.md).
+This document compiles some of the frequently asked questions related to the Polygon zkEVM protocol. For more details, check out [this documentation](/zkevm/protocol/introduction.md).
 
 ---
 

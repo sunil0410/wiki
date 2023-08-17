@@ -24,7 +24,7 @@ The 10-day delay allows users to carefully assess the proposed changes and decid
 
 Another smart contract called _Timelock Contract_ is responsible for enabling the 10-day delay.
 
-An outline of the _upgrade process_ is outlined [here](/protocol/zkevm-upgrades-process.md).
+An outline of the _upgrade process_ is outlined [here](/zkevm/protocol/zkevm-upgrades-process.md).
 
 ## Admin Contract In Detail
 

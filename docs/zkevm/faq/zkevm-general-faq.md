@@ -66,7 +66,7 @@ It is also important to note that Polygon **zkEVM supports Account Abstraction v
 
 ### What types of dApps can be deployed on Polygon zkEVM?
 
-Any dApp that is compatible with EVM can be deployed, except for those which require a specific precompiled contract that is currently not supported by zkEVM. For more details related to supported precompiled contracts, check out [this document](/protocol/evm-differences.md).
+Any dApp that is compatible with EVM can be deployed, except for those which require a specific precompiled contract that is currently not supported by zkEVM. For more details related to supported precompiled contracts, check out [this document](/zkevm/protocol/evm-differences.md).
 
 ### Can this Layer 2 zkEVM work with other chains?
 

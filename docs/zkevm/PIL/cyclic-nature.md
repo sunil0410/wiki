@@ -12,7 +12,7 @@ keywords:
 
 In order to synchronize the execution trace of a given program with the subgroup $G$ of the multiplicative group $\mathbb{F}^*$, over which interpolation is performed, an extra constant polynomial (or precompiled column) is added to the trace. 
 
-An explanation of what this group $G = \langle g \rangle$ is, and why it is naturally a cyclic group, was discussed in the [Basic Concepts](/zkProver/mfibonacci-example.md) section of the zkProver.
+An explanation of what this group $G = \langle g \rangle$ is, and why it is naturally a cyclic group, was discussed in the [Basic Concepts](/zkevm/zkProver/mfibonacci-example.md) section of the zkProver.
 
 ## Non-cyclic SM Example
 

@@ -10,7 +10,7 @@ keywords:
   - microprocessor
 ---
 
-As a microprocessor-type state machine, the Main SM is a typical example of a [**Generic State Machine**](/zkProver/intro-generic-sm.md)
+As a microprocessor-type state machine, the Main SM is a typical example of a [**Generic State Machine**](/zkevm/zkProver/intro-generic-sm.md)
 
 It is a state machine that behaves like an Algebraic processor. It receives instructions in the form of programs written in the zero-knowledge Assembly (zkASM) language, and makes state transitions in accordance with these instructions.
 
@@ -24,14 +24,14 @@ As a Generic SM, it can be thought of as being composed of two parts:
 
 Instead of executing all the various computations on its own, the Main SM achieves efficiency by delegating verification of complex computations to specialized secondary state machines. These are:
 
-- [Storage SM](/zkProver/intro-storage-sm.md) which handles all storage-related computations (e.g., Create, Read, Update and Delete).
-- [Arithmetic SM](/zkProver/arithmetic-sm.md) which carries out elliptic curve arithmetic operations related to ECDSA. 
-- [Binary SM](/zkProver/binary-sm.md) which is responsible for performing all binary operations as the Executor requires.
-- [Memory SM](/zkProver/memory-sm.md) which in the zkEVM plays the same role the EVM Memory plays in Ethereum.   
-- [Keccak SM](/zkProver/keccakf-sm.md) which is a binary circuit that computes hash values of strings as instructed by the Main SM. And, it is implemented within a special framework, detailed [here](/zkProver/keccak-framework.md).
-- [Poseidon SM](/zkProver/poseidon-sm.md) which specialises with computing hash values required in building Sparse Merkle Trees as per the Main SM instructions.
+- [Storage SM](/zkevm/zkProver/intro-storage-sm.md) which handles all storage-related computations (e.g., Create, Read, Update and Delete).
+- [Arithmetic SM](/zkevm/zkProver/arithmetic-sm.md) which carries out elliptic curve arithmetic operations related to ECDSA. 
+- [Binary SM](/zkevm/zkProver/binary-sm.md) which is responsible for performing all binary operations as the Executor requires.
+- [Memory SM](/zkevm/zkProver/memory-sm.md) which in the zkEVM plays the same role the EVM Memory plays in Ethereum.   
+- [Keccak SM](/zkevm/zkProver/keccakf-sm.md) which is a binary circuit that computes hash values of strings as instructed by the Main SM. And, it is implemented within a special framework, detailed [here](/zkevm/zkProver/keccak-framework.md).
+- [Poseidon SM](/zkevm/zkProver/poseidon-sm.md) which specialises with computing hash values required in building Sparse Merkle Trees as per the Main SM instructions.
 
-There are other *auxiliary* state machines used in the zkProver; the [Padding-KK](/zkProver/paddingkk-sm.md), the [Padding-KK-Bit](/zkProver/paddingkk-bit-sm.md), the Padding-PG SM, the [Memory Align SM](/zkProver/mem-align-sm.md), the [Bits2Field SM](/zkProver/bits2field-sm.md) and the ROM SM ([sm_rom.js](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/src/sm/sm_rom.js)).
+There are other *auxiliary* state machines used in the zkProver; the [Padding-KK](/zkevm/zkProver/paddingkk-sm.md), the [Padding-KK-Bit](/zkevm/zkProver/paddingkk-bit-sm.md), the Padding-PG SM, the [Memory Align SM](/zkevm/zkProver/mem-align-sm.md), the [Bits2Field SM](/zkevm/zkProver/bits2field-sm.md) and the ROM SM ([sm_rom.js](https://github.com/0xPolygonHermez/zkevm-proverjs/blob/main/src/sm/sm_rom.js)).
 
 ## Algebraic Processor
 
@@ -386,7 +386,7 @@ It is important to fill the $\texttt{A}\ \texttt{0...7}$ and $\texttt{B}\ \textt
 
 Binary SM executes and verifies the following operations - Addition $\texttt{ADD}$, Subtraction $\texttt{SUB}$, Less-than $\texttt{LT}$, Signed less-than $\texttt{SLT}$, Equals $\texttt{EQ}$, $\texttt{AND}$, $\texttt{OR}$, $\texttt{XOR}$ and $\texttt{NOT}$.
 
-The details on what these operations are, have been documented [here](/zkProver/binary-sm.md).
+The details on what these operations are, have been documented [here](/zkevm/zkProver/binary-sm.md).
 
 #### Example
 

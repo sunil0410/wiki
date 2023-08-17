@@ -57,7 +57,7 @@ The translation from a **STARK** to its Verifier circuit, herein dubbed **S2C** 
 
 In other words, the R1CS description of the **STARK** Verifier circuit can be preprocessed prior to the computation of **STARK** proof.
 
-CIRCOM is used as an intermediate representation language for the description of circuits. More details on how the CIRCOM is utilized is discussed in the [**Setup S2C**](/zkProver/recursion-sub-process.md#setup-s2c) section.
+CIRCOM is used as an intermediate representation language for the description of circuits. More details on how the CIRCOM is utilized is discussed in the [**Setup S2C**](/zkevm/zkProver/recursion-sub-process.md#setup-s2c) section.
 
 #### CIRCUIT-to-STARK or C2S Sub-process
 
@@ -69,7 +69,7 @@ This translation, is herein referred to as **C2S** (short for **CIRCUIT-to-STARK
 
 Following our example, the newly generated **STARK** is denoted as $\text{STARK}_{\text{B}}$ and it is essentially a PlonKish arithmetization of $\text{STARK}_{\text{A}}$ with some custom gates of the verification circuit.
 
-See the [**Setup C2S**](/zkProver/recursion-sub-process.md#setup-c2s) section for more details.
+See the [**Setup C2S**](/zkevm/zkProver/recursion-sub-process.md#setup-c2s) section for more details.
 
 #### Concluding The Setup Phase
 

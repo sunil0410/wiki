@@ -11,11 +11,11 @@ keywords:
   - zkevm rom
 ---
 
-Main State Machine is a component of the zkProver that can be instantiated with various computations pertaining to transactions submitted by users to the Polygon zkEVM network. See an outline of the zkProver [here](/zkProver/overview.md).
+Main State Machine is a component of the zkProver that can be instantiated with various computations pertaining to transactions submitted by users to the Polygon zkEVM network. See an outline of the zkProver [here](/zkevm/zkProver/overview.md).
 
 In addition to carrying out these computations, the Main SM also generates fixed-length, easy-to-verify cryptographic proofs of Computational Integrity (CI). These proofs can be verified by spending only a minimal amount of computational resources.
 
-It achieves this by using cutting-edge zero-knowledge technology. In particular, these proofs are STARK proofs that are recursively aggregated into one STARK proof, which is in turn proved with a SNARK proof. This last SNARK proof is published as the validity proof. You can read a summary of the STARK proofs recursion [here](/zkProver/overview.md#stark-recursion-component), and its complete documentation [here](/zkProver/intro-stark-recursion.md).
+It achieves this by using cutting-edge zero-knowledge technology. In particular, these proofs are STARK proofs that are recursively aggregated into one STARK proof, which is in turn proved with a SNARK proof. This last SNARK proof is published as the validity proof. You can read a summary of the STARK proofs recursion [here](/zkevm/zkProver/overview.md#stark-recursion-component), and its complete documentation [here](/zkevm/zkProver/intro-stark-recursion.md).
 
 ![zkEVM batch prover structure](figures/02msm-prover-structure.png)
 
@@ -197,7 +197,7 @@ That difference is the EVM Memory is created in the form of slots where each slo
 
 It was therefore necessary to align the EVM's $8$-bit slots with the zkEVM's $256$-bit slots. 
 
-A mapping to synchronize the two Memories comes in the form a special state machine called the [**Mem-Align State Machine**](/zkProver/mem-align-sm.md). It is a specialized SM solely dealing with the alignment of the EVM Memory with the zkEVM Memory.
+A mapping to synchronize the two Memories comes in the form a special state machine called the [**Mem-Align State Machine**](/zkevm/zkProver/mem-align-sm.md). It is a specialized SM solely dealing with the alignment of the EVM Memory with the zkEVM Memory.
 
 ![Aligning the EVM Memory to the zkEVM Memory](figures/09msm-evm-zkevm-mem-align.png)
 
@@ -223,6 +223,6 @@ The figure below displays a schematic representation of the zkEVM Stack and the 
 
 &rarr; The zkEVM uses SMT with five different leaf types. 
 
-&rarr; Memory alignment between the EVM and the zkEVM is handled by a specialist state machine, the [**Mem-Align State Machine**](/zkProver/mem-align-sm.md).
+&rarr; Memory alignment between the EVM and the zkEVM is handled by a specialist state machine, the [**Mem-Align State Machine**](/zkevm/zkProver/mem-align-sm.md).
 
 &rarr; The two Stacks are exactly the same except that the zkEVM has many more slots compared to the EVM.

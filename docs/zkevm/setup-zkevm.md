@@ -789,7 +789,7 @@ docker compose --env-file $ZKEVM_CONFIG_DIR/.env -f $ZKEVM_DIR/$ZKEVM_NET/docker
 
 ### Activate Forced Transactions
 
-You can check out [this](/protocol/sequencer-resistance.md) document to learn more about Forced Batches of transactions.
+You can check out [this](/zkevm/protocol/sequencer-resistance.md) document to learn more about Forced Batches of transactions.
 
 ```bash
 npx hardhat console --network goerli
