@@ -38,6 +38,7 @@ To create a new smart contract with SmartPress, follow these steps:
 ## Deploy your Contract using SmartPress
 
 To deploy your smart contract on Polygon PoS:
+
 1. After creation, connect your wallet and switch your network to either Mumbai testnet or Polygon PoS mainnet.
 2. Press the 'Deploy' button. If you lack transaction gas, use the provided faucet links to obtain some.
 
@@ -45,7 +46,10 @@ To deploy your smart contract on Polygon PoS:
 
 ## Verify the Contract
 
-1. To verify your new contract, start by clicking on 'View Code' and copy the flattened version of your code to the clipboard.
+
+To verify your new contract, follow these steps:
+
+1. Start by clicking on 'View Code' and copy the flattened version of your code to the clipboard.
 2. In your preferred block explorer, navigate to the verification screen (typically found under 'contracts/code').
 3. Select single file (flattened).
 4. Select the compiler version as indicated on the deployment page.
