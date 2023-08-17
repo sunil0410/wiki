@@ -103,15 +103,15 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 ## TokenMapping
 
-| Field           | Type     | Description                        |
-| --------------- | -------- | ---------------------------------- |
-| id              | ID!      | Token mapping ID                   |
-| rootToken       | Bytes!   | Root token address                 |
-| childToken      | Bytes!   | Child token address                |
-| tokenType       | String!  | Token contract address             |
+| Field           | Type     | Description                         |
+| --------------- | -------- | ----------------------------------- |
+| id              | ID!      | Token mapping ID                    |
+| rootToken       | Bytes!   | Root token address                  |
+| childToken      | Bytes!   | Child token address                 |
+| tokenType       | String!  | Token contract address              |
 | isPOS           | Boolean! | Checks whether POS is true or false |
-| timestamp       | BigInt!  | Token mapping timestamp            |
-| transactionHash | Bytes!   | Transaction hash                   |
+| timestamp       | BigInt!  | Token mapping timestamp             |
+| transactionHash | Bytes!   | Transaction hash                    |
 
 ## FxTokenMapping
 
