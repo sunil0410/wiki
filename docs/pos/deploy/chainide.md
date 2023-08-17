@@ -1,7 +1,7 @@
 ---
 id: chainide
 title: How to Deploy a Smart Contract Using ChainIDE
-sidebar_label: How to Deploy a Smart Contract Using ChainIDE
+sidebar_label: Using ChainIDE
 description: Learn how to use ChainIDE to build and deploy smart contracts.
 keywords:
   - docs

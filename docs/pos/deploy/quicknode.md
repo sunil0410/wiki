@@ -1,7 +1,7 @@
 ---
 id: quicknode
 title: How to Deploy a Smart Contract Using QuickNode
-sidebar_label: How to Deploy a Smart Contract Using QuickNode
+sidebar_label: Using QuickNode
 description:  Deploy Smart Contracts on Polygon using Brownie and Quicknode.
 keywords:
   - docs

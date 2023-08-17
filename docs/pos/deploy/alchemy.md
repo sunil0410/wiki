@@ -1,7 +1,7 @@
 ---
 id: alchemy
 title: How to Deploy a Smart Contract Using Alchemy
-sidebar_label: How to Deploy a Smart Contract Using Alchemy
+sidebar_label: Using Alchemy
 description: Guide to deploy smart contracts using Alchemy
 keywords:
   - docs

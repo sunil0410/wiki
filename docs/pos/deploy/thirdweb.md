@@ -1,7 +1,7 @@
 ---
 id: thirdweb
-title: How to Deploy a Smart Contract Using thirdweb
-sidebar_label: How to Deploy a Smart Contract Using thirdweb
+title: How to Deploy a Smart Contract Using thirdWeb
+sidebar_label: Using thirdWeb
 description: "Lean how to deploy smart contracts on Polygon PoS mainnet using thirdweb."
 keywords:
   - docs

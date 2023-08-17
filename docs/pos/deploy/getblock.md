@@ -1,7 +1,7 @@
 ---
 id: getblock
 title: How to Deploy a Smart Contract using GetBlock
-sidebar_label: How to Deploy a Smart Contract using GetBlock
+sidebar_label: Using GetBlock
 description: Guide to deploy smart contracts using GetBlock
 keywords:
   - docs
