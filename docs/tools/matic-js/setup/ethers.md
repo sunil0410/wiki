@@ -16,7 +16,7 @@ The [ethers.js](https://docs.ethers.io/) library aims to be a complete and compa
 
 ## Setup ether.js
 
-ether.js support is available via seperate package as a plugin for matic.js.
+ether.js support is available via separate package as a plugin for matic.js.
 
 ### Installation
 
