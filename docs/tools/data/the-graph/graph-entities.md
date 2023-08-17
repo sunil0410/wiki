@@ -199,7 +199,7 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 | status            | Int!     | Status codes: 0 - staked, 1 - unstaked, 2 - jailed, 3 - unjailed |
 | jailEndEpoch      | BigInt!  | Epoch where validator is unjailed                                |
 | auctionAmount     | BigInt!  | Auction amount                                                   |
-| isInAuction       | Boolean! | Checks whether validator is in auction                            |
+| isInAuction       | Boolean! | Checks whether validator is in auction                           |
 
 ## StakeUpdate
 
@@ -263,7 +263,7 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 | user                   | Bytes!   | Delegator address                          |
 | amount                 | BigInt!  | Total amount                               |
 | tokens                 | BigInt!  | Token amount                               |
-| completed              | Boolean! | Checks whether unbond is complete           |
+| completed              | Boolean! | Checks whether unbond is complete          |
 | unbondStartedTXHash    | Bytes!   | Transaction hash when unbond was initaited |
 | unbondStartedTimeStamp | BigInt!  | Timestamp when when unbond was initaited   |
 | unbondClaimedTXHash    | Bytes!   | Transaction hash when unbond was claimed   |
