@@ -16,7 +16,7 @@ description: 'Install and set up web3.js.'
 
 ## Setup web3.js
 
-web3.js support is available via seperate package as a plugin for matic.js.
+web3.js support is available via separate package as a plugin for matic.js.
 
 ### Installation
 

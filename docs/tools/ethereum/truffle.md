@@ -65,7 +65,7 @@ We will use one of Truffle's boilerplates which you can find on their [Truffle B
   truffle unbox metacoin
   ```
 
-With that last step, you have created a Truffle project cointaining folders with contracts, deployment, testing, and configuration files.
+With that last step, you have created a Truffle project containing folders with contracts, deployment, testing, and configuration files.
 
 This is the smart contract data from the `metacoin.sol` file:
 
@@ -109,7 +109,7 @@ contract MetaCoin {
 
 :::note
 
-Notice that ConvertLib is being imported just after the `pragma` statement. In this project, there are actually two smart contracts that will be deployed at the end: one is Metacoin, contatining all the send and balance logic; the other is ConvertLib, a library used to convert values.
+Notice that ConvertLib is being imported just after the `pragma` statement. In this project, there are actually two smart contracts that will be deployed at the end: one is Metacoin, containing all the send and balance logic; the other is ConvertLib, a library used to convert values.
 
 :::
 

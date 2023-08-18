@@ -103,15 +103,15 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 ## TokenMapping
 
-| Field           | Type     | Description                        |
-| --------------- | -------- | ---------------------------------- |
-| id              | ID!      | Token mapping ID                   |
-| rootToken       | Bytes!   | Root token address                 |
-| childToken      | Bytes!   | Child token address                |
-| tokenType       | String!  | Token contract address             |
-| isPOS           | Boolean! | Checks wether POS is true or false |
-| timestamp       | BigInt!  | Token mapping timestamp            |
-| transactionHash | Bytes!   | Transaction hash                   |
+| Field           | Type     | Description                         |
+| --------------- | -------- | ----------------------------------- |
+| id              | ID!      | Token mapping ID                    |
+| rootToken       | Bytes!   | Root token address                  |
+| childToken      | Bytes!   | Child token address                 |
+| tokenType       | String!  | Token contract address              |
+| isPOS           | Boolean! | Checks whether POS is true or false |
+| timestamp       | BigInt!  | Token mapping timestamp             |
+| transactionHash | Bytes!   | Transaction hash                    |
 
 ## FxTokenMapping
 
@@ -199,7 +199,7 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 | status            | Int!     | Status codes: 0 - staked, 1 - unstaked, 2 - jailed, 3 - unjailed |
 | jailEndEpoch      | BigInt!  | Epoch where validator is unjailed                                |
 | auctionAmount     | BigInt!  | Auction amount                                                   |
-| isInAuction       | Boolean! | Checks wether validator is in auction                            |
+| isInAuction       | Boolean! | Checks whether validator is in auction                           |
 
 ## StakeUpdate
 
@@ -263,7 +263,7 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 | user                   | Bytes!   | Delegator address                          |
 | amount                 | BigInt!  | Total amount                               |
 | tokens                 | BigInt!  | Token amount                               |
-| completed              | Boolean! | Checks wether unbond is complete           |
+| completed              | Boolean! | Checks whether unbond is complete          |
 | unbondStartedTXHash    | Bytes!   | Transaction hash when unbond was initaited |
 | unbondStartedTimeStamp | BigInt!  | Timestamp when when unbond was initaited   |
 | unbondClaimedTXHash    | Bytes!   | Transaction hash when unbond was claimed   |
