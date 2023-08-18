@@ -1,7 +1,7 @@
 ---
 id: supernets-grpc
 title: gRPC
-description: "The gRPC layer fof Supernets."
+description: "The gRPC layer for Supernets."
 keywords:
   - docs
   - polygon
