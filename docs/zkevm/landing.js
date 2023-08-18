@@ -37,7 +37,7 @@ export default function Welcome () {
                   </a>{" "}
                   Wiki
                 </h1>
-                <h3 className="mt-0">Ethereum scalability with zkEVM performance and security.</h3>
+                <h3 className="mt-0">Elevate Ethereum with zkEVM's groundbreaking performance and security.</h3>
               </div>
               <div className="col-lg-4 text-center pt-3 d-none d-lg-block" style={{ marginLeft: "-100px" }}>
                 <div className="tabs_animation-wrapper supernets-video">

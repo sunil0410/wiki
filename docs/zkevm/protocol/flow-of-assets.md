@@ -58,7 +58,7 @@ Please note that the architecture shown in below figure is rather simplistic. It
 
 For example, the interaction between the Consensus Contract and the Sequencer is omitted in the figure. 
 
-For a more wholistic view of the interaction between the Consensus Contract and the Sequencer, the reader is referred to earlier subsections of this documentation, specifically on the [<ins>Consensus Contract</ins>](/architecture.md#consensus-contract).
+For a more wholistic view of the interaction between the Consensus Contract and the Sequencer, the reader is referred to earlier subsections of this documentation, specifically on the [<ins>Consensus Contract</ins>](/zkevm/architecture.md#consensus-contract).
 
 :::
 

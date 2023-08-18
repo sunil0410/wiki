@@ -25,7 +25,7 @@ export const firstRow = [
     },
     {
         title: "Run a zkEVM node",
-        linkUrl: "docs/zkevm/category/setup-zknode",
+        linkUrl: "docs/zkevm/setup-production-zknode",
         imageUrl: "img/logo-round-dark.png",
         description: "Contribute to decentralized computing by running your own ZK node."
     },
