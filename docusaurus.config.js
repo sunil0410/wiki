@@ -265,10 +265,6 @@ module.exports = {
             },
             */
             {
-              label: "zkEVM",
-              href: "https://zkevm.polygon.technology"
-            },
-            {
               label: "Miden",
               href: "docs/miden/design/main"
             },
@@ -416,7 +412,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: 'https://zkevm.polygon.technology',
+              href: '/docs/zkevm/',
               label: 'zkEVM',
               target: '_self',
               rel: null,
@@ -494,9 +490,9 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: 'https://zkevm.polygon.technology/docs/introduction',
+              href: '/docs/zkevm/architecture',
               label: 'zkEVM',
-              target: '_blank',
+              target: '_self',
               rel: null,
             },
             {

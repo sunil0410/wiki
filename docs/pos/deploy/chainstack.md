@@ -1,7 +1,7 @@
 ---
 id: chainstack
 title: How Deploy a Smart Contract Using Chainstack and Foundry
-sidebar_label: How Deploy a Smart Contract Using Chainstack
+sidebar_label: Using Chainstack
 description:  Use Chainstack and Foundry to develop a Smart Contract on Polygon
 keywords:
   - docs
