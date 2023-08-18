@@ -18,7 +18,7 @@ As a Generic SM, it can be thought of as being composed of two parts:
 
 1. The **firmware** part which is concerned with interpreting program instructions and correctly generating the execution trace. The ROM, which is a computer program written in zkASM, contains the set of all the zkProver's instructions. It is to the Polygon zkEVM what the EVM Interpreter is to Ethereum.
 
-2. The **hardware** part is responsible for setting up polynomial identities that every correctly-generated execution trace must satisfy. These polynomial identities (which are obtained via an interpolation process), are described in a novel language developed by the Polygon zkEVM team, called the [Polynomial Identity Language](/PIL/introduction.md).
+2. The **hardware** part is responsible for setting up polynomial identities that every correctly-generated execution trace must satisfy. These polynomial identities (which are obtained via an interpolation process), are described in a novel language developed by the Polygon zkEVM team, called the [Polynomial Identity Language](/zkevm/PIL/introduction.md).
 
 ## Specialist State Machines
 

@@ -16,17 +16,17 @@ Users with good internet connection can schedule a 2-hour window for completing 
 
 However, in order to allow for in-between breaks, the process is aesthetically split into 6 steps.
 
-- [**First Step**](/docs/deploy-fullzkevm.md#overview-and-setting-up): Preliminary Setup, checking system requirements and prerequisites variables.
+- [**First Step**](/docs/zkevm/deploy-fullzkevm.md#overview-and-setting-up): Preliminary Setup, checking system requirements and prerequisites variables.
 
-- [**Second Step**](/docs/step2-fullzkevm.md#step2-fullzkevm): Installing Dependencies and downloading Mainnet Files.
+- [**Second Step**](/docs/zkevm/step2-fullzkevm.md#step2-fullzkevm): Installing Dependencies and downloading Mainnet Files.
 
-- [**Third Step**](/docs/step3-fullzkevm.md#step3-fullzkevm): Creating wallets and Deploying Contracts.
+- [**Third Step**](/docs/zkevm/step3-fullzkevm.md#step3-fullzkevm): Creating wallets and Deploying Contracts.
 
-- [**Fourth Step**](/docs/step4-fullzkevm.md#step4-fullzkevm): Deployment of the zkNode.
+- [**Fourth Step**](/docs/zkevm/step4-fullzkevm.md#step4-fullzkevm): Deployment of the zkNode.
 
-- [**Fifth Step**](/docs/step5-fullzkevm.md#step5-fullzkevm): Configuring the Prover and Services.
+- [**Fifth Step**](/docs/zkevm/step5-fullzkevm.md#step5-fullzkevm): Configuring the Prover and Services.
 
-- [**Sixth Step**](/docs/step6-fullzkevm.md#step6-fullzkevm): Activating forced txs and Bridging/Claiming Assets.
+- [**Sixth Step**](/docs/zkevm/step6-fullzkevm.md#step6-fullzkevm): Activating forced txs and Bridging/Claiming Assets.
 
 :::caution
 
@@ -144,7 +144,7 @@ You'll need the following variables.
 | L1 Goërli node RPC               | This is the API Key of your designated L1 node. The L1 here is Goërli.                   |
 | Goerli address with **15 GöETH** | This refers to your MetaMask address, or any wallet of your choice.                      |
 
-See this guide here for [**setting up your own Goërli node**](/docs/setup-goerlinode.md#setup-goerlinode).
+See this guide here for [**setting up your own Goërli node**](/docs/zkevm/setup-goerlinode.md#setup-goerlinode).
 
 #### Computing Requirements
 

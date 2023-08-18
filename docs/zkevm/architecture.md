@@ -83,9 +83,9 @@ A smart contract verifies the validity proofs to ensure that each transition is 
 
 To carry out these procedures, zkEVM employs two sorts of participants: **Sequencers** and **Aggregators**. Under this two-layer model: 
 ​
-- [**Sequencers**](/zknode/overview.md#sequencers) &rarr; propose transaction batches to the network, i.e. they roll-up the transaction requests in batches and add them to the Consensus Contract.
+- [**Sequencers**](/zkevm/zknode/overview.md#sequencers) &rarr; propose transaction batches to the network, i.e. they roll-up the transaction requests in batches and add them to the Consensus Contract.
 ​
-- [**Aggregators**](/zknode/overview.md#aggregators) &rarr; check the validity of the transaction batches and provide validity proofs. Any permissionless Aggregator can submit the proof to demonstrate the correctness of the state transition computation.
+- [**Aggregators**](/zkevm/zknode/overview.md#aggregators) &rarr; check the validity of the transaction batches and provide validity proofs. Any permissionless Aggregator can submit the proof to demonstrate the correctness of the state transition computation.
 
 The  Smart Contract, therefore, makes two calls: one to receive batches from Sequencers, and another to Aggregators, requesting batches to be validated.
 ​
@@ -110,14 +110,14 @@ An Aggregator receives all the transaction information from the Sequencer and se
 - For a given batch or batches, an Aggregator that submits a validity proof first earns the MATIC fee (which is being paid by the Sequencer(s) of the batch(es)).
 - The Aggregators need to indicate their intention to validate transactions. After that, they compete to produce validity proofs based on their own strategy.
 
-## [zkNode](/zknode/overview.md)
+## [zkNode](/zkevm/zknode/overview.md)
 
 zkNode is the software needed to run any zkEVM node. It is a client that the network requires to implement the Synchronization and govern the roles of the participants (Sequencers or Aggregators). Polygon zkEVM participants will choose how they participate:
 
 - As a node to know the state of the network, or
 - As a participant in the process of batch production in any of the two roles: **Sequencer** or **Aggregator**
 
-The zkNode architecture is modular in nature. You can dig deeper into zkNode and its components [here](/zknode/overview.md).
+The zkNode architecture is modular in nature. You can dig deeper into zkNode and its components [here](/zkevm/zknode/overview.md).
 
 ### Incentivization Structure
 

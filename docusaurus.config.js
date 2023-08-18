@@ -412,7 +412,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/zkevm/introduction',
+              href: '/docs/zkevm/',
               label: 'zkEVM',
               target: '_self',
               rel: null,
@@ -490,7 +490,7 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/zkevm/introduction',
+              href: '/docs/zkevm/architecture',
               label: 'zkEVM',
               target: '_self',
               rel: null,

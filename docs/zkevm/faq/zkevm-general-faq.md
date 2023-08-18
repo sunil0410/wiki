@@ -13,7 +13,7 @@ keywords:
   - open source
 ---
 
-This document compiles some of the frequently asked questions related to the Polygon zkEVM. For more details, check out [this documentation](/introduction.md).
+This document compiles some of the frequently asked questions related to the Polygon zkEVM. For more details, check out [this documentation](/zkevm/introduction.md).
 
 ---
 
@@ -46,7 +46,7 @@ However, with the proving system breakthroughs pioneered by Polygon Labs, we bel
 
 ### How do I connect Polygon zkEVM to a Metamask Wallet?
 
-In order to add the Polygon zkEVM network to your wallet, please check [this guide](/develop.md#connecting-to-zkevm) which contains the latest RPC details and videos demonstrating useful functionalities.
+In order to add the Polygon zkEVM network to your wallet, please check [this guide](/zkevm/develop.md#connecting-to-zkevm) which contains the latest RPC details and videos demonstrating useful functionalities.
 
 ### How does Polygon zkEVM compare to other zkEVMs in terms of technology and performance? What are the technical advantages there?
 
@@ -98,7 +98,7 @@ Yes, any language that gets compiled to EVM opcode should work with Polygon zkEV
 
 Additionally, for a software application to interact with the Ethereum blockchain (by reading blockchain data and/or sending transactions to the network), it must connect to an Ethereum node. It works the same way as other nodes such as geth.
 
-Learn how to set up your production zkNode [here](/setup-production-node.md).
+Learn how to set up your production zkNode [here](/zkevm/setup-production-node.md).
 
 ### Do you support the JSON-RPC EVM query spec? What are the unsupported queries?
 
