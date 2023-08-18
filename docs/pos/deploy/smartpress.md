@@ -54,7 +54,7 @@ To verify your new contract, follow these steps:
 3. Select single file (flattened).
 4. Select the compiler version as indicated on the deployment page.
 5. Set the optimizer to 'TRUE' and runs to '200'.
-6. Choose your preffered licence.
+6. Choose your preferred licence.
 7. Paste the flattened code in the code box.
 8. Verification will complete.
 
