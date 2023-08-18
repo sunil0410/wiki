@@ -767,7 +767,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         "zkevm/develop",
         "zkevm/bridge-to-zkevm",
@@ -809,7 +809,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      collapsed: false,
+      collapsed: true,
       items: ["zkevm/setup-local-node", "zkevm/setup-production-node"],
     },
     {
@@ -818,7 +818,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         "zkevm/deploy-fullzkevm",
         "zkevm/step2-fullzkevm",
@@ -844,7 +844,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         "zkevm/faq/zkevm-general-faq",
         "zkevm/faq/zkevm-protocol-faq",
