@@ -220,7 +220,7 @@ Start by logging in to the remote sentry machine.
 Open the Heimdall configuration file for editing:
 
 ```sh
-vi ~/.heimdalld/config/config.toml
+vi /var/lib/heimdall/config/config.toml
 ```
 
 In `config.toml`, change the following parameters:
@@ -257,7 +257,7 @@ Save the changes in `config.toml`.
 Open the Bor configuration file for editing:
 
 ```sh
-`vi var/lib/bor/config.toml`
+vi /var/lib/bor/config.toml
 ```
 
 In `config.toml`, add the boot node addresses consisting of a node ID, an IP address, and a port
@@ -276,8 +276,6 @@ The sentry machine must have the following ports open to the world `0.0.0.0/0`:
 * `26656`- Your Heimdall service will connect your node to other nodes Heimdall service.
 
 * `30303`- Your Bor service will connect your node to other nodes Bor service.
-
-* `22` - Open this port if your node is servicing validators. You will likely want to restrict what traffic can access this port as it is a sensitive port.
 
 ## Starting the Sentry Node
 
@@ -397,19 +395,19 @@ Save the changes in `heimdall-config.toml`.
 
 ### Configuring the Bor service
 
-Open for editing `vi /var/lib/bor/data/bor/static-nodes.json`.
+Open config file for editing using: `vi /var/lib/bor/config.toml`
 
-In `static-nodes.json`, change the following:
+Change the value of static-nodes parameter as follows:
 
-* `"<replace with enode://sentry_machine_enodeID@sentry_machine_ip:30303>"` — the node ID and
-  IP address of Bor set up on the sentry machine.
+```json
+static-nodes = ["<replace with enode://sentry_machine_enodeID@sentry_machine_ip:30303>"]
+// the node ID and IP address of Bor set up on the sentry machine
+```
 
-  To get the node ID of Bor on the sentry machine:
+To get the Node ID of Bor on the sentry machine:
 
-  1. Log in to the sentry machine.
-  2. Run `bootnode -nodekey ~/.bor/data/bor/nodekey -writeaddress`.
-
-Save the changes in `static-nodes.json`.
+- Log in to the sentry machine
+- Run `cat /var/lib/bor/data/bor/nodekey`
 
 ## Setting the Owner and Signer Key
 
@@ -437,7 +435,7 @@ This will generate `priv_validator_key.json`. Move the generated JSON file to th
 directory:
 
 ```sh
-mv ./priv_validator_key.json ~/.heimdalld/config
+mv ./priv_validator_key.json  /var/lib/heimdall/config
 ```
 
 ### Generating a Bor keystore file
@@ -462,21 +460,28 @@ This will generate a `UTC-<time>-<address>` keystore file.
 Move the generated keystore file to the Bor configuration directory:
 
 ```sh
-mv ./UTC-<time>-<address> ~/.bor/keystore/
+mv ./UTC-<time>-<address> /var/lib/bor/data/keystore
 ```
 
 ### Add password.txt
 
-Make sure to create a `password.txt` file then add the Bor keystore file password right in the
-`~/.bor/password.txt` file.
+Make sure to create a `password.txt` file, then add the Bor keystore file password right in the
+`/var/lib/bor/password.txt` file.
 
 ### Add your Ethereum address
 
-Open for editing `vi /etc/matic/metadata`.
+Open `config.toml` for editing: `vi /var/lib/bor/config.toml`.
 
-In `metadata`, add your Ethereum address. Example: `VALIDATOR_ADDRESS=0xca67a8D767e45056DC92384b488E9Af654d78DE2`.
+```toml
+[miner]
+  mine = true
+  etherbase = "validator address"
 
-Save the changes in `metadata`.
+[accounts]
+  unlock = ["validator address"]
+  password = "The path of the file you entered in password.txt"
+  allow-insecure-unlock = true
+```
 
 ## Starting the Validator Node
 
@@ -1062,7 +1067,9 @@ Ensure the `keystore` parameter in `/var/lib/bor/config.toml` matches the direct
 
 ### Add `password.txt`
 
-Make sure to create a `password.txt` file then add the Bor keystore file password right in the `/var/lib/bor/data/password.txt` file. Ensure that `password` parameter in `/var/lib/bor/config.toml` matches the location of the password file.
+Make sure to create a `password.txt` file then add the Bor keystore file password right in the `/var/lib/bor/password.txt` file.
+
+Ensure that `password` parameter in `/var/lib/bor/config.toml` matches the location of the password file.
 
 ### Add your Ethereum address
 
@@ -1618,7 +1625,7 @@ This will generate a `UTC-<time>-<address>` keystore file.
 Move the generated keystore file to the Bor configuration directory:
 
 ```sh
-mv ./UTC-<time>-<address> /var/lib/bor/keystore/
+mv ./UTC-<time>-<address> /var/lib/bor/data/keystore
 ```
 
 ### Add password.txt
@@ -1628,11 +1635,18 @@ Make sure to create a `password.txt` file then add the Bor keystore file passwor
 
 ### Add your Ethereum address
 
-Open for editing `vi /etc/matic/metadata`.
+Open `config.toml` for editing: `vi /var/lib/bor/config.toml`.
 
-In `metadata`, add your Ethereum address. Example: `VALIDATOR_ADDRESS=0xca67a8D767e45056DC92384b488E9Af654d78DE2`.
+```toml
+[miner]
+  mine = true
+  etherbase = "validator address"
 
-Save the changes in `metadata`.
+[accounts]
+  unlock = ["validator address"]
+  password = "The path of the file you entered in password.txt"
+  allow-insecure-unlock = true
+```
 
 ## Configure service files for bor and heimdall
 
