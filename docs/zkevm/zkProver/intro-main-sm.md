@@ -2,7 +2,7 @@
 id: intro-main-sm
 title: Introduction to Main State Machine
 sidebar_label: Introduction
-description: This document describes Main State Machine of the zkProver alongwith detailed information regarding ROM and zkEVM State Trie.
+description: This document describes Main State Machine of the zkProver along with detailed information regarding ROM and zkEVM State Trie.
 keywords:
   - polygon
   - zkEVM
@@ -67,7 +67,7 @@ Here is a complete list of the public parameters;
 
 - `newStateRoot`: the new state root is the root of the newly amended Merkle tree (representing the new L2 State) due to the state transition being proved and verified.
 
-- `newBatchNum`: the new Batch Number is a unique batch index of the the batch whose execution is currently being proved and verified.
+- `newBatchNum`: the new Batch Number is a unique batch index of the batch whose execution is currently being proved and verified.
 
 - `localExitRoot`: the local Exit Root is the root of the L2 Bridge contract’s Exit Merkle Tree, at the end of the batch execution.
 
@@ -163,7 +163,7 @@ As depicted in the figure below, each Context is divided into three word-blocks.
 
   The list of all Context variables can be found in the [`vars.zkasm`](https://github.com/0xPolygonHermez/zkevm-rom/blob/main/main/vars.zkasm) file.
 
-- `STACK`: contains the stack of the the EVM. So, a `STACK` is defined per Context. 
+- `STACK`: contains the stack of the EVM. So, a `STACK` is defined per Context. 
 
   It has a relative offset of `0x10000`, a height of `0x10000` words and takes $2$MB of the $8$MB allocated for a Context.
 
@@ -219,7 +219,7 @@ The figure below displays a schematic representation of the zkEVM Stack and the 
 
 ## TLDR;
 
-&rarr; The ROM is a program written in zkASM. It contain the instructions that the zkProver must execute in order to produce verifiable Computational Integrity proofs. The ROM contains the rules and logic that forms the firmware of the zkProver. Its code can be found [here](https://github.com/0xPolygonHermez/zkevm-rom) in the GitHub repository.
+&rarr; The ROM is a program written in zkASM. It contains the instructions that the zkProver must execute in order to produce verifiable Computational Integrity proofs. The ROM contains the rules and logic that form the firmware of the zkProver. Its code can be found [here](https://github.com/0xPolygonHermez/zkevm-rom) in the GitHub repository.
 
 &rarr; The zkEVM uses SMT with five different leaf types. 
 
