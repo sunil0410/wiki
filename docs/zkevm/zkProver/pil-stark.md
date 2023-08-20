@@ -71,7 +71,7 @@ However, with every set of inputs, the SM-Prover's Executor computes correspondi
 
 ### PIL-STARK Proof Generator
 
-This STARK Proof Generator takes as inputs; the the evaluations of the of committed polynomials from the SM-Prover's Executor, the evaluations of the constant polynomials from the Setup Phase, together with the $\texttt{constTree}$ and the $\texttt{starkInfo}$.
+This STARK Proof Generator takes as inputs; the evaluations of the committed polynomials from the SM-Prover's Executor, the evaluations of the constant polynomials from the Setup Phase, together with the $\texttt{constTree}$ and the $\texttt{starkInfo}$.
 
 This is where the evaluations of the committed polynomials, from the SM-Prover's Executor, are Merkelized. And all elements of the ultimate STARK proof are generated, these include; the witness and the required openings of the committed polynomials. 
 

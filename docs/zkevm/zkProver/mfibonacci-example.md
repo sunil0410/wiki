@@ -96,7 +96,7 @@ Clearly, the polynomial identities are not aligned with the registry values of t
 
 ## Introducing Cyclicity
 
-In order to inject some cyclicity into the the mFibonacci SM, we add a third registry $\mathbf{C} = [C_1, C_2, \dots , C_T]$ and set the registry values to $\mathbf{C} = [0, 0, \dots , 0, 1]$. So the mFibonacci SM is now as depicted in Figure 5 below.
+In order to inject some cyclicity into the mFibonacci SM, we add a third registry $\mathbf{C} = [C_1, C_2, \dots , C_T]$ and set the registry values to $\mathbf{C} = [0, 0, \dots , 0, 1]$. So the mFibonacci SM is now as depicted in Figure 5 below.
 
 ![mFibonacci SM with three registries](figures/fib7-mfibon-sm-3-regs.png)
 
