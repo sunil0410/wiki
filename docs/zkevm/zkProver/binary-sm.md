@@ -46,7 +46,7 @@ For example, add the 3-bit strings $\mathtt{0b001}$ and $\mathtt{0b101}$, where 
 
     $1+1+carry=1+1+0=0$, so the next carry becomes $carry'=1$.
 
-- Next, add the the second least-significant bits using the previous carry, 
+- Next, add the second least-significant bits using the previous carry, 
 
     $0+0+carry = 0+0+1 = 1$, this time the next carry is $carry'=0$.
 
@@ -320,13 +320,13 @@ $$
 
 ### Less Than
 
-We want to describe the less than comparator byte-wise. For $256$-bits integers, the operation $<$ will output $c = 1$ if $a < b$ and $c = 0$ otherwise. As we are working in the natural integers order, the most significant byte decide and, if they are equal, we should consider the previous one until we can decide. Let us propose the example with $a = \mathtt{0xFF AE 09}$ and $b = \mathtt{0x FF AE 02}$. We know that $a > b$. Why? We should start at the most significant byte. We know that:
+We want to describe the less than comparator byte-wise. For $256$-bits integers, the operation $<$ will output $c = 1$ if $a < b$ and $c = 0$ otherwise. As we are working in the natural integers order, the most significant byte decides and, if they are equal, we should consider the previous one until we can decide. Let us propose the example with $a = \mathtt{0xFF AE 09}$ and $b = \mathtt{0x FF AE 02}$. We know that $a > b$. Why? We should start at the most significant byte. We know that:
 
 $$
 a \mathtt{>> 16} = \mathtt{0x FF} = \mathtt{0x FF} = b \mathtt{>> 16}.
 $$
 
-Hence, we can not decide with this byte. An the same happens with the second byte, they are both equal to $\mathtt{0x AE}$. Hence, the less significant byte decides,
+Hence, we can not decide with this byte. And the same happens with the second byte, they are both equal to $\mathtt{0x AE}$. Hence, the less significant byte decides,
 
 $$
 \mathtt{0x 09} > \mathtt{0x 02}.
