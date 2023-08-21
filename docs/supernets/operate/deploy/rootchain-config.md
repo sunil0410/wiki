@@ -225,8 +225,6 @@ Using the `--deployer-key` flag, you will need to replace `<hex_encoded_deployer
 
 > The user is responsible for providing the deployer key, which should correspond to an address with sufficient funds for deployment. It is recommended to ensure the account is pre-funded before initiating the deployment process.
 
-You also need to specify the path to the genesis file using the `--genesis` option, and the endpoint for the JSON-RPC endpoint for the rootchain using the `--json-rpc` option.
-
 To run the deployment in test mode and use the test account provided by the Geth dev instance as the depositor, add the `--test` flag. In this case, you may omit the `--deployer-key` flag, and the default test account will be used as the depositor.
 
 <details>
@@ -235,8 +233,8 @@ To run the deployment in test mode and use the test account provided by the Geth
 | Flag                  | Description                                                              | Example                                       |
 |-----------------------|--------------------------------------------------------------------------|-----------------------------------------------|
 | `--deployer-key`      | Hex encoded private key of the account which deploys rootchain contracts | `--deployer-key <PRIVATE_KEY>`                |
-| `--json-rpc`          | The JSON RPC rootchain IP address (e.g. http://127.0.0.1:8545)           | `--json-rpc http://127.0.0.1:8545`            |
-| `--genesis`           | Genesis file path that contains chain configuration                      | `--genesis ./genesis.json`                    |
+| `--json-rpc`          | The JSON RPC rootchain IP address (e.g. http://127.0.0.1:8545)           | `--json-rpc http://127.0.0.1:8545` (default)  |
+| `--genesis`           | Genesis file path that contains chain configuration                      | `--genesis ./genesis.json` (default)          |
 | `--erc20-token`       | Existing rootchain ERC-20 token address                                  | `--erc20-token <ERC_20_ADDRESS>`              |
 | `--stake-manager`     | Address of stake manager contract                                        | `--stake-manager <STAKE_MANAGER_ADDRESS>`     |
 | `--stake-token`       | Address of ERC20 token used for staking on rootchain                     | `--stake-token <STAKE_TOKEN_ADDRESS>`         |
@@ -252,10 +250,12 @@ To run the deployment in test mode and use the test account provided by the Geth
 
   ```bash
   ./polygon-edge rootchain deploy \
-    --genesis ./genesis.json \
-    --json-rpc http://127.0.0.1:8545 \
+  --stake-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr') \
+  --stake-token $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeTokenAddr')
     --test
   ```
+
+The above example will get the `stake-manager` and `stake-token` addresses diretly from your `genesis.json` file. 
 
 <details>
 <summary>Core contract deployment output example</summary>
