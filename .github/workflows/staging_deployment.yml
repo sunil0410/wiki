@@ -38,7 +38,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build
-        run: yarn build
+        run: NODE_OPTIONS="--max-old-space-size=8192" yarn build
 
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
