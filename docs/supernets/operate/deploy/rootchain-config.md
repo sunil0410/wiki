@@ -230,15 +230,15 @@ To run the deployment in test mode and use the test account provided by the Geth
 <details>
 <summary>Flags ↓</summary>
 
-| Flag                  | Description                                                              | Example                                       |
-|-----------------------|--------------------------------------------------------------------------|-----------------------------------------------|
-| `--deployer-key`      | Hex encoded private key of the account which deploys rootchain contracts | `--deployer-key <PRIVATE_KEY>`                |
-| `--json-rpc`          | The JSON RPC rootchain IP address (e.g. http://127.0.0.1:8545)           | `--json-rpc http://127.0.0.1:8545` (default)  |
-| `--genesis`           | Genesis file path that contains chain configuration                      | `--genesis ./genesis.json` (default)          |
-| `--erc20-token`       | Existing rootchain ERC-20 token address                                  | `--erc20-token <ERC_20_ADDRESS>`              |
-| `--stake-manager`     | Address of stake manager contract                                        | `--stake-manager <STAKE_MANAGER_ADDRESS>`     |
-| `--stake-token`       | Address of ERC20 token used for staking on rootchain                     | `--stake-token <STAKE_TOKEN_ADDRESS>`         |
-| `--test`              | Indicates whether rootchain contracts deployer is hardcoded test account | `--test`                                      |
+| Flag                  | Description                                                                      | Example                                       |
+|-----------------------|----------------------------------------------------------------------------------|-----------------------------------------------|
+| `--deployer-key`      | Hex encoded private key of the account which deploys rootchain contracts         | `--deployer-key <PRIVATE_KEY>`                |
+| `--json-rpc`          | The JSON RPC rootchain IP address (defaults to http://127.0.0.1:8545)            | `--json-rpc http://127.0.0.1:8545`            |
+| `--genesis`           | Genesis file path that contains chain configuration (defaults to ./genesis.json) | `--genesis ./genesis.json`                    |
+| `--erc20-token`       | Existing rootchain ERC-20 token address                                          | `--erc20-token <ERC_20_ADDRESS>`              |
+| `--stake-manager`     | Address of stake manager contract                                                | `--stake-manager <STAKE_MANAGER_ADDRESS>`     |
+| `--stake-token`       | Address of ERC20 token used for staking on rootchain                             | `--stake-token <STAKE_TOKEN_ADDRESS>`         |
+| `--test`              | Indicates whether rootchain contracts deployer is hardcoded test account         | `--test`                                      |
 
 **Global Flags:**
 
@@ -255,7 +255,7 @@ To run the deployment in test mode and use the test account provided by the Geth
     --test
   ```
 
-The above example will get the `stake-manager` and `stake-token` addresses diretly from your `genesis.json` file. 
+The above example will get the `stake-manager` and `stake-token` addresses directly from your `genesis.json` file. 
 
 <details>
 <summary>Core contract deployment output example</summary>
