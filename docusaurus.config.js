@@ -9,6 +9,7 @@ module.exports = {
   favicon: "img/logo-round-purple.png",
   organizationName: "Polygon Labs",
   projectName: "wiki",
+  trailingSlash: true,
   customFields: {
     description: "Build your next application on Polygon.",
   },
