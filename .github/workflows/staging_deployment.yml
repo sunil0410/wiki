@@ -29,6 +29,10 @@ jobs:
           role-to-assume: arn:aws:iam::070528468658:role/wiki-staging-GithubActionsRole
           role-session-name: GithubActionsSession
 
+      # Fetch Git history
+      - name: Fetch Git history
+        run: git fetch --unshallow
+
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
