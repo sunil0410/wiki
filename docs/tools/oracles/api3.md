@@ -153,7 +153,7 @@ The [API3 Market](https://market.api3.org/dapis) enables users to connect to a d
 ### Types of dAPIs
 
 #### Self-funded dAPIs
-Self-funded dAPIs are single-source data feeds that can be funded by the users with
+[Self-funded dAPIs](https://docs.api3.org/reference/dapis/understand/self-funded.html) are single-source data feeds that can be funded by the users with
 their own funds. The amount of gas supplied determines how long the dAPI will be
 available to use. If it runs out of gas, the dAPI will no longer be updated
 unless it is funded again.
@@ -161,7 +161,7 @@ unless it is funded again.
 [Click here to read more about Self-funded dAPIs](https://docs.api3.org/guides/dapis/subscribing-self-funded-dapis/).
 
 #### Managed dAPIs
-Managed dAPIs are sourced directly from mulitple [first-party](https://docs.api3.org/explore/airnode/why-first-party-oracles.html) data providers
+[Managed dAPIs](https://docs.api3.org/reference/dapis/understand/managed.html) are sourced directly from mulitple [first-party](https://docs.api3.org/explore/airnode/why-first-party-oracles.html) data providers
 running an Airnode and aggregated using Airnode's signed data using
 a median function. The gas costs
 and avaibality of Managed dAPIs is managed by the [API3 DAO](https://docs.api3.org/explore/dao-members/).
