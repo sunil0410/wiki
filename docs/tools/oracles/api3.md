@@ -105,7 +105,7 @@ contract Requester is RrpRequesterV0 {
 }
 ```
 
-The `_rrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts have already been deployed on-chain. You can check the address for Polygon [here](https://docs.api3.org/reference/airnode/latest/). You can also try [**deploying it on Remix**](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+The `_rrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts have already been deployed on-chain. You can check the address for Polygon [here](https://docs.api3.org/reference/airnode/latest/). You can also try [**deploying it on Remix**](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
 |         Contract         |                     Addresses                    |
 |:------------------------:|:------------------------------------------------:|
@@ -133,7 +133,7 @@ Sponsors should not fund a `sponsorWallet` with more then they can trust the Air
 undertakes no custody obligations, and the risk of loss or misuse of any excess funds sent to the `sponsorWallet` remains with the sponsor
 :::
 
-### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
 
 ## Using dAPIs - API3 Datafeeds
@@ -150,29 +150,47 @@ The [API3 Market](https://market.api3.org/dapis) enables users to connect to a d
 
 [*To know more about how dAPIs work, click here*](https://docs.api3.org/explore/dapis/what-are-dapis.html)
 
-<!-- ### Types of dAPIs
+### Types of dAPIs
 
 #### Self-funded dAPIs
-Self-funded dAPIs offer developers the opportunity to experience data feeds with
-minimal up-front commitment, providing a low-risk option prior to using a
-managed dAPIs.
+Self-funded dAPIs are single-source data feeds that can be funded by the users with
+their own funds. The amount of gas supplied determines how long the dAPI will be
+available to use. If it runs out of gas, the dAPI will no longer be updated
+unless it is funded again.
+
+[Click here to read more about Self-funded dAPIs](https://docs.api3.org/guides/dapis/subscribing-self-funded-dapis/).
 
 #### Managed dAPIs
-Managed dAPIs are sourced from multiple first-party oracles and aggregated using
-a median function. Compared to self-funded dAPIs, Managed dAPIs are monetized,
-as API3 requires payment in USDC on Ethereum Mainnet to operate them. -->
+Managed dAPIs are sourced directly from mulitple [first-party](https://docs.api3.org/explore/airnode/why-first-party-oracles.html) data providers
+running an Airnode and aggregated using Airnode's signed data using
+a median function. The gas costs
+and avaibality of Managed dAPIs is managed by the [API3 DAO](https://docs.api3.org/explore/dao-members/).
 
-### Subscribing to self-funded dAPIs
+[Click here to read more about Managed dAPIs](https://docs.api3.org/reference/dapis/understand/managed.html).
 
-With self-funded dAPIs, you can fund the dAPI with your own funds. The amount of gas you supply will determine how long your dAPI will be available for use. If you run out of gas, you can fund the dAPI again to keep it available for use.
+### Subscribing to dAPIs
+
+The API3 Market lets users access both Self-funded and Managed dAPIs.
+
+:::note Info
+
+While Managed dAPIs are just available on mainnets, Self-funded dAPIs are available on both mainnets and testnets. The process to read from a dAPI proxy remains same for both Self-funded and Managed dAPIs.
+
+:::
+
+With Self-funded dAPIs, you can fund the dAPI with your own funds. The amount of gas you supply will determine how long your dAPI will be available for use. If you run out of gas, you can fund the dAPI again to keep it available for use.
 
 #### Exploring and selecting your dAPI
 
 The [API3 Market](https://market.api3.org/dapis) provides a list of all the dAPIs available across multiple chains including testnets. You can filter the list by chains and data providers. You can also search for a specific dAPI by name. Once selected you will land on the details page where you can find more information about the dAPI.
 
+You can then decide if you want to use Self-funded or Managed dAPIs.
+
+> <img src={useBaseUrl("img/api3/dapi-page.png")} />
+
 #### Funding a sponsor wallet
 
-Once you have selected your dAPI, you can activate it by using the [API3 Market](https://market.api3.org/) to send Matic to the `sponsorWallet`. Make sure your:
+If you are trying to access Self-funded dAPIs, you need to make sure that the sponsor wallet for the dAPI is funded. You can activate it by using the [API3 Market](https://market.api3.org/) and send Matic to the `sponsorWallet`. Make sure your:
 
 - Wallet is connected to the Market and is the same network as the dAPI you are funding.
 - Balance of the wallet should be greater than the amount you are sending to the `sponsorWallet`.
@@ -207,9 +225,43 @@ Once the transaction is broadcasted and confirmed on the blockchain, the proxy c
 
 > <img src={useBaseUrl("img/api3/market6.png")} width="500"/>
 
-### Reading from a self-funded dAPI
+#### Subscribing to a Managed dAPI
 
-Here's an example of a basic contract that reads from a self-funded dAPI.
+If you are trying to access Managed dAPIs, 
+once you have selected your dAPI, you will then be presented with an option to
+choose from either **Managed** or **Self-funded**. Select Managed dAPIs.
+
+Managed dAPIs gives you an option to configure the dAPI's
+[devation threshold](https://docs.api3.org/reference/dapis/understand/deviations.html) and
+[heartbeat](https://docs.api3.org/reference/dapis/understand/deviations.html#heartbeat). For Managed
+dAPIs, you will have the following options to choose from:
+
+| Deviation | Heartbeat |
+| --------- | --------- |
+| 0.25%     | 2 minutes |
+| 0.25%     | 24 hours  |
+| 0.5%      | 24 hours  |
+| 1%        | 24 hours  |
+
+:::note Info 
+
+Not all dAPIs support all the configurations. It depends on the asset and chain.
+Check the [API3 Market](https://market.api3.org) for more info.
+
+:::
+
+After selecting the required deviation threshold and heartbeat, check the final price, and select **Add to Cart**. You can add more dAPIs on the same network to your cart. Once you are done, click on **Checkout**.
+
+Make sure you check the order details and the final price on the payments page. Once you are ready, connect your wallet and pay for the order.
+
+After placing the order, you will have to wait for the dAPI to get updated. It
+usually takes 5 business days for the dAPI team to update the dAPI for the
+requested configuration. Once the dAPI is updated, you can start using it in
+your dApp.
+
+### Reading from a dAPI
+
+Here's an example of a basic contract that reads from a dAPI.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -245,9 +297,9 @@ contract DataFeedReaderExample is Ownable {
 
 - `readDataFeed()` is a view function that returns the latest price of the set dAPI.
 
-You can read more about dAPIs [here](https://docs.api3.org/guides/dapis/subscribing-self-funded-dapis/). 
+You can read more about dAPIs [here](https://docs.api3.org/guides/dapis/subscribing-managed-dapis/). 
 
-### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://gist.githubusercontent.com/vanshwassan/1ec4230956a78c73a00768180cba3649/raw/176b4a3781d55d6fb2d2ad380be0c26f412a7e3c/DapiReader.sol)
+### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/DataFeedReader.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
 
 ## Using API3 QRNG
 
@@ -336,7 +388,7 @@ contract RemixQrngExample is RrpRequesterV0 {
 
 You can read more about API3 QRNG [here](https://docs.api3.org/explore/qrng/).
 
-### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/QrngRequester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/QrngRequesterUpdated.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
 
 ## ChainAPI
 
@@ -356,3 +408,4 @@ Here are some additional developer resources
 - [QRNG Docs](https://docs.api3.org/explore/qrng/)
 - [Github](https://github.com/api3dao/)
 - [Medium](https://medium.com/api3)
+- [YouTube](https://www.youtube.com/API3DAO)
