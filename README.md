@@ -15,6 +15,15 @@
 
 </div>
 
+<p align="left">
+  The Polygon Wiki serves as the central source of truth for Polygon. Spearheaded by Polygon Labs, 
+  it is a community-centric initiative that aims to provide the most current and comprehensive resources for 
+  those interested in learning about, developing on, or maintaining projects within the Polygon ecosystem.
+</p>
+
+| ❗ Please note that the first half of this README provides an overview of Polygon, while the second half focuses on the repository and source. |
+| ---------------------------------------------------------------------------------------------------------------------------- |
+
 <!-- TOC -->
 
 - [Polygon Overview](#polygon-overview)
@@ -55,15 +64,6 @@
   * [License](#license)
 
 <!--/ TOC -->
-
-<p align="left">
-  The Polygon Wiki serves as the central source of truth for Polygon. Spearheaded by Polygon Labs, 
-  it is a community-centric initiative that aims to provide the most current and comprehensive resources for 
-  those interested in learning about, developing on, or maintaining projects within the Polygon ecosystem.
-</p>
-
-| ❗ Please note that the first half of this README provides an overview of Polygon, while the second half focuses on the repository and source. |
-| ---------------------------------------------------------------------------------------------------------------------------- |
 
 # Polygon Overview
 
@@ -257,7 +257,6 @@ Explore the core codebases that power the Polygon ecosystem. This section provid
 | **Erigon**               | [Erigon](https://github.com/maticnetwork/erigon)                     | Erigon Ethereum client.                                                                         |
 | **Policies**             | [Policy at Polygon](https://github.com/maticnetwork/Policy-at-Polygon)| Policies at Polygon.                                                                            |
 
----
 ---
 
 # Repository Overview
