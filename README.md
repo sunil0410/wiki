@@ -32,6 +32,8 @@
   * [Governance](#governance)
     + [Three Governance Pillars](#three-governance-pillars)
     + [Community Involvement](#community-involvement)
+  * [Tokenomics](#tokenomics)
+    + [Key Features of POL](#key-features-of-pol)
   * [Evolution of Polygon's Development Frameworks](#evolution-of-polygon-s-development-frameworks)
     + [Framework Comparison](#framework-comparison)
     + [Key Takeaways](#key-takeaways)
@@ -137,6 +139,22 @@ Polygon 2.0 introduces a forward-looking framework for decentralized governance,
 #### Community Involvement
 
 Community feedback and participation are integral to the governance process. Various channels, including forum posts and community calls, are used to gather feedback from validators, users, infrastructure providers, and dApp developers.
+
+### Tokenomics
+
+Polygon's native token, MATIC, has been pivotal in the network's growth since its inception in 2020. With the introduction of Polygon 2.0, a new token, **POL**, is proposed as a technical upgrade to MATIC. POL is designed to be a third-generation hyperproductive token, offering a range of utilities and incentives to its holders.
+
+#### Key Features of POL
+
+- **Third-Generation Token**: POL introduces the concept of hyperproductive tokens. Unlike first and second-generation tokens, POL enables its holders to validate multiple chains and assume multiple roles within those chains, thereby offering practically unlimited opportunities.
+
+- **Major Benefits**: POL aims to provide ecosystem security, infinite scalability, and community ownership without introducing friction for users and developers.
+
+- **Multifold Utility and Incentives**: Validators are required to stake POL to join the validator set. Once staked, they can validate any Polygon chain and establish multiple streams of incentives, including protocol rewards, transaction fees, and additional rewards.
+
+- **Future-Proof Ecosystem**: POL will have a continuous emission to fund a Community Treasury, which will be governed by the Polygon community. This treasury will support protocol development, research, ecosystem grants, and adoption incentives.
+
+- **Seamless Upgrade**: The transition from MATIC to POL will be facilitated through a simple technical action. Token holders will send MATIC to an upgrade smart contract, which will automatically return the equivalent amount of POL.
 
 ### Evolution of Polygon's Development Frameworks
 
