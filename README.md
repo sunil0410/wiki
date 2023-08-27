@@ -31,11 +31,11 @@
     + [Matic Network -> Polygon](#matic-network----polygon)
     + [Polygon 2.0](#polygon-20)
   * [Current Polygon Stack](#current-polygon-stack)
-    + [[PoS Mainnet](https://polygon.technology/docs/pos/getting-started)](#-pos-mainnet--https---polygontechnology-docs-pos-getting-started-)
-    + [[zkEVM](https://polygon.technology/docs/zkevm/)](#-zkevm--https---polygontechnology-docs-zkevm--)
-    + [[Supernets](https://polygon.technology/docs/supernets)](#-supernets--https---polygontechnology-docs-supernets-)
-    + [[Miden](https://polygon.technology/docs/miden)](#-miden--https---polygontechnology-docs-miden-)
-    + [[ID](https://0xpolygonid.github.io/tutorials/)](#-id--https---0xpolygonidgithubio-tutorials--)
+    + [PoS Mainnet](#pos-mainnet)
+    + [zkEVM](#zkevm)
+    + [Supernets](#supernets)
+    + [Miden](#miden)
+    + [ID](#id)
   * [Proposed Polygon 2.0 Stack](#proposed-polygon-20-stack)
     + [Architecture](#architecture)
       - [1. Staking Layer](#1-staking-layer)
@@ -98,23 +98,23 @@ Building on these advancements, Polygon Labs has introduced "Polygon 2.0," a spe
 
 As of today, Polygon offers a diverse range of solutions and products designed to meet various blockchain needs. Below are the key components of the current Polygon stack:
 
-### [PoS Mainnet](https://polygon.technology/docs/pos/getting-started)
+### PoS Mainnet
 
 The Proof-of-Stake (PoS) Mainnet serves as the backbone of Polygon's Layer 2 scaling solutions. It provides a secure and efficient platform for decentralized applications and transactions.
 
-### [zkEVM](https://polygon.technology/docs/zkevm/)
+### zkEVM
 
 zkEVM is Polygon's zero-knowledge-based Ethereum Virtual Machine. It aims to bring scalability and privacy to Ethereum-compatible blockchains.
 
-### [Supernets](https://polygon.technology/docs/supernets)
+### Supernets
 
 Supernets are application-specific chains that operate on the Polygon Edge consensus client with PolyBFT consensus. They offer scalability and interoperability for decentralized applications.
 
-### [Miden](https://polygon.technology/docs/miden)
+### Miden
 
 Miden is a fully EVM-compatible zk-rollup. It aims to provide a scalable and secure Layer 2 solution with the benefits of zero-knowledge proofs.
 
-### [ID](https://0xpolygonid.github.io/tutorials/)
+### ID
 
 Polygon ID is a decentralized identity solution that aims to provide secure and verifiable identity management on the blockchain.
 
