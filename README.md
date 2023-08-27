@@ -5,16 +5,15 @@
 <div align="Center">
 <h1>Polygon Wiki</h1>
 <h3> The Value Layer of the Internet </h3>
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](#LICENSE)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](https://www.markdownguide.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/general/contributing.md)
+[![Contributors](https://img.shields.io/github/contributors-anon/0xPolygon/wiki)](https://github.com/0xPolygon/wiki/graphs/contributors)
+[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=Polygon%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.com/invite/XvpHAxZ)
+[![Twitter](https://img.shields.io/twitter/follow/0xPolygon.svg?style=social)](https://twitter.com/0xPolygon)
+
 </div>
-
-<br>
-
-<p align="center">
-   <a href="https://github.com/0xPolygon/wiki/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/0xPolygon/wiki"></a>
-   <a href="https://discord.com/invite/XvpHAxZ"><img src="https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=Polygon%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square"></a>
-   <a href="https://twitter.com/0xPolygon"><img src="https://img.shields.io/twitter/follow/0xPolygon.svg?style=social"></a>
-   
-</p>
 
 <!-- TOC -->
 
