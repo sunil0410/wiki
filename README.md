@@ -75,7 +75,7 @@ Polygon's blockchain development framework to build soverign blockchains have ev
 > **Note**: To be clear, the focus with the new Polygon CDK has now shifted entirely to Layer 2 solutions, eliminating the concept of Layer 3 app-chains.
 
 <p align="center">
-<img align="center" src="/static/img/readme/cdk-zk-flow.png" width="300">
+<img align="center" src="/static/img/readme/cdk-zk-flow.png" width="900">
 </p>
 
 ## How to Contribute to Polygon Wiki
