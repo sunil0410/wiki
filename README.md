@@ -30,7 +30,13 @@
   * [What is Polygon?](#what-is-polygon-)
     + [Matic Network -> Polygon](#matic-network----polygon)
     + [Polygon 2.0](#polygon-20)
-  * [Polygon 2.0 Stack](#polygon-20-stack)
+  * [Current Polygon Stack](#current-polygon-stack)
+    + [[PoS Mainnet](https://polygon.technology/docs/pos/getting-started)](#-pos-mainnet--https---polygontechnology-docs-pos-getting-started-)
+    + [[zkEVM](https://polygon.technology/docs/zkevm/)](#-zkevm--https---polygontechnology-docs-zkevm--)
+    + [[Supernets](https://polygon.technology/docs/supernets)](#-supernets--https---polygontechnology-docs-supernets-)
+    + [[Miden](https://polygon.technology/docs/miden)](#-miden--https---polygontechnology-docs-miden-)
+    + [[ID](https://0xpolygonid.github.io/tutorials/)](#-id--https---0xpolygonidgithubio-tutorials--)
+  * [Proposed Polygon 2.0 Stack](#proposed-polygon-20-stack)
     + [Architecture](#architecture)
       - [1. Staking Layer](#1-staking-layer)
       - [2. Interop Layer](#2-interop-layer)
@@ -73,22 +79,48 @@ Polygon is a pioneering blockchain protocol engineered to act as a universal lay
 
 ### Matic Network -> Polygon
 
-Initially conceived as Matic Network to enhance Ethereum's scalability via a hybrid Plasma sidechain, Polygon eventually evolved into a robust suite of protocols aimed at optimizing Ethereum's performance and adaptability. This evolution was the result of meticulous research and testing, tailored to meet the complex demands of a diverse range of use cases.
+Originally launched as Matic Network with the goal of scaling Ethereum through a hybrid Plasma sidechain, Polygon has undergone a transformative evolution. It has matured into a comprehensive suite of protocols designed to enhance Ethereum's scalability and versatility. This strategic transformation was not an arbitrary decision; it was a calculated move backed by extensive research and testing, all aimed at addressing the diverse needs of various applications.
 
-The emergence of zero-knowledge technology (zk-tech) has been a pivotal moment, signaling that blockchains are now primed to accommodate all types of enterprise-level applications and catalyze mass adoption.
+The advent of zero-knowledge technology (zk-tech) marked a significant milestone, indicating that blockchains are now well-equipped to serve enterprise-level applications and drive mass adoption.
 
 ### Polygon 2.0
 
-This strategic shift introduces "Polygon 2.0"—a "super" protocol. By building this layer, Polygon aims to establish a universal value layer, connecting a network of Layer 2 solutions through unified liquidity. As a result, Polygon 2.0 aims to redefine the capabilities of blockchain technology, featuring:
+Building on these advancements, Polygon Labs has introduced "Polygon 2.0," a specialized protocol designed to establish a universal value layer for the internet. It achieves this by interconnecting a network of Layer 2 solutions, all of which are unified by seamless liquidity. In doing so, Polygon 2.0 seeks to push the boundaries of what blockchain technology can achieve, featuring:
 
-- **Universal Blockchain Access**: Democratizing the blockchain landscape for mass adoption.
-- **Ethereum Synergy**: A dedicated alignment with the Ethereum roadmap to enhance scalability and functionality.
-- **Fluid Liquidity Network**: A unified liquidity ecosystem that transcends the boundaries of individual Layer 2 solutions.
-- **Interoperable Messaging & Composability**: Enabling seamless communication and interaction between diverse blockchain protocols.
-- **Adaptive Modularity**: Offering a flexible architectural framework for customization and future enhancements.
-- **Swift Transaction Finality**: Ensuring rapid and reliable transaction confirmations for an optimized user experience.
+- **Universal Blockchain Access**: Democratizes access to blockchain technology, paving the way for mass adoption.
+- **Ethereum Synergy**: Aligns closely with Ethereum's roadmap to augment both scalability and functionality.
+- **Fluid Liquidity**: Establishes a cohesive liquidity ecosystem that seamlessly integrates various Layer 2 solutions.
+- **Interoperable Messaging & Composability**: Facilitates smooth communication and interaction across a diverse range of product suites and blockchain-based solutions.
+- **Adaptive Modularity**: Provides a flexible architecture that allows for easy customization and future upgrades.
+- **Near-Instant Transaction Finality**: Guarantees quick and reliable transaction confirmations, enhancing the overall user experience.
 
-## Polygon 2.0 Stack
+## Current Polygon Stack
+
+As of today, Polygon offers a diverse range of solutions and products designed to meet various blockchain needs. Below are the key components of the current Polygon stack:
+
+### [PoS Mainnet](https://polygon.technology/docs/pos/getting-started)
+
+The Proof-of-Stake (PoS) Mainnet serves as the backbone of Polygon's Layer 2 scaling solutions. It provides a secure and efficient platform for decentralized applications and transactions.
+
+### [zkEVM](https://polygon.technology/docs/zkevm/)
+
+zkEVM is Polygon's zero-knowledge-based Ethereum Virtual Machine. It aims to bring scalability and privacy to Ethereum-compatible blockchains.
+
+### [Supernets](https://polygon.technology/docs/supernets)
+
+Supernets are application-specific chains that operate on the Polygon Edge consensus client with PolyBFT consensus. They offer scalability and interoperability for decentralized applications.
+
+### [Miden](https://polygon.technology/docs/miden)
+
+Miden is a fully EVM-compatible zk-rollup. It aims to provide a scalable and secure Layer 2 solution with the benefits of zero-knowledge proofs.
+
+### [ID](https://0xpolygonid.github.io/tutorials/)
+
+Polygon ID is a decentralized identity solution that aims to provide secure and verifiable identity management on the blockchain.
+
+These components collectively form the current stack of Polygon, each serving specific needs while contributing to the ecosystem's overall scalability, security, and interoperability.
+
+## Proposed Polygon 2.0 Stack
 
 ### Architecture
 
