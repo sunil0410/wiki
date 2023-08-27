@@ -264,6 +264,67 @@ Any deployment—whether to Staging or Production—requires explicit authorizat
 | ❗ The Wiki is undergoing a reorganization and update. Translation efforts will resume upon completion of this revamp.       |
 | ---------------------------------------------------------------------------------------------------------------------------- |
 
+## Key Polygon Repositories
+### Polygon 2.0 Repositories under 0xPolygon
+
+| Category                 | Repository Name                                                     | Description                                                                                     |
+|--------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Edge**                 | [Polygon Edge](https://github.com/0xPolygon/polygon-edge)            | A repository for Polygon's edge services.                                                       |
+| **CDK**                  | [CDK Validium Node](https://github.com/0xPolygon/cdk-validium-node)  | A CDK for Validium node deployment.                                                             |
+|                          | [CDK Data Availability](https://github.com/0xPolygon/cdk-data-availability)| A CDK for data availability solutions.                                                          |
+|                          | [CDK Validium Contracts](https://github.com/0xPolygon/cdk-validium-contracts)| Smart contract implementation which will be used by Supernets2.                                 |
+| **Core**                 | [Core Contracts](https://github.com/0xPolygon/core-contracts)        | Smart contracts that form the core of the Polygon network.                                      |
+| **DApps and Explorers**  | [DApp Explorer Polygon](https://github.com/0xPolygon/dapp-explorer-polygon)| A DApp explorer for the Polygon network.                                                        |
+| **Bridges and Interoperability** | [PoS ZkEVM Bridge](https://github.com/0xPolygon/pos-zkevm-bridge)| A bridge for ZkEVM in a PoS environment.                                                        |
+| **Tools**                | [Gas Swapper](https://github.com/0xPolygon/gas-swapper)              | A tool for gas swapping.                                                                        |
+|                          | [Indicia](https://github.com/0xPolygon/indicia)                      | A repository for Indicia, a Polygon service.                                                    |
+| **ZkEVM**                | [ZkEVM Wrapper](https://github.com/0xPolygon/zkevm-wrapper)           | Wrapper contracts for transferring ETH and ERC20 tokens to ZkEVM.                               |
+| **Economic Models**      | [Polygon 2.0 Economic Model](https://github.com/0xPolygon/polygon2.0-economic-model)| A simulation model to study validator incentives and ecosystem security in Polygon 2.0.         |
+
+### zkEVM Repositories under 0xPolygonHermez
+
+| Category                 | Repository Name                                                     | Description                                                                                     |
+|--------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Prover**              | [ZkEVM Prover](https://github.com/0xPolygonHermez/zkevm-prover)      | Prover for ZkEVM.                                                                               |
+| **Node**                | [ZkEVM Node](https://github.com/0xPolygonHermez/zkevm-node)          | Node implementation for ZkEVM.                                                                  |
+| **Contracts**            | [ZkEVM Contracts](https://github.com/0xPolygonHermez/zkevm-contracts)| Smart contracts for ZkEVM.                                                                      |
+| **Bridge Service**      | [ZkEVM Bridge Service](https://github.com/0xPolygonHermez/zkevm-bridge-service)| Bridge service for ZkEVM.                                                                       |
+| **PIL Libraries**      | [PIL2 Stark JS](https://github.com/0xPolygonHermez/pil2-stark-js)    | JavaScript library for PIL2 STARKs.                                                             |
+|                          | [PILCOM](https://github.com/0xPolygonHermez/pilcom)                  | PILCOM library for ZkEVM.                                                                       |
+| **Test Vectors**         | [ZkEVM Test Vectors](https://github.com/0xPolygonHermez/zkevm-testvectors)| Test vectors for ZkEVM.                                                                         |
+| **Common Libraries**     | [ZkEVM CommonJS](https://github.com/0xPolygonHermez/zkevm-commonjs)  | CommonJS library for ZkEVM.                                                                     |
+| **Communication Protocols** | [ZkEVM Comms Protocol](https://github.com/0xPolygonHermez/zkevm-comms-protocol)| Communication protocol for ZkEVM.                                                               |
+| **JavaScript Provers**   | [ZkEVM ProverJS](https://github.com/0xPolygonHermez/zkevm-proverjs)  | JavaScript prover for ZkEVM.                                                                    |
+| **Goldilocks**           | [Goldilocks](https://github.com/0xPolygonHermez/goldilocks)          | Goldilocks library for ZkEVM.                                                                   |
+| **PIL STARK**            | [PIL STARK](https://github.com/0xPolygonHermez/pil-stark)            | PIL STARK library for ZkEVM.                                                                    |
+| **ROM**                  | [ZkEVM ROM](https://github.com/0xPolygonHermez/zkevm-rom)            | Read-Only Memory for ZkEVM.                                                                     |
+| **ASM Compiler**         | [ZkASMCOM](https://github.com/0xPolygonHermez/zkasmcom)              | ZkASM compiler for ZkEVM.                                                                       |
+
+### Polygon PoS Repositories under MaticNetwork
+
+| Category                 | Repository Name                                                     | Description                                                                                     |
+|--------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Core Components**      | [Heimdall](https://github.com/maticnetwork/heimdall)                 | Heimdall layer for Matic Network.                                                               |
+|                          | [Bor](https://github.com/maticnetwork/bor)                           | Bor node for Matic Network.                                                                     |
+|                          | [Tendermint](https://github.com/maticnetwork/tendermint)             | Tendermint consensus engine.                                                                    |
+|                          | [Cosmos SDK](https://github.com/maticnetwork/cosmos-sdk)             | Cosmos SDK for Matic Network.                                                                   |
+| **Token Management**     | [Polygon Token List](https://github.com/maticnetwork/polygon-token-list)| A list of tokens on the Polygon network.                                                        |
+|                          | [Polygon Token Assets](https://github.com/maticnetwork/polygon-token-assets)| Token assets for the Polygon network.                                                           |
+| **Subgraphs**            | [Subgraphs](https://github.com/maticnetwork/subgraphs)               | Subgraphs for Matic Network.                                                                    |
+| **CLI Tools**            | [Matic CLI](https://github.com/maticnetwork/matic-cli)               | Command-line interface for Matic Network.                                                        |
+|                          | [Polygon CLI](https://github.com/maticnetwork/polygon-cli)           | Command-line interface for Polygon.                                                              |
+| **Gas Management**       | [Matic Gas Station](https://github.com/maticnetwork/maticgasstation)  | Gas station for Matic Network.                                                                  |
+| **Portals and Bridges**  | [PoS Portal](https://github.com/maticnetwork/pos-portal)             | Proof of Stake portal for Matic Network.                                                         |
+| **Proposals**            | [Polygon Improvement Proposals](https://github.com/maticnetwork/Polygon-Improvement-Proposals)| Repository for Polygon Improvement Proposals.                                                    |
+| **SDKs and Libraries**   | [Matic.js](https://github.com/maticnetwork/matic.js)                 | JavaScript library for Matic Network.                                                            |
+| **DevOps**               | [Node Ansible](https://github.com/maticnetwork/node-ansible)         | Ansible scripts for node management.                                                            |
+|                          | [Terraform Polygon Supernets](https://github.com/maticnetwork/terraform-polygon-supernets)| Terraform scripts for Polygon Supernets.                                                        |
+| **Contracts**            | [Contracts](https://github.com/maticnetwork/contracts)               | Smart contracts for Matic Network.                                                              |
+|                          | [Genesis Contracts](https://github.com/maticnetwork/genesis-contracts)| Genesis contracts for Matic Network.                                                            |
+| **Proofs and APIs**      | [Proof Generation API](https://github.com/maticnetwork/proof-generation-api)| API for proof generation.                                                                       |
+| **Erigon**               | [Erigon](https://github.com/maticnetwork/erigon)                     | Erigon Ethereum client.                                                                         |
+| **Policies**             | [Policy at Polygon](https://github.com/maticnetwork/Policy-at-Polygon)| Policies at Polygon.                                                                            |
+
 ## License
 
 The Polygon Wiki is licensed under the [MIT License](LICENSE) free software license.
