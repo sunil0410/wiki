@@ -320,8 +320,9 @@ review all issues and pull requests created in this repository. If you spot typo
 please go ahead and submit a pull request with the fixes. For bigger changes, it's a good idea to start with a GitHub 
 issue to discuss it with the maintainers. We generally prefer pull requests over issues for suggesting changes to the Wiki.
 
-We've set up guidelines to make sure all new contributions keep improving the Wiki without compromising its quality.
-They are available [here](https://wiki.polygon.technology/docs/contribute/orientation/).
+| ❗ We've set up guidelines to make sure all new contributions keep improving the Wiki without compromising its quality.
+They are available [here](https://wiki.polygon.technology/docs/contribute/orientation/). |
+| ---------------------------------------------------------------------------------------------------------------------------- |
 
 Before making a contribution, please consult any existing issues or initiate a new discussion to ensure alignment with the Wiki's objectives.
 Once you've done that, you'll find that your contributions can significantly enrich the Wiki in the following ways:
