@@ -20,11 +20,32 @@
 
 <!--/ TOC -->
 
-<p align="left">
-  The Polygon Wiki serves as the central source of truth for Polygon. Spearheaded by Polygon Labs, 
+<p align="left" style="font-weight: bold; font-family: Arial, sans-serif; padding: 15px; border-radius: 8px;" id="polygon-wiki-info">
+  The Polygon Wiki serves as the <span class="highlight">central source of truth</span> for Polygon. Spearheaded by <span class="highlight">Polygon Labs</span>, 
   it is a community-centric initiative that aims to provide the most current and comprehensive resources for 
   those interested in learning about, developing on, or maintaining projects within the Polygon ecosystem.
 </p>
+
+<style>
+  @media (prefers-color-scheme: dark) {
+    #polygon-wiki-info {
+      background-color: #6a5acd;
+      color: #ffffff;
+    }
+    .highlight {
+      color: #00008b;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    #polygon-wiki-info {
+      background-color: #f2f2f2;
+      color: #000000;
+    }
+    .highlight {
+      color: #00008b;
+    }
+  }
+</style>
 
 ## What is Polygon?
 
@@ -51,7 +72,7 @@ This strategic shift introduces "Polygon 2.0"—a "super" protocol. By building 
 
 Polygon's blockchain development framework to build soverign blockchains have evolved significantly over time, each iteration bringing new features and capabilities. Below is a comparative table that outlines the key differences and features of Polygon Edge, Supernets, and the latest Chain Development Kit (CDK).
 
-| Feature             | Polygon Edge | Supernets | Chain Development Kit (CDK) |
+| Feature             |  Edge        | Supernets | CDK                         |
 |---------------------|--------------|-----------|-----------------------------|
 | **Layer**           | Layer 3      | Layer 3   | Layer 2                     |
 | **Consensus**       | IBFT         | PolyBFT   | PolyBFT / zk-based          |
@@ -88,22 +109,32 @@ issue to discuss it with the maintainers. We generally prefer pull requests over
 We've set up guidelines to make sure all new contributions keep improving the Wiki without compromising its quality.
 They are available [here](https://wiki.polygon.technology/docs/contribute/orientation/).
 
-| ❗ Note: The Polygon Wiki includes third-party content. Review the [Third-Party Content Disclaimer](https://github.com/0xPolygon/wiki/blob/main/CONTENT_DISCLAIMER.md) for details. |
+| ❗ Note: The Polygon Wiki includes third-party content. Please review the [Third-Party Content Disclaimer](https://github.com/0xPolygon/wiki/blob/main/CONTENT_DISCLAIMER.md) for details. |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 Before making a contribution, please consult any existing issues or initiate a new discussion to ensure alignment with the Wiki's objectives.
 Once you've done that, you'll find that your contributions can significantly enrich the Wiki in the following ways:
 
 1. **General Overviews**: Introductory pieces that offer a holistic understanding of Polygon's ecosystem, including its core infrastructure and Layer 2 solutions.
+
 2. **Technical Deep Dives**: In-depth articles that explore specific components of Polygon's architecture, such as its protocol layers, primitives, and consensus algorithms.
+
 3. **Use-Case Scenarios**: Articles that showcase real-world applications of Polygon in various sectors like DeFi, NFTs, supply chain, and more.
+
 4. **Interoperability Explainers**: Contributions that clarify how Polygon interfaces with other blockchain ecosystems, Layer 1 solutions, or cross-chain platforms.
+
 5. **Tooling**: Documentation or guides on tools that facilitate development, testing, or deployment on Polygon. This could include IDE plugins, testing frameworks, or monitoring tools.
+
 6. **Third-Party Services**: Information on external services that integrate with Polygon, such as oracles, data analytics platforms, or liquidity providers.
+
 7. **Community Contributions**: Lists of active Polygon communities, educational resources, or upcoming events that enrich the ecosystem.
+
 8. **Governance & Economics**: Insights into the governance model and tokenomics that underpin Polygon's network.
+
 9. **Security Practices**: Guidelines and resources for ensuring the security and integrity of dApps, smart contracts, and general infrastructure on Polygon.
+
 10. **Troubleshooting Guides**: Solutions to common challenges, FAQs, and other resources that assist both newcomers and experienced users.
+
 11. **Emerging Technologies**: Articles on upcoming features, Layer 2 advancements, or experimental technologies that are in the Polygon pipeline.
 
 ### Running the Polygon Wiki Locally
@@ -313,20 +344,20 @@ Any deployment—whether to Staging or Production—requires explicit authorizat
 
 | Category                 | Repository Name                                                     | Description                                                                                     |
 |--------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| **Prover**              | [ZkEVM Prover](https://github.com/0xPolygonHermez/zkevm-prover)      | Prover for ZkEVM.                                                                               |
-| **Node**                | [ZkEVM Node](https://github.com/0xPolygonHermez/zkevm-node)          | Node implementation for ZkEVM.                                                                  |
-| **Contracts**            | [ZkEVM Contracts](https://github.com/0xPolygonHermez/zkevm-contracts)| Smart contracts for ZkEVM.                                                                      |
-| **Bridge Service**      | [ZkEVM Bridge Service](https://github.com/0xPolygonHermez/zkevm-bridge-service)| Bridge service for ZkEVM.                                                                       |
+| **Prover**              | [zkEVM Prover](https://github.com/0xPolygonHermez/zkevm-prover)      | Prover for ZkEVM.                                                                               |
+| **Node**                | [zkEVM Node](https://github.com/0xPolygonHermez/zkevm-node)          | Node implementation for ZkEVM.                                                                  |
+| **Contracts**            | [zkEVM Contracts](https://github.com/0xPolygonHermez/zkevm-contracts)| Smart contracts for ZkEVM.                                                                      |
+| **Bridge Service**      | [zkEVM Bridge Service](https://github.com/0xPolygonHermez/zkevm-bridge-service)| Bridge service for ZkEVM.                                                                       |
 | **PIL Libraries**      | [PIL2 Stark JS](https://github.com/0xPolygonHermez/pil2-stark-js)    | JavaScript library for PIL2 STARKs.                                                             |
 |                          | [PILCOM](https://github.com/0xPolygonHermez/pilcom)                  | PILCOM library for ZkEVM.                                                                       |
-| **Test Vectors**         | [ZkEVM Test Vectors](https://github.com/0xPolygonHermez/zkevm-testvectors)| Test vectors for ZkEVM.                                                                         |
-| **Common Libraries**     | [ZkEVM CommonJS](https://github.com/0xPolygonHermez/zkevm-commonjs)  | CommonJS library for ZkEVM.                                                                     |
-| **Communication Protocols** | [ZkEVM Comms Protocol](https://github.com/0xPolygonHermez/zkevm-comms-protocol)| Communication protocol for ZkEVM.                                                               |
-| **JavaScript Provers**   | [ZkEVM ProverJS](https://github.com/0xPolygonHermez/zkevm-proverjs)  | JavaScript prover for ZkEVM.                                                                    |
+| **Test Vectors**         | [zkEVM Test Vectors](https://github.com/0xPolygonHermez/zkevm-testvectors)| Test vectors for ZkEVM.                                                                         |
+| **Common Libraries**     | [zkEVM CommonJS](https://github.com/0xPolygonHermez/zkevm-commonjs)  | CommonJS library for ZkEVM.                                                                     |
+| **Communication Protocols** | [zkEVM Comms Protocol](https://github.com/0xPolygonHermez/zkevm-comms-protocol)| Communication protocol for ZkEVM.                                                               |
+| **JavaScript Provers**   | [zkEVM ProverJS](https://github.com/0xPolygonHermez/zkevm-proverjs)  | JavaScript prover for ZkEVM.                                                                    |
 | **Goldilocks**           | [Goldilocks](https://github.com/0xPolygonHermez/goldilocks)          | Goldilocks library for ZkEVM.                                                                   |
 | **PIL STARK**            | [PIL STARK](https://github.com/0xPolygonHermez/pil-stark)            | PIL STARK library for ZkEVM.                                                                    |
-| **ROM**                  | [ZkEVM ROM](https://github.com/0xPolygonHermez/zkevm-rom)            | Read-Only Memory for ZkEVM.                                                                     |
-| **ASM Compiler**         | [ZkASMCOM](https://github.com/0xPolygonHermez/zkasmcom)              | ZkASM compiler for ZkEVM.                                                                       |
+| **ROM**                  | [zkEVM ROM](https://github.com/0xPolygonHermez/zkevm-rom)            | Read-Only Memory for ZkEVM.                                                                     |
+| **ASM Compiler**         | [zkASMCOM](https://github.com/0xPolygonHermez/zkasmcom)              | ZkASM compiler for ZkEVM.                                                                       |
 
 ### Polygon PoS Repositories under MaticNetwork
 
