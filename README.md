@@ -18,34 +18,38 @@
 
 <!-- TOC -->
 
+- [What is Polygon?](#what-is-polygon-)
+  * [Matic Network -> Polygon](#matic-network----polygon)
+  * [Polygon 2.0](#polygon-20)
+  * [Evolution of Polygon's Development Frameworks](#evolution-of-polygon-s-development-frameworks)
+    + [Key Takeaways](#key-takeaways)
+- [How to Contribute to Polygon Wiki](#how-to-contribute-to-polygon-wiki)
+  * [Running the Polygon Wiki Locally](#running-the-polygon-wiki-locally)
+    + [Setup Steps](#setup-steps)
+  * [Make changes using Git GUI and code editor](#make-changes-using-git-gui-and-code-editor)
+  * [Making changes using the Wiki website](#making-changes-using-the-wiki-website)
+- [Submit an Issue](#submit-an-issue)
+- [Build](#build)
+- [Deployment](#deployment)
+  * [Caching](#caching)
+- [Configuration Guide](#configuration-guide)
+  * [Static site generator](#static-site-generator)
+  * [Deployments](#deployments)
+    + [Authorization](#authorization)
+  * [Translations](#translations)
+- [Key Polygon Repositories](#key-polygon-repositories)
+  * [Polygon 2.0 Repositories under 0xPolygon](#polygon-20-repositories-under-0xpolygon)
+  * [zkEVM Repositories under 0xPolygonHermez](#zkevm-repositories-under-0xpolygonhermez)
+  * [Polygon PoS Repositories under MaticNetwork](#polygon-pos-repositories-under-maticnetwork)
+- [License](#license)
+
 <!--/ TOC -->
 
-<p align="left" style="font-weight: bold; font-family: Arial, sans-serif; padding: 15px; border-radius: 8px;" id="polygon-wiki-info">
-  The Polygon Wiki serves as the <span class="highlight">central source of truth</span> for Polygon. Spearheaded by <span class="highlight">Polygon Labs</span>, 
+<p align="left">
+  The Polygon Wiki serves as the central source of truth for Polygon. Spearheaded by Polygon Labs, 
   it is a community-centric initiative that aims to provide the most current and comprehensive resources for 
   those interested in learning about, developing on, or maintaining projects within the Polygon ecosystem.
 </p>
-
-<style>
-  @media (prefers-color-scheme: dark) {
-    #polygon-wiki-info {
-      background-color: #6a5acd;
-      color: #ffffff;
-    }
-    .highlight {
-      color: #00008b;
-    }
-  }
-  @media (prefers-color-scheme: light) {
-    #polygon-wiki-info {
-      background-color: #f2f2f2;
-      color: #000000;
-    }
-    .highlight {
-      color: #00008b;
-    }
-  }
-</style>
 
 ## What is Polygon?
 
