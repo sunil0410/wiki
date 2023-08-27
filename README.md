@@ -73,6 +73,64 @@ This strategic shift introduces "Polygon 2.0"—a "super" protocol. By building 
 <img align="center" src="/static/img/readme/polygon2.0-layers-1.png" width="900">
 </p>
 
+## Polygon 2.0 Stack
+
+### Architecture
+
+Polygon 2.0 is designed with a multi-layered architecture to provide a comprehensive solution for scalability, security, and interoperability. The architecture is composed of four core layers:
+
+#### 1. Staking Layer
+
+The Staking Layer serves as the backbone of the network, providing security and consensus. It is responsible for validator management and staking operations, ensuring the overall integrity of the network.
+
+#### 2. Interop Layer
+
+The Interop Layer focuses on enabling seamless communication between different blockchain networks. It employs the LXLY bridge to facilitate the transfer of assets and data across multiple Layer 2 solutions and even other Layer 1 blockchains.
+
+#### 3. Execution Layer
+
+This layer is where all the computation takes place. It supports various execution environments like zkEVM, zk-Rollups, and more, allowing developers to choose the best fit for their applications.
+
+#### 4. Proving Layer
+
+The Proving Layer is responsible for generating cryptographic proofs for the executed transactions. These proofs are then verified by the Staking Layer to finalize transactions.
+
+Together, these layers work in harmony to offer a scalable, secure, and interoperable ecosystem, pushing the boundaries of what blockchain technology can achieve.
+
+#### Modular Design
+
+The modular nature of Polygon 2.0 allows developers to mix and match different components from each layer, creating a tailored solution for their specific application. This modularity extends to consensus mechanisms, execution environments, and data availability options.
+
+#### Future-Proof
+
+Polygon 2.0 is designed to be future-proof, with the ability to integrate new technologies as they emerge. This ensures that the framework remains at the forefront of the rapidly evolving blockchain landscape.
+
+The following diagram illustrates the various layers of Polygon 2.0.
+
+<p align="center">
+<img align="center" src="/static/img/readme/polygon2.0-layers.png" width="900">
+</p>
+
+### Governance
+
+Polygon 2.0 introduces a forward-looking framework for decentralized governance, aiming to give the community full control over the Polygon network. This governance model is inspired by proven blockchain governance systems, particularly Ethereum's. The framework is built on three main pillars: Protocol Governance, System Smart Contracts Governance, and Community Treasury Governance.
+
+#### Three Governance Pillars
+
+1. **Protocol Governance**: The Polygon Improvement Proposal (PIP) framework serves as an open platform for the development of Polygon protocols. In Polygon 2.0, the PIP framework will cover the entire permissionless stack, allowing the community to propose and research upgrades.
+
+2. **System Smart Contracts Governance**: This pillar focuses on the upgradeability of protocol components implemented as smart contracts. An Ecosystem Council, governed by the community, will be responsible for these upgrades. The council will operate under a tailor-made governance framework designed for secure and scalable decision-making.
+
+3. **Community Treasury Governance**: A self-sustainable Community Treasury will be established to fund public goods and support promising ecosystem projects. The governance of this treasury will evolve from an initial board to more explicit community-driven governance mechanisms.
+
+<p align="center">
+<img align="center" src="/static/img/readme/polygon2.0-governance-pillars.png" width="900">
+</p>
+
+#### Community Involvement
+
+Community feedback and participation are integral to the governance process. Various channels, including forum posts and community calls, are used to gather feedback from validators, users, infrastructure providers, and dApp developers.
+
 ### Evolution of Polygon's Development Frameworks
 
 Polygon's blockchain development framework to build soverign blockchains have evolved significantly over time, each iteration bringing new features and capabilities. Below is a comparative table that outlines the key differences and features of Polygon Edge, Supernets, and the latest Chain Development Kit (CDK).
