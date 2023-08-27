@@ -69,10 +69,6 @@ This strategic shift introduces "Polygon 2.0"—a "super" protocol. By building 
 - **Adaptive Modularity**: Offering a flexible architectural framework for customization and future enhancements.
 - **Swift Transaction Finality**: Ensuring rapid and reliable transaction confirmations for an optimized user experience.
 
-<p align="center">
-<img align="center" src="/static/img/readme/polygon2.0-layers-1.png" width="900">
-</p>
-
 ## Polygon 2.0 Stack
 
 ### Architecture
@@ -159,7 +155,7 @@ Polygon's blockchain development framework to build soverign blockchains have ev
 - **Polygon CDK**: The most recent and sophisticated iteration, the CDK concentrates on Layer 2 solutions. It embodies modularity and customization, leveraging cutting-edge protocol primitives from Polygon 2.0. This enables developers to architect chains tailored to their unique requirements.
 
 <p align="center">
-<img align="center" src="/static/img/readme/cdk-zk-flow.png" width="900">
+<img align="center" src="/static/img/readme/polygon2.0-layers-1.png" width="900">
 </p>
 
 ## Configuration Guide
