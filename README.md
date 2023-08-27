@@ -203,15 +203,15 @@ Polygon's blockchain development framework to build soverign blockchains have ev
 | Feature             |  Edge        | Supernets | CDK                         |
 |---------------------|--------------|-----------|-----------------------------|
 | **Layer**           | Layer 3      | Layer 3   | Layer 2                     |
-| **Consensus**       | IBFT         | PolyBFT   | PolyBFT / zk-based          |
-| **Focus**           | App Chains               | App Chains & Infrastructure | App Chains, Infrastructure & Modular Development |
-| **Security**        | Inherits from PoS | Inherits from Rootchain | Inherits from Ethereum     |
+| **Consensus**       | IBFT         | PolyBFT   | zk-based / PolyBFT          |
+| **Focus**           | App-Chains               | App-Chains, Infrastructure, & Customizations | App-Chains, Infrastructure, Customizations, Modular Development, Cost-Reduction |
+| **Security**        | Inherits from PoS | Theoretically Inherits from Rootchain + Ethereum | Inherits from Ethereum     |
 | **Scalability**     | Limited      | Extended Block Space | Boundless                    |
-| **Interoperability**| Limited      | Custom Native Bridge       | Universal LXLY Bridge |
+| **Interoperability**| Limited      | Custom Native Bridge       | Universal Layered Bridge |
 | **Governance**      | N/A          | Customizable   | Customizable                         |
 | **Data Availability**| On-chain    | On-chain       | Customizable                |
 | **Modularity**      | Limited           | Limited        | Yes                         |
-| **Components**      | Edge client + core contracts on Ethereum                      | Edge client + EVM-based rootchain + sovereign core contracts               | Polygon 2.0 |
+| **Components**      | Edge client + core contracts on Ethereum                      | Edge client + EVM-based rootchain + sovereign core contracts               | zkValidium, zk-Rollup, & Polygon 2.0 |
 
 #### Key Takeaways
 
