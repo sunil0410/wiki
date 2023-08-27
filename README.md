@@ -16,8 +16,6 @@
    
 </p>
 
-## Table of Contents
-
 <!-- TOC -->
 
 <!--/ TOC -->
@@ -30,25 +28,55 @@
 
 ## What is Polygon?
 
-Polygon is a groundbreaking blockchain protocol designed to serve as a powerful layer for online value exchange. Initially focused on scaling Ethereum as Matic Network through a hybrid Plasma sidechain approach, Polygon has evolved far beyond its original mission.
+Polygon is a pioneering blockchain protocol engineered to act as a universal layer for digital value exchange. 
 
-Quick to adapt, Polygon transformed into a versatile suite of protocols, each designed to make Ethereum more scalable and adaptable. This wasn't just a random pivot; it was a calculated move based on extensive research and testing, all aimed at meeting the diverse needs of various applications.
+### Matic Network -> Polygon
 
-As advancements in zero-knowledge technology (zk-tech) unfolded, it became clear that blockchains could now meet the demands of enterprise-level applications. These advancements can also pave the way for mass adoption and significantly improve user experience, broadening the horizons for what blockchain technology can accomplish. This realization opened up new possibilities, not just for Ethereum but for the entire blockchain space, especially in creating a foundational layer for the internet's value layer.
+Initially conceived as Matic Network to enhance Ethereum's scalability via a hybrid Plasma sidechain, Polygon eventually evolved into a robust suite of protocols aimed at optimizing Ethereum's performance and adaptability. This evolution was the result of meticulous research and testing, tailored to meet the complex demands of a diverse range of use cases.
+
+The emergence of zero-knowledge technology (zk-tech) has been a pivotal moment, signaling that blockchains are now primed to accommodate all types of enterprise-level applications and catalyze mass adoption.
 
 ### Polygon 2.0
 
-This strategic evolution heralds the advent of "Polygon 2.0"—a specialized "hyper" protocol with an exclusive focus on Layer 2 solutions. By zeroing in on this layer, Polygon aspires to construct an integrated value layer, comprising a network of interconnected Layer 2 solutions, all unified by liquid liquidity. This avant-garde framework is set to push the envelope of what blockchain technology can accomplish, featuring:
+This strategic shift introduces "Polygon 2.0"—a "super" protocol. By building this layer, Polygon aims to establish a universal value layer, connecting a network of Layer 2 solutions through unified liquidity. As a result, Polygon 2.0 aims to redefine the capabilities of blockchain technology, featuring:
 
-- Universal Blockchain Access: Democratizing the blockchain landscape for mass adoption.
-- Ethereum Synergy: A dedicated alignment with the Ethereum roadmap to enhance scalability and functionality.
-- Fluid Liquidity Network: A unified liquidity ecosystem that transcends the boundaries of individual Layer 2 solutions.
-- Interoperable Messaging & Composability: Enabling seamless communication and interaction between diverse blockchain protocols.
-- Adaptive Modularity: Offering a flexible architectural framework for customization and future enhancements.
-- Swift Transaction Finality: Ensuring rapid and reliable transaction confirmations for an optimized user experience.
+- **Universal Blockchain Access**: Democratizing the blockchain landscape for mass adoption.
+- **Ethereum Synergy**: A dedicated alignment with the Ethereum roadmap to enhance scalability and functionality.
+- **Fluid Liquidity Network**: A unified liquidity ecosystem that transcends the boundaries of individual Layer 2 solutions.
+- **Interoperable Messaging & Composability**: Enabling seamless communication and interaction between diverse blockchain protocols.
+- **Adaptive Modularity**: Offering a flexible architectural framework for customization and future enhancements.
+- **Swift Transaction Finality**: Ensuring rapid and reliable transaction confirmations for an optimized user experience.
 
-The [Polygon Wiki](https://wiki.polygon.technology/) is built using [Docusaurus](https://docusaurus.io/), 
-a modern static website generator to build optimized websites quickly.
+### Evolution of Polygon's Development Frameworks
+
+Polygon's blockchain development framework to build soverign blockchains have evolved significantly over time, each iteration bringing new features and capabilities. Below is a comparative table that outlines the key differences and features of Polygon Edge, Supernets, and the latest Chain Development Kit (CDK).
+
+| Feature             | Polygon Edge | Supernets | Chain Development Kit (CDK) |
+|---------------------|--------------|-----------|-----------------------------|
+| **Layer**           | Layer 3      | Layer 3   | Layer 2                     |
+| **Consensus**       | IBFT         | PolyBFT   | PolyBFT / zk-based          |
+| **Focus**           | App Chains               | App Chains & Infrastructure | App Chains, Infrastructure & Modular Development |
+| **Security**        | Inherits from PoS | Inherits from Rootchain | Inherits from Ethereum     |
+| **Scalability**     | Limited      | Extended Block Space | Boundless                    |
+| **Interoperability**| Limited      | Custom Native Bridge       | Universal LXLY Bridge |
+| **Governance**      | N/A          | Customizable   | Customizable                         |
+| **Data Availability**| On-chain    | On-chain       | Customizable                |
+| **Modularity**      | Limited           | Limited        | Yes                         |
+| **Components**      | Edge client + core contracts on Ethereum                      | Edge client + EVM-based rootchain + sovereign core contracts               | Polygon 2.0 |
+
+#### Key Takeaways
+
+- **Polygon Edge**: Initially served as a Software Development Kit (SDK) for launching app-chains to build Ethereum compatible blockchain networks, functioning as Layer 3 solutions.
+  
+- **Polygon Supernets**: Evolved from Edge to tackle the complexities of infrastructure development and bootstrapping for app-chains. Supernets also provide enhanced interoperability and customization options, also operating as Layer 3 solutions.
+
+- **Polygon Chain Development Kit (CDK)**: The most recent and sophisticated iteration, the Chain Development Kit (CDK) concentrates on Layer 2 solutions. It embodies modularity and customization, leveraging cutting-edge protocol primitives from Polygon 2.0. This enables developers to architect chains tailored to their unique requirements.
+
+> **Note**: To be clear, the focus with the new Polygon CDK has now shifted entirely to Layer 2 solutions, eliminating the concept of Layer 3 app-chains.
+
+<p align="center">
+<img align="center" src="/static/img/cdk-zk-flow.png" width="300">
+</p>
 
 ## How to Contribute to Polygon Wiki
 
