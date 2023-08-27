@@ -22,21 +22,18 @@
   * [Matic Network -> Polygon](#matic-network----polygon)
   * [Polygon 2.0](#polygon-20)
   * [Evolution of Polygon's Development Frameworks](#evolution-of-polygon-s-development-frameworks)
+    + [Framework Comparison](#framework-comparison)
     + [Key Takeaways](#key-takeaways)
-- [How to Contribute to Polygon Wiki](#how-to-contribute-to-polygon-wiki)
-  * [Running the Polygon Wiki Locally](#running-the-polygon-wiki-locally)
-    + [Setup Steps](#setup-steps)
-  * [Make changes using Git GUI and code editor](#make-changes-using-git-gui-and-code-editor)
-  * [Making changes using the Wiki website](#making-changes-using-the-wiki-website)
-- [Submit an Issue](#submit-an-issue)
-- [Build](#build)
-- [Deployment](#deployment)
-  * [Caching](#caching)
 - [Configuration Guide](#configuration-guide)
-  * [Static site generator](#static-site-generator)
+  * [Static-Site Generator](#static-site-generator)
   * [Deployments](#deployments)
-    + [Authorization](#authorization)
   * [Translations](#translations)
+  * [Files and Folders](#files-and-folders)
+  * [Priority Labels (`P#`)](#priority-labels---p---)
+- [How to Contribute to the Polygon Wiki](#how-to-contribute-to-the-polygon-wiki)
+  * [How to Contribute Changes via the Polygon Wiki Website](#how-to-contribute-changes-via-the-polygon-wiki-website)
+  * [How to Locally Run the Polygon Wiki](#how-to-locally-run-the-polygon-wiki)
+    + [Setup Steps](#setup-steps)
 - [Key Polygon Repositories](#key-polygon-repositories)
   * [Polygon 2.0 Repositories under 0xPolygon](#polygon-20-repositories-under-0xpolygon)
   * [zkEVM Repositories under 0xPolygonHermez](#zkevm-repositories-under-0xpolygonhermez)
@@ -76,6 +73,8 @@ This strategic shift introduces "Polygon 2.0"—a "super" protocol. By building 
 
 Polygon's blockchain development framework to build soverign blockchains have evolved significantly over time, each iteration bringing new features and capabilities. Below is a comparative table that outlines the key differences and features of Polygon Edge, Supernets, and the latest Chain Development Kit (CDK).
 
+#### Framework Comparison
+
 | Feature             |  Edge        | Supernets | CDK                         |
 |---------------------|--------------|-----------|-----------------------------|
 | **Layer**           | Layer 3      | Layer 3   | Layer 2                     |
@@ -91,19 +90,69 @@ Polygon's blockchain development framework to build soverign blockchains have ev
 
 #### Key Takeaways
 
-- **Polygon Edge**: Initially served as a Software Development Kit (SDK) for launching app-chains to build Ethereum compatible blockchain networks, functioning as Layer 3 solutions.
+- **Polygon Edge**: Initially served as an SDK for launching app-chains to build Ethereum compatible blockchain networks, functioning as Layer 3 solutions.
   
 - **Polygon Supernets**: Evolved from Edge to tackle the complexities of infrastructure development and bootstrapping for app-chains. Supernets also provide enhanced interoperability and customization options, also operating as Layer 3 solutions.
 
-- **Polygon Chain Development Kit (CDK)**: The most recent and sophisticated iteration, the Chain Development Kit (CDK) concentrates on Layer 2 solutions. It embodies modularity and customization, leveraging cutting-edge protocol primitives from Polygon 2.0. This enables developers to architect chains tailored to their unique requirements.
-
-> **Note**: To be clear, the focus with the new Polygon CDK has now shifted entirely to Layer 2 solutions, eliminating the concept of Layer 3 app-chains.
+- **Polygon CDK**: The most recent and sophisticated iteration, the CDK concentrates on Layer 2 solutions. It embodies modularity and customization, leveraging cutting-edge protocol primitives from Polygon 2.0. This enables developers to architect chains tailored to their unique requirements.
 
 <p align="center">
 <img align="center" src="/static/img/readme/cdk-zk-flow.png" width="900">
 </p>
 
-## How to Contribute to Polygon Wiki
+## Configuration Guide
+
+### Static-Site Generator
+
+The [Polygon Wiki](https://wiki.polygon.technology/) is built using [Docusaurus](https://docusaurus.io/), making it easy to serve and host its static files.
+
+### Deployments
+
+The deployment process for the Polygon Wiki involves two environments: **staging** and **prod**. Both environments are configured to run against the `main` branch of the repository.
+
+Any deployment—whether to Staging or Production—requires explicit authorization from an admin of the repository.
+
+- **Staging**: This environment is used for testing and quality assurance. Changes are deployed here first to ensure they meet the required standards before moving to Production.
+- **Production**: This is the live environment accessible to the end-users. Deployments to Production are made after successful validation in the Staging environment.
+
+### Translations
+
+| ❗ The Wiki is undergoing a reorganization and update. Translation efforts will resume upon completion of this revamp.       |
+| ---------------------------------------------------------------------------------------------------------------------------- |
+
+### Files and Folders
+
+This section provides an overview of the various files and folders in the Polygon Wiki repository, explaining the purpose of each.
+
+| Name                  | Purpose                                                                                                         |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------|
+| `.git`, `.github`     | Manage git configurations and GitHub-specific settings.                                                          |
+| `README.md`           | The main introduction file for the Polygon Wiki repository.                                                      |
+| `sidebars.js`         | Used to modify the sidebar navigation.                                                                           |
+| `docusaurus.config.js`| Configuration file for website layout and other Docusaurus settings.                                             |
+| `src/pages/index.js`  | Used to modify the blocks structure and footer links.                                                            |
+| `yarn.lock`           | Yarn lock file to keep track of all package versions.                                                           |
+| `package.json`        | Specifies dependencies and scripts for the project.                                                              |
+| `node_modules/`       | Contains all the npm packages and dependencies.                                                                  |
+| `build/`              | Contains static content generated for deployment.                                                                |
+| `docs/`               | Contains the Markdown files that make up the content of the Wiki.                                                |
+| `static/`             | Contains static assets like images, CSS, and fonts.                                                              |
+| `translations/`       | Contains files for managing different languages.                                                                 |
+
+> Note: This is a general overview and the actual repository may contain additional files and folders for specific functionalities.
+
+### Priority Labels (`P#`)
+
+GitHub labels are used to categorize the urgency and importance of issues. These priority levels are set by the documentation team based on the following criteria:
+
+| Label | Impact Level                 | Resolution Time | Example Use Case                                                  |
+|-------|-----------------------------|--------------------------|-------------------------------------------------------------------|
+| P0    | Critical ("Urgent"): Requires immediate attention | Same day: Drop all other tasks and resolve immediately | The website is down, causing a severe impact on the business.      |
+| P1    | High ("Important"): Significant business impact | Within 3 days: Must be addressed promptly | An API endpoint is changing, requiring immediate documentation updates. |
+| P2    | Medium ("Sometime Soon"): Scheduled or planned | Within 2-3 weeks: Can be scheduled for near-term completion | Upcoming addition of a new method to a project API.                |
+| P3    | Low ("Nice to Have"): Suggestions or conceptual updates | No set deadline: Address when possible | A suggested blog post on the advantages of decentralization for developers. |
+
+## How to Contribute to the Polygon Wiki
 
 The Documentation team at Polygon Labs are the primary maintainers of the Polygon Wiki and will
 review all issues and pull requests created in this repository. If you spot typos or grammar mistakes, 
@@ -112,9 +161,6 @@ issue to discuss it with the maintainers. We generally prefer pull requests over
 
 We've set up guidelines to make sure all new contributions keep improving the Wiki without compromising its quality.
 They are available [here](https://wiki.polygon.technology/docs/contribute/orientation/).
-
-| ❗ Note: The Polygon Wiki includes third-party content. Please review the [Third-Party Content Disclaimer](https://github.com/0xPolygon/wiki/blob/main/CONTENT_DISCLAIMER.md) for details. |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 Before making a contribution, please consult any existing issues or initiate a new discussion to ensure alignment with the Wiki's objectives.
 Once you've done that, you'll find that your contributions can significantly enrich the Wiki in the following ways:
@@ -141,7 +187,28 @@ Once you've done that, you'll find that your contributions can significantly enr
 
 11. **Emerging Technologies**: Articles on upcoming features, Layer 2 advancements, or experimental technologies that are in the Polygon pipeline.
 
-### Running the Polygon Wiki Locally
+| ❗ Note: The Polygon Wiki includes third-party content. Please review the [Third-Party Content Disclaimer](https://github.com/0xPolygon/wiki/blob/main/CONTENT_DISCLAIMER.md) for details. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+### How to Contribute Changes via the Polygon Wiki Website
+
+Contributing to the Polygon Wiki is straightforward. You'll need a GitHub account and a basic understanding of Markdown syntax to get started.
+
+1. **Locate the Page**: Visit the [Polygon Wiki page](https://wiki.polygon.technology/) you wish to edit.
+2. **Navigate to the Bottom**: Scroll to the bottom of the page.
+3. **Edit Link**: Click on the **Edit this page** link. This will redirect you to the corresponding Markdown file on GitHub.
+4. **Edit Mode**: Once on GitHub, click the pencil icon located in the upper-right corner to enter edit mode.
+5. **Make Edits**: Modify the Markdown file as needed.
+6. **Initiate Pull Request**: Scroll to the bottom and click on **Create pull request**.
+7. **Title Your PR**: Give your pull request a descriptive title. For instance, if you're editing the "Getting Started" page, you could title it *Update /docs/develop/getting-started.md*.
+8. **Describe Changes**: In the pull request description, specify the issue your changes resolve. 
+   > See [GitHub Docs on Linking a Pull Request to an Issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) for guidance.
+9. **Additional Information**: Provide a concise summary of the changes you've made. Include screenshots or references if applicable.
+10. **Submit**: Click **Propose changes** to finalize your pull request. This will create a new branch in your fork.
+
+A Polygon Wiki maintainer will review your pull request. If approved, it will be merged into the `main` branch.
+
+### How to Locally Run the Polygon Wiki
 
 > **Prerequisites**:  
 > - [Node.js](https://nodejs.org/en/download/) (version >= 16.14.1)  
@@ -205,129 +272,10 @@ Once you've done that, you'll find that your contributions can significantly enr
     yarn start
     ```
 
-### Make changes using Git GUI and code editor
-
-After running the Wiki locally on your machine, use a code editor to apply your changes before submitting 
-your PR. Note that you must have a GitHub account and an understanding of Markdown syntax.
-
-1. Create a new branch for your changes.
-   
-    ```bash
-    git checkout -b [new_branch_name]
-    ```
-
-2. Commit your changes. Please be sure to review our [Git Rules](https://wiki.polygon.technology/docs/contribute/orientation#git-rules). 
-   In the commit message, please reference the issue it resolves. 
-   For help, see [GitHub Docs: Linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
-
-    ```bash
-    git commit -m "brief description of changes [Fixes #1234]"
-    ```
-
-3. Push to your forked repository.
-   
-    ```
-    git push
-    ```
-
-4. Submit a PR against the `master` branch of the `0xPolygon/wiki` repo
-   
-5. Add a title to your PR. 
-   > For example, if you want to suggest edits to the "Getting Started" page, name your PR: *Update /docs/develop/getting-started.md*.
-   
-6. Add a description to your PR. Please reference the issue it resolves. 
-   > For help, see [GitHub Docs: Linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
-   
-7. Write a brief description of the changes you have made. If possible, include screenshots and references.
-
-You can apply UI changes, sidebar, and configuration design through the following files:
-
-- To modify the **Sidebar** navigation, edit **sidebars.js**
-- To modify the website page layout, edit **docusaurus.config.js**
-- To modify the blocks structure and the footer links, edit **src/pages/index.js**
-
-### Making changes using the Wiki website
-
-You can easily submit an edit suggestion. Note that you must have a GitHub account and good knowledge of Markdown syntax.
-
-1. Navigate to the [Polygon Wiki page](https://wiki.polygon.technology/) that you want to edit.
-2. Scroll down until the end of that page
-3. Click on the link: **Edit this page**. It will forward you to the same page (Markdown format) hosted on GitHub.
-4. On the related GitHub page, click the pencil icon (similar to  ) near the upper right corner of the file
-5. Apply your edits by modifying the Markdown file
-6. After you finish, scroll down until the end of that page to create a pull request 
-7. Add a title to your PR. For example, if you want to suggest edits to the "Getting Started" page, name your PR: 
-   *Update /docs/develop/getting-started.md*.
-8. Add a description to your PR. Please reference the issue it resolves. 
-   > For help, see [GitHub Docs: Linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
-9.  Write a brief description of the changes you have made. If possible, include screenshots and references.
-10. Click on the green button **Propose changes** to submit your changes. Note that submitting a change will write 
-    it to a new branch in your fork.
-
-One of the Wiki maintainers will review your PR and either accept it or submit our review. 
-Acceptable PRs will be approved & merged into the `master` branch.
-
-## Submit an Issue
-
-- Create a [new issue](https://github.com/0xPolygon/wiki/issues/new/choose) to report a bug, request a feature, 
-  or suggest changes.
-- Comment on the issue if you want to be assigned to it so [our team can assign the issue to you](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
-- If you do not have a specific contribution in mind, you can also browse current issues.
-- Issues that additionally have the `good first issue` label are considered ideal for first-timers.
-
-## Build
-
-This command generates static content into the `build` directory and can be served using any static content hosting 
-service:
-
-```
-yarn build
-```
-
-## Deployment
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the 
-`gh-pages` branch.
-
-```
-GIT_USER=[your_github_handle] USE_SSH=true yarn deploy
-```
-
-### Caching
-
-Deployments leverage GitHub caching to improve build times. Currently, 3 levels of caching are 
-implemented:
-
-- `.docusaurus`: caches the site structure. The build process will update this as needed
-- `build`: caches the static assets to avoid regenerating any pages that have not changed
-- `node_modules`: caches node_modules based on the hash of `yarn.lock`. Any changes to package dependencies will invalidate and rebuild this cache
-
-Caches can be viewed or invalidated in the GitHub repo settings.
-
-## Configuration Guide
-
-### Static site generator
-
-The [Polygon Wiki](https://wiki.polygon.technology/) is built using [Docusaurus](https://docusaurus.io/), 
-making it easy to serve and host its static files.
-
-### Deployments
-
-The deployment process for the Polygon Wiki involves two environments: **staging** and **prod**. Both environments are configured to run against the `main` branch of the repository.
-
-#### Authorization
-
-Any deployment—whether to Staging or Production—requires explicit authorization from an admin of the repository.
-
-- **Staging**: This environment is used for testing and quality assurance. Changes are deployed here first to ensure they meet the required standards before moving to Production.
-- **Production**: This is the live environment accessible to the end-users. Deployments to Production are made after successful validation in the Staging environment.
-
-### Translations
-
-| ❗ The Wiki is undergoing a reorganization and update. Translation efforts will resume upon completion of this revamp.       |
-| ---------------------------------------------------------------------------------------------------------------------------- |
-
 ## Key Polygon Repositories
+
+Explore the core codebases that power the Polygon ecosystem. This section provides quick links and descriptions for our most essential repositories, serving as a starting point for developers, enterprises, and community members alike.
+
 ### Polygon 2.0 Repositories under 0xPolygon
 
 | Category                 | Repository Name                                                     | Description                                                                                     |
