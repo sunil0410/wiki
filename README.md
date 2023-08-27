@@ -61,7 +61,8 @@
   those interested in learning about, developing on, or maintaining projects within the Polygon ecosystem.
 </p>
 
-**Please note that the first half of this README provides an overview of Polygon, while the second half focuses on the repository and source.**
+| ❗ Please note that the first half of this README provides an overview of Polygon, while the second half focuses on the repository and source. |
+| ---------------------------------------------------------------------------------------------------------------------------- |
 
 ## What is Polygon?
 
