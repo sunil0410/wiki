@@ -69,6 +69,10 @@ This strategic shift introduces "Polygon 2.0"—a "super" protocol. By building 
 - **Adaptive Modularity**: Offering a flexible architectural framework for customization and future enhancements.
 - **Swift Transaction Finality**: Ensuring rapid and reliable transaction confirmations for an optimized user experience.
 
+<p align="center">
+<img align="center" src="/static/img/readme/polygon2.0-layers-1.png" width="900">
+</p>
+
 ### Evolution of Polygon's Development Frameworks
 
 Polygon's blockchain development framework to build soverign blockchains have evolved significantly over time, each iteration bringing new features and capabilities. Below is a comparative table that outlines the key differences and features of Polygon Edge, Supernets, and the latest Chain Development Kit (CDK).
