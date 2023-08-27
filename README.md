@@ -17,40 +17,42 @@
 
 <!-- TOC -->
 
-- [What is Polygon?](#what-is-polygon-)
-  * [Matic Network -> Polygon](#matic-network----polygon)
-  * [Polygon 2.0](#polygon-20)
-- [Polygon 2.0 Stack](#polygon-20-stack)
-  * [Architecture](#architecture)
-    + [1. Staking Layer](#1-staking-layer)
-    + [2. Interop Layer](#2-interop-layer)
-    + [3. Execution Layer](#3-execution-layer)
-    + [4. Proving Layer](#4-proving-layer)
-    + [Modular Design](#modular-design)
-    + [Future-Proof](#future-proof)
-  * [Governance](#governance)
-    + [Three Governance Pillars](#three-governance-pillars)
-    + [Community Involvement](#community-involvement)
-  * [Tokenomics](#tokenomics)
-    + [Key Features of POL](#key-features-of-pol)
-  * [Evolution of Polygon's Development Frameworks](#evolution-of-polygon-s-development-frameworks)
-    + [Framework Comparison](#framework-comparison)
-    + [Key Takeaways](#key-takeaways)
-- [Key Polygon Repositories](#key-polygon-repositories)
-  * [Polygon 2.0 Repositories under 0xPolygon](#polygon-20-repositories-under-0xpolygon)
-  * [zkEVM Repositories under 0xPolygonHermez](#zkevm-repositories-under-0xpolygonhermez)
-  * [Polygon PoS Repositories under MaticNetwork](#polygon-pos-repositories-under-maticnetwork)
-- [Configuration Guide](#configuration-guide)
-  * [Static-Site Generator](#static-site-generator)
-  * [Deployments](#deployments)
-  * [Translations](#translations)
-  * [Files and Folders](#files-and-folders)
-  * [Priority Labels (`P#`)](#priority-labels---p---)
-- [How to Contribute to the Polygon Wiki](#how-to-contribute-to-the-polygon-wiki)
-  * [How to Contribute Changes via the Polygon Wiki Website](#how-to-contribute-changes-via-the-polygon-wiki-website)
-  * [How to Locally Run the Polygon Wiki](#how-to-locally-run-the-polygon-wiki)
-    + [Setup Steps](#setup-steps)
-- [License](#license)
+- [Polygon Overview](#polygon-overview)
+  * [What is Polygon?](#what-is-polygon-)
+    + [Matic Network -> Polygon](#matic-network----polygon)
+    + [Polygon 2.0](#polygon-20)
+  * [Polygon 2.0 Stack](#polygon-20-stack)
+    + [Architecture](#architecture)
+      - [1. Staking Layer](#1-staking-layer)
+      - [2. Interop Layer](#2-interop-layer)
+      - [3. Execution Layer](#3-execution-layer)
+      - [4. Proving Layer](#4-proving-layer)
+      - [Modular Design](#modular-design)
+      - [Future-Proof](#future-proof)
+    + [Governance](#governance)
+      - [Three Governance Pillars](#three-governance-pillars)
+      - [Community Involvement](#community-involvement)
+    + [Tokenomics](#tokenomics)
+      - [Key Features of POL](#key-features-of-pol)
+    + [Evolution of Polygon's Development Frameworks](#evolution-of-polygon-s-development-frameworks)
+      - [Framework Comparison](#framework-comparison)
+      - [Key Takeaways](#key-takeaways)
+  * [Key Polygon Repositories](#key-polygon-repositories)
+    + [Polygon 2.0 Repositories under 0xPolygon](#polygon-20-repositories-under-0xpolygon)
+    + [zkEVM Repositories under 0xPolygonHermez](#zkevm-repositories-under-0xpolygonhermez)
+    + [Polygon PoS Repositories under MaticNetwork](#polygon-pos-repositories-under-maticnetwork)
+- [Repository Overview](#repository-overview)
+  * [Configuration Guide](#configuration-guide)
+    + [Static-Site Generator](#static-site-generator)
+    + [Deployments](#deployments)
+    + [Translations](#translations)
+    + [Files and Folders](#files-and-folders)
+    + [Priority Labels (`P#`)](#priority-labels---p---)
+  * [How to Contribute to the Polygon Wiki](#how-to-contribute-to-the-polygon-wiki)
+    + [How to Contribute Changes via the Polygon Wiki Website](#how-to-contribute-changes-via-the-polygon-wiki-website)
+    + [How to Locally Run the Polygon Wiki](#how-to-locally-run-the-polygon-wiki)
+      - [Setup Steps](#setup-steps)
+  * [License](#license)
 
 <!--/ TOC -->
 
@@ -62,6 +64,8 @@
 
 | ❗ Please note that the first half of this README provides an overview of Polygon, while the second half focuses on the repository and source. |
 | ---------------------------------------------------------------------------------------------------------------------------- |
+
+# Polygon Overview
 
 ## What is Polygon?
 
@@ -255,6 +259,8 @@ Explore the core codebases that power the Polygon ecosystem. This section provid
 
 ---
 ---
+
+# Repository Overview
 
 ## Configuration Guide
 
