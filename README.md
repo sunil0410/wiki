@@ -56,6 +56,7 @@
     + [Polygon 2.0 Repositories under 0xPolygon](#polygon-20-repositories-under-0xpolygon)
     + [zkEVM Repositories under 0xPolygonHermez](#zkevm-repositories-under-0xpolygonhermez)
     + [Polygon PoS Repositories under MaticNetwork](#polygon-pos-repositories-under-maticnetwork)
+---
 - [Repository Overview](#repository-overview)
   * [Configuration Guide](#configuration-guide)
     + [Static-Site Generator](#static-site-generator)
@@ -70,8 +71,11 @@
   * [License](#license)
 
 <!--/ TOC -->
+---
 
 # Polygon Overview
+
+This section provides a comprehensive introduction to Polygon, its evolution, and its current stack of solutions. It aims to give readers a clear understanding of what Polygon is, its strategic focus areas like Polygon 2.0, and the various components that make up its ecosystem.
 
 ## What is Polygon?
 
@@ -292,6 +296,8 @@ Explore the core codebases that power the Polygon ecosystem. This section provid
 ---
 
 # Repository Overview
+
+This section delves into the specifics of this repository, explaining its structure, the types of files and folders it contains, and how to navigate it. It serves as a guide for developers and contributors who are interested in the source code, documentation, or contributing to the project.
 
 ## Configuration Guide
 
