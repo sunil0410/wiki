@@ -189,6 +189,7 @@ module.exports = {
           ],
         },
         "tools/data/covalent",
+        "tools/data/parsiq",
         //"pos/develop/dapp-fauna-polygon-react",
       ],
     },
