@@ -20,7 +20,7 @@ Led by Polygon Labs, the CDK Program unites industry-leading partners, collectiv
 
 ## Implementation Partners & Service Providers
 
-The CDK program offers a range of service providers that can assist with various aspects of blockchain development, deployment, and maintenance. These include:
+The CDK program offers a range of service providers that can assist with various aspects of blockchain development, deployment, and maintenance. These include, but are not limited to:
 
 - **Node Providers**: These providers offer node infrastructure services that support the operation and maintenance of CDK-based chains. Node providers can help ensure network stability, security, and scalability by providing reliable and optimized node infrastructure.
 - **RPC Providers**: These providers offer remote procedure call (RPC) services that allow developers to interact with CDK-based chains. RPC providers can provide easy and reliable access to network data and functionality.

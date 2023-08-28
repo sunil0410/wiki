@@ -1,6 +1,6 @@
 ---
 id: differences-validium-zkevm
-title: What are the Differences Between Deploying the Validium & Polygon zkEVM
+title: What are the Differences Between Deploying the CDK Validium & Polygon zkEVM
 sidebar_label: Deploying Validium vs. zkEVM
 description: "Explore the distinctions between deploying a CDK-based chain with validium versus Polygon's zkEVM."
 keywords:
@@ -31,15 +31,15 @@ Polygon CDK's validium offering is a unique scaling solution that builds upon th
 
 ### Validium Deployment
 
-1. **Data Availability Layer**: The primary distinction of validium. It ensures off-chain data availability while only storing the hash of transaction data on L1.
+1. **Data Availability Layer**: The primary distinction of the validium. It ensures off-chain data availability while only storing the hash of transaction data on L1.
    - Components: zkEVM components + PostgreSQL database (with plans to transition to a key-value store in the near future.)
    - [Repository Link](https://github.com/0xPolygon/supernets2-data-availability)
-2. **zkEVM Node with Validium Extensions**: The node is extended to support the data availability layer and DACs.
+2. **zkEVM Node with Validium Extensions**: The node is extended to support the data availability layer.
 3. **Validium-specific DAC Contract**: One additional contract handles interactions with the DAC and data availability layer.
    - Component(s): `Supernets2DataCommittee.sol`
    - [Repository Link](https://github.com/0xPolygon/supernets2-contracts)
 
-### Key Differences
+### Summary of Key Differences
 
 1. **Data Availability**: zkEVM ensures on-chain data availability, while validium uses the DAC to manage off-chain data availability.
 2. **Deployment Complexity**: Validium requires additional setup for the data availability layer and DACs.

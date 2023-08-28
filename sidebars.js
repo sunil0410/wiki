@@ -1170,9 +1170,9 @@ module.exports = {
     "cdk/index",
     "cdk/what-is-polygon-cdk",
     "cdk/validium-attributes",
-    "cdk/differences-validium-zkevm",
     "cdk/dac-overview",
     "cdk/cdk-program",
+    "cdk/differences-validium-zkevm",
     "cdk/quickstart",
   ],
 
