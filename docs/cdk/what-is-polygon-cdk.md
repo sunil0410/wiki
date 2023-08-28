@@ -27,7 +27,7 @@ The Polygon CDK documentation at this stage defaults to the validium. As Polygon
 :::
 
 <div align="center">
-  <img src="/img/zksupernets/cdk-stack.excalidraw.png" alt="CDK Overview" width="70%" height="30%" />
+  <img src="/img/cdk/cdk-stack.excalidraw.png" alt="CDK Overview" width="70%" height="30%" />
 </div>
 
 ## What are Application-Specific Blockchains?
@@ -45,7 +45,7 @@ Validiums are solutions that process transactions off the main Ethereum network 
 Leveraging the power of Polygon's advanced [zkEVM technology](https://zkevm.polygon.technology/), chains developed using the Polygon CDK offer a high-performance L2 scaling solution. Developers have the flexibility to choose the validium framework, which integrates a secure data availability layer managed by a [Data Availability Committee (DAC)](/docs/polygoncdk/dac.md). Chains built with the CDK can function like L1 blockchains tailored to specific business logic. However, as L2 solutions, they provide the advantage of near-infinite scalability. Designed with a user-centric approach, these chains prioritize core business functions and user engagement strategies without compromising on performance and scalability. The following diagram illustrates the high-level architecture of a chain developed using the Polygon CDK.
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-6.excalidraw.png" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-6.excalidraw.png" alt="bridge" width="90%" height="30%" />
 </div>
 
 ## What do you Mean by Data Availability Layer?
@@ -59,7 +59,7 @@ This separation introduces new challenges, such as ensuring the secure and relia
 The diagram below provides a high-level overview of the Polygon CDK's validium approach to blockchain infrastructure.
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-2.excalidraw.png" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-2.excalidraw.png" alt="bridge" width="90%" height="30%" />
 </div>
 
 ## What are DACs?
@@ -93,7 +93,7 @@ Polygon CDK, integral to Polygon 2.0, reshapes blockchain infrastructure. It ens
 The following diagram illustrates how CDK-based chains fit into the overall Polygon 2.0 ecosystem.
 
 <div align="center">
-  <img src="/img/zksupernets/cdk-1.excalidraw.png" alt="bridge" width="85%" height="30%" />
+  <img src="/img/cdk/cdk-1.excalidraw.png" alt="bridge" width="85%" height="30%" />
 </div>
 
 ### Key Factors for Adoption

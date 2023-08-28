@@ -71,7 +71,7 @@ Remember, while CDK-based chains eliminate the need for an initial stake, valida
 **Stay tuned for more information.**
 
 <div align="center">
-  <img src="/img/zksupernets/polygon2.0-layers.png" alt="bridge" width="99%" height="30%" />
+  <img src="/img/cdk/polygon2.0-layers.png" alt="bridge" width="99%" height="30%" />
 </div>
 
 <!--

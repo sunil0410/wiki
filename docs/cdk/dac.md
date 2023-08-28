@@ -75,5 +75,5 @@ This process ensures a secure, efficient, and auditable flow of data through the
 The following diagram illustrates the entire data flow process within Polygon CDK.
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-data-flow.excalidraw.png" alt="bridge" width="100%" height="30%" />
+  <img src="/img/cdk/zksupernets-data-flow.excalidraw.png" alt="bridge" width="100%" height="30%" />
 </div>

@@ -147,7 +147,7 @@ Congratulations! Your local zkSupernet is now up and running. Let's test its fun
 First, verify the block explorer by navigating to [localhost:4001](http://localhost:4001/). You should see a page similar to this:
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-block-explorer-empty.png" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-block-explorer-empty.png" alt="bridge" width="90%" height="30%" />
 </div>
 
 <br/>
@@ -160,13 +160,13 @@ Now, let's add the network to your Web3 wallet by populating the necessary field
 - The RPC node and block explorer containers can be found at ports **8123** and **4001**, respectively.
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-metamask-add-network.png" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-metamask-add-network.png" alt="bridge" width="90%" height="30%" />
 </div>
 
 Next, switch to the new network:
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-metamask-switch-network.png" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-metamask-switch-network.png" alt="bridge" width="90%" height="30%" />
 </div>
 
 By default, an account with private key `0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80` has been preloaded with tokens.
@@ -177,23 +177,23 @@ By default, an account with private key `0xac0974bec39a17e36ba4a6b4d238ff944bacb
 Import this account and check the balance:
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-metamask-import-account.gif" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-metamask-import-account.gif" alt="bridge" width="90%" height="30%" />
 </div>
 
 You can now try a transaction by transferring some tokens to another account:
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-metamask-transfer.gif" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-metamask-transfer.gif" alt="bridge" width="90%" height="30%" />
 </div>
 
 After confirming the transaction, check the updated balances:
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-metamask-transfer-result.gif" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-metamask-transfer-result.gif" alt="bridge" width="90%" height="30%" />
 </div>
 
 You can also view the transaction details in the block explorer by clicking on the transaction details in MetaMask:
 
 <div align="center">
-  <img src="/img/zksupernets/zksupernets-tx-view-on-block-explorer.gif" alt="bridge" width="90%" height="30%" />
+  <img src="/img/cdk/zksupernets-tx-view-on-block-explorer.gif" alt="bridge" width="90%" height="30%" />
 </div>
