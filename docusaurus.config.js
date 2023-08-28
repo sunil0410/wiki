@@ -267,7 +267,7 @@ module.exports = {
             */
             {
               label: "Miden",
-              href: "https://wiki.polygon.technology/docs/miden/design/main"
+              href: "/docs/miden/design/main"
             },
           ]
         },
