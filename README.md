@@ -62,6 +62,8 @@
   * [Configuration Guide](#configuration-guide)
     + [Static-Site Generator](#static-site-generator)
     + [Deployments](#deployments)
+    + [Algolia DocSearch](#algolia-docsearch)
+    + [Google Analytics](#google-analytics)
     + [Translations](#translations)
     + [Files and Folders](#files-and-folders)
     + [Priority Labels (`P#`)](#priority-labels---p---)
@@ -331,6 +333,14 @@ Any deployment—whether to Staging or Production—requires explicit authorizat
 
 - **Staging**: This environment is used for testing and quality assurance. Changes are deployed here first to ensure they meet the required standards before moving to Production.
 - **Production**: This is the live environment accessible to the end-users. Deployments to Production are made after successful validation in the Staging environment.
+
+### Algolia DocSearch
+
+The documentation utilizes [Algolia's DocSearch](https://docsearch.algolia.com/) to provide a powerful and user-friendly search experience. DocSearch is specifically designed to improve navigation in documentation websites, making it easier for users to find the information they need.
+
+### Google Analytics
+
+[Google Analytics](https://analytics.google.com/) is integrated into the platform to monitor user interactions and collect valuable data. This helps in understanding user engagement and behavior, thereby aiding in the continuous improvement of the documentation. For those curious about how data is handled, please refer to our [Terms of Use](https://polygon.technology/terms-of-use).
 
 ### Translations
 
