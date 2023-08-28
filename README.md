@@ -480,8 +480,7 @@ If you're ever contacted by one of these individuals, take the following steps t
 1. **Verify Contact Information**: Match the contact details with the origin of the message.
 2. **Double-Check**: Reach out to another person on this list to confirm the legitimacy of the initial contact.
 
-| ❗ Beware of Impersonation Scams: Always cross-verify the identity of the person contacting you. Confirm that their contact details align with the message source and seek additional verification when in doubt.
- |
+| ❗ Beware of Impersonation Scams: Always cross-verify the identity of the person contacting you. Confirm that their contact details align with the message source and seek additional verification when in doubt.|
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 - [@DannyS03](https://github.com/DannyS03): Lead Contact, primarily focuses on CDK, PoS & ZK, along with Project Organization.
