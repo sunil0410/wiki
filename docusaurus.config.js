@@ -9,7 +9,6 @@ module.exports = {
   favicon: "img/logo-round-purple.png",
   organizationName: "Polygon Labs",
   projectName: "wiki",
-  trailingSlash: true,
   customFields: {
     description: "Build your next application on Polygon.",
   },
@@ -176,24 +175,6 @@ module.exports = {
             to: '/docs/pos/operate/validator/validator-node-system-requirements',
             from: '/docs/operate/technical-requirements',
           },
-          //faqs
-          {
-            to: '/docs/pos/pos-faqs',
-            from: '/docs/faq/technical-faqs',
-          },
-          //wallets
-          {
-            to: '/docs/tools/wallets/getting-started',
-            from: '/docs/develop/wallets/getting-started',
-          },
-          {
-            to: '/docs/tools/wallets/polygon-web-wallet/web-wallet-v3-guide',
-            from: '/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide',
-          },
-          {
-            to: '/docs/tools/wallets/adding-a-custom-token',
-            from: '/docs/develop/wallets/adding-a-custom-token',
-          },
         ],
       },
     ],
@@ -266,6 +247,10 @@ module.exports = {
             },
             */
             {
+              label: "zkEVM",
+              href: "https://zkevm.polygon.technology"
+            },
+            {
               label: "Miden",
               href: "docs/miden/design/main"
             },
@@ -304,16 +289,16 @@ module.exports = {
           title: "Community",
           items: [
             {
-              href: 'https://forum.polygon.technology/',
-              label: 'Forum',
-            },
-            {
               href: 'https://twitter.com/0xPolygon',
               label: 'Twitter',
             },
             {
               href: 'https://discord.com/invite/0xPolygon',
               label: 'Discord',
+            },
+            {
+              href: 'https://forum.polygon.technology/',
+              label: 'Forum',
             },
             {
               href: 'https://www.reddit.com/r/0xPolygon/',
@@ -343,23 +328,6 @@ module.exports = {
             {
               label: "Brand Kit",
               href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
-            },
-          ]
-        },
-        {
-          title: "Legal",
-          items: [
-            {
-              label: "Content Disclaimer",
-              href: "https://github.com/0xPolygon/wiki/blob/main/CONTENT_DISCLAIMER.md"
-            },
-            {
-              label: "Terms of Use",
-              href: "https://polygon.technology/terms-of-use"
-            },
-            {
-              label: "Privacy Policy",
-              href: "https://polygon.technology/privacy-policy"
             },
           ]
         },
@@ -413,14 +381,14 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/zkevm/',
-              label: 'zkEVM',
+              href: '/docs/supernets',
+              label: 'Supernets',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/supernets',
-              label: 'Supernets',
+              href: 'https://zkevm.polygon.technology',
+              label: 'zkEVM',
               target: '_self',
               rel: null,
             },
@@ -433,6 +401,24 @@ module.exports = {
             {
               href: 'https://0xpolygonid.github.io/tutorials/',
               label: 'ID',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: 'https://events.polygon.technology/blueprint-web3-games-guide',
+              label: 'Gaming',
+              target: '_blank',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "Polygon 2.0",
+          position: "left",
+          items: [
+            {
+              href: '/docs/cdk',
+              label: 'Polygon CDK',
               target: '_self',
               rel: null,
             },
@@ -485,9 +471,9 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/zkevm/architecture',
+              href: 'https://zkevm.polygon.technology/docs/introduction',
               label: 'zkEVM',
-              target: '_self',
+              target: '_blank',
               rel: null,
             },
             {
@@ -536,7 +522,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/0xPolygon/wiki/tree/main/",
+          editUrl: "https://github.com/0xPolygon/wiki/tree/master/",
           path: "docs",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
