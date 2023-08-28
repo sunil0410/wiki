@@ -272,23 +272,23 @@ Explore the core codebases that power the Polygon ecosystem. This section provid
 
 | Category                 | Repository Name                                                     | Description                                                                                     |
 |--------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| **Core Components**      | [Heimdall](https://github.com/maticnetwork/heimdall)                 | Heimdall layer for Matic Network.                                                               |
-|                          | [Bor](https://github.com/maticnetwork/bor)                           | Bor node for Matic Network.                                                                     |
-|                          | [Tendermint](https://github.com/maticnetwork/tendermint)             | Tendermint consensus engine.                                                                    |
-|                          | [Cosmos SDK](https://github.com/maticnetwork/cosmos-sdk)             | Cosmos SDK for Matic Network.                                                                   |
+| **Core Components**      | [Heimdall](https://github.com/maticnetwork/heimdall)                 | Heimdall layer for PoS Network.                                                               |
+|                          | [Bor](https://github.com/maticnetwork/bor)                           | Bor node for PoS Network.                                                                     |
+|                          | [Tendermint](https://github.com/maticnetwork/tendermint)             | Tendermint fork for PoS engine.                                                                    |
+|                          | [Cosmos SDK](https://github.com/maticnetwork/cosmos-sdk)             | Cosmos SDK fork for PoS Network.                                                                   |
 | **Token Management**     | [Polygon Token List](https://github.com/maticnetwork/polygon-token-list)| A list of tokens on the Polygon network.                                                        |
 |                          | [Polygon Token Assets](https://github.com/maticnetwork/polygon-token-assets)| Token assets for the Polygon network.                                                           |
-| **Subgraphs**            | [Subgraphs](https://github.com/maticnetwork/subgraphs)               | Subgraphs for Matic Network.                                                                    |
-| **CLI Tools**            | [Matic CLI](https://github.com/maticnetwork/matic-cli)               | Command-line interface for Matic Network.                                                        |
+| **Subgraphs**            | [Subgraphs](https://github.com/maticnetwork/subgraphs)               | Subgraphs for PoS Network.                                                                    |
+| **CLI Tools**            | [Matic CLI](https://github.com/maticnetwork/matic-cli)               | Command-line interface for PoS Network.                                                        |
 |                          | [Polygon CLI](https://github.com/maticnetwork/polygon-cli)           | Command-line interface for Polygon.                                                              |
-| **Gas Management**       | [Matic Gas Station](https://github.com/maticnetwork/maticgasstation)  | Gas station for Matic Network.                                                                  |
-| **Portals and Bridges**  | [PoS Portal](https://github.com/maticnetwork/pos-portal)             | Proof of Stake portal for Matic Network.                                                         |
+| **Gas Management**       | [Matic Gas Station](https://github.com/maticnetwork/maticgasstation)  | Gas station for PoS Network.                                                                  |
+| **Portals and Bridges**  | [PoS Portal](https://github.com/maticnetwork/pos-portal)             | Proof of Stake portal for PoS Network.                                                         |
 | **Proposals**            | [Polygon Improvement Proposals](https://github.com/maticnetwork/Polygon-Improvement-Proposals)| Repository for Polygon Improvement Proposals.                                                    |
-| **SDKs and Libraries**   | [Matic.js](https://github.com/maticnetwork/matic.js)                 | JavaScript library for Matic Network.                                                            |
+| **SDKs and Libraries**   | [Matic.js](https://github.com/maticnetwork/matic.js)                 | JavaScript library for PoS Network.                                                            |
 | **DevOps**               | [Node Ansible](https://github.com/maticnetwork/node-ansible)         | Ansible scripts for node management.                                                            |
 |                          | [Terraform Polygon Supernets](https://github.com/maticnetwork/terraform-polygon-supernets)| Terraform scripts for Polygon Supernets.                                                        |
-| **Contracts**            | [Contracts](https://github.com/maticnetwork/contracts)               | Smart contracts for Matic Network.                                                              |
-|                          | [Genesis Contracts](https://github.com/maticnetwork/genesis-contracts)| Genesis contracts for Matic Network.                                                            |
+| **Contracts**            | [Contracts](https://github.com/maticnetwork/contracts)               | Smart contracts for PoS Network.                                                              |
+|                          | [Genesis Contracts](https://github.com/maticnetwork/genesis-contracts)| Genesis contracts for PoS Network.                                                            |
 | **Proofs and APIs**      | [Proof Generation API](https://github.com/maticnetwork/proof-generation-api)| API for proof generation.                                                                       |
 | **Erigon**               | [Erigon](https://github.com/maticnetwork/erigon)                     | Erigon Ethereum client.                                                                         |
 | **Policies**             | [Policy at Polygon](https://github.com/maticnetwork/Policy-at-Polygon)| Policies at Polygon.                                                                            |
@@ -483,8 +483,8 @@ If you're ever contacted by one of these individuals, take the following steps t
 | ❗ Beware of Impersonation Scams: Always cross-verify the identity of the person contacting you. Confirm that their contact details align with the message source and seek additional verification when in doubt.|
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-- [@DannyS03](https://github.com/DannyS03): Lead Contact, primarily focuses on CDK, PoS & ZK, along with Project Organization.
-- [@EmpieichO](https://github.com/EmpieichO): Primarily focusses on zkEVM & Miden, and Specifications.
+- [@DannyS03](https://github.com/DannyS03): Lead contact, primarily focuses on CDK, PoS & ZK, along with project organization.
+- [@EmpieichO](https://github.com/EmpieichO): Primarily focusses on zkEVM & Miden, and specifications.
 - [@cerberushades](https://github.com/cerberushades): Primarily focuses on Polygon ID.
 
 ## License
