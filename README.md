@@ -56,8 +56,9 @@
     + [Polygon 2.0 Repositories under 0xPolygon](#polygon-20-repositories-under-0xpolygon)
     + [zkEVM Repositories under 0xPolygonHermez](#zkevm-repositories-under-0xpolygonhermez)
     + [Polygon PoS Repositories under MaticNetwork](#polygon-pos-repositories-under-maticnetwork)
----
 - [Repository Overview](#repository-overview)
+  * [State of the Docs](#state-of-the-docs)
+    + [What to Expect?](#what-to-expect-)
   * [Configuration Guide](#configuration-guide)
     + [Static-Site Generator](#static-site-generator)
     + [Deployments](#deployments)
@@ -68,9 +69,11 @@
     + [How to Contribute Changes via the Polygon Wiki Website](#how-to-contribute-changes-via-the-polygon-wiki-website)
     + [How to Locally Run the Polygon Wiki](#how-to-locally-run-the-polygon-wiki)
       - [Setup Steps](#setup-steps)
+  * [Primary Maintainers](#primary-maintainers)
   * [License](#license)
 
 <!--/ TOC -->
+
 ---
 
 # Polygon Overview
@@ -274,10 +277,10 @@ Explore the core codebases that power the Polygon ecosystem. This section provid
 |--------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | **Core Components**      | [Heimdall](https://github.com/maticnetwork/heimdall)                 | Heimdall layer for PoS Network.                                                               |
 |                          | [Bor](https://github.com/maticnetwork/bor)                           | Bor node for PoS Network.                                                                     |
-|                          | [Tendermint](https://github.com/maticnetwork/tendermint)             | Tendermint fork for PoS engine.                                                                    |
+|                          | [Tendermint](https://github.com/maticnetwork/tendermint)             | Tendermint fork for PoS consensus engine.                                                                    |
 |                          | [Cosmos SDK](https://github.com/maticnetwork/cosmos-sdk)             | Cosmos SDK fork for PoS Network.                                                                   |
-| **Token Management**     | [Polygon Token List](https://github.com/maticnetwork/polygon-token-list)| A list of tokens on the Polygon network.                                                        |
-|                          | [Polygon Token Assets](https://github.com/maticnetwork/polygon-token-assets)| Token assets for the Polygon network.                                                           |
+| **Token Management**     | [Polygon Token List](https://github.com/maticnetwork/polygon-token-list)| A list of tokens on the PoS network.                                                        |
+|                          | [Polygon Token Assets](https://github.com/maticnetwork/polygon-token-assets)| Token assets for the PoS network.                                                           |
 | **Subgraphs**            | [Subgraphs](https://github.com/maticnetwork/subgraphs)               | Subgraphs for PoS Network.                                                                    |
 | **CLI Tools**            | [Matic CLI](https://github.com/maticnetwork/matic-cli)               | Command-line interface for PoS Network.                                                        |
 |                          | [Polygon CLI](https://github.com/maticnetwork/polygon-cli)           | Command-line interface for Polygon.                                                              |
@@ -298,6 +301,20 @@ Explore the core codebases that power the Polygon ecosystem. This section provid
 # Repository Overview
 
 This section delves into the specifics of this repository, explaining its structure, the types of files and folders it contains, and how to navigate it. It serves as a guide for developers and contributors who are interested in the source code, documentation, or contributing to the project.
+
+## State of the Docs
+
+In sync with the ongoing advancements of Polygon 2.0, the Polygon documentation platform is also slated for significant enhancements. Originally conceived as a "Developer Hub," the platform evolved into a "Wiki" in an attempt to effectively meet the distinct needs of various projects. 
+
+While termed a "Wiki," the platform transcends the traditional scope of a wiki, serving as more than just a repository of information. This is because it aims serve as a versatile platform that accommodates different types of technical content and the diverse needs and stages of project development. To offer a unified experience, the Polygon documentation will soon be integrated with the main Polygon website, featuring a revamped documentation and learning experience. Importantly, the source for the Polygon documentation will continue to live independently, ensuring its integrity and versatility.
+
+### What to Expect?
+
+- **Dynamic Documentation**: Transition from a static information repository to an interactive, dynamic knowledge platform.
+- **Enhanced Learning Experience**: Intuitive and enriching content tailored to facilitate learning, whether you're a beginner or an expert.
+- **User-Centric Design**: Improved information architecture and navigation, designed with different user personas in mind, all guided by principles of developer advocacy and product development.
+
+The Polygon community is committed to offering a comprehensive and current resource that helps users stay at the cutting edge of blockchain technology. Watch this space for more updates.
 
 ## Configuration Guide
 
