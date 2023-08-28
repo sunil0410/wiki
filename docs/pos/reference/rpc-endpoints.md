@@ -119,7 +119,6 @@ You can sign up for a dedicated free RPC URL at the following:
 * [DataHub (Figment)](https://datahub.figment.io)
 * [GetBlock](https://getblock.io/en/)
 * [Infura](https://infura.io)
-* [MaticVigil](https://rpc.maticvigil.com/)
 * [Moralis](https://moralis.io)
 * [NodeReal](https://nodereal.io)
 * [OnFinality](https://onfinality.io/)
