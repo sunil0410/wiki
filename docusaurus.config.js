@@ -436,12 +436,6 @@ module.exports = {
               target: '_self',
               rel: null,
             },
-            {
-              to: 'https://events.polygon.technology/blueprint-web3-games-guide',
-              label: 'Gaming',
-              target: '_blank',
-              rel: null,
-            },
           ],
         },
         {
