@@ -306,10 +306,11 @@ This section delves into the specifics of this repository, explaining its struct
 
 In sync with the ongoing advancements of Polygon 2.0, the Polygon documentation platform is also slated for significant enhancements. Originally conceived as a "Developer Hub," the platform evolved into a "Wiki" in an attempt to effectively meet the distinct needs of various projects. 
 
-While termed a "Wiki," the platform transcends the traditional scope of a wiki, serving as more than just a repository of information. This is because it aims serve as a versatile platform that accommodates different types of technical content and the diverse needs and stages of project development. To offer a unified experience, the Polygon documentation will soon be integrated with the main Polygon website, featuring a revamped documentation and learning experience. Importantly, the source for the Polygon documentation will continue to live independently, ensuring its integrity and versatility.
+While termed a "Wiki," the platform transcends the traditional scope of a wiki, serving as more than just a repository of information. This is because it aims serve as a versatile platform that accommodates different types of technical content and the diverse needs and stages of project development.
 
 ### What to Expect?
 
+- **Unified Experience**: Seamlessly integrated with the main Polygon website, the documentation will feature a new, dynamic learning experience. The source will maintain its independent existence for continued integrity and versatility.
 - **Dynamic Documentation**: Transition from a static information repository to an interactive, dynamic knowledge platform.
 - **Enhanced Learning Experience**: Intuitive and enriching content tailored to facilitate learning, whether you're a beginner or an expert.
 - **User-Centric Design**: Improved information architecture and navigation, designed with different user personas in mind, all guided by principles of developer advocacy and product development.
