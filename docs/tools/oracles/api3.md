@@ -225,7 +225,7 @@ Once the transaction is broadcasted and confirmed on the blockchain, the proxy c
 
 > <img src={useBaseUrl("img/api3/market6.png")} width="500"/>
 
-#### Subscribing to a Managed dAPI
+### Subscribing to Managed dAPIs
 
 If you are trying to access Managed dAPIs, 
 once you have selected your dAPI, you will then be presented with an option to
