@@ -522,7 +522,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/0xPolygon/wiki/tree/master/",
+          editUrl: "https://github.com/0xPolygon/wiki/tree/main/",
           path: "docs",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
