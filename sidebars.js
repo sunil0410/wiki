@@ -661,7 +661,6 @@ module.exports = {
   contribute: [
     "contribute/contributor-guidelines",
     "contribute/bug-bounty-program",
-    "contribute/wiki-maintainers",
     {
       type: "category",
       label: "Style Guide",
