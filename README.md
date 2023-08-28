@@ -80,7 +80,7 @@
 
 # Polygon Overview
 
-This section provides a comprehensive introduction to Polygon, its evolution, and its current stack of solutions. It aims to give readers a clear understanding of what Polygon is, its strategic focus areas like Polygon 2.0, and the various components that make up its ecosystem.
+This section provides a comprehensive introduction to Polygon, its evolution, and its stack of solutions. It aims to give readers a clear understanding of what Polygon is, its strategic focus areas like Polygon 2.0, and the various components that make up its ecosystem.
 
 ## What is Polygon?
 
@@ -88,9 +88,9 @@ Polygon is a pioneering blockchain protocol engineered to act as a universal lay
 
 ### Matic Network -> Polygon
 
-Originally launched as Matic Network with the goal of scaling Ethereum through a hybrid Plasma sidechain, Polygon has undergone a transformative evolution. It has matured into a comprehensive suite of protocols designed to enhance Ethereum's scalability and versatility. This strategic transformation was not an arbitrary decision; it was a calculated move backed by extensive research and testing, all aimed at addressing the diverse needs of various applications.
+Originally launched as Matic Network with the goal of scaling Ethereum through a hybrid Plasma sidechain, Polygon has undergone a transformative evolution. It has matured into a comprehensive suite of protocols designed to enhance Ethereum's scalability and versatility. This strategic transformation was not an arbitrary decision; it was a calculated move backed by extensive research and testing, all aimed at addressing the diverse needs of various applications. In addition, the advent of zero-knowledge technology (zk-tech) marked a significant milestone, indicating that blockchains are now well-equipped to serve enterprise-level applications and drive mass adoption.
 
-The advent of zero-knowledge technology (zk-tech) marked a significant milestone, indicating that blockchains are now well-equipped to serve enterprise-level applications and drive mass adoption.
+**These various solutions are meant to function as not separate protocols**; they are components of one unified Polygon protocol. The next iteration of the protocol aims to refine and integrate these components to drive mass adoption.
 
 ### Polygon 2.0
 
