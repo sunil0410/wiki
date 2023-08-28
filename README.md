@@ -234,6 +234,8 @@ Polygon's blockchain development framework to build soverign blockchains have ev
 <img align="center" src="/static/img/readme/polygon2.0-layers-1.png" width="900">
 </p>
 
+https://github.com/0xPolygon/wiki/assets/25497083/d848aecf-7f20-41d1-8382-80a41c622b25
+
 ## Key Polygon Repositories
 
 Explore the core codebases that power the Polygon ecosystem. This section provides quick links and descriptions for our most essential repositories, serving as a starting point for developers, enterprises, and community members alike.
