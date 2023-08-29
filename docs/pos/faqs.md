@@ -532,6 +532,10 @@ This message is not an error. The message indicates that the Bor node is not the
 
 This means that you have not added your [signer address](/maintain/glossary.md#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
 
+## Bor shows "Error: could not apply tx 0 "
+
+The message "could not apply tx 0" basically occurs due the error shown "nonce too high". This basically means that it was a faulty block which had an invalid tx. A malicious peer must have sent this message to this node. The resolution is similar to what general bad block error.
+
 ## Bor shows "Failed to unlock account (0x...) No key for given address or file"
 
 This error occurs because the path for the `password.txt` file is incorrect.
