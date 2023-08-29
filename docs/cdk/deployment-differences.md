@@ -86,14 +86,14 @@ The CDK Validium is actively being developed, with ongoing feature enhancements 
 
 :::
 
-### 1. Run the CDK Validium Node
+### 1. Deploy Validium-specific Contracts
 
-First, you'll need to set up and run the CDK Validium Node. Follow the instructions in the [CDK Validium Node GitHub repository's README](https://github.com/0xPolygon/cdk-validium-node).
+First, deploy the Validium-specific smart contracts. The necessary steps can be found in the [CDK Validium Contracts GitHub repository's README](https://github.com/0xPolygon/cdk-validium-contracts).
 
-### 2. Run the Data Availability (DA) Node
+### 2. Run the CDK Validium Node
 
-After the CDK Validium Node is operational, you'll need to set up and run the Data Availability Node. Instructions for this can be found in the [CDK DA Node GitHub repository's README](https://github.com/0xPolygon/cdk-data-availability).
+After, you'll need to set up and run the CDK Validium Node. Follow the instructions in the [CDK Validium Node GitHub repository's README](https://github.com/0xPolygon/cdk-validium-node).
 
-### 3. Deploy Validium-specific Contracts
+### 3. Run the Data Availability (DA) Node
 
-Finally, deploy the Validium-specific smart contracts. The necessary steps can be found in the [CDK Validium Contracts GitHub repository's README](https://github.com/0xPolygon/cdk-validium-contracts).
+Finally, the CDK Validium Node is operational, you'll need to set up and run the Data Availability Node. Instructions for this can be found in the [CDK DA Node GitHub repository's README](https://github.com/0xPolygon/cdk-data-availability).
