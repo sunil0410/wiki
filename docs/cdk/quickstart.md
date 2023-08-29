@@ -38,7 +38,7 @@ New features and refinements are designed to enhance user experience without dis
 
 <!-- explain actual setup, like mock prover-->
 
-In this tutorial, you'll quickly dive into the world of Polygon CDK. You'll learn to set up and run a local CDK-based chain, enabling you to:
+In this tutorial, you'll quickly dive into the world of Polygon CDK. You'll learn to set up and run a local CDK-developed chain, enabling you to:
 
 - Get a rapid understanding of Polygon CDK.
 - Test smart contracts.

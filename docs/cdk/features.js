@@ -21,13 +21,13 @@ export const firstRow = [
         title: "Deployment Differences",
         linkUrl: "",
         imageUrl: "/img/supernets/supernets-logo.png",
-        description: "Explore the distinctions between deploying a CDK-based chain with validium versus Polygon's zkEVM."
+        description: "Explore the distinctions between deploying a CDK-developed chain with validium versus Polygon's zkEVM."
     },
     {
         title: 'Launch a Local Test Network',
         linkUrl: '/docs/cdk/quickstart',
         imageUrl: '/img/supernets/supernets-logo.png',
-        description: 'Learn how to deploy your own CDK-based chain in only 5 minutes.'
+        description: 'Learn how to deploy your own CDK-developed chain in only 5 minutes.'
     },
     {
         title: "CDK Program",

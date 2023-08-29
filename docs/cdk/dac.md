@@ -17,13 +17,13 @@ keywords:
 
 Data Availability Committees (“DACs”) have one core responsibility: to verify that the data necessary to reconstruct the L2 state from on-chain events is accessible to everyone. This availability means that, even if L2 operators go offline, users can still access their assets and data.
 
-## The Key to CDK-based Chains: The DAC
+## The Key to CDK-developed Chains: The DAC
 
-In CDK-based chains, the DAC, functioning as a secure consortium of nodes, ensures off-chain data access. This consortium is pivotal for the operation of CDK-based chains, maintaining data availability even if chain operators go offline.
+In CDK-developed chains, the DAC, functioning as a secure consortium of nodes, ensures off-chain data access. This consortium is pivotal for the operation of CDK-developed chains, maintaining data availability even if chain operators go offline.
 
 ### Polygon zkEVM: Powering Computation
 
-CDK-based chains are powered by Polygon zkEVM, offering a specialized environment for runtime and execution. This zkEVM-based engine is an exact implementation of the existing zkEVM. Operating as a zero-knowledge rollup (zk-rollup), it efficiently condenses numerous transactions into one batch, which is then submitted to Ethereum for validation.
+CDK-developed chains are powered by Polygon zkEVM, offering a specialized environment for runtime and execution. This zkEVM-based engine is an exact implementation of the existing zkEVM. Operating as a zero-knowledge rollup (zk-rollup), it efficiently condenses numerous transactions into one batch, which is then submitted to Ethereum for validation.
 
 Learn more about the roles and operation of zkEVM in the official documentation, available [<ins>here</ins>](https://zkevm.polygon.technology/).
 
@@ -68,9 +68,9 @@ The DAC works closely with the Sequencer to ensure secure and efficient data han
 
 6. **Verification on Ethereum**: A designated smart contract on Ethereum verifies the submitted signatures against a list of valid DAC members and confirms that sufficient approval has been provided for the batch hash.
 
-7. **Final Settlement with ZKP**: The Aggregator prepares a ZKP for the batch and submits it to Ethereum. This proof confirms the validity of the batch's transactions without revealing their details, thereby updating the CDK-based chain state on Ethereum.
+7. **Final Settlement with ZKP**: The Aggregator prepares a ZKP for the batch and submits it to Ethereum. This proof confirms the validity of the batch's transactions without revealing their details, thereby updating the CDK-developed chain state on Ethereum.
 
-This process ensures a secure, efficient, and auditable flow of data through the system, supporting the implementation and operation of a CDK-based chain in a broad range of contexts.
+This process ensures a secure, efficient, and auditable flow of data through the system, supporting the implementation and operation of a CDK-developed chain in a broad range of contexts.
 
 The following diagram illustrates the entire data flow process within Polygon CDK.
 

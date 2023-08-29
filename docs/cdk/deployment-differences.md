@@ -2,7 +2,7 @@
 id: differences-validium-zkevm
 title: What are the Differences Between Deploying the CDK Validium & Polygon zkEVM
 sidebar_label: Deploying Validium vs. zkEVM
-description: "Explore the distinctions between deploying a CDK-based chain with validium versus Polygon's zkEVM."
+description: "Explore the distinctions between deploying a CDK-developed chain with validium versus Polygon's zkEVM."
 keywords:
   - docs
   - Polygon

@@ -80,17 +80,17 @@ Polygon CDK, integral to Polygon 2.0, reshapes blockchain infrastructure. It ens
 
 1. **High Modularity**: Polygon CDK offers a modular environment for ZK-powered L2 chain design. Developers can customize chains according to their needs, from choosing the execution environment to determining the gas token.
 
-2. **Hyper-Scalability**: CDK-based L2 chains enhance transaction speed and can be multiplied to achieve Polygon 2.0's vision of a highly scalable ecosystem.
+2. **Hyper-Scalability**: CDK-developed L2 chains enhance transaction speed and can be multiplied to achieve Polygon 2.0's vision of a highly scalable ecosystem.
 
-3. **Unified Liquidity**: Ensuring fluid asset transfers across multiple chains within Polygon 2.0's L2 ecosystem, CDK-based chains champion unified liquidity, fostering a vibrant, efficient digital economy.
+3. **Unified Liquidity**: Ensuring fluid asset transfers across multiple chains within Polygon 2.0's L2 ecosystem, CDK-developed chains champion unified liquidity, fostering a vibrant, efficient digital economy.
 
-4. **Independent Data Availability**: With a dedicated data availability layer and a DAC, CDK-based chains provide robust off-chain data access and reliability. This structure, independent of Ethereum, ensures substantial data resilience and integrity.
+4. **Independent Data Availability**: With a dedicated data availability layer and a DAC, CDK-developed chains provide robust off-chain data access and reliability. This structure, independent of Ethereum, ensures substantial data resilience and integrity.
 
-5. **Composable Interoperability**: Thanks to the LXLY Bridge, CDK-based chains enhance seamless interaction and asset exchange across diverse blockchains. This interoperable infrastructure cultivates an interconnected and versatile ecosystem, promoting cross-chain collaboration and interaction.
+5. **Composable Interoperability**: Thanks to the LXLY Bridge, CDK-developed chains enhance seamless interaction and asset exchange across diverse blockchains. This interoperable infrastructure cultivates an interconnected and versatile ecosystem, promoting cross-chain collaboration and interaction.
 
 6. **Near-Instant Finality**: Chains deployed using the Polygon CDK rely on cryptographic security, ensuring transaction integrity without the need for full nodes. This approach guarantees near-instant finality and robust security.
 
-The following diagram illustrates how CDK-based chains fit into the overall Polygon 2.0 ecosystem.
+The following diagram illustrates how CDK-developed chains fit into the overall Polygon 2.0 ecosystem.
 
 <div align="center">
   <img src="/img/cdk/cdk-1.excalidraw.png" alt="bridge" width="85%" height="30%" />
@@ -98,15 +98,15 @@ The following diagram illustrates how CDK-based chains fit into the overall Poly
 
 ### Key Factors for Adoption
 
-1. **Scalability for Ethereum**: CDK-based chains significantly scale Ethereum. They allow projects and businesses to build applications to meet their block space needs while preserving the security and integrity of the Ethereum mainnet.
+1. **Scalability for Ethereum**: CDK-developed chains significantly scale Ethereum. They allow projects and businesses to build applications to meet their block space needs while preserving the security and integrity of the Ethereum mainnet.
 
-2. **Business Logic Customization**: CDK-based chains fully support the Ethereum Virtual Machine (EVM), which allows for custom gas limits, opcode compatibility, and technology integrations. This enhances flexibility in business logic design and scalability through Polygon zkEVM.
+2. **Business Logic Customization**: CDK-developed chains fully support the Ethereum Virtual Machine (EVM), which allows for custom gas limits, opcode compatibility, and technology integrations. This enhances flexibility in business logic design and scalability through Polygon zkEVM.
 
-3. **Privacy Options**: CDK-based chains enable the creation of private app chains, providing an option for those who prioritize privacy in their applications. This feature supports clients in maintaining the confidentiality of their application data while still enjoying the benefits of blockchain technology.
+3. **Privacy Options**: CDK-developed chains enable the creation of private app chains, providing an option for those who prioritize privacy in their applications. This feature supports clients in maintaining the confidentiality of their application data while still enjoying the benefits of blockchain technology.
 
-4. **Compliance-Oriented**: CDK-based chains enable network sovereignty and regulatory compliance. They allow network maintainers to choose administrators who comply with local regulations, ensuring conformity to regional regulatory requirements.
+4. **Compliance-Oriented**: CDK-developed chains enable network sovereignty and regulatory compliance. They allow network maintainers to choose administrators who comply with local regulations, ensuring conformity to regional regulatory requirements.
 
-5. **Extensive Web3 Support**: CDK-based chains, being direct forks of the zkEVM stack, facilitate easy porting of services. They also leverage a comprehensive ecosystem with premium service providers offering essential tools for application integration, development, and deployment.
+5. **Extensive Web3 Support**: CDK-developed chains, being direct forks of the zkEVM stack, facilitate easy porting of services. They also leverage a comprehensive ecosystem with premium service providers offering essential tools for application integration, development, and deployment.
 
 ## How to Get Started
 

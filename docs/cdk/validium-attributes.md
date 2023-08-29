@@ -15,9 +15,9 @@ keywords:
   - chain development kit
 ---
 
-CDK-based chains operate with a commitment to cost-effectiveness. The cost structure is thoughtfully constructed, factoring in several key considerations to help maintain competitive and predictable expenses.
+CDK-developed chains operate with a commitment to cost-effectiveness. The cost structure is thoughtfully constructed, factoring in several key considerations to help maintain competitive and predictable expenses.
 
-The following tables outline the key system attributes and costs within a CDK-based chain and specify where each measurement is taken.
+The following tables outline the key system attributes and costs within a CDK-developed chain and specify where each measurement is taken.
 
 ### Metrics Overview
 
@@ -49,15 +49,15 @@ The following tables outline the key system attributes and costs within a CDK-ba
 
 ### What are the Transaction Fees?
 
-Compared to zkEVM and similar architectures, CDK-based chains` cost structure can lead to an approximately **80% reduction** in transaction fees due to the data availability layer.
+Compared to zkEVM and similar architectures, CDK-developed chains` cost structure can lead to an approximately **80% reduction** in transaction fees due to the data availability layer.
 
 Through ongoing optimization and innovation, we project further significant reductions in transaction fees in the future.
 
-> Transaction costs in CDK-based chains are primarily influenced by the volume of transactions processed by the app-chain and withdrawal frequency. External factors such as Ethereum price and L1 gas price also contribute. Notably, L2 gas price can be adjusted for an optimal cost-profit balance.
+> Transaction costs in CDK-developed chains are primarily influenced by the volume of transactions processed by the app-chain and withdrawal frequency. External factors such as Ethereum price and L1 gas price also contribute. Notably, L2 gas price can be adjusted for an optimal cost-profit balance.
 
 ### What is Meant by "Unified Liquidity"?
 
-As a fundamental component of Polygon 2.0, CDK-based chains adopt an advanced interoperability layer, facilitating seamless cross-chain interaction for projects.
+As a fundamental component of Polygon 2.0, CDK-developed chains adopt an advanced interoperability layer, facilitating seamless cross-chain interaction for projects.
 
 <!--
 - **Access to a Robust and Liquid Ecosystem**: Projects and validators become part of a network already supported by a proven set of validators, offering unified liquidity and enhancing their confidence.
@@ -65,7 +65,7 @@ As a fundamental component of Polygon 2.0, CDK-based chains adopt an advanced in
 - **Earning Potential Across Networks**: Validators have opportunities to secure the network and earn rewards across multiple chains.
 - **Contribution to the Ecosystem's Security**: Staking contributes to the overall security of the Polygon ecosystem, supporting its growth and robustness.
 
-Remember, while CDK-based chains eliminate the need for an initial stake, validators still play a crucial role in ensuring network security and integrity.
+Remember, while CDK-developed chains eliminate the need for an initial stake, validators still play a crucial role in ensuring network security and integrity.
 -->
 
 **Stay tuned for more information.**
@@ -75,9 +75,9 @@ Remember, while CDK-based chains eliminate the need for an initial stake, valida
 </div>
 
 <!--
-## How do CDK-based chains Compare to Other Polygon-based Layer 2 Solutions?
+## How do CDK-developed chains Compare to Other Polygon-based Layer 2 Solutions?
 
-| Features / Systems       | zkPoS (Proposed Upgrades)       | zkEVM (Current State)     | CDK-based chains (Based on Design Principles)      |
+| Features / Systems       | zkPoS (Proposed Upgrades)       | zkEVM (Current State)     | CDK-developed chains (Based on Design Principles)      |
 |--------------------------|---------------------------------|---------------------------|--------------------------------------|
 | Underlying Technology    | zkEVM Validium + PoS              | zkEVM Rollup              | zkEVM Validium + DAC                   |
 | Execution Efficiency     | Optimized for higher throughput | Optimized for Security for efficient execution throughput | Optimized for high volume transactions |
