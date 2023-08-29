@@ -18,13 +18,13 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 :::
 
-This tutorial will guide you through the process of setting up a zkSupernet on your local machine using the deployment guidance of [Snapchain](https://www.snapchain.dev/).
+This tutorial will guide you through the process of setting up a CDK validium on your local machine using the deployment guidance of [Snapchain](https://www.snapchain.dev/).
 
 :::info Polygon CDK is in alpha stage and subject to changes
 
 Please note that the current Data Availability (DA) configuration in Polygon CDK supports only a local Geth client. However, the integration with Layer 1 testnets, including Sepoilla, is actively being pursued.
 
-As a project under continuous development, zkSupernet is committed to expanding its features and resolving any existing issues. To stay updated on our developmental progress, please follow our official GitHub repositories.
+As a project under continuous development, CDK validium is committed to expanding its features and resolving any existing issues. To stay updated on our developmental progress, please follow our official GitHub repositories.
 
 - [<ins>Node</ins>](https://github.com/0xPolygon/supernets2-node)
 - [<ins>Data Availability</ins>](https://github.com/0xPolygon/supernets2-data-availability)
@@ -66,11 +66,11 @@ Ensure that your system meets the following recommended specifications before st
 
 ## What You'll Do
 
-In this tutorial, you'll go through the following steps. Make sure to follow each section in order if this is your first time setting up a zkSupernet.
+In this tutorial, you'll go through the following steps. Make sure to follow each section in order if this is your first time setting up a CDK validium.
 
 1. [Download Configuration Files](#step-1-download-configuration-files): You'll start by downloading necessary configuration files from our repository.
-2. [Launch the Supernet Locally](#step-2-launch-the-supernet-locally): After setting up your workspace, you'll launch the zkSupernet on your local machine and ensure all services are running properly.
-3. [Test the Supernet](#step-3-test-the-supernet): With your local zkSupernet running, you'll verify its functionalities, including testing block explorers and making transactions.
+2. [Launch the Supernet Locally](#step-2-launch-the-supernet-locally): After setting up your workspace, you'll launch the CDK validium on your local machine and ensure all services are running properly.
+3. [Test the Supernet](#step-3-test-the-supernet): With your local CDK validium running, you'll verify its functionalities, including testing block explorers and making transactions.
 
 ## Step 1: Download Configuration Files
 
@@ -83,19 +83,19 @@ cd zkevm-tutorial
 
 The repository includes these key files:
 
-- `Docker-compose.yml`: This Docker Compose file defines all the necessary containers to set up the zkSupernet. 
-- `Makefile`: This file includes a series of commands that will help you manage your zkSupernet node.
-- `config`: This folder contains configuration files required for the zkSupernet.
+- `Docker-compose.yml`: This Docker Compose file defines all the necessary containers to set up the CDK validium. 
+- `Makefile`: This file includes a series of commands that will help you manage your CDK validium node.
+- `config`: This folder contains configuration files required for the CDK validium.
 
-## Step 2: Launch the zkSupernet Locally
+## Step 2: Launch the CDK validium Locally
 
-With the repository cloned and your working directory set, let's start up the zkSupernet. First, you'll need to pull the necessary Docker images from Docker Hub:
+With the repository cloned and your working directory set, let's start up the CDK validium. First, you'll need to pull the necessary Docker images from Docker Hub:
 
 ```bash
 docker-compose pull
 ```
 
-After pulling the images, you can start your local zkSupernet:
+After pulling the images, you can start your local CDK validium:
 
 ```bash
 make run
@@ -128,7 +128,7 @@ docker-compose logs <container_name>
 Note: `<container_name>` can be found in results above.
 
 
-To stop the zkSupernet, use:
+To stop the CDK validium, use:
 
 ```bash
 make stop
@@ -140,9 +140,9 @@ And to restart all the services:
 make restart
 ```
 
-## Step 3: Test the zkSupernet
+## Step 3: Test the CDK validium
 
-Congratulations! Your local zkSupernet is now up and running. Let's test its functionalities.
+Congratulations! Your local CDK validium is now up and running. Let's test its functionalities.
 
 First, verify the block explorer by navigating to [localhost:4001](http://localhost:4001/). You should see a page similar to this:
 
