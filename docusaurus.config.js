@@ -205,14 +205,13 @@ module.exports = {
       id: 'banner',
       content: `
         <div class="announcement-bar">
-          The Polygon 2.0 Vision is out! Learn more
-            <a href="https://polygon.technology/roadmap" class="announcement-link" style="color: #ffffff;">here</a>
+            Discover the Next Evolution with Polygon CDK. Learn more
+            <a href="https://wiki.polygon.technology/docs/cdk" target="_self" class="announcement-link" style="color: #ffffff;">here</a>
         </div>
       `,
       textColor: '#ffffff',
       isCloseable: true,
     },
-
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
@@ -431,8 +430,20 @@ module.exports = {
               rel: null,
             },
             {
-              href: 'https://0xpolygonid.github.io/tutorials/',
+              href: 'https://devs.polygonid.com/',
               label: 'ID',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "Polygon 2.0",
+          position: "left",
+          items: [
+            {
+              href: '/docs/cdk',
+              label: 'Polygon CDK',
               target: '_self',
               rel: null,
             },
@@ -485,7 +496,7 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/zkevm/architecture',
+              href: '/docs/category/zkevm/',
               label: 'zkEVM',
               target: '_self',
               rel: null,

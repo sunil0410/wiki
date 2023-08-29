@@ -1161,6 +1161,21 @@ module.exports = {
     "supernets/supernets-faq",
   ],
 
+  cdk: [
+    {
+      type: "html",
+      value: "Polygon CDK",
+      className: "sidebar-title",
+    },
+    "cdk/index",
+    "cdk/what-is-polygon-cdk",
+    "cdk/validium-attributes",
+    "cdk/dac-overview",
+    "cdk/cdk-program",
+    "cdk/differences-validium-zkevm",
+    "cdk/quickstart",
+  ],
+
  /*
  *
  * ***************************** Specs Section **************************
@@ -1172,295 +1187,303 @@ module.exports = {
  *
  */
 
-  miden_specs: [
-    //"specs/index",
-    {
-      type: "category",
-      label: "Miden VM",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Stack Specifications",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "miden/design/main",
-            "miden/design/programs",
-            {
-              type: "category",
-              label: "Program decoder",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "miden/design/decoder/main",
-                "miden/design/decoder/constraints",
-              ],
-            },
-            {
-              type: "category",
-              label: "Operand stack",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "miden/design/stack/main",
-                "miden/design/stack/op_constraints",
-                "miden/design/stack/system_ops",
-                "miden/design/stack/field_ops",
-                "miden/design/stack/u32_ops",
-                "miden/design/stack/stack_ops",
-                "miden/design/stack/io_ops",
-                "miden/design/stack/crypto_ops",
-              ],
-            },
-            "miden/design/range",
-            {
-              type: "category",
-              label: "Chiplets",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "miden/design/chiplets/main",
-                "miden/design/chiplets/hasher",
-                "miden/design/chiplets/bitwise",
-                "miden/design/chiplets/memory",
-              ],
-            },
-            "miden/design/multiset",
-          ],
-        },
-        "miden/resources",
-      ],
+ specs: [
+  //"specs/index",
+  {
+    type: "html",
+    value: "Pre-Specifications",
+    className: "sidebar-title",
+  },
+  {
+    type: "category",
+    label: "zkEVM",
+    link: {
+      type: "generated-index",
     },
+    collapsed: true,
+    items: [
+      "zkevm/architecture",
+  {
+    type: "category",
+    label: "zkEVM Protocol",
+    link: {
+      type: "generated-index",
+    },
+    collapsed: true,
+    items: [
+      "zkevm/protocol/protocol-components",
+      "zkevm/protocol/state-management",
+      {
+        type: "category",
+        label: "Transaction Life Cycle",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/protocol/l2-transaction-cycle-intro",
+          "zkevm/protocol/transaction-execution",
+          "zkevm/protocol/transaction-batching",
+          "zkevm/protocol/transaction-sequencing",
+          "zkevm/protocol/transaction-aggregation",
+        ],
+      },
+      "zkevm/protocol/incentive-mechanism",
+      "zkevm/protocol/upgradability",
+      "zkevm/protocol/admin-role",
+      "zkevm/protocol/zkevm-upgrades-process",
+      "zkevm/protocol/security-council",
+      {
+        type: "category",
+        label: "Malfunction Resistance",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/protocol/sequencer-resistance",
+          "zkevm/protocol/aggregator-resistance",
+          "zkevm/protocol/emergency-state",
+        ],
+      },
+      {
+        type: "category",
+        label: "zkEVM Bridge",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/protocol/zkevm-bridge",
+          "zkevm/protocol/exit-tree",
+          "zkevm/protocol/bridge-smart-contract",
+          "zkevm/protocol/flow-of-asset",
+        ],
+      },
+      "zkevm/protocol/evm-diff",
+    ],
+  },
+  "zkevm/zknode/zknode-overview",
+  {
+    type: "category",
+    label: "zkProver",
+    link: {
+      type: "generated-index",
+    },
+    collapsed: true,
+    items: [
+      "zkevm/zkProver/overview",
+      {
+        type: "category",
+        label: "Basic Concepts",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/zkProver/zkprover-design",
+          {
+            type: "category",
+            label: "mFibonacci SM",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "zkevm/zkProver/mfibonacci-overview",
+              "zkevm/zkProver/mfibonacci-example",
+              "zkevm/zkProver/commitment-scheme",
+              "zkevm/zkProver/verification-scheme",
+              "zkevm/zkProver/pil-stark",
+              "zkevm/zkProver/pil-stark-demo",
+            ],
+          },
+          {
+            type: "category",
+            label: "Generic SM",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "zkevm/zkProver/intro-generic-sm",
+              "zkevm/zkProver/exec-trace-correct",
+              "zkevm/zkProver/ending-program",
+              "zkevm/zkProver/program-counter",
+              "zkevm/zkProver/plookup",
+            ],
+          },
+        ],
+      },
+      {
+        type: "category",
+        label: "Main State Machine",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/zkProver/evm-basics",
+          "zkevm/zkProver/intro-main-sm",
+          "zkevm/zkProver/the-processor",
+        ],
+      },
+      {
+        type: "category",
+        label: "STARK Recursion",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/zkProver/intro-stark-recursion",
+          "zkevm/zkProver/proving-tools",
+          "zkevm/zkProver/circom-intro-brief",
+          "zkevm/zkProver/stark-recursion-detail",
+          "zkevm/zkProver/recursion-sub-process",
+          "zkevm/zkProver/proving-architecture",
+          "zkevm/zkProver/circom-in-zkprover",
+          "zkevm/zkProver/proving-setup-phase",
+          "zkevm/zkProver/intermediate-recursion-steps",
+          "zkevm/zkProver/final-recursion-step",
+          "zkevm/zkProver/proof-generation-phase",
+        ],
+      },
+      {
+        type: "category",
+        label: "Storage SM",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/zkProver/intro-storage-sm",
+          "zkevm/zkProver/sparse-merkle-tree",
+          "zkevm/zkProver/simple-smt",
+          "zkevm/zkProver/detailed-smt-concepts",
+          "zkevm/zkProver/basic-smt-ops",
+          "zkevm/zkProver/construct-key-path",
+          "zkevm/zkProver/storage-sm-mechanism",
+          "zkevm/zkProver/executor-pil",
+        ],
+      },
+      "zkevm/zkProver/arithmetic-sm",
+      "zkevm/zkProver/binary-sm",
+      "zkevm/zkProver/memory-sm",
+      "zkevm/zkProver/mem-align-sm",
+      {
+        type: "category",
+        label: "Hashing SM",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "zkevm/zkProver/intro-hashing-sm",
+          "zkevm/zkProver/keccak-framework",
+          "zkevm/zkProver/paddingkk-sm",
+          "zkevm/zkProver/paddingkk-bit-sm",
+          "zkevm/zkProver/bits2field-sm",
+          "zkevm/zkProver/keccakf-sm",
+          "zkevm/zkProver/poseidon-sm",
+        ],
+      },
+    ],
+  },
+  {
+    type: "category",
+    label: "zk Assembly",
+    link: {
+      type: "generated-index",
+    },
+    collapsed: true,
+    items: [
+      "zkevm/zkASM/introduction",
+      "zkevm/zkASM/basic-syntax",
+      "zkevm/zkASM/some-examples",
+    ],
+  },
+  {
+    type: "category",
+    label: "Polynomial Identity Language",
+    link: {
+      type: "generated-index",
+    },
+    collapsed: true,
+    items: [
+      "zkevm/PIL/introduction",
+      "zkevm/PIL/simple-program",
+      "zkevm/PIL/pil-compile",
+      "zkevm/PIL/pil-config",
+      "zkevm/PIL/cyclic-nature",
+      "zkevm/PIL/pil-arguments",
+      "zkevm/PIL/connect-programs",
+      "zkevm/PIL/public-values",
+      "zkevm/PIL/permutation-arg",
+      "zkevm/PIL/connect-arg",
+      "zkevm/PIL/pil-plonk",
+      "zkevm/PIL/filling-polynomial",
+      "zkevm/PIL/generate-proof",
+    ],
+  },
   ],
-
-  zkevm_specs: [
-    {
-      type: "html",
-      value: "zkEVM Specs",
-      className: "sidebar-title",
+  },
+  
+  {
+    type: "category",
+    label: "Miden VM",
+    link: {
+      type: "generated-index",
     },
-    "zkevm/architecture",
-    {
-      type: "category",
-      label: "zkEVM Protocol",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "zkevm/protocol/protocol-components",
-        "zkevm/protocol/state-management",
-        {
-          type: "category",
-          label: "Transaction Life Cycle",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "zkevm/protocol/l2-transaction-cycle-intro",
-            "zkevm/protocol/transaction-execution",
-            "zkevm/protocol/transaction-batching",
-            "zkevm/protocol/transaction-sequencing",
-            "zkevm/protocol/transaction-aggregation",
-          ],
+    collapsed: true,
+    items: [
+      {
+        type: "category",
+        label: "Stack Specifications",
+        link: {
+          type: "generated-index",
         },
-        "zkevm/protocol/incentive-mechanism",
-        "zkevm/protocol/upgradability",
-        "zkevm/protocol/admin-role",
-        "zkevm/protocol/zkevm-upgrades-process",
-        "zkevm/protocol/security-council",
-        {
-          type: "category",
-          label: "Malfunction Resistance",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "zkevm/protocol/sequencer-resistance",
-            "zkevm/protocol/aggregator-resistance",
-            "zkevm/protocol/emergency-state",
-          ],
-        },
-        {
-          type: "category",
-          label: "zkEVM Bridge",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "zkevm/protocol/zkevm-bridge",
-            "zkevm/protocol/exit-tree",
-            "zkevm/protocol/bridge-smart-contract",
-            "zkevm/protocol/flow-of-asset",
-          ],
-        },
-        "zkevm/protocol/evm-diff",
-      ],
-    },
-    "zkevm/zknode/zknode-overview",
-    {
-      type: "category",
-      label: "zkProver",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "zkevm/zkProver/overview",
-        {
-          type: "category",
-          label: "Basic Concepts",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "zkevm/zkProver/zkprover-design",
-            {
-              type: "category",
-              label: "mFibonacci SM",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "zkevm/zkProver/mfibonacci-overview",
-                "zkevm/zkProver/mfibonacci-example",
-                "zkevm/zkProver/commitment-scheme",
-                "zkevm/zkProver/verification-scheme",
-                "zkevm/zkProver/pil-stark",
-                "zkevm/zkProver/pil-stark-demo",
-              ],
+        collapsed: true,
+        items: [
+          "miden/design/main",
+          "miden/design/programs",
+          {
+            type: "category",
+            label: "Program decoder",
+            link: {
+              type: "generated-index",
             },
-            {
-              type: "category",
-              label: "Generic SM",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "zkevm/zkProver/intro-generic-sm",
-                "zkevm/zkProver/exec-trace-correct",
-                "zkevm/zkProver/ending-program",
-                "zkevm/zkProver/program-counter",
-                "zkevm/zkProver/plookup",
-              ],
+            items: [
+              "miden/design/decoder/main",
+              "miden/design/decoder/constraints",
+            ],
+          },
+          {
+            type: "category",
+            label: "Operand stack",
+            link: {
+              type: "generated-index",
             },
-          ],
-        },
-        {
-          type: "category",
-          label: "Main State Machine",
-          link: {
-            type: "generated-index",
+            items: [
+              "miden/design/stack/main",
+              "miden/design/stack/op_constraints",
+              "miden/design/stack/system_ops",
+              "miden/design/stack/field_ops",
+              "miden/design/stack/u32_ops",
+              "miden/design/stack/stack_ops",
+              "miden/design/stack/io_ops",
+              "miden/design/stack/crypto_ops",
+            ],
           },
-          items: [
-            "zkevm/zkProver/evm-basics",
-            "zkevm/zkProver/intro-main-sm",
-            "zkevm/zkProver/the-processor",
-          ],
-        },
-        {
-          type: "category",
-          label: "STARK Recursion",
-          link: {
-            type: "generated-index",
+          "miden/design/range",
+          {
+            type: "category",
+            label: "Chiplets",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "miden/design/chiplets/main",
+              "miden/design/chiplets/hasher",
+              "miden/design/chiplets/bitwise",
+              "miden/design/chiplets/memory",
+            ],
           },
-          items: [
-            "zkevm/zkProver/intro-stark-recursion",
-            "zkevm/zkProver/proving-tools",
-            "zkevm/zkProver/circom-intro-brief",
-            "zkevm/zkProver/stark-recursion-detail",
-            "zkevm/zkProver/recursion-sub-process",
-            "zkevm/zkProver/proving-architecture",
-            "zkevm/zkProver/circom-in-zkprover",
-            "zkevm/zkProver/proving-setup-phase",
-            "zkevm/zkProver/intermediate-recursion-steps",
-            "zkevm/zkProver/final-recursion-step",
-            "zkevm/zkProver/proof-generation-phase",
-          ],
-        },
-        {
-          type: "category",
-          label: "Storage SM",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "zkevm/zkProver/intro-storage-sm",
-            "zkevm/zkProver/sparse-merkle-tree",
-            "zkevm/zkProver/simple-smt",
-            "zkevm/zkProver/detailed-smt-concepts",
-            "zkevm/zkProver/basic-smt-ops",
-            "zkevm/zkProver/construct-key-path",
-            "zkevm/zkProver/storage-sm-mechanism",
-            "zkevm/zkProver/executor-pil",
-          ],
-        },
-        "zkevm/zkProver/arithmetic-sm",
-        "zkevm/zkProver/binary-sm",
-        "zkevm/zkProver/memory-sm",
-        "zkevm/zkProver/mem-align-sm",
-        {
-          type: "category",
-          label: "Hashing SM",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "zkevm/zkProver/intro-hashing-sm",
-            "zkevm/zkProver/keccak-framework",
-            "zkevm/zkProver/paddingkk-sm",
-            "zkevm/zkProver/paddingkk-bit-sm",
-            "zkevm/zkProver/bits2field-sm",
-            "zkevm/zkProver/keccakf-sm",
-            "zkevm/zkProver/poseidon-sm",
-          ],
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "zk Assembly",
-      link: {
-        type: "generated-index",
+          "miden/design/multiset",
+        ],
       },
-      collapsed: true,
-      items: [
-        "zkevm/zkASM/introduction",
-        "zkevm/zkASM/basic-syntax",
-        "zkevm/zkASM/some-examples",
-      ],
-    },
-    {
-      type: "category",
-      label: "Polynomial Identity Language",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "zkevm/PIL/introduction",
-        "zkevm/PIL/simple-program",
-        "zkevm/PIL/pil-compile",
-        "zkevm/PIL/pil-config",
-        "zkevm/PIL/cyclic-nature",
-        "zkevm/PIL/pil-arguments",
-        "zkevm/PIL/connect-programs",
-        "zkevm/PIL/public-values",
-        "zkevm/PIL/permutation-arg",
-        "zkevm/PIL/connect-arg",
-        "zkevm/PIL/pil-plonk",
-        "zkevm/PIL/filling-polynomial",
-        "zkevm/PIL/generate-proof",
-      ],
-    },
-  ],
+      "miden/resources",
+    ],
+  },
+],
 };
