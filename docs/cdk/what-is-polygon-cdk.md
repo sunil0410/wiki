@@ -22,14 +22,14 @@ For example, a chain tailored for a specific application might leverage the zkEV
 
 The diagram below provides an overview of the key components within the CDK.
 
-:::note Please stay tuned
+:::caution The Polygon CDK at this stage defaults to the validium
 
-The Polygon CDK documentation at this stage defaults to the validium. As Polygon 2.0 evolves, content will be updated and expanded to reflect new developments. Readers are encouraged to stay tuned for updates.
+As Polygon 2.0 evolves, content will be updated and expanded to reflect new configurations.
 
 :::
 
 <div align="center">
-  <img src="/img/cdk/cdk-stack.excalidraw.png" alt="CDK Overview" width="70%" height="30%" />
+  <img src="/img/cdk/cdk-stack.excalidraw.png" alt="CDK Overview" width="75%" height="30%" />
 </div>
 
 ## What are Application-Specific Blockchains?

@@ -39,12 +39,25 @@ Polygon CDK Validium is a unique scaling solution that builds upon the foundatio
    - Component(s): `CDKDataCommittee.sol`, `CDKValidium.sol`
    - [Repository Link](https://github.com/0xPolygon/cdk-validium-contracts)
 
+#### Components
+
+For quick reference, these components are outlined below.
+
+| Component                                                                     | Description                                                          |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [CDK Validium Node](https://github.com/0xPolygon/cdk-validium-node)           | Node implementation for the CDK networks in Validium mode            |
+| [CDK Validium Contracts](https://github.com/0xPolygon/cdk-validium-contracts) | Smart contracts implementation for the CDK networks in Validium mode |
+| [CDK Data Availability](https://github.com/0xPolygon/cdk-data-availability)   | Data availability nodes implementation for the CDK networks          |
+| [Prover / Executor](https://github.com/0xPolygonHermez/zkevm-prover)          | zkEVM engine and prover implementation                               |
+| [Bridge Service](https://github.com/0xPolygonHermez/zkevm-bridge-service)     | Bridge service implementation for CDK networks                       |
+| [Bridge UI](https://github.com/0xPolygonHermez/zkevm-bridge-ui)               | UI for the CDK networks bridge                                       |
+
 ### Summary of Key Differences
 
 | Feature / Aspect       | zkEVM                                                                                     | Validium                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Node Type**         | [zkEVM Node](https://github.com/0xPolygonHermez/zkevm-node)                                                                                | [Validium Node](https://github.com/0xPolygon/cdk-validium-node) + [DA Node](https://github.com/0xPolygon/cdk-data-availability)                                                         |
-| **Data Availability** | On-chain                                                                                  | Off-chain via DACs                                                                           |
+| **Node Type**         | [zkEVM Node](https://github.com/0xPolygonHermez/zkevm-node)                                                                                | [Validium Node](https://github.com/0xPolygon/cdk-validium-node)                                                         |
+| **Data Availability** | On-chain                                                                                  | Off-chain via DACs + [DA Node](https://github.com/0xPolygon/cdk-data-availability)                                                                           |
 | **Components**        | zkEVM components**         | zkEVM components** + PostgreSQL database + on-chain committees                                                      |
 | **Additional Contracts** | None                                                                                    | Validium-specific DAC contract                               |
 | **Infrastructure Needs** | Standard infrastructure                                                                 | Dedicated infrastructure for data availability layer and DACs                                |
@@ -61,7 +74,7 @@ Deploying the CDK Validium involves a few key steps that are similar to setting 
 
 By following the steps below, you'll successfully deploy a CDK Validium instance. 
 
-:::info Polygon CDK is in alpha stage and subject to changes
+:::info Polygon CDK is in public preview stage and subject to changes
 
 The CDK Validium is actively being developed, with ongoing feature enhancements and issue resolutions. For the latest updates, follow our official GitHub repositories.
 
