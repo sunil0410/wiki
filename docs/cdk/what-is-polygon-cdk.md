@@ -58,7 +58,7 @@ However, storing all transaction data on the main chain (L1) can lead to high co
 
 This separation introduces new challenges, such as ensuring the secure and reliable management of off-chain data. Features like the [DAC](#what-are-dacs) within the Polygon CDK framework address these concerns, offering trusted oversight of off-chain data.
 
-The diagram below provides a high-level overview of the Polygon CDK's validium approach to blockchain infrastructure.
+The diagram below provides a high-level overview of the Polygon CDK Validium's approach to blockchain infrastructure.
 
 <div align="center">
   <img src="/img/cdk/zksupernets-2.excalidraw.png" alt="bridge" width="90%" height="30%" />

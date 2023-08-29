@@ -18,13 +18,13 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 :::
 
-This tutorial will guide you through the process of setting up a zkValidium on your local machine using the deployment guidance of [Snapchain](https://www.snapchain.dev/).
+This tutorial will guide you through the process of setting up a CDK Validium on your local machine using the deployment guidance of [Snapchain](https://www.snapchain.dev/).
 
 :::info Polygon CDK is in alpha stage and subject to changes
 
 Please note that the current Data Availability (DA) configuration in Polygon CDK is using a Data Availability Committee (DAC) node with a local Geth client as the L1. However, the integration with Layer 1 testnets, including Sepoilla, is actively being pursued.
 
-As a project under continuous development, zkValidium is committed to expanding its features and resolving any existing issues. To stay updated on our developmental progress, please follow our official GitHub repositories.
+The CDK Validium is actively being developed, with ongoing feature enhancements and issue resolutions. For the latest updates, follow our official GitHub repositories.
 
 - [<ins>Node</ins>](https://github.com/0xPolygon/cdk-validium-node)
 - [<ins>Data Availability</ins>](https://github.com/0xPolygon/cdk-data-availability)
@@ -68,7 +68,7 @@ In this tutorial, you'll go through the following steps. Make sure to follow eac
 
 1. [Download Configuration Files](#step-1-download-configuration-files): You'll start by downloading necessary configuration files from our repository.
 2. [Launch the Validium Locally](#step-2-launch-the-validium-locally): After setting up your workspace, you'll launch the zkValidium on your local machine and ensure all services are running properly.
-3. [Test the Validium](#step-3-test-the-validium): With your local zkValidium running, you'll verify its functionalities, including testing block explorers and making transactions.
+3. [Test the Validium](#step-3-test-the-validium): With your local CDK Validium running, you'll verify its functionalities, including testing block explorers and making transactions.
 
 ## Step 1: Download Configuration Files
 
@@ -81,19 +81,19 @@ cd zkValidium-quickstart
 
 The repository includes these key files:
 
-- `Docker-compose.yml`: This Docker Compose file defines all the necessary containers to set up the zkValidium. 
-- `Makefile`: This file includes a series of commands that will help you manage your zkValidium node.
-- `config`: This folder contains configuration files required for the zkValidium.
+- `Docker-compose.yml`: This Docker Compose file defines all the necessary containers to set up the CDK Validium. 
+- `Makefile`: This file includes a series of commands that will help you manage your CDK Validium node.
+- `config`: This folder contains configuration files required for the CDK Validium.
 
 ## Step 2: Launch the Validium Locally
 
-With the repository cloned and your working directory set, let's start up the zkValidium. First, you'll need to pull the necessary Docker images from Docker Hub:
+With the repository cloned and your working directory set, let's start up the CDK Validium. First, you'll need to pull the necessary Docker images from Docker Hub:
 
 ```bash
 docker-compose pull
 ```
 
-After pulling the images, you can start your local zkValidium:
+After pulling the images, you can start your local CDK Validium:
 
 ```bash
 make run
