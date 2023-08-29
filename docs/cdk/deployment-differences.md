@@ -61,7 +61,7 @@ Deploying the CDK Validium involves a few key steps that are similar to setting 
 
 By following the steps below, you'll successfully deploy a CDK Validium instance. 
 
-:::info Polygon CDK is in alpha stage and subject to changes
+:::info Polygon CDK is in public preview stage and subject to changes
 
 The CDK Validium is actively being developed, with ongoing feature enhancements and issue resolutions. For the latest updates, follow our official GitHub repositories.
 
