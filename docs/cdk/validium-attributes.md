@@ -26,7 +26,7 @@ The following tables outline the key system attributes and costs within a CDK-de
 | Unified Liquidity   | High               | Polygon 2.0 | Seamlessly interacts across chains via LXLY Bridge for high liquidity  | Seamless flow of assets between different chains. |
 | Future-Proof        | Essential          | Polygon 2.0 | Key component of the Polygon 2.0 framework for future-ready operations | Preparation and composability of the product suite for future advancements. |
 | Gas Availability    | Unlimited | L2 | Supports virtually unlimited processing capacity due to unlimited L2 gas | The amount of computational effort required to process transactions. |
-| Transaction Fees    | Very Low           | L2 | Designed for efficiency, resulting in significantly reduced fees due to DAC       | Costs associated with executing transactions. |
+| Transaction Fees    | Very Low           | L2 | Designed for efficiency, resulting in significantly reduced fees due to off-chain DA and ZKPs       | Costs associated with executing transactions. |
 | Decentralization    | Customizable                | L2 | Employs Ethereum for transaction proofs to ensure decentralized control; Permissioned DAC; Customizable Access Control | Distribution of processing and management across the network. |
 | Data Availability   | Validium           | DAC | Incorporates a Data Availability Committee for reliable off-chain data | Assurance of consistent data access, even in case of failures. |
 | Security            | High          | L2 | Inherits Ethereum's robust security mechanisms, ensuring transaction proof integrity      | Built on Ethereum's tested security infrastructure, offering a high level of protection against network attacks. |
