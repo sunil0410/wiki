@@ -44,7 +44,7 @@ Validiums are solutions that process transactions off the main Ethereum network 
 
 ## How do L2s Built with Polygon CDK Function as App-chains?
 
-Leveraging the power of Polygon's advanced [zkEVM technology](https://zkevm.polygon.technology/), chains developed using the Polygon CDK offer a high-performance L2 scaling solution. Developers have the flexibility to choose the validium framework, which integrates a secure data availability layer managed by a [Data Availability Committee (DAC)](/docs/cdk/dac.md). Chains built with the CDK can function like L1 blockchains tailored to specific business logic. However, as L2 solutions, they provide the advantage of near-infinite scalability. Designed with a user-centric approach, these chains prioritize core business functions and user engagement strategies without compromising on performance and scalability. The following diagram illustrates the high-level architecture of a chain developed using the Polygon CDK.
+Leveraging the power of Polygon's advanced [zkEVM technology](/docs/zkevm/), chains developed using the Polygon CDK offer a high-performance L2 scaling solution. Developers have the flexibility to choose the validium framework, which integrates a secure data availability layer managed by a [Data Availability Committee (DAC)](/docs/cdk/dac.md). Chains built with the CDK can function like L1 blockchains tailored to specific business logic. However, as L2 solutions, they provide the advantage of near-infinite scalability. Designed with a user-centric approach, these chains prioritize core business functions and user engagement strategies without compromising on performance and scalability. The following diagram illustrates the high-level architecture of a chain developed using the Polygon CDK.
 
 <div align="center">
   <img src="/img/cdk/zksupernets-6.excalidraw.png" alt="bridge" width="90%" height="30%" />
@@ -112,9 +112,8 @@ The following diagram illustrates how CDK-developed chains fit into the overall 
 
 ## How to Get Started
 
-*Your journey towards redefining blockchain possibilities starts here.*
-
-Please refer to the Quick Start guide [here](/docs/cdk/quickstart.md).
+The CDK Validium is actively being developed, with ongoing feature enhancements and issue resolutions.
+**We recommend starting with the [Quickstart guide](/docs/cdk/quickstart) to gain a quick hands-on introduction to CDK Validium.**
 
 Meanwhile, the Polygon Labs team remains at your disposal. We encourage you to connect with the team for further engagement with the [CDK Program](/docs/cdk/program.md).
 
