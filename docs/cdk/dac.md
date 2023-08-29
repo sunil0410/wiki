@@ -25,7 +25,7 @@ In CDK-developed chains, the DAC, functioning as a secure consortium of nodes, e
 
 CDK-developed chains are powered by Polygon zkEVM, offering a specialized environment for runtime and execution. This zkEVM-based engine is an exact implementation of the existing zkEVM. Operating as a zero-knowledge rollup (zk-rollup), it efficiently condenses numerous transactions into one batch, which is then submitted to Ethereum for validation.
 
-Learn more about the roles and operation of zkEVM in the official documentation, available [<ins>here</ins>](https://zkevm.polygon.technology/).
+Learn more about the roles and operation of zkEVM in the official documentation, available [<ins>here</ins>](/docs/zkevm/).
 
 ### Data Availability Layer: Ensuring Data Robustness
 
