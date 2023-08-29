@@ -22,9 +22,9 @@ For example, a chain tailored for a specific application might leverage the zkEV
 
 The diagram below provides an overview of the key components within the CDK.
 
-:::note The Polygon CDK documentation at this stage defaults to the validium
+:::caution The Polygon CDK documentation at this stage defaults to the validium
 
-As Polygon 2.0 evolves, content will be updated and expanded to reflect new developments.
+As Polygon 2.0 evolves, content will be updated and expanded to reflect new configurations.
 
 :::
 
