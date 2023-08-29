@@ -35,7 +35,11 @@ The time taken to complete a transaction depends on the gas fees that you have a
 
 ### Which wallets are currently supported?
 
-Currently, only the MetaMask extension on the desktop browser and Coinbase Wallet are supported. Additionally you can use WalletConnect and Walletlink from supported mobile wallets to interact with the Staking UI dashboard on desktop / laptop. We will be gradually adding support for other wallets soon.
+We have recently upgraded the wallet support to WalletConnect v2.0. Now you can choose from a plethora of wallets, including Metamask, Coinbase, and others, on both desktop and mobile devices to log in.
+
+<div align="center">
+  <img src={useBaseUrl("/img/delegator-faq/supported-wallet.png")} width="300" />
+</div>
 
 ### Are hardware wallets supported?
 
@@ -77,11 +81,11 @@ Please check if you have enough ETH for the gas fees.
 
 The rewards are distributed whenever a checkpoint is submitted.
 
-Currently, 20188 MATIC tokens are distributed proportionately on each successful checkpoint submission to each delegator based on their stake relative to the overall staking pool of all validators and delegators. Also, the percentage for the reward distributed to each delegator will vary with each checkpoint depending on the relative stake of the delegator, validator and the overall stake.
+Currently, 71795 MATIC tokens are distributed proportionately on each successful checkpoint submission to each delegator based on their stake relative to the overall staking pool of all validators and delegators. Also, the percentage for the reward distributed to each delegator will vary with each checkpoint depending on the relative stake of the delegator, validator and the overall stake.
 
 (Note that there is a 10% proposer bonus that accrues to the validator who submits the checkpoint, but over time, the effect of the extra bonus is nullified over multiple checkpoints by different validators.)
 
-The checkpoint submission is done by one of the validators approximately every 34 minutes. This time is approximate and may vary based on validator consensus on the Polygon Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
+The checkpoint submission is done by one of the validators approximately every 30 minutes. This time is approximate and may vary based on validator consensus on the Polygon Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
 
 You can track checkpoints on the staking contract [here](https://etherscan.io/address/0x86e4dc95c7fbdbf52e33d563bbdb00823894c287)
 
@@ -101,7 +105,7 @@ You can claim your rewards instantly by clicking on the **Withdraw Reward** butt
 
 ### What is the Unbonding period?
 
-The unbonding period on Polygon is approximately 9 days now. It was 19 days previously. This period applies to the originally delegated amount and re-delegated amounts - it does not apply to any rewards that were not re-delegated.
+The unbonding period on Polygon is 80 checkpoints. This period applies to the originally delegated amount and re-delegated amounts - it does not apply to any rewards that were not re-delegated.
 
 ### Will I keep receiving rewards after I unbond?
 
@@ -120,10 +124,7 @@ Delegation requires 2 transactions, one after the other. One to **Approve** the 
 Redelegating your rewards simply means that you want to increase your stake by restaking the rewards you have accumulated.
 
 ### Can I stake to any validator?
-
-Yes. All validators are Polygon Foundation nodes currently.
-
-We are doing a phased rollout of the Polygon Mainnet. Later on, external validators will be onboarded gradually. Please see https://blog.matic.network/mainnet-is-going-live-announcing-the-launch-sequence/ for more details.
+Yes, you can delegate to any validator except the ones which are offline.
 
 ### Which browser is compatible with Staking Dashboard?
 
@@ -164,11 +165,11 @@ No. Once your Delegation transactions are confirmed, and you can see your tokens
 
 ### I have unbonded, how long will it take to Unbond?
 
-The unbonding period is currently set to 82 checkpoints. This is approximately 9 days. Every checkpoint takes approximately 34 minutes. However, some checkpoints could be delayed upto ~1 hour due to congestion on Ethereum.
+The unbonding period is currently set to 80 checkpoints. Every checkpoint takes approximately 30 minutes. However, some checkpoints could be delayed upto ~1 hour due to congestion on Ethereum.
 
 ### I have unbonded, and I now see the Claim Stake button, but it is disabled, why is that?
 
-The Claim Stake button will only be enabled when your unbonding period is complete. The unbonding period is currently set at 82 checkpoints.
+The Claim Stake button will only be enabled when your unbonding period is complete. The unbonding period is currently set at 80 checkpoints.
 
 ### Do I know when will the Claim Stake button be enabled?
 
@@ -178,6 +179,8 @@ Yes, under the Claim Stake button you would see a note on how many checkpoints a
   <img src={useBaseUrl("/img/delegator-faq/unbond.png")} />
 </div>
 
+<!-->Hiding questions pertaining to foundation nodes, since there are no foundation nodes anymore<!-->
+<!--
 ### How do I switch my delegation from Foundation Nodes to External nodes?
 
 You can switch your Delegation using the **Move Stake** option on the Staking UI. This will switch your Delegation from the Foundation node to any other external node of your choice.
@@ -191,6 +194,7 @@ You will see a list of other validators:
 <div>
   <img src={useBaseUrl("/img/delegator-faq/validators.png")} />
 </div>
+
 
 ### Will there be any ubonding period when I switch Delegation from Foundation nodes to external nodes?
 
@@ -227,10 +231,11 @@ Yes, you will have the option to partially move your stake from Foundation node 
 ### Can I switch delegation from an external node to another external node?
 
 No, the **Move Stake** option is only available on the Foundation Nodes. If you want to switch your delegation from an external node to another external node, you will have to unbond first and then delegate to another external node.
+<!-->
 
-### When will the Foundations node be turned off?
+### Have the Foundations nodes been turned off?
 
-The foundation nodes will be turned off by the end of January, 2021.
+Yes, the foundation nodes had been turned off.
 
 ### Will there be any Foundation nodes in the future?
 

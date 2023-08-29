@@ -119,7 +119,6 @@ You can sign up for a dedicated free RPC URL at the following:
 * [DataHub (Figment)](https://datahub.figment.io)
 * [GetBlock](https://getblock.io/en/)
 * [Infura](https://infura.io)
-* [MaticVigil](https://rpc.maticvigil.com/)
 * [Moralis](https://moralis.io)
 * [NodeReal](https://nodereal.io)
 * [OnFinality](https://onfinality.io/)
@@ -131,5 +130,6 @@ You can sign up for a dedicated free RPC URL at the following:
 * [NOWNodes](https://nownodes.io/nodes/polygon-matic)
 * [Kriptonio](https://kriptonio.com/)
 * [Chain49](https://chain49.com/)
+* [Chainbase](https://chainbase.com/)
 
 View all public endpoints on [Alchemy's Chain Connect](https://www.alchemy.com/chain-connect/chain/polygon-pos) and [Chainlist](https://chainlist.org/?search=Polygon+Mainnet). 
