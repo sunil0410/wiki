@@ -431,7 +431,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: 'https://0xpolygonid.github.io/tutorials/',
+              href: 'https://devs.polygonid.com/',
               label: 'ID',
               target: '_self',
               rel: null,
@@ -497,7 +497,7 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/zkevm/architecture',
+              href: '/docs/category/zkevm/',
               label: 'zkEVM',
               target: '_self',
               rel: null,
