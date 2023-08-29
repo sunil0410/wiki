@@ -41,19 +41,15 @@ Polygon CDK's validium offering is a unique scaling solution that builds upon th
 
 ### Summary of Key Differences
 
-1. **Data Availability**: zkEVM ensures on-chain data availability, while validium uses the DAC to manage off-chain data availability.
-2. **Deployment Complexity**: Validium requires additional setup for the data availability layer and DACs.
-3. **Security Considerations**: Validium introduces the DAC as trusted entities, adding another layer of security.
-4. **Infrastructure**: Validium will need dedicated infrastructure for the data availability layer and DACs.
+| Feature / Aspect       | zkEVM                                                                                     | Validium                                                                                     |
+|-----------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Node Type**         | [zkEVM Node](https://github.com/0xPolygonHermez/zkevm-node)                                                                                | [Validium Node](https://github.com/0xPolygon/cdk-validium-node) + [DA Node](https://github.com/0xPolygon/cdk-data-availability)                                                         |
+| **Data Availability** | On-chain                                                                                  | Off-chain via DACs                                                                           |
+| **Components**        | zkEVM components**         | zkEVM components** + PostgreSQL database + on-chain committees                                                      |
+| **Additional Contracts** | None                                                                                    | Validium-specific DAC contract                               |
+| **Infrastructure Needs** | Standard infrastructure                                                                 | Dedicated infrastructure for data availability layer and DACs                                |
 
-### Pros and Cons
-
-**Validium Advantages**:
-- **Reduced Fees**: Storing only the hash of transaction data on L1 leads to lower gas fees.
-- **Efficient Proofs**: The zkEVM's off-chain Prover aggregates multiple ZK-proofs into a single zk-SNARK proof, reducing the cost of publishing and verifying validity proofs.
-
-**Validium Disadvantages**:
-- **Potential Security Risks**: If DAC members collude to withhold state data, users might be unable to access their assets.
+> **JSON RPC, Pool DB, Sequencer, Etherman, Synchronizer, State DB, Aggregator, Prover
 
 ### Transaction Flow in Validium
 
@@ -61,6 +57,18 @@ Unlike zkEVM, where all transaction data is published on L1, Validium only publi
 
 ## Deployment Steps
 
-After deploying the zkEVM following the existing components, available [here](https://wiki.polygon.technology/docs/category/deploy-zkevm/), this is simple configuration to setup the data availability layer:
+Deploying the Validium involves a few key steps that are similar to setting up zkEVM, but with different configurations and additional components. The Validium deployment lives as its own CDK Validium source code with the added Data Availability (DA) layer and associated configurations.
 
-# LINK AND REF TO READMES
+By following the steps below, you'll successfully deploy a Validium instance. For a quick hands-on introduction to Validium, you can also explore the [Quickstart guide](#link-to-quickstart-guide).
+
+### 1. Run the CDK Validium Node
+
+First, you'll need to set up and run the CDK Validium Node. Follow the instructions in the [CDK Validium Node GitHub repository's README](https://github.com/0xPolygon/cdk-validium-node).
+
+### 2. Run the Data Availability (DA) Node
+
+After the CDK Validium Node is operational, you'll need to set up and run the Data Availability Node. Instructions for this can be found in the [CDK DA Node GitHub repository's README](https://github.com/0xPolygon/cdk-data-availability).
+
+### 3. Deploy Validium-specific Contracts
+
+Finally, deploy the Validium-specific smart contracts. The necessary steps can be found in the [CDK Validium Contracts GitHub repository's README](https://github.com/0xPolygon/cdk-validium-contracts).
