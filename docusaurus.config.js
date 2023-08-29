@@ -205,14 +205,13 @@ module.exports = {
       id: 'banner',
       content: `
         <div class="announcement-bar">
-          The Polygon 2.0 Vision is out! Learn more
-            <a href="https://polygon.technology/roadmap" class="announcement-link" style="color: #ffffff;">here</a>
+            Discover the Next Evolution with Polygon CDK. Learn more
+            <a href="https://wiki.polygon.technology/docs/cdk" target="_self" class="announcement-link" style="color: #ffffff;">here</a>
         </div>
       `,
       textColor: '#ffffff',
       isCloseable: true,
     },
-
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
