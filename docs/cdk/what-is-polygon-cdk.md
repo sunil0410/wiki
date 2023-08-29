@@ -44,7 +44,7 @@ Validiums are solutions that process transactions off the main Ethereum network 
 
 ## How do L2s Built with Polygon CDK Function as App-chains?
 
-Leveraging the power of Polygon's advanced [zkEVM technology](https://zkevm.polygon.technology/), chains developed using the Polygon CDK offer a high-performance L2 scaling solution. Developers have the flexibility to choose the validium framework, which integrates a secure data availability layer managed by a [Data Availability Committee (DAC)](/docs/polygoncdk/dac.md). Chains built with the CDK can function like L1 blockchains tailored to specific business logic. However, as L2 solutions, they provide the advantage of near-infinite scalability. Designed with a user-centric approach, these chains prioritize core business functions and user engagement strategies without compromising on performance and scalability. The following diagram illustrates the high-level architecture of a chain developed using the Polygon CDK.
+Leveraging the power of Polygon's advanced [zkEVM technology](https://zkevm.polygon.technology/), chains developed using the Polygon CDK offer a high-performance L2 scaling solution. Developers have the flexibility to choose the validium framework, which integrates a secure data availability layer managed by a [Data Availability Committee (DAC)](/docs/cdk/dac.md). Chains built with the CDK can function like L1 blockchains tailored to specific business logic. However, as L2 solutions, they provide the advantage of near-infinite scalability. Designed with a user-centric approach, these chains prioritize core business functions and user engagement strategies without compromising on performance and scalability. The following diagram illustrates the high-level architecture of a chain developed using the Polygon CDK.
 
 <div align="center">
   <img src="/img/cdk/zksupernets-6.excalidraw.png" alt="bridge" width="90%" height="30%" />
@@ -70,7 +70,7 @@ Data Availability Committees (DACs) are a crucial element in many blockchain pro
 
 In the context of L2 solutions, DACs play a pivotal role in enhancing scalability. They aid in transferring significant computational work and data storage off-chain, thereby alleviating the burden on the main L1 blockchain.
 
-The DAC is an integral element in the validium framework of the CDK, functioning as a secure consortium of nodes to maintain the accessibility and security of off-chain data. For an overview of how the DAC functions within the CDK, please explore the DAC guide, available [<ins>here</ins>](/docs/zksupernets/dac.md).
+The DAC is an integral element in the validium framework of the CDK, functioning as a secure consortium of nodes to maintain the accessibility and security of off-chain data. For an overview of how the DAC functions within the CDK, please explore the DAC guide, available [<ins>here</ins>](/docs/cdk/dac.md).
 
 > For a more detailed understanding of data availability, the Ethereum Foundation's guide on Data Availability is a great resource, accessible [<ins>here</ins>](https://ethereum.org/en/developers/docs/data-availability/).
 
@@ -116,11 +116,11 @@ The following diagram illustrates how CDK-developed chains fit into the overall 
 
 Please refer to the Quick Start guide [here](/docs/cdk/quickstart.md).
 
-Meanwhile, the Polygon Labs team remains at your disposal. We encourage you to connect with the team for further engagement with the [CDK Program](/docs/zksupernets/program.md).
+Meanwhile, the Polygon Labs team remains at your disposal. We encourage you to connect with the team for further engagement with the [CDK Program](/docs/cdk/program.md).
 
 :::note Flexibility and Considerations
 
-The [CDK Program](/docs/zksupernets/program.md) uses the validium implementation for app-chains, targeting use cases highly reliant on robust data availability and cost-effectiveness. 
+The [CDK Program](/docs/cdk/program.md) uses the validium implementation for app-chains, targeting use cases highly reliant on robust data availability and cost-effectiveness. 
 
 However, the framework's design flexibility enables future expansion to support rollup-based app-chains, as per evolving use case requirements.
 
