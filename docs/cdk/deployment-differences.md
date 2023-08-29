@@ -39,6 +39,19 @@ Polygon CDK Validium is a unique scaling solution that builds upon the foundatio
    - Component(s): `CDKDataCommittee.sol`, `CDKValidium.sol`
    - [Repository Link](https://github.com/0xPolygon/cdk-validium-contracts)
 
+#### Components
+
+For quick reference, these components are outlined below.
+
+| Component                                                                     | Description                                                          |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [CDK Validium Node](https://github.com/0xPolygon/cdk-validium-node)           | Node implementation for the CDK networks in Validium mode            |
+| [CDK Validium Contracts](https://github.com/0xPolygon/cdk-validium-contracts) | Smart contracts implementation for the CDK networks in Validium mode |
+| [CDK Data Availability](https://github.com/0xPolygon/cdk-data-availability)   | Data availability nodes implementation for the CDK networks          |
+| [Prover / Executor](https://github.com/0xPolygonHermez/zkevm-prover)          | zkEVM engine and prover implementation                               |
+| [Bridge Service](https://github.com/0xPolygonHermez/zkevm-bridge-service)     | Bridge service implementation for CDK networks                       |
+| [Bridge UI](https://github.com/0xPolygonHermez/zkevm-bridge-ui)               | UI for the CDK networks bridge                                       |
+
 ### Summary of Key Differences
 
 | Feature / Aspect       | zkEVM                                                                                     | Validium                                                                                     |
