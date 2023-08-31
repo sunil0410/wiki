@@ -205,7 +205,7 @@ Polygon's native token, MATIC, has been pivotal in the network's growth since it
 
 ### Evolution of Polygon's Development Frameworks
 
-Polygon's blockchain development framework to build soverign blockchains have evolved significantly over time, each iteration bringing new features and capabilities. Below is a comparative table that outlines the key differences and features of Polygon Edge, Supernets, and the latest Chain Development Kit (CDK).
+Polygon's blockchain development framework to build sovereign blockchains have evolved significantly over time, each iteration bringing new features and capabilities. Below is a comparative table that outlines the key differences and features of Polygon Edge, Supernets, and the latest Chain Development Kit (CDK).
 
 #### Framework Comparison
 
