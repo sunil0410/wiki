@@ -140,7 +140,7 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
   fi
 
   # download all incremental files, includes automatic checksum verification per increment
-  aria2c -x6 -s6 -c --auto-file-renaming=false --max-tries=100 -i $client-$network-parts.txt
+  aria2c -x6 -s6 --max-tries=0 --max-connection-per-server=4 --retry-wait=3 --check-integrity=$checksum -i $client-$network-parts.txt
 
   # Don't extract if download failed
   if [ $? -ne 0 ]; then

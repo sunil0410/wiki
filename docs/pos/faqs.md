@@ -361,6 +361,26 @@ No, you cannot. If you start your Bor without Heimdall being completely synced, 
 
 This typically means that your sentry Heimdall is running into issues. Check your sentry Heimdall and see if the service is running fine. If the service is stopped, then restarting the service on your sentry should resolve this issue. Similarly, after fixing your sentry, a restart of your Heimdall service should also resolve the problem.
 
+## Bor shows  Tx Level Interrupt 
+
+It is a new feature which is recently added in bor. 
+
+Earlier bor in order to build block used to take more than 2s sometimes and that caused bor to produce 0 blocks (as it wasn't able to finish in time). We added this interrupt which will ask bor to stop producing block further and produce a block with whatever transactions are executed.
+
+## Bor shows Rewinding blockchain 
+
+These are just rewinding logs. Chain rewind is not automatic. User of the node need to do it manually via IPC or RPC call in order to rewind the chain. 
+
+The Force rewind might be because the user might have chosen a very historical block to rewind to.
+
+## Bor shows Deep froze chain segment
+
+It is not an error/warning. its an info statement.Basically, this is some operation of bor which is like a data transfer of ancient data.
+
+## Bor shows Caller gas above allowance, capping
+
+This is a warning when trying to make a call to the L1 chain, we give a high gas value which is like capped in bor and doesn't allow gas price to be more than cap.
+
 ## Heimdall shows "pong timeout"
 
 Full error:
@@ -531,6 +551,10 @@ This message is not an error. The message indicates that the Bor node is not the
 ## Bor shows "Address is required as argument"
 
 This means that you have not added your [signer address](/maintain/glossary.md#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
+
+## Bor shows "Error: could not apply tx 0 "
+
+The message "could not apply tx 0" basically occurs due the error shown "nonce too high". This basically means that it was a faulty block which had an invalid tx. A malicious peer must have sent this message to this node. The resolution is similar to what general bad block error.
 
 ## Bor shows "Failed to unlock account (0x...) No key for given address or file"
 

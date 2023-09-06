@@ -30,10 +30,9 @@ The only prerequisite is to have your MATIC tokens and ETH on the Ethereum mainn
 <br />
 
 2. Log in to [Polygon Staking](https://staking.polygon.technology/).
-3. Once you log in, you will see some overall statistics along with the list of validators.
+3. Once you log in, you will see overall statistics along with the list of validators.
 
 ![img](/img/staking/home.png)
-
 :::note
 
 If you are a validator, use a different non-validating address to log in as delegator.
@@ -146,7 +145,7 @@ The fund locking for the unbonding period is in place to ensure there is no mali
 
 Moving stake from one node to another node is a single transaction. There are no delays or unbonding periods during this event.
 
-1. Log in to the [My Account](https://wallet.polygon.technology/staking/my-account) on the Staking dashboard.
+1. Log in to the [My Account](https://staking.polygon.technology/account) on the Staking dashboard.
 1. Click **Move Stake** under your delegated validator.
 1. Select an external validator and click **Stake here**.
 
@@ -164,8 +163,5 @@ Moving stake from one node to another node is a single transaction. There are no
 
 This will move the stake. The dashboard will update after 12 block confirmations.
 
-:::info
 
-Moving stake is allowed between any nodes. The only exception is moving stake from one Foundation node to another Foundation node which is not allowed.
-
-:::
+<!--- There are no MATIC foundation nodes anymore, hence removed the reference --> 
