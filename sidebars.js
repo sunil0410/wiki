@@ -6,23 +6,22 @@
  */
 
 module.exports = {
-
   delegate: [
     "delegate/delegate",
     "delegate/delegator-faq",
     "delegate/staking-faq",
   ],
 
- /*
- *
- * *********************** Apps & Tools Section *************************
- *
- * This section includes explainer guides and content on common wallets,
- * tools, applications, and services for the Polygon ecosystem.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * *********************** Apps & Tools Section *************************
+   *
+   * This section includes explainer guides and content on common wallets,
+   * tools, applications, and services for the Polygon ecosystem.
+   *
+   * **********************************************************************
+   *
+   */
 
   tools: [
     {
@@ -161,12 +160,12 @@ module.exports = {
         type: "generated-index",
       },
       items: [
-        "tools/storage/ipfs", 
+        "tools/storage/ipfs",
         "tools/storage/filecoinhelpers",
-        "tools/storage/crusthelpers", 
+        "tools/storage/crusthelpers",
         "tools/storage/nftstorage",
         //"pos/develop/nftstorage",
-      ]
+      ],
     },
     {
       type: "category",
@@ -199,22 +198,20 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      items: [
-        "tools/faqs/wallet-bridge-faq",
-      ],
+      items: ["tools/faqs/wallet-bridge-faq"],
     },
   ],
 
-/*
- *
- * ************************* Governance Section *************************
- *
- * This section includes explainer guides and content on the PIP 
- * framework and PoS governance.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * ************************* Governance Section *************************
+   *
+   * This section includes explainer guides and content on the PIP
+   * framework and PoS governance.
+   *
+   * **********************************************************************
+   *
+   */
 
   govern: [
     {
@@ -239,16 +236,16 @@ module.exports = {
     "governance/governance-pos",
   ],
 
-/*
- *
- * ************************ PoS Mainnet Section *************************
- *
- * This section includes the official product documentation and
- * developer guides for Polygon PoS Mainnet.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * ************************ PoS Mainnet Section *************************
+   *
+   * This section includes the official product documentation and
+   * developer guides for Polygon PoS Mainnet.
+   *
+   * **********************************************************************
+   *
+   */
 
   pos: [
     {
@@ -472,7 +469,7 @@ module.exports = {
               items: [
                 "pos/operate/validator/validator-staking-operations",
                 "pos/operate/validator/validator-commission-operations",
-                "pos/operate/validator/topup-heimdall-fee"
+                "pos/operate/validator/topup-heimdall-fee",
               ],
             },
             {
@@ -487,7 +484,7 @@ module.exports = {
               ],
             },
             "pos/operate/validator/validator-performance-overview",
-            "pos/operate/validator/bloxroute"
+            "pos/operate/validator/bloxroute",
             //"maintain/glossary",
           ],
         },
@@ -525,16 +522,16 @@ module.exports = {
     "pos/pos-faqs",
   ],
 
-/*
- *
- * *************************** Matic.js Section *************************
- *
- * This section includes the official product documentation and 
- * reference material for Matic.JS.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * *************************** Matic.js Section *************************
+   *
+   * This section includes the official product documentation and
+   * reference material for Matic.JS.
+   *
+   * **********************************************************************
+   *
+   */
 
   maticjs: [
     {
@@ -674,16 +671,16 @@ module.exports = {
     "contribute/translate",
   ],
 
-/*
- *
- * *************************** Miden Section ****************************
- *
- * This section includes the official product documentation and
- * developer guides for Polygon Miden.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * *************************** Miden Section ****************************
+   *
+   * This section includes the official product documentation and
+   * developer guides for Polygon Miden.
+   *
+   * **********************************************************************
+   *
+   */
 
   miden: [
     {
@@ -743,16 +740,16 @@ module.exports = {
     },
   ],
 
-/*
- *
- * ************************** zkEVM Section *************************
- *
- * This section includes the official product documentation and
- * developer guides for Polygon zkEVM.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * ************************** zkEVM Section *************************
+   *
+   * This section includes the official product documentation and
+   * developer guides for Polygon zkEVM.
+   *
+   * **********************************************************************
+   *
+   */
 
   zkevm: [
     {
@@ -830,15 +827,15 @@ module.exports = {
         "zkevm/setup-goerlinode",
       ],
     },
-    {
-      type: "category",
-      label: "Release Notes",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: ["zkevm/releases/july-release"],
-    },
+    // {
+    //   type: "category",
+    //   label: "Release Notes",
+    //   link: {
+    //     type: "generated-index",
+    //   },
+    //   collapsed: true,
+    //   items: ["zkevm/releases/july-release"],
+    // },
     {
       type: "category",
       label: "FAQs",
@@ -856,16 +853,16 @@ module.exports = {
     "zkevm/open-source-repos",
   ],
 
-/*
- *
- * ************************** Supernets Section *************************
- *
- * This section includes the official product documentation and
- * developer guides for Polygon Supernets.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * ************************** Supernets Section *************************
+   *
+   * This section includes the official product documentation and
+   * developer guides for Polygon Supernets.
+   *
+   * **********************************************************************
+   *
+   */
 
   supernets: [
     {
@@ -956,9 +953,9 @@ module.exports = {
           },
           collapsed: true,
           items: [
-              "supernets/operate/supernets-requirements",
-              "supernets/operate/supernets-install",
-            ],
+            "supernets/operate/supernets-requirements",
+            "supernets/operate/supernets-install",
+          ],
         },
         "supernets/operate/supernets-ibft-to-polybft",
         {
@@ -992,8 +989,8 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                  "supernets/operate/deploy/access-control/supernets-allowlist-add-remove",
-                ],
+                "supernets/operate/deploy/access-control/supernets-allowlist-add-remove",
+              ],
             },
             {
               type: "category",
@@ -1003,9 +1000,9 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                  "supernets/operate/deploy/staking/supernets-how-to-stake",
-                  "supernets/operate/deploy/staking/supernets-unstake",
-                ],
+                "supernets/operate/deploy/staking/supernets-how-to-stake",
+                "supernets/operate/deploy/staking/supernets-unstake",
+              ],
             },
             {
               type: "category",
@@ -1015,11 +1012,11 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                  "supernets/operate/deploy/transfers/supernets-cross-chain-deposit",
-                  "supernets/operate/deploy/transfers/supernets-cross-chain-withdraw",
-                ],
+                "supernets/operate/deploy/transfers/supernets-cross-chain-deposit",
+                "supernets/operate/deploy/transfers/supernets-cross-chain-withdraw",
+              ],
             },
-            ],
+          ],
         },
         {
           type: "category",
@@ -1031,9 +1028,9 @@ module.exports = {
           items: [
             "supernets/operate/deploy/upgrades/supernets-how-to-upgrade",
             "supernets/operate/deploy/upgrades/supernets-v1.1-hardforks",
-            ],
+          ],
         },
-        ],
+      ],
     },
     {
       type: "category",
