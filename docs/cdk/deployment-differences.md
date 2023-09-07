@@ -24,7 +24,7 @@ Polygon CDK Validium is a unique scaling solution that builds upon the foundatio
 
 1. **zkEVM Node**: This node manages the Polygon zkEVM Network, processing transactions, maintaining state, and interacting with Ethereum.
    - Components: JSON RPC, Pool DB, Sequencer, Etherman, Synchronizer, State DB, Aggregator, Prover.
-   - [Repository Link](https://github.com/0xPolygon/zkevm-node)
+   - [Repository Link](https://github.com/0xPolygonHermez/zkevm-node)
 2. **zkEVM Contracts**: These smart contracts facilitate zkEVM operations on Ethereum.
    - Components: `PolygonZkEVM` (main rollup contract), `PolygonZkEVMBridge`, `PolygonZkEVMGlobalExitRoot`, and others. A full breakdown is available [<ins>here</ins>](/docs/category/zkevm/).
    - [Repository Link](https://github.com/0xPolygonHermez/zkevm-contracts)
