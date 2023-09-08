@@ -483,6 +483,12 @@ Open `config.toml` for editing: `vi /var/lib/bor/config.toml`.
   allow-insecure-unlock = true
 ```
 
+:::note
+
+Please ensure that `priv_validator_key.json` & `UTC-<time>-<address>` files have relevant permissions. To set relevant permissions for `priv_validator_key.json`, run `sudo chown -R heimdall:nogroup /var/lib/heimdall/config/priv_validator_key.json` and similarly `sudo chown -R heimdall:nogroup /var/lib/bor/data/keystore/UTC-<time>-<address>` for `UTC-<time>-<address>`.
+
+:::
+
 ## Starting the Validator Node
 
 At this point, you must have:
@@ -1594,7 +1600,7 @@ heimdallcli generate-validatorkey ETHEREUM_PRIVATE_KEY
 
 where
 
-* ETHEREUM_PRIVATE_KEY — your Ethereum wallet address.
+* ETHEREUM_PRIVATE_KEY — your Ethereum wallet's private key.
 
 This will generate `priv_validator_key.json`. Move the generated JSON file to the Heimdall configuration
 directory:
@@ -1616,7 +1622,7 @@ heimdallcli generate-keystore ETHEREUM_PRIVATE_KEY
 
 where
 
-* ETHEREUM_PRIVATE_KEY — your Ethereum private key.
+* ETHEREUM_PRIVATE_KEY — your Ethereum wallet's private key.
 
 When prompted, set up a password to the keystore file.
 
@@ -1647,6 +1653,12 @@ Open `config.toml` for editing: `vi /var/lib/bor/config.toml`.
   password = "The path of the file you entered in password.txt"
   allow-insecure-unlock = true
 ```
+
+:::note
+
+Please ensure that `priv_validator_key.json` & `UTC-<time>-<address>` files have relevant permissions. To set relevant permissions for `priv_validator_key.json`, run `sudo chown -R heimdall:nogroup /var/lib/heimdall/config/priv_validator_key.json` and similarly `sudo chown -R heimdall:nogroup /var/lib/bor/data/keystore/UTC-<time>-<address>` for `UTC-<time>-<address>`.
+
+:::
 
 ## Configure service files for bor and heimdall
 
