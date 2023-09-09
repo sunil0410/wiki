@@ -1,7 +1,7 @@
 export const firstRow = [
     {
         title: "What is PoS Mainnet?",
-        linkUrl: "/docs/supernets/get-started/what-are-supernets",
+        linkUrl: "/docs/pos/getting-started",
         imageUrl: "/img/supernets/supernets-logo.png",
     },
     {
