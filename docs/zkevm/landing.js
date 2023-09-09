@@ -49,8 +49,8 @@ export default function Welcome() {
                       className="tabs-frame"
                       title="Hero"
                       data-ready="true"
-                      width="400"
-                      height="400"
+                      width="450"
+                      height="450"
                     />
                   </div>
                 </div>
