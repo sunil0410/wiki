@@ -23,14 +23,14 @@ export function FirstRow({ title, status, description, linkUrl, imageUrl }) {
 export default function Welcome () {
   const context = useDocusaurusContext();
   return (
-      <div className="bootstrap-wrapper">
+            <div className="bootstrap-wrapper">
         <br />
         <div className="container">
           <div className="row">
             <div className="index-page exclude">
             <section className="section container-fluid">
             <div className="row justify-content-center">
-              <div className="col-lg-8">
+              <div className="col-lg-8" style={{width:"50%"}}>
                 <h1 className="mt-0">
                   <a href="https://polygon.technology/polygon-zkevm" className="landing-page-link">
                     zkEVM
@@ -39,7 +39,8 @@ export default function Welcome () {
                 </h1>
                 <h3 className="mt-0">Elevate Ethereum with zkEVM's groundbreaking performance and security.</h3>
               </div>
-              <div className="col-lg-4 text-center pt-3 d-none d-lg-block" style={{ marginLeft: "-100px" }}>
+              
+              <div className="col-lg-4 text-center pt-3 d-none d-lg-block" style={{ marginLeft: "-00px" }}>
                 <div className="tabs_animation-wrapper supernets-video">
                   <iframe
                     src="https://player.vimeo.com/video/791153931?h=a0b62c3daa&badge=0&autopause=0&player_id=0&app_id=58479&loop=1&autoplay=1&background=1"
@@ -48,8 +49,8 @@ export default function Welcome () {
                     className="tabs-frame"
                     title="Hero"
                     data-ready="true"
-                    width="800"
-                    height="450"
+                    width="400"
+                    height="400"
                   />
                 </div>
               </div>
