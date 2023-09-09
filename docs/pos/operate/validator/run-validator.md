@@ -483,7 +483,7 @@ Open `config.toml` for editing: `vi /var/lib/bor/config.toml`.
   allow-insecure-unlock = true
 ```
 
-:::note
+:::caution
 
 Please ensure that `priv_validator_key.json` & `UTC-<time>-<address>` files have relevant permissions. To set relevant permissions for `priv_validator_key.json`, run `sudo chown -R heimdall:nogroup /var/lib/heimdall/config/priv_validator_key.json` and similarly `sudo chown -R heimdall:nogroup /var/lib/bor/data/keystore/UTC-<time>-<address>` for `UTC-<time>-<address>`.
 
@@ -1654,7 +1654,7 @@ Open `config.toml` for editing: `vi /var/lib/bor/config.toml`.
   allow-insecure-unlock = true
 ```
 
-:::note
+:::caution
 
 Please ensure that `priv_validator_key.json` & `UTC-<time>-<address>` files have relevant permissions. To set relevant permissions for `priv_validator_key.json`, run `sudo chown -R heimdall:nogroup /var/lib/heimdall/config/priv_validator_key.json` and similarly `sudo chown -R heimdall:nogroup /var/lib/bor/data/keystore/UTC-<time>-<address>` for `UTC-<time>-<address>`.
 
