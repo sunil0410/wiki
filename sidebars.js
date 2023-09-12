@@ -485,10 +485,21 @@ module.exports = {
       collapsed: true,
       items: [
         "pos/validator/kb/how-to",
-        "pos/validator/run-validator",
         {
           type: "category",
-          label: "Validator Staking",
+          label: "Run a Validator Node",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "pos/validator/run-validator/run-validator-binaries",
+            "pos/validator/run-validator/run-validator-ansible",
+            "pos/validator/run-validator/run-validator-packages",
+          ],
+        },
+        {
+          type: "category",
+          label: "Stake Your Validator",
           link: {
             type: "generated-index",
           },
