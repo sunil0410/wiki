@@ -20,10 +20,6 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 :::
 
----
-
-## Overview
-
 This section guides you through deploying a Hello World contract using [Chainstack](https://chainstack.com/build-better-with-polygon/) and [Foundry](https://github.com/gakonst/foundry/) on the Polygon Mumbai testnet.
 
 Chainstack provides infrastructure for Ethereum-based applications and other blockchains. They maintain nodes and guarantee their connection to the network and also offer an interface to interact with mainnet and testnets.
