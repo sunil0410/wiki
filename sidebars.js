@@ -254,8 +254,8 @@ module.exports = {
       className: "sidebar-title",
     },
     "pos/index",
-    "pos/what-is-polygon-pos",
     "pos/getting-started",
+    "pos/what-is-polygon-pos",
     {
       type: "category",
       label: "System Design",
