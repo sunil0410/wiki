@@ -448,7 +448,20 @@ module.exports = {
       collapsed: true,
       items: [
         "pos/validator/validator-node-system-requirements",
-        "pos/operate/node/full-node-deployment",
+        {
+          type: "category",
+          label: "Run a Full Node",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "pos/operate/node/full-node-binaries",
+            "pos/operate/node/full-node-docker",
+            "pos/operate/node/full-node-ansible",
+            "pos/operate/node/full-node-packages",
+            "pos/operate/node/full-node-gcp",
+          ],
+        },
         "pos/operate/node/archive-node",
         "pos/operate/frequent-node-commands",
       ],
