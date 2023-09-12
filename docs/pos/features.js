@@ -1,6 +1,6 @@
 export const firstRow = [
     {
-        title: "What is PoS Mainnet?",
+        title: "What is Polygon PoS?",
         linkUrl: "/docs/pos/getting-started",
         imageUrl: "/img/supernets/supernets-logo.png",
     },

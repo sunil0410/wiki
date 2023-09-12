@@ -253,7 +253,7 @@ module.exports = {
       value: "Polygon PoS",
       className: "sidebar-title",
     },
-    //"pos/index",
+    "pos/index",
     "pos/getting-started",
     {
       type: "category",
