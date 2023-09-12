@@ -18,7 +18,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This deployment guide walks you through starting and running a full node through various methods. For the system requirements, see the [Minimum Technical Requirements](/pos/operate/validator/validator-node-system-requirements.md) guide.
+This deployment guide walks you through starting and running a full node through various methods. For the system requirements, see the [Minimum Technical Requirements](/pos/validator/validator-node-system-requirements.md) guide.
 
 :::tip Snapshots
 
@@ -47,7 +47,7 @@ values={[
 
 <TabItem value="binaries">
 
-## Overview
+<h2>Overview</h2>
 
 - Prepare the machine
 - Install Heimdall and Bor binaries on the full node machine

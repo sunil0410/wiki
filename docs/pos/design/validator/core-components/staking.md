@@ -33,7 +33,7 @@ A new validator can only join the active set when a currently active validator u
 
 :::
 
-To join the validator set, you must stake your MATIC tokens. See [Validator Staking Operations](/docs/pos/operate/validator/validator-staking-operations).
+To join the validator set, you must stake your MATIC tokens. See [Validator Staking Operations](/docs/pos/validator/validator-staking-operations).
 
 ## Unstake
 

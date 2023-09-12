@@ -173,7 +173,7 @@ module.exports = {
             from: '/docs/operate/snapshot-instructions-heimdall-bor',
           },
           {
-            to: '/docs/pos/operate/validator/validator-node-system-requirements',
+            to: '/docs/pos/validator/validator-node-system-requirements',
             from: '/docs/operate/technical-requirements',
           },
           //faqs

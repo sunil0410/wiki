@@ -40,4 +40,4 @@ should aim to elect validators that are behaving well.
 ## See Also
 
 * [Delegate](/docs/maintain/delegate/delegate)
-* [Validator FAQ](/docs/pos/operate/validator/faq/validator-faq)
+* [Validator FAQ](/docs/pos/validator/faq/validator-faq)

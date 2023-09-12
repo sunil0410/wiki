@@ -418,7 +418,7 @@ wget -c <Snapshot URL>
 tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 ```
 
-Then start Heimdall services again. Refer to: [Run a Validator Node](/pos/operate/validator/run-validator.md)
+Then start Heimdall services again. Refer to: [Run a Validator Node](/pos/validator/run-validator.md)
 
 ## Heimdall shows "dpkg: error processing archive"
 
@@ -624,11 +624,11 @@ If none of this is the issue, contact support team on [Discord](https://discord.
 
 ## How to set up a validator node on the mainnet?
 
-See [Getting Started](/pos/operate/validator/getting-started.md).
+See [Getting Started](/pos/validator/getting-started.md).
 
 ## How to set up a non-validating node?
 
-Check out: [Run a Validator Node](/pos/operate/validator/run-validator)
+Check out: [Run a Validator Node](/pos/validator/run-validator)
 
 ## Why do I have to keep ETH in my signer account?
 
@@ -648,7 +648,7 @@ Your sentry node gleans information / blocks from the network and then relays th
 
 ## What is the minimum disk space required to run a Validator node?
 
-See [Validator Node System Requirements](/pos/operate/validator/validator-node-system-requirements.md).
+See [Validator Node System Requirements](/pos/validator/validator-node-system-requirements.md).
 
 ## Bridge shows "Error while fetching mainchain receipt error="
 

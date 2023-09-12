@@ -43,4 +43,4 @@ Both keys are Ethereum compatible addresses and work in the exactl the same mann
 
 ## Signer Change
 
-See [Change Your Signer Address](/docs/pos/operate/validator/change-signer-address).
+See [Change Your Signer Address](/docs/pos/validator/change-signer-address).

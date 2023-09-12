@@ -78,11 +78,11 @@ To have a granular understanding of the core components, check out their codebas
 ### Node setup
 
 If you want to run a full node on the Polygon Mainnet or Mumbai Testnet, you can follow the
-[Run a Validator Node](/pos/operate/validator/run-validator.md) guide.
+[Run a Validator Node](/pos/validator/run-validator.md) guide.
 
 ### Staking operations
 
-- [Validator Staking Operations](/docs/pos/operate/validator/validator-staking-operations)
+- [Validator Staking Operations](/docs/pos/validator/validator-staking-operations)
 - [Delegate](/docs/maintain/delegate/delegate)
 
 ### External Resources

@@ -447,48 +447,48 @@ module.exports = {
       },
       collapsed: true,
       items: [
-        "pos/operate/validator/validator-node-system-requirements",
+        "pos/validator/validator-node-system-requirements",
         "pos/operate/node/full-node-deployment",
         "pos/operate/node/archive-node",
+        "pos/operate/frequent-node-commands",
+      ],
+    },
+    {
+      type: "category",
+      label: "Become a Validator",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "pos/validator/kb/how-to",
+        "pos/validator/run-validator",
         {
           type: "category",
-          label: "Run a Validator Node",
+          label: "Validator Staking",
           link: {
             type: "generated-index",
           },
-          collapsed: true,
           items: [
-            "pos/operate/validator/kb/how-to",
-            "pos/operate/validator/run-validator",
-            {
-              type: "category",
-              label: "Validator Staking",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "pos/operate/validator/validator-staking-operations",
-                "pos/operate/validator/validator-commission-operations",
-                "pos/operate/validator/topup-heimdall-fee",
-              ],
-            },
-            {
-              type: "category",
-              label: "Validator Issues",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "pos/operate/validator/kb/known-issues",
-                "pos/operate/validator/issues/reporting-issues",
-              ],
-            },
-            "pos/operate/validator/validator-performance-overview",
-            "pos/operate/validator/bloxroute",
-            //"maintain/glossary",
+            "pos/validator/validator-staking-operations",
+            "pos/validator/validator-commission-operations",
+            "pos/validator/topup-heimdall-fee",
           ],
         },
-        "pos/operate/frequent-node-commands",
+        {
+          type: "category",
+          label: "Validator Issues",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "pos/validator/kb/known-issues",
+            "pos/validator/issues/reporting-issues",
+          ],
+        },
+        "pos/validator/validator-performance-overview",
+        "pos/validator/bloxroute",
+        //"maintain/glossary",
       ],
     },
     {
