@@ -55,7 +55,7 @@ To elaborate further, a Supernets program offers a range of service providers th
 
 - **Node Providers**: These providers offer node infrastructure services that support the operation and maintenance of Supernets-based networks. Node providers can help ensure network stability, security, and scalability by providing reliable and optimized node infrastructure.
 
-- **RPC Providers**: These providers offer remote procedure call (RPC) services that allow developers to interact with Supernet-based networks (childchains) and rootchain networks like the Mumbai PoS testnet and Polygon PoS mainnet. RPC providers can provide easy and reliable access to network data and functionality.
+- **RPC Providers**: These providers offer remote procedure call (RPC) services that allow developers to interact with Supernet-based networks (childchains) and rootchain networks like the Mumbai PoS testnet and Polygon PoS. RPC providers can provide easy and reliable access to network data and functionality.
 
 - **Smart Contract Monitoring**: This service enables real-time monitoring of smart contracts deployed on Supernets-based networks. This can help detect and respond to potential issues, vulnerabilities, or attacks on the network.
 

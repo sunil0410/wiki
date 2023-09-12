@@ -238,7 +238,7 @@ module.exports = {
 
   /*
    *
-   * ************************ PoS Mainnet Section *************************
+   * ************************ PoS Section ********************************
    *
    * This section includes the official product documentation and
    * developer guides for Polygon PoS Mainnet.

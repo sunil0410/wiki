@@ -31,7 +31,7 @@
     + [Matic Network -> Polygon](#matic-network----polygon)
     + [Polygon 2.0](#polygon-20)
   * [Current Polygon Stack](#current-polygon-stack)
-    + [PoS Mainnet](#pos-mainnet)
+    + [PoS](#pos)
     + [zkEVM](#zkevm)
     + [Supernets](#supernets)
     + [Miden](#miden)
@@ -107,9 +107,9 @@ Building on these advancements, Polygon Labs has introduced "Polygon 2.0," a spe
 
 As of today, Polygon offers a diverse range of products and solutions designed to meet various application needs. Below are the key product suites of the current Polygon stack:
 
-### PoS Mainnet
+### PoS
 
-The Proof-of-Stake (PoS) Mainnet serves as the backbone of Polygon's Layer 2 scaling solutions. It provides a secure and efficient platform for decentralized applications and transactions.
+The Proof-of-Stake (PoS) network serves as the backbone of Polygon's Layer 2 scaling solutions. It provides a secure and efficient platform for decentralized applications and transactions.
 
 ### zkEVM
 

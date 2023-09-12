@@ -1,7 +1,7 @@
 ---
 id: how-to
-title: Additional Prerequisites
-sidebar_label: Additional Prerequisites
+title: Additional Node Prerequisites
+sidebar_label: System Requirements
 description: Polygon validator tutorials
 keywords:
   - docs

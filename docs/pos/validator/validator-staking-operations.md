@@ -1,7 +1,7 @@
 ---
 id: validator-staking-operations
 title: How to Stake on Polygon PoS Mainnet
-sidebar_label: How to Stake on PoS Mainnet
+sidebar_label: Stake on PoS
 description: Learn how to stake as a validator on the Polygon Network
 keywords:
   - docs

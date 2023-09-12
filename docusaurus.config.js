@@ -407,7 +407,7 @@ module.exports = {
           items: [
             {
               href: '/docs/pos/getting-started',
-              label: 'PoS Mainnet',
+              label: 'PoS',
               target: '_self',
               rel: null,
             },
