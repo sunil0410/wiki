@@ -86,7 +86,20 @@ module.exports = {
       collapsed: true,
       items: [
         "pos/polygon-architecture",
-        "pos/design/gas-token",
+        /*
+        {
+          type: "category",
+          label: "Native Token",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "pos/design/token/gas-token",
+            "pos/design/token/pol",
+          ],
+        },
+        */
+        "governance/governance-pos",
         {
           type: "category",
           label: "Consensus",

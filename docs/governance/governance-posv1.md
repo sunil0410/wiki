@@ -1,7 +1,7 @@
 ---
 id: governance-pos
 title: Polygon PoS Consensus and Governance
-sidebar_label: PoS Governance
+sidebar_label: Governance
 description: Common governance terms and processes for the Polygon PoS blockchain.
 keywords:
   - docs
