@@ -23,185 +23,6 @@ module.exports = {
    *
    */
 
-  tools: [
-    {
-      type: "html",
-      value: "Apps & Tools",
-      className: "sidebar-title",
-    },
-    "tools/index",
-    {
-      type: "category",
-      label: "Wallets",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/wallets/getting-started",
-        {
-          type: "category",
-          label: "Polygon Wallet Suite",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "tools/wallets/polygon-web-wallet/web-wallet-v3-guide",
-            "tools/wallets/adding-a-custom-token",
-          ],
-        },
-        {
-          type: "category",
-          label: "Third-Party Apps",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            {
-              type: "category",
-              label: "Metamask",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "tools/wallets/metamask/overview",
-                "tools/wallets/metamask/hello",
-                "tools/wallets/metamask/config-polygon-on-metamask",
-                "tools/wallets/metamask/custom-tokens",
-                "tools/wallets/metamask/multiple-accounts",
-              ],
-            },
-            {
-              type: "category",
-              label: "Wallet Link",
-              link: {
-                type: "generated-index",
-              },
-              items: ["tools/wallets/metamask/config-polygon-on-wallet-link"],
-            },
-
-            {
-              type: "category",
-              label: "Venly",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "tools/wallets/venly/intro",
-                "tools/wallets/venly/create-wallet",
-                "tools/wallets/venly/network",
-                "tools/wallets/venly/custom-tokens",
-              ],
-            },
-            "tools/wallets/fortmatic",
-            "tools/wallets/portis",
-            "tools/wallets/torus",
-            "tools/wallets/walletconnect",
-            "tools/wallets/slashauth",
-            "tools/wallets/plaid-wallet-onboard",
-          ],
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Faucets",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/faucets/matic-faucet",
-        "tools/faucets/polygon-gas-station",
-      ],
-    },
-    {
-      type: "category",
-      label: "Ethereum Tools",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/ethereum/remix",
-        "tools/ethereum/truffle",
-        "tools/ethereum/hardhat",
-        "tools/ethereum/replit",
-      ],
-    },
-    {
-      type: "category",
-      label: "Oracles",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/oracles/getting-started",
-        "tools/oracles/api3",
-        {
-          type: "category",
-          label: "Band Protocol",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "tools/oracles/bandchain",
-            "tools/oracles/bandstandarddataset",
-          ],
-        },
-        "tools/oracles/chainlink",
-        "tools/oracles/optimisticoracle",
-        "tools/oracles/razor",
-        "tools/oracles/tellor",
-        "tools/oracles/umb",
-      ],
-    },
-    {
-      type: "category",
-      label: "Storage",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/storage/ipfs",
-        "tools/storage/filecoinhelpers",
-        "tools/storage/crusthelpers",
-        "tools/storage/nftstorage",
-        //"pos/develop/nftstorage",
-      ],
-    },
-    {
-      type: "category",
-      label: "Data",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "The Graph",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "tools/data/the-graph/overview",
-            "tools/data/the-graph/graph-data",
-            "tools/data/the-graph/graph-entities",
-            "tools/data/the-graph/graph-queries",
-          ],
-        },
-        "tools/data/covalent",
-        "tools/data/parsiq",
-        //"pos/develop/dapp-fauna-polygon-react",
-      ],
-    },
-    {
-      type: "category",
-      label: "Frequently Asked Questions",
-      link: {
-        type: "generated-index",
-      },
-      items: ["tools/faqs/wallet-bridge-faq"],
-    },
-  ],
-
   /*
    *
    * ************************* Governance Section *************************
@@ -429,23 +250,203 @@ module.exports = {
             },
           ],
         },
-        "home/architecture/security-models",
+       // "home/architecture/security-models",
       ],
     },
     {
       type: "category",
-      label: "Deploy a Contract",
+      label: "Build a dApp",
       link: {
         type: "generated-index",
       },
       items: [
-        "pos/deploy/alchemy",
-        "pos/deploy/chainide",
-        "pos/deploy/chainstack",
-        "pos/deploy/getblock",
-        "pos/deploy/quicknode",
-        "pos/deploy/smartpress",
-        "pos/deploy/thirdweb",
+        {
+          type: "category",
+          label: "Create an Account",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "tools/wallets/getting-started",
+            {
+              type: "category",
+              label: "Polygon Wallet Suite",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/wallets/polygon-web-wallet/web-wallet-v3-guide",
+                "tools/wallets/adding-a-custom-token",
+              ],
+            },
+            {
+              type: "category",
+              label: "Third-Party Apps",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                {
+                  type: "category",
+                  label: "Metamask",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: [
+                    "tools/wallets/metamask/overview",
+                    "tools/wallets/metamask/hello",
+                    "tools/wallets/metamask/config-polygon-on-metamask",
+                    "tools/wallets/metamask/custom-tokens",
+                    "tools/wallets/metamask/multiple-accounts",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Wallet Link",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: ["tools/wallets/metamask/config-polygon-on-wallet-link"],
+                },
+    
+                {
+                  type: "category",
+                  label: "Venly",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: [
+                    "tools/wallets/venly/intro",
+                    "tools/wallets/venly/create-wallet",
+                    "tools/wallets/venly/network",
+                    "tools/wallets/venly/custom-tokens",
+                  ],
+                },
+                "tools/wallets/fortmatic",
+                "tools/wallets/portis",
+                "tools/wallets/torus",
+                "tools/wallets/walletconnect",
+                "tools/wallets/slashauth",
+                "tools/wallets/plaid-wallet-onboard",
+              ],
+            },
+          ],
+        },
+        "tools/faucets/matic-faucet",
+        {
+          type: "category",
+          label: "Deploy a Contract",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            {
+              type: "category",
+              label: "Ethereum Tools",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/ethereum/remix",
+                "tools/ethereum/truffle",
+                "tools/ethereum/hardhat",
+                "tools/ethereum/replit",
+              ],
+            },
+            {
+              type: "category",
+              label: "Service Providers",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "pos/deploy/alchemy",
+                "pos/deploy/chainide",
+                "pos/deploy/chainstack",
+                "pos/deploy/getblock",
+                "pos/deploy/quicknode",
+                "pos/deploy/smartpress",
+                "pos/deploy/thirdweb",
+              ],
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Integrate Real-World Data",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "tools/oracles/getting-started",
+            "tools/oracles/api3",
+            {
+              type: "category",
+              label: "Band Protocol",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/oracles/bandchain",
+                "tools/oracles/bandstandarddataset",
+              ],
+            },
+            "tools/oracles/chainlink",
+            "tools/oracles/optimisticoracle",
+            "tools/oracles/razor",
+            "tools/oracles/tellor",
+            "tools/oracles/umb",
+          ],
+        },
+        {
+          type: "category",
+          label: "Store Your Data",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "tools/storage/ipfs",
+            "tools/storage/filecoinhelpers",
+            "tools/storage/crusthelpers",
+            "tools/storage/nftstorage",
+            //"pos/develop/nftstorage",
+          ],
+        },
+        {
+          type: "category",
+          label: "Analyze Your Data",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            {
+              type: "category",
+              label: "The Graph",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/data/the-graph/overview",
+                "tools/data/the-graph/graph-data",
+                "tools/data/the-graph/graph-entities",
+                "tools/data/the-graph/graph-queries",
+              ],
+            },
+            "tools/data/covalent",
+            "tools/data/parsiq",
+            //"pos/develop/dapp-fauna-polygon-react",
+          ],
+        },
+        /*
+        {
+          type: "category",
+          label: "Frequently Asked Questions",
+          link: {
+            type: "generated-index",
+          },
+          items: ["tools/faqs/wallet-bridge-faq"],
+        },
+        */
       ],
     },
     //"pos/develop/did-implementation",
@@ -472,7 +473,7 @@ module.exports = {
             "pos/operate/node/full-node-gcp",
           ],
         },
-        "pos/operate/node/pos-erigon-node",
+        "pos/operate/node/erigon-client",
       ],
     },
     {
@@ -534,6 +535,7 @@ module.exports = {
       items: [
         "pos/reference/commit-chain-multisigs",
         "pos/reference/mapped-tokens",
+        "tools/faucets/polygon-gas-station",
         "pos/reference/rpc-endpoints",
         "pos/reference/default-ports",
         "pos/reference/snapshot-instructions-heimdall-bor",

@@ -136,15 +136,15 @@ module.exports = {
             from: '/docs/operate/full-node-deployment',
           },
           {
-            to: '/docs/pos/operate/node/archive-node',
+            to: '/docs/pos/operate/node/erigon-client',
             from: '/docs/operate/erigon-client',
           },
           {
-            to: '/docs/pos/operate/node/archive-node',
+            to: '/docs/pos/operate/node/erigon-client',
             from: '/docs/operate/archive-node',
           },
           {
-            to: '/docs/pos/operate/node/archive-node',
+            to: '/docs/pos/operate/node/erigon-client',
             from: '/docs/operate/setup-archive-node',
           },
           //pos operate
@@ -453,12 +453,6 @@ module.exports = {
           label: "Apps & Tools",
           position: "left",
           items: [
-            {
-              href: '/docs/tools',
-              label: 'General',
-              target: '_self',
-              rel: null,
-            },
             {
               href: '/docs/tools/matic-js/get-started',
               label: 'Matic.js',

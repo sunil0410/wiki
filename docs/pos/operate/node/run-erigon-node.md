@@ -1,5 +1,5 @@
 ---
-id: pos-erigon-node
+id: erigon-client
 title: How to Run an Erigon Client Node
 sidebar_label: Run an Erigon Node
 description: Using binaries or ansible to set up an archive node.
