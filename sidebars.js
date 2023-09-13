@@ -6,12 +6,6 @@
  */
 
 module.exports = {
-  delegate: [
-    "delegate/delegate",
-    "delegate/delegator-faq",
-    "delegate/staking-faq",
-  ],
-
   /*
    *
    * *********************** Apps & Tools Section *************************
@@ -77,6 +71,100 @@ module.exports = {
     "pos/index",
     "pos/getting-started",
     "pos/what-is-polygon-pos",
+    {
+      type: "html",
+      value: "Users",
+      className: "sidebar-title",
+    },
+    {
+      type: "category",
+      label: "Create an Account",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "tools/wallets/getting-started",
+        {
+          type: "category",
+          label: "Polygon Wallet Suite",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "tools/wallets/polygon-web-wallet/web-wallet-v3-guide",
+            "tools/wallets/adding-a-custom-token",
+          ],
+        },
+        {
+          type: "category",
+          label: "Third-Party Apps",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            {
+              type: "category",
+              label: "Metamask",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/wallets/metamask/overview",
+                "tools/wallets/metamask/hello",
+                "tools/wallets/metamask/config-polygon-on-metamask",
+                "tools/wallets/metamask/custom-tokens",
+                "tools/wallets/metamask/multiple-accounts",
+              ],
+            },
+            {
+              type: "category",
+              label: "Wallet Link",
+              link: {
+                type: "generated-index",
+              },
+              items: ["tools/wallets/metamask/config-polygon-on-wallet-link"],
+            },
+
+            {
+              type: "category",
+              label: "Venly",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/wallets/venly/intro",
+                "tools/wallets/venly/create-wallet",
+                "tools/wallets/venly/network",
+                "tools/wallets/venly/custom-tokens",
+              ],
+            },
+            "tools/wallets/fortmatic",
+            "tools/wallets/portis",
+            "tools/wallets/torus",
+            "tools/wallets/walletconnect",
+            "tools/wallets/slashauth",
+            "tools/wallets/plaid-wallet-onboard",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Delegate Your Tokens",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "delegate/delegate",
+        "delegate/delegator-faq",
+        "delegate/staking-faq",
+      ],
+    },
+    {
+      type: "html",
+      value: "Developers",
+      className: "sidebar-title",
+    },
     {
       type: "category",
       label: "System Design",
@@ -273,78 +361,6 @@ module.exports = {
         type: "generated-index",
       },
       items: [
-        {
-          type: "category",
-          label: "Create an Account",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "tools/wallets/getting-started",
-            {
-              type: "category",
-              label: "Polygon Wallet Suite",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "tools/wallets/polygon-web-wallet/web-wallet-v3-guide",
-                "tools/wallets/adding-a-custom-token",
-              ],
-            },
-            {
-              type: "category",
-              label: "Third-Party Apps",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                {
-                  type: "category",
-                  label: "Metamask",
-                  link: {
-                    type: "generated-index",
-                  },
-                  items: [
-                    "tools/wallets/metamask/overview",
-                    "tools/wallets/metamask/hello",
-                    "tools/wallets/metamask/config-polygon-on-metamask",
-                    "tools/wallets/metamask/custom-tokens",
-                    "tools/wallets/metamask/multiple-accounts",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Wallet Link",
-                  link: {
-                    type: "generated-index",
-                  },
-                  items: ["tools/wallets/metamask/config-polygon-on-wallet-link"],
-                },
-    
-                {
-                  type: "category",
-                  label: "Venly",
-                  link: {
-                    type: "generated-index",
-                  },
-                  items: [
-                    "tools/wallets/venly/intro",
-                    "tools/wallets/venly/create-wallet",
-                    "tools/wallets/venly/network",
-                    "tools/wallets/venly/custom-tokens",
-                  ],
-                },
-                "tools/wallets/fortmatic",
-                "tools/wallets/portis",
-                "tools/wallets/torus",
-                "tools/wallets/walletconnect",
-                "tools/wallets/slashauth",
-                "tools/wallets/plaid-wallet-onboard",
-              ],
-            },
-          ],
-        },
         "tools/faucets/matic-faucet",
         {
           type: "category",
