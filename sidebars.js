@@ -473,7 +473,6 @@ module.exports = {
           ],
         },
         "pos/operate/node/archive-node",
-        "pos/operate/frequent-node-commands",
       ],
     },
     {
@@ -538,6 +537,8 @@ module.exports = {
         "pos/reference/rpc-endpoints",
         "pos/reference/default-ports",
         "pos/reference/snapshot-instructions-heimdall-bor",
+        "pos/reference/pos-common-commands",
+        "pos/reference/pos-errors",
         {
           type: "category",
           label: "Core Contracts",

@@ -1,8 +1,8 @@
 ﻿---
 id: mapped-tokens
 title: Mapped Tokens
-sidebar_label: Mapped tokens
-description: Examples about different mapped tokens on Polygon Mainnet
+sidebar_label: Mapped Tokens
+description: "Examples about different mapped tokens on Polygon Mainnet."
 keywords:
   - docs
   - matic
@@ -15,17 +15,13 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This document provides examples of different mapped tokens on the Polygon PoS and Mumbai testnet. The table in the document lists token name, bridge, parent chain address, and child chain for various tokens, including PoS-DAI, PoS-USDT, PoS-WETH, and PoS-ETH, among others. The document also includes instructions for getting a token mapped via [mapper.polygon.technology](https://mapper.polygon.technology/).
+This document provides examples of token mappings on the Polygon PoS and Mumbai testnet.
 
 :::tip Mapping
 
-If you want to get your token mapped then please send your mapping request via [mapper.polygon.technology](https://mapper.polygon.technology/).
+If you want to get your token mapped then please send your mapping request via [<ins>mapper.polygon.technology</ins>](https://mapper.polygon.technology/).
 
 :::
-
----
-
-Below are tables that provide several examples of various mapped tokens for each network. It is important to note that these are not exhaustive lists.
 
 <Tabs
 defaultValue="mainnet"

@@ -1,12 +1,13 @@
 ---
 id: commit-chain-multisigs
-title: PoS Mainnet Multisigs
+title: PoS Mainnet Multi-Signatures
 sidebar_label: Multisigs
-description: Information about active multisigs
+description: "A comprehensive guide on active multi-signature wallets in the Polygon PoS Mainnet."
 keywords:
   - docs
   - polygon
   - matic
+  - multisignature
   - multisig
   - address
 image: https://wiki.polygon.technology/img/polygon-logo.png
@@ -15,49 +16,52 @@ image: https://wiki.polygon.technology/img/polygon-logo.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-:::note Capabilities
+## Purpose & Capabilities
 
-The primary function of the multisigs is to enable contract upgrades in
-the [current] early phases of development.
+The primary role of multi-signature wallets (multisigs) is to facilitate contract upgrades during the early stages of development. As these contracts become more robust, Polygon plans to:
 
-As the contracts secured by the multisigs become battle-tested,
-Polygon will introduce the following optimizations and changes:
+- Transition from multisigs to governance-controlled proxies.
+- Implement timelocks for added security.
+- Phase out multisigs entirely in the long term.
 
-- move from multisigs to governance-controlled proxies;
-- introduce timelocks;
-- eventually remove all multisigs.
+**It's important to note that the existing multisigs do not have the capability to censor transactions, including bridge transactions.**
 
-To be clear, the current multisigs cannot censor transactions like bridge transactions.
+## Active Multi-Signature Wallets
 
-:::
+### Ethereum Chain Multisigs
 
-| Multisig Address  | **5/9 multisig <br/>0xFa7D2a996aC6350f4b56C043112Da0366a59b74c**                                 |
-|:--------------:|----------------------------------------|
-| Purpose  | To upgrade POS and staking contracts on Ethereum* <br/>|
-| Chain      | Ethereum                                 |
-| Rights    |<ul> <li>Update staking contracts for staking optimisations, features and upgradations </li> <li>Be able to fix unexpected and unforeseen bugs on POS contracts</li></ul>|
-| Signatories    |<ul><li> Quickswap </li> <li>Curve </li> <li>Polygon </li> <li>Horizon Games </li> <li>Cometh  </li></ul>|
+| Multisig Address  | **5/9 Multisig**<br/>`0xFa7D2a996aC6350f4b56C043112Da0366a59b74c` |
+|:----------------:|---------------------------------------------------------------------|
+| Purpose          | To upgrade PoS and staking contracts on Ethereum.                    |
+| Chain            | Ethereum                                                            |
+| Rights           | - Update staking contracts for optimizations and upgrades.<br/>- Address unexpected bugs in PoS contracts. |
+| Signatories      | Quickswap, Curve, Polygon, Horizon Games, Cometh                     |
 
+### Polygon Commitchain Multisigs
 
-| Multisig Address  | **5/8 multisig <br/> 0x355b8E02e7F5301E6fac9b7cAc1D6D9c86C0343f**                                 |
-|:--------------:|----------------------------------------|
-| Purpose  | To to be able to update "custom" childerc20s if required on Polygon Commitchain* <br/> |
-| Chain      | Polygon Commitchain                                 |
-| Rights    |<ul> <li>Ability to upgrade "custom child contracts" ( and not the fx portal created standard tokens mentioned below) </li> </ul>|
-| Signatories    |<ul><li> Quickswap </li> <li>Curve </li> <li>Polygon </li>  <li>Horizon Games </li> <li>Cometh  </li></ul>|
+| Multisig Address  | **5/8 Multisig**<br/>`0x355b8E02e7F5301E6fac9b7cAc1D6D9c86C0343f` |
+|:----------------:|---------------------------------------------------------------------|
+| Purpose          | To update custom ChildERC20s on Polygon Commitchain.                 |
+| Chain            | Polygon Commitchain                                                  |
+| Rights           | Ability to upgrade custom child contracts.                           |
+| Signatories      | Quickswap, Curve, Polygon, Horizon Games, Cometh                     |
 
-| Multisig Address  | **Permissionless Mapping of standard ChildERC20 tokens (No Multisig Required) **                                 |
-|:--------------:|----------------------------------------|
-| Purpose  | Use FxPortal supports permissionless token mapping of standard ChildERC20 for any ERC20 token on Ethereum|
-| Chain      | Permissionless                             |
-| Rights    |Permissionless|
-| Signatories    |Permissionless|
+### Custom Child ERC20s Mapping
 
-| Multisig Address  | 4/8 Multisig <br/> 0x424bDE99FCfB68c5a1218fd3215caFfD031f19C4 |
-|:--------------:|----------------------------------------|
-| Purpose  | <ul><li>To enable the mapping of "custom" child ERC20s with Mainnet contract. <li>60% of Dapps deployed on Polygon "want" custom child ERC20 token, which needs to be mapped with supervision.<li> Eventually this can go to Governance but this will vastly increase the time for Dapp teams who want custom ERC20.</li></li></li> <li> You can create standard child ERC20s yourselves using Fx portal, its permissionless, no mapping required</li></ul>|
-| Chain      | Ethereum <br/>             |
-| Rights    |Can only do mapping, doesn't have any access to Child token, no deposit/withdrawal rights whatsoever|
-| Signatories    |<ul> <li>Polygon </li> </ul>|
+| Multisig Address  | **4/8 Multisig**<br/>`0x424bDE99FCfB68c5a1218fd3215caFfD031f19C4` |
+|:----------------:|---------------------------------------------------------------------|
+| Purpose          | To enable the mapping of custom ChildERC20s with Mainnet contracts.  |
+| Chain            | Ethereum                                                            |
+| Rights           | Limited to mapping; no access to Child tokens or deposit/withdrawal rights. |
+| Signatories      | Polygon                                                             |
 
-<sub> *To be moved to governance. Exploring Aave's governance contracts and Compound’s time lock contracts</sub>
+### Permissionless Mapping
+
+| Multisig Address  | **Permissionless Mapping of Standard ChildERC20 Tokens (No Multisig Required)** |
+|:----------------:|--------------------------------------------------------------------------------|
+| Purpose          | FxPortal supports permissionless token mapping of standard ChildERC20 for any ERC20 token on Ethereum. |
+| Chain            | Permissionless                                                                 |
+| Rights           | Permissionless                                                                 |
+| Signatories      | Permissionless                                                                 |
+
+<sub>*Plans are underway to transition these functions to governance. We are currently exploring options such as Aave's governance contracts and Compound’s timelock contracts.</sub>
