@@ -1,7 +1,7 @@
 ﻿---
 id: mapped-tokens
 title: Mapped Tokens
-sidebar_label: Mapped tokens
+sidebar_label: Mapped Tokens
 description: Examples about different mapped tokens on Polygon Mainnet
 keywords:
   - docs

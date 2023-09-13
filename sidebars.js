@@ -538,6 +538,8 @@ module.exports = {
         "pos/reference/rpc-endpoints",
         "pos/reference/default-ports",
         "pos/reference/snapshot-instructions-heimdall-bor",
+        "pos/reference/pos-common-commands",
+        "pos/reference/pos-errors",
         {
           type: "category",
           label: "Core Contracts",
@@ -553,8 +555,6 @@ module.exports = {
         },
       ],
     },
-    "pos/pos-common-commands",
-    "pos/pos-errors",
     "pos/pos-faqs",
   ],
 

@@ -14,15 +14,11 @@ image: https://wiki.polygon.technology/img/polygon-logo.png
 
 This FAQ document aims to address common questions and challenges you may encounter while interacting with Polygon PoS as a node operator. Please refer to the relevant sections below for detailed information.
 
----
-
 ## Configuration Files
 
 ### Are the Private Keys the Same for Heimdall and Bor Keystore?
 
 Yes, the private keys are the same for Heimdall and Bor keystore, and they should correspond to the Ethereum address where your Polygon tokens are stored.
-
----
 
 ## Node Setup
 
@@ -66,8 +62,6 @@ Yes, you can run multiple sentry nodes for a validator.
 
 No, running multiple validators using the same signer key is not currently supported.
 
----
-
 ## Validators
 
 ### How Can I Reserve a Validator Spot?
@@ -105,5 +99,3 @@ If your validator Heimdall is unable to connect to peers, follow these steps:
 
 1. This usually indicates issues with your sentry Heimdall.
 2. Restarting the Heimdall service should resolve this issue.
-
----

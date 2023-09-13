@@ -1,7 +1,7 @@
 ---
 id: pos-errors
 title: Common Node Errors
-sidebar_label: Common Node Errors
+sidebar_label: Errors
 description: Common questions on validator operations
 keywords:
   - docs
