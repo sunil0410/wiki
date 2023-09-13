@@ -2,9 +2,9 @@
 id: commit-chain-multisigs
 title: PoS Mainnet Multi-Signatures
 sidebar_label: Multisigs
-description: A comprehensive guide on active multisignature wallets in the Polygon PoS Mainnet.
+description: "A comprehensive guide on active multi-signature wallets in the Polygon PoS Mainnet."
 keywords:
-  - documentation
+  - docs
   - polygon
   - matic
   - multisignature
@@ -26,7 +26,7 @@ The primary role of multi-signature wallets (multisigs) is to facilitate contrac
 
 **It's important to note that the existing multisigs do not have the capability to censor transactions, including bridge transactions.**
 
-## Active Multisignature Wallets
+## Active Multi-Signature Wallets
 
 ### Ethereum Chain Multisigs
 
