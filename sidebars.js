@@ -473,7 +473,6 @@ module.exports = {
           ],
         },
         "pos/operate/node/archive-node",
-        "pos/operate/frequent-node-commands",
       ],
     },
     {
