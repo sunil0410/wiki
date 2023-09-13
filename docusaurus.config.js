@@ -524,7 +524,7 @@ module.exports = {
           rel: null,
         },
         {
-          href: "https://github.com/maticnetwork",
+          href: "https://github.com/0xPolygon",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
