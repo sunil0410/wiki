@@ -1,7 +1,7 @@
 ---
 id: archive-node
-title: How to Setup an Archive PoS Node
-sidebar_label: Run an Archive Node
+title: How to Run an Erigon Client Node
+sidebar_label: Run an Erigon Node
 description: Using binaries or ansible to set up an archive node.
 keywords:
   - erigon
@@ -14,63 +14,12 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 ## System Requirements
 
 - 16-core CPU
 - 64 GB RAM
 - Basically io1 or above with at least 20k+ iops and RAID-0 based disk structure
-
-## Configuration
-
-<Tabs
-defaultValue="binaries"
-values={[
-{ label: 'Binaries', value: 'binaries', },
-{ label: 'Ansible', value: 'ansible', },
-{ label: 'Erigon Client', value: 'erigon', },
-]
-}>
-
-<!-- ===================================================================================================================== -->
-<!-- ===================================================== BINARIES ====================================================== -->
-<!-- ===================================================================================================================== -->
-
-<TabItem value="binaries">
-
-To setup the Archive Node, you need to follow the same process for deploying a [full node using binaries](full-node-deployment.md).
-
-However, it requires a minor configuration change. You should include the following parameter in the `start.sh` file:
-
-```makefile
---gcmode 'archive'
-```
-
-</TabItem>
-
-<!-- ===================================================================================================================== -->
-<!-- ===================================================== ANSIBLE ======================================================= -->
-<!-- ===================================================================================================================== -->
-
-<TabItem value="ansible">
-
-To setup an archive node using Ansible, you need to follow the same process for deploying a [full node with Ansible](/operate/full-node-deployment.md).
-
-However, it requires a minor configuration change. You should include the following parameter in the `start.sh` file:
-
-```makefile
---gcmode 'archive'
-```
-
-</TabItem>
-
-<!-- ===================================================================================================================== -->
-<!-- ===================================================== ANSIBLE ======================================================= -->
-<!-- ===================================================================================================================== -->
-
-<TabItem value="erigon">
 
 ## System Requirements
 
@@ -136,6 +85,3 @@ erigon --chain=mumbai
 
 - Use the machine with high IOPS and RAM for the faster initial sync
 - Memory optimized nodes are recommended for faster sync, For example, AWS EC2 `r5` or `r6` series instances.
-
-</TabItem>
-</Tabs>
