@@ -406,7 +406,7 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/pos/getting-started',
+              href: '/docs/pos/',
               label: 'PoS',
               target: '_self',
               rel: null,
@@ -418,13 +418,13 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/supernets',
+              href: '/docs/supernets/',
               label: 'Supernets',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/miden',
+              href: '/docs/miden/',
               label: 'Miden',
               target: '_self',
               rel: null,
