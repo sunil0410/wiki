@@ -13,9 +13,60 @@ keywords:
 image: https://wiki.polygon.technology/img/polygon-logo.png
 ---
 
-This guide provides a curated list of common Linux commands and Polygon-specific operations essential for node operators. Whether you're setting up a full node, validator node or troubleshooting, these commands will assist you in managing your Polygon PoS environment effectively.
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-## Common Linux Commands
+This guide provides a curated list of common commands and Polygon-specific operations essential for node operators. Whether you're setting up a full node, validator node or troubleshooting, these commands will assist you in managing your Polygon PoS environment effectively.
+
+## Frequently Used Commands for Bor & Heimdall
+
+Use the tabs below to switch between commands for Bor and Heimdall:
+
+<Tabs
+  defaultValue="bor"
+  values={[
+    { label: 'Bor Commands', value: 'bor', },
+    { label: 'Heimdall Commands', value: 'heimdall', },
+  ]
+}>
+<TabItem value="bor">
+
+To execute Bor IPC commands, use the following syntax:
+
+```bash
+bor attach .bor/data/bor.ipc <command>
+```
+
+| IPC Command | RPC Command | Description |
+| ----------- | ----------- | ----------- |
+| `admin.peers.length` | `curl -H "Content-Type: application/json" --data '{"jsonrpc": "2.0", "method": "net_peerCount", "params": [], "id": 74}' localhost:8545` | Retrieves the number of peers connected to the node. |
+| `admin.nodeInfo` |  | Provides detailed information about the node. |
+| `eth.syncing` | `curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "eth_syncing","params": []}' localhost:8545` | Indicates whether the node is syncing (`true`) or not (`false`). |
+| `eth.syncing.highestBlock - eth.syncing.currentBlock` |  | Compares the current block of your node to the highest block. |
+| `eth.blockNumber` | `curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "eth_blockNumber","params": []}' localhost:8545` | Returns the latest block number processed by the node. |
+| `debug.setHead("0x"+((eth.getBlock('latest').number) - 1000).toString(16))` |  | Rewinds the blockchain to 1000 blocks prior. |
+| `admin.nodeInfo.enode` |  | Retrieves the public enode URL of the node. |
+| `eth.syncing.currentBlock * 100 / eth.syncing.highestBlock` |  | Calculates the remaining percentage for block synchronization. |
+| `eth.getBlock("latest").number` | `curl http://YourIP:8545 -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0", "id":1, "method":"bor_getSigners", "params":["0x98b3ea"]}'` | Queries the height of the latest Bor block. |
+|  | `curl http://YourIP:8545 -X POST -H "Content-Type: application/json" --data '{"method":"eth_chainId","params":[],"id":1,"jsonrpc":"2.0"}'` | Retrieves the `chainID`. |
+
+</TabItem>
+<TabItem value="heimdall">
+
+| Command | Description |
+| ------- | ----------- |
+| `curl localhost:26657/net_info?` | Returns the number of connected peers using `jq .result.n_peers`. |
+| `curl -s localhost:26657/status` | Retrieves Heimdall's current block height using `jq .result.sync_info.latest_block_height`. |
+| `curl localhost:26657/net_info` | Queries the node using its moniker with `grep moniker`. |
+| `curl -s localhost:26657/status` | Checks if Heimdall is in sync using `jq .result.sync_info.catching_up`. |
+| `curl -s localhost:26657/status` | Verifies Heimdall's sync status using `jq .result \| jq .sync_info`. |
+| `heimdalld unsafe-reset-all` | Resets the database in case of issues. |
+| `curl localhost:26657/status` | Provides comprehensive information about Heimdall. |
+
+</TabItem>
+</Tabs>
+
+## Node Management Commands
 
 | Description                           | Command                                        |
 | ------------------------------------- | ---------------------------------------------- |
@@ -34,7 +85,7 @@ This guide provides a curated list of common Linux commands and Polygon-specific
 | **Check Heimdall bridge logs**        | `tail -f heimdalld-bridge.log`                 |
 | **Check Bor logs**                    | `tail -f bor.log`                              |
 
-## Useful Commands
+## Useful Configuration Commands
 
 ### Sync Status of Heimdall
 
