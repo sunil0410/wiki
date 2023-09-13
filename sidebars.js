@@ -553,6 +553,8 @@ module.exports = {
         },
       ],
     },
+    "pos/pos-common-commands",
+    "pos/pos-errors",
     "pos/pos-faqs",
   ],
 
