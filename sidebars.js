@@ -472,7 +472,7 @@ module.exports = {
             "pos/operate/node/full-node-gcp",
           ],
         },
-        "pos/operate/node/archive-node",
+        "pos/operate/node/pos-erigon-node",
       ],
     },
     {
