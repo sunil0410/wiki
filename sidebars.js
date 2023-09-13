@@ -486,7 +486,7 @@ module.exports = {
         "pos/validator/kb/how-to",
         {
           type: "category",
-          label: "Run a Validator Node",
+          label: "Run a Validator",
           link: {
             type: "generated-index",
           },
@@ -508,9 +508,10 @@ module.exports = {
             "pos/validator/topup-heimdall-fee",
           ],
         },
+        "pos/validator/validator-performance-overview",
         {
           type: "category",
-          label: "Validator Issues",
+          label: "Troubleshooting",
           link: {
             type: "generated-index",
           },
@@ -519,8 +520,7 @@ module.exports = {
             "pos/validator/issues/reporting-issues",
           ],
         },
-        "pos/validator/validator-performance-overview",
-        "pos/validator/bloxroute",
+        //"pos/validator/bloxroute",
         //"maintain/glossary",
       ],
     },

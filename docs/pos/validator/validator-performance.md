@@ -1,7 +1,7 @@
 ---
 id: validator-performance-overview
 title: Validator Performance Framework
-sidebar_label: Validator Performance Framework
+sidebar_label: Monitor Your Validator Performance
 description: Learn about the validator performance metrics that help validators self-regulate.
 keywords:
   - docs
