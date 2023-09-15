@@ -1,8 +1,8 @@
 ---
 id: default-ports
-title: Default Ports For Nodes
-sidebar_label: Ports
-description: List of default ports used across Polygon PoS nodes.
+title: Default Ports for Nodes
+sidebar_label: Network Ports
+description: "A comprehensive list of default ports utilized by Polygon PoS nodes."
 keywords:
   - docs
   - polygon
@@ -13,30 +13,30 @@ keywords:
 image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-Here is a list of default ports used across Polygon nodes:
+This guide provides a detailed list of default ports used across Polygon nodes, including Bor and Heimdall. Understanding these ports is crucial for network configuration and effective communication between nodes.
 
-## Bor
+## Bor Node
 
-| ﻿Name                   | Port  | Tags                      | Description                                                                                                    |
-|------------------------|-------|---------------------------|----------------------------------------------------------------------------------------------------------------|
-| Network listening port | 30303 | public                    | Network listening port. Bor uses this port to connect to peers and sync                                        |
-| RPC server             | 8545  | can-be-public, internal   | RPC port to send transaction and get data from Bor. Heimdall uses this port to get Bor headers for checkpoints |
-| WS server              | 8546  | can-be-public, internal   | Websocket port                                                                                                 |
-| Graphql server         | 8547  | internal                  | Graphql port                                                                                                   |
-| Prometheus server      | 9091  | can-be-public, monitoring | Prometheus server APIs as datasource in Grafana. It can be mapped to 80/443 through nginx reverse proxy        |
-| Grafana server         | 3001  | can-be-public, monitoring | Grafana web sever. It can be mapped to 80/443 through nginx reverse proxy                                      |
-| Pprof server           | 7071  | internal, monitoring      | Pprof server to collect metrics from Bor                                                                       |
-| UDP discovery          | 30301 | can-be-public, internal   | Bootnode default port (for peer discovery)                                                                     |
+| Name                    | Port  | Tags                      | Description                                                                                                    |
+|-------------------------|-------|---------------------------|----------------------------------------------------------------------------------------------------------------|
+| Network Listening Port  | 30303 | Public                    | Port used by Bor for peer connections and synchronization.                                                     |
+| RPC Server              | 8545  | Can be Public, Internal   | RPC port for sending transactions and fetching data. Heimdall uses this port to obtain Bor headers.             |
+| WebSocket Server        | 8546  | Can be Public, Internal   | WebSocket port for real-time updates.                                                                           |
+| GraphQL Server          | 8547  | Internal                  | GraphQL port for querying data.                                                                                 |
+| Prometheus Server       | 9091  | Can be Public, Monitoring | Prometheus APIs for Grafana data source. Can be mapped to ports 80/443 via an Nginx reverse proxy.              |
+| Grafana Server          | 3001  | Can be Public, Monitoring | Grafana web server. Can be mapped to ports 80/443 via an Nginx reverse proxy.                                   |
+| Pprof Server            | 7071  | Internal, Monitoring      | Pprof server for collecting Bor metrics.                                                                        |
+| UDP Discovery           | 30301 | Can be Public, Internal   | Default port for Bootnode peer discovery.                                                                       |
 
-## Heimdall
+## Heimdall Node
 
-| ﻿Name                   | Port  | Tags                      | Description                                                                                                    |
-|------------------------|-------|---------------------------|----------------------------------------------------------------------------------------------------------------|
-| Network listening port | 30303 | public                    | Network listening port. Bor uses this port to connect to peers and sync                                        |
-| RPC server             | 8545  | can-be-public, internal   | RPC port to send transaction and get data from Bor. Heimdall uses this port to get Bor headers for checkpoints |
-| WS server              | 8546  | can-be-public, internal   | Websocket port                                                                                                 |
-| Graphql server         | 8547  | internal                  | Graphql port                                                                                                   |
-| Prometheus server      | 9091  | can-be-public, monitoring | Prometheus server APIs as datasource in Grafana. It can be mapped to 80/443 through nginx reverse proxy        |
-| Grafana server         | 3001  | can-be-public, monitoring | Grafana web sever. It can be mapped to 80/443 through nginx reverse proxy                                      |
-| Pprof server           | 7071  | internal, monitoring      | Pprof server to collect metrics from Bor                                                                       |
-| UDP discovery          | 30301 | can-be-public, internal   | Bootnode default port (for peer discovery)                                                                     |
+| Name                    | Port  | Tags                      | Description                                                                                                    |
+|-------------------------|-------|---------------------------|----------------------------------------------------------------------------------------------------------------|
+| Network Listening Port  | 30303 | Public                    | Port used by Heimdall for peer connections and synchronization.                                                 |
+| RPC Server              | 8545  | Can be Public, Internal   | RPC port for sending transactions and fetching data. Heimdall uses this port to obtain Bor headers.             |
+| WebSocket Server        | 8546  | Can be Public, Internal   | WebSocket port for real-time updates.                                                                           |
+| GraphQL Server          | 8547  | Internal                  | GraphQL port for querying data.                                                                                 |
+| Prometheus Server       | 9091  | Can be Public, Monitoring | Prometheus APIs for Grafana data source. Can be mapped to ports 80/443 via an Nginx reverse proxy.              |
+| Grafana Server          | 3001  | Can be Public, Monitoring | Grafana web server. Can be mapped to ports 80/443 via an Nginx reverse proxy.                                   |
+| Pprof Server            | 7071  | Internal, Monitoring      | Pprof server for collecting Heimdall metrics.                                                                   |
+| UDP Discovery           | 30301 | Can be Public, Internal   | Default port for Bootnode peer discovery.                                                                       |

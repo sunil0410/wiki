@@ -22,10 +22,6 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 :::
 
----
-
-## Overview
-
 Python is one of the most versatile programming languages; from researchers running their test models to developers using it in heavy production environments, it has use cases in every possible technical field.
 
 In this tutorial, you will learn how to use [Brownie](https://eth-brownie.readthedocs.io/en/latest/index.html#brownie) framework to write and deploy a smart contract by leveraging [QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide) testnet nodes for Polygon.

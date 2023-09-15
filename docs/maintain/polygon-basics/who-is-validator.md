@@ -61,10 +61,10 @@ See [Rewards](/docs/pos/design/validator/rewards).
 
 ## Setting up a Validator node
 
-See [Validate](/docs/pos/operate/validator/validator-index).
+See [Validate](/docs/pos/validator/validator-index).
 
 ## See Also
 
-* [Validator Responsibilities](/docs/pos/operate/validator/validator-responsibilities)
-* [Validate](/docs/pos/operate/validator/validator-index)
-* [Validator FAQ](/docs/pos/operate/validator/faq/validator-faq)
+* [Validator Responsibilities](/docs/pos/validator/validator-responsibilities)
+* [Validate](/docs/pos/validator/validator-index)
+* [Validator FAQ](/docs/pos/validator/faq/validator-faq)

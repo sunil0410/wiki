@@ -1,7 +1,7 @@
 ---
 id: matic-faucet
 title: Polygon Faucet
-sidebar_label: Test Faucet
+sidebar_label: Get Test Tokens
 description: Request test tokens on the Mumbai, Goerli or zkEVM Testnet using Polygon, Alchemy, and Quicknode.
 keywords:
   - docs

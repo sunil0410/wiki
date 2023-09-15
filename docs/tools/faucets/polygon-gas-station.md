@@ -1,7 +1,7 @@
 ---
 id: polygon-gas-station
 title: Polygon Gas Station
-sidebar_label: Polygon Gas Station
+sidebar_label: Gas Station
 description: Polygon Gas Station aims to help dApp developers with gas price recommendations.
 keywords:
   - docs

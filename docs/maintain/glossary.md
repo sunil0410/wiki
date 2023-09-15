@@ -39,7 +39,7 @@ See also:
 
 A commission is the percentage of the rewards taken by [validators](#validator) from the [delegators](#delegator) who stake with the validators.
 
-See also [Validator Commission Operations](/docs/pos/operate/validator/validator-commission-operations).
+See also [Validator Commission Operations](/docs/pos/validator/validator-commission-operations).
 
 ## Delegator
 
@@ -103,7 +103,7 @@ See also [Key Management](validator/core-components/key-management.md).
 
 ## Validator
 
-Validators [stake their MATIC tokens](/docs/pos/operate/validator/validator-staking-operations) via staking contracts deployed on the Ethereum mainnet and are running both the [Heimdall](#heimdall) node and the [Bor](#bor) node to commit the network checkpoints to the Ethereum mainnet and to produce blocks on the network.
+Validators [stake their MATIC tokens](/docs/pos/validator/validator-staking-operations) via staking contracts deployed on the Ethereum mainnet and are running both the [Heimdall](#heimdall) node and the [Bor](#bor) node to commit the network checkpoints to the Ethereum mainnet and to produce blocks on the network.
 
 A validator node is only open to its [sentry](#sentry) node and closed to the rest of the network.
 

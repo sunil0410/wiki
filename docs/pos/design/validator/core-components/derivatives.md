@@ -43,6 +43,6 @@ The exchange rate is calculated as per the formula:
 
 `unStakeClaimTokens`: Once the withdrawal period is over, the delegators who sold their shares can claim their MATIC tokens.
 
-`updateCommissionRate`: Updates the commission % for the validator. See also [Validator Commission Operations](/docs/pos/operate/validator/validator-commission-operations).
+`updateCommissionRate`: Updates the commission % for the validator. See also [Validator Commission Operations](/docs/pos/validator/validator-commission-operations).
 
 `updateRewards`: When a validator gets rewards for submitting a [checkpoint](/docs/maintain/glossary#checkpoint-transaction), this function is called for disbursements of rewards between the validator and delegators.

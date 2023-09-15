@@ -1,7 +1,7 @@
 ---
 id: how-to
-title: Additional Prerequisites
-sidebar_label: Additional Prerequisites
+title: Additional Node Prerequisites
+sidebar_label: System Requirements
 description: Polygon validator tutorials
 keywords:
   - docs
@@ -66,7 +66,7 @@ sudo dpkg -i rabbitmq-server_3.10.8-1_all.deb
     | **Install Ansible** | No | Yes (only on one machine) | No |
     | **Install Bash** | No | No | Yes |
     | **Run Build Essential** | Yes | No | No |
-    | **Node Setup** | [Using Binaries](/pos/operate/validator/run-validator.md) | [Using Ansible](/pos/operate/validator/run-validator.md) | [Using Packages](/pos/operate/validator/run-validator.md) |
+    | **Node Setup** | [Using Binaries](/pos/validator/run-validator.md) | [Using Ansible](/pos/validator/run-validator.md) | [Using Packages](/pos/validator/run-validator.md) |
 
 2. Once your Sentry and Validator nodes are synced and running, head over to our [Discord server](https://discord.com/invite/0xPolygon) and ask the community to health-check your nodes. You may check the logs by using the following commands:
 

@@ -136,15 +136,15 @@ module.exports = {
             from: '/docs/operate/full-node-deployment',
           },
           {
-            to: '/docs/pos/operate/node/archive-node',
+            to: '/docs/pos/operate/node/erigon-client',
             from: '/docs/operate/erigon-client',
           },
           {
-            to: '/docs/pos/operate/node/archive-node',
+            to: '/docs/pos/operate/node/erigon-client',
             from: '/docs/operate/archive-node',
           },
           {
-            to: '/docs/pos/operate/node/archive-node',
+            to: '/docs/pos/operate/node/erigon-client',
             from: '/docs/operate/setup-archive-node',
           },
           //pos operate
@@ -173,7 +173,7 @@ module.exports = {
             from: '/docs/operate/snapshot-instructions-heimdall-bor',
           },
           {
-            to: '/docs/pos/operate/validator/validator-node-system-requirements',
+            to: '/docs/pos/validator/validator-node-system-requirements',
             from: '/docs/operate/technical-requirements',
           },
           //faqs
@@ -406,8 +406,8 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/pos/getting-started',
-              label: 'PoS Mainnet',
+              href: '/docs/pos/',
+              label: 'PoS',
               target: '_self',
               rel: null,
             },
@@ -418,13 +418,13 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/supernets',
+              href: '/docs/supernets/',
               label: 'Supernets',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/miden',
+              href: '/docs/miden/',
               label: 'Miden',
               target: '_self',
               rel: null,
@@ -453,12 +453,6 @@ module.exports = {
           label: "Apps & Tools",
           position: "left",
           items: [
-            {
-              href: '/docs/tools',
-              label: 'General',
-              target: '_self',
-              rel: null,
-            },
             {
               href: '/docs/tools/matic-js/get-started',
               label: 'Matic.js',
@@ -524,7 +518,7 @@ module.exports = {
           rel: null,
         },
         {
-          href: "https://github.com/maticnetwork",
+          href: "https://github.com/0xPolygon",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",

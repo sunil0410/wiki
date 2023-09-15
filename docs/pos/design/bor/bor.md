@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Bor Architecture
 
-Polygon PoS mainnet uses dual-consensus architecture on the Polygon Network to optimise for speed and decentralisation.
+Polygon PoS uses dual-consensus architecture on the Polygon Network to optimise for speed and decentralisation.
 
 ## Architecture
 

@@ -97,7 +97,7 @@ Yes, Supernets are EVM compatible and support Ethereum libraries such as [Web3.j
 
 ## Do Supernets address the need for large blockspace requirements?
 
-Yes, Supernets are designed to meet the need for large blockspace requirements by providing a highly scalable, customizable blockchain solution. Developers can create application-specific blockchains that cater to their unique needs by extending the blockspace of a rootchain. The PolyBFT consensus mechanism used by Supernets is specifically designed to provide high throughput, low latency, and instant network finality, making it ideal for a wide range of applications already on Polygon PoS mainnet.
+Yes, Supernets are designed to meet the need for large blockspace requirements by providing a highly scalable, customizable blockchain solution. Developers can create application-specific blockchains that cater to their unique needs by extending the blockspace of a rootchain. The PolyBFT consensus mechanism used by Supernets is specifically designed to provide high throughput, low latency, and instant network finality, making it ideal for a wide range of applications already on Polygon PoS.
 
 ## Can the native bridge be deployed on any chain?
 

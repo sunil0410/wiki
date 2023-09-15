@@ -1,8 +1,8 @@
 ---
 id: rpc-endpoints
-title: Network Endpoints
-sidebar_label: Endpoints
-description: Network endpoints for Polyon PoS Mainnet and Mumbai Testnet.
+title: RPC Endpoints
+sidebar_label: RPC Endpoints
+description: "Network endpoints for Polygon PoS Mainnet and Mumbai Testnet."
 keywords:
   - docs
   - polygon
@@ -18,63 +18,61 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This index guide contains network details for the Polygon Mumbai testnet and Polygon PoS Mainnet and
-lists their associated RPC and node endpoints.
+This guide provides an index of network details for the Polygon Mumbai Testnet and Polygon PoS Mainnet, including their associated RPC and node endpoints.
+
+## Network Details
 
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'PoS Mainnet', value: 'mainnet', },
-    { label: 'Mumbai Testnet', value: 'mumbai', },
-  ]
-}>
+    { label: 'PoS Mainnet', value: 'mainnet' },
+    { label: 'Mumbai Testnet', value: 'mumbai' },
+  ]}
+>
+
 <TabItem value="mumbai">
 
-Mumbai Testnet replicates the Polygon Mainnet and is used for testing. Users can obtain
-testnet tokens from the [faucet](https://faucet.polygon.technology/).
-Testnet tokens are valueless and are different from value-bearing assets like MATIC.
-This allows developers or network maintainers to test configurations and experiment implementations.
+The Mumbai Testnet serves as a replica of the Polygon Mainnet and is primarily used for testing. Obtain testnet tokens from the [faucet](https://faucet.polygon.technology/). Note that these tokens hold no value and differ from MATIC.
 
-| Properties                         | Network Details                                                  |
-| ---------------------------------- | ---------------------------------------------------------------- |
-| NetworkName                        | **Mumbai**                                                       |
-| ParentChain                        | **[Goërli](https://goerli.net/)**                                |
-| chainId                            | `80001`                                                          |
-| Gas Token                          | [MATIC](gas-token)                                               |
-| Gas Station                        | [Mumbai Gas Station](https://gasstation-mumbai.matic.today/v2) (learn more [here](https://docs.polygon.technology/docs/develop/tools/polygon-gas-station/))                                      |
-| RPC Endpoint                       | [https://rpc-mumbai.matic.today](https://rpc-mumbai.matic.today)         |
-| Node Endpoint                      | [wss://rpc-mumbai.matic.today](wss://rpc-mumbai.matic.today)             |
-| Heimdall API                       | [https://heimdall-api-testnet.polygon.technology](https://heimdall-api-testnet.polygon.technology)     |
-| Block Explorer                     | [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com/)       |
+| Properties       | Network Details                                                                                     |
+| ---------------- | -------------------------------------------------------------------------------------------------- |
+| Network Name     | **Mumbai**                                                                                          |
+| Parent Chain     | **[Goërli](https://goerli.net/)**                                                                   |
+| Chain ID         | `80001`                                                                                            |
+| Gas Token        | [MATIC](gas-token)                                                                                  |
+| Gas Station      | [Mumbai Gas Station](https://gasstation-mumbai.matic.today/v2)                                       |
+| RPC Endpoint     | [https://rpc-mumbai.matic.today](https://rpc-mumbai.matic.today)                                     |
+| Node Endpoint    | [wss://rpc-mumbai.matic.today](wss://rpc-mumbai.matic.today)                                        |
+| Heimdall API     | [https://heimdall-api-testnet.polygon.technology](https://heimdall-api-testnet.polygon.technology)   |
+| Block Explorer   | [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com/)                                   |
 
-:::note More details
+:::note Additional Information
 
-See the following [**JSON data**](https://static.polygon.technology/network/testnet/mumbai/index.json) containing
-network details.
+For more details, refer to this [**JSON data**](https://static.polygon.technology/network/testnet/mumbai/index.json).
 
 :::
 
 </TabItem>
+
 <TabItem value="mainnet">
 
-The native token of the Polygon PoS is MATIC and is used for gas.
+The native token for the Polygon PoS Mainnet is MATIC, which is used for transaction fees.
 
-| Properties                         | Network Details                                                  |
-| ---------------------------------- | ---------------------------------------------------------------- |
-| NetworkName                        | **Polygon**                                                      |
-| ParentChain                        | **Ethereum**                                                     |
-| chainId                            | `137`                                                            |
-| Gas Token                          | MATIC                                               |
-| Gas Station                        | [PolygonScan Gas Tracker (**recommended**)](https://polygonscan.com/gastracker) or [Matic Network Gas Station](https://gasstation-mainnet.matic.network/v2) (learn more [here](https://docs.polygon.technology/docs/develop/tools/polygon-gas-station/))                                                                       |
-| RPC Endpoint                       | [https://polygon-rpc.com/](https://polygon-rpc.com/)                     |
-| Node Endpoint                      | [wss://rpc-mainnet.matic.network](wss://rpc-mainnet.matic.network)       |
-| Heimdall API                       | [https://heimdall-api.polygon.technology](https://heimdall-api.polygon.technology) |
-| Block Explorer                     | [https://polygonscan.com/](https://polygonscan.com/)       |
+| Properties       | Network Details                                                                                     |
+| ---------------- | -------------------------------------------------------------------------------------------------- |
+| Network Name     | **Polygon**                                                                                         |
+| Parent Chain     | **Ethereum**                                                                                        |
+| Chain ID         | `137`                                                                                               |
+| Gas Token        | MATIC                                                                                               |
+| Gas Station      | [PolygonScan Gas Tracker](https://polygonscan.com/gastracker)                                        |
+| RPC Endpoint     | [https://polygon-rpc.com/](https://polygon-rpc.com/)                                                |
+| Node Endpoint    | [wss://rpc-mainnet.matic.network](wss://rpc-mainnet.matic.network)                                  |
+| Heimdall API     | [https://heimdall-api.polygon.technology](https://heimdall-api.polygon.technology)                   |
+| Block Explorer   | [https://polygonscan.com/](https://polygonscan.com/)                                                 |
 
-:::note More details
+:::note Additional Information
 
-See the following [**JSON data**](https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json)
-containing network details.
+For more details, refer to this [**JSON data**](https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json).
 
 :::
 
@@ -83,53 +81,42 @@ containing network details.
 
 ## RPC API Methods
 
-Developers can interact with on-chain data and send different types of transactions to
-the network by utilizing network endpoints. The APIs follow a JSON-RPC standard;
-JSON-RPC is a stateless, lightweight, remote procedure call (RPC) protocol that is
-commonly used when interacting with a blockchain network.
+Developers can interact with on-chain data and execute various types of transactions using network endpoints. These APIs adhere to the JSON-RPC standard, a stateless, lightweight remote procedure call (RPC) protocol.
 
-:::info Get started with RPC calls
+:::info Getting Started with RPC Calls
 
-Start by visiting the complete set of API documentation for standard
-[**Polygon JSON-RPC calls**](https://edge-docs.polygon.technology/docs/get-started/json-rpc-commands/).
+For a comprehensive list of API documentation, visit [**Polygon JSON-RPC calls**](https://edge-docs.polygon.technology/docs/get-started/json-rpc-commands/).
 
-If you want to get started with API requests that require no setup, fix failing requests, or,
-explore new methods on the Polygon network, try out the [**Composer App**](https://composer.alchemyapi.io?composer_state=%7B%22chain%22%3A2%2C%22network%22%3A401%2C%22methodName%22%3A%22eth_getBlockByNumber%22%2C%22paramValues%22%3A%5B%22latest%22%2Cfalse%5D%7D).
+To explore API requests without any setup, fix failing requests, or discover new methods on the Polygon network, try the [**Composer App**](https://composer.alchemyapi.io).
 
 :::
 
-A user can also run their own node when interacting with the Polygon PoS chain or utilize
-one of the public endpoints provided by infrastructure and API service providers to connect to
-the network. Dagger is the best way to get realtime updates from the chain as it provides a way
-for your dApps and backend system to get blockchain events in realtime over a socket or websocket.
-
 ### Infrastructure Providers
 
-Public RPCs may have traffic or rate-limits depending on usage. 
-You can sign up for a dedicated free RPC URL at the following:
+Public RPCs may have rate limits or traffic restrictions. For dedicated free RPC URLs, consider the following providers:
 
-* [Alchemy](https://www.alchemy.com/)
-* [Allnodes](https://polygon.publicnode.com)
-* [Ankr](https://www.ankr.com/)
-* [Blast (Bware Labs)](https://blastapi.io/)
-* [BlockPI](https://blockpi.io/)
-* [BlockSpaces](https://www.blockspaces.com/web3-infrastructure)
-* [Chainnodes](https://www.chainnodes.org/)
-* [Chainstack](https://chainstack.com/build-better-with-polygon/)
-* [DataHub (Figment)](https://datahub.figment.io)
-* [GetBlock](https://getblock.io/en/)
-* [Infura](https://infura.io)
-* [Moralis](https://moralis.io)
-* [NodeReal](https://nodereal.io)
-* [OnFinality](https://onfinality.io/)
-* [Pocket Network](https://www.portal.pokt.network/)
-* [QuickNode](https://www.quicknode.com/chains/matic)
-* [SettleMint](https://docs.settlemint.com/docs/polygon-connect-to-a-node)
-* [Tatum](https://tatum.io/)
-* [WatchData](https://docs.watchdata.io/blockchain-apis/polygon-api)
-* [NOWNodes](https://nownodes.io/nodes/polygon-matic)
-* [Kriptonio](https://kriptonio.com/)
-* [Chain49](https://chain49.com/)
-* [Chainbase](https://chainbase.com/)
+- [Alchemy](https://www.alchemy.com/)
+- [Allnodes](https://polygon.publicnode.com)
+- [Ankr](https://www.ankr.com/)
+- [Blast (Bware Labs)](https://blastapi.io/)
+- [BlockPI](https://blockpi.io/)
+- [BlockSpaces](https://www.blockspaces.com/web3-infrastructure)
+- [Chainnodes](https://www.chainnodes.org/)
+- [Chainstack](https://chainstack.com/build-better-with-polygon/)
+- [DataHub (Figment)](https://datahub.figment.io)
+- [GetBlock](https://getblock.io/en/)
+- [Infura](https://infura.io)
+- [Moralis](https://moralis.io)
+- [NodeReal](https://nodereal.io)
+- [OnFinality](https://onfinality.io/)
+- [Pocket Network](https://www.portal.pokt.network/)
+- [QuickNode](https://www.quicknode.com/chains/matic)
+- [SettleMint](https://docs.settlemint.com/docs/polygon-connect-to-a-node)
+- [Tatum](https://tatum.io/)
+- [WatchData](https://docs.watchdata.io/blockchain-apis/polygon-api)
+- [NOWNodes](https://nownodes.io/nodes/polygon-matic)
+- [Kriptonio](https://kriptonio.com/)
+- [Chain49](https://chain49.com/)
+- [Chainbase](https://chainbase.com/)
 
-View all public endpoints on [Alchemy's Chain Connect](https://www.alchemy.com/chain-connect/chain/polygon-pos) and [Chainlist](https://chainlist.org/?search=Polygon+Mainnet). 
+For a complete list of public endpoints, visit [Alchemy's Chain Connect](https://www.alchemy.com/chain-connect/chain/polygon-pos) and [Chainlist](https://chainlist.org/?search=Polygon+Mainnet).

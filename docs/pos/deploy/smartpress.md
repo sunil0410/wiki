@@ -1,8 +1,8 @@
 ---
 id: smartpress
 title: How to Deploy a Smart Contract Using SmartPress
-sidebar_label: How to Deploy a Smart Contract Using SmartPress
-description: "Learn how to deploy smart contracts on Polygon PoS mainnet using SmartPress."
+sidebar_label: Using SmartPress
+description: "Learn how to deploy smart contracts on Polygon PoS using SmartPress."
 keywords:
   - docs
   - matic
@@ -39,7 +39,7 @@ To create a new smart contract with SmartPress, follow these steps:
 
 To deploy your smart contract on Polygon PoS:
 
-1. After creation, connect your wallet and switch your network to either Mumbai testnet or Polygon PoS mainnet.
+1. After creation, connect your wallet and switch your network to either Mumbai testnet or Polygon PoS.
 2. Press the 'Deploy' button. If you lack transaction gas, use the provided faucet links to obtain some.
 
 ![Screenshot 2023-08-15 at 12 37 39 pm](https://github.com/crokau/wiki/assets/71380821/ea20889b-1b5e-44b7-ba9c-f208abf1e944)

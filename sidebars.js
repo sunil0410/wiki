@@ -6,12 +6,6 @@
  */
 
 module.exports = {
-  delegate: [
-    "delegate/delegate",
-    "delegate/delegator-faq",
-    "delegate/staking-faq",
-  ],
-
   /*
    *
    * *********************** Apps & Tools Section *************************
@@ -23,16 +17,73 @@ module.exports = {
    *
    */
 
-  tools: [
+  /*
+   *
+   * ************************* Governance Section *************************
+   *
+   * This section includes explainer guides and content on the PIP
+   * framework and PoS governance.
+   *
+   * **********************************************************************
+   *
+   */
+
+  govern: [
     {
       type: "html",
-      value: "Apps & Tools",
+      value: "Polygon Governance",
       className: "sidebar-title",
     },
-    "tools/index",
+    "governance/index",
     {
       type: "category",
-      label: "Wallets",
+      label: "Polygon Improvement Proposals (PIPs)",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "governance/pips/pips-overview",
+        "governance/pips/how-to-propose",
+        "governance/pips/pips-forum",
+        "governance/pips/pips-community-guidelines",
+      ],
+    },
+    "governance/governance-pos",
+  ],
+
+  /*
+   *
+   * ************************ PoS Section ********************************
+   *
+   * This section includes the official product documentation and
+   * developer guides for Polygon PoS Mainnet.
+   *
+   * **********************************************************************
+   *
+   */
+
+  pos: [
+    {
+      type: "html",
+      value: "Polygon PoS",
+      className: "sidebar-title",
+    },
+    "pos/index",
+    "pos/getting-started",
+    "pos/what-is-polygon-pos",
+    "tools/faucets/matic-faucet",
+    "pos/reference/rpc-endpoints",
+    "pos/reference/commit-chain-multisigs",
+    "pos/reference/mapped-tokens",
+    "tools/faucets/polygon-gas-station",
+    {
+      type: "html",
+      value: "Users",
+      className: "sidebar-title",
+    },
+    {
+      type: "category",
+      label: "Create an Account",
       link: {
         type: "generated-index",
       },
@@ -104,157 +155,21 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Faucets",
+      label: "Delegate Your Tokens",
       link: {
         type: "generated-index",
       },
       items: [
-        "tools/faucets/matic-faucet",
-        "tools/faucets/polygon-gas-station",
+        "delegate/delegate",
+        "delegate/delegator-faq",
+        "delegate/staking-faq",
       ],
     },
-    {
-      type: "category",
-      label: "Ethereum Tools",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/ethereum/remix",
-        "tools/ethereum/truffle",
-        "tools/ethereum/hardhat",
-        "tools/ethereum/replit",
-      ],
-    },
-    {
-      type: "category",
-      label: "Oracles",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/oracles/getting-started",
-        "tools/oracles/api3",
-        {
-          type: "category",
-          label: "Band Protocol",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "tools/oracles/bandchain",
-            "tools/oracles/bandstandarddataset",
-          ],
-        },
-        "tools/oracles/chainlink",
-        "tools/oracles/optimisticoracle",
-        "tools/oracles/razor",
-        "tools/oracles/tellor",
-        "tools/oracles/umb",
-      ],
-    },
-    {
-      type: "category",
-      label: "Storage",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "tools/storage/ipfs",
-        "tools/storage/filecoinhelpers",
-        "tools/storage/crusthelpers",
-        "tools/storage/nftstorage",
-        //"pos/develop/nftstorage",
-      ],
-    },
-    {
-      type: "category",
-      label: "Data",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "The Graph",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "tools/data/the-graph/overview",
-            "tools/data/the-graph/graph-data",
-            "tools/data/the-graph/graph-entities",
-            "tools/data/the-graph/graph-queries",
-          ],
-        },
-        "tools/data/covalent",
-        "tools/data/parsiq",
-        //"pos/develop/dapp-fauna-polygon-react",
-      ],
-    },
-    {
-      type: "category",
-      label: "Frequently Asked Questions",
-      link: {
-        type: "generated-index",
-      },
-      items: ["tools/faqs/wallet-bridge-faq"],
-    },
-  ],
-
-  /*
-   *
-   * ************************* Governance Section *************************
-   *
-   * This section includes explainer guides and content on the PIP
-   * framework and PoS governance.
-   *
-   * **********************************************************************
-   *
-   */
-
-  govern: [
     {
       type: "html",
-      value: "Polygon Governance",
+      value: "Developers",
       className: "sidebar-title",
     },
-    "governance/index",
-    {
-      type: "category",
-      label: "Polygon Improvement Proposals (PIPs)",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "governance/pips/pips-overview",
-        "governance/pips/how-to-propose",
-        "governance/pips/pips-forum",
-        "governance/pips/pips-community-guidelines",
-      ],
-    },
-    "governance/governance-pos",
-  ],
-
-  /*
-   *
-   * ************************ PoS Mainnet Section *************************
-   *
-   * This section includes the official product documentation and
-   * developer guides for Polygon PoS Mainnet.
-   *
-   * **********************************************************************
-   *
-   */
-
-  pos: [
-    {
-      type: "html",
-      value: "Polygon PoS",
-      className: "sidebar-title",
-    },
-    //"pos/index",
-    "pos/getting-started",
     {
       type: "category",
       label: "System Design",
@@ -264,97 +179,119 @@ module.exports = {
       collapsed: true,
       items: [
         "pos/polygon-architecture",
-        "pos/design/gas-token",
+        /*
         {
           type: "category",
-          label: "Heimdall",
+          label: "Native Token",
           link: {
             type: "generated-index",
           },
-          collapsed: true,
           items: [
-            "pos/design/heimdall/overview",
+            "pos/design/token/gas-token",
+            "pos/design/token/pol",
+          ],
+        },
+        */
+        "governance/governance-pos",
+        {
+          type: "category",
+          label: "Consensus",
+          link: {
+            type: "generated-index",
+          },
+          items: [
             {
               type: "category",
-              label: "Core Concepts",
+              label: "Heimdall",
               link: {
                 type: "generated-index",
               },
+              collapsed: true,
               items: [
-                "pos/design/heimdall/peppermint",
-                "pos/design/heimdall/encoder",
-                "pos/design/heimdall/transactions",
-                "pos/design/heimdall/stdtx",
-                "pos/design/heimdall/types",
-                "pos/design/heimdall/validators",
-                "pos/design/heimdall/checkpoint",
-                "pos/design/heimdall/validator-key-management",
-                "pos/design/heimdall/antehandler",
+                "pos/design/heimdall/overview",
+                {
+                  type: "category",
+                  label: "Core Concepts",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: [
+                    "pos/design/heimdall/peppermint",
+                    "pos/design/heimdall/encoder",
+                    "pos/design/heimdall/transactions",
+                    "pos/design/heimdall/stdtx",
+                    "pos/design/heimdall/types",
+                    "pos/design/heimdall/validators",
+                    "pos/design/heimdall/checkpoint",
+                    "pos/design/heimdall/validator-key-management",
+                    "pos/design/heimdall/antehandler",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Modules",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: [
+                    "pos/design/heimdall/modules/auth",
+                    "pos/design/heimdall/modules/bank",
+                    //"pos/design/heimdall/modules/asance",
+                    "pos/design/heimdall/modules/staking",
+                    "pos/design/heimdall/modules/checkpoint",
+                    "pos/design/heimdall/modules/bor",
+                    "pos/design/heimdall/modules/topup",
+                    "pos/design/heimdall/modules/clerk",
+                    "pos/design/heimdall/modules/chainmanager",
+                  ],
+                },
               ],
             },
             {
               type: "category",
-              label: "Modules",
+              label: "Bor",
               link: {
                 type: "generated-index",
               },
+              collapsed: true,
               items: [
-                "pos/design/heimdall/modules/auth",
-                "pos/design/heimdall/modules/bank",
-                //"pos/design/heimdall/modules/asance",
-                "pos/design/heimdall/modules/staking",
-                "pos/design/heimdall/modules/checkpoint",
-                "pos/design/heimdall/modules/bor",
-                "pos/design/heimdall/modules/topup",
-                "pos/design/heimdall/modules/clerk",
-                "pos/design/heimdall/modules/chainmanager",
+                "pos/design/bor/overview",
+                "pos/design/bor/bor",
+                "pos/design/bor/core_concepts",
+                "pos/design/bor/consensus",
               ],
             },
-          ],
-        },
-        {
-          type: "category",
-          label: "Bor",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "pos/design/bor/overview",
-            "pos/design/bor/bor",
-            "pos/design/bor/core_concepts",
-            "pos/design/bor/consensus",
-          ],
-        },
-        {
-          type: "category",
-          label: "Validators",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "pos/design/validator/architecture",
-            "pos/design/validator/responsibilities",
-            "pos/design/validator/core-components/staking",
-            "maintain/polygon-basics/liquid-delegation",
-            "pos/design/validator/rewards",
             {
               type: "category",
-              label: "Core Components",
+              label: "Validators",
               link: {
                 type: "generated-index",
               },
+              collapsed: true,
               items: [
-                "pos/design/validator/core-components/heimdall-chain",
-                "pos/design/validator/core-components/bor-chain",
-                "pos/design/validator/core-components/checkpoint-mechanism",
-                "pos/design/validator/core-components/key-management",
-                "pos/design/validator/core-components/derivatives",
-                "pos/design/validator/core-components/proposers-producers-selection",
-                "pos/design/validator/core-components/proposer-bonus",
-                "pos/design/validator/core-components/transaction-fees",
-                "pos/design/validator/core-components/state-sync-mechanism",
+                "pos/design/validator/architecture",
+                "pos/design/validator/responsibilities",
+                "pos/design/validator/core-components/staking",
+                "maintain/polygon-basics/liquid-delegation",
+                "pos/design/validator/rewards",
+                {
+                  type: "category",
+                  label: "Core Components",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: [
+                    "pos/design/validator/core-components/heimdall-chain",
+                    "pos/design/validator/core-components/bor-chain",
+                    "pos/design/validator/core-components/checkpoint-mechanism",
+                    "pos/design/validator/core-components/key-management",
+                    "pos/design/validator/core-components/derivatives",
+                    "pos/design/validator/core-components/proposers-producers-selection",
+                    "pos/design/validator/core-components/proposer-bonus",
+                    "pos/design/validator/core-components/transaction-fees",
+                    "pos/design/validator/core-components/state-sync-mechanism",
+                  ],
+                },
               ],
             },
           ],
@@ -419,26 +356,151 @@ module.exports = {
             },
           ],
         },
-        "home/architecture/security-models",
+       // "home/architecture/security-models",
       ],
     },
     {
       type: "category",
-      label: "Deploy a Contract",
+      label: "Build a dApp",
       link: {
         type: "generated-index",
       },
       items: [
-        "pos/deploy/alchemy",
-        "pos/deploy/chainide",
-        "pos/deploy/chainstack",
-        "pos/deploy/getblock",
-        "pos/deploy/quicknode",
-        "pos/deploy/smartpress",
-        "pos/deploy/thirdweb",
+        {
+          type: "category",
+          label: "Deploy a Contract",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            {
+              type: "category",
+              label: "Ethereum Tools",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/ethereum/remix",
+                "tools/ethereum/truffle",
+                "tools/ethereum/hardhat",
+                "tools/ethereum/replit",
+              ],
+            },
+            {
+              type: "category",
+              label: "Service Providers",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "pos/deploy/alchemy",
+                "pos/deploy/chainide",
+                "pos/deploy/chainstack",
+                "pos/deploy/getblock",
+                "pos/deploy/quicknode",
+                "pos/deploy/smartpress",
+                "pos/deploy/thirdweb",
+              ],
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Integrate Real-World Data",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "tools/oracles/getting-started",
+            "tools/oracles/api3",
+            {
+              type: "category",
+              label: "Band Protocol",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/oracles/bandchain",
+                "tools/oracles/bandstandarddataset",
+              ],
+            },
+            "tools/oracles/chainlink",
+            "tools/oracles/optimisticoracle",
+            "tools/oracles/razor",
+            "tools/oracles/tellor",
+            "tools/oracles/umb",
+          ],
+        },
+        {
+          type: "category",
+          label: "Store Your Data",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "tools/storage/ipfs",
+            "tools/storage/filecoinhelpers",
+            "tools/storage/crusthelpers",
+            "tools/storage/nftstorage",
+            //"pos/develop/nftstorage",
+          ],
+        },
+        {
+          type: "category",
+          label: "Analyze Your Data",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            {
+              type: "category",
+              label: "The Graph",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "tools/data/the-graph/overview",
+                "tools/data/the-graph/graph-data",
+                "tools/data/the-graph/graph-entities",
+                "tools/data/the-graph/graph-queries",
+              ],
+            },
+            "tools/data/covalent",
+            "tools/data/parsiq",
+            //"pos/develop/dapp-fauna-polygon-react",
+          ],
+        },
+        /*
+        {
+          type: "category",
+          label: "Frequently Asked Questions",
+          link: {
+            type: "generated-index",
+          },
+          items: ["tools/faqs/wallet-bridge-faq"],
+        },
+        */
       ],
     },
     //"pos/develop/did-implementation",
+    {
+      type: "category",
+      label: "Core Contracts",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "pos/reference/contracts/genesis-contracts",
+        "pos/reference/contracts/stakingmanager",
+        "pos/reference/contracts/delegation",
+      ],
+    },
+    {
+      type: "html",
+      value: "Node Operators",
+      className: "sidebar-title",
+    },
     {
       type: "category",
       label: "Operate a Node",
@@ -447,79 +509,78 @@ module.exports = {
       },
       collapsed: true,
       items: [
-        "pos/operate/validator/validator-node-system-requirements",
-        "pos/operate/node/full-node-deployment",
-        "pos/operate/node/archive-node",
+        "pos/validator/validator-node-system-requirements",
         {
           type: "category",
-          label: "Run a Validator Node",
+          label: "Run a Full Node",
           link: {
             type: "generated-index",
           },
-          collapsed: true,
           items: [
-            "pos/operate/validator/kb/how-to",
-            "pos/operate/validator/run-validator",
-            {
-              type: "category",
-              label: "Validator Staking",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "pos/operate/validator/validator-staking-operations",
-                "pos/operate/validator/validator-commission-operations",
-                "pos/operate/validator/topup-heimdall-fee",
-              ],
-            },
-            {
-              type: "category",
-              label: "Validator Issues",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "pos/operate/validator/kb/known-issues",
-                "pos/operate/validator/issues/reporting-issues",
-              ],
-            },
-            "pos/operate/validator/validator-performance-overview",
-            "pos/operate/validator/bloxroute",
-            //"maintain/glossary",
+            "pos/operate/node/full-node-binaries",
+            "pos/operate/node/full-node-docker",
+            "pos/operate/node/full-node-ansible",
+            "pos/operate/node/full-node-packages",
+            "pos/operate/node/full-node-gcp",
           ],
         },
-        "pos/operate/frequent-node-commands",
+        "pos/operate/node/erigon-client",
       ],
     },
     {
       type: "category",
-      label: "Reference",
+      label: "Become a Validator",
       link: {
         type: "generated-index",
       },
       collapsed: true,
       items: [
-        "pos/reference/commit-chain-multisigs",
-        "pos/reference/mapped-tokens",
-        "pos/reference/rpc-endpoints",
-        "pos/reference/default-ports",
-        "pos/reference/snapshot-instructions-heimdall-bor",
+        "pos/validator/kb/how-to",
         {
           type: "category",
-          label: "Core Contracts",
+          label: "Run a Validator",
           link: {
             type: "generated-index",
           },
-          collapsed: true,
           items: [
-            "pos/reference/contracts/genesis-contracts",
-            "pos/reference/contracts/stakingmanager",
-            "pos/reference/contracts/delegation",
+            "pos/validator/run-validator/run-validator-binaries",
+            "pos/validator/run-validator/run-validator-ansible",
+            "pos/validator/run-validator/run-validator-packages",
           ],
         },
+        {
+          type: "category",
+          label: "Stake Your Validator",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "pos/validator/validator-staking-operations",
+            "pos/validator/validator-commission-operations",
+            "pos/validator/topup-heimdall-fee",
+          ],
+        },
+        "pos/validator/validator-performance-overview",
+        {
+          type: "category",
+          label: "Troubleshooting",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "pos/validator/kb/known-issues",
+            "pos/validator/issues/reporting-issues",
+          ],
+        },
+        //"pos/validator/bloxroute",
+        //"maintain/glossary",
       ],
     },
-    "pos/pos-faqs",
+      "pos/reference/snapshot-instructions-heimdall-bor",
+      "pos/reference/default-ports",
+      "pos/reference/pos-common-commands",
+      "pos/reference/pos-errors",
+      "pos/pos-faqs",
   ],
 
   /*
