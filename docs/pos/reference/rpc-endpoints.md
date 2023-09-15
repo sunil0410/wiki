@@ -1,7 +1,7 @@
 ---
 id: rpc-endpoints
-title: Network Endpoints
-sidebar_label: Endpoints
+title: RPC Endpoints
+sidebar_label: RPC Endpoints
 description: "Network endpoints for Polygon PoS Mainnet and Mumbai Testnet."
 keywords:
   - docs

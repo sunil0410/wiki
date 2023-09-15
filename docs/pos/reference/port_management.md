@@ -1,7 +1,7 @@
 ---
 id: default-ports
 title: Default Ports for Nodes
-sidebar_label: Ports
+sidebar_label: Network Ports
 description: "A comprehensive list of default ports utilized by Polygon PoS nodes."
 keywords:
   - docs

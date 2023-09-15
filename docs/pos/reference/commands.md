@@ -1,7 +1,7 @@
 ---
 id: pos-common-commands
 title: Common Commands
-sidebar_label: Commands
+sidebar_label: Node Commands
 description: "A guide to essential Linux and Polygon-specific commands for node operations."
 keywords:
   - docs

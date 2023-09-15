@@ -71,6 +71,11 @@ module.exports = {
     "pos/index",
     "pos/getting-started",
     "pos/what-is-polygon-pos",
+    "tools/faucets/matic-faucet",
+    "pos/reference/rpc-endpoints",
+    "pos/reference/commit-chain-multisigs",
+    "pos/reference/mapped-tokens",
+    "tools/faucets/polygon-gas-station",
     {
       type: "html",
       value: "Users",
@@ -361,7 +366,6 @@ module.exports = {
         type: "generated-index",
       },
       items: [
-        "tools/faucets/matic-faucet",
         {
           type: "category",
           label: "Deploy a Contract",
@@ -481,6 +485,24 @@ module.exports = {
     //"pos/develop/did-implementation",
     {
       type: "category",
+      label: "Core Contracts",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "pos/reference/contracts/genesis-contracts",
+        "pos/reference/contracts/stakingmanager",
+        "pos/reference/contracts/delegation",
+      ],
+    },
+    {
+      type: "html",
+      value: "Node Operators",
+      className: "sidebar-title",
+    },
+    {
+      type: "category",
       label: "Operate a Node",
       link: {
         type: "generated-index",
@@ -554,38 +576,11 @@ module.exports = {
         //"maintain/glossary",
       ],
     },
-    {
-      type: "category",
-      label: "Reference",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "pos/reference/commit-chain-multisigs",
-        "pos/reference/mapped-tokens",
-        "tools/faucets/polygon-gas-station",
-        "pos/reference/rpc-endpoints",
-        "pos/reference/default-ports",
-        "pos/reference/snapshot-instructions-heimdall-bor",
-        "pos/reference/pos-common-commands",
-        "pos/reference/pos-errors",
-        {
-          type: "category",
-          label: "Core Contracts",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "pos/reference/contracts/genesis-contracts",
-            "pos/reference/contracts/stakingmanager",
-            "pos/reference/contracts/delegation",
-          ],
-        },
-      ],
-    },
-    "pos/pos-faqs",
+      "pos/reference/snapshot-instructions-heimdall-bor",
+      "pos/reference/default-ports",
+      "pos/reference/pos-common-commands",
+      "pos/reference/pos-errors",
+      "pos/pos-faqs",
   ],
 
   /*
