@@ -15,7 +15,7 @@ export const firstRow = [
         title: "Become a Delegator",
         linkUrl: "/docs/delegate/delegate/",
         imageUrl: "/img/supernets/supernets-logo.png",
-        description: "Back network validators with MATIC and earn rewards as a delegator.",
+        description: "Back network validators and earn rewards as a delegator.",
     },
     {
         title: "Deploy a Contract",

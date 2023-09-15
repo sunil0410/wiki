@@ -2,7 +2,7 @@
 id: erigon-client
 title: How to Run an Erigon Client Node
 sidebar_label: Run an Erigon Node
-description: Using binaries or ansible to set up an archive node.
+description: "Learn how to set up an Erigon Client for Polygon PoS."
 keywords:
   - erigon
   - archive

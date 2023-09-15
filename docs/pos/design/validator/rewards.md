@@ -17,11 +17,11 @@ In Polygon, validators stake their MATIC tokens as collateral to work for the se
 
 To leverage Polygon's economics, you should either become a validator or a delegator.
 
-To be a [validator](/maintain/glossary.md#validator), you need to **run a full validator** node and stake MATIC. See [Validate](/pos/validator/validator-index).
+To be a validator, you need to **run a full validator** node and stake MATIC.
 
 Also check the [Validator Responsibilities](/pos/design/validator/responsibilities) page.
 
-To be a [delegator](/maintain/glossary.md#delegator), you only need to **delegate MATIC to a validator**. See [Delegate](/delegate/delegate).
+To be a delegator, you only need to **delegate MATIC to a validator**
 
 ## What is the incentive?
 
