@@ -71,11 +71,20 @@ module.exports = {
     "pos/index",
     "pos/getting-started",
     "pos/what-is-polygon-pos",
-    "tools/faucets/matic-faucet",
-    "pos/reference/rpc-endpoints",
-    "pos/reference/commit-chain-multisigs",
-    "pos/reference/mapped-tokens",
-    "tools/faucets/polygon-gas-station",
+    {
+      type: "category",
+      label: "General Reference",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "tools/faucets/matic-faucet",
+        "pos/reference/rpc-endpoints",
+        "pos/reference/commit-chain-multisigs",
+        "pos/reference/mapped-tokens",
+        "tools/faucets/polygon-gas-station",
+      ],
+    },
     {
       type: "html",
       value: "Users",
