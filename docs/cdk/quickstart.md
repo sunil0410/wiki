@@ -80,6 +80,11 @@ git clone https://github.com/Snapchain/zkValidium-quickstart.git
 cd zkValidium-quickstart
 ```
 
+Create the `.env` file by copying from the example:
+```bash
+cp .env.example .env
+```
+
 The repository includes these key files:
 
 - `Docker-compose.yml`: This Docker Compose file defines all the necessary containers to set up the CDK Validium. 
