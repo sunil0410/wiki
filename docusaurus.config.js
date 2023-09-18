@@ -22,6 +22,22 @@ module.exports = {
             to: '/',
             from: ['/en/latest', '/en/'],
           },
+          {
+            to: '/docs/category/general-reference/',
+            from: '/docs/operate/gas-token',
+          },
+          {
+            to: '/docs/category/general-reference/',
+            from: '/docs/operate/gas-token',
+          },
+          {
+            to: '/docs/category/general-reference/',
+            from: '/docs/operate/gas-token',
+          },
+          {
+            to: '/docs/category/general-reference/',
+            from: '/docs/operate/gas-token',
+          },
           // heimdall
           {
             to: '/docs/pos/design/heimdall/antehandler',
@@ -149,7 +165,7 @@ module.exports = {
           },
           //pos operate
           {
-            to: '/docs/pos/design/gas-token',
+            to: '/docs/category/general-reference/',
             from: '/docs/operate/gas-token',
           },
           {

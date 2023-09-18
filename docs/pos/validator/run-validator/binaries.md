@@ -61,7 +61,7 @@ There is limited space for accepting new validators. New validators can only joi
 
 ## Prerequisites
 
-* Two machines — one [sentry](/maintain/glossary.md#sentry) and one [validator](/maintain/glossary.md#validator).
+* Two machines — one sentry and one validator.
 * `build-essential` installed on both the sentry and the validator machines.
 
   To install:
