@@ -35,7 +35,7 @@ The PoS mechanism also acts as a mitigation to the data unavailability problem f
 
 ## Heimdall (validation layer)
 
-Heimdall layer handles the aggregation of blocks produced by Bor into a Merkle tree and publishing the Merkle root periodically to the root chain. The periodic publishing of snapshots of Bor are called checkpoints.
+Heimdall layer handles the aggregation of blocks produced by Bor into a Merkle tree and publishes the Merkle root periodically to the root chain. The periodic publishing of snapshots of Bor are called checkpoints.
 
 For every few blocks on Bor, a validator on the Heimdall layer:
 

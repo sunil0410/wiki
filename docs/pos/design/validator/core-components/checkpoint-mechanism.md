@@ -20,7 +20,7 @@ Polygon depends on the Ethereum Mainnet as its Layer 1 Settlement Layer. All sta
 
 :::
 
-Proposers for a checkpoint are initially selected via [Tendermint’s weighted round-robin algorithm](https://docs.tendermint.com/master/spec/consensus/proposer-selection.html). A further custom check is implemented based on the checkpoint submission success. This allows the Polygon system to decouple with Tendermint proposer selection and provides Polygon with the abilities like selecting a proposer only when the checkpoint transaction on the Ethereum mainnet succeeds or submitting a checkpoint transaction for the blocks belonging to previous failed checkpoints.
+Proposers for a checkpoint are initially selected via [Tendermint’s weighted round-robin algorithm](https://docs.tendermint.com/master/spec/consensus/proposer-selection.html). A further custom check is implemented based on the checkpoint submission success. This allows the Polygon system to decouple with Tendermint proposer selection and provides Polygon with abilities like selecting a proposer only when the checkpoint transaction on the Ethereum mainnet succeeds or submitting a checkpoint transaction for the blocks belonging to previous failed checkpoints.
 
 Successfully submitting a checkpoint on Tendermint is a 2-phase commit process:
 
