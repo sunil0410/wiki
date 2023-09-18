@@ -19,7 +19,7 @@ This section guides you through starting and running the validator node through 
 
 For the system requirements, see [Validator Node System Requirements](/pos/validator/validator-node-system-requirements.md).
 
-If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](/pos/validator/run-validator/run-validator-binaries.md).
+If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](/pos/validator/run-validator/binaries.md).
 
 :::caution
 

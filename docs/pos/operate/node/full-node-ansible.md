@@ -16,7 +16,7 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 An [Ansible playbook](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html) is used to
-configure and manage a full node. See the [Minimum Technical Requirements](technical-requirements.md) guide for the system requirements.
+configure and manage a full node. 
 
 ## Prerequisites
 

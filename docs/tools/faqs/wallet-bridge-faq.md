@@ -255,7 +255,7 @@ If you still have some remaining funds, transfer them immediately to a new walle
 As the Ethereum Network has Goerli as its test network, the Polygon Mainnet has Mumbai. All transactions on this test network will be indexed on the Mumbai Explorer.
 
 ## How can I swap my tokens for other tokens?
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#token-swap).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#token-swap).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/swap-token.mp4"></source>
@@ -270,7 +270,7 @@ If you are trying to swap tokens and it is taking too long, you could try the sa
 Only MATIC.
 
 ## How can I swap my token for gas?
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#swap-for-gas).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#swap-for-gas).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/swap-gas.mp4"></source>

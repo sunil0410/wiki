@@ -28,11 +28,11 @@ Please refer to our [System Requirements Guide](/pos/validator/validator-node-sy
 
 ### How to Set Up a Validator Node on the Mainnet?
 
-To set up a validator node on the mainnet, please refer to our [Getting Started Guide](/pos/validator/quick-start.md).
+To set up a validator node on the mainnet, please refer to our [Getting Started Guide](/pos/operate/node/full-node-binaries.md).
 
 ### How to Set Up a Non-Validating Node?
 
-To set up a non-validating node, check out our guide on [Running a Validator Node](/pos/validator/run-validator).
+To set up a non-validating node, check out our guide on [Running a Validator Node](/pos/operate/node/full-node-binaries.md).
 
 ### What Ports Need to Be Open on the Sentry Node?
 

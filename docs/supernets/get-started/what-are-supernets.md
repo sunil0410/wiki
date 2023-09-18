@@ -82,7 +82,7 @@ Supernets cloud deployment options also come with a range of features and capabi
 :::note Check out the local cloud deployment options
 
 Get started with deploying a local private supernet on the cloud by checking out our cloud deployment guides
-available [<ins>here</ins>](/docs/supernets/operate/deploy-cloud.md).
+available [<ins>here</ins>](/supernets/operate/deploy/index.md#cloud-deployments).
 
 :::
 
