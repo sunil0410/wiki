@@ -56,4 +56,4 @@ This documentation consists of two high-level sections:
 - [Miden assembly](/miden/user_docs/assembly/main.md) which provides a detailed description of Miden assembly language, which is the native language of Miden VM.
 - [Miden Standard Library](/miden/user_docs/stdlib/main.md) which provides descriptions of all procedures available in Miden Standard Library.
 
-For info on how to run programs on Miden VM, please refer to the [usage](/miden/usage_docs/usage.md) section in the introduction.
+For info on how to run programs on Miden VM, please refer to the [usage](/miden/user_docs/usage.md) section in the introduction.

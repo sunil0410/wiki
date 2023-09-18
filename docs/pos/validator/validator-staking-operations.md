@@ -19,7 +19,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Full node set up
 
-Your validator node fully set up and synced. See also: [Run a Validator Node](run-validator.md)
+Your validator node fully set up and synced. See also: [Run a Validator Node](/pos/validator/run-validator/binaries.md)
 
 ### Account setup
 
