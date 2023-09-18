@@ -507,7 +507,7 @@ module.exports = {
     },
     {
       type: "html",
-      value: "Node Operators",
+      value: "Operators",
       className: "sidebar-title",
     },
     {
