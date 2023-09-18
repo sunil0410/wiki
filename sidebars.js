@@ -65,7 +65,7 @@ module.exports = {
   pos: [
     {
       type: "html",
-      value: "Polygon PoS",
+      value: "Introduction",
       className: "sidebar-title",
     },
     "pos/index",
