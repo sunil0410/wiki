@@ -281,7 +281,7 @@ module.exports = {
                 "pos/design/validator/architecture",
                 "pos/design/validator/responsibilities",
                 "pos/design/validator/core-components/staking",
-                "maintain/polygon-basics/liquid-delegation",
+                //"maintain/polygon-basics/liquid-delegation",
                 "pos/design/validator/rewards",
                 {
                   type: "category",
