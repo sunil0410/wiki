@@ -15,18 +15,12 @@ keywords:
 
 ## Prerequisites
 
-* Two machines — one [sentry](/maintain/glossary.md#sentry) and one [validator](/maintain/glossary.md#validator).
+* Two machines — one sentry and one validator.
 
 * Bash is installed on both the sentry and the validator machines.
 
 * RabbitMQ installed on both the sentry and the validator machines.
   See [Downloading and Installing RabbitMQ](https://www.rabbitmq.com/download.html).
-
-:::info
-
-Please follow the steps on [<ins>bloXroute instructions</ins>](/maintain/validate/bloxroute.md) to connect your nodes to the bloXroute gateways.
-
-:::
 
 ## Overview
 
@@ -403,7 +397,7 @@ Save the changes in `/var/lib/bor/config.toml`.
 On Polygon, it is recommended that you keep the owner and signer keys different.
 
 * Signer — the address that signs the
-  [checkpoint transactions](/docs/maintain/glossary.md#checkpoint-transaction). The recommendation is to keep at least 1 ETH on the signer address.
+  checkpoint transaction. The recommendation is to keep at least 1 ETH on the signer address.
 * Owner — the address that does the staking transactions. The recommendation is to keep the MATIC
   tokens on the owner address.
 

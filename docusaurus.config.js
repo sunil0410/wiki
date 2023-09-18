@@ -132,23 +132,23 @@ module.exports = {
           },
           //pos node operate
           {
-            to: '/docs/pos/operate/node/full-node-deployment',
+            to: '/docs/pos/operate/node/full-node-binaries',
             from: '/docs/operate/full-node-binaries',
           },
           {
-            to: '/docs/pos/operate/node/full-node-deployment',
+            to: '/docs/pos/operate/node/full-node-binaries',
             from: '/docs/operate/full-node-docker',
           },
           {
-            to: '/docs/pos/operate/node/full-node-deployment',
+            to: '/docs/pos/operate/node/full-node-binaries',
             from: '/docs/operate/full-node-gcp',
           },
           {
-            to: '/docs/pos/operate/node/full-node-deployment',
+            to: '/docs/pos/operate/node/full-node-binaries',
             from: '/docs/operate/full-node',
           },
           {
-            to: '/docs/pos/operate/node/full-node-deployment',
+            to: '/docs/pos/operate/node/full-node-binaries',
             from: '/docs/operate/full-node-deployment',
           },
           {

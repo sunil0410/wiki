@@ -39,7 +39,7 @@ Metamask, Coinbase, Bitski Wallet, Venly and WalletConnect are the currently sup
 There are many reasons why this might be happening. We suggest that you **try another time**, **use another browser** or, if any of these doesn’t help, **[contact our support team](https://support.polygon.technology/support/home)**.
 
 ## How can I deposit Funds from Ethereum to Polygon using Polygon Wallet Suite.
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#depositing-funds-from-ethereum-to-polygon).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#depositing-funds-from-ethereum-to-polygon).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/deposit/deposit-polygon-wallet.mp4"></source>
@@ -47,7 +47,7 @@ Please watch the video below or follow [this tutorial](/docs/develop/wallets/pol
 </video>
 
 ## How can I withdraw funds from Polygon to Ethereum via PoS Bridge using Polygon Wallet Suite?
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#withdrawing-funds-from-polygon-back-to-ethereum-on-pos-bridge).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#withdrawing-funds-from-polygon-back-to-ethereum-on-pos-bridge).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/pos/withdraw-polygon-wallet.mp4"></source>
@@ -55,7 +55,7 @@ Please watch the video below or follow [this tutorial](/docs/develop/wallets/pol
 </video>
 
 ## How to add a new or custom token to Polygon Wallet Token list?
-Please follow  [this tutorial](/docs/faq/adding-a-custom-token).
+Please follow [this tutorial](/faq/adding-a-custom-token).
 
 ## How do I find the token contract?
 
@@ -75,7 +75,7 @@ Then, add the relevant contract address, symbol, and decimal precision. Contract
 
 ## How can I add Polygon Mainnet on Metamask?
 
-Check [this tutorial](/docs/tools/wallets/metamask/config-polygon-on-metamask).
+Check [this tutorial](/tools/wallets/metamask/config-polygon-on-metamask).
 
 ## My token is not visible in the list. Who should I contact?
 

@@ -18,7 +18,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 This guide will walk you through running a Polygon validator node from packages.
 
 For system requirements,
-follow the [Validator Node System Requirements](validator-node-system-requirements.md) guide.
+follow the [Validator Node System Requirements](/pos/validator/validator-node-system-requirements.md) guide.
 
 :::tip Snapshots
 Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
@@ -97,11 +97,6 @@ There is limited space for accepting new validators. New validators can only joi
   Check more information about downloading and installing RabbitMQ [<ins>here</ins>](https://www.rabbitmq.com/download.html).
 
   :::
-
-
-:::info
-Please follow the steps on [<ins>bloXroute instructions</ins>](/maintain/validate/bloxroute.md) to connect your nodes to the bloXroute gateways.
-:::
 
 ## Overview
 

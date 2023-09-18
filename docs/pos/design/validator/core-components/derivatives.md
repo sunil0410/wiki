@@ -13,7 +13,7 @@ slug: derivatives
 image: https://wiki.polygon.technology/img/polygon-logo.png
 ---
 
-Polygon supports [delegation](/docs/maintain/glossary#delegator) via validator shares. By using this design, it is easier to distribute rewards and slash with scale on the Ethereum mainnet contracts without much computation.
+Polygon supports delegation via validator shares. By using this design, it is easier to distribute rewards and slash with scale on the Ethereum mainnet contracts without much computation.
 
 Delegators delegate by purchasing shares of a finite pool from validators. Each validator has their own validator share token.
 
@@ -45,4 +45,4 @@ The exchange rate is calculated as per the formula:
 
 `updateCommissionRate`: Updates the commission % for the validator. See also [Validator Commission Operations](/docs/pos/validator/validator-commission-operations).
 
-`updateRewards`: When a validator gets rewards for submitting a [checkpoint](/docs/maintain/glossary#checkpoint-transaction), this function is called for disbursements of rewards between the validator and delegators.
+`updateRewards`: When a validator gets rewards for submitting a checkpoint, this function is called for disbursements of rewards between the validator and delegators.

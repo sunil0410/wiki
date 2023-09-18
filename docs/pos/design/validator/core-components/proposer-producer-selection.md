@@ -17,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Block Producers for the BOR layer, are a committee selected from the Validators pool on the basis of their stake which happens at regular intervals. These intervals are decided by the Validator's governance with regards to dynasty and network.
 
-The ratio of [stake](/docs/maintain/glossary.md#staking) specifies the probability to be selected as a member of [block producers](/docs/maintain/glossary.md#block-producer) committee.
+The ratio of stake specifies the probability to be selected as a member of block producers committee.
 
 ## Selection Process
 

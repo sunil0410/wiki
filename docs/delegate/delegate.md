@@ -16,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to Delegate
 
-This is a step-by-step guide to help you become a [delegator](/docs/maintain/glossary.md#delegator) on the Polygon Network.
+This is a step-by-step guide to help you become a delegator on the Polygon Network.
 
 The only prerequisite is to have your MATIC tokens and ETH on the Ethereum mainnet address.
 
@@ -128,7 +128,7 @@ This will withdraw your rewards from the validator and your entire stake from th
 
 Your withdrawn rewards will show up immediately on your Ethereum account.
 
-Your withdrawn stake funds will be locked for 80 [checkpoints](/docs/maintain/glossary.md#checkpoint-transaction).
+Your withdrawn stake funds will be locked for 80 checkpoints.
 
 <div align="center">
 <img align="center" src={useBaseUrl("/img/staking/unbond.png")} width="500" />

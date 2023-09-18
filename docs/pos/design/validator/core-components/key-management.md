@@ -27,7 +27,7 @@ The signer address's private key must be located on the machine running the vali
 
 The signer key cannot manage staking, rewards, or delegations.
 
-The validator must keep ETH on the signer address on the Ethereum mainnet to send [checkpoints](/docs/maintain/glossary.md#checkpoint-transaction).
+The validator must keep ETH on the signer address on the Ethereum mainnet to send checkpoints.
 
 ## Owner Key
 
