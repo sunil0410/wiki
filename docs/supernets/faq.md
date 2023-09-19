@@ -58,8 +58,6 @@ Before diving into the documentation, please keep the following points in mind:
 
 Supernets are a product suite; a more advanced and feature-rich version of the Edge client that are specifically designed for building and deploying sovereign blockchains. It includes additional tools, features, and optimizations that make it easier to develop and deploy blockchain applications, while addressing the limitations of the legacy Edge client. Additionally, because the legacy Edge client will no longer be supported, developers are encouraged to transition to Supernets for ongoing support and development.
 
-In addition, please check out the [why Supernets document](/docs/supernets/get-started/why-supernets.md) for more context.
-
 ## What are some use cases for Supernets?
 
 Supernets are highly flexible and customizable blockchain platforms that can be used to create tailored solutions for a wide range of use cases. Here are some examples of potential use cases for Supernets:

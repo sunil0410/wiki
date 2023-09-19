@@ -14,7 +14,7 @@ image: https://wiki.polygon.technology/img/polygon-logo.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-For information on what a [signer address](/docs/maintain/glossary.md#signer-address) is, see
+For information on what a signer address is, see
 [Key Management](/docs/pos/design/validator/core-components/key-management).
 
 ## Prerequisites

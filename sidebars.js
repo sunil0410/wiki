@@ -65,17 +65,26 @@ module.exports = {
   pos: [
     {
       type: "html",
-      value: "Polygon PoS",
+      value: "Introduction",
       className: "sidebar-title",
     },
     "pos/index",
     "pos/getting-started",
     "pos/what-is-polygon-pos",
-    "tools/faucets/matic-faucet",
-    "pos/reference/rpc-endpoints",
-    "pos/reference/commit-chain-multisigs",
-    "pos/reference/mapped-tokens",
-    "tools/faucets/polygon-gas-station",
+    {
+      type: "category",
+      label: "General Reference",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "tools/faucets/matic-faucet",
+        "pos/reference/rpc-endpoints",
+        "pos/reference/commit-chain-multisigs",
+        "pos/reference/mapped-tokens",
+        "tools/faucets/polygon-gas-station",
+      ],
+    },
     {
       type: "html",
       value: "Users",
@@ -272,7 +281,7 @@ module.exports = {
                 "pos/design/validator/architecture",
                 "pos/design/validator/responsibilities",
                 "pos/design/validator/core-components/staking",
-                "maintain/polygon-basics/liquid-delegation",
+                //"maintain/polygon-basics/liquid-delegation",
                 "pos/design/validator/rewards",
                 {
                   type: "category",
@@ -498,7 +507,7 @@ module.exports = {
     },
     {
       type: "html",
-      value: "Node Operators",
+      value: "Operators",
       className: "sidebar-title",
     },
     {

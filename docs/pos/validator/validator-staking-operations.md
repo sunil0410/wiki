@@ -19,7 +19,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Full node set up
 
-Your validator node fully set up and synced. See also: [Run a Validator Node](run-validator.md)
+Your validator node fully set up and synced. See also: [Run a Validator Node](/pos/validator/run-validator/binaries.md)
 
 ### Account setup
 
@@ -92,7 +92,7 @@ heimdallcli query auth account SIGNER_ADDRESS --chain-id CHAIN_ID
 
 where
 
-* SIGNER_ADDRESS — your [signer address](/docs/maintain/glossary.md#validator).
+* SIGNER_ADDRESS — your signer address.
 * CHAIN_ID — the Polygon mainnet chain ID with the client prefix: `heimdall-137`.
 
 The following output should appear:

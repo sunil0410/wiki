@@ -23,19 +23,19 @@ The Polygon Network is broadly divided into three layers:
 
 ## Staking smart contracts on Ethereum
 
-To enable the Proof of Stake (PoS) mechanism on Polygon, the system employs a set of [staking](/docs/maintain/glossary.md#staking) management contracts on the Ethereum mainnet.
+To enable the Proof of Stake (PoS) mechanism on Polygon, the system employs a set of staking management contracts on the Ethereum mainnet.
 
 The staking contracts implement the following features:
 
-* The ability for anyone to stake MATIC tokens on the staking contracts on the Ethereum mainnet and join the system as a [validator](/docs/maintain/glossary.md#validator).
+* The ability for anyone to stake MATIC tokens on the staking contracts on the Ethereum mainnet and join the system as a validator.
 * Earn staking rewards for validating state transitions on the Polygon Network.
-* Save [checkpoints](/docs/maintain/glossary.md#checkpoint-transaction) on the Ethereum mainnet.
+* Save checkpoints on the Ethereum mainnet.
 
 The PoS mechanism also acts as a mitigation to the data unavailability problem for the Polygon sidechains.
 
 ## Heimdall (validation layer)
 
-Heimdall layer handles the aggregation of blocks produced by [Bor](/docs/maintain/glossary.md#bor) into a Merkle tree and publishing the Merkle root periodically to the root chain. The periodic publishing of snapshots of Bor are called [checkpoints](/docs/maintain/glossary.md#checkpoint-transaction).
+Heimdall layer handles the aggregation of blocks produced by Bor into a Merkle tree and publishes the Merkle root periodically to the root chain. The periodic publishing of snapshots of Bor are called checkpoints.
 
 For every few blocks on Bor, a validator on the Heimdall layer:
 
@@ -50,9 +50,9 @@ Checkpoints are important for two reasons:
 
 An overview of the process:
 
-* A subset of active validators from the pool is selected to act as [block producers](/docs/maintain/glossary.md#block-producer) for a [span](/docs/maintain/glossary.md#span). These block producers are responsible for creating blocks and broadcasting the created blocks on the network.
+* A subset of active validators from the pool is selected to act as block producers for a span. These block producers are responsible for creating blocks and broadcasting the created blocks on the network.
 * A checkpoint includes the Merkle root hash of all blocks created during any given interval. All nodes validate the Merkle root hash and attach their signature to it.
-* A selected [proposer](/docs/maintain/glossary.md#proposer) from the validator set is responsible for collecting all signatures for a particular checkpoint and committing the checkpoint on the Ethereum mainnet.
+* A selected proposer from the validator set is responsible for collecting all signatures for a particular checkpoint and committing the checkpoint on the Ethereum mainnet.
 * The responsibility of creating blocks and proposing checkpoints is variably dependent on a validator’s stake ratio in the overall pool.
 
 See also [Heimdall architecture](/docs/pos/design/heimdall/overview).
@@ -61,6 +61,6 @@ See also [Heimdall architecture](/docs/pos/design/heimdall/overview).
 
 Bor is Polygon's sidechain block producer — the entity responsible for aggregating transactions into blocks.
 
-Bor block producers are a subset of the validators and are shuffled periodically by the [Heimdall](/docs/maintain/glossary.md#heimdall) validators.
+Bor block producers are a subset of the validators and are shuffled periodically by the Heimdall validators.
 
 See also [Bor architecture](/docs/pos/design/bor/overview).

@@ -259,9 +259,3 @@ The **Chain ID should be 137** when creating a Polygon list.
 :::
 
 If you need to add a token to one of our lists, [<ins>add a Token Request</ins>](https://github.com/maticnetwork/polygon-token-list/issues/new?assignees=&labels=add+token+request&template=add_token_request.md&title=Add+%7BTOKEN_SYMBOL%7D%3A+%7BTOKEN_NAME%7D) with the required information, and it’ll be reviewed by our team.
-
-:::caution
-
-As it is fairly easy to [<ins>add custom tokens</ins>](faq/adding-a-custom-token.md), users should always do their research and only choose trustworthy projects/tokens.
-
-:::
