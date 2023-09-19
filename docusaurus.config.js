@@ -423,7 +423,7 @@ module.exports = {
             },
             {
               href: '/docs/supernets/',
-              label: 'Edge-based Supernets',
+              label: 'Edge',
               target: '_self',
               rel: null,
             },
