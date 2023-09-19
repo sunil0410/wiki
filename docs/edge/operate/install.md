@@ -2,7 +2,7 @@
 id: supernets-install
 title: Installation
 sidebar_label: Install Binaries
-description: "Steps on how to install the Supernet binaries."
+description: "Steps on how to install the Edge binaries."
 keywords:
   - docs
   - polygon

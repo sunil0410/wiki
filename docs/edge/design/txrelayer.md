@@ -2,7 +2,7 @@
 id: supernets-txrelayer
 title: Transaction Relayer
 sidebar_label: Transaction Relayer
-description: "The transaction relayer of Supernets."
+description: "The transaction relayer of Edge."
 keywords:
   - docs
   - polygon
@@ -18,7 +18,7 @@ keywords:
 
 A TxRelayer is a component that facilitates the creation and sending of transactions. It provides a simple interface for executing a message call without creating a dedicated transaction and sending signed transactions to a blockchain.
 
-## TxRelayer in Supernets
+## TxRelayer in Edge
 
 In Polygon Supernets, the TxRelayer module contains a client communicating with an Ethereum node and a wallet for signing transactions.
 

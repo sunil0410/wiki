@@ -11,7 +11,7 @@ keywords:
   - interface
 ---
 
-The `SupernetManager` contract is an abstract contract for managing Supernets. It serves as a base contract that should be implemented with custom desired functionality.
+The `SupernetManager` contract is an abstract contract for managing Edge chains. It serves as a base contract that should be implemented with custom desired functionality.
 
 ## Functions
 
@@ -21,7 +21,7 @@ The `SupernetManager` contract is an abstract contract for managing Supernets. I
 function onInit(uint256 id) external;
 ```
 
-This function is called when a new childchain is registered. It allows the implementing contract to perform initialization logic when a new child chain is added to the Supernet.
+This function is called when a new childchain is registered. It allows the implementing contract to perform initialization logic when a new child chain is added to the Edge chain.
 
 #### Parameters:
 
@@ -33,7 +33,7 @@ This function is called when a new childchain is registered. It allows the imple
 function onStake(address validator, uint256 amount) external;
 ```
 
-This function is called when a validator stakes. It allows the implementing contract to perform additional logic when a validator stakes for a child chain in the supernet.
+This function is called when a validator stakes. It allows the implementing contract to perform additional logic when a validator stakes for a child chain in the Edge chain.
 
 ### Parameters:
 

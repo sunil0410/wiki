@@ -2,12 +2,12 @@
 id: supernets-deploy-index
 title: Get Started
 sidebar_label: Get Started
-description: "Learn how to deploy a local test Supernet."
+description: "Learn how to deploy a local test Edge chain."
 keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - network
   - modular
 ---
@@ -16,8 +16,8 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 <script src="./dataline.js" type="module"></script>
 
-This serves as an index for the Supernet deployment guides. 
-The guides explain the end-to-end process for setting up and deploying a local Supernet.
+This serves as an index for the Edge deployment guides. 
+The guides explain the end-to-end process for setting up and deploying a local Edge chain.
 
 ## Prerequisites
 
@@ -58,31 +58,31 @@ Regardless of how a private key is stored and retrieved, it's important to keep 
 
 ## What you'll learn
 
-In this tutorial, you will learn how to set up and initialize a Supernet with multiple nodes. You will learn the complete end-to-end genesis workflow of building a Supernet, including:
+In this tutorial, you will learn how to set up and initialize an Edge chain with multiple nodes. You will learn the complete end-to-end genesis workflow of building an Edge chain, including:
 
 - Generating private keys for PolyBFT nodes.
 - Deploying and initializing rootchain contracts.
 - Configuring the rootchain by allowlisting and registering validators, performing initial staking, and finalizing the validator set.
 - Generating the genesis file and chain configuration.
 - Funding validators on the rootchain.
-- Running a (Supernet) cluster consisting of multiple PolyBFT nodes.
+- Running an (Edge) cluster consisting of multiple PolyBFT nodes.
 
-By the end of this tutorial, you will have a fully functional Supernet test network that can be used to process transactions with high throughput and low latency.
+By the end of this tutorial, you will have a fully functional Edge test network that can be used to process transactions with high throughput and low latency.
 
 ## What you'll do
 
-The deployment guides will cover the steps outlined below. If you are deploying a Supernet for the first time, please navigate each section in order. 
+The deployment guides will cover the steps outlined below. If you are deploying an Edge chain for the first time, please navigate each section in order. 
 
-1. [Spawn a New Childchain](/docs/edge/operate/deploy/local-supernet.md)
-2. [Configure Your New Childchain](/docs/edge/operate/deploy/genesis.md)
+1. [Spawn a New Edge Chain](/docs/edge/operate/deploy/local-supernet.md)
+2. [Configure Your New Edge Chain](/docs/edge/operate/deploy/genesis.md)
 3. [Configure the Rootchain](/docs/edge/operate/deploy/rootchain-config.md)
 4. [Configure the Initial Validator Set](/docs/edge/operate/deploy/genesis-validators.md)
-5. [Start Your New Supernet](/docs/edge/operate/deploy/start-chain.md)
+5. [Start Your New Edge Chain](/docs/edge/operate/deploy/start-chain.md)
 
 <details>
 <summary>Fast-track guide ↓</summary>
 
-**Here's the fast-track guide if you're looking for a quick guide on the essential commands needed to set up a local Supernet.**
+**Here's the fast-track guide if you're looking for a quick guide on the essential commands needed to set up a local Edge chain.**
 
 1. Init secrets:
 

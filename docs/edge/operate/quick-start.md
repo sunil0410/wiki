@@ -23,13 +23,13 @@ Before proceeding, ensure that your system meets the necessary [system requireme
 
 To access the pre-built releases, visit the [GitHub releases page](https://github.com/0xPolygon/polygon-edge/releases). The client provides cross-compiled AMD64/ARM64 binaries for Darwin and Linux.
 
-To run the Supernets test environment locally, run the following command from the project's root:
+To locally run the Edge test environment, run the following command from the project's root:
 
   ```bash
   ./scripts/cluster polybft
   ```
 
-**That's it! You should have successfully been able to start a local Supernet just by running the script.**
+**That's it! You should have successfully been able to start a local Edge chain just by running the script.**
 
 > - Stop the network: "CTRL/Command C" or `./scripts/cluster polybft stop`.
 > - Destroy the network: `./scripts/cluster polybft destroy`.
@@ -60,7 +60,7 @@ These are the optional configuration parameters you can pass to the script:
 
 After running the command, the test network will be initialized with PolyBFT consensus engine and the genesis file will be created. Then, the four validators will start running, and their log outputs will be displayed in the terminal.
 
-By default, this will start a Supernets network with PolyBFT consensus engine, four validators, and premine of 1 billion tokens at address `0x85da99c8a7c2c95964c8efd687e95e632fc533d6`.
+By default, this will start an Edge network with PolyBFT consensus engine, four validators, and premine of 1 billion tokens at address `0x85da99c8a7c2c95964c8efd687e95e632fc533d6`.
 
 The nodes will continue to run until stopped manually. To stop the network, open a new session and use the following command, or, simply press "CTRL/Command C" in the CLI:
 
@@ -78,7 +78,7 @@ If you want to destroy the environment, use the following command:
 
 ### Explanation of the deployment script
 
-The deployment script is a wrapper script for starting a Supernets test network with PolyBFT consensus engine. It offers the following functionality:
+The deployment script is a wrapper script for starting an Edge test network with PolyBFT consensus engine. It offers the following functionality:
 
 - Initialize the network with either IBFT or PolyBFT consensus engine.
 - Create the genesis file for the test network.

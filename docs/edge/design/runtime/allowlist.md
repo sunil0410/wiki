@@ -2,7 +2,7 @@
 id: supernets-runtime-allowlist
 title: Access Control Lists
 sidebar_label: Access control lists
-description: "Learn about the authorization capabilities available in Supernets."
+description: "Learn about the authorization capabilities available in Edge."
 keywords:
   - docs
   - polygon
@@ -16,7 +16,7 @@ keywords:
 
 ## Overview
 
-Supernets offer access control lists (ACLs) to manage and control access to specific network resources, contracts, or functionalities. Network operators can limit access to certain addresses using ACLs, ensuring a controlled and secure environment for their applications.
+Edge offers access control lists (ACLs) to manage and control access to specific network resources, contracts, or functionalities. Network operators can limit access to certain addresses using ACLs, ensuring a controlled and secure environment for their applications.
 
 ## Roles
 
@@ -46,7 +46,7 @@ However, assigning multiple admins also increases the potential attack surface. 
 
 ## ACL Types
 
-Supernets support several types of ACLs:
+Edge supports several types of ACLs:
 
 - **Contract Deployer Allow/Block Lists**: Controls which can deploy contracts on the network.
 - **Transactions Allow/Block Lists**: Controls which addresses can send transactions on the network.

@@ -1,13 +1,13 @@
 ---
 id: overview
-title: Introduction to Native Supernet Bridging
+title: Introduction to Native Edge Bridge
 sidebar_label: Overview
-description: "Learn about the native bridge of Supernets."
+description: "Learn about the native bridge of Edge."
 keywords:
   - docs
   - polygon
   - bridge
-  - Supernet
+  - cdk
   - rootchain
   - asset
   - cross chain
@@ -15,7 +15,7 @@ keywords:
 
 ## Overview
 
-Supernets provide a built-in bridging mechanism that enables cross-chain communication. The bridging mechanism is a technical infrastructure that facilitates the transfer of arbitrary messages between any EVM-compatible PoS blockchain (rootchain), and a Supernet. 
+Edge provides a built-in bridging mechanism that enables cross-chain communication. The bridging mechanism is a technical infrastructure that facilitates the transfer of arbitrary messages between any EVM-compatible PoS blockchain (rootchain), and an Edge chain. 
 
 It relies on mapping between the token contracts on the rootchain and the target chain, which is crucial for tracking assets and ensuring the correct amount of tokens are minted and burned during the transfer process.
 
@@ -27,7 +27,7 @@ During the transfer process, assets are locked in a contract on the rootchain, a
 
 :::note Enabled by Default
 
-The cross-chain bridge in Supernets is an integral part of the consensus client and is enabled by default. It cannot be disabled, as it is required for the functioning of the network. Being native to the Supernets, the bridge is built into the protocol and does not require any external third-party solutions or plug-ins.
+The cross-chain bridge in Edge is an integral part of the consensus client and is enabled by default. It cannot be disabled, as it is required for the functioning of the network. Being native to Edge, the bridge is built into the protocol and does not require any external third-party solutions or plug-ins.
 
 If you choose to use another cross-chain bridging mechanism, you will need to customize it yourself, and there are no guarantees of compatibility with associated contracts and infrastructure.
 
@@ -39,10 +39,10 @@ If you choose to use another cross-chain bridging mechanism, you will need to cu
     <p>The following diagram provides a visual representation of how messages can be passed between different EVM blockchain layers, allowing for seamless message transfers and coordination between various components of a Super network.</p>
     <h2>How does message passing work?</h2>
     <h3>StateSync: real-time synchronization</h3>
-    <p>Message passing between a rootchain and a Supernet is achieved through continuous state synchronization, known as StateSync. This process involves transferring state data between system calls.</p>
+    <p>Message passing between a rootchain and an Edge chain is achieved through continuous state synchronization, known as StateSync. This process involves transferring state data between system calls.</p>
     <p>Check out the <a href="/docs/edge/design/bridge/statesync" style={{ textDecoration: 'underline' }}>StateSync document</a> to learn more.</p>
     <h3>Checkpoints: Ensuring liveliness and reference points</h3>
-    <p>When passing messages from a Supernet to a rootchain, the validator set commits checkpoints, which are snapshots of the Supernet state containing only the root of the Exit events, excluding all transactions. Checkpoints serve as reference points for clients, and validators periodically checkpoint all transactions occurring on the Supernet to the rootchain. Checkpoints also ensure liveliness and are submitted to the associated rootchain asset contract.</p>
+    <p>When passing messages from an Edge-chain to a rootchain, the validator set commits checkpoints, which are snapshots of the Edge state containing only the root of the Exit events, excluding all transactions. Checkpoints serve as reference points for clients, and validators periodically checkpoint all transactions occurring on the Edge chain to the rootchain. Checkpoints also ensure liveliness and are submitted to the associated rootchain asset contract.</p>
     <p>Check out the <a href="/docs/edge/design/bridge/checkpoint.md" style={{ textDecoration: 'underline' }}>Checkpoint document</a> to learn more.</p>
     <h3>Bridge States: tracking event progress</h3>
     <p>The bridge can exist in one of three states:</p>

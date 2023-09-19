@@ -7,7 +7,7 @@ keywords:
   - docs
   - Polygon
   - edge
-  - supernets
+  - cdk
   - childchain
   - network
   - modular
@@ -19,11 +19,11 @@ In this guide, you'll discover how to migrate from an existing IBFT consensus ch
 
 :::caution This is not an upgrade
 
-The regenesis process is not intended as an upgrade to another version of the consensus client but rather as a transformation to a distinct product suite designed for next-generation, application-specific chains (appchains) with cross-chain compatibility and staking requirements. If you are unfamiliar or uncertain about this, please refer to the [<ins>introductory material</ins>](/docs/edge/get-started/what-are-supernets.md) and [<ins>system design documentation</ins>](/docs/edge/design/overview.md). For further assistance, please reach out to the Supernets team.
+The regenesis process is not intended as an upgrade to another version of the consensus client but rather as a transformation to a distinct product suite designed for next-generation, application-specific chains (appchains) with cross-chain compatibility and staking requirements. If you are unfamiliar or uncertain about this, please refer to the [<ins>introductory material</ins>](/docs/edge/get-started/what-are-supernets.md) and [<ins>system design documentation</ins>](/docs/edge/design/overview.md). For further assistance, please reach out to the Polygon team.
 :::
 
 :::info Compatibility
-The regenesis process has ONLY been tested for version(s) 0.6.x and not with earlier versions of the former Edge client. The team is actively working on testing compatibility with older versions. For assistance, please reach out to the Supernets team.
+The regenesis process has ONLY been tested for version(s) 0.6.x and not with earlier versions of the former Edge client. The team is actively working on testing compatibility with older versions. For assistance, please reach out to the Polygon team.
 
 In general, it is recommended that you operate on the latest version of the old client. The latest version of the former Edge consensus client is [<ins>v0.6.3</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v0.6.3).
 To upgrade Edge, please refer to the archived Edge documentation, available **[<ins>here</ins>](https://github.com/0xPolygon/wiki/tree/master/archive/edge/main-edge)**.

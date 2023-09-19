@@ -39,7 +39,7 @@ In the following example command, we use the validator key and the rootchain `St
 
 :::info Staking requirement: wrapping a non-ERC-20 token
 
-Supernets allow for the customization of the gas token and mandate the use of ERC-20 tokens for staking instead of the rootchain's native token.
+Edge allows for the customization of the gas token and mandate the use of ERC-20 tokens for staking instead of the rootchain's native token.
 
 When performing rootchain staking on the Polygon PoS Mainnet, [<ins>WMATIC</ins>](https://polygonscan.com/token/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270?a=0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45) (wrapped MATIC) is the required token. This is due to the ERC-20 standard requirement for staking, which MATIC doesn't meet.
 
