@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-PolyBFT is a sophisticated and robust consensus mechanism employed by Polygon Supernets.
+PolyBFT is a sophisticated and robust consensus mechanism employed by Polygon Edge.
 The consensus mechanism comprises two key components, a **consensus engine** and **consensus protocol**.
 PolyBFT utilizes the IBFT consensus engine and a Proof-of-Stake architecture to seal blocks, provide specific network capabilities, and govern the network.
 The core smart contracts work in tandem with the consensus engine to define all the network's Proof-of-Stake rules.
@@ -33,4 +33,4 @@ PolyBFT's consensus protocol is implemented through a set of core smart contract
 
 ## Bridge
 
-The bridge transfers assets and data between a Supernet and an external EVM-compatible blockchain (rootchain), making it a critical component of the network's interoperability. Two predicate contracts, one on the childchain and one on the rootchain, implement the core bridge functionality and use the associated core contracts to deposit, withdraw, and verify cross-chain bridge transactions. The diagram below illustrates how the core contracts fit into the overall smart contract system design.
+The bridge transfers assets and data between an Edge chain and an external EVM-compatible blockchain (rootchain), making it a critical component of the network's interoperability. Two predicate contracts, one on the childchain and one on the rootchain, implement the core bridge functionality and use the associated core contracts to deposit, withdraw, and verify cross-chain bridge transactions. The diagram below illustrates how the core contracts fit into the overall smart contract system design.

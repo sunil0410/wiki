@@ -2,7 +2,7 @@
 id: ibft-overview
 title: Istanbul Byzantine Fault Tolerant (IBFT) 2.0
 sidebar_label: Istanbul Byzantine Fault Tolerant (IBFT) 2.0
-description: "Learn about the consensus engine of Supernets."
+description: "Learn about the consensus engine of Edge."
 keywords:
   - docs
   - polygon
@@ -56,7 +56,7 @@ The proposer selection algorithm is Tendermint-based.
 
 ### Staking
 
-Staking is managed by staking contracts on the Supernet. The staking module on Polygon validates staked tokens and is independent of Ethereum's security. In principle, the network is secured by the rootchain and Ethereum. Transaction checkpoints still occur on Ethereum, but Ethereum does not validate staking on Polygon.
+Staking is managed by staking contracts on the Edge chain. The staking module on Polygon validates staked tokens and is independent of Ethereum's security. In principle, the network is secured by the rootchain and Ethereum. Transaction checkpoints still occur on Ethereum, but Ethereum does not validate staking on Polygon.
 
 At the end of each epoch, a reward calculation occurs to reward validators who actively participated in that epoch.
 

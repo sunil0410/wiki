@@ -79,14 +79,14 @@ values={[
 
 ## Withdraw
 
-This command withdraws ERC-20 tokens from a Supernet to a rootchain.
+This command withdraws ERC-20 tokens from an Edge chain to a rootchain.
 
 - Replace `hex_encoded_txn_sender_private_key` with the private key of the account that will be sending the transaction.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
 - Replace `amounts` with a comma-separated list of token amounts to be withdrawn for each receiver.
-- Replace `child_erc20_predicate_address` with the address of the ERC-20 predicate contract on the Supernet.
-- Replace `child_erc20_token_address` with the address of the ERC-20 token contract on the Supernet (optional, only required if the token is not a default ERC-20 token).
-- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Supernet.
+- Replace `child_erc20_predicate_address` with the address of the ERC-20 predicate contract on the Edge chain.
+- Replace `child_erc20_token_address` with the address of the ERC-20 token contract on the Edge chain (optional, only required if the token is not a default ERC-20 token).
+- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Edge chain.
 
 ```bash
  ./polygon-edge bridge withdraw-erc20 \
@@ -104,9 +104,9 @@ This command withdraws ERC-20 tokens from a Supernet to a rootchain.
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - We're withdrawing tokens from two receiver addresses: `0x1111111111111111111111111111111111111111` and `0x2222222222222222222222222222222222222222`.
 - We're withdrawing `100` tokens from the first receiver and `200` tokens from the second receiver.
-- The address of the ERC-20 predicate contract on the Supernet is `0x3456789abcdef0123456789abcdef0123456789`.
-- The address of the ERC-20 token contract on the Supernet is `0x456789abcdef0123456789abcdef0123456789`.
-- The JSON-RPC endpoint for the Supernet is `http://json-rpc-endpoint.com:8545`.
+- The address of the ERC-20 predicate contract on the Edge chain is `0x3456789abcdef0123456789abcdef0123456789`.
+- The address of the ERC-20 token contract on the Edge chain is `0x456789abcdef0123456789abcdef0123456789`.
+- The JSON-RPC endpoint for the Edge chain is `http://json-rpc-endpoint.com:8545`.
 
 ```bash
 ./polygon-edge bridge withdraw-erc20 \
@@ -122,13 +122,13 @@ This command withdraws ERC-20 tokens from a Supernet to a rootchain.
 
 ## Exit
 
-This command sends an exit transaction to the `ExitHelper` contract on the rootchain for a token that was deposited on the Supernet. It basically finalizes a withdrawal (initiated on the Supernets) and transfers assets to receiving address on a rootchain.
+This command sends an exit transaction to the `ExitHelper` contract on the rootchain for a token that was deposited on the Edge chain. It basically finalizes a withdrawal (initiated on the Edge chain) and transfers assets to receiving address on a rootchain.
 
 - Replace `hex_encoded_txn_sender_private_key` with the private key of the account that will send the exit transaction.
 - Replace `exit_helper_address` with the address of the `ExitHelper` contract on the rootchain.
 - Replace `exit_id` with the ID of the exit event.
 - Replace `root_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the rootchain.
-- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Supernet.
+- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Edge chain.
 
 ```bash
 ./polygon-edge bridge exit \
@@ -142,12 +142,12 @@ This command sends an exit transaction to the `ExitHelper` contract on the rootc
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're sending an exit transaction on a test Supernet instance:
+In this example, we're sending an exit transaction on a test Edge instance:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - The address of the `ExitHelper` contract on the rootchain is `0x123456789abcdef0123456789abcdef01234567`.
 - The ID of the exit event is `42`.
-- The JSON-RPC endpoint for the rootchain is `http://root-chain-json-rpc-endpoint.com:8545`, and the JSON-RPC endpoint for the Supernet is `http://json-rpc-endpoint.com:8545`.
+- The JSON-RPC endpoint for the rootchain is `http://root-chain-json-rpc-endpoint.com:8545`, and the JSON-RPC endpoint for the Edge chain is `http://json-rpc-endpoint.com:8545`.
 
 ```bash
 ./polygon-edge bridge exit \
@@ -170,14 +170,14 @@ In this example, we're sending an exit transaction on a test Supernet instance:
 
 ## Withdraw
 
-This command withdraws ERC-721 tokens from a Supernet to a rootchain.
+This command withdraws ERC-721 tokens from an Edge chain to a rootchain.
 
 - Replace `hex_encoded_sender_private_key` with the private key of the account that will initiate the withdrawal.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the withdrawn tokens on the rootchain.
 - Replace `token_ids` with a comma-separated list of token IDs to be withdrawn.
-- Replace `child_predicate_address` with the address of the predicate contract on the Supernet that holds the tokens being withdrawn.
-- Replace `child_token_address` with the address of the ERC-721 token contract on the Supernet that holds the tokens being withdrawn.
-- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Supernet.
+- Replace `child_predicate_address` with the address of the predicate contract on the Edge chain that holds the tokens being withdrawn.
+- Replace `child_token_address` with the address of the ERC-721 token contract on the Edge chain that holds the tokens being withdrawn.
+- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Edge chain.
 
 ```bash
 ./polygon-edge bridge withdraw-erc721 \
@@ -192,25 +192,25 @@ This command withdraws ERC-721 tokens from a Supernet to a rootchain.
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're withdrawing ERC-721 tokens from a test Supernet instance:
+In this example, we're withdrawing ERC-721 tokens from a test Edge instance:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - We're withdrawing tokens with IDs `123` and `456`.
-- The address of the ERC-721 Supernet predicate contract is `0x23456789abcdef0123456789abcdef012345678`.
-- The address of the ERC-721 Supernet token contract is `0x3456789abcdef0123456789abcdef012345678`.
-- The JSON-RPC endpoint for the Supernet is `http://json-rpc-endpoint.com:8545`.
+- The address of the ERC-721 Edge chain predicate contract is `0x23456789abcdef0123456789abcdef012345678`.
+- The address of the ERC-721 Edge chain token contract is `0x3456789abcdef0123456789abcdef012345678`.
+- The JSON-RPC endpoint for the Edge chain is `http://json-rpc-endpoint.com:8545`.
 
 </details>
 
 ## Exit
 
-This command sends an exit transaction to the `ExitHelper` contract on the rootchain for a token that was deposited on the Supernet. It basically finalizes a withdrawal (initiated on the Supernets) and transfers assets to receiving address on a rootchain.
+This command sends an exit transaction to the `ExitHelper` contract on the rootchain for a token that was deposited on the Edge chain. It basically finalizes a withdrawal (initiated on the Edge chain) and transfers assets to receiving address on a rootchain.
 
 - Replace `hex_encoded_txn_sender_private_key` with the private key of the account that will send the exit transaction.
 - Replace `exit_helper_address` with the address of the `ExitHelper` contract on the rootchain.
 - Replace `exit_id` with the ID of the exit event.
 - Replace `root_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the rootchain.
-- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Supernet.
+- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Edge chain.
 
 ```bash
 ./polygon-edge bridge exit \
@@ -224,12 +224,12 @@ This command sends an exit transaction to the `ExitHelper` contract on the rootc
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're sending an exit transaction on a test Supernet instance:
+In this example, we're sending an exit transaction on a test Edge instance:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - The address of the `ExitHelper` contract on the rootchain is `0x123456789abcdef0123456789abcdef01234567`.
 - The ID of the exit event is `42`.
-- The JSON-RPC endpoint for the rootchain is `http://root-chain-json-rpc-endpoint.com:8545`, and the JSON-RPC endpoint for the Supernet is `http://json-rpc-endpoint.com:8545`.
+- The JSON-RPC endpoint for the rootchain is `http://root-chain-json-rpc-endpoint.com:8545`, and the JSON-RPC endpoint for the Edge chain is `http://json-rpc-endpoint.com:8545`.
 
 ```bash
 ./polygon-edge bridge exit \
@@ -252,7 +252,7 @@ In this example, we're sending an exit transaction on a test Supernet instance:
 
 ## Withdraw
 
-This command withdraws ERC-1155 tokens from the Supernet to the rootchain.
+This command withdraws ERC-1155 tokens from the Edge chain to the rootchain.
 
 - Replace `hex_encoded_withdrawer_private_key` with the private key of the account that will be withdrawing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
@@ -260,7 +260,7 @@ This command withdraws ERC-1155 tokens from the Supernet to the rootchain.
 - Replace `token_ids` with a comma-separated list of token IDs to be withdrawn.
 - Replace `root_erc1155_token_address` with the address of the ERC-1155 token contract on the rootchain.
 - Replace `root_erc1155_predicate_address` with the address of the ERC-1155 predicate contract on the rootchain.
-- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Supernet.
+- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Edge chain.
 
 ```bash
 ./polygon-edge bridge withdraw-erc1155 \
@@ -276,14 +276,14 @@ This command withdraws ERC-1155 tokens from the Supernet to the rootchain.
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're withdrawing ERC-1155 tokens from a test Supernet instance to the rootchain:
+In this example, we're withdrawing ERC-1155 tokens from a test Edge instance to the rootchain:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - We're withdrawing tokens to a single receiver address: `0x1111111111111111111111111111111111111111`.
 - We're withdrawing `100` tokens with ID `1`.
 - The address of the ERC-1155 token contract on the rootchain is `0x123456789abcdef0123456789abcdef01234567`.
 - The address of the ERC-1155 predicate contract on the rootchain is `0x23456789abcdef0123456789abcdef012345678`.
-- The JSON-RPC endpoint for the Supernet is `http://json-rpc-endpoint.com:8545`.
+- The JSON-RPC endpoint for the Edge chain is `http://json-rpc-endpoint.com:8545`.
 
 ```bash
 ./polygon-edge bridge withdraw-erc1155 \
@@ -300,13 +300,13 @@ In this example, we're withdrawing ERC-1155 tokens from a test Supernet instance
 
 ## Exit
 
-This command sends an exit transaction to the `ExitHelper` contract on the rootchain for a token that was deposited on the Supernet. It basically finalizes a withdrawal (initiated on the Supernets) and transfers assets to receiving address on a rootchain.
+This command sends an exit transaction to the `ExitHelper` contract on the rootchain for a token that was deposited on the Edge chain. It basically finalizes a withdrawal (initiated on the Edge chain) and transfers assets to receiving address on a rootchain.
 
 - Replace `hex_encoded_txn_sender_private_key` with the private key of the account that will send the exit transaction.
 - Replace `exit_helper_address` with the address of the `ExitHelper` contract on the rootchain.
 - Replace `exit_id` with the ID of the exit event.
 - Replace `root_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the rootchain.
-- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Supernet.
+- Replace `child_chain_json_rpc_endpoint` with the JSON-RPC endpoint of the Edge chain.
 
 ```bash
 ./polygon-edge bridge exit \
@@ -320,12 +320,12 @@ This command sends an exit transaction to the `ExitHelper` contract on the rootc
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're sending an exit transaction on a test Supernet instance:
+In this example, we're sending an exit transaction on a test Edge instance:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - The address of the `ExitHelper` contract on the rootchain is `0x123456789abcdef0123456789abcdef01234567`.
 - The ID of the exit event is `42`.
-- The JSON-RPC endpoint for the rootchain is `http://root-chain-json-rpc-endpoint.com:8545`, and the JSON-RPC endpoint for the Supernet is `http://json-rpc-endpoint.com:8545`.
+- The JSON-RPC endpoint for the rootchain is `http://root-chain-json-rpc-endpoint.com:8545`, and the JSON-RPC endpoint for the Edge chain is `http://json-rpc-endpoint.com:8545`.
 
 ```bash
 ./polygon-edge bridge exit \

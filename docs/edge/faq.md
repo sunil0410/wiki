@@ -19,7 +19,7 @@ import TabItem from '@theme/TabItem';
 
 This document contains answers to frequently asked questions (FAQs) about Edge.
 
-If you're new to Edge and need general information, please navigate to the **Common FAQs tab**. If you're ready to deploy a Supernet or have technical deployment questions, please navigate the rest of the **FAQ tabs**. **If you have any further questions about configuring an Edge-powered chain, please consult the documentation or reach out to the Polygon team for support.**
+If you're new to Edge and need general information, please navigate to the **Common FAQs tab**. If you're ready to deploy an Edge chain or have technical deployment questions, please navigate the rest of the **FAQ tabs**. **If you have any further questions about configuring an Edge-powered chain, please consult the documentation or reach out to the Polygon team for support.**
 
 <Tabs
 defaultValue="common"
@@ -174,7 +174,7 @@ To maintain the security of the network, it is recommended that you keep the val
 
 ## Should I consider running a node in "relayer" mode?
 
-Running one Supernet node in "relayer" mode can enable automatic execution of deposit events. This can help streamline the deposit process and improve the overall efficiency of the network.
+Running one Edge client node in "relayer" mode can enable automatic execution of deposit events. This can help streamline the deposit process and improve the overall efficiency of the network.
 
 </TabItem>
 
@@ -184,17 +184,17 @@ Running one Supernet node in "relayer" mode can enable automatic execution of de
 
 <TabItem value="assets">
 
-## Can a Supernet use a custom token standard instead of the default token contracts?
+## Can an Edge chain use a custom token standard instead of the default token contracts?
 
-Although it is recommended to use the standard ERC-20, ERC-721, and ERC-1155 contracts, it is not a requirement for a Supernet to use them. However, any custom standard employed by a Supernet must adhere to the chain configuration to ensure compatibility with the bridge. Additionally, generating a native ERC-based asset using the default core contracts involves deploying, mapping, and bridging. If a custom standard is used, it will also need to follow the same procedure.
+Although it is recommended to use the standard ERC-20, ERC-721, and ERC-1155 contracts, it is not a requirement for an Edge chain to use them. However, any custom standard employed by an Edge chain must adhere to the chain configuration to ensure compatibility with the bridge. Additionally, generating a native ERC-based asset using the default core contracts involves deploying, mapping, and bridging. If a custom standard is used, it will also need to follow the same procedure.
 
-## What is the recommended way to create and manage assets on a Supernet?
+## What is the recommended way to create and manage assets on an Edge chain?
 
-To create and manage native assets on a Supernet or enable asset bridging between a Supernet and rootchain, it is recommended to use the core contracts provided by the network.
+To create and manage native assets on an Edge chain or enable asset bridging between an Edge chain and rootchain, it is recommended to use the core contracts provided by the network.
 
 ## Is it necessary to use the native bridge integration for Edge?
 
-Yes, it's essential. The native bridge integration is fundamental for Edge as it hosts the staking logic on the rootchain, which serves as the authoritative source of truth for the Supernet.
+Yes, it's essential. The native bridge integration is fundamental for Edge as it hosts the staking logic on the rootchain, which serves as the authoritative source of truth for the Edge chain.
 
 While customization is possible, it should be undertaken with a comprehensive understanding of the system. If preferred, the product suite can be used solely for the childchain instance.
 
@@ -204,9 +204,9 @@ Yes, Edge allows for the decoupling of the native gas token and the staking toke
 
 Decoupling the gas token and the staking token provides greater flexibility and enables more use cases for the network. However, it's important to note that the specifics of how this is configured may depend on the specific implementation of the network you're using.
 
-## How can I create the initial supply of tokens when launching a new Supernet instance?
+## How can I create the initial supply of tokens when launching a new Edge instance?
 
-To create the initial supply of tokens when launching a new Supernet instance, premining or minting can be used. This can help ensure that the network has the necessary tokens to facilitate transactions and operations.
+To create the initial supply of tokens when launching a new Edge instance, premining or minting can be used. This can help ensure that the network has the necessary tokens to facilitate transactions and operations.
 
 ## Why does the Exit process revert when onL2StateReceive fails?
 
@@ -218,7 +218,7 @@ Checkpoints are currently dispatched at the end of each epoch or every 900 block
 
 ## How are native gas fungible tokens allocated during the genesis of the childchain?
 
-At the Supernet's inception, designated accounts receive specific amounts of native gas fungible tokens. If the tokens are non-mintable, premining at genesis is prohibited, except for the 0x0 address. These accounts must bridge assets from the rootchain. Conversely, mintable tokens allow for arbitrary premining during genesis.
+At the chain's inception, designated accounts receive specific amounts of native gas fungible tokens. If the tokens are non-mintable, premining at genesis is prohibited, except for the 0x0 address. These accounts must bridge assets from the rootchain. Conversely, mintable tokens allow for arbitrary premining during genesis.
 
 ## Is it necessary to mint new tokens using the associated ERC20 contract each time native gas fungible tokens are spent?
 
@@ -246,15 +246,15 @@ However, selecting a reliable and publicly available RPC endpoint for the rootch
 
 In theory, existing rootchain contracts can be used, but it is not practical with the current contract configuration.
 
-Manually updating the Supernet configuration to point to existing rootchain contract addresses may disrupt or challenge checkpoints and chain state, leading to problems if there is a fork on the Supernet. Furthermore, updating the checkpoint manager's address could trigger an exit with the wrong checkpoint manager, leading to incorrect state transitions and potential loss of funds. Deploying new contracts on the rootchain ensures all necessary dependencies are available and properly configured, avoiding compatibility issues or other unforeseen problems.
+Manually updating the Edge configuration to point to existing rootchain contract addresses may disrupt or challenge checkpoints and chain state, leading to problems if there is a fork on the Edge chain. Furthermore, updating the checkpoint manager's address could trigger an exit with the wrong checkpoint manager, leading to incorrect state transitions and potential loss of funds. Deploying new contracts on the rootchain ensures all necessary dependencies are available and properly configured, avoiding compatibility issues or other unforeseen problems.
 
-## Is it necessary to deploy new instances of rootchain contracts for each Supernet instance when running multiple Edge chains?
+## Is it necessary to deploy new instances of rootchain contracts for each Edge instance when running multiple Edge chains?
 
-Yes, new instances of rootchain contracts must be deployed for each Supernet instance. Each Supernet instance is independent and requires its own set of contracts to function properly. Deploying and managing multiple instances of contracts can be complex and requires careful consideration of factors such as cost, security, and scalability. It is essential to plan and test thoroughly before implementing a solution with multiple Edge chains.
+Yes, new instances of rootchain contracts must be deployed for each Edge instance. Each Edge instance is independent and requires its own set of contracts to function properly. Deploying and managing multiple instances of contracts can be complex and requires careful consideration of factors such as cost, security, and scalability. It is essential to plan and test thoroughly before implementing a solution with multiple Edge chains.
 
-## Is the identity of a Supernet instance linked to the rootchain contract address on the rootchain?
+## Is the identity of a Edge instance linked to the rootchain contract address on the rootchain?
 
-Yes, the identity of a Supernet instance is linked to the rootchain contract address on the rootchain. Each Supernet instance is associated with a specific set of rootchain contracts, and its identity is determined by the address of those contracts on the rootchain.
+Yes, the identity of a Edge instance is linked to the rootchain contract address on the rootchain. Each Edge instance is associated with a specific set of rootchain contracts, and its identity is determined by the address of those contracts on the rootchain.
 
 </TabItem>
 

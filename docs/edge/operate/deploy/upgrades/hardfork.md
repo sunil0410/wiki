@@ -1,18 +1,18 @@
 ---
 id: supernets-how-to-upgrade
-title: How to Upgrade Your Supernet Using a Hardfork
-sidebar_label: Upgrade Your Supernet Using a Hardfork
-description: "Learn how to upgrade your Supernet using a hardfork."
+title: How to Upgrade Your Edge Chain Using a Hardfork
+sidebar_label: Upgrade Your Edge Chain Using a Hardfork
+description: "Learn how to upgrade your Edge chain using a hardfork."
 keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - uograde
   - hardfork
 ---
 
-Drawing from a real-world example, this guide delves into the process of introducing a new feature via a hardfork in a Supernet, utilizing a fork manager to manage the activation and behavior of the fork.
+Drawing from a real-world example, this guide delves into the process of introducing a new feature via a hardfork in an Edge chain, utilizing a fork manager to manage the activation and behavior of the fork.
 
 ## 1. Adding Fields
 
