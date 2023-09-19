@@ -2,12 +2,12 @@
 id: supernets-faq
 title: Frequently Asked Questions
 sidebar_label: Frequently Asked Questions
-description: "The most common questions and answers about Supernets"
+description: "The most common questions and answers about Edge"
 keywords:
   - docs
   - Polygon
   - edge
-  - supernets
+  - cdk
   - network
   - modular
   - faqs
@@ -17,9 +17,9 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This document contains answers to frequently asked questions (FAQs) about Supernets.
+This document contains answers to frequently asked questions (FAQs) about Edge.
 
-If you're new to Supernets and need general information, please navigate to the **Common FAQs tab**. If you're ready to deploy a Supernet or have technical deployment questions, please navigate the rest of the **FAQ tabs**. **If you have any further questions about configuring Supernets, please consult the documentation or reach out to the Supernets team for support.**
+If you're new to Edge and need general information, please navigate to the **Common FAQs tab**. If you're ready to deploy a Supernet or have technical deployment questions, please navigate the rest of the **FAQ tabs**. **If you have any further questions about configuring an Edge-powered chain, please consult the documentation or reach out to the Polygon team for support.**
 
 <Tabs
 defaultValue="common"
@@ -38,29 +38,13 @@ values={[
 
 <TabItem value="common">
 
-## What is the relation between Supernets and Edge?
+## Why should I use Edge?
 
-Supernets are built on top of an updated version of the legacy Edge client. This iteration of the client is designed specifically to enable next-generation EVM-compatible, application-specific sovereign blockchains.
+Edge is an advanced and feature-rich product suite that is specifically designed for building and deploying sovereign blockchains. It includes additional tools, features, and optimizations that make it easier to develop and deploy blockchain applications beyond a traditional client, while addressing the limitations of the legacy Edge client. Additionally, because the legacy Edge client will no longer be supported, developers are encouraged to transition from v0.6.x for ongoing support and development.
 
-:::info Edge + Supernets = Geth + Ethereum
+## What are some use cases for Edge-powered chains?
 
-Before diving into the documentation, please keep the following points in mind:
-
-- **The Polygon Labs team will prioritize the latest version of the Edge client and as a result, will no longer provide support for older versions (v0.6.3 and earlier).**
-
-  The Edge repository will remain accessible, and users may fork it and use it as they wish, subject to applicable open-source license terms. It is **highly recommended to upgrade to the latest version**, which includes the most up-to-date features and fixes. However, users who prefer to stay on older versions may continue to do so.
-
-- **Polygon Edge serves as a consensus client implementation for Polygon Supernets, much like how Geth serves as a client implementation for Ethereum.** Both Geth and Edge serve as intermediaries between nodes and their respective blockchains, allowing users to interact with the network and take advantage of its benefits. To draw an analogy, Geth and Edge are to Ethereum and Supernets what web browsers are to the internet, enabling users to access and interact with the network.
-
-:::
-
-## Why should I use Supernets instead of Edge?
-
-Supernets are a product suite; a more advanced and feature-rich version of the Edge client that are specifically designed for building and deploying sovereign blockchains. It includes additional tools, features, and optimizations that make it easier to develop and deploy blockchain applications, while addressing the limitations of the legacy Edge client. Additionally, because the legacy Edge client will no longer be supported, developers are encouraged to transition to Supernets for ongoing support and development.
-
-## What are some use cases for Supernets?
-
-Supernets are highly flexible and customizable blockchain platforms that can be used to create tailored solutions for a wide range of use cases. Here are some examples of potential use cases for Supernets:
+Edge-powered chains are highly flexible and customizable blockchain platforms that can be used to create tailored solutions for a wide range of use cases. Here are some examples of potential use cases for Edge:
 
 - Gaming applications and platforms
 - Decentralized finance (DeFi) applications
@@ -73,45 +57,35 @@ Supernets are highly flexible and customizable blockchain platforms that can be 
 - E-commerce platforms and payment systems
 - Insurance and risk management solutions
 
-## Is Edge the only consensus client for Supernets?
+## What tools are available for Edge?
 
-Yes, Edge is the sole consensus client for Supernets and is integrated into the product suite.
+Developers will have access to a variety of tools for building and launching blockchains using Edge. Polygon Labs has partnered with multiple infrastructure providers, tool providers, and implementation partners to offer an all-inclusive development experience.
 
-## What tools are available for Supernets?
+Edge will eventually provide native tooling supplemented by third-party integrations and support. As the ecosystem grows, more resources are expected to become available, making it even easier for developers to build and deploy blockchain solutions.
 
-Developers will have access to a variety of tools for building and launching blockchains on the Supernets network. Polygon Labs has partnered with multiple infrastructure providers, tool providers, and implementation partners to offer an all-inclusive development experience.
+## What infrastructure providers support Edge?
 
-Supernets will eventually provide native tooling supplemented by third-party integrations and support. As the ecosystem grows, more resources are expected to become available, making it even easier for developers to build and deploy blockchain solutions on the Supernets network.
+Several infrastructure providers are currently onboarded to support Edge and more are expected to join in the future. These providers offer a range of services including node hosting, developer tools, and technical support to help developers build and deploy applications.
 
-## What infrastructure providers support Supernets?
+In addition to providing infrastructure and technical support, many of these providers also offer their own resources and documentation to aid in the utilization of Edge. As the Edge ecosystem continues to grow, we expect to see even more infrastructure providers joining the platform, further expanding the resources and support available to developers.
 
-Several infrastructure providers are currently onboarded to support Supernets and more are expected to join in the future. These providers offer a range of services including node hosting, developer tools, and technical support to help developers build and deploy applications on the Supernets network.
+## Can you use Edge with native Ethereum tooling?
 
-In addition to providing infrastructure and technical support, many of these providers also offer their own resources and documentation to aid in the utilization of Supernets. As the Supernets ecosystem continues to grow, we expect to see even more infrastructure providers joining the platform, further expanding the resources and support available to developers.
+Yes, Edge-powered chains are EVM compatible and support Ethereum libraries such as [Web3.js](https://web3js.readthedocs.io/en/v1.8.2/#) and [Ether.js](https://docs.ethers.org/v5/), making it easy for developers familiar with the Ethereum ecosystem to build and deploy applications. Additionally, popular Ethereum development environments such as [Remix](https://remix.ethereum.org/) and [Truffle](https://trufflesuite.com/) can also be used with Edge.
 
-## Can you use Supernets with native Ethereum tooling?
+## Does Edge address the need for large blockspace requirements?
 
-Yes, Supernets are EVM compatible and support Ethereum libraries such as [Web3.js](https://web3js.readthedocs.io/en/v1.8.2/#) and [Ether.js](https://docs.ethers.org/v5/), making it easy for developers familiar with the Ethereum ecosystem to build and deploy applications on the Supernet. Additionally, popular Ethereum development environments such as [Remix](https://remix.ethereum.org/) and [Truffle](https://trufflesuite.com/) can also be used with Supernets.
-
-## Do Supernets address the need for large blockspace requirements?
-
-Yes, Supernets are designed to meet the need for large blockspace requirements by providing a highly scalable, customizable blockchain solution. Developers can create application-specific blockchains that cater to their unique needs by extending the blockspace of a rootchain. The PolyBFT consensus mechanism used by Supernets is specifically designed to provide high throughput, low latency, and instant network finality, making it ideal for a wide range of applications already on Polygon PoS.
+Yes, Edge is designed to meet the need for large blockspace requirements by providing a highly scalable, customizable blockchain solution. Developers can create application-specific blockchains that cater to their unique needs by extending the blockspace of a rootchain. The PolyBFT consensus mechanism used by Edge is specifically designed to provide high throughput, low latency, and instant network finality, making it ideal for a wide range of applications already on Polygon PoS.
 
 ## Can the native bridge be deployed on any chain?
 
-Yes, the bridge can connect to any EVM-compatible rootchain (e.g. Polygon PoS). By leveraging the capabilities of the bridge and the modular design of Supernets, developers can create tailored solutions that are customized for their specific needs, including how they utilize assets.
+Yes, the bridge can connect to any EVM-compatible rootchain (e.g. Polygon PoS). By leveraging the capabilities of the bridge and the modular design of Edge, developers can create tailored solutions that are customized for their specific needs, including how they utilize assets.
 
 ## What assets are supported on the bridge?
 
-The bridge currently supports ERC-20, ERC-721, and ERC-1155 tokens on Supernets for transfer. However, support for other asset types will soon be available. It is important to keep in mind that not all tokens on Supernets have the same functionality and capabilities. Users should review the [bridge document](/docs/supernets/design/bridge/overview.md) to understand how to use tokens on Supernets and with the bridge.
+The bridge currently supports ERC-20, ERC-721, and ERC-1155 tokens for transfer. However, support for other asset types will soon be available. It is important to keep in mind that not all tokens have the same functionality and capabilities. Users should review the [bridge document](/docs/supernets/design/bridge/overview.md) to understand how to use tokens with the bridge.
 
-As the Supernets ecosystem evolves, the bridge will support additional assets, enhancing interoperability between various blockchain networks and applications.
-
-## When will the Supernets mainnet be live?
-
-**There is no mainnet for Supernets** - Supernets are a product suite. The production release of Supernets is currently **targeted for Q2 2023, subject to the completion of an ongoing audit**.
-
-The development team is committed to ensuring that the platform is thoroughly tested and secure before release. In the meantime, developers and users can experiment with the latest test release, [v1.0.0-rc1](https://github.com/0xPolygon/polygon-edge/releases/tag/v1.0.0-rc1), which serves as a valuable testing ground for applications on the platform.
+As the Edge ecosystem evolves, the bridge will support additional assets, enhancing interoperability between various blockchain networks and applications.
 
 ## When are the audits taking place?
 
@@ -133,9 +107,9 @@ If any issues are found during the audits, they will be communicated through off
 
 <TabItem value="migrate">
 
-## Can I migrate from an older version of Edge to Supernets?
+## Can I migrate from an older version of Edge?
 
-Yes, it's possible to migrate from a blockchain running on an older version of Edge with IBFT 1.0 consensus to a new blockchain running on Supernets with PolyBFT consensus using IBFT 2.0. However, please note that the migration process will require a hard fork, as IBFT 2.0 is not fully backward compatible with IBFT 1.0.
+Yes, it's possible to migrate from a blockchain running on an older version of Edge with IBFT 1.0 consensus to a new blockchain running on Edge with PolyBFT consensus using IBFT 2.0. However, please note that the migration process will require a hard fork, as IBFT 2.0 is not fully backward compatible with IBFT 1.0.
 
 To upgrade to a new blockchain with PolyBFT consensus using IBFT 2.0, you'll need to follow these steps:
 
@@ -218,15 +192,15 @@ Although it is recommended to use the standard ERC-20, ERC-721, and ERC-1155 con
 
 To create and manage native assets on a Supernet or enable asset bridging between a Supernet and rootchain, it is recommended to use the core contracts provided by the network.
 
-## Is it necessary to use the native bridge integration for Supernets?
+## Is it necessary to use the native bridge integration for Edge?
 
-Yes, it's essential. The native bridge integration is fundamental for Supernets as it hosts the staking logic on the rootchain, which serves as the authoritative source of truth for the Supernet.
+Yes, it's essential. The native bridge integration is fundamental for Edge as it hosts the staking logic on the rootchain, which serves as the authoritative source of truth for the Supernet.
 
 While customization is possible, it should be undertaken with a comprehensive understanding of the system. If preferred, the product suite can be used solely for the childchain instance.
 
-## Can the gas token be different from the staking token in Supernets?
+## Can the gas token be different from the staking token in Edge?
 
-Yes, Supernets allows for the decoupling of the native gas token and the staking token. You can set any ERC-20 token as your gas token, and use MATIC for staking.
+Yes, Edge allows for the decoupling of the native gas token and the staking token. You can set any ERC-20 token as your gas token, and use MATIC for staking.
 
 Decoupling the gas token and the staking token provides greater flexibility and enables more use cases for the network. However, it's important to note that the specifics of how this is configured may depend on the specific implementation of the network you're using.
 
@@ -244,7 +218,7 @@ Checkpoints are currently dispatched at the end of each epoch or every 900 block
 
 ## How are native gas fungible tokens allocated during the genesis of the childchain?
 
-At the Supernet's inception, designated accounts receive specific amounts of native gas fungible tokens. If the tokens are non-mintable, premining at genesis is prohibited, except for the 0x0 address. These accounts must bridge assets from the rootchain. Conversely, mintable tokens allow for arbitrary premining on the Supernets during genesis.
+At the Supernet's inception, designated accounts receive specific amounts of native gas fungible tokens. If the tokens are non-mintable, premining at genesis is prohibited, except for the 0x0 address. These accounts must bridge assets from the rootchain. Conversely, mintable tokens allow for arbitrary premining during genesis.
 
 ## Is it necessary to mint new tokens using the associated ERC20 contract each time native gas fungible tokens are spent?
 
@@ -274,9 +248,9 @@ In theory, existing rootchain contracts can be used, but it is not practical wit
 
 Manually updating the Supernet configuration to point to existing rootchain contract addresses may disrupt or challenge checkpoints and chain state, leading to problems if there is a fork on the Supernet. Furthermore, updating the checkpoint manager's address could trigger an exit with the wrong checkpoint manager, leading to incorrect state transitions and potential loss of funds. Deploying new contracts on the rootchain ensures all necessary dependencies are available and properly configured, avoiding compatibility issues or other unforeseen problems.
 
-## Is it necessary to deploy new instances of rootchain contracts for each Supernet instance when running multiple Supernets?
+## Is it necessary to deploy new instances of rootchain contracts for each Supernet instance when running multiple Edge chains?
 
-Yes, new instances of rootchain contracts must be deployed for each Supernet instance. Each Supernet instance is independent and requires its own set of contracts to function properly. Deploying and managing multiple instances of contracts can be complex and requires careful consideration of factors such as cost, security, and scalability. It is essential to plan and test thoroughly before implementing a solution with multiple Supernets.
+Yes, new instances of rootchain contracts must be deployed for each Supernet instance. Each Supernet instance is independent and requires its own set of contracts to function properly. Deploying and managing multiple instances of contracts can be complex and requires careful consideration of factors such as cost, security, and scalability. It is essential to plan and test thoroughly before implementing a solution with multiple Edge chains.
 
 ## Is the identity of a Supernet instance linked to the rootchain contract address on the rootchain?
 
@@ -295,15 +269,4 @@ Yes, the identity of a Supernet instance is linked to the rootchain contract add
 No, it's not possible to add an allowlist after the genesis configuration. This is because the allowlist serves to specify the initial "admins" of the network who are responsible for the initial authority and adding new addresses thereafter. If the allowlist were to be changed after genesis, it would alter the initial authority of the network, potentially introducing security risks and undermining the integrity of the system. As such, it's important to carefully consider and configure the allowlist during the genesis setup to ensure the network's security and functionality.
 
 </TabItem>
-
-<!--
-## How can you verify that checkpoints were successful?
-
-## How does the Supernet handle state transitions in case of a fork?
-
-## What are the recovery options in case of a validator node failure on a Supernet?
-
-## How do Supernets manage the interchain communication latency and its impact on the overall performance?
--->
-
 </Tabs>
