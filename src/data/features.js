@@ -1,21 +1,21 @@
 export const firstRow = [
     {
-        title: "Build a dApp on zkEVM",
+        title: "Build Secure Solutions",
         linkUrl: "docs/zkevm/develop",
         imageUrl: "img/logo-round-dark.png",
-        description: "Empower the world by building next-gen dApps using ZK tech."
+        description: "Build highly scalable and secure applications using ZK tech."
     },
     {
-        title: "Try the New CDK Validium",
+        title: "Build Modular Solutions",
         linkUrl: "docs/cdk/quickstart/",
         imageUrl: "img/logo-round-dark.png",
-        description: "Empower the world by building next-gen app-chains using the new Polygon development kit."
+        description: "Build next-gen app-chains using the new Polygon chain development kit."
     },
     {
-        title: "Build a Supernet",
+        title: "Build Custom Solutions",
         linkUrl: "/docs/category/build-a-supernet",
         imageUrl: "img/logo-round-dark.png",
-        description: "Learn how to build a fully-fleged app-chain with Polygon Supernets."
+        description: "Build a fully-fleged app-chain with Edge-based Supernets."
     },
     {
         title: "Run a PoS node",
@@ -36,4 +36,3 @@ export const firstRow = [
         description: "Contribute to decentralized computing by running a Miden VM."
     },
 ];
-

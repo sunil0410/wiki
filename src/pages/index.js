@@ -83,11 +83,11 @@ function Home() {
               <div className="col-lg-8">
                 <h1 className="mt-0"><a href="https://polygon.technology" class="landing-page-link">Polygon</a> Wiki</h1>
                 <h3 className="mt-0"> The official documentation for <a href="https://polygon.technology" class="landing-page-link">0xPolygon</a></h3>
-                <p className="lead">The <b>Polygon Wiki</b> is the source of truth for Polygon, providing comprehensive documentation, community resources, and guides for enthusiasts and developers interested in learning about or building on Polygon. <b>Stay tuned for the upcoming documentation experience for Polygon 2.0.</b></p>
+                <p className="lead">The <b>Polygon Wiki</b> is the source of truth for Polygon, providing comprehensive documentation, community resources, and guides for enthusiasts and developers interested in learning about or building on Polygon.</p>
                 <a href="https://university.polygon.technology/" style={{ color: '#ffffff' }}>
                   <button className="btn btn-custom">Get started with Polygon</button>
                 </a>
-                <p><a href="#common-docs" onClick={(e) => { e.preventDefault(); smoothScrollTo('#common-docs'); }}><b>Start building ↓</b></a></p>
+                <p><a href="#common-docs" onClick={(e) => { e.preventDefault(); smoothScrollTo('#common-docs'); }}><b>Everything is built for scale ↓</b></a></p>
               </div>
               <div className="col-lg-4 text-center pt-3 d-none d-lg-block">
                 <img style={{ maxWidth: '100%', maxHeight: '400px' }} src="img/polygon-logo.png" />

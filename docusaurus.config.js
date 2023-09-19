@@ -271,18 +271,12 @@ module.exports = {
           title: "Reference",
           items: [
             {
-              label: "Whitepaper",
+              label: "Original Whitepaper",
               href: "https://github.com/maticnetwork/whitepaper/"
             },
-            /* Commenting out until a working link is available
             {
-              label: "Lightpaper",
-              href: "https://polygon.technology/lightpaper-polygon.pdf"
-            },
-            */
-            {
-              label: "Miden",
-              href: "/docs/miden/design/main"
+              label: "POL Whitepaper",
+              href: "https://polygon.technology/papers/pol-whitepaper"
             },
           ]
         },
@@ -418,12 +412,30 @@ module.exports = {
           rel: null,
         },
         {
+          label: "CDK",
+          position: "left",
+          items: [
+            {
+              href: '/docs/cdk',
+              label: 'Validium',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/supernets/',
+              label: 'Edge-based Supernets',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
           label: "PoS",
           position: "left",
           items: [
             {
-              href: '/docs/pos/getting-started/',
-              label: 'Get Started with PoS',
+              href: '/docs/pos/',
+              label: 'Welcome to PoS',
               target: '_self',
               rel: null,
             },
@@ -454,78 +466,86 @@ module.exports = {
           ],
         },
         {
-          label: "Polygon Stack",
+          label: "zkEVM",
           position: "left",
           items: [
             {
-              href: '/docs/pos/',
-              label: 'PoS',
-              target: '_self',
-              rel: null,
-            },
-            {
               href: '/docs/zkevm/',
-              label: 'zkEVM',
+              label: 'Welcome to zkEVM',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/supernets/',
-              label: 'Supernets',
+              to: '/docs/category/start-building/',
+              label: 'Build a dApp',
               target: '_self',
               rel: null,
             },
+            {
+              href: '/docs/category/setup-zknode/',
+              label: 'Run a Node',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/deploy-zkevm/',
+              label: 'Launch Your zkEVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/zkevm/',
+              label: 'Pre-Specs',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+  
+        {
+          label: "Miden",
+          position: "left",
+          items: [
             {
               href: '/docs/miden/',
-              label: 'Miden',
+              label: 'Welcome to Miden',
               target: '_self',
               rel: null,
             },
             {
-              href: 'https://devs.polygonid.com/',
-              label: 'ID',
+              href: '/docs/miden/intro/main/',
+              label: 'Learn about Miden',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/miden/user_docs/usage/',
+              label: 'Use the MidenVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/miden-vm/',
+              label: 'Pre-Specs',
               target: '_self',
               rel: null,
             },
           ],
         },
         {
-          label: "Polygon 2.0",
+          to: 'https://devs.polygonid.com/',
+          label: 'ID',
           position: "left",
-          items: [
-            {
-              href: '/docs/cdk',
-              label: 'Polygon CDK',
-              target: '_self',
-              rel: null,
-            },
-          ],
+          target: '_blank',
+          rel: null,
         },
         {
           label: "Apps & Tools",
-          position: "left",
+          position: "right",
           items: [
             {
               href: '/docs/tools/matic-js/get-started',
               label: 'Matic.js',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
-          label: "Pre-Specs",
-          position: "left",
-          items: [
-            {
-              href: '/docs/category/zkevm/',
-              label: 'zkEVM',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/docs/category/miden-vm',
-              label: 'Miden',
               target: '_self',
               rel: null,
             },
