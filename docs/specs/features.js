@@ -1,7 +1,7 @@
 export const firstRow = [
     {
         title: "What Do We Mean by Pre-Specs?",
-        linkUrl: "/docs/edge/what-is-edge",
+        linkUrl: "/docs/cdk/edge/what-is-edge",
         imageUrl: "/img/edge/supernets-logo.png",
     },
     {

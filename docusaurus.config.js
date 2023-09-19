@@ -428,7 +428,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/edge/operate/quickstart/',
+              href: '/docs/cdk/edge/operate/quickstart/',
               label: 'Get Started with Edge',
               target: '_self',
               rel: null,
@@ -512,7 +512,7 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/edge/what-is-edge/',
+              href: '/docs/cdk/edge/what-is-cdk/edge/',
               label: 'Welcome to the Edge Client',
               target: '_self',
               rel: null,

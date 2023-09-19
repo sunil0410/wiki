@@ -14,8 +14,6 @@ keywords:
   - support
 ---
 
-## CDK Program Overview
-
 Led by Polygon Labs, the CDK Program unites industry-leading partners, collectively dedicated to providing streamlined blockchain development and deployment solutions for enterprises across diverse use cases.
 
 ## Implementation Partners & Service Providers
