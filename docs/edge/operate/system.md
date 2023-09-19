@@ -1,5 +1,5 @@
 ---
-id: supernets-requirements
+id: requirements
 title: System Requirements
 sidebar_label: System Requirements
 description: "System requirements to successfully run Supernets on a local or remote machine."

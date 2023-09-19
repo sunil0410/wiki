@@ -1,5 +1,5 @@
 ---
-id: supernets-ibft-to-polybft
+id: ibft-to-polybft
 title: State Trie Migration and Regenesis to PolyBFT
 sidebar_label: Migrate from Edge PoA
 description: "Transition to a New Blockchain with PolyBFT Consensus from a Blockchain using IBFT Consensus with Edge PoA."
@@ -19,7 +19,7 @@ In this guide, you'll discover how to migrate from an existing IBFT consensus ch
 
 :::caution This is not an upgrade
 
-The regenesis process is not intended as an upgrade to another version of the consensus client but rather as a transformation to a distinct product suite designed for next-generation, application-specific chains (appchains) with cross-chain compatibility and staking requirements. If you are unfamiliar or uncertain about this, please refer to the [<ins>introductory material</ins>](/docs/edge/get-started/what-are-supernets.md) and [<ins>system design documentation</ins>](/docs/edge/design/overview.md). For further assistance, please reach out to the Polygon team.
+The regenesis process is not intended as an upgrade to another version of the consensus client but rather as a transformation to a distinct product suite designed for next-generation, application-specific chains (appchains) with cross-chain compatibility and staking requirements. If you are unfamiliar or uncertain about this, please refer to the [<ins>introductory material</ins>](/docs/edge/what-is-edge.md) and [<ins>system design documentation</ins>](/docs/edge/design/overview.md). For further assistance, please reach out to the Polygon team.
 :::
 
 :::info Compatibility

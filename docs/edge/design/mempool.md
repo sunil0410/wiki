@@ -1,5 +1,5 @@
 ---
-id: supernets-mempool
+id: mempool
 title: Memory pool
 sidebar_label: Memory Pool
 description: "The memory pool of Edge."

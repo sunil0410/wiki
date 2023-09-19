@@ -1,5 +1,5 @@
 ---
-id: supernets-allowlist-add-remove
+id: allowlist-add-remove
 title: How to Add & Remove Accounts from an ACL
 sidebar_label: How to Add & Remove Accounts
 description: "Learn how to allowlist addresses on a Supernet."

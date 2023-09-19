@@ -417,13 +417,19 @@ module.exports = {
           items: [
             {
               href: '/docs/cdk',
-              label: 'Validium',
+              label: 'Welcome to the CDK',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/edge/',
-              label: 'Edge',
+              href: '/docs/cdk/quickstart/',
+              label: 'Get Started with the Validium',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/edge/operate/quickstart/',
+              label: 'Get Started with Edge',
               target: '_self',
               rel: null,
             },
@@ -506,19 +512,19 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/pos/',
+              href: '/docs/edge/what-is-edge/',
               label: 'Welcome to the Edge Client',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/category/system-design/',
+              href: '/docs/category/system-design-1/',
               label: 'Learn about Edge',
               target: '_self',
               rel: null,
             },
             {
-              to: '/docs/category/build-a-dapp/',
+              to: '/docs/category/build-an-edge-chain/',
               label: 'Deploy a Chain',
               target: '_self',
               rel: null,

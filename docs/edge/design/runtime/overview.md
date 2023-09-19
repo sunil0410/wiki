@@ -1,5 +1,5 @@
 ---
-id: supernets-runtime
+id: runtime
 title: Ethereum Virtual Machine (EVM)
 sidebar_label: Overview
 description: "Learn about the runtime environment of Supernets."

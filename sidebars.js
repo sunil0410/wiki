@@ -898,17 +898,14 @@ module.exports = {
 
   /*
    *
-   * ************************** Supernets Section *************************
+   * ************************** CDK Section *************************
    *
    * This section includes the official product documentation and
-   * developer guides for Polygon Supernets.
+   * developer guides for Polygon CDK.
    *
    * **********************************************************************
    *
    */
-
-  edge: [
-  ],
 
   cdk: [
     {
@@ -918,6 +915,7 @@ module.exports = {
     },
     "cdk/index",
     "cdk/what-is-polygon-cdk",
+    "cdk/cdk-program",
     {
       type: "html",
       value: "Validium",
@@ -932,8 +930,8 @@ module.exports = {
       value: "Edge",
       className: "sidebar-title",
     },
-    "edge/operate/supernets-quick-start",
-    "edge/get-started/what-are-supernets",
+    "edge/operate/quickstart",
+    "edge/what-is-edge",
     {
       type: "category",
       label: "System Design",
@@ -978,7 +976,7 @@ module.exports = {
             },
           ],
         },
-        "edge/design/supernets-libp2p",
+        "edge/design/libp2p",
         {
           type: "category",
           label: "Runtime",
@@ -986,21 +984,21 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "edge/design/runtime/supernets-runtime",
-            "edge/design/runtime/supernets-runtime-allowlist",
+            "edge/design/runtime/runtime",
+            "edge/design/runtime/runtime-allowlist",
           ],
         },
-        "edge/design/supernets-blockchain",
-        "edge/design/supernets-mempool",
-        "edge/design/supernets-txpool",
-        "edge/design/supernets-txrelayer",
-        "edge/design/supernets-json-rpc",
-        "edge/design/supernets-grpc",
+        "edge/design/blockchain",
+        "edge/design/mempool",
+        "edge/design/txpool",
+        "edge/design/txrelayer",
+        "edge/design/json-rpc",
+        "edge/design/grpc",
       ],
     },
     {
       type: "category",
-      label: "Build an Edge-Powered Chain",
+      label: "Build an Edge Chain",
       link: {
         type: "generated-index",
       },
@@ -1014,11 +1012,11 @@ module.exports = {
           },
           collapsed: true,
           items: [
-            "edge/operate/supernets-requirements",
-            "edge/operate/supernets-install",
+            "edge/operate/requirements",
+            "edge/operate/install",
           ],
         },
-        "edge/operate/supernets-ibft-to-polybft",
+        "edge/operate/ibft-to-polybft",
         {
           type: "category",
           label: "Deploy a Chain",
@@ -1026,12 +1024,12 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "edge/operate/deploy/supernets-deploy-index",
-            "edge/operate/deploy/supernets-spawn-test-chain",
-            "edge/operate/deploy/supernets-how-to-generate-genesis",
-            "edge/operate/deploy/supernets-how-to-configure-rootchain",
-            "edge/operate/deploy/supernets-genesis-validators",
-            "edge/operate/deploy/supernets-how-to-start",
+            "edge/operate/deploy/deploy-index",
+            "edge/operate/deploy/spawn-test-chain",
+            "edge/operate/deploy/how-to-generate-genesis",
+            "edge/operate/deploy/how-to-configure-rootchain",
+            "edge/operate/deploy/genesis-validators",
+            "edge/operate/deploy/how-to-start",
           ],
         },
         {
@@ -1050,7 +1048,7 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                "edge/operate/deploy/access-control/supernets-allowlist-add-remove",
+                "edge/operate/deploy/access-control/allowlist-add-remove",
               ],
             },
             {
@@ -1061,8 +1059,8 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                "edge/operate/deploy/staking/supernets-how-to-stake",
-                "edge/operate/deploy/staking/supernets-unstake",
+                "edge/operate/deploy/staking/how-to-stake",
+                "edge/operate/deploy/staking/unstake",
               ],
             },
             {
@@ -1073,8 +1071,8 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                "edge/operate/deploy/transfers/supernets-cross-chain-deposit",
-                "edge/operate/deploy/transfers/supernets-cross-chain-withdraw",
+                "edge/operate/deploy/transfers/cross-chain-deposit",
+                "edge/operate/deploy/transfers/cross-chain-withdraw",
               ],
             },
           ],
@@ -1087,8 +1085,8 @@ module.exports = {
           },
           collapsed: true,
           items: [
-            "edge/operate/deploy/upgrades/supernets-how-to-upgrade",
-            "edge/operate/deploy/upgrades/supernets-v1.1-hardforks",
+            "edge/operate/deploy/upgrades/how-to-upgrade",
+            "edge/operate/deploy/upgrades/v1.1-hardforks",
           ],
         },
       ],
@@ -1101,7 +1099,7 @@ module.exports = {
       },
       collapsed: true,
       items: [
-        "edge/operate/supernets-param-reference",
+        "edge/operate/param-reference",
         {
           type: "category",
           label: "Smart Contract Interfaces",
@@ -1181,7 +1179,7 @@ module.exports = {
               },
               items: [
                 "edge/interfaces/staking/stake-manager-interface",
-                "edge/interfaces/staking/supernet-manager-interface",
+                "edge/interfaces/staking/supernets-manager-interface",
                 "edge/interfaces/staking/custom-supernet-manager-interface",
               ],
             },
@@ -1214,10 +1212,10 @@ module.exports = {
             "edge/api/json-rpc-bridge",
           ],
         },
-        "edge/operate/supernets-performance",
+        "edge/operate/performance",
       ],
     },
-    "edge/supernets-faq",
+    "edge/faq",
   ],
 
  /*

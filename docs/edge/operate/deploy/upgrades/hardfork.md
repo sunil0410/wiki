@@ -1,5 +1,5 @@
 ---
-id: supernets-how-to-upgrade
+id: how-to-upgrade
 title: How to Upgrade Your Edge Chain Using a Hardfork
 sidebar_label: Upgrade Your Edge Chain Using a Hardfork
 description: "Learn how to upgrade your Edge chain using a hardfork."

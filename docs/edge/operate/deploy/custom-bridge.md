@@ -1,5 +1,5 @@
 ---
-id: supernets-custom-bridge
+id: custom-bridge
 title: How to Use a Custom Bridge
 sidebar_label: How to Use a Custom Bridge
 description: "Learn how to disable the native bridge through allowlisting."

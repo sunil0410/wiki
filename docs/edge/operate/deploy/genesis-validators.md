@@ -1,5 +1,5 @@
 ---
-id: supernets-genesis-validators
+id: genesis-validators
 title: How to Configure the Initial Validator Set
 sidebar_label: How to Configure the Initial Validator Set
 description: "Learn how to configure the initial validator set of a new Supernet with allowlists and staking."

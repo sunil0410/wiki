@@ -1,5 +1,5 @@
 ---
-id: supernets-performance
+id: performance
 title: Performance Benchmarks
 sidebar_label: Performance Benchmarks
 description: "The first performance benchmarks for Supernets."

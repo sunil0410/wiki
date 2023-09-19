@@ -1,5 +1,5 @@
 ---
-id: supernets-param-reference
+id: param-reference
 title: Configuration Parameter Reference
 sidebar_label: Configuration Parameter Reference
 description: "Manpage for configurable parameters."

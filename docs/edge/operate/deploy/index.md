@@ -1,5 +1,5 @@
 ---
-id: supernets-deploy-index
+id: deploy-index
 title: Get Started
 sidebar_label: Get Started
 description: "Learn how to deploy a local test Edge chain."
@@ -73,7 +73,7 @@ By the end of this tutorial, you will have a fully functional Edge test network 
 
 The deployment guides will cover the steps outlined below. If you are deploying an Edge chain for the first time, please navigate each section in order. 
 
-1. [Spawn a New Edge Chain](/docs/edge/operate/deploy/local-supernet.md)
+1. [Spawn a New Edge Chain](/docs/edge/operate/deploy/local-chain.md)
 2. [Configure Your New Edge Chain](/docs/edge/operate/deploy/genesis.md)
 3. [Configure the Rootchain](/docs/edge/operate/deploy/rootchain-config.md)
 4. [Configure the Initial Validator Set](/docs/edge/operate/deploy/genesis-validators.md)

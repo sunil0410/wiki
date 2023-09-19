@@ -1,5 +1,5 @@
 ---
-id: supernets-cross-chain-deposit
+id: cross-chain-deposit
 title: How To Perform Cross-Chain Asset Transfers From Rootchain to Childchain
 sidebar_label: How to Deposit (Rootchain → Childchain)
 description: "A guide on the available bridge transactions."
@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
 
 ## Prerequisites
 
-You'll need to have a a successful bridge deployment to make any cross-chain transactions. If you haven't done so already, check out the local deployment guide [<ins>here</ins>](/edge/operate/deploy/local-supernet.md).
+You'll need to have a a successful bridge deployment to make any cross-chain transactions. If you haven't done so already, check out the local deployment guide [<ins>here</ins>](/edge/operate/deploy/local-chain.md).
 
 :::caution Key management and secure values
 When passing values to run transactions, it is important to keep sensitive values like private keys and API keys secure.

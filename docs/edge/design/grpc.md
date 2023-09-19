@@ -1,5 +1,5 @@
 ---
-id: supernets-grpc
+id: grpc
 title: gRPC
 description: "The gRPC layer for Supernets."
 keywords:

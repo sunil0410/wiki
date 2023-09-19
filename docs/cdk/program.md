@@ -1,7 +1,7 @@
 ---
 id: cdk-program
-title: Validium Support
-sidebar_label: Validium Support
+title: CDK Support
+sidebar_label: CDK Support
 description: "An overview of the CDK Program."
 keywords:
   - docs
@@ -30,7 +30,7 @@ The CDK program offers a range of service providers that can assist with various
 - **KYC Providers**: These providers offer Know Your Customer (KYC) and Anti-Money Laundering (AML) compliance services, which can help ensure that CDK-developed chain comply with regulatory requirements and mitigate risk for network participants.
 - **Fiat On-Ramps**: These services bridge fiat currencies and digital assets, enabling users to purchase and use digital assets on CDK-developed chains. Fiat on-ramps can help increase accessibility and adoption of CDK-developed chains.
 
-## Validium Deployments
+## Deployments
 
 The program offers effortless initiation for blockchain networks through "one-click" deployments, enabling developers to establish a new app-chain with utmost ease and efficiency.
 

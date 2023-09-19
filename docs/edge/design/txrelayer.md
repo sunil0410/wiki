@@ -1,5 +1,5 @@
 ---
-id: supernets-txrelayer
+id: txrelayer
 title: Transaction Relayer
 sidebar_label: Transaction Relayer
 description: "The transaction relayer of Edge."

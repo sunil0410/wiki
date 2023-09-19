@@ -1,5 +1,5 @@
 ---
-id: supernets-libp2p
+id: libp2p
 title: libp2p
 sidebar_label: Networking
 description: "The networking layer of Edge."

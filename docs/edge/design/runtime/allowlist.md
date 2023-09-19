@@ -1,5 +1,5 @@
 ---
-id: supernets-runtime-allowlist
+id: runtime-allowlist
 title: Access Control Lists
 sidebar_label: Access control lists
 description: "Learn about the authorization capabilities available in Edge."

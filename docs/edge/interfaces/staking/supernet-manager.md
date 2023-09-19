@@ -1,5 +1,5 @@
 ---
-id: supernet-manager-interface
+id: supernets-manager-interface
 title: SupernetManager
 sidebar_label: SupernetManager
 description: "Learn about the access control module and how to allowlist validators."

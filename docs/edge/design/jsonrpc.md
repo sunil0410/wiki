@@ -1,5 +1,5 @@
 ---
-id: supernets-json-rpc
+id: json-rpc
 title: JSON-RPC
 sidebar_label: JSON-RPC
 description: "The JSON-RPC layer of Supernets."

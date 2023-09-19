@@ -18,16 +18,16 @@ export const firstRow = [
         description: "Learn about the data availability layer and how the DAC operates within the Polygon CDK."
     },
     {
-        title: "Deployment Differences",
-        linkUrl: "",
+        title: "Launch a Validium",
+        linkUrl: "/docs/cdk/validium-attributes",
         imageUrl: "/img/edge/supernets-logo.png",
-        description: "Explore the distinctions between deploying a CDK-developed chain with validium versus Polygon's zkEVM."
+        description: "Discover why Polygon CDK is your answer to today's system demands, built to adapt for tomorrow."
     },
     {
-        title: 'Launch a Local Test Network',
-        linkUrl: '/docs/cdk/quickstart',
-        imageUrl: '/img/edge/supernets-logo.png',
-        description: 'Learn how to deploy your own CDK-developed chain in only 5 minutes.'
+        title: "Launch an Edge Chain",
+        linkUrl: "/docs/edge/operate/deploy",
+        imageUrl: "/img/edge/supernets-logo.png",
+        description: "Develop an app-chain and link it to any EVM-compatible rootchain."
     },
     {
         title: "CDK Program",

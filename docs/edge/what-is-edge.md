@@ -1,5 +1,5 @@
 ---
-id: what-are-supernets
+id: what-is-edge
 title: What is Polygon Edge?
 sidebar_label: What is Edge
 description: "An introduction to Polygon Edge."

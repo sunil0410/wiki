@@ -1,6 +1,6 @@
 ---
-id: supernets-quick-start
-title: Quickstart
+id: quickstart
+title: Launch a Local Test Edge Chain
 sidebar_label: Quickstart
 description: "Spin up a new childchain instance with one-click."
 keywords:
@@ -18,8 +18,6 @@ import TabItem from '@theme/TabItem';
 import DownloadButton from '@site/src/data/DownloadButton';
 
 Before proceeding, ensure that your system meets the necessary [system requirements](/docs/edge/operate/system.md).
-
-## Spawn a local Edge chain in 2 minutes
 
 To access the pre-built releases, visit the [GitHub releases page](https://github.com/0xPolygon/polygon-edge/releases). The client provides cross-compiled AMD64/ARM64 binaries for Darwin and Linux.
 

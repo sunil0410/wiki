@@ -1,5 +1,5 @@
 ---
-id: supernets-install
+id: install
 title: Installation
 sidebar_label: Install Binaries
 description: "Steps on how to install the Edge binaries."

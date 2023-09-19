@@ -1,6 +1,6 @@
 ---
 id: quickstart
-title: 'Launch a Local Test CDK Chain'
+title: 'Launch a Local Test Validium Chain'
 sidebar_label: 'Quickstart'
 description: "Launch a CDK Chain"
 keywords:

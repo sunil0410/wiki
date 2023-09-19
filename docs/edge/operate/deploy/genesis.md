@@ -1,5 +1,5 @@
 ---
-id: supernets-how-to-generate-genesis
+id: how-to-generate-genesis
 title: How to Configure a New Childchain
 sidebar_label: How to Configure a New Childchain
 description: "Learn how to deploy a local test Supernet."

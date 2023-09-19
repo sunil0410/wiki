@@ -1,5 +1,5 @@
 ---
-id: supernets-txpool
+id: txpool
 title: Transaction Pool
 sidebar_label: Transaction Pool
 description: "The transaction pool of Edge."

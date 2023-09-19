@@ -1,5 +1,5 @@
 ---
-id: supernets-unstake
+id: unstake
 title: How to Unstake on the Rootchain
 sidebar_label: How to Unstake
 description: "A guide on the how to unstake validator stake."

@@ -1,5 +1,5 @@
 ---
-id: supernets-faq
+id: faq
 title: Frequently Asked Questions
 sidebar_label: Frequently Asked Questions
 description: "The most common questions and answers about Edge"
