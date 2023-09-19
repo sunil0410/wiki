@@ -418,6 +418,42 @@ module.exports = {
           rel: null,
         },
         {
+          label: "PoS",
+          position: "left",
+          items: [
+            {
+              href: '/docs/pos/getting-started/',
+              label: 'Get Started with PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/system-design/',
+              label: 'Learn about PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/build-a-dapp/',
+              label: 'Build a dApp',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/become-a-validator/',
+              label: 'Become a Validator',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/proposals/',
+              label: 'Create Proposals',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
           label: "Polygon Stack",
           position: "left",
           items: [
@@ -472,30 +508,6 @@ module.exports = {
             {
               href: '/docs/tools/matic-js/get-started',
               label: 'Matic.js',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
-          label: "Participate",
-          position: "left",
-          items: [
-            {
-              href: '/docs/delegate/delegate',
-              label: 'Delegate MATIC',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/category/run-a-validator-node',
-              label: 'Run a PoS Validator',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/governance',
-              label: 'Governance',
               target: '_self',
               rel: null,
             },

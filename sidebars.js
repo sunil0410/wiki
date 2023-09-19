@@ -8,51 +8,6 @@
 module.exports = {
   /*
    *
-   * *********************** Apps & Tools Section *************************
-   *
-   * This section includes explainer guides and content on common wallets,
-   * tools, applications, and services for the Polygon ecosystem.
-   *
-   * **********************************************************************
-   *
-   */
-
-  /*
-   *
-   * ************************* Governance Section *************************
-   *
-   * This section includes explainer guides and content on the PIP
-   * framework and PoS governance.
-   *
-   * **********************************************************************
-   *
-   */
-
-  govern: [
-    {
-      type: "html",
-      value: "Polygon Governance",
-      className: "sidebar-title",
-    },
-    "governance/index",
-    {
-      type: "category",
-      label: "Polygon Improvement Proposals (PIPs)",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "governance/pips/pips-overview",
-        "governance/pips/how-to-propose",
-        "governance/pips/pips-forum",
-        "governance/pips/pips-community-guidelines",
-      ],
-    },
-    "governance/governance-pos",
-  ],
-
-  /*
-   *
    * ************************ PoS Section ********************************
    *
    * This section includes the official product documentation and
@@ -201,7 +156,6 @@ module.exports = {
           ],
         },
         */
-        "governance/governance-pos",
         {
           type: "category",
           label: "Consensus",
@@ -590,6 +544,25 @@ module.exports = {
       "pos/reference/pos-common-commands",
       "pos/reference/pos-errors",
       "pos/pos-faqs",
+      {
+        type: "html",
+        value: "Governance",
+        className: "sidebar-title",
+      },
+      "pos/governance-pos",
+      {
+        type: "category",
+        label: "Proposals",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "pips/pips-overview",
+          "pips/how-to-propose",
+          "pips/pips-forum",
+          "pips/pips-community-guidelines",
+        ],
+      },
   ],
 
   /*

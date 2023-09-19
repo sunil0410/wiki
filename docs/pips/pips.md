@@ -1,7 +1,7 @@
 ---
 id: pips-overview
 title: Polygon Improvement Proposals (PIPs)
-sidebar_label: Overview
+sidebar_label: What are PIPs
 description: Learn about Polygon Improvement Proposals.
 keywords:
   - docs

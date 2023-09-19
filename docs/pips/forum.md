@@ -26,4 +26,4 @@ projects. It's also a great place to propose and discuss different types of Poly
 Improvement Proposals, ranging from informational to core protocol changes.
 
 If you haven't already, sign up [here](https://forum.polygon.technology/), and be sure to
-check out the [next page for the community guidelines](community-guidelines.md).
+check out the [next page for the community guidelines](/docs/pips/community-guidelines.md).
