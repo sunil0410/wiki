@@ -523,18 +523,6 @@ module.exports = {
               target: '_self',
               rel: null,
             },
-            {
-              href: '/docs/category/become-a-validator/',
-              label: 'Become a Validator',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/docs/category/proposals/',
-              label: 'Create Proposals',
-              target: '_self',
-              rel: null,
-            },
           ],
         },
         {

@@ -1,7 +1,7 @@
 ---
 id: supernets-quick-start
-title: Quick Start
-sidebar_label: Quick Start
+title: Quickstart
+sidebar_label: Quickstart
 description: "Spin up a new childchain instance with one-click."
 keywords:
   - docs

@@ -1,7 +1,7 @@
 ---
 id: validium-attributes
 title: Validium System Attributes
-sidebar_label: Validium System Attributes
+sidebar_label: System Attributes
 description: "Learn about the key metrics for the validium offering part of the Polygon CDK."
 keywords:
   - docs

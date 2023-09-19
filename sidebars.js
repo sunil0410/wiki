@@ -908,12 +908,30 @@ module.exports = {
    */
 
   edge: [
+  ],
+
+  cdk: [
     {
       type: "html",
-      value: "Polygon Edge",
+      value: "Polygon Chain Development Kit",
       className: "sidebar-title",
     },
-    "edge/index",
+    "cdk/index",
+    "cdk/what-is-polygon-cdk",
+    {
+      type: "html",
+      value: "Validium",
+      className: "sidebar-title",
+    },
+    "cdk/quickstart",
+    "cdk/validium-attributes",
+    "cdk/dac-overview",
+    "cdk/differences-validium-zkevm",
+    {
+      type: "html",
+      value: "Edge",
+      className: "sidebar-title",
+    },
     "edge/operate/supernets-quick-start",
     "edge/get-started/what-are-supernets",
     {
@@ -1200,21 +1218,6 @@ module.exports = {
       ],
     },
     "edge/supernets-faq",
-  ],
-
-  cdk: [
-    {
-      type: "html",
-      value: "Polygon CDK",
-      className: "sidebar-title",
-    },
-    "cdk/index",
-    "cdk/what-is-polygon-cdk",
-    "cdk/validium-attributes",
-    "cdk/dac-overview",
-    "cdk/cdk-program",
-    "cdk/differences-validium-zkevm",
-    "cdk/quickstart",
   ],
 
  /*
