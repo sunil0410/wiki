@@ -63,12 +63,12 @@ module.exports = {
    */
 
   pos: [
+    "pos/index",
     {
       type: "html",
       value: "Introduction",
       className: "sidebar-title",
     },
-    "pos/index",
     "pos/getting-started",
     "pos/what-is-polygon-pos",
     {
