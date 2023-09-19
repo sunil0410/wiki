@@ -910,7 +910,7 @@ module.exports = {
   edge: [
     {
       type: "html",
-      value: "Polygon Supernets",
+      value: "Polygon Edge",
       className: "sidebar-title",
     },
     "edge/index",
@@ -982,7 +982,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Build a Supernet",
+      label: "Build an Edge-Powered Chain",
       link: {
         type: "generated-index",
       },
@@ -1003,7 +1003,7 @@ module.exports = {
         "edge/operate/supernets-ibft-to-polybft",
         {
           type: "category",
-          label: "Deploy a Supernet",
+          label: "Deploy a Chain",
           link: {
             type: "generated-index",
           },
@@ -1018,7 +1018,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Operate Your Supernet",
+          label: "Operate Your Chain",
           link: {
             type: "generated-index",
           },
@@ -1063,7 +1063,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Upgrade Your Supernet",
+          label: "Upgrade Your Chain",
           link: {
             type: "generated-index",
           },
