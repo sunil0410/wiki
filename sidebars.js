@@ -907,15 +907,15 @@ module.exports = {
    *
    */
 
-  supernets: [
+  edge: [
     {
       type: "html",
       value: "Polygon Supernets",
       className: "sidebar-title",
     },
-    "supernets/index",
-    "supernets/operate/supernets-quick-start",
-    "supernets/get-started/what-are-supernets",
+    "edge/index",
+    "edge/operate/supernets-quick-start",
+    "edge/get-started/what-are-supernets",
     {
       type: "category",
       label: "System Design",
@@ -924,7 +924,7 @@ module.exports = {
       },
       collapsed: true,
       items: [
-        "supernets/design/overview",
+        "edge/design/overview",
         {
           type: "category",
           label: "Consensus",
@@ -932,8 +932,8 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "supernets/design/consensus/polybft/polybft-overview",
-            "supernets/design/consensus/polybft/ibft-overview",
+            "edge/design/consensus/polybft/polybft-overview",
+            "edge/design/consensus/polybft/ibft-overview",
           ],
         },
         {
@@ -943,9 +943,9 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "supernets/design/bridge/overview",
-            "supernets/design/bridge/statesync",
-            "supernets/design/bridge/checkpoint",
+            "edge/design/bridge/overview",
+            "edge/design/bridge/statesync",
+            "edge/design/bridge/checkpoint",
             {
               type: "category",
               label: "Assets",
@@ -953,14 +953,14 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/design/bridge/assets/erc/erc20",
-                "supernets/design/bridge/assets/erc/erc721",
-                "supernets/design/bridge/assets/erc/erc1155",
+                "edge/design/bridge/assets/erc/erc20",
+                "edge/design/bridge/assets/erc/erc721",
+                "edge/design/bridge/assets/erc/erc1155",
               ],
             },
           ],
         },
-        "supernets/design/supernets-libp2p",
+        "edge/design/supernets-libp2p",
         {
           type: "category",
           label: "Runtime",
@@ -968,16 +968,16 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "supernets/design/runtime/supernets-runtime",
-            "supernets/design/runtime/supernets-runtime-allowlist",
+            "edge/design/runtime/supernets-runtime",
+            "edge/design/runtime/supernets-runtime-allowlist",
           ],
         },
-        "supernets/design/supernets-blockchain",
-        "supernets/design/supernets-mempool",
-        "supernets/design/supernets-txpool",
-        "supernets/design/supernets-txrelayer",
-        "supernets/design/supernets-json-rpc",
-        "supernets/design/supernets-grpc",
+        "edge/design/supernets-blockchain",
+        "edge/design/supernets-mempool",
+        "edge/design/supernets-txpool",
+        "edge/design/supernets-txrelayer",
+        "edge/design/supernets-json-rpc",
+        "edge/design/supernets-grpc",
       ],
     },
     {
@@ -996,11 +996,11 @@ module.exports = {
           },
           collapsed: true,
           items: [
-            "supernets/operate/supernets-requirements",
-            "supernets/operate/supernets-install",
+            "edge/operate/supernets-requirements",
+            "edge/operate/supernets-install",
           ],
         },
-        "supernets/operate/supernets-ibft-to-polybft",
+        "edge/operate/supernets-ibft-to-polybft",
         {
           type: "category",
           label: "Deploy a Supernet",
@@ -1008,12 +1008,12 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "supernets/operate/deploy/supernets-deploy-index",
-            "supernets/operate/deploy/supernets-spawn-test-chain",
-            "supernets/operate/deploy/supernets-how-to-generate-genesis",
-            "supernets/operate/deploy/supernets-how-to-configure-rootchain",
-            "supernets/operate/deploy/supernets-genesis-validators",
-            "supernets/operate/deploy/supernets-how-to-start",
+            "edge/operate/deploy/supernets-deploy-index",
+            "edge/operate/deploy/supernets-spawn-test-chain",
+            "edge/operate/deploy/supernets-how-to-generate-genesis",
+            "edge/operate/deploy/supernets-how-to-configure-rootchain",
+            "edge/operate/deploy/supernets-genesis-validators",
+            "edge/operate/deploy/supernets-how-to-start",
           ],
         },
         {
@@ -1032,7 +1032,7 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                "supernets/operate/deploy/access-control/supernets-allowlist-add-remove",
+                "edge/operate/deploy/access-control/supernets-allowlist-add-remove",
               ],
             },
             {
@@ -1043,8 +1043,8 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                "supernets/operate/deploy/staking/supernets-how-to-stake",
-                "supernets/operate/deploy/staking/supernets-unstake",
+                "edge/operate/deploy/staking/supernets-how-to-stake",
+                "edge/operate/deploy/staking/supernets-unstake",
               ],
             },
             {
@@ -1055,8 +1055,8 @@ module.exports = {
               },
               collapsed: true,
               items: [
-                "supernets/operate/deploy/transfers/supernets-cross-chain-deposit",
-                "supernets/operate/deploy/transfers/supernets-cross-chain-withdraw",
+                "edge/operate/deploy/transfers/supernets-cross-chain-deposit",
+                "edge/operate/deploy/transfers/supernets-cross-chain-withdraw",
               ],
             },
           ],
@@ -1069,8 +1069,8 @@ module.exports = {
           },
           collapsed: true,
           items: [
-            "supernets/operate/deploy/upgrades/supernets-how-to-upgrade",
-            "supernets/operate/deploy/upgrades/supernets-v1.1-hardforks",
+            "edge/operate/deploy/upgrades/supernets-how-to-upgrade",
+            "edge/operate/deploy/upgrades/supernets-v1.1-hardforks",
           ],
         },
       ],
@@ -1083,7 +1083,7 @@ module.exports = {
       },
       collapsed: true,
       items: [
-        "supernets/operate/supernets-param-reference",
+        "edge/operate/supernets-param-reference",
         {
           type: "category",
           label: "Smart Contract Interfaces",
@@ -1099,10 +1099,10 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/interfaces/erc20/native-erc20",
-                "supernets/interfaces/erc20/childerc20",
-                "supernets/interfaces/erc20/childerc20-predicate",
-                "supernets/interfaces/erc20/rooterc20-predicate",
+                "edge/interfaces/erc20/native-erc20",
+                "edge/interfaces/erc20/childerc20",
+                "edge/interfaces/erc20/childerc20-predicate",
+                "edge/interfaces/erc20/rooterc20-predicate",
               ],
             },
             {
@@ -1112,9 +1112,9 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/interfaces/erc721/childerc721",
-                "supernets/interfaces/erc721/childerc721-predicate",
-                "supernets/interfaces/erc721/rooterc721-predicate",
+                "edge/interfaces/erc721/childerc721",
+                "edge/interfaces/erc721/childerc721-predicate",
+                "edge/interfaces/erc721/rooterc721-predicate",
               ],
             },
             {
@@ -1124,12 +1124,12 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/interfaces/erc1155/childerc1155",
-                "supernets/interfaces/erc1155/childerc1155-predicate",
-                "supernets/interfaces/erc1155/rooterc1155-predicate",
+                "edge/interfaces/erc1155/childerc1155",
+                "edge/interfaces/erc1155/childerc1155-predicate",
+                "edge/interfaces/erc1155/rooterc1155-predicate",
               ],
             },
-            "supernets/interfaces/eip1559-interface",
+            "edge/interfaces/eip1559-interface",
             {
               type: "category",
               label: "Network",
@@ -1137,10 +1137,10 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/interfaces/network/checkpoint-manager",
-                "supernets/interfaces/network/exit-helper",
-                "supernets/interfaces/network/state-receiver",
-                "supernets/interfaces/network/state-sender",
+                "edge/interfaces/network/checkpoint-manager",
+                "edge/interfaces/network/exit-helper",
+                "edge/interfaces/network/state-receiver",
+                "edge/interfaces/network/state-sender",
               ],
             },
             {
@@ -1150,9 +1150,9 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/interfaces/validators/validator",
-                "supernets/interfaces/validators/validator-set-base",
-                "supernets/interfaces/validators/root-validator-set",
+                "edge/interfaces/validators/validator",
+                "edge/interfaces/validators/validator-set-base",
+                "edge/interfaces/validators/root-validator-set",
               ],
             },
             {
@@ -1162,9 +1162,9 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/interfaces/staking/stake-manager-interface",
-                "supernets/interfaces/staking/supernet-manager-interface",
-                "supernets/interfaces/staking/custom-supernet-manager-interface",
+                "edge/interfaces/staking/stake-manager-interface",
+                "edge/interfaces/staking/supernet-manager-interface",
+                "edge/interfaces/staking/custom-supernet-manager-interface",
               ],
             },
             {
@@ -1174,8 +1174,8 @@ module.exports = {
                 type: "generated-index",
               },
               items: [
-                "supernets/interfaces/cryptography/bls",
-                "supernets/interfaces/cryptography/bn256g2",
+                "edge/interfaces/cryptography/bls",
+                "edge/interfaces/cryptography/bn256g2",
               ],
             },
           ],
@@ -1188,18 +1188,18 @@ module.exports = {
           },
           collapsed: true,
           items: [
-            "supernets/api/json-rpc-eth",
-            "supernets/api/json-rpc-net",
-            "supernets/api/json-rpc-web3",
-            "supernets/api/json-rpc-txpool",
-            "supernets/api/json-rpc-debug",
-            "supernets/api/json-rpc-bridge",
+            "edge/api/json-rpc-eth",
+            "edge/api/json-rpc-net",
+            "edge/api/json-rpc-web3",
+            "edge/api/json-rpc-txpool",
+            "edge/api/json-rpc-debug",
+            "edge/api/json-rpc-bridge",
           ],
         },
-        "supernets/operate/supernets-performance",
+        "edge/operate/supernets-performance",
       ],
     },
-    "supernets/supernets-faq",
+    "edge/supernets-faq",
   ],
 
   cdk: [

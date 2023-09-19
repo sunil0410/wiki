@@ -422,7 +422,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/supernets/',
+              href: '/docs/edge/',
               label: 'Edge',
               target: '_self',
               rel: null,
