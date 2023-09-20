@@ -115,9 +115,9 @@ The Proof-of-Stake (PoS) network serves as the backbone of Polygon's Layer 2 sca
 
 zkEVM is Polygon's zero-knowledge-based Ethereum Virtual Machine. It aims to bring scalability and privacy to Ethereum-compatible blockchains.
 
-### Supernets
+### Edge
 
-Supernets are application-specific chains that operate on the Polygon Edge consensus client with PolyBFT consensus. They offer scalability and interoperability for decentralized applications.
+Edge provides infrastructure for application-specific chains that operate with PolyBFT consensus. They offer scalability and interoperability for decentralized applications.
 
 ### Miden
 
@@ -292,7 +292,7 @@ Explore the core codebases that power the Polygon ecosystem. This section provid
 | **Proposals**            | [Polygon Improvement Proposals](https://github.com/maticnetwork/Polygon-Improvement-Proposals)| Repository for Polygon Improvement Proposals.                                                    |
 | **SDKs and Libraries**   | [Matic.js](https://github.com/maticnetwork/matic.js)                 | JavaScript library for PoS Network.                                                            |
 | **DevOps**               | [Node Ansible](https://github.com/maticnetwork/node-ansible)         | Ansible scripts for node management.                                                            |
-|                          | [Terraform Polygon Supernets](https://github.com/maticnetwork/terraform-polygon-supernets)| Terraform scripts for Polygon Supernets.                                                        |
+|                          | [Terraform Polygon Edge](https://github.com/maticnetwork/terraform-polygon-supernets)| Terraform scripts for Polygon Edge.                                                        |
 | **Contracts**            | [Contracts](https://github.com/maticnetwork/contracts)               | Smart contracts for PoS Network.                                                              |
 |                          | [Genesis Contracts](https://github.com/maticnetwork/genesis-contracts)| Genesis contracts for PoS Network.                                                            |
 | **Proofs and APIs**      | [Proof Generation API](https://github.com/maticnetwork/proof-generation-api)| API for proof generation.                                                                       |

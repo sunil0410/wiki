@@ -271,18 +271,12 @@ module.exports = {
           title: "Reference",
           items: [
             {
-              label: "Whitepaper",
+              label: "Original Whitepaper",
               href: "https://github.com/maticnetwork/whitepaper/"
             },
-            /* Commenting out until a working link is available
             {
-              label: "Lightpaper",
-              href: "https://polygon.technology/lightpaper-polygon.pdf"
-            },
-            */
-            {
-              label: "Miden",
-              href: "/docs/miden/design/main"
+              label: "POL Whitepaper",
+              href: "https://polygon.technology/papers/pol-whitepaper"
             },
           ]
         },
@@ -418,102 +412,169 @@ module.exports = {
           rel: null,
         },
         {
-          label: "Polygon Stack",
-          position: "left",
-          items: [
-            {
-              href: '/docs/pos/',
-              label: 'PoS',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/zkevm/',
-              label: 'zkEVM',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/supernets/',
-              label: 'Supernets',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/miden/',
-              label: 'Miden',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: 'https://devs.polygonid.com/',
-              label: 'ID',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
-          label: "Polygon 2.0",
+          label: "CDK",
           position: "left",
           items: [
             {
               href: '/docs/cdk',
-              label: 'Polygon CDK',
+              label: 'Welcome to the CDK',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/cdk/validium/quickstart/',
+              label: 'Get Started with the Validium',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/cdk/edge/operate/quickstart/',
+              label: 'Get Started with Edge',
               target: '_self',
               rel: null,
             },
           ],
         },
         {
-          label: "Apps & Tools",
+          label: "zkEVM",
           position: "left",
+          items: [
+            {
+              href: '/docs/zkevm/',
+              label: 'Welcome to zkEVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/start-building/',
+              label: 'Build a dApp',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/setup-zknode/',
+              label: 'Run a Node',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/deploy-zkevm/',
+              label: 'Launch Your zkEVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/zkevm/',
+              label: 'Pre-Specs',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "PoS",
+          position: "left",
+          items: [
+            {
+              href: '/docs/pos/',
+              label: 'Welcome to PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/system-design/',
+              label: 'Learn about PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/build-a-dapp/',
+              label: 'Build a dApp',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/become-a-validator/',
+              label: 'Become a Validator',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/proposals/',
+              label: 'Create Proposals',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "Edge",
+          position: "left",
+          items: [
+            {
+              href: '/docs/cdk/edge/what-is-edge/',
+              label: 'Welcome to the Edge Client',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/system-design-1/',
+              label: 'Learn about Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/build-an-edge-chain/',
+              label: 'Deploy a Chain',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "Miden",
+          position: "left",
+          items: [
+            {
+              href: '/docs/miden/',
+              label: 'Welcome to Miden',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/miden/intro/main/',
+              label: 'Learn about Miden',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/miden/user_docs/usage/',
+              label: 'Use the MidenVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/miden-vm/',
+              label: 'Pre-Specs',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          to: 'https://devs.polygonid.com/',
+          label: 'ID',
+          position: "left",
+          target: '_blank',
+          rel: null,
+        },
+        {
+          label: "Apps & Tools",
+          position: "right",
           items: [
             {
               href: '/docs/tools/matic-js/get-started',
               label: 'Matic.js',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
-          label: "Participate",
-          position: "left",
-          items: [
-            {
-              href: '/docs/delegate/delegate',
-              label: 'Delegate MATIC',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/category/run-a-validator-node',
-              label: 'Run a PoS Validator',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/governance',
-              label: 'Governance',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
-          label: "Pre-Specs",
-          position: "left",
-          items: [
-            {
-              href: '/docs/category/zkevm/',
-              label: 'zkEVM',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/docs/category/miden-vm',
-              label: 'Miden',
               target: '_self',
               rel: null,
             },
