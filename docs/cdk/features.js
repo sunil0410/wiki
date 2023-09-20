@@ -6,20 +6,20 @@ export const firstRow = [
         description: "Explore how Polygon CDK provides infrastructure for the value layer of the internet."
     },
     {
-        title: "Key Attributes",
-        linkUrl: "/docs/cdk/validium-attributes",
+        title: "Validium Key Attributes",
+        linkUrl: "/docs/cdk/validium/validium-attributes/",
         imageUrl: "/img/edge/supernets-logo.png",
-        description: "Discover why Polygon CDK is your answer to today's system demands, built to adapt for tomorrow."
+        description: "Discover why Polygon CDK Validium is built for today and adaptable for tomorrow."
     },
     {
         title: "Data Availability",
-        linkUrl: "/docs/cdk/dac-overview",
+        linkUrl: "/docs/cdk/validium/dac-overview/",
         imageUrl: "/img/edge/supernets-logo.png",
         description: "Learn about the data availability layer and how the DAC operates within the Polygon CDK."
     },
     {
         title: "Launch a Validium",
-        linkUrl: "/docs/cdk/validium-attributes",
+        linkUrl: "/docs/cdk/validium/quickstart/",
         imageUrl: "/img/edge/supernets-logo.png",
         description: "Discover why Polygon CDK is your answer to today's system demands, built to adapt for tomorrow."
     },
