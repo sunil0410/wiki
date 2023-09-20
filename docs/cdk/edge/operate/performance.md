@@ -2,17 +2,17 @@
 id: performance
 title: Performance Benchmarks
 sidebar_label: Performance Benchmarks
-description: "The first performance benchmarks for Supernets."
+description: "The first performance benchmarks for Edge."
 keywords:
   - docs
   - polygon
   - edge
-  - Supernets
+  - cdk
   - metrics
   - performance
 ---
 
-This document presents a summary of performance benchmarks for Supernets v1.0 release candidate (v1.0-rc1).
+This document presents a summary of performance benchmarks for Edge v1.0 release candidate (v1.0-rc1).
 
 ## Summary of Test Results
 

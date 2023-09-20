@@ -2,7 +2,7 @@
 id: checkpoint
 title: Ensuring Data Integrity through Checkpoint Management
 sidebar_label: Checkpoints
-description: "An overview of the checkpointing mechanism of Supernets."
+description: "An overview of the checkpointing mechanism of Edge."
 keywords:
   - docs
   - polygon
@@ -38,11 +38,6 @@ The contract uses a Merkle tree to efficiently prove the membership of an event 
 
 The contract also implements a BLS signature scheme to verify the signatures submitted by the validators. The validators' signatures are aggregated, and the contract checks whether the required voting power threshold is met to accept the checkpoint.
 
-<!--
-<div align="center">
-  <img src="/img/supernets-checkpoint-exit.excalidraw.png" alt="bridge" width="110%" height="40%" />
-</div>
--->
 <details>
 <summary>Details of the checkpoint</summary>
 
@@ -55,9 +50,3 @@ Later, when a user wants to verify a particular exit event on the Edge chain, th
 In short, the root of the Merkle tree is a compact representation of the exit events on the Edge chain at a specific point in time, which is included in checkpoints and used for verification purposes.
 
 </details>
-
-<!--
-<div align="center">
-  <img src="/img/supernets-checkpoint.excalidraw.png" alt="bridge" width="110%" height="40%" />
-</div>
--->

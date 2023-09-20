@@ -7,7 +7,7 @@ keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - quick
   - deploy
   - cluster

@@ -16,7 +16,7 @@ keywords:
 
 gRPC is a popular RPC (remote procedure call) framework that enables efficient communication between distributed systems. It is commonly used in microservices architectures and is especially useful for building high-performance, scalable applications that require low-latency communication between services. With its support for multiple programming languages and its built-in support for data serialization, gRPC provides a powerful and flexible tool for building distributed systems.
 
-## gRPC in Supernets
+## gRPC in Edge
 
 libp2p provides the underlying networking layer for establishing connections between peers. By creating a gRPC server instance on each peer in the network and allowing gRPC client connections to be established, a network API can be created that enables clients to interact with the network.
 

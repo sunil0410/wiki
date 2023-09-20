@@ -15,7 +15,7 @@ export const firstRow = [
         title: "Build Custom Solutions",
         linkUrl: "/docs/category/build-a-supernet",
         imageUrl: "img/logo-round-dark.png",
-        description: "Build a fully-fleged app-chain with Edge-based Supernets."
+        description: "Build a customizable PoS app-chain with the Edge consensus client."
     },
     {
         title: "Run a PoS node",
