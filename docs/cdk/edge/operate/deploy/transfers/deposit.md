@@ -7,11 +7,10 @@ keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - bridge
   - crosschain
   - transactions
-  - how to
   - how-to
 ---
 
@@ -77,7 +76,7 @@ values={[
 
 <TabItem value="20">
 
-This command deposits ERC-20 tokens from a rootchain to a Supernet. 
+This command deposits ERC-20 tokens from a rootchain to a Edge chain. 
 
 - Replace `hex_encoded_depositor_private_key` with the private key of the account that will be depositing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
@@ -101,7 +100,7 @@ This command deposits ERC-20 tokens from a rootchain to a Supernet.
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're depositing ERC-20 tokens to a test Supernet instance:
+In this example, we're depositing ERC-20 tokens to a test Edge instance:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - We're depositing tokens to two receiver addresses: `0x1111111111111111111111111111111111111111` and `0x2222222222222222222222222222222222222222`.
@@ -131,7 +130,7 @@ In this example, we're depositing ERC-20 tokens to a test Supernet instance:
 
 <TabItem value="721">
 
-This command deposits ERC-721 tokens from a rootchain to a Supernet.
+This command deposits ERC-721 tokens from a rootchain to a Edge chain.
 
 - Replace `hex_encoded_depositor_private_key` with the private key of the account that will be depositing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
@@ -155,7 +154,7 @@ This command deposits ERC-721 tokens from a rootchain to a Supernet.
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're depositing ERC-721 tokens to a test Supernet instance:
+In this example, we're depositing ERC-721 tokens to a test Edge instance:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - We're depositing tokens with IDs `123` and `456` to two receiver addresses: `0x1111111111111111111111111111111111111111` and `0x2222222222222222222222222222222222222222`.
@@ -183,7 +182,7 @@ In this example, we're depositing ERC-721 tokens to a test Supernet instance:
 
 <TabItem value="1155">
 
-This command deposits ERC-1155 tokens from the rootchain to the Supernet.
+This command deposits ERC-1155 tokens from the rootchain to the Edge chain.
 
 - Replace `depositor_private_key` with the private key of the account that will be depositing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
@@ -209,7 +208,7 @@ This command deposits ERC-1155 tokens from the rootchain to the Supernet.
 <details>
 <summary>Example ↓</summary>
 
-In this example, we're depositing ERC-1155 tokens to a test Supernet instance:
+In this example, we're depositing ERC-1155 tokens to a test Edge instance:
 
 - We're using a private key of `0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.
 - We're depositing tokens to two receiver addresses: `0x0123456789abcdef0123456789abcdef01234567` and `0x89abcdef0123456789abcdef0123456789abcdef`.

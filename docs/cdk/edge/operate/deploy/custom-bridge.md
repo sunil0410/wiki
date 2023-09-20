@@ -6,7 +6,7 @@ description: "Learn how to disable the native bridge through allowlisting."
 keywords:
   - docs
   - polygon
-  - supernets
+  - cdk
   - bridge
   - custom
   - disable
@@ -16,7 +16,7 @@ Before we dive in, it is important to note that it is not possible to fully disa
 
 ## Limiting the Use of the Native Bridge
 
-The Supernet deployer can restrict the native bridge usage by defining an address of the bridge allow list admin via the `--bridge-allow-list-admin` flag at genesis. This action deploys allowlist predicates which verify each bridge transaction. If a sender is not permitted, the transaction will fail and revert.
+The Edge deployer can restrict the native bridge usage by defining an address of the bridge allow list admin via the `--bridge-allow-list-admin` flag at genesis. This action deploys allowlist predicates which verify each bridge transaction. If a sender is not permitted, the transaction will fail and revert.
 
 As a deployer, setting your own address as the `Admin` and not including any other address in the allowlist effectively denies all other addresses from using the native bridge.
 

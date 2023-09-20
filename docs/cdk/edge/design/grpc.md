@@ -1,7 +1,7 @@
 ---
 id: grpc
 title: gRPC
-description: "The gRPC layer for Supernets."
+description: "The gRPC layer for Edge."
 keywords:
   - docs
   - polygon

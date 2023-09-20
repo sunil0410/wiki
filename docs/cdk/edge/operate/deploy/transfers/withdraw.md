@@ -7,7 +7,7 @@ keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - bridge
   - crosschain
   - transactions

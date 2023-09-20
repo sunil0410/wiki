@@ -2,7 +2,7 @@
 id: requirements
 title: System Requirements
 sidebar_label: System Requirements
-description: "System requirements to successfully run Supernets on a local or remote machine."
+description: "System requirements to successfully run Edge on a local or remote machine."
 keywords:
   - docs
   - polygon
@@ -21,7 +21,7 @@ The minimum storage requirements will change over time as the network grows. It 
 
 :::
 
-This is the minimum hardware configuration required to set up a Supernet:
+This is the minimum hardware configuration required to set up a Edge chain:
 
 | Component | Minimum Requirement | Recommended |
 | --------- | ------------------- | ----------- |
@@ -34,7 +34,7 @@ This is the minimum hardware configuration required to set up a Supernet:
 
 ## Prerequisites
 
-Before starting any of the tutorials, you should understand the basics of blockchain technology and be familiar with command-line interfaces. It would help if you also had the `polygon-edge` binary installed on your machine. Check out the [installation guide](/docs/cdk/edge/operate/supernets-install) for more information if you haven't already.
+Before starting any of the tutorials, you should understand the basics of blockchain technology and be familiar with command-line interfaces. It would help if you also had the `polygon-edge` binary installed on your machine. Check out the [installation guide](/docs/cdk/edge/operate/install) for more information if you haven't already.
 
 Ensure you have the following system prerequisites:
 
@@ -48,7 +48,7 @@ Ensure you have the following system prerequisites:
 
 :::caution Solidity v0.8.19 or earlier recommended
 
-[<ins>Solidity v0.8.20</ins>](https://blog.soliditylang.org/2023/05/10/solidity-0.8.20-release-announcement/) introduces new features, including the implementation of `PUSH0` opcode, which is not yet supported in Supernets. If you decide to use v0.8.20, ensure that you set your EVM version to "Paris" in the framework you use to deploy your contracts. 
+[<ins>Solidity v0.8.20</ins>](https://blog.soliditylang.org/2023/05/10/solidity-0.8.20-release-announcement/) introduces new features, including the implementation of `PUSH0` opcode, which is not yet supported in Edge. If you decide to use v0.8.20, ensure that you set your EVM version to "Paris" in the framework you use to deploy your contracts. 
 
 For now, we recommend using Solidity v0.8.19 or earlier.
 

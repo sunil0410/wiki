@@ -2,11 +2,11 @@
 id: genesis-validators
 title: How to Configure the Initial Validator Set
 sidebar_label: How to Configure the Initial Validator Set
-description: "Learn how to configure the initial validator set of a new Supernet with allowlists and staking."
+description: "Learn how to configure the initial validator set of a new Edge chain with allowlists and staking."
 keywords:
   - docs
   - polygon
-  - supernets
+  - cdk
   - validators
   - validator set
   - allowlist
@@ -94,7 +94,7 @@ In the following example command, we use the validator key and the rootchain `St
 
 :::info Staking requirement: wrapping a non-ERC-20 token
 
-Supernets allow for the customization of the gas token and mandate the use of ERC-20 tokens for staking instead of the rootchain's native token.
+Edge allow for the customization of the gas token and mandate the use of ERC-20 tokens for staking instead of the rootchain's native token.
 
 When performing rootchain staking on the Polygon PoS Mainnet, [<ins>WMATIC</ins>](https://polygonscan.com/token/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270?a=0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45) (wrapped MATIC) is the required token. This is due to the ERC-20 standard requirement for staking, which MATIC doesn't meet.
 
@@ -133,7 +133,7 @@ curl <mumbai-rpc-endpoint> \
 
 After all validators from the genesis block have performed initial staking on the rootchain, the final step required before starting the chain is to finalize the genesis validator set on the `SupernetManager` contract on the rootchain. This can be done using the `polygon-edge polybft supernet` command.
 
-The deployer of the `SupernetManager` contract can specify their hex-encoded private key or use the `--data-dir` flag if they have initialized their secrets. If the `--enable-staking` flag is provided, validators will be able to continue staking on the rootchain. If not, genesis validators will not be able to update their stake or unstake, nor will newly registered validators after genesis be able to stake tokens on the rootchain. The enabling of staking can be done through this command or later after the Supernet starts.
+The deployer of the `SupernetManager` contract can specify their hex-encoded private key or use the `--data-dir` flag if they have initialized their secrets. If the `--enable-staking` flag is provided, validators will be able to continue staking on the rootchain. If not, genesis validators will not be able to update their stake or unstake, nor will newly registered validators after genesis be able to stake tokens on the rootchain. The enabling of staking can be done through this command or later after the Edge chain starts.
 
 In the following example command, we use a placeholder hex-encoded private key of the `SupernetManager` contract deployer. The addresses of the `SupernetManager` and `StakeManager` contracts are the addresses that were generated earlier. We also use the `--finalize-genesis` and `--enable-staking` flags to enable staking and finalize the genesis state.
 
@@ -147,6 +147,6 @@ In the following example command, we use a placeholder hex-encoded private key o
 
 ## 5. Next Steps
 
-With all the necessary configurations in place for the Supernet, we are ready to proceed with starting the chain.
+With all the necessary configurations in place for the Edge chain, we are ready to proceed with starting the chain.
 
-Navigate to the [Start Your Supernet](/docs/cdk/edge/operate/deploy/start-chain.md) deployment guide, which will provide you with instructions on how to initiate and launch the chain.
+Navigate to the [Start Your Chain](/docs/cdk/edge/operate/deploy/start-chain.md) deployment guide, which will provide you with instructions on how to initiate and launch the chain.

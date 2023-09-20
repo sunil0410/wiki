@@ -2,12 +2,12 @@
 id: how-to-generate-genesis
 title: How to Configure a New Childchain
 sidebar_label: How to Configure a New Childchain
-description: "Learn how to deploy a local test Supernet."
+description: "Learn how to deploy a local test Edge chain."
 keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - network
   - modular
 ---
@@ -21,7 +21,7 @@ In this section, we'll walk through how to configure the initial childchain stat
 
 The genesis file is a critical component in setting up a blockchain network, containing the initial validator set, genesis block, and other essential parameters that define the network's behavior. The initial validator set is responsible for bootstrapping the consensus mechanism, allowing the blockchain to function and reach consensus on new blocks.
 
-Supernets allow for customizable parameters such as the block gas limit, epoch size, and block rewards, which enable network operators to tailor the network to specific requirements. Additionally, Supernets support allowlists and blocklists for transactions and validators, providing an extra layer of control and security to the network. These lists can be used to restrict or permit specific addresses, ensuring only authorized parties can participate in the network or execute transactions.
+Edge allow for customizable parameters such as the block gas limit, epoch size, and block rewards, which enable network operators to tailor the network to specific requirements. Additionally, Edge support allowlists and blocklists for transactions and validators, providing an extra layer of control and security to the network. These lists can be used to restrict or permit specific addresses, ensuring only authorized parties can participate in the network or execute transactions.
 
 To create the chain configuration, we use the `polygon-edge genesis` command, which generates the genesis file.
 
@@ -110,12 +110,12 @@ Keep in mind that allowlists must be enabled prior to launching the network. Aft
 
 ### i. Difference between `chain-id` and `supernet-id`
 
-Supernets differentiates `chain-id` and `supernet-id` within the genesis file. 
+Edge chains differentiates `chain-id` and `supernet-id` within the genesis file. 
 
 - The `chain-id` is a unique identifier for a childchain.
-- The `supernet-id` is a unique identifier that is automatically populated during the Supernet's registration process with the `StakeManager` contract. There can be multiple Supernets registered within the same `StakeManager` - the `supernet-id` is used to distinguish them.
+- The `supernet-id` is a unique identifier that is automatically populated during the registration process with the `StakeManager` contract. There can be multiple Edge chains registered within the same `StakeManager` - the `supernet-id` is used to distinguish them.
 
-Users can assign a custom `chain-id` to their Supernet via the genesis command. However, `supernet-id` doesn't function as a flag within this command. Instead, its value is derived from the `rootchain deploy` command during the Supernet's registration process with the `StakeManager` contract.
+Users can assign a custom `chain-id` to their Edge chain via the genesis command. However, `supernet-id` doesn't function as a flag within this command. Instead, its value is derived from the `rootchain deploy` command during the registration process with the `StakeManager` contract.
 
 ### ii. Create a Native Token and Premine
 
@@ -615,4 +615,4 @@ Genesis written to ./genesis.json
 
 With a **genesis.json** file containing the initial chain state, validator nodes, and chain admins for your new childchain instance, you are ready to proceed.
 
-To configure the associated rootchain of the Supernet and deploy the essential rootchain core contracts, navigate to the [rootchain deployment guide](/docs/cdk/edge/operate/deploy/rootchain-config.md).
+To configure the associated rootchain of the Edge chain and deploy the essential rootchain core contracts, navigate to the [rootchain deployment guide](/docs/cdk/edge/operate/deploy/rootchain-config.md).

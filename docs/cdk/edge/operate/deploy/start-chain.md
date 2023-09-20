@@ -1,20 +1,20 @@
 ---
 id: how-to-start
-title: How to Start Your Supernet
-sidebar_label: How to Start Your Supernet
-description: "Learn how to start your new Supernet after configuring the genesis workflow."
+title: How to Start Your Chain
+sidebar_label: How to Start Your Chain
+description: "Learn how to start your new Edge chain after configuring the genesis workflow."
 keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - network
   - modular
 ---
 
-Now that we have set up the rootchain and created the chain configuration, we can run the Supernet cluster of Edge clients. In this example, we'll run a cluster of four Edge clients.
+Now that we have set up the rootchain and created the chain configuration, we can run the Edge cluster of Edge clients. In this example, we'll run a cluster of four Edge clients.
 
-To run a Supernet cluster, we use the `polygon-edge server` command with the following options:
+To run an Edge cluster, we use the `polygon-edge server` command with the following options:
 
 <details>
 <summary>Flags ↓</summary>

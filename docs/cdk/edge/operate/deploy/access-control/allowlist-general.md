@@ -2,7 +2,7 @@
 id: allowlist-add-remove
 title: How to Add & Remove Accounts from an ACL
 sidebar_label: How to Add & Remove Accounts
-description: "Learn how to allowlist addresses on a Supernet."
+description: "Learn how to allowlist addresses on an Edge chain."
 keywords:
   - docs
   - polygon
@@ -16,7 +16,7 @@ keywords:
 
 ## Understanding ACL and Address Roles
 
-ACLs or Access Control Lists are a way of managing permissions in your Supernet. In this context, an ACL is essentially a list of addresses and their corresponding roles.
+ACLs or Access Control Lists are a way of managing permissions in your Edge chain. In this context, an ACL is essentially a list of addresses and their corresponding roles.
 
 ### Roles can be one of three types:
 
@@ -24,7 +24,7 @@ ACLs or Access Control Lists are a way of managing permissions in your Supernet.
 - `EnabledRole`: The address has some permissions.
 - `AdminRole`: The address has all permissions and can change the roles of other addresses.
 
-**For more information about how ACLs work in Supernets, check out the overview guide [<ins>here</ins>](/docs/cdk/edge/design/runtime/allowlist.md).**
+**For more information about how ACLs work in Edge, check out the overview guide [<ins>here</ins>](/docs/cdk/edge/design/runtime/allowlist.md).**
 
 :::info Keep in mind
 
@@ -38,13 +38,13 @@ ACLs or Access Control Lists are a way of managing permissions in your Supernet.
 
 ## Interacting with an ACL
 
-Supernets' ACLs are implemented as precompiles, which are built-in contracts within the Edge client. You can interact with these ACL precompiles using libraries like ether.js and web3.js.
+Edge ACLs are implemented as precompiles, which are built-in contracts within the Edge client. You can interact with these ACL precompiles using libraries like ether.js and web3.js.
 
 To interact with the ACL precompiles using an external library or client, follow these steps:
 
 1. Obtain the ABI (Application Binary Interface) for the specific ACL precompile you want to interact with. The ABI contains the definitions of the precompile's functions, including their parameters and return types.
 
-2. Create a contract instance for the ACL precompile using the ABI and the provider connected to the Supernet.
+2. Create a contract instance for the ACL precompile using the ABI and the provider connected to the Edge chain.
 
 3. Use the contract instance to call the functions defined in the precompile's ABI. These functions allow you to manage the ACL by adding or removing accounts, modifying roles, or performing other ACL-related operations.
 

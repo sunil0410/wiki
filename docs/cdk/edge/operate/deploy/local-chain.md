@@ -2,17 +2,17 @@
 id: spawn-test-chain
 title: How to Generate New Account Secrets
 sidebar_label: How to Spawn a New Childchain
-description: "Learn how to deploy a local test Supernet."
+description: "Learn how to deploy a local test Edge chain."
 keywords:
   - docs
   - polygon
   - edge
-  - supernets
+  - cdk
   - network
   - modular
 ---
 
-In this section, we'll prepare initiate a new chain with PolyBFT consensus and prepare the initial Supernet nodes.
+In this section, we'll prepare initiate a new chain with PolyBFT consensus and prepare the initial Edge nodes.
 
 ## 1. Generate Keys
 

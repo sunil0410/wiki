@@ -6,7 +6,8 @@ description: "Manpage for configurable parameters."
 keywords:
   - docs
   - polygon
-  - Supernets
+  - cdk
+  - edge
   - flags
   - parameters
 ---

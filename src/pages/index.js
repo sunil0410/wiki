@@ -174,7 +174,7 @@ function Home() {
                 <div class="tabs-content">
                   <h4 class="text-weight-medium">Polygon CDK <span class="solution-status">Live</span></h4>
                   <div class="padding-bottom padding-small"></div>
-                  <p class="description-text">Build customizable app-chains powered by a novel zkValidium.</p>
+                  <p class="description-text">Build highly scalable, modular, and customizable layer 2 app-chains.</p>
                   <div class="padding-bottom custom-padding"></div>
                   <Buttonizer docsUrl={'docs/cdk/what-is-polygon-cdk/'} linkUrl={'docs/cdk/quickstart/'} />
                 </div>
@@ -184,24 +184,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </TabItem>  
-            <TabItem value="app-specific">
-              <div class="tabs-element">
-                <div class="tabs_animation-wrapper">
-                  <div class="tabs_animation-embed pb_video_embed w-embed w-iframe">
-                    <iframe src="https://player.vimeo.com/video/791153912?h=a0b62c3daa&badge=0&autopause=0&player_id=0&app_id=58479&loop=1&autoplay=1&background=1" frameborder="0" allow="autoplay" class="tabs-frame" title="Hero" data-ready="true"></iframe>
-                  </div>
-                </div>
-                <div class="tabs-content">
-                  <h4 class="text-weight-medium">Polygon Supernets <span class="solution-status">Live</span></h4>
-                  <div class="padding-bottom padding-small"></div>
-                  <p class="description-text">Build app-chains powered by an industry-leading technology and ecosystem around Polygon.</p>
-                  <div class="padding-bottom custom-padding"></div>
-                  <Buttonizer docsUrl={'docs/supernets'} linkUrl={'docs/category/build-a-supernet'} />
-                </div>
-              </div>
-            </TabItem>
-
+            </TabItem> 
             <TabItem value="identity">
               <div class="tabs-element">
                 <div class="tabs_animation-wrapper">

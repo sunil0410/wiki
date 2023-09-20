@@ -6,7 +6,8 @@ description: "A guide on the how to unstake validator stake."
 keywords:
   - docs
   - polygon
-  - supernets
+  - cdk
+  - edge
   - stake
   - unstake
   - withdraw
@@ -31,7 +32,7 @@ First, check your validator information by running the `polygon-edge polybft val
 | `-h`, `--help` | Help for validator-info | |
 | `--jsonrpc` | The JSON-RPC interface (default "0.0.0.0:8545") | `http://localhost:8545` |
 | `--stake-manager` | Address of stake manager contract | `0x123...` |
-| `--supernet-manager` | Address of supernet manager contract | `0x456...` |
+| `--supernet-manager` | Address of manager contract | `0x456...` |
 
 </details>
 
@@ -66,7 +67,7 @@ To unstake, use the `polygon-edge polybft unstake` command.
 
 ## Withdraw
 
-Once you have successfully unstaked, you will need to withdraw your unstaked tokens from the Supernet to the rootchain. To do so, use the `polygon-edge polybft withdraw-child` command.
+Once you have successfully unstaked, you will need to withdraw your unstaked tokens from the Edge chain to the rootchain. To do so, use the `polygon-edge polybft withdraw-child` command.
 
 <details>
 <summary>Flags ↓</summary>

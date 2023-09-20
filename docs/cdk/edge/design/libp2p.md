@@ -36,6 +36,6 @@ Bootnodes act as rendezvous servers that help new nodes discover and connect to 
 
 ## Gossipsub
 
-Gossipsub is a decentralized, peer-to-peer messaging protocol used in Polygon Supernets to broadcast messages efficiently across the network. It's used in various network components, including the TxPool, where it's used to broadcast new transactions and relay transaction data between nodes. Gossipsub allows for efficient and reliable message propagation while minimizing the bandwidth requirements of the network.
+Gossipsub is a decentralized, peer-to-peer messaging protocol used in Polygon Edge to broadcast messages efficiently across the network. It's used in various network components, including the TxPool, where it's used to broadcast new transactions and relay transaction data between nodes. Gossipsub allows for efficient and reliable message propagation while minimizing the bandwidth requirements of the network.
 
 To learn more about libp2p networking, check out the [official libp2p documentation](https://docs.libp2p.io/).
