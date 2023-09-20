@@ -428,8 +428,14 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/cdk/edge/operate/quickstart/',
-              label: 'Get Started with Edge',
+              href: '/docs/cdk/validium/validium-attributes/',
+              label: 'Validium System Attributes',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/cdk/validium/dac-overview/',
+              label: 'Data Availability',
               target: '_self',
               rel: null,
             },
