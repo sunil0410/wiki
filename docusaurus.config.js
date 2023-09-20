@@ -512,7 +512,7 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/cdk/edge/what-is-cdk/edge/',
+              href: '/docs/cdk/edge/what-is-edge/',
               label: 'Welcome to the Edge Client',
               target: '_self',
               rel: null,
