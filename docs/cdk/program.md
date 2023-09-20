@@ -1,7 +1,7 @@
 ---
 id: cdk-program
-title: CDK Support
-sidebar_label: CDK Support
+title: CDK Program
+sidebar_label: CDK Program
 description: "An overview of the CDK Program."
 keywords:
   - docs

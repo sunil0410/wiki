@@ -422,7 +422,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/docs/cdk/quickstart/',
+              href: '/docs/cdk/validium/quickstart/',
               label: 'Get Started with the Validium',
               target: '_self',
               rel: null,
