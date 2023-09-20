@@ -16,7 +16,7 @@ keywords:
 
 ## Introduction
 
-Polygon CDK Validium is a unique scaling solution that builds upon the foundation of the zkEVM. While it inherits the core functionalities of the zkEVM, it introduces a distinct approach to data availability by incorporating the [DAC](/docs/cdk/dac.md). This guide will delve into the nuances of deploying both systems, highlighting the key differences.
+Polygon CDK Validium is a unique scaling solution that builds upon the foundation of the zkEVM. While it inherits the core functionalities of the zkEVM, it introduces a distinct approach to data availability by incorporating the [DAC](/docs/cdk/validium/dac.md). This guide will delve into the nuances of deploying both systems, highlighting the key differences.
 
 ## Deployment Differences
 
@@ -82,7 +82,7 @@ The CDK Validium is actively being developed, with ongoing feature enhancements 
 - [<ins>Data Availability</ins>](https://github.com/0xPolygon/cdk-data-availability)
 - [<ins>Contracts</ins>](https://github.com/0xPolygon/cdk-validium-contracts)
 
-**We recommend starting with the [Quickstart guide](/docs/cdk/quickstart) to gain a quick hands-on introduction to CDK Validium.**
+**We recommend starting with the [Quickstart guide](/docs/cdk/validium/quickstart.md) to gain a quick hands-on introduction to CDK Validium.**
 
 :::
 

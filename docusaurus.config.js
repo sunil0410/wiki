@@ -508,30 +508,6 @@ module.exports = {
           ],
         },
         {
-          label: "Edge",
-          position: "left",
-          items: [
-            {
-              href: '/docs/cdk/edge/what-is-edge/',
-              label: 'Welcome to the Edge Client',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/category/system-design-1/',
-              label: 'Learn about Edge',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/docs/category/build-an-edge-chain/',
-              label: 'Deploy a Chain',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
           label: "Miden",
           position: "left",
           items: [

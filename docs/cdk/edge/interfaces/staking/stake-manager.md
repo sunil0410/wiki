@@ -11,7 +11,7 @@ keywords:
   - interface
 ---
 
-The `StakeManager` interface manages stakes for all childchains in the Supernets architecture.
+The `StakeManager` interface manages stakes for all childchains in the Edge architecture.
 
 ## Events
 
