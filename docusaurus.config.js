@@ -436,42 +436,6 @@ module.exports = {
           ],
         },
         {
-          label: "PoS",
-          position: "left",
-          items: [
-            {
-              href: '/docs/pos/',
-              label: 'Welcome to PoS',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/category/system-design/',
-              label: 'Learn about PoS',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/docs/category/build-a-dapp/',
-              label: 'Build a dApp',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/docs/category/become-a-validator/',
-              label: 'Become a Validator',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/docs/category/proposals/',
-              label: 'Create Proposals',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
           label: "zkEVM",
           position: "left",
           items: [
@@ -502,6 +466,42 @@ module.exports = {
             {
               href: '/docs/category/zkevm/',
               label: 'Pre-Specs',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "PoS",
+          position: "left",
+          items: [
+            {
+              href: '/docs/pos/',
+              label: 'Welcome to PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/system-design/',
+              label: 'Learn about PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/build-a-dapp/',
+              label: 'Build a dApp',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/become-a-validator/',
+              label: 'Become a Validator',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/proposals/',
+              label: 'Create Proposals',
               target: '_self',
               rel: null,
             },
