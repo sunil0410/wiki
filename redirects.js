@@ -45,8 +45,8 @@ module.exports = [
     })),
     // POS Operate Redirects
     ...[
-      'genesis-contracts', 'mapped-tokens', 'network-rpc-endpoints', 'default-ports',
-      'snapshot-instructions-heimdall-bor', 'validator-node-system-requirements'
+      'mapped-tokens', 'default-ports',
+      'snapshot-instructions-heimdall-bor'
     ].map(doc => ({
       to: `/docs/pos/reference/${doc}`,
       from: `/docs/operate/${doc}`,
@@ -58,13 +58,15 @@ module.exports = [
       to: `/docs/tools/wallets/${doc}`,
       from: `/docs/develop/wallets/${doc}`,
     })),
+    /*
     // Supernets Redirects
     ...[
-        'operate', 'api', 'interfaces', 'design', 'contracts' 
+        'api', 'interfaces', 'design', 'contracts' 
     ].map(subpath => ({
         to: `/docs/cdk/edge/${subpath}`,
         from: `/docs/supernets/${subpath}`,
     })),
+    */
     // Other Redirects
     {
       to: '/docs/pos/pos-faqs',
