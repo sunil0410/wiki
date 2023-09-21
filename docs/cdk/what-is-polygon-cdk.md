@@ -25,7 +25,7 @@ The diagram below provides an overview of the key components within the CDK.
 :::caution The Polygon CDK at this stage defaults to the validium
 
 As Polygon 2.0 evolves, content will be updated and expanded to reflect new configurations.
-The legacy Edge product suite is included as part of the CDK.
+The Edge product suite is included as part of the CDK.
 
 :::
 

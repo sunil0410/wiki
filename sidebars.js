@@ -803,6 +803,7 @@ module.exports = {
     },
     "zkevm/index",
     "zkevm/introduction",
+    "zkevm/develop",
     {
       type: "category",
       label: "Start Building",
@@ -811,7 +812,6 @@ module.exports = {
       },
       collapsed: true,
       items: [
-        "zkevm/develop",
         "zkevm/bridge-to-zkevm",
         {
           type: "category",

@@ -32,4 +32,4 @@ The CDK program offers a range of service providers that can assist with various
 
 The program offers effortless initiation for blockchain networks through "one-click" deployments, enabling developers to establish a new app-chain with utmost ease and efficiency.
 
-To start testing out by setting up a CDK-developed chain on your local machine, check out the [Quickstart](/docs/cdk/quickstart.md).
+To start testing out by setting up a CDK-developed chain on your local machine, check out the [Quickstart](/docs/cdk/validium/quickstart.md).
