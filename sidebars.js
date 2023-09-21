@@ -428,6 +428,7 @@ module.exports = {
                 "tools/data/the-graph/graph-queries",
               ],
             },
+            "tools/data/flair",
             "tools/data/covalent",
             "tools/data/parsiq",
             //"pos/develop/dapp-fauna-polygon-react",

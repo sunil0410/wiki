@@ -68,7 +68,7 @@ Each validator needs to register themselves on the `CustomSupernetManager` contr
 
 ```bash
 ./polygon-edge polybft register-validator --data-dir ./test-chain-1 \
---supernet-manager --supernet-manager 0x75aA024A2292A3FD3C17d67b54B3d00435437246
+--supernet-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr')
 ```
 
 ## 3. Initial staking on the rootchain
@@ -78,19 +78,19 @@ Each validator needs to perform initial staking on the rootchain `StakeManager` 
 <details>
 <summary>Flags ↓</summary>
 
-| Flag                          | Description                                        | Example                                  |
-| -----------------------------| -------------------------------------------------- | ---------------------------------------- |
-| `--amount `                     | The amount to stake                                | `--amount 5000000000000000000`           |
-| `--chain-id`                    | The ID of the child chain                          | `--chain-id 100`                         |
-| `--config `                     | The path to the SecretsManager config file         | `--config /path/to/config/file.yaml`     |
-| `--data-dir`                    | The directory for the Polygon Edge data            | `--data-dir ./polygon-edge/data`         |
-| `--jsonrpc`                     | The JSON-RPC interface                             | `--jsonrpc 0.0.0.0:8545`                |
-| `--native-root-token `          | The address of the native root token               | `--native-root-token 0x<token_address>`  |
-| `--stake-manager`               | The address of the stake manager contract          | `--stake-manager 0x<manager_address>`   |
+|| Flag                          | Description                                                                      | Example                                  |
+| -----------------------------| --------------------------------------------------------------------------------- | ---------------------------------------- |
+| `--amount `                     | The amount to stake                                                            | `--amount 5000000000000000000`           |
+| `--supernet-id`                 | The ID of the supernet provided by stake manager on supernet registration      | `--chain-id 100`                         |
+| `--config `                     | The path to the SecretsManager config file                                     | `--config /path/to/config/file.yaml`     |
+| `--data-dir`                    | The directory for the Polygon Edge data                                        | `--data-dir ./polygon-edge/data`         |
+| `--jsonrpc`                     | The JSON-RPC interface                                                         | `--jsonrpc 0.0.0.0:8545`                |
+| `--stake-token `                | The address of ERC20 Token used for staking on rootchain                       | `--native-root-token 0x<token_address>`  |
+| `--stake-manager`               | The address of the stake manager contract                                      | `--stake-manager 0x<manager_address>`   |
 
 </details>
 
-In the following example command, we use the validator key and the rootchain `StakeManager` contract address that was generated earlier. We also set the staking amount to `1000000000000000000` which is equivalent to 1 token. The `--native-root-token` flag is used to specify the address of the native token of the rootchain.
+In the following example command, we use the validator key and the rootchain `StakeManager` contract address that was generated earlier. We also set the staking amount to `1000000000000000000` which is equivalent to 1 token. The `--stake-token` flag is used to specify the address of the native token of the rootchain.
 
 :::info Staking requirement: wrapping a non-ERC-20 token
 
@@ -123,10 +123,10 @@ curl <mumbai-rpc-endpoint> \
 ```bash
 ./polygon-edge polybft stake \
 --data-dir ./test-chain-1 \
---chain-id 100 \
+--supernet-id $(cat genesis.json | jq -r '.params.engine.polybft.supernetID') \
 --amount 1000000000000000000 \
---stake-manager 0x6ceCFe1Db48Ab97fA89b06Df6Bd0bBdE6E64e6F7 \
---native-root-token 0x559Dd13d8A3CAb3Ff127c408f2A08A8a2AEfC56c
+--stake-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr') \
+--stake-token $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeTokenAddr') \
 ```
 
 ## 4. Finalize validator set on the rootchain
@@ -135,14 +135,14 @@ After all validators from the genesis block have performed initial staking on th
 
 The deployer of the `SupernetManager` contract can specify their hex-encoded private key or use the `--data-dir` flag if they have initialized their secrets. If the `--enable-staking` flag is provided, validators will be able to continue staking on the rootchain. If not, genesis validators will not be able to update their stake or unstake, nor will newly registered validators after genesis be able to stake tokens on the rootchain. The enabling of staking can be done through this command or later after the Edge chain starts.
 
-In the following example command, we use a placeholder hex-encoded private key of the `SupernetManager` contract deployer. The addresses of the `SupernetManager` and `StakeManager` contracts are the addresses that were generated earlier. We also use the `--finalize-genesis` and `--enable-staking` flags to enable staking and finalize the genesis state.
+In the following example command, we use a placeholder hex-encoded private key of the `SupernetManager` contract deployer. The addresses of the `SupernetManager` and `StakeManager` contracts are the addresses that were generated earlier. We also use the `--finalize-genesis-set` and `--enable-staking` flags to enable staking and finalize the genesis state.
 
 ```bash
    ./polygon-edge polybft supernet --private-key 0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
    --genesis /path/to/genesis/file \
-   --supernet-manager 0x75aA024A2292A3FD3C17d67b54B3d00435437246 \
-   --stake-manager 0x811068e4106f7A70D443684FF4927eC3940439Ec \
-   --finalize-genesis --enable-staking
+   --supernet-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.customSupernetManagerAddr') \
+   --stake-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr') \
+   --finalize-genesis-set --enable-staking
 ```
 
 ## 5. Next Steps
