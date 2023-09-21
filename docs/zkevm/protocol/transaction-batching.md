@@ -35,9 +35,9 @@ struct BatchData {
 
 ​Each transaction is **encoded according to the Ethereum pre-EIP-155 or EIP-155 formats using RLP (Recursive-length prefix) standard**, but the signature values, `v`, `r` and `s`, are concatenated as shown below;
 
-1. `EIP-155`: $\mathtt{\ rlp(nonce, gasprice, gasLimit, to, value, data, chainid, 0, 0,) \#v\#r\#s}$ 
+1. `EIP-155`: $\mathtt{\ rlp(nonce, gasprice, gasLimit, to, value, data, chainid, 0, 0,) \#v\#r\#s\#effectivePercentage}$ 
 
-2. `pre-EIP-155`: $\mathtt{\ rlp(nonce, gasprice, gasLimit, to, value, data) \#v\#r\#s }$.
+2. `pre-EIP-155`: $\mathtt{\ rlp(nonce, gasprice, gasLimit, to, value, data) \#v\#r\#s\# effectivePercentage}$.
 
 ### GlobalExitRoot
 
