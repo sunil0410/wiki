@@ -17,9 +17,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 This section guides you through starting and running the validator node through an Ansible playbook.
 
-For the system requirements, see [Validator Node System Requirements](validator-node-system-requirements.md).
+For the system requirements, see [Validator Node System Requirements](/pos/validator/validator-node-system-requirements.md).
 
-If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](run-validator-binaries.md).
+If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](/pos/validator/run-validator/binaries.md).
 
 :::caution
 
@@ -29,18 +29,12 @@ There is limited space for accepting new validators. New validators can only joi
 
 ## Prerequisites
 
-* Three machines — one local machine on which you will run the Ansible playbook; two remote machines — one [sentry](/docs/maintain/glossary.md#sentry) and one [validator](/docs/maintain/glossary.md#validator).
+* Three machines — one local machine on which you will run the Ansible playbook; two remote machines — one sentry and one validator.
 * On the local machine, [Ansible](https://www.ansible.com/) installed.
 * On the local machine, [Python 3.x](https://www.python.org/downloads/) installed.
 * On the remote machines, make sure Go is *not* installed.
 * On the remote machines, your local machine's SSH public key is on the remote machines to let Ansible connect to them.
 * We have Bloxroute available as a relay network. If you need a gateway to be added as your Trusted Peer please contact **@validator-support-team** in [Polygon Discord](https://discord.com/invite/0xPolygon) > POS VALIDATORS | FULL NODE PROVIDERS | PARTNERS > bloxroute.
-
-:::info
-
-Please follow the steps on [<ins>bloXroute instructions</ins>](/maintain/validate/bloxroute.md) to connect your nodes to the bloXroute gateways.
-
-:::
 
 ## Overview
 

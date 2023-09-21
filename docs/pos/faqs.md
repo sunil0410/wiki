@@ -24,15 +24,15 @@ Yes, the private keys are the same for Heimdall and Bor keystore, and they shoul
 
 ### What Is the Minimum Disk Space Required to Run a Validator Node?
 
-Please refer to our [System Requirements Guide](/pos/operate/validator/validator-node-system-requirements.md) for information on minimum disk space requirements.
+Please refer to our [System Requirements Guide](/pos/validator/validator-node-system-requirements.md) for information on minimum disk space requirements.
 
 ### How to Set Up a Validator Node on the Mainnet?
 
-To set up a validator node on the mainnet, please refer to our [Getting Started Guide](/pos/operate/validator/getting-started.md).
+To set up a validator node on the mainnet, please refer to our [Getting Started Guide](/pos/operate/node/full-node-binaries.md).
 
 ### How to Set Up a Non-Validating Node?
 
-To set up a non-validating node, check out our guide on [Running a Validator Node](/pos/operate/validator/run-validator).
+To set up a non-validating node, check out our guide on [Running a Validator Node](/pos/operate/node/full-node-binaries.md).
 
 ### What Ports Need to Be Open on the Sentry Node?
 

@@ -83,11 +83,11 @@ function Home() {
               <div className="col-lg-8">
                 <h1 className="mt-0"><a href="https://polygon.technology" class="landing-page-link">Polygon</a> Wiki</h1>
                 <h3 className="mt-0"> The official documentation for <a href="https://polygon.technology" class="landing-page-link">0xPolygon</a></h3>
-                <p className="lead">The <b>Polygon Wiki</b> is the source of truth for Polygon, providing comprehensive documentation, community resources, and guides for enthusiasts and developers interested in learning about or building on Polygon. <b>Stay tuned for the upcoming documentation experience for Polygon 2.0.</b></p>
+                <p className="lead">The <b>Polygon Wiki</b> is the source of truth for Polygon, providing comprehensive documentation, community resources, and guides for enthusiasts and developers interested in learning about or building on Polygon.</p>
                 <a href="https://university.polygon.technology/" style={{ color: '#ffffff' }}>
                   <button className="btn btn-custom">Get started with Polygon</button>
                 </a>
-                <p><a href="#common-docs" onClick={(e) => { e.preventDefault(); smoothScrollTo('#common-docs'); }}><b>Start building ↓</b></a></p>
+                <p><a href="#common-docs" onClick={(e) => { e.preventDefault(); smoothScrollTo('#common-docs'); }}><b>Everything is built for scale ↓</b></a></p>
               </div>
               <div className="col-lg-4 text-center pt-3 d-none d-lg-block">
                 <img style={{ maxWidth: '100%', maxHeight: '400px' }} src="img/polygon-logo.png" />
@@ -174,7 +174,7 @@ function Home() {
                 <div class="tabs-content">
                   <h4 class="text-weight-medium">Polygon CDK <span class="solution-status">Live</span></h4>
                   <div class="padding-bottom padding-small"></div>
-                  <p class="description-text">Build customizable app-chains powered by a novel zkValidium.</p>
+                  <p class="description-text">Build highly scalable, modular, and customizable layer 2 app-chains.</p>
                   <div class="padding-bottom custom-padding"></div>
                   <Buttonizer docsUrl={'docs/cdk/what-is-polygon-cdk/'} linkUrl={'docs/cdk/quickstart/'} />
                 </div>
@@ -184,24 +184,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </TabItem>  
-            <TabItem value="app-specific">
-              <div class="tabs-element">
-                <div class="tabs_animation-wrapper">
-                  <div class="tabs_animation-embed pb_video_embed w-embed w-iframe">
-                    <iframe src="https://player.vimeo.com/video/791153912?h=a0b62c3daa&badge=0&autopause=0&player_id=0&app_id=58479&loop=1&autoplay=1&background=1" frameborder="0" allow="autoplay" class="tabs-frame" title="Hero" data-ready="true"></iframe>
-                  </div>
-                </div>
-                <div class="tabs-content">
-                  <h4 class="text-weight-medium">Polygon Supernets <span class="solution-status">Live</span></h4>
-                  <div class="padding-bottom padding-small"></div>
-                  <p class="description-text">Build app-chains powered by an industry-leading technology and ecosystem around Polygon.</p>
-                  <div class="padding-bottom custom-padding"></div>
-                  <Buttonizer docsUrl={'docs/supernets'} linkUrl={'docs/category/build-a-supernet'} />
-                </div>
-              </div>
-            </TabItem>
-
+            </TabItem> 
             <TabItem value="identity">
               <div class="tabs-element">
                 <div class="tabs_animation-wrapper">

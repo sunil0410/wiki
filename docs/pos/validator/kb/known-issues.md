@@ -92,7 +92,7 @@ If your node throws up these logs, please check the following:
 
 ### Log: Error dialing seed
 
-Please check whether your Heimdall node is configured with the latest seeds as listed on the [node setup documents](/pos/operate/node/full-node-deployment.md).
+Please check whether your Heimdall node is configured with the latest seeds as listed on the [node setup documents](/pos/operate/node/full-node-binaries.md).
 
 If you're still encountering the error after either updating to the latest seeds or confirming that you are using the right seeds, you may need to clear the `addrbook.json` file. To do this, follow the steps below.
 

@@ -13,7 +13,7 @@ image: https://wiki.polygon.technology/img/polygon-logo.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can set up and change your [commission](/docs/maintain/glossary.md#commission) as a validator.
+You can set up and change your commission as a validator.
 
 A validator is entitled to charge any commission rate. The minimum commission would be 0% and the maximum commission would be 100% of the rewards earned.
 

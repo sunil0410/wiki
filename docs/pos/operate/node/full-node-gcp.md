@@ -17,8 +17,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 In this document, we will describe how to deploy Polygon nodes into a Virtual Machine instance on the Google Cloud Platform (GCP).
 
-Before we start, please check the minimum and recommended [hardware requirements](technical-requirements.md).
-
 It is recommended to use any modern Debian or Linux Ubuntu OS with long-term support, i.e. Debian 11, Ubuntu 20.04. We'll focus on Ubuntu 20.04 in this guide.
 
 ## Deploy VM Instance

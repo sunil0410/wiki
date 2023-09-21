@@ -18,6 +18,6 @@ The Bor node or the block producer implementation is the EVM-compatible blockcha
 
 Currently, Bor is a basic Geth implementation with custom changes done to the consensus algorithm.
 
-Block producers are chosen from the [validator](/docs/maintain/glossary.md#validator) set and are shuffled using historical Ethereum block hashes.
+Block producers are chosen from the validator set and are shuffled using historical Ethereum block hashes.
 
 See also [Bor architecture](/docs/pos/design/bor/overview).

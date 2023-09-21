@@ -84,12 +84,12 @@ This section guides you through the following topics:
 
 * [Validator responsibilities](/pos/design/validator/responsibilities.md)
 * Joining the network as a validator:
-  * [Start and run the nodes with Ansible](run-validator.md)
-  * [Start and run the nodes with binaries](run-validator.md)
-  * [Stake as a validator](validator-staking-operations.md)
+  * [Start and run the nodes with Ansible](/pos/validator/run-validator/ansible.md)
+  * [Start and run the nodes with binaries](/pos/validator/run-validator/binaries.md)
+  * [Stake as a validator](/pos/validator/validator-staking-operations.md)
 * Maintaining your validator nodes:
-  * [Change the signer address](change-signer-address.md)
-  * [Change the commission](validator-commission-operations.md)
+  * [Change the signer address](/pos/validator/change-signer-address.md)
+  * [Change the commission](/pos/validator/validator-commission-operations.md)
 
 Community assistance:
 

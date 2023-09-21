@@ -122,7 +122,7 @@ You will need to send 15 GöETH to the Deployment address listed in `wallets.txt
 Adjust the `gasPrice` according to the network status. For Goerli, you can check it with the following command, where you insert your Etherscan API key:
 
 ```bash
-ETHERSCAN_API_KEY="" echo "$(($(printf "%d\\n" $(curl -s "<https://api-goerli.etherscan.io/api?module=proxy&action=eth_gasPrice&apikey=$ETHERSCAN_API_KEY>" | jq -r .result))/1000000000)) Gwei"
+ETHERSCAN_API_KEY=""; GAS_PRICE_HEX=$(curl -s "https://api-goerli.etherscan.io/api?module=proxy&action=eth_gasPrice&apikey=$ETHERSCAN_API_KEY" | jq -r .result); GAS_PRICE_DEC=$(printf "%d" $(echo $GAS_PRICE_HEX | cut -c 3-)); echo "${GAS_PRICE_DEC} Gwei"
 ```
 
 Edit `~/zkevm/zkevm-contracts/deployment/helpers/deployment-helpers.js` to adjust the `gasPrice` according to network status. It is recommended to add 50 Gwei to the current `gasPrice` to ensure transactions are processed quickly.

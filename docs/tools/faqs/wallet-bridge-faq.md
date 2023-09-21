@@ -39,7 +39,7 @@ Metamask, Coinbase, Bitski Wallet, Venly and WalletConnect are the currently sup
 There are many reasons why this might be happening. We suggest that you **try another time**, **use another browser** or, if any of these doesn’t help, **[contact our support team](https://support.polygon.technology/support/home)**.
 
 ## How can I deposit Funds from Ethereum to Polygon using Polygon Wallet Suite.
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#depositing-funds-from-ethereum-to-polygon).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#depositing-funds-from-ethereum-to-polygon).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/deposit/deposit-polygon-wallet.mp4"></source>
@@ -47,7 +47,7 @@ Please watch the video below or follow [this tutorial](/docs/develop/wallets/pol
 </video>
 
 ## How can I withdraw funds from Polygon to Ethereum via PoS Bridge using Polygon Wallet Suite?
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#withdrawing-funds-from-polygon-back-to-ethereum-on-pos-bridge).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#withdrawing-funds-from-polygon-back-to-ethereum-on-pos-bridge).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/pos/withdraw-polygon-wallet.mp4"></source>
@@ -55,7 +55,7 @@ Please watch the video below or follow [this tutorial](/docs/develop/wallets/pol
 </video>
 
 ## How to add a new or custom token to Polygon Wallet Token list?
-Please follow  [this tutorial](/docs/faq/adding-a-custom-token).
+Please follow [this tutorial](/faq/adding-a-custom-token).
 
 ## How do I find the token contract?
 
@@ -75,7 +75,7 @@ Then, add the relevant contract address, symbol, and decimal precision. Contract
 
 ## How can I add Polygon Mainnet on Metamask?
 
-Check [this tutorial](/docs/tools/wallets/metamask/config-polygon-on-metamask).
+Check [this tutorial](/tools/wallets/metamask/config-polygon-on-metamask).
 
 ## My token is not visible in the list. Who should I contact?
 
@@ -255,7 +255,7 @@ If you still have some remaining funds, transfer them immediately to a new walle
 As the Ethereum Network has Goerli as its test network, the Polygon Mainnet has Mumbai. All transactions on this test network will be indexed on the Mumbai Explorer.
 
 ## How can I swap my tokens for other tokens?
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#token-swap).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#token-swap).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/swap-token.mp4"></source>
@@ -270,7 +270,7 @@ If you are trying to swap tokens and it is taking too long, you could try the sa
 Only MATIC.
 
 ## How can I swap my token for gas?
-Please watch the video below or follow [this tutorial](/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide.md#swap-for-gas).
+Please watch the video below or follow [this tutorial](/tools/wallets/polygon-web-wallet/web-wallet-v3-guide.md#swap-for-gas).
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/v3/swap-gas.mp4"></source>
