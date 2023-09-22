@@ -14,7 +14,7 @@ keywords:
   - extensible
 ---
 
-The EVM is the core interface for executing and interacting with smart contracts on a Edge chain. It operates consistently with the Ethereum EVM and supports the same set of OPCODEs.
+The EVM is the core interface for executing and interacting with smart contracts on a Edge-powered chain. It operates consistently with the Ethereum EVM and supports the same set of OPCODEs.
 
 <details>
 <summary> Overview of the EVM </summary>

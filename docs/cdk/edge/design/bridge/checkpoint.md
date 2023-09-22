@@ -20,8 +20,8 @@ Checkpointing is the process of recording and committing a snapshot of the state
 
 :::info Key points
 
-- The checkpoints are made **by the validators on the Edge chain** and are committed to the rootchain.
-- A checkpoint serves as a snapshot of the Edge state. This snapshot is stored as a Merkle root and **represents the state of the Edge chain** at that point in time it was created.
+- The checkpoints are made **by the validators on the Edge-powered chain** and are committed to the rootchain.
+- A checkpoint serves as a snapshot of the Edge state. This snapshot is stored as a Merkle root and **represents the state of the Edge-powered chain** at that point in time it was created.
 - The checkpoint process is important for **ensuring the security of the network** as it enables the rootchain to detect and prevent any potential fraud or malicious activity on the child.
 
 :::
@@ -30,7 +30,7 @@ Checkpointing is the process of recording and committing a snapshot of the state
 
 A `CheckpointManager` contract responsible for managing checkpoints in the network.
 
-The checkpoints represent a snapshot of the Edge state, which is periodically checkpointed to the rootchain by the validators. The checkpoints are used as a reference point for the rootchain to verify the integrity and accuracy of the data on the Edge chain.
+The checkpoints represent a snapshot of the Edge state, which is periodically checkpointed to the rootchain by the validators. The checkpoints are used as a reference point for the rootchain to verify the integrity and accuracy of the data on the Edge-powered chain.
 
 The contract has several functions to facilitate the management of checkpoints, such as submitting a new checkpoint with metadata, verifying signatures, and getting the event root by block number or epoch. The contract also has a mapping to store the checkpoints and the current validator set, and an array to keep track of the checkpoint block numbers.
 
@@ -45,8 +45,8 @@ To elaborate, the root of the Merkle tree is a hash value that represents a spec
 
 When a checkpoint is made, the root of the Merkle tree is included as part of the checkpoint, along with other metadata. This checkpoint is then sent to the rootchain where it is verified and stored by the validators.
 
-Later, when a user wants to verify a particular exit event on the Edge chain, they can provide a Merkle proof, which is a cryptographic proof that demonstrates the inclusion of a particular exit event in the Merkle tree. The Merkle proof can be verified by the rootchain using the root of the Merkle tree, which was included in the checkpoint.
+Later, when a user wants to verify a particular exit event on the Edge-powered chain, they can provide a Merkle proof, which is a cryptographic proof that demonstrates the inclusion of a particular exit event in the Merkle tree. The Merkle proof can be verified by the rootchain using the root of the Merkle tree, which was included in the checkpoint.
 
-In short, the root of the Merkle tree is a compact representation of the exit events on the Edge chain at a specific point in time, which is included in checkpoints and used for verification purposes.
+In short, the root of the Merkle tree is a compact representation of the exit events on the Edge-powered chain at a specific point in time, which is included in checkpoints and used for verification purposes.
 
 </details>

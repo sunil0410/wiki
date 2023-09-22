@@ -12,6 +12,7 @@
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
   },
   "dependencies": {
+    "@algolia/client-search": "^4.20.0",
     "@crowdin/cli": "3",
     "@docsearch/js": "^3.1.0",
     "@docusaurus/core": "^2.4.3",
@@ -38,13 +39,17 @@
     "react-bootstrap": "^2.7.2",
     "react-dev-utils": "11.0.4",
     "react-dom": "^16.8.4",
+    "react-loadable": "^5.5.0",
     "rehype-katex": "5",
     "remark-math": "3",
     "request": "2.75.0",
+    "search-insights": "^2.8.2",
     "semver-regex": "^3.1.4",
     "shell-quote": "1.7.3",
     "trim": "^0.0.3",
     "trim-newlines": "^3.0.1",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
     "yarn-deduplicate": "^6.0.0"
   },
   "browserslist": {

@@ -76,7 +76,7 @@ values={[
 
 <TabItem value="20">
 
-This command deposits ERC-20 tokens from a rootchain to a Edge chain. 
+This command deposits ERC-20 tokens from a rootchain to a Edge-powered chain. 
 
 - Replace `hex_encoded_depositor_private_key` with the private key of the account that will be depositing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
@@ -130,7 +130,7 @@ In this example, we're depositing ERC-20 tokens to a test Edge instance:
 
 <TabItem value="721">
 
-This command deposits ERC-721 tokens from a rootchain to a Edge chain.
+This command deposits ERC-721 tokens from a rootchain to a Edge-powered chain.
 
 - Replace `hex_encoded_depositor_private_key` with the private key of the account that will be depositing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.
@@ -182,7 +182,7 @@ In this example, we're depositing ERC-721 tokens to a test Edge instance:
 
 <TabItem value="1155">
 
-This command deposits ERC-1155 tokens from the rootchain to the Edge chain.
+This command deposits ERC-1155 tokens from the rootchain to the Edge-powered chain.
 
 - Replace `depositor_private_key` with the private key of the account that will be depositing the tokens.
 - Replace `receivers_addresses` with a comma-separated list of Ethereum addresses that will receive the tokens.

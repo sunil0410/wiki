@@ -27,7 +27,7 @@ The following table breaks down each of these components.
 | Component | Description | Link |
 | --- | --- | --- |
 | libp2p | Provides the networking layer for Edge and is designed for peer-to-peer network architectures. | [libp2p overview](/docs/cdk/edge/design/libp2p.md) |
-| Bridge | An in-built bridging mechanism enabled by PolyBFT that allows message passing between an Edge chain and another Proof-of-Stake blockchain without mapping. | [bridge overview](/docs/cdk/edge/design/bridge/overview.md) |
+| Bridge | An in-built bridging mechanism enabled by PolyBFT that allows message passing between an Edge-powered chain and another Proof-of-Stake blockchain without mapping. | [bridge overview](/docs/cdk/edge/design/bridge/overview.md) |
 | Mempool | Enables multiple validators to aggregate their signatures to create a single, aggregated signature representing all validators in the pool. | [mempool overview](/docs/cdk/edge/design/mempool.md) |
 | Consensus | PolyBFT serves as the consensus mechanism of Polygon Edge and consists of a consensus engine, IBFT 2.0, and a consensus protocol that includes the bridge, staking, and other utilities. | [PolyBFT overview](/docs/category/polybft-consensus) |
 | Blockchain | Coordinates everything in the system, curates state transitions, and is responsible for state changes when a new block is added to the chain. | [blockchain overview](/docs/cdk/edge/design/blockchain.md) |

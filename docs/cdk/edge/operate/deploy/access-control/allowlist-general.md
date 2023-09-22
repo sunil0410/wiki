@@ -2,7 +2,7 @@
 id: allowlist-add-remove
 title: How to Add & Remove Accounts from an ACL
 sidebar_label: How to Add & Remove Accounts
-description: "Learn how to allowlist addresses on an Edge chain."
+description: "Learn how to allowlist addresses on an Edge-powered chain."
 keywords:
   - docs
   - polygon
@@ -16,7 +16,7 @@ keywords:
 
 ## Understanding ACL and Address Roles
 
-ACLs or Access Control Lists are a way of managing permissions in your Edge chain. In this context, an ACL is essentially a list of addresses and their corresponding roles.
+ACLs or Access Control Lists are a way of managing permissions in your Edge-powered chain. In this context, an ACL is essentially a list of addresses and their corresponding roles.
 
 ### Roles can be one of three types:
 
@@ -44,7 +44,7 @@ To interact with the ACL precompiles using an external library or client, follow
 
 1. Obtain the ABI (Application Binary Interface) for the specific ACL precompile you want to interact with. The ABI contains the definitions of the precompile's functions, including their parameters and return types.
 
-2. Create a contract instance for the ACL precompile using the ABI and the provider connected to the Edge chain.
+2. Create a contract instance for the ACL precompile using the ABI and the provider connected to the Edge-powered chain.
 
 3. Use the contract instance to call the functions defined in the precompile's ABI. These functions allow you to manage the ACL by adding or removing accounts, modifying roles, or performing other ACL-related operations.
 

@@ -15,9 +15,9 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Configuration parameters are crucial for setting up and operating a Edge chain. You can configure these parameters using the genesis and server commands. Before running these commands, it is essential to generate keys using the polybft-secrets command.
+Configuration parameters are crucial for setting up and operating a Edge-powered chain. You can configure these parameters using the genesis and server commands. Before running these commands, it is essential to generate keys using the polybft-secrets command.
 
-For information on the available configuration flags and their descriptions for customizing the genesis configuration of an Edge chain, refer to the categorized tabs below.
+For information on the available configuration flags and their descriptions for customizing the genesis configuration of an Edge-powered chain, refer to the categorized tabs below.
 
 <Tabs
 defaultValue="polybft"

@@ -67,7 +67,7 @@ To unstake, use the `polygon-edge polybft unstake` command.
 
 ## Withdraw
 
-Once you have successfully unstaked, you will need to withdraw your unstaked tokens from the Edge chain to the rootchain. To do so, use the `polygon-edge polybft withdraw-child` command.
+Once you have successfully unstaked, you will need to withdraw your unstaked tokens from the Edge-powered chain to the rootchain. To do so, use the `polygon-edge polybft withdraw-child` command.
 
 <details>
 <summary>Flags ↓</summary>

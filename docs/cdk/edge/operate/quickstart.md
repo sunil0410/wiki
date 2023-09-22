@@ -1,6 +1,6 @@
 ---
 id: quickstart
-title: Launch a Local Test Edge Chain
+title: Launch a Local Test Edge-Powered Chain
 sidebar_label: Quickstart
 description: "Spin up a new childchain instance with one-click."
 keywords:
@@ -27,7 +27,7 @@ To locally run the Edge test environment, run the following command from the pro
   ./scripts/cluster polybft
   ```
 
-**That's it! You should have successfully been able to start a local Edge chain just by running the script.**
+**That's it! You should have successfully been able to start a local Edge-powered chain just by running the script.**
 
 > - Stop the network: "CTRL/Command C" or `./scripts/cluster polybft stop`.
 > - Destroy the network: `./scripts/cluster polybft destroy`.

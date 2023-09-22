@@ -1,7 +1,7 @@
 ---
 id: runtime-allowlist
 title: Access Control Lists
-sidebar_label: Access control lists
+sidebar_label: Access Control Lists
 description: "Learn about the authorization capabilities available in Edge."
 keywords:
   - docs

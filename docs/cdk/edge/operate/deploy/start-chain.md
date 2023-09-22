@@ -2,7 +2,7 @@
 id: how-to-start
 title: How to Start Your Chain
 sidebar_label: How to Start Your Chain
-description: "Learn how to start your new Edge chain after configuring the genesis workflow."
+description: "Learn how to start your new Edge-powered chain after configuring the genesis workflow."
 keywords:
   - docs
   - polygon

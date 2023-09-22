@@ -21,7 +21,7 @@ The minimum storage requirements will change over time as the network grows. It 
 
 :::
 
-This is the minimum hardware configuration required to set up a Edge chain:
+This is the minimum hardware configuration required to set up a Edge-powered chain:
 
 | Component | Minimum Requirement | Recommended |
 | --------- | ------------------- | ----------- |

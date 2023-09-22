@@ -2,7 +2,7 @@
 id: how-to-configure-rootchain
 title: How to Configure the Rootchain
 sidebar_label: How to Configure the Rootchain
-description: "Learn how to configure the rootchain that is associated with your Edge chain."
+description: "Learn how to configure the rootchain that is associated with your Edge-powered chain."
 keywords:
   - docs
   - polygon
@@ -16,9 +16,9 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-In this section, we'll configure the associated rootchain of the Edge chain and deploy the necessary rootchain core contracts.
+In this section, we'll configure the associated rootchain of the Edge-powered chain and deploy the necessary rootchain core contracts.
 
-After generating the initial chain state for your Edge chain, the next step is to connect and initialize the rootchain contracts. This can be done using either a demo Geth instance or any EVM-compatible rootchain. The demo Geth instance is a local instance of a Geth node running in development mode, which simulates the Ethereum network and is **only intended for testing purposes**.
+After generating the initial chain state for your Edge-powered chain, the next step is to connect and initialize the rootchain contracts. This can be done using either a demo Geth instance or any EVM-compatible rootchain. The demo Geth instance is a local instance of a Geth node running in development mode, which simulates the Ethereum network and is **only intended for testing purposes**.
 
 ## 1. Deploy and initialize rootchain contracts
 
@@ -629,7 +629,7 @@ Address=0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570; Balance=10000000000000000000
 
 ## 4. Funding validators on the rootchain
 
-Before deploying validator nodes on the Edge chain, we need to ensure that the validators have sufficient funds on the rootchain network. It's crucial to have enough funds in the validator account, as they need to cover the gas fees associated with their transactions on the rootchain.
+Before deploying validator nodes on the Edge-powered chain, we need to ensure that the validators have sufficient funds on the rootchain network. It's crucial to have enough funds in the validator account, as they need to cover the gas fees associated with their transactions on the rootchain.
 
 To fund the validators' accounts on the rootchain, we use the `polygon-edge rootchain fund` command. When executed with the appropriate flags, it will:
 
@@ -661,6 +661,6 @@ Here's an example of how to fund a validator account (replace address value with
 
 ## 5. Next Steps
 
-Now that we have successfully configured the initial setup of your Edge chain, including both the childchain and rootchain, we can proceed to the next crucial step: rootchain staking and allowlisting through the configuration of the initial validator set.
+Now that we have successfully configured the initial setup of your Edge-powered chain, including both the childchain and rootchain, we can proceed to the next crucial step: rootchain staking and allowlisting through the configuration of the initial validator set.
 
 To accomplish this, navigate to the [Configure the Initial Validator Set](/docs/cdk/edge/operate/deploy/genesis-validators.md) deployment guide.

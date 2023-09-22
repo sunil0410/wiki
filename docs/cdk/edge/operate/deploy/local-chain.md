@@ -2,7 +2,7 @@
 id: spawn-test-chain
 title: How to Generate New Account Secrets
 sidebar_label: How to Spawn a New Childchain
-description: "Learn how to deploy a local test Edge chain."
+description: "Learn how to deploy a local test Edge-powered chain."
 keywords:
   - docs
   - polygon

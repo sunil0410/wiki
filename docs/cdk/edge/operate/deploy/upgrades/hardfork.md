@@ -1,8 +1,8 @@
 ---
 id: how-to-upgrade
-title: How to Upgrade Your Edge Chain Using a Hardfork
-sidebar_label: Upgrade Your Edge Chain Using a Hardfork
-description: "Learn how to upgrade your Edge chain using a hardfork."
+title: How to Upgrade Your Edge-Powered Chain Using a Hardfork
+sidebar_label: Upgrade Your Chain Using a Hardfork
+description: "Learn how to upgrade your Edge-powered chain using a hardfork."
 keywords:
   - docs
   - polygon
@@ -12,7 +12,7 @@ keywords:
   - hardfork
 ---
 
-Drawing from a real-world example, this guide delves into the process of introducing a new feature via a hardfork in an Edge chain, utilizing a fork manager to manage the activation and behavior of the fork.
+Drawing from a real-world example, this guide delves into the process of introducing a new feature via a hardfork in an Edge-powered chain, utilizing a fork manager to manage the activation and behavior of the fork.
 
 ## 1. Adding Fields
 

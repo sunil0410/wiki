@@ -19,7 +19,7 @@ import TabItem from '@theme/TabItem';
 
 This document contains answers to frequently asked questions (FAQs) about Edge.
 
-If you're new to Edge and need general information, please navigate to the **Common FAQs tab**. If you're ready to deploy an Edge chain or have technical deployment questions, please navigate the rest of the **FAQ tabs**. **If you have any further questions about configuring an Edge-powered chain, please consult the documentation or reach out to the Polygon team for support.**
+If you're new to Edge and need general information, please navigate to the **Common FAQs tab**. If you're ready to deploy an Edge-powered chain or have technical deployment questions, please navigate the rest of the **FAQ tabs**. **If you have any further questions about configuring an Edge-powered chain, please consult the documentation or reach out to the Polygon team for support.**
 
 <Tabs
 defaultValue="common"
@@ -184,17 +184,17 @@ Running one Edge client node in "relayer" mode can enable automatic execution of
 
 <TabItem value="assets">
 
-## Can an Edge chain use a custom token standard instead of the default token contracts?
+## Can an Edge-powered chain use a custom token standard instead of the default token contracts?
 
-Although it is recommended to use the standard ERC-20, ERC-721, and ERC-1155 contracts, it is not a requirement for an Edge chain to use them. However, any custom standard employed by an Edge chain must adhere to the chain configuration to ensure compatibility with the bridge. Additionally, generating a native ERC-based asset using the default core contracts involves deploying, mapping, and bridging. If a custom standard is used, it will also need to follow the same procedure.
+Although it is recommended to use the standard ERC-20, ERC-721, and ERC-1155 contracts, it is not a requirement for an Edge-powered chain to use them. However, any custom standard employed by an Edge-powered chain must adhere to the chain configuration to ensure compatibility with the bridge. Additionally, generating a native ERC-based asset using the default core contracts involves deploying, mapping, and bridging. If a custom standard is used, it will also need to follow the same procedure.
 
-## What is the recommended way to create and manage assets on an Edge chain?
+## What is the recommended way to create and manage assets on an Edge-powered chain?
 
-To create and manage native assets on an Edge chain or enable asset bridging between an Edge chain and rootchain, it is recommended to use the core contracts provided by the network.
+To create and manage native assets on an Edge-powered chain or enable asset bridging between an Edge-powered chain and rootchain, it is recommended to use the core contracts provided by the network.
 
 ## Is it necessary to use the native bridge integration for Edge?
 
-Yes, it's essential. The native bridge integration is fundamental for Edge as it hosts the staking logic on the rootchain, which serves as the authoritative source of truth for the Edge chain.
+Yes, it's essential. The native bridge integration is fundamental for Edge as it hosts the staking logic on the rootchain, which serves as the authoritative source of truth for the Edge-powered chain.
 
 While customization is possible, it should be undertaken with a comprehensive understanding of the system. If preferred, the product suite can be used solely for the childchain instance.
 
@@ -246,11 +246,11 @@ However, selecting a reliable and publicly available RPC endpoint for the rootch
 
 In theory, existing rootchain contracts can be used, but it is not practical with the current contract configuration.
 
-Manually updating the Edge configuration to point to existing rootchain contract addresses may disrupt or challenge checkpoints and chain state, leading to problems if there is a fork on the Edge chain. Furthermore, updating the checkpoint manager's address could trigger an exit with the wrong checkpoint manager, leading to incorrect state transitions and potential loss of funds. Deploying new contracts on the rootchain ensures all necessary dependencies are available and properly configured, avoiding compatibility issues or other unforeseen problems.
+Manually updating the Edge configuration to point to existing rootchain contract addresses may disrupt or challenge checkpoints and chain state, leading to problems if there is a fork on the Edge-powered chain. Furthermore, updating the checkpoint manager's address could trigger an exit with the wrong checkpoint manager, leading to incorrect state transitions and potential loss of funds. Deploying new contracts on the rootchain ensures all necessary dependencies are available and properly configured, avoiding compatibility issues or other unforeseen problems.
 
-## Is it necessary to deploy new instances of rootchain contracts for each Edge instance when running multiple Edge chains?
+## Is it necessary to deploy new instances of rootchain contracts for each Edge instance when running multiple Edge-powered chains?
 
-Yes, new instances of rootchain contracts must be deployed for each Edge instance. Each Edge instance is independent and requires its own set of contracts to function properly. Deploying and managing multiple instances of contracts can be complex and requires careful consideration of factors such as cost, security, and scalability. It is essential to plan and test thoroughly before implementing a solution with multiple Edge chains.
+Yes, new instances of rootchain contracts must be deployed for each Edge instance. Each Edge instance is independent and requires its own set of contracts to function properly. Deploying and managing multiple instances of contracts can be complex and requires careful consideration of factors such as cost, security, and scalability. It is essential to plan and test thoroughly before implementing a solution with multiple Edge-powered chains.
 
 ## Is the identity of a Edge instance linked to the rootchain contract address on the rootchain?
 
