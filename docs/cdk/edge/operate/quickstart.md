@@ -1,6 +1,6 @@
 ---
 id: quickstart
-title: Launch a Local Test Edge-powered chain
+title: Launch a Local Test Edge-Powered Chain
 sidebar_label: Quickstart
 description: "Spin up a new childchain instance with one-click."
 keywords:
