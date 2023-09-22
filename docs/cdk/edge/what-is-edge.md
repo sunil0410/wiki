@@ -13,6 +13,22 @@ keywords:
   - modular
 ---
 
+## Background
+
+Polygon Edge was established with the aim of delivering a robust Software Development Kit (SDK) for blockchains, grounded in Polygon's foundational vision for Ethereum. This vision sought to transform Ethereum into a multi-chain system by introducing a structured framework for its diversified expansion.
+
+Despite its role in empowering critical infrastructure, the original SDK lacked essential support and pre-built services necessary for overcoming challenges in blockchain infrastructure deployment, management, and bootstrapping. It was at this juncture that the Supernets vision was conceived to elevate Edge by developing a product suite centered around the Edge client and incorporating enterprise-grade features such as cross-chain interoperability, advanced access control, and extensive customizability.
+
+Now, the innovations from ZK and PoS-based mechanisms are integrated into a comprehensive chain development kit, known as the Polygon CDK.
+
+In summary:
+
+- **Polygon Edge**: Originated as an SDK designed for initiating sidechains, it facilitated the development of Ethereum-compatible blockchain networks and functioned as a Layer 3 development kit.
+
+- **Polygon Supernets**: Representing the evolved form of Edge, it resolves the complexities associated with infrastructure development and bootstrapping for app-chains. It aimed to provide enhanced interoperability, customization options, and operates as a Layer 3 solution.
+
+- **Polygon CDK**: The most refined and sophisticated version, focusing on Layer 2 solutions, exemplifies modularity and customization. It leverages the innovative ZK protocol primitives from Polygon 2.0, allowing developers to craft chains specifically aligned with their unique requirements.
+
 ## Introduction
 
 Edge provides infrastructure for application-specific chains that operate with [PolyBFT consensus](/docs/cdk/edge/design/consensus/polybft/overview.md). It leverages a [native bridge](/docs/cdk/edge/design/bridge/overview.md) to connect with an associated rootchain, enabling Edge-powered chains to inherit its security and capabilities. Additionally, Edge extend the block space available on the rootchain, providing scalability and interoperability for decentralized applications. With on-chain governance mechanisms, Edge empower communities to make decisions and upgrade the network in a transparent and compliant manner.
