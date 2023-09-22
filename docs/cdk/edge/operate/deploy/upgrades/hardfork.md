@@ -1,6 +1,6 @@
 ---
 id: how-to-upgrade
-title: How to Upgrade Your Edge-Powered chain Using a Hardfork
+title: How to Upgrade Your Edge-Powered Chain Using a Hardfork
 sidebar_label: Upgrade Your Chain Using a Hardfork
 description: "Learn how to upgrade your Edge-powered chain using a hardfork."
 keywords:

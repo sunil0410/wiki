@@ -24,7 +24,7 @@ export const firstRow = [
         description: "Discover why Polygon CDK is your answer to today's system demands, built to adapt for tomorrow."
     },
     {
-        title: "Launch an Edge-Powered chain",
+        title: "Launch an Edge-Powered Chain",
         linkUrl: "/docs/cdk/edge/operate/deploy",
         imageUrl: "/img/edge/supernets-logo.png",
         description: "Develop an app-chain and link it to any EVM-compatible rootchain."
