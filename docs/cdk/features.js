@@ -25,7 +25,7 @@ export const firstRow = [
     },
     {
         title: "Launch an Edge-Powered Chain",
-        linkUrl: "/docs/cdk/edge/operate/deploy",
+        linkUrl: "/docs/edge/operate/deploy",
         imageUrl: "/img/edge/supernets-logo.png",
         description: "Develop an app-chain and link it to any EVM-compatible rootchain."
     },

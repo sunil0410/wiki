@@ -896,7 +896,310 @@ module.exports = {
     },
     "zkevm/open-source-repos",
   ],
+  /*
+   *
+   * ************************** Edge Section *************************
+   *
+   * This section includes the official product documentation and
+   * developer guides for Polygon Edge.
+   *
+   * **********************************************************************
+   *
+   */
 
+edge:[
+  {
+    type: "html",
+    value: "Edge",
+    className: "sidebar-title",
+  },
+  "edge/operate/quickstart",
+  "edge/what-is-edge",
+  {
+    type: "category",
+    label: "System Design",
+    link: {
+      type: "generated-index",
+    },
+    collapsed: true,
+    items: [
+      "edge/design/overview",
+      {
+        type: "category",
+        label: "Consensus",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "edge/design/consensus/polybft/polybft-overview",
+          "edge/design/consensus/polybft/ibft-overview",
+        ],
+      },
+      {
+        type: "category",
+        label: "Bridge",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "edge/design/bridge/overview",
+          "edge/design/bridge/statesync",
+          "edge/design/bridge/checkpoint",
+          {
+            type: "category",
+            label: "Assets",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/design/bridge/assets/erc/erc20",
+              "edge/design/bridge/assets/erc/erc721",
+              "edge/design/bridge/assets/erc/erc1155",
+            ],
+          },
+        ],
+      },
+      "edge/design/libp2p",
+      {
+        type: "category",
+        label: "Runtime",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "edge/design/runtime/runtime",
+          "edge/design/runtime/runtime-allowlist",
+        ],
+      },
+      "edge/design/blockchain",
+      "edge/design/mempool",
+      "edge/design/txpool",
+      "edge/design/txrelayer",
+      "edge/design/json-rpc",
+      "edge/design/grpc",
+    ],
+  },
+  {
+    type: "category",
+    label: "Build an Edge-Powered Chain",
+    link: {
+      type: "generated-index",
+    },
+    collapsed: true,
+    items: [
+      {
+        type: "category",
+        label: "Prepare Your Environment",
+        link: {
+          type: "generated-index",
+        },
+        collapsed: true,
+        items: [
+          "edge/operate/requirements",
+          "edge/operate/install",
+        ],
+      },
+      "edge/operate/ibft-to-polybft",
+      {
+        type: "category",
+        label: "Deploy a Chain",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+          "edge/operate/deploy/deploy-index",
+          "edge/operate/deploy/spawn-test-chain",
+          "edge/operate/deploy/how-to-generate-genesis",
+          "edge/operate/deploy/how-to-configure-rootchain",
+          "edge/operate/deploy/genesis-validators",
+          "edge/operate/deploy/how-to-start",
+        ],
+      },
+      {
+        type: "category",
+        label: "Operate Your Chain",
+        link: {
+          type: "generated-index",
+        },
+        collapsed: true,
+        items: [
+          {
+            type: "category",
+            label: "Access Control",
+            link: {
+              type: "generated-index",
+            },
+            collapsed: true,
+            items: [
+              "edge/operate/deploy/access-control/allowlist-add-remove",
+            ],
+          },
+          {
+            type: "category",
+            label: "Staking",
+            link: {
+              type: "generated-index",
+            },
+            collapsed: true,
+            items: [
+              "edge/operate/deploy/staking/how-to-stake",
+              "edge/operate/deploy/staking/unstake",
+            ],
+          },
+          {
+            type: "category",
+            label: "Transfers",
+            link: {
+              type: "generated-index",
+            },
+            collapsed: true,
+            items: [
+              "edge/operate/deploy/transfers/cross-chain-deposit",
+              "edge/operate/deploy/transfers/cross-chain-withdraw",
+            ],
+          },
+        ],
+      },
+      {
+        type: "category",
+        label: "Upgrade Your Chain",
+        link: {
+          type: "generated-index",
+        },
+        collapsed: true,
+        items: [
+          "edge/operate/deploy/upgrades/how-to-upgrade",
+          "edge/operate/deploy/upgrades/v1.1-hardforks",
+        ],
+      },
+    ],
+  },
+  {
+    type: "category",
+    label: "Reference",
+    link: {
+      type: "generated-index",
+    },
+    collapsed: true,
+    items: [
+      "edge/operate/param-reference",
+      {
+        type: "category",
+        label: "Smart Contract Interfaces",
+        link: {
+          type: "generated-index",
+        },
+        collapsed: true,
+        items: [
+          {
+            type: "category",
+            label: "ERC-20",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/interfaces/erc20/native-erc20",
+              "edge/interfaces/erc20/childerc20",
+              "edge/interfaces/erc20/childerc20-predicate",
+              "edge/interfaces/erc20/rooterc20-predicate",
+            ],
+          },
+          {
+            type: "category",
+            label: "ERC-721",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/interfaces/erc721/childerc721",
+              "edge/interfaces/erc721/childerc721-predicate",
+              "edge/interfaces/erc721/rooterc721-predicate",
+            ],
+          },
+          {
+            type: "category",
+            label: "ERC-1155",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/interfaces/erc1155/childerc1155",
+              "edge/interfaces/erc1155/childerc1155-predicate",
+              "edge/interfaces/erc1155/rooterc1155-predicate",
+            ],
+          },
+          "edge/interfaces/eip1559-interface",
+          {
+            type: "category",
+            label: "Network",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/interfaces/network/checkpoint-manager",
+              "edge/interfaces/network/exit-helper",
+              "edge/interfaces/network/state-receiver",
+              "edge/interfaces/network/state-sender",
+            ],
+          },
+          {
+            type: "category",
+            label: "Validators",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/interfaces/validators/validator",
+              "edge/interfaces/validators/validator-set-base",
+              "edge/interfaces/validators/root-validator-set",
+            ],
+          },
+          {
+            type: "category",
+            label: "Staking",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/interfaces/staking/stake-manager-interface",
+              "edge/interfaces/staking/supernets-manager-interface",
+              "edge/interfaces/staking/custom-supernet-manager-interface",
+            ],
+          },
+          {
+            type: "category",
+            label: "Cryptography",
+            link: {
+              type: "generated-index",
+            },
+            items: [
+              "edge/interfaces/cryptography/bls",
+              "edge/interfaces/cryptography/bn256g2",
+            ],
+          },
+        ],
+      },
+      {
+        type: "category",
+        label: "RPC API Reference",
+        link: {
+          type: "generated-index",
+        },
+        collapsed: true,
+        items: [
+          "edge/api/json-rpc-eth",
+          "edge/api/json-rpc-net",
+          "edge/api/json-rpc-web3",
+          "edge/api/json-rpc-txpool",
+          "edge/api/json-rpc-debug",
+          "edge/api/json-rpc-bridge",
+        ],
+      },
+      "edge/operate/performance",
+    ],
+  },
+  "edge/faq",
+],
   /*
    *
    * ************************** CDK Section *************************
@@ -916,307 +1219,11 @@ module.exports = {
     },
     "cdk/index",
     "cdk/what-is-polygon-cdk",
-    "cdk/cdk-program",
-    {
-      type: "html",
-      value: "Validium",
-      className: "sidebar-title",
-    },
     "cdk/validium/quickstart",
     "cdk/validium/validium-attributes",
     "cdk/validium/dac-overview",
     "cdk/validium/differences-validium-zkevm",
-    {
-      type: "html",
-      value: "Edge",
-      className: "sidebar-title",
-    },
-    "cdk/edge/operate/quickstart",
-    "cdk/edge/what-is-edge",
-    {
-      type: "category",
-      label: "System Design",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "cdk/edge/design/overview",
-        {
-          type: "category",
-          label: "Consensus",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "cdk/edge/design/consensus/polybft/polybft-overview",
-            "cdk/edge/design/consensus/polybft/ibft-overview",
-          ],
-        },
-        {
-          type: "category",
-          label: "Bridge",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "cdk/edge/design/bridge/overview",
-            "cdk/edge/design/bridge/statesync",
-            "cdk/edge/design/bridge/checkpoint",
-            {
-              type: "category",
-              label: "Assets",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/design/bridge/assets/erc/erc20",
-                "cdk/edge/design/bridge/assets/erc/erc721",
-                "cdk/edge/design/bridge/assets/erc/erc1155",
-              ],
-            },
-          ],
-        },
-        "cdk/edge/design/libp2p",
-        {
-          type: "category",
-          label: "Runtime",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "cdk/edge/design/runtime/runtime",
-            "cdk/edge/design/runtime/runtime-allowlist",
-          ],
-        },
-        "cdk/edge/design/blockchain",
-        "cdk/edge/design/mempool",
-        "cdk/edge/design/txpool",
-        "cdk/edge/design/txrelayer",
-        "cdk/edge/design/json-rpc",
-        "cdk/edge/design/grpc",
-      ],
-    },
-    {
-      type: "category",
-      label: "Build an Edge-Powered Chain",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Prepare Your Environment",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "cdk/edge/operate/requirements",
-            "cdk/edge/operate/install",
-          ],
-        },
-        "cdk/edge/operate/ibft-to-polybft",
-        {
-          type: "category",
-          label: "Deploy a Chain",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "cdk/edge/operate/deploy/deploy-index",
-            "cdk/edge/operate/deploy/spawn-test-chain",
-            "cdk/edge/operate/deploy/how-to-generate-genesis",
-            "cdk/edge/operate/deploy/how-to-configure-rootchain",
-            "cdk/edge/operate/deploy/genesis-validators",
-            "cdk/edge/operate/deploy/how-to-start",
-          ],
-        },
-        {
-          type: "category",
-          label: "Operate Your Chain",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            {
-              type: "category",
-              label: "Access Control",
-              link: {
-                type: "generated-index",
-              },
-              collapsed: true,
-              items: [
-                "cdk/edge/operate/deploy/access-control/allowlist-add-remove",
-              ],
-            },
-            {
-              type: "category",
-              label: "Staking",
-              link: {
-                type: "generated-index",
-              },
-              collapsed: true,
-              items: [
-                "cdk/edge/operate/deploy/staking/how-to-stake",
-                "cdk/edge/operate/deploy/staking/unstake",
-              ],
-            },
-            {
-              type: "category",
-              label: "Transfers",
-              link: {
-                type: "generated-index",
-              },
-              collapsed: true,
-              items: [
-                "cdk/edge/operate/deploy/transfers/cross-chain-deposit",
-                "cdk/edge/operate/deploy/transfers/cross-chain-withdraw",
-              ],
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Upgrade Your Chain",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "cdk/edge/operate/deploy/upgrades/how-to-upgrade",
-            "cdk/edge/operate/deploy/upgrades/v1.1-hardforks",
-          ],
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Reference",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "cdk/edge/operate/param-reference",
-        {
-          type: "category",
-          label: "Smart Contract Interfaces",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            {
-              type: "category",
-              label: "ERC-20",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/interfaces/erc20/native-erc20",
-                "cdk/edge/interfaces/erc20/childerc20",
-                "cdk/edge/interfaces/erc20/childerc20-predicate",
-                "cdk/edge/interfaces/erc20/rooterc20-predicate",
-              ],
-            },
-            {
-              type: "category",
-              label: "ERC-721",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/interfaces/erc721/childerc721",
-                "cdk/edge/interfaces/erc721/childerc721-predicate",
-                "cdk/edge/interfaces/erc721/rooterc721-predicate",
-              ],
-            },
-            {
-              type: "category",
-              label: "ERC-1155",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/interfaces/erc1155/childerc1155",
-                "cdk/edge/interfaces/erc1155/childerc1155-predicate",
-                "cdk/edge/interfaces/erc1155/rooterc1155-predicate",
-              ],
-            },
-            "cdk/edge/interfaces/eip1559-interface",
-            {
-              type: "category",
-              label: "Network",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/interfaces/network/checkpoint-manager",
-                "cdk/edge/interfaces/network/exit-helper",
-                "cdk/edge/interfaces/network/state-receiver",
-                "cdk/edge/interfaces/network/state-sender",
-              ],
-            },
-            {
-              type: "category",
-              label: "Validators",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/interfaces/validators/validator",
-                "cdk/edge/interfaces/validators/validator-set-base",
-                "cdk/edge/interfaces/validators/root-validator-set",
-              ],
-            },
-            {
-              type: "category",
-              label: "Staking",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/interfaces/staking/stake-manager-interface",
-                "cdk/edge/interfaces/staking/supernets-manager-interface",
-                "cdk/edge/interfaces/staking/custom-supernet-manager-interface",
-              ],
-            },
-            {
-              type: "category",
-              label: "Cryptography",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "cdk/edge/interfaces/cryptography/bls",
-                "cdk/edge/interfaces/cryptography/bn256g2",
-              ],
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "RPC API Reference",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "cdk/edge/api/json-rpc-eth",
-            "cdk/edge/api/json-rpc-net",
-            "cdk/edge/api/json-rpc-web3",
-            "cdk/edge/api/json-rpc-txpool",
-            "cdk/edge/api/json-rpc-debug",
-            "cdk/edge/api/json-rpc-bridge",
-          ],
-        },
-        "cdk/edge/operate/performance",
-      ],
-    },
-    "cdk/edge/faq",
+    "cdk/cdk-program",
   ],
 
  /*

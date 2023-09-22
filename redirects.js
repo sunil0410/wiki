@@ -63,7 +63,7 @@ module.exports = [
     ...[
         'operate', 'interfaces'
     ].map(subpath => ({
-        to: `/docs/cdk/edge/${subpath}`,
+        to: `/docs/edge/${subpath}`,
         from: `/docs/supernets/${subpath}`,
     })),
     */
@@ -88,11 +88,11 @@ module.exports = [
       from: '/docs/supernets/*',
     },
     {
-        to: '/docs/cdk/edge/what-is-edge/',
+        to: '/docs/edge/what-is-edge/',
         from: '/docs/supernets/operate/supernets-quick-start/',
     },
     {
-      to: '/docs/cdk/edge/faq/',
+      to: '/docs/edge/faq/',
       from: '/docs/supernets/supernets-faq/',
     },
   ];
