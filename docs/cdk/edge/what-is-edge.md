@@ -15,17 +15,17 @@ keywords:
 
 ## Introduction
 
-Edge provides infrastructure for application-specific chains that operate with [PolyBFT consensus](/docs/cdk/edge/design/consensus/polybft/overview.md). They leverage a [native bridge](/docs/cdk/edge/design/bridge/overview.md) to connect with an associated rootchain, enabling them to inherit its security and capabilities. Additionally, Edge extend the block space available on the rootchain, providing scalability and interoperability for decentralized applications. With on-chain governance mechanisms, Edge empower communities to make decisions and upgrade the network in a transparent and compliant manner.
+Edge provides infrastructure for application-specific chains that operate with [PolyBFT consensus](/docs/cdk/edge/design/consensus/polybft/overview.md). It leverages a [native bridge](/docs/cdk/edge/design/bridge/overview.md) to connect with an associated rootchain, enabling Edge-powered chains to inherit its security and capabilities. Additionally, Edge extend the block space available on the rootchain, providing scalability and interoperability for decentralized applications. With on-chain governance mechanisms, Edge empower communities to make decisions and upgrade the network in a transparent and compliant manner.
 
-The following table offers a comprehensive overview on what Edge chains are through different perspectives.
+The following table offers a comprehensive overview on what Edge-powered chains are through different perspectives.
 
-| Edge chains are | Description |
+| Edge-powered chains are | Description |
 |-----------|-------------|
 | Application-specific blockchain networks designed for specific use cases. | Appchains are customizable blockchain networks that developers can tailor to meet specific enterprise or application use cases. With appchains, developers can create high-performance blockchain networks that are fast and low-cost. |
-| The next phase of Polygon PoS and Ethereum scaling. | Edge chains empower projects and enterprises to create highly scalable blockchain networks that meet their specific block space requirements while inheriting the security and integrity of the Polygon PoS and Ethereum mainnet. |
+| The next phase of Polygon PoS and Ethereum scaling. | Edge-powered chains empower projects and enterprises to create highly scalable blockchain networks that meet their specific block space requirements while inheriting the security and integrity of the Polygon PoS and Ethereum mainnet. |
 | Modular and complex-minimized blockchain development. | Edge offer a modular framework that simplifies blockchain development, providing developers with the tools necessary to create customizable blockchain networks that are scalable, secure, and interoperable. Developers can use the Edge stack to create high-performance blockchain networks with advanced capabilities without worrying about complex integrations or intermediaries. |
 | Customizable blockchain networks for reliable business logic. | A customizable virtual machine provides full Ethereum Virtual Machine (EVM) support out of the box, enabling developers to tailor the virtual machine to their specific needs and requirements. This feature includes customizing gas limits, adding new opcodes, and integrating with other technologies. |
-| The most supported blockchain infrastructure in the web3 space. | The Edge ecosystem includes the most extensive suite of premium service providers, who offer various node and deployment infrastructure, indexers, explorers, oracles, and many other world-class tools necessary for building and deploying Edge chains and their associated applications. |
+| The most supported blockchain infrastructure in the web3 space. | The Edge ecosystem includes the most extensive suite of premium service providers, who offer various node and deployment infrastructure, indexers, explorers, oracles, and many other world-class tools necessary for building and deploying Edge-powered chains and their associated applications. |
 | Adaptive and compliant blockchain networks that thoroughly reflect their maintainers. | Edge features an on-chain governance mechanism that enables community-driven decision making and management of the blockchain. This mechanism supports hybrid governance models and allows for the design of either permissionless networks or permissioned networks with varying degrees of sovereignty based on user and maintainer needs, including the ability to allowlist validators and network admins. |
 | Interoperable and multichain driven | A native bridging solution enables the seamless transfer of assets from various EVM-compatible blockchains back to the Polygon ecosystem. This bridging solution allows developers to customize bridge plugins to meet specific requirements, facilitating interoperability between blockchains and different layers. |
 
@@ -37,7 +37,7 @@ Edge is pioneering unstoppable networks for the internet, where decentralized an
   <img src="/img/edge/supernets-together.excalidraw.png" alt="bridge" width="90%" height="40%" />
 </div>
 
-The diagram above demonstrates how Edge chains are interconnected with the Polygon PoS network, which benefits from the security properties of Ethereum. By leveraging blockchain technology, Edge provide a strong foundation for building decentralized and blockchain-based solutions that can withstand adversarial conditions, resist censorship, and scale to meet the increasing demand for processing power, data storage, and transaction throughput.
+The diagram above demonstrates how Edge-powered chains are interconnected with the Polygon PoS network, which benefits from the security properties of Ethereum. By leveraging blockchain technology, Edge provide a strong foundation for building decentralized and blockchain-based solutions that can withstand adversarial conditions, resist censorship, and scale to meet the increasing demand for processing power, data storage, and transaction throughput.
 
 Edge employs a multi-faceted approach that leverages a combination of complementary scaling solutions to achieve maximum scalability. These solutions include layer-2 scaling techniques, parallelization, and, eventually, ZK technology.
 
@@ -49,19 +49,19 @@ By integrating these methods, Edge can efficiently accommodate the increasing de
 
 To elaborate further, a Support program offers a range of service providers that can assist with various aspects of blockchain development, deployment, and maintenance. These include:
 
-- **Node Providers**: These providers offer node infrastructure services that support the operation and maintenance of Edge-based networks. Node providers can help ensure network stability, security, and scalability by providing reliable and optimized node infrastructure.
+- **Node Providers**: These providers offer node infrastructure services that support the operation and maintenance of Edge-powered networks. Node providers can help ensure network stability, security, and scalability by providing reliable and optimized node infrastructure.
 
-- **RPC Providers**: These providers offer remote procedure call (RPC) services that allow developers to interact with Edge-based networks (childchains) and rootchain networks like the Mumbai PoS testnet and Polygon PoS. RPC providers can provide easy and reliable access to network data and functionality.
+- **RPC Providers**: These providers offer remote procedure call (RPC) services that allow developers to interact with Edge-powered networks (childchains) and rootchain networks like the Mumbai PoS testnet and Polygon PoS. RPC providers can provide easy and reliable access to network data and functionality.
 
-- **Smart Contract Monitoring**: This service enables real-time monitoring of smart contracts deployed on Edge-based networks. This can help detect and respond to potential issues, vulnerabilities, or attacks on the network.
+- **Smart Contract Monitoring**: This service enables real-time monitoring of smart contracts deployed on Edge-powered networks. This can help detect and respond to potential issues, vulnerabilities, or attacks on the network.
 
-- **Oracle Services**: These services offer real-time data feeds and external information that can be used to support smart contract execution on Edge-based networks. Oracles can help enable the development of more complex and advanced decentralized applications that rely on off-chain data and information.
+- **Oracle Services**: These services offer real-time data feeds and external information that can be used to support smart contract execution on Edge-powered networks. Oracles can help enable the development of more complex and advanced decentralized applications that rely on off-chain data and information.
 
 - **Block Explorers**: These tools provide an interface for users to explore and visualize the blockchain's contents, including blocks, transactions, and other network data. Block explorers can help improve network transparency and accessibility and can be used by developers, users, and other stakeholders to gain insights into network activity and performance.
 
-- **KYC Providers**: These providers offer Know Your Customer (KYC) and Anti-Money Laundering (AML) compliance services, which can help ensure that Edge-based networks comply with regulatory requirements and mitigate risk for network participants.
+- **KYC Providers**: These providers offer Know Your Customer (KYC) and Anti-Money Laundering (AML) compliance services, which can help ensure that Edge-powered networks comply with regulatory requirements and mitigate risk for network participants.
 
-- **Fiat On-Ramps**: These services bridge fiat currencies and digital assets, enabling users to purchase and use digital assets on Edge-based networks. Fiat on-ramps can help increase accessibility and adoption of Edge-based networks.
+- **Fiat On-Ramps**: These services bridge fiat currencies and digital assets, enabling users to purchase and use digital assets on Edge-powered networks. Fiat on-ramps can help increase accessibility and adoption of Edge-powered networks.
 
 ### Easy deployments
 
@@ -77,7 +77,7 @@ Edge cloud deployment options also come with a range of features and capabilitie
 
 :::note Check out the local cloud deployment options
 
-Get started with deploying a local private Edge chain on the cloud by checking out our cloud deployment guides
+Get started with deploying a local private Edge-powered chain on the cloud by checking out our cloud deployment guides
 available [<ins>here</ins>](/cdk/edge/operate/deploy/index.md#cloud-deployments).
 
 :::

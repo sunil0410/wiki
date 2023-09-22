@@ -999,7 +999,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Build an Edge Chain",
+      label: "Build an Edge-Powered chain",
       link: {
         type: "generated-index",
       },

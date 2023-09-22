@@ -2,7 +2,7 @@
 id: genesis-validators
 title: How to Configure the Initial Validator Set
 sidebar_label: How to Configure the Initial Validator Set
-description: "Learn how to configure the initial validator set of a new Edge chain with allowlists and staking."
+description: "Learn how to configure the initial validator set of a new Edge-powered chain with allowlists and staking."
 keywords:
   - docs
   - polygon
@@ -133,7 +133,7 @@ curl <mumbai-rpc-endpoint> \
 
 After all validators from the genesis block have performed initial staking on the rootchain, the final step required before starting the chain is to finalize the genesis validator set on the `SupernetManager` contract on the rootchain. This can be done using the `polygon-edge polybft supernet` command.
 
-The deployer of the `SupernetManager` contract can specify their hex-encoded private key or use the `--data-dir` flag if they have initialized their secrets. If the `--enable-staking` flag is provided, validators will be able to continue staking on the rootchain. If not, genesis validators will not be able to update their stake or unstake, nor will newly registered validators after genesis be able to stake tokens on the rootchain. The enabling of staking can be done through this command or later after the Edge chain starts.
+The deployer of the `SupernetManager` contract can specify their hex-encoded private key or use the `--data-dir` flag if they have initialized their secrets. If the `--enable-staking` flag is provided, validators will be able to continue staking on the rootchain. If not, genesis validators will not be able to update their stake or unstake, nor will newly registered validators after genesis be able to stake tokens on the rootchain. The enabling of staking can be done through this command or later after the Edge-powered chain starts.
 
 In the following example command, we use a placeholder hex-encoded private key of the `SupernetManager` contract deployer. The addresses of the `SupernetManager` and `StakeManager` contracts are the addresses that were generated earlier. We also use the `--finalize-genesis-set` and `--enable-staking` flags to enable staking and finalize the genesis state.
 
@@ -147,6 +147,6 @@ In the following example command, we use a placeholder hex-encoded private key o
 
 ## 5. Next Steps
 
-With all the necessary configurations in place for the Edge chain, we are ready to proceed with starting the chain.
+With all the necessary configurations in place for the Edge-powered chain, we are ready to proceed with starting the chain.
 
 Navigate to the [Start Your Chain](/docs/cdk/edge/operate/deploy/start-chain.md) deployment guide, which will provide you with instructions on how to initiate and launch the chain.

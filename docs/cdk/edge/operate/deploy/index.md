@@ -2,7 +2,7 @@
 id: deploy-index
 title: Get Started
 sidebar_label: Get Started
-description: "Learn how to deploy a local test Edge chain."
+description: "Learn how to deploy a local test Edge-powered chain."
 keywords:
   - docs
   - polygon
@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 <script src="./dataline.js" type="module"></script>
 
 This serves as an index for the Edge deployment guides. 
-The guides explain the end-to-end process for setting up and deploying a local Edge chain.
+The guides explain the end-to-end process for setting up and deploying a local Edge-powered chain.
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ Regardless of how a private key is stored and retrieved, it's important to keep 
 
 ## What you'll learn
 
-In this tutorial, you will learn how to set up and initialize an Edge chain with multiple nodes. You will learn the complete end-to-end genesis workflow of building an Edge chain, including:
+In this tutorial, you will learn how to set up and initialize an Edge-powered chain with multiple nodes. You will learn the complete end-to-end genesis workflow of building an Edge-powered chain, including:
 
 - Generating private keys for PolyBFT nodes.
 - Deploying and initializing rootchain contracts.
@@ -71,18 +71,18 @@ By the end of this tutorial, you will have a fully functional Edge test network 
 
 ## What you'll do
 
-The deployment guides will cover the steps outlined below. If you are deploying an Edge chain for the first time, please navigate each section in order. 
+The deployment guides will cover the steps outlined below. If you are deploying an Edge-powered chain for the first time, please navigate each section in order. 
 
-1. [Spawn a New Edge Chain](/docs/cdk/edge/operate/deploy/local-chain.md)
-2. [Configure Your New Edge Chain](/docs/cdk/edge/operate/deploy/genesis.md)
+1. [Spawn a New Edge-powered chain](/docs/cdk/edge/operate/deploy/local-chain.md)
+2. [Configure Your New Edge-powered chain](/docs/cdk/edge/operate/deploy/genesis.md)
 3. [Configure the Rootchain](/docs/cdk/edge/operate/deploy/rootchain-config.md)
 4. [Configure the Initial Validator Set](/docs/cdk/edge/operate/deploy/genesis-validators.md)
-5. [Start Your New Edge Chain](/docs/cdk/edge/operate/deploy/start-chain.md)
+5. [Start Your New Edge-powered chain](/docs/cdk/edge/operate/deploy/start-chain.md)
 
 <details>
 <summary>Fast-track guide ↓</summary>
 
-**Here's the fast-track guide if you're looking for a quick guide on the essential commands needed to set up a local Edge chain.**
+**Here's the fast-track guide if you're looking for a quick guide on the essential commands needed to set up a local Edge-powered chain.**
 
 1. Init secrets:
 

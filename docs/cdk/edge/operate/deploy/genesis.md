@@ -2,7 +2,7 @@
 id: how-to-generate-genesis
 title: How to Configure a New Childchain
 sidebar_label: How to Configure a New Childchain
-description: "Learn how to deploy a local test Edge chain."
+description: "Learn how to deploy a local test Edge-powered chain."
 keywords:
   - docs
   - polygon
@@ -110,12 +110,12 @@ Keep in mind that allowlists must be enabled prior to launching the network. Aft
 
 ### i. Difference between `chain-id` and `supernet-id`
 
-Edge chains differentiates `chain-id` and `supernet-id` within the genesis file. 
+Edge-powered chains differentiates `chain-id` and `supernet-id` within the genesis file. 
 
 - The `chain-id` is a unique identifier for a childchain.
-- The `supernet-id` is a unique identifier that is automatically populated during the registration process with the `StakeManager` contract. There can be multiple Edge chains registered within the same `StakeManager` - the `supernet-id` is used to distinguish them.
+- The `supernet-id` is a unique identifier that is automatically populated during the registration process with the `StakeManager` contract. There can be multiple Edge-powered chains registered within the same `StakeManager` - the `supernet-id` is used to distinguish them.
 
-Users can assign a custom `chain-id` to their Edge chain via the genesis command. However, `supernet-id` doesn't function as a flag within this command. Instead, its value is derived from the `rootchain deploy` command during the registration process with the `StakeManager` contract.
+Users can assign a custom `chain-id` to their Edge-powered chain via the genesis command. However, `supernet-id` doesn't function as a flag within this command. Instead, its value is derived from the `rootchain deploy` command during the registration process with the `StakeManager` contract.
 
 ### ii. Create a Native Token and Premine
 
@@ -615,4 +615,4 @@ Genesis written to ./genesis.json
 
 With a **genesis.json** file containing the initial chain state, validator nodes, and chain admins for your new childchain instance, you are ready to proceed.
 
-To configure the associated rootchain of the Edge chain and deploy the essential rootchain core contracts, navigate to the [rootchain deployment guide](/docs/cdk/edge/operate/deploy/rootchain-config.md).
+To configure the associated rootchain of the Edge-powered chain and deploy the essential rootchain core contracts, navigate to the [rootchain deployment guide](/docs/cdk/edge/operate/deploy/rootchain-config.md).
