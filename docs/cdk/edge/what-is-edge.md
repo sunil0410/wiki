@@ -41,10 +41,6 @@ The diagram above demonstrates how Edge chains are interconnected with the Polyg
 
 Edge employs a multi-faceted approach that leverages a combination of complementary scaling solutions to achieve maximum scalability. These solutions include layer-2 scaling techniques, parallelization, and, eventually, ZK technology.
 
-<div align="center">
-  <img src="/img/edge/supernets-interconnected.excalidraw.png" alt="bridge" width="80%" height="40%" />
-</div>
-
 By integrating these methods, Edge can efficiently accommodate the increasing demand for processing power, data storage, and transaction throughput as the number of users and applications on the network grows.
 
 ## Polygon Labs Program
