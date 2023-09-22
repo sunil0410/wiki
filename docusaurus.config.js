@@ -322,6 +322,36 @@ module.exports = {
           ],
         },
         {
+          label: "Edge",
+          position: "left",
+          items: [
+            {
+              href: '/docs/edge/',
+              label: 'Welcome to Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/edge/operate/quickstart/',
+              label: 'Get Started with Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/system-design-1/',
+              label: 'Learn about Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/category/build-an-edge-powered-chain/',
+              label: 'Deploy a Chain',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
           label: "Miden",
           position: "left",
           items: [

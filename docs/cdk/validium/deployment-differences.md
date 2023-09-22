@@ -16,7 +16,7 @@ keywords:
 
 ## Introduction
 
-Polygon CDK Validium is a unique scaling solution that builds upon the foundation of the zkEVM. While it inherits the core functionalities of the zkEVM, it introduces a distinct approach to data availability by incorporating the [DAC](/docs/cdk/validium/dac.md). This guide will delve into the nuances of deploying both systems, highlighting the key differences.
+Polygon CDK Validium is a unique scaling solution that builds upon the foundation of the zkEVM. While it inherits the core functionalities of the zkEVM, it introduces a distinct approach to data availability by incorporating the [<ins>DAC</ins>](/docs/cdk/validium/dac.md). This guide will delve into the nuances of deploying both systems, highlighting the key differences.
 
 ## Deployment Differences
 
@@ -88,12 +88,12 @@ The CDK Validium is actively being developed, with ongoing feature enhancements 
 
 ### 1. Deploy Validium-specific Contracts
 
-First, deploy the Validium-specific smart contracts. The necessary steps can be found in the [CDK Validium Contracts GitHub repository's README](https://github.com/0xPolygon/cdk-validium-contracts).
+First, deploy the Validium-specific smart contracts. The necessary steps can be found in the [<ins>CDK Validium Contracts GitHub repository's README</ins>](https://github.com/0xPolygon/cdk-validium-contracts).
 
 ### 2. Run the CDK Validium Node
 
-After, you'll need to set up and run the CDK Validium Node. Follow the instructions in the [CDK Validium Node GitHub repository's README](https://github.com/0xPolygon/cdk-validium-node).
+After, you'll need to set up and run the CDK Validium Node. Follow the instructions in the [<ins>CDK Validium Node GitHub repository's README</ins>](https://github.com/0xPolygon/cdk-validium-node).
 
 ### 3. Run the Data Availability (DA) Node
 
-Finally, the CDK Validium Node is operational, you'll need to set up and run the Data Availability Node. Instructions for this can be found in the [CDK DA Node GitHub repository's README](https://github.com/0xPolygon/cdk-data-availability).
+Finally, the CDK Validium Node is operational, you'll need to set up and run the Data Availability Node. Instructions for this can be found in the [<ins>CDK DA Node GitHub repository's README</ins>](https://github.com/0xPolygon/cdk-data-availability).

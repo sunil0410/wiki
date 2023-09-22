@@ -58,22 +58,6 @@ module.exports = [
       to: `/docs/tools/wallets/${doc}`,
       from: `/docs/develop/wallets/${doc}`,
     })),
-    /*
-    // Supernets Redirects
-    ...[
-        'operate', 'interfaces'
-    ].map(subpath => ({
-        to: `/docs/cdk/edge/${subpath}`,
-        from: `/docs/supernets/${subpath}`,
-    })),
-    */
-    // Wallets Redirects
-    ...[
-      'getting-started', 'polygon-web-wallet/web-wallet-v3-guide', 'adding-a-custom-token'
-    ].map(doc => ({
-      to: `/docs/tools/wallets/${doc}`,
-      from: `/docs/develop/wallets/${doc}`,
-    })),
     // Other Redirects
     {
       to: '/docs/pos/pos-faqs',
@@ -88,11 +72,11 @@ module.exports = [
       from: '/docs/supernets/*',
     },
     {
-        to: '/docs/cdk/edge/what-is-edge/',
+        to: '/docs/edge/what-is-edge/',
         from: '/docs/supernets/operate/supernets-quick-start/',
     },
     {
-      to: '/docs/cdk/edge/faq/',
+      to: '/docs/edge/faq/',
       from: '/docs/supernets/supernets-faq/',
     },
   ];
