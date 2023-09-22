@@ -23,7 +23,7 @@ Now, the innovations from ZK and PoS-based mechanisms are integrated into a comp
 
 In summary:
 
-- **<ins>Polygon Edge</ins>**: Originated as an SDK designed for initiating sidechains, it facilitated the development of Ethereum-compatible blockchain networks and functioned as a Layer 3 development kit. **The original Edge progressed through the 0.6.x versions, stopping at [<ins>v0.6.3</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v0.6.3). Please read [<ins>this archive disclaimer</ins>](https://github.com/0xPolygon/wiki/tree/main/archive/edge) on the legacy Edge documentation.**
+- **<ins>Polygon Edge</ins>**: Originated as an SDK designed for initiating sidechains, it facilitated the development of Ethereum-compatible blockchain networks and functioned as a Layer 3 development kit. **The original Edge progressed until the 0.6.x versions, stopping at [<ins>v0.6.3</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v0.6.3). Please read [<ins>this archive disclaimer</ins>](https://github.com/0xPolygon/wiki/tree/main/archive/edge) on the legacy Edge documentation.**
 
 - **<ins>Polygon Supernets</ins>**: Representing the evolved form of Edge, it resolves the complexities associated with infrastructure development and bootstrapping for app-chains. It aimed to provide enhanced interoperability, customization options, and also operates as a Layer 3 development kit. **Supernets was introduced in [<ins>v0.7.0</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v0.7.0-alpha1); the latest version is [<ins>v1.1.0</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v1.1.0).** 
 
