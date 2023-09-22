@@ -73,11 +73,11 @@ By the end of this tutorial, you will have a fully functional Edge test network 
 
 The deployment guides will cover the steps outlined below. If you are deploying an Edge-powered chain for the first time, please navigate each section in order. 
 
-1. [Spawn a New Edge-powered chain](/docs/edge/operate/deploy/local-chain.md)
-2. [Configure Your New Edge-powered chain](/docs/edge/operate/deploy/genesis.md)
-3. [Configure the Rootchain](/docs/edge/operate/deploy/rootchain-config.md)
-4. [Configure the Initial Validator Set](/docs/edge/operate/deploy/genesis-validators.md)
-5. [Start Your New Edge-powered chain](/docs/edge/operate/deploy/start-chain.md)
+1. [<ins>Spawn a New Edge-powered chain</ins>](/docs/edge/operate/deploy/local-chain.md)
+2. [<ins>Configure Your New Edge-powered chain</ins>](/docs/edge/operate/deploy/genesis.md)
+3. [<ins>Configure the Rootchain</ins>](/docs/edge/operate/deploy/rootchain-config.md)
+4. [<ins>Configure the Initial Validator Set</ins>](/docs/edge/operate/deploy/genesis-validators.md)
+5. [<ins>Start Your New Edge-powered chain</ins>](/docs/edge/operate/deploy/start-chain.md)
 
 <details>
 <summary>Fast-track guide ↓</summary>

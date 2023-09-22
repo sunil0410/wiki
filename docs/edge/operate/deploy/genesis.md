@@ -615,4 +615,4 @@ Genesis written to ./genesis.json
 
 With a **genesis.json** file containing the initial chain state, validator nodes, and chain admins for your new childchain instance, you are ready to proceed.
 
-To configure the associated rootchain of the Edge-powered chain and deploy the essential rootchain core contracts, navigate to the [rootchain deployment guide](/docs/edge/operate/deploy/rootchain-config.md).
+To configure the associated rootchain of the Edge-powered chain and deploy the essential rootchain core contracts, navigate to the [<ins>Rootchain Deployment guide</ins>](/docs/edge/operate/deploy/rootchain-config.md).

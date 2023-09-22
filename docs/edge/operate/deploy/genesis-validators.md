@@ -149,4 +149,4 @@ In the following example command, we use a placeholder hex-encoded private key o
 
 With all the necessary configurations in place for the Edge-powered chain, we are ready to proceed with starting the chain.
 
-Navigate to the [Start Your Chain](/docs/edge/operate/deploy/start-chain.md) deployment guide, which will provide you with instructions on how to initiate and launch the chain.
+Navigate to the [<ins>Start Your Chain</ins>](/docs/edge/operate/deploy/start-chain.md) deployment guide, which will provide you with instructions on how to initiate and launch the chain.

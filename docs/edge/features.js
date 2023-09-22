@@ -3,7 +3,7 @@ export const firstRow = [
         title: "What is Edge?",
         linkUrl: "/docs/edge/what-is-edge/",
         imageUrl: "/img/edge/supernets-logo.png",
-        description: "Explore how Edge provides blockchain infrastructure for app-chains"
+        description: "Explore how Edge provides blockchain infrastructure for app-chains."
     },
     {
         title: "Build an Edge-Powered Chain",

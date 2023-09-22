@@ -663,4 +663,4 @@ Here's an example of how to fund a validator account (replace address value with
 
 Now that we have successfully configured the initial setup of your Edge-powered chain, including both the childchain and rootchain, we can proceed to the next crucial step: rootchain staking and allowlisting through the configuration of the initial validator set.
 
-To accomplish this, navigate to the [Configure the Initial Validator Set](/docs/edge/operate/deploy/genesis-validators.md) deployment guide.
+To accomplish this, navigate to the [<ins>Configure the Initial Validator Set</ins>](/docs/edge/operate/deploy/genesis-validators.md) deployment guide.

@@ -157,4 +157,4 @@ The generated secrets include the following information for each validator node:
 
 ## 2. Next Steps
 
-As the next step, navigate to the [Configure a New Childchain](/docs/edge/operate/deploy/genesis.md) deployment guide. This will enable you to generate a new genesis file and define the initial validator set, facilitating the setup and configuration of the childchain's initial state.
+As the next step, navigate to the [<ins>Configure a New Childchain</ins>](/docs/edge/operate/deploy/genesis.md) deployment guide. This will enable you to generate a new genesis file and define the initial validator set, facilitating the setup and configuration of the childchain's initial state.
