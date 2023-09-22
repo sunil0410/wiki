@@ -910,11 +910,12 @@ module.exports = {
 edge:[
   {
     type: "html",
-    value: "Edge",
+    value: "Polygon Edge",
     className: "sidebar-title",
   },
-  "edge/operate/quickstart",
+  "edge/index",
   "edge/what-is-edge",
+  "edge/operate/quickstart",
   {
     type: "category",
     label: "System Design",

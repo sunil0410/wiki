@@ -326,8 +326,14 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/edge/what-is-edge/',
-              label: 'Welcome to the Edge Client',
+              href: '/docs/edge/',
+              label: 'Welcome to Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/edge/operate/quickstart/',
+              label: 'Get Started with Edge',
               target: '_self',
               rel: null,
             },
@@ -338,7 +344,7 @@ module.exports = {
               rel: null,
             },
             {
-              to: '/docs/category/build-an-edge-chain/',
+              to: '/docs/category/build-an-edge-powered-chain/',
               label: 'Deploy a Chain',
               target: '_self',
               rel: null,
