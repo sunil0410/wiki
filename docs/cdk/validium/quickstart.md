@@ -18,7 +18,7 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 
 :::
 
-This tutorial will guide you through the process of setting up a CDK Validium on your local machine using the deployment guidance of [Snapchain](https://www.snapchain.dev/).
+This tutorial will guide you through the process of setting up a CDK Validium on your local machine using the deployment guidance of [<ins>Snapchain</ins>](https://www.snapchain.dev/).
 
 :::info Polygon CDK is in public preview stage and subject to changes
 
@@ -47,8 +47,8 @@ In this tutorial, you'll quickly dive into the world of Polygon CDK. You'll lear
 
 This tutorial requires Docker and Docker Compose. They allow you to run multiple services in separate environments. If you haven't installed these tools yet, you can do so by following the guides at the following links:
 
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+- [<ins>Docker</ins>](https://www.docker.com/get-started)
+- [<ins>Docker Compose</ins>](https://docs.docker.com/compose/install/)
 
 ### Recommended System Requirements
 
@@ -66,10 +66,10 @@ Ensure that your system meets the following recommended specifications before st
 
 In this tutorial, you'll go through the following steps. Make sure to follow each section in order if this is your first time setting up a zkValidium.
 
-1. [Download Configuration Files](#step-1-download-configuration-files): You'll start by downloading necessary configuration files from our repository.
-2. [Launch the Validium Locally](#step-2-launch-the-validium-locally): After setting up your workspace, you'll launch the zkValidium on your local machine and ensure all services are running properly.
-3. [Test the Validium](#step-3-test-the-validium): With your local CDK Validium running, you'll verify its functionalities, including testing block explorers and making transactions.
-4. [Test the Bridge](#step-4-test-the-bridge): In this section, you will test using the native bridges to transfer assets between the L1 and L2.
+1. [<ins>Download Configuration Files</ins>](#step-1-download-configuration-files): You'll start by downloading necessary configuration files from our repository.
+2. [<ins>Launch the Validium Locally</ins>](#step-2-launch-the-validium-locally): After setting up your workspace, you'll launch the zkValidium on your local machine and ensure all services are running properly.
+3. [<ins>Test the Validium</ins>](#step-3-test-the-validium): With your local CDK Validium running, you'll verify its functionalities, including testing block explorers and making transactions.
+4. [<ins>Test the Bridge</ins>](#step-4-test-the-bridge): In this section, you will test using the native bridges to transfer assets between the L1 and L2.
 
 ## Step 1: Download Configuration Files
 
