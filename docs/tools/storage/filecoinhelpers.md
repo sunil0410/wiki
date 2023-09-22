@@ -30,7 +30,7 @@ Filecoin is built on top of IPFS and supports storing data long-term via on-chai
 
 ## Storage Helpers (IPFS + Filecoin)
 
-- [Spheron.Network]([https://spheron.network/]): Deploy, manage & scale your applications utilising Web3 Infrastructure. ([video](https://youtu.be/cxMFpU6q7XI?si=ZCcIH1Segmsly0qE))
+- [Spheron.Network](https://spheron.network/): Deploy, manage & scale your applications utilising Web3 Infrastructure. ([video](https://youtu.be/cxMFpU6q7XI?si=ZCcIH1Segmsly0qE))
 
 - [Lighthouse.storage](https://lighthouse.storage/): Permanent storage on IPFS and Filecoin that allows users to pay once and store forever. Lighthouse can also be used to store private data and build token gated applications on Filecoin.
 
