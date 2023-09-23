@@ -39,18 +39,19 @@ Refer to the **[<ins>Faucet Guide</ins>](/docs/zkevm/guides/zkevm-faucet/#using-
 ---
 
 Develop and refine the LXLY sample implementation by incorporating support for various types of cross-chain messaging and asset transfers.
-You can explore the [code samples](https://github.com/0xPolygonHermez/code-examples) and refer to the specifications of the bridge **[<ins>here</ins>](/docs/category/zkevm-bridge/)** for comprehensive information.
+You can explore the [code samples](https://github.com/0xPolygonHermez/code-examples) and refer to the specifications of the bridge 
+**[<ins>here</ins>](/docs/category/zkevm-bridge/)** for comprehensive information.
 
 ---
 ## Step 4: Dive into Polygon ID
 ---
 
 Lastly, delve into the **[<ins>official Polygon ID developer documentation</ins>](https://devs.polygonid.com/)** to learn the intricacies of verifying and issuing credentials. To begin, you will need to establish a Polygon ID wallet. Achieve this by following the **[<ins>Quickstart Demo</ins>](https://devs.polygonid.com/docs/quick-start-demo/)** and proceed with the guide to issue credentials.
-Explore these code samples demonstrating Verifiable Credential Issuance and Verification:
+
+When you're ready, explore these code samples demonstrating Verifiable Credential Issuance and Verification:
 
 - [Lens ID Issuer](https://github.com/teeolendo/lens-id/)
 - [VC Gated Dapp](https://github.com/oceans404/fullstack-polygon-id-vc-gated-dapp)
----
 
 ---
 ---
