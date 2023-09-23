@@ -12,50 +12,45 @@ keywords:
 ---
 
 # ETHGlobal NYC Hackathon
-
 ---
+# Kickstart Your Journey with zkEVM
 
-# Get Started with zkEVM
-
-Welcome! Follow the steps below to deploy dApps and win bounties!
-If you need any help, head over to the Polygon booth or reach out to the team in the
-ETHGlobal Polygon Discord channel.
+Welcome! Embark on your journey by following the steps below to deploy dApps and secure your chance to win bounties! If assistance is required, make your way to the Polygon booth or connect with the team in the ETHGlobal Polygon Discord channel.
 
 ---
 ## Step 1: Quickstart
 ---
 
-Deploy a sample application in minutes, interact seamlessly with the zkEVM network, and launch your own zkEVM instance by following the steps outlined below:
+Deploy a sample application swiftly and interact seamlessly with the zkEVM network by following the steps outlined below:
 
 ### Link and Launch: Execute a Sample dApp
 
 1. **[<ins>Connect your wallet to the zkEVM network</ins>](#connecting-to-zkevm)** to initiate interaction with the network.
 2. **[<ins>Deploy a demo smart contract to zkEVM</ins>](#deploying-smart-contracts)** as a quick way to get started, and then consider exploring **[<ins>more smart contract examples</ins>](/docs/category/smart-contracts/)** for a deeper dive into deploying to zkEVM.
 
-### Configure and Deploy: Spin up the Network
-
-- For deploying a node, refer to the **[<ins>zkNode Deployment Guide</ins>](/docs/category/setup-zknode/)**. This guide will assist you in preparing and setting up a zkEVM node, be it local or production.
-- For deploying a full zkEVM instance, consult the **[<ins>zkEVM Deployment Guide</ins>](/docs/category/deploy-zkevm/)**. This guide will navigate you through the process of launching your own zkEVM network on the Goerli testnet.
-
 ---
-## Step 2: Get Testnet ETH
+## Step 2: Acquire Testnet ETH
 ---
 
-Refer to the **[<ins>Faucet Guide</ins>](/docs/zkevm/guides/zkevm-faucet/#using-the-polygon-zketh-faucet)** to acquire Testnet ETH. After obtaining some, you have the option to **[<ins>bridge some of your Goerli tokens</ins>](/docs/zkevm/bridge-to-zkevm/)** or initiate a request via XMTP.
+Refer to the **[<ins>Faucet Guide</ins>](/docs/zkevm/guides/zkevm-faucet/#using-the-polygon-zketh-faucet)** to acquire Testnet ETH. After securing some, you have the option to **[<ins>bridge some of your Goerli tokens</ins>](/docs/zkevm/bridge-to-zkevm/)** or initiate a request via XMTP.
 
 ---
-## [BONUS] Step 3: Extend the LXLY Bridge Implementation
+## [BONUS] Step 3: Enhance the LXLY Bridge Implementation
 ---
 
-Develop and enhance the LXLY sample implementation by incorporating support for various types of cross-chain messaging and asset transfers.
-
-Refer to the specifications of the bridge **[<ins>here</ins>](/docs/category/zkevm-bridge/)** for detailed information.
+Develop and refine the LXLY sample implementation by incorporating support for various types of cross-chain messaging and asset transfers.
+You can explore the [code samples](https://github.com/0xPolygonHermez/code-examples) and refer to the specifications of the bridge **[<ins>here</ins>](/docs/category/zkevm-bridge/)** for comprehensive information.
 
 ---
-## Step 4: Explore Polygon ID
+## Step 4: Dive into Polygon ID
 ---
 
-Finally, refer to the **[<ins>official Polygon ID developer documentation</ins>](https://devs.polygonid.com/)** to understand how to verify and issue credentials. Initially, you will need to set up a Polygon ID wallet. To accomplish this, follow the **[<ins>Quickstart Demo</ins>](https://devs.polygonid.com/docs/quick-start-demo/)** and continue the guide to issue credentials.
+Lastly, delve into the **[<ins>official Polygon ID developer documentation</ins>](https://devs.polygonid.com/)** to learn the intricacies of verifying and issuing credentials. To begin, you will need to establish a Polygon ID wallet. Achieve this by following the **[<ins>Quickstart Demo</ins>](https://devs.polygonid.com/docs/quick-start-demo/)** and proceed with the guide to issue credentials.
+Explore these code samples demonstrating Verifiable Credential Issuance and Verification:
+
+- [Lens ID Issuer](https://github.com/teeolendo/lens-id/)
+- [VC Gated Dapp](https://github.com/oceans404/fullstack-polygon-id-vc-gated-dapp)
+---
 
 ---
 ---
