@@ -55,7 +55,7 @@ Refer to the specifications of the bridge **[<ins>here</ins>](/docs/category/zke
 ## Step 4: Explore Polygon ID
 ---
 
-Finally, refer to the **[<ins>official Polygon ID developer documentation</ins>](https://devs.polygonid.com/)** to understand how to verify and issue credentials. Initially, you will need to set up a Polygon ID wallet, a process that is straightforward. To accomplish this, follow the **[<ins>Quickstart Demo</ins>](https://devs.polygonid.com/docs/quick-start-demo/)**.
+Finally, refer to the **[<ins>official Polygon ID developer documentation</ins>](https://devs.polygonid.com/)** to understand how to verify and issue credentials. Initially, you will need to set up a Polygon ID wallet. To accomplish this, follow the **[<ins>Quickstart Demo</ins>](https://devs.polygonid.com/docs/quick-start-demo/)** and continue the guide to issue credentials.
 
 ---
 ---
