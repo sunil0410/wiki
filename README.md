@@ -212,14 +212,14 @@ Polygon's blockchain development framework to build sovereign blockchains have e
 | Feature             |  Edge        | Supernets | CDK                         |
 |---------------------|--------------|-----------|-----------------------------|
 | **Layer**           | Layer 3      | Layer 3   | Layer 2                     |
-| **Consensus**       | IBFT         | PolyBFT   | zk-based / PolyBFT          |
+| **Consensus**       | IBFT         | PolyBFT   | PoS-based                   |
 | **Focus**           | App-Chains               | App-Chains, Infrastructure, & Customizations | App-Chains, Infrastructure, Customizations, Modular Development, Cost-Reduction |
 | **Scalability**     | Limited      | Extended Block Space | Boundless                    |
 | **Interoperability**| Limited      | Custom Native Bridge       | Universal Layered Bridge |
-| **Governance**      | N/A          | Customizable   | Customizable                         |
+| **Governance**      | N/A          | N/A   | Customizable                         |
 | **Data Availability**| On-chain    | On-chain       | Customizable                |
 | **Modularity**      | Limited           | Limited        | Yes                         |
-| **Components**      | Edge client + core contracts on Ethereum                      | Edge client + EVM-based rootchain + sovereign core contracts               | Customizable components part of Polygon 2.0 |
+| **Components**      | Edge client + core contracts on Ethereum                      | Edge client + EVM-based rootchain + sovereign core contracts               | Customizable components part of Polygon 2.0 (e.g., Polygon zkEVM-based validium) |
 
 #### Key Takeaways
 
@@ -227,7 +227,7 @@ Polygon's blockchain development framework to build sovereign blockchains have e
   
 - **Polygon Supernets**: Evolved from Edge to tackle the complexities of infrastructure development and bootstrapping for app-chains. Supernets also provide enhanced interoperability and customization options, also operating as Layer 3 solutions.
 
-- **Polygon CDK**: The most recent and sophisticated iteration, the CDK concentrates on Layer 2 solutions. It embodies modularity and customization, leveraging cutting-edge protocol primitives from Polygon 2.0. This enables developers to architect chains tailored to their unique requirements.
+- **Polygon CDK**: The most recent and sophisticated development kit iteration, the CDK concentrates on Layer 2 solutions. It embodies modularity and customization, leveraging cutting-edge protocol primitives from Polygon 2.0. This enables developers to architect chains tailored to their unique requirements.
 
 <p align="center">
 <img align="center" src="/static/img/readme/polygon2.0-layers-1.png" width="900">
