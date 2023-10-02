@@ -28,16 +28,13 @@ module.exports = {
     "pos/what-is-polygon-pos",
     {
       type: "category",
-      label: "General Reference",
+      label: "Assets",
       link: {
         type: "generated-index",
       },
       items: [
-        "tools/faucets/matic-faucet",
-        "pos/reference/rpc-endpoints",
-        "pos/reference/commit-chain-multisigs",
-        "pos/reference/mapped-tokens",
-        "tools/faucets/polygon-gas-station",
+        "pos/assets/matic",
+        "pos/assets/pol",
       ],
     },
     {

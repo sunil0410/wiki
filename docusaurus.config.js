@@ -302,6 +302,12 @@ module.exports = {
               rel: null,
             },
             {
+              href: '/docs/pos/assets/pol/',
+              label: 'Learn about POL',
+              target: '_self',
+              rel: null,
+            },
+            {
               to: '/docs/category/build-a-dapp/',
               label: 'Build a dApp',
               target: '_self',
@@ -315,7 +321,7 @@ module.exports = {
             },
             {
               to: '/docs/category/proposals/',
-              label: 'Create Proposals',
+              label: 'Raise a Proposal',
               target: '_self',
               rel: null,
             },
