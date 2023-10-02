@@ -1,21 +1,27 @@
 export const firstRow = [
     {
-        title: "Build Secure Solutions",
+        title: "Build a Validium-based App-chain",
+        linkUrl: "/docs/cdk/",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Build next-generation app-chains using the new Polygon CDK."
+    },
+    {
+        title: "Deploy a zkEVM Rollup",
+        linkUrl: "/docs/category/deploy-zkevm/",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Leverage Polygon's zkEVM for secure, fast off-chain transactions, guaranteed by ZK proofs."
+    },
+    {
+        title: "Deploy a Miden Rollup",
+        linkUrl: "https://github.com/0xPolygonMiden",
+        imageUrl: "img/logo-round-dark.png",
+        description: "Deploy a Miden Rollup with client-side proving to scale with privacy."
+    },
+    {
+        title: "Build a dApp on zkEVM",
         linkUrl: "/docs/zkevm/develop",
         imageUrl: "img/logo-round-dark.png",
         description: "Build highly scalable and secure applications using ZK tech."
-    },
-    {
-        title: "Learn about the CDK",
-        linkUrl: "/docs/cdk/what-is-polygon-cdk/",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Learn how you can build next-gen app-chains using the new Polygon chain development kit."
-    },
-    {
-        title: "Build Modular & Custom Solutions",
-        linkUrl: "/docs/cdk/validium/quickstart/",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Build next-gen app-chains using the new Polygon chain development kit."
     },
     {
         title: "Run a PoS node",
@@ -24,15 +30,9 @@ export const firstRow = [
         description: "Contribute to decentralized computing by running your own PoS node."
     },
     {
-        title: "Run a zkEVM node",
-        linkUrl: "/docs/zkevm/setup-production-node",
+        title: "Become a PoS Validator",
+        linkUrl: "/docs/category/become-a-validator/",
         imageUrl: "img/logo-round-dark.png",
-        description: "Contribute to decentralized computing by running your own ZK node."
-    },
-    {
-        title: "Run a Miden VM",
-        linkUrl: "/docs/miden/user_docs/usage",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Contribute to decentralized computing by running a Miden VM."
+        description: "Maintain the PoS network by becoming a validator."
     },
 ];

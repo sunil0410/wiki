@@ -162,9 +162,9 @@ function Home() {
                 <div class="tabs-content">
                   <h4 class="text-weight-medium">Polygon Miden <span class="solution-status">Coming Soon</span></h4>
                   <div class="padding-bottom padding-small"></div>
-                  <p class="description-text">Build advanced dApps with client-side proving with the first decentralized rollup that leverages execution proofs of concurrent, local transactions.</p>
+                  <p class="description-text">Build advanced dApps using client-side proving with the first decentralized rollup that leverages execution proofs of concurrent, local transactions.</p>
                   <div class="padding-bottom custom-padding"></div>
-                  <Buttonizer docsUrl={'/docs/miden'} linkUrl={'/docs/miden/user_docs/usage'} />
+                  <Buttonizer docsUrl={'https://github.com/0xPolygonMiden'} linkUrl={'https://0xpolygonmiden.github.io/examples/'} />
                 </div>
               </div>
             </TabItem>

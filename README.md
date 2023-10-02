@@ -109,19 +109,19 @@ As of today, Polygon offers a diverse range of products and solutions designed t
 
 ### PoS
 
-The Proof-of-Stake (PoS) network serves as the backbone of Polygon's Layer 2 scaling solutions. It provides a secure and efficient platform for decentralized applications and transactions.
+Polygon PoS serves as the backbone of Polygon's Layer 2 scaling solutions. It provides a secure and efficient platform for decentralized applications and transactions.
 
 ### zkEVM
 
-zkEVM is Polygon's zero-knowledge-based Ethereum Virtual Machine. It aims to bring scalability and privacy to Ethereum-compatible blockchains.
+Polygon zkEVM is Polygon's zero-knowledge-based Ethereum Virtual Machine. It aims to bring scalability and privacy to Ethereum-compatible blockchains.
 
 ### Edge
 
-Edge provides infrastructure for application-specific chains that operate with PolyBFT consensus. They offer scalability and interoperability for decentralized applications.
+Polygon Edge provides infrastructure for application-specific chains that operate with PolyBFT consensus. They offer scalability and interoperability for decentralized applications.
 
 ### Miden
 
-Miden is a fully EVM-compatible zk-rollup. It aims to provide a scalable and secure Layer 2 solution with the benefits of zero-knowledge proofs.
+Polyvon Miden is a ZK-optimized rollup with client-side proving, aiming to complement Polygon’s set of zero-knowledge as part of the internet's value layer. Unlike many other rollups, Polygon Miden prioritizes ZK-friendliness over EVM compatibility.
 
 ### ID
 
