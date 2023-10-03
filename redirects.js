@@ -4,10 +4,12 @@ module.exports = [
       to: '/',
       from: ['/en/latest', '/en/'],
     },
+    /*
     {
       to: '/docs/category/general-reference/',
       from: Array(5).fill('/docs/operate/gas-token'),
     },
+    */
     // Heimdall Redirects
     ...[
       'antehandler', 'checkpoint', 'encoder', 'overview', 'peppermint', 'stdtx',
