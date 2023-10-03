@@ -1152,6 +1152,7 @@ edge:[
     "cdk/validium/validium-attributes",
     "cdk/validium/dac-overview",
     "cdk/validium/differences-validium-zkevm",
+    "cdk/validium/allowlists",
     "cdk/cdk-program",
   ],
 
