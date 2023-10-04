@@ -119,12 +119,6 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
   checksum=${checksum:-false}
 
 
-  # temporary as we transition erigon mainnet snapshots to new incremental model, ETA Aug 2023
-  if [[ "$client" == "erigon" && "$network" == "mainnet" ]]; then
-    echo "Erigon bor-mainnet archive snapshots currently unavailable as we transition to incremental snapshot model. ETA Aug 2023."
-    exit 1
-  fi
-
   # install dependencies and cursor to extract directory
   sudo apt-get update -y
   sudo apt-get install -y zstd pv aria2
@@ -140,10 +134,27 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
   fi
 
   # download all incremental files, includes automatic checksum verification per increment
-  aria2c -x6 -s6 --max-tries=0 --max-connection-per-server=4 --retry-wait=3 --check-integrity=$checksum -i $client-$network-parts.txt
+  aria2c -x6 -s6 --max-tries=0 --save-session-interval=60 --save-session=$client-$network-failures.txt --max-connection-per-server=4 --retry-wait=3 --check-integrity=$checksum -i $client-$network-parts.txt
 
-  # Don't extract if download failed
-  if [ $? -ne 0 ]; then
+  max_retries=5
+  retry_count=0
+
+  while [ $retry_count -lt $max_retries ]; do
+      echo "Retrying failed parts, attempt $((retry_count + 1))..."
+      aria2c -x6 -s6 --max-tries=0 --save-session-interval=60 --save-session=$client-$network-failures.txt --max-connection-per-server=4 --retry-wait=3 --check-integrity=$checksum -i $client-$network-failures.txt
+
+      # Check the exit status of the aria2c command
+      if [ $? -eq 0 ]; then
+          echo "Command succeeded."
+          break  # Exit the loop since the command succeeded
+      else
+          echo "Command failed. Retrying..."
+          retry_count=$((retry_count + 1))
+      fi
+  done
+
+  # Don't extract if download/retries failed.
+  if [ $retry_count -eq $max_retries ]; then
       echo "Download failed. Restart the script to resume downloading."
       exit 1
   fi
@@ -153,7 +164,7 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
   # Join bulk parts into valid tar.zst and extract
   for file in $(find . -name "$client-$network-snapshot-bulk-*-part-*" -print | sort); do
       date_stamp=$(echo "$file" | grep -o 'snapshot-.*-part' | sed 's/snapshot-\(.*\)-part/\1/')
-      
+
       # Check if we have already processed this date
       if [[ -z "${processed_dates[$date_stamp]}" ]]; then
           processed_dates[$date_stamp]=1
@@ -168,7 +179,7 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
   # Join incremental following day parts
   for file in $(find . -name "$client-$network-snapshot-*-part-*" -print | sort); do
       date_stamp=$(echo "$file" | grep -o 'snapshot-.*-part' | sed 's/snapshot-\(.*\)-part/\1/')
-      
+
       # Check if we have already processed this date
       if [[ -z "${processed_dates[$date_stamp]}" ]]; then
           processed_dates[$date_stamp]=1
@@ -176,7 +187,7 @@ curl -L https://snapshot-download.polygon.technology/snapdown.sh | bash -s -- --
           echo "Join parts for ${date_stamp} then extract"
           cat $client-$network-snapshot-${date_stamp}-part* > "$output_tar"
           rm $client-$network-snapshot-${date_stamp}-part*
-          pv $output_tar | tar -I zstd -xf - -C . --strip-components=3 && rm $output_tar      
+          pv $output_tar | tar -I zstd -xf - -C . --strip-components=3 && rm $output_tar
       fi
   done
 ```
