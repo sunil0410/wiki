@@ -154,12 +154,12 @@ If the `StakeManager` hasn't been deployed to the rootchain, you need to carry o
 
   ```bash
   ./polygon-edge polybft stake-manager-deploy \
-  --proxy-contracts-admin 0xaddressOfProxyContractsAdmin \
-  --private-key <hex_encoded_rootchain_account_private_key> \
-  --genesis ./genesis.json \
-  --jsonrpc http://127.0.0.1:8545 \
-  --stake-token 0xaddressOfStakeToken \
-  --test
+    --proxy-contracts-admin 0xaddressOfProxyContractsAdmin \
+    --private-key <hex_encoded_rootchain_account_private_key> \
+    --genesis ./genesis.json \
+    --jsonrpc http://127.0.0.1:8545 \
+    --stake-token 0xaddressOfStakeToken \
+    --test
   ```
 
 <details>
@@ -215,6 +215,24 @@ If you already have an ERC-20 token deployed on the rootchain that you want to u
 Replace `<ERC20_TOKEN_ADDRESS>` with the address of your existing ERC-20 token on the rootchain.
 
 To deposit a desired amount and mint it on the childchain, please refer to the guidelines outlined in the deposit guide [<ins>here</ins>](/docs/edge/operate/deploy/transfers/deposit.md).
+
+### iii. Proxy Contract Admin
+
+The introduction of the proxy contract admin flag in v1.3 of brought about new considerations for deployment and contract interaction.
+
+### Issue with Proxy Contract Fallback
+
+A notable issue arises when the proxy contract's admin attempts to fallback to the proxy target. Specifically, the initialization on a stake manager seems to be invoked using the admin account, which is set by the `--proxy-contracts-admin` flag. 
+
+According to the design of the [<ins>TransparentUpgradeableProxy</ins>](https://docs.openzeppelin.com/contracts/4.x/api/proxy#TransparentUpgradeableProxy), the admin account for the proxy contract is prohibited from calling any function on the implementation contract. This design choice ensures that the admin account's privileges are strictly limited to administrative tasks, preventing potential misuse or unintended interactions.
+
+### Recommendations
+
+1. **Exclusive Use of Admin Account**: Ensure that the address specified in the `--proxy-contracts-admin` flag is used exclusively for administrative functions. This includes tasks such as updating the implementation contract address and modifying the admin.
+
+2. **Avoid Using Admin as Deployer**: It's crucial to ensure that the address used in the `--proxy-contracts-admin` flag is not employed as a contract deployer. This is especially important in cases like the stake manager deployment.
+
+3. **Restricted Function Calls**: The admin account should never be used to invoke any function on the implementation contract. This restriction is in line with the design of the `TransparentUpgradeableProxy` and ensures that the admin account remains solely for administrative tasks.
 
 ## 3. Deploy Rootchain Contracts
 
@@ -397,11 +415,12 @@ This command includes a test flag, which is intended solely for testing scenario
 
   ```bash
   ./polygon-edge polybft stake-manager-deploy \
-  --deployer-key <hex_encoded_rootchain_account_private_key> \
-  --genesis ./genesis.json \
-  --jsonrpc http://127.0.0.1:8545 \
-  --stake-token 0xaddressOfStakeToken \
-  --test
+    --proxy-contracts-admin 0xaddressOfProxyContractsAdmin \
+    --deployer-key <hex_encoded_rootchain_account_private_key> \
+    --genesis ./genesis.json \
+    --jsonrpc http://127.0.0.1:8545 \
+    --stake-token 0xaddressOfStakeToken \
+    --test
   ```
 
 <details>
