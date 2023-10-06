@@ -14,18 +14,20 @@ Continue with the **Sixth Step** of this Deployment-Guide where you activate for
 
 ## Activate Forced Transactions
 
+
 You can check out [this](/zkevm/protocol/sequencer-resistance.md) document to learn more about Forced Batches of transactions.
 
 ```bash
+cd ~/zkevm-contracts
 npx hardhat console --network goerli
 ```
 
 ```js
 const zkevm = await ethers.getContractFactory("PolygonZkEVM");
-const zkevmContract = zkevm.attach("_polygonZkEVMAddress_");
+const zkevmContract = zkevm.attach("_polygonZkEVMAddress_"); // From ~/zkevm-contracts/deployments/goerli_*/deploy_output.json polygonZkEVMAddress
 
-const provider = ethers.getDefaultProvider(""); // set goerli RPC node
-const privateKey = ""; // Deployment Address from wallet.txt
+const provider = ethers.getDefaultProvider(""); // set Geth Goerli RPC endpoint
+const privateKey = ""; // Deployment Address prvkey from wallet.txt
 const wallet = new ethers.Wallet(privateKey, provider);
 
 const zkevmContractWallet = zkevm.connect(wallet);
@@ -42,17 +44,16 @@ mkdir -p ~/zkevm/initial-bridge
 cd zkevm/initial-bridge
 
 wget https://raw.githubusercontent.com/0xPolygonHermez/zkevm-bridge-service/develop/test/scripts/deposit/main.go
-
-nano main.go
+vim main.go
 ```
 
 Populate the `main.go` file with following variables:
 
 ```go
-l1BridgeAddr       = ""     // zkevm-contracts/deployments/goerli_*/deploy_output.json: polygonZkEVMBridgeAddress
+l1BridgeAddr       = "" // ~/zkevm-contracts/deployments/goerli_*/deploy_output.json: polygonZkEVMBridgeAddress
 
-l1AccHexAddress    = ""     // zkevm-contracts/wallets.txt: sequencer address
-l1AccHexPrivateKey = ""     // zkevm-contracts/wallets.txt: sequencer prvkey
+l1AccHexAddress    = "" // ~/zkevm-contracts/wallets.txt: sequencer address
+l1AccHexPrivateKey = "" // ~/zkevm-contracts/wallets.txt: sequencer prvkey
 l1NetworkURL       = "http://X.X.X.X:8545"      // set your public IP
 ```
 
@@ -72,23 +73,24 @@ After sending your first bridge transaction to your zkEVM network, create a **fo
 
 ```bash
 mkdir -p ~/zkevm/initial-claim
+cd ~/zkevm/initial-claim
 
-cd zkevm/initial-claim
 wget https://raw.githubusercontent.com/0xPolygonHermez/zkevm-bridge-service/develop/test/scripts/initialClaim/main.go
+vim main.go
 ```
 
 Open `main.go` and update the following parameters:
 
 ```go
 const (
-    l2BridgeAddr = ""       // zkevm-contracts/deployments/goerli_*/deploy_output.json: polygonZkEVMBridgeAddress
-    zkevmAddr    = ""       // zkevm-contracts/deployments/goerli_*/deploy_output.json: polygonZkEVMAddress
+    l2BridgeAddr = ""  // ~/zkevm-contracts/deployments/goerli_*/deploy_output.json: polygonZkEVMBridgeAddress
+    zkevmAddr    = ""  // ~/zkevm-contracts/deployments/goerli_*/deploy_output.json: polygonZkEVMAddress
 
-    accHexAddress    = ""   // zkevm-contracts/wallets.txt: sequencer address
-    accHexPrivateKey = ""   // zkevm-contracts/wallets.txt: sequencer prvkey
-    l1NetworkURL     = "http://X.X.X.X:8545"    // public IP
-    l2NetworkURL     = "http://X.X.X.X:8123"    // public IP
-    bridgeURL        = "http://X.X.X.X:8080"    // public IP
+    accHexAddress    = ""  // ~/zkevm-contracts/wallets.txt: sequencer address
+    accHexPrivateKey = ""  // ~/zkevm-contracts/wallets.txt: sequencer prvkey
+    l1NetworkURL     = "http://X.X.X.X:8545"  // public IP
+    l2NetworkURL     = "http://X.X.X.X:8123"  // public IP
+    bridgeURL        = "http://X.X.X.X:8080"  // public IP
 
     l2GasLimit = 1000000
 

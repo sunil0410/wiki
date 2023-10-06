@@ -16,7 +16,7 @@ Follow the steps below to get started.
 
 ## Requirements
 
-Before starting the setup, you will need **at least 300 GB of free disk space** to allocate a full Goerli node.
+Before starting the setup, you will need **at least 500 GB of free disk space** to allocate a full Goerli node.
 
 Next, make sure you have the following commands installed:
 
@@ -40,40 +40,43 @@ Additionally, you will need **an L1 Goerli address** to proceed with the setup t
 
    ```bash
    mkdir -p ~/goerli-node/docker-volumes/{geth,prysm}
-   cd ~/goerli-node/
    ```
 
 2. Create a `docker-compose.yml` file and open it for editing:
 
    ```bash
-   nano docker-compose.yml
+   cd ~/goerli-node/
+   vim docker-compose.yml
    ```
 
 3. Copy and paste the following content into the `docker-compose.yml` file:
 
    ```yaml
    services:
-   geth:
-       image: ethereum/client-go:stable
+     geth:
+       image: "ethereum/client-go:stable"
        container_name: goerli-execution
        command: |
-       --goerli:
-        --http
-        --http.vhosts=*
-        --http.rpcprefix=/
-        --http.corsdomain=*
-        --http.addr 0.0.0.0
-        --http.api eth,net,engine,admin
+         --goerli
+         --http
+         --http.vhosts=*
+         --http.rpcprefix=/
+         --http.corsdomain=*
+         --http.addr 0.0.0.0
+         --http.api eth,net,engine,admin
+         --config=/app/config.toml
        volumes:
-        - ./docker-volumes/geth:/root/.ethereum
+         - "./docker-volumes/geth:/root/.ethereum"
+         - "./config.toml:/app/config.toml"
        ports:
-        - "0.0.0.0:${L1_RPC_PORT}:8545"
-        - "0.0.0.0:30303:30303/udp"
+         - "0.0.0.0:${L1_RPC_PORT}:8545"
+         - "0.0.0.0:30303:30303/udp"
 
    prysm:
-       image: gcr.io/prysmaticlabs/prysm/beacon-chain:stable
-       container_name: goerli-consensus
-       command: |
+     image: "gcr.io/prysmaticlabs/prysm/beacon-chain:stable"
+
+     container_name: goerli-consensus
+     command: |
        --prater
        --datadir=/data
        --jwt-secret=/geth/goerli/geth/jwtsecret
@@ -83,16 +86,16 @@ Additionally, you will need **an L1 Goerli address** to proceed with the setup t
        --execution-endpoint=/geth/goerli/geth.ipc
        --accept-terms-of-use
        --suggested-fee-recipient=${L1_SUGGESTED_FEE_RECIPIENT_ADDR}
-       --checkpoint-sync-url=${L1_CHECKPOINT_URL**}
-       volumes:
-       - ./docker-volumes/prysm:/data
-       - ./docker-volumes/geth:/geth
-       ports:
+       --checkpoint-sync-url=${L1_CHECKPOINT_URL}
+     volumes:
+       - "./docker-volumes/prysm:/data"
+       - "./docker-volumes/geth:/geth"
+     ports:
        - "0.0.0.0:3500:3500"
        - "0.0.0.0:4000:4000"
        - "0.0.0.0:12000:12000/udp"
        - "0.0.0.0:13000:13000"
-       depends_on:
+     depends_on:
        - geth
    ```
 
@@ -100,9 +103,10 @@ Additionally, you will need **an L1 Goerli address** to proceed with the setup t
 
 5. Create an `.env` file and open it for editing:
 
-   ```bash
-   nano .env
-   ```
+```bash
+cd ~/goerli-node/
+vim .env
+```
 
 6. Set the following environment variables in the `.env` file:
 
@@ -114,18 +118,34 @@ Additionally, you will need **an L1 Goerli address** to proceed with the setup t
 
 7. Save and Close the `.env` file.
 
+8. Add geth config.toml file with following values to increase RPC timeouts
+
+```bash
+cd ~/goerli-node/
+vim config.toml
+```
+
+```bash
+[Node.HTTPTimeouts]
+ReadTimeout = 600000000000
+ReadHeaderTimeout = 600000000000
+WriteTimeout = 600000000000
+IdleTimeout = 1200000000000
+```
+
 ## Deploy
 
 1. Start the compose services:
 
    ```bash
-   docker-compose up -d
+   cd ~/goerli-node/
+   docker compose --env-file /root/goerli-node/.env -f /root/goerli-node/docker-compose.yml up -d
    ```
 
-2. Check the logs of the `prysm` service to monitor the synchronization progress:
+2. Check the logs of the prysm service to monitor the synchronization progress:
 
    ```bash
-   docker-compose logs -f prysm
+   docker compose --env-file /root/goerli-node/.env -f /root/goerli-node/docker-compose.yml logs -f prysm --tail 20
    ```
 
 - Wait for the initial sync to complete. You will see log messages similar to the following indicating the progress:
@@ -134,10 +154,10 @@ Additionally, you will need **an L1 Goerli address** to proceed with the setup t
   #goerli-consensus  | time="2023-06-19 09:39:44" level=info msg="Synced up to slot 5888296" prefix=initial-sync
   ```
 
-3. Check the logs of the `geth` service to monitor the initial download and sync progress:
+3. Check the logs of the geth service to monitor the initial download and sync progress:
 
    ```bash
-   docker-compose logs -f geth
+   docker compose --env-file /root/goerli-node/.env -f /root/goerli-node/docker-compose.yml logs -f geth --tail 20
    ```
 
 - This process may take a couple of hours. Look for log messages similar to the following indicating the progress:

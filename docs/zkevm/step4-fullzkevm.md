@@ -14,34 +14,32 @@ Continue with the **Fourth Step** of this Deployment-Guide where you deploy the 
 
 ## zkNode Deployment
 
-Run the following commands to create the following directories:
-
-- `~/zkevm/data/statedb`
-- `~/zkevm/data/pooldb`
-- `~/zkevm/zkevm-config`
-- `~/zkevm/zkevm-node`
+First, create the following directories:
 
 ```bash
 mkdir -p ~/zkevm/data/{statedb,pooldb} ~/zkevm/zkevm-config ~/zkevm/zkevm-node
 ```
 
-Next, populate the directories by fetching data from latest node releases:
+Next, populate the directories by fetching data from latest node releases, for example with mainnet:
 
 ```bash
-curl -L <https://github.com/0xPolygonHermez/zkevm-node/releases/latest/download/$ZKEVM_NET.zip> > $ZKEVM_NET.zip && unzip -o $ZKEVM_NET.zip -d $ZKEVM_DIR && rm $ZKEVM_NET.zip
+export ZKEVM_NET="mainnet"
+export ZKEVM_DIR="zkevm"
+curl -L https://github.com/0xPolygonHermez/zkevm-node/releases/latest/download/$ZKEVM_NET.zip > $ZKEVM_NET.zip && unzip -o $ZKEVM_NET.zip -d $ZKEVM_DIR && rm $ZKEVM_NET.zip
 ```
 
-Copy the `example.env` file into `.env` file and open in nano editor:
+Copy the `example.env` file into `.env` file and open in editor:
 
 ```bash
-cp $ZKEVM_DIR/$ZKEVM_NET/example.env $ZKEVM_CONFIG_DIR/.env
-nano $ZKEVM_CONFIG_DIR/.env
+export ZKEVM_CONFIG_DIR="/root/zkevm/zkevm-config"
+cp ~/$ZKEVM_DIR/$ZKEVM_NET/example.env $ZKEVM_CONFIG_DIR/.env
+vim $ZKEVM_CONFIG_DIR/.env
 ```
 
 In the `.env` file, set:
 
 ```bash
-ZKEVM_NODE_ETHERMAN_URL = "<http://localhost:8845>"     # set a valid goerli RPC node
+ZKEVM_NODE_ETHERMAN_URL = "http://localhost:8845"  # set valid Geth Goerli RPC endpoint
 ZKEVM_NODE_STATEDB_DATA_DIR = "~/zkevm/data/statedb"
 ZKEVM_NODE_POOLDB_DATA_DIR = "~/zkevm/data/pooldb"
 ```
@@ -51,23 +49,24 @@ ZKEVM_NODE_POOLDB_DATA_DIR = "~/zkevm/data/pooldb"
 Run the below command to launch a Hardhat console connected to the Goerli network.
 
 ```bash
+cd ~/zkevm-contracts
 npx hardhat console --network goerli
 ```
 
 Here, you can utilize the JavaScript environment to interact with the Goerli network. In the console, run the following (you can copy all the code in one go):
 
 ```js
-const provider = ethers.getDefaultProvider(""); // set goerli RPC node
-const privateKey = ""; // From wallet.txt Trusted sequencer
+const provider = ethers.getDefaultProvider("http://localhost:8845"); // set Geth Goerli RPC node
+const privateKey = ""; // From wallet.txt Trusted Sequencer prvkey
 const wallet = new ethers.Wallet(privateKey, provider);
 
 const maticTokenFactory = await ethers.getContractFactory(
   "ERC20PermitMock",
   provider
 );
-maticTokenContract = maticTokenFactory.attach(""); // From ~/zkevm/zkevm-contract/deployments/goerly_***/deploy_output.json maticTokenAddress
+maticTokenContract = maticTokenFactory.attach(""); // From ~/zkevm-contracts/deployments/goerli_*/deploy_output.json maticTokenAddress
 maticTokenContractWallet = maticTokenContract.connect(wallet);
-await maticTokenContractWallet.approve("", ethers.utils.parseEther("100.0")); // From ~/zkevm/zkevm-contract/deployments/goerly_***/deploy_output.json polygonZkEVMAddress
+await maticTokenContractWallet.approve("", ethers.utils.parseEther("100.0")); // From ~/zkevm-contracts/deployments/goerli_*/deploy_output.json polygonZkEVMAddress
 ```
 
 ### Configure Genesis
@@ -75,8 +74,8 @@ await maticTokenContractWallet.approve("", ethers.utils.parseEther("100.0")); //
 Run the below commands to copy `genesis.json` file into appropriate location and open for editing:
 
 ```bash
-cp ~/zkevm/zkevm-contracts/deployments/goerli_***/genesis.json ~/zkevm/zkevm-node/mainnet/config/environments/public/public.genesis.config.json
-nano ~/zkevm/zkevm-node/mainnet/config/environments/public/public.genesis.config.json
+cp ~/zkevm-contracts/deployments/goerli_*/genesis.json ~/zkevm/mainnet/config/environments/testnet/public.genesis.config.json
+vim ~/zkevm/mainnet/config/environments/testnet/public.genesis.config.json
 ```
 
 Edit the file changing the following parameters from `~/zkevm/zkevm-contracts/deployments/goerli_***/deploy_output.json`. **Keep in mind that `genesisBlockNumber` is called `deploymentBlockNumber` in `deploy_output.json`**.
@@ -87,27 +86,43 @@ Edit the file changing the following parameters from `~/zkevm/zkevm-contracts/de
     "chainId": 5,
     "polygonZkEVMAddress": "",
     "maticTokenAddress": "",
-    "polygonZkEVMGlobalExitRootAddress": ""
+    "polygonZkEVMGlobalExitRootAddress": "" // deploymentBlockNumber from ~/zkevm/zkevm-contracts/deployments/goerli_***/deploy_output.json
   },
-  "genesisBlockNumber": 9050589,  // deploymentBlockNumber from ~/zkevm/zkevm-contracts/deployments/goerli_***/deploy_output.json
+  "genesisBlockNumber": 9050589,
   "root": "",
   "genesis": {}
 }
 ```
 
+```json
+"l1Config" : {
+    "chainId": 5,
+    "polygonZkEVMAddress": "", // From ~/zkevm-contracts/deployments/goerli_*/deploy_output.json polygonZkEVMAddress
+    "maticTokenAddress": "", // From ~/zkevm-contracts/deployments/goerli_*/deploy_output.json maticTokenAddress
+    "polygonZkEVMGlobalExitRootAddress": ""  // polygonZkEVMGlobalExitRootAddress from ~/zkevm/zkevm-contracts/deployments/goerli_*/deploy_output.json
+  },
+ "genesisBlockNumber": 9500870,  // deploymentBlockNumber from ~/zkevm/zkevm-contracts
+# add above to head of file, leave all remaining fields intact
+```
+
 ### Update Node Config file
 
-Edit `~/zkevm/zkevm-node/mainnet/config/environments/public/public.node.config.toml` with the following values. The config file is large and we'll update the documentation in the future to list only the updated parameters.
+Edit `~/zkevm/mainnet/config/environments/testnet/public.node.config.toml` with the following values. The config file is large and we'll update the documentation in the future to list only the updated parameters.
 
 <details>
 <summary>Click to expand the Node <code>config.toml</code> file</summary>
+
+
+```bash
+vim ~/zkevm/mainnet/config/environments/testnet/public.node.config.toml
+```
 
 ```bash
 IsTrustedSequencer = true
 [Log]
 Environment = "development"
-Level = "info"
-Outputs = ["stderr"]
+Level = "debug"
+Outputs = ["stderr","stdout"]
 
 [StateDB]
 User = "state_user"
@@ -135,12 +150,12 @@ PollMinAllowedGasPriceInterval = "15s"
         MaxConns = 200
 
 [Etherman]
-URL = ""    # put a valid Goerli node
+URL = "http://localhost:8845"    # put a valid Goerli node
 MultiGasProvider = false
-L1URL = ""  # put a valid Goerli node
-L2URLs = ["http://zkevm-rpc:8545"]
+L1URL = "http://localhost:8845"  # put a valid Goerli node
+L2URLs = ["http://X.X.X.X:8545"]  # your public IP
         [Etherman.Etherscan]
-                ApiKey = ""     # Etherscan api key
+                ApiKey = ""     # Etherscan API key
 
 [RPC]
 Host = "0.0.0.0"
@@ -157,15 +172,15 @@ EnableL2SuggestedGasPricePolling = true
                 Port = 8546
 
 [Synchronizer]
-SyncInterval = "2s"
-SyncChunkSize = 100
-trustedSequencerURL = ""
+SyncInterval = "5s"
+SyncChunkSize = 500
+trustedSequencerURL = "http://X.X.X.X:8545"  # your public IP
 
 [MTClient]
-URI = "zkevm-executor:50061"
+URI = "zkevm-prover:50061"
 
 [Executor]
-URI = "zkevm-executor:50071"
+URI = "zkevm-prover:50071"
 
 [Metrics]
 Host = "0.0.0.0"
@@ -224,7 +239,7 @@ MaxTxSizeForL1 = 131072
 WaitPeriodSendSequence = "5s"
 LastBatchVirtualizationTimeMaxWaitPeriod = "5s"
 MaxTxSizeForL1 = 131072
-SenderAddress = "0x225c96B7dB4223f0244DcfC833e0bB9f40a948E4"
+SenderAddress = ""  # trustedSequencer address from deploy_output.json
 PrivateKeys = [{Path = "/pk/sequencer.keystore", Password = "password"}]
 
 [Aggregator]
@@ -236,7 +251,7 @@ VerifyProofInterval = "30s"
 TxProfitabilityCheckerType = "acceptall"
 TxProfitabilityMinReward = "1.1"
 ProofStatePollingInterval = "5s"
-SenderAddress = ""  # trustedAggregator from deploy_output.json
+SenderAddress = ""  # trustedAggregator address from deploy_output.json
 CleanupLockedProofsInterval = "2m"
 GeneratingProofCleanupThreshold = "10m"
 
@@ -265,13 +280,13 @@ GRPCPort = "9090"
 HTTPPort = "8080"
 
 [NetworkConfig]
-GenBlockNumber = 000000     # deploymentBlockNumber from deploy_output.json
-PolygonZkEVMAddress = ""    # polygonZkEVMAddress from deploy_output.json
-PolygonBridgeAddress = ""   # PolygonZkEVMBridge from genesis.json
-PolygonZkEVMGlobalExitRootAddress = ""   # polygonZkEVMGlobalExitRootAddress from deploy_output.json
-MaticTokenAddress = ""      # maticTokenAddress from deploy_output.json
-L2PolygonBridgeAddresses = [""]         # PolygonZkEVMBridge from genesis.json
-L1ChainID = 5               # Goerli chainID
+GenBlockNumber = 9500870     # deploymentBlockNumber from deploy_output.json
+PolygonZkEVMAddress = ""  # polygonZkEVMAddress from deploy_output.json
+PolygonBridgeAddress = ""  # PolygonZkEVMBridge from genesis.json
+PolygonZkEVMGlobalExitRootAddress = ""  # polygonZkEVMGlobalExitRootAddress from deploy_output.json
+MaticTokenAddress = ""  # maticTokenAddress from deploy_output.json
+L2PolygonBridgeAddresses = [""]  # PolygonZkEVMBridge from genesis.json
+L1ChainID = 5  # Goerli chainID
 
 [L2GasPriceSuggester]
 Type = "default"
@@ -287,7 +302,11 @@ Enabled = true
 
 ### Add Wallets
 
+Copy/paste keystore value from wallets.txt for sequencer/aggregator respectively:
+
+
 ```bash
-nano zkevm-config/sequencer.keystore (from wallets.txt)
-nano zkevm-config/aggregator.keystore (from wallets.txt)
+# paste only the keystore value from wallets.txt in each respective file
+vim ~/zkevm/zkevm-config/sequencer.keystore
+vim ~/zkevm/zkevm-config/aggregator.keystore
 ```

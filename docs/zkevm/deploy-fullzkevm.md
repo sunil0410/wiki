@@ -128,21 +128,20 @@ One more thing, since the Prover is resource-heavy, you will need to run its con
 
 :::
 
+
 ### Prerequisites
 
 Next, ensure that you have checked your system specs, and have at hand all the variables listed below.
 
 #### Environment Variables
 
-You'll need the following variables.
+You'll need the following items to begin:
 
-| Variable                         | Details                                                                                  |
-| -------------------------------- | ---------------------------------------------------------------------------------------- |
-| INFURA_PROJECT_ID                | Open an account with [INFURA](https://www.infura.io/) in order to obtain your own ID.    |
-| ETHERSCAN_API_KEY                | Open an account with [ETHERSCAN](https://etherscan.io/) in order to obtain your own KEY. |
-| Public IP address                | Find this address in your machine.                                                       |
-| L1 Goërli node RPC               | This is the API Key of your designated L1 node. The L1 here is Goërli.                   |
-| Goerli address with **15 GöETH** | This refers to your MetaMask address, or any wallet of your choice.                      |
+- INFURA_PROJECT_ID // Same as API Key in your Infura account
+- ETHERSCAN_API_KEY
+- Public IP address
+- L1 Goërli node RPC
+- Goerli address with **0.5 GöETH**
 
 See this guide here for [**setting up your own Goërli node**](/docs/zkevm/setup-goerlinode.md#setup-goerlinode).
 
@@ -178,9 +177,9 @@ The **Mock Prover**, on the other hand only requires:
 
 As an example, the equivalent [AWS EC2s](https://aws.amazon.com/ec2/instance-types/r6a/) for each of these two provers are as follows:
 
-- r6a.24xlarge for **Full Prover**
 - r6a.xlarge for **Mock Prover**
+- r6a.24xlarge for **Full Prover**
 
-The initial free disk space requirement is minimal (<1TB), but you should monitor available space as data is added to the network.
+The initial free disk space requirement is minimal (<2TB), but you should monitor available space as the network is always adding more data.
 
 Once all the layers are setup and all prerequisites are in place, you can proceed to the next step of this guide.
