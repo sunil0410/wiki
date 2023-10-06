@@ -218,13 +218,13 @@ To deposit a desired amount and mint it on the childchain, please refer to the g
 
 ### iii. Proxy Contract Admin
 
-The introduction of the proxy contract admin flag in v1.3 of brought about new considerations for deployment and contract interaction.
+The introduction of the proxy contract admin in v1.3 brings about new considerations for deployment and contract interaction.
 
 ### Issue with Proxy Contract Fallback
 
-A notable issue arises when the proxy contract's admin attempts to fallback to the proxy target. Specifically, the initialization on a stake manager seems to be invoked using the admin account, which is set by the `--proxy-contracts-admin` flag. 
+A notable issue arises when the proxy contract's admin attempts to fallback to the proxy target. Specifically, the initialization on the StakeManager seems to be invoked using the admin account, which is set by the `--proxy-contracts-admin` flag. 
 
-According to the design of the [<ins>TransparentUpgradeableProxy</ins>](https://docs.openzeppelin.com/contracts/4.x/api/proxy#TransparentUpgradeableProxy), the admin account for the proxy contract is prohibited from calling any function on the implementation contract. This design choice ensures that the admin account's privileges are strictly limited to administrative tasks, preventing potential misuse or unintended interactions.
+> According to the design of the [<ins>TransparentUpgradeableProxy</ins>](https://docs.openzeppelin.com/contracts/4.x/api/proxy#TransparentUpgradeableProxy), the admin account for the proxy contract is prohibited from calling any function on the implementation contract. This design choice ensures that the admin account's privileges are strictly limited to administrative tasks, preventing potential misuse or unintended interactions.
 
 ### Recommendations
 
