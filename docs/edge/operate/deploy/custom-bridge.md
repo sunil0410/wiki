@@ -36,7 +36,7 @@ Here are the steps to bridge from rootchain to childchain:
 4. **Event Execution**: After the commitment is submitted, the Relayer executes state sync events on the StateReceiver contract. This requires a node to be initiated with the --relayer flag.
 5. **Data Reception**: During the execution step on StateReceiver, the onStateReceive function is called on the receiver contract, passing the byte array (data) from step 1.
 
-### Flow for childchain to rootchain
+### Flow for Childchain to Rootchain
 
 For bridging from childchain back to rootchain, follow these steps:
 

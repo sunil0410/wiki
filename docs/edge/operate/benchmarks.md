@@ -12,15 +12,41 @@ keywords:
   - performance
 ---
 
-This document presents a summary of performance benchmarks for Edge v1.0 release candidate (v1.0-rc1).
+This document presents a summary of performance benchmarks for Edge production releases.
 
 ## Summary of Test Results
+
+### v1.0.0-rc
 
 | Transaction Type | TPS Sent | TPS Mined | Gas per Second | Gas per Transaction | Instance Type(s)             |
 |------------------|----------|-----------|----------------|---------------------|------------------------------|
 | EOA to EOA       | 2,600    | 2,442     | 51,282,000     | 21,000              | x2iezn.2xlarge               |
 | ERC20            | 1,300    | 591       | 21,696,201     | 36,711              | x2iezn.2xlarge               |
 | ERC721           | 800      | 558       | 32,642,442     | 58,499              | x2iezn.2xlarge               |
+
+### v1.0.0
+
+| Transaction Type | TPS Sent | TPS Mined | Gas per Second | Gas per Transaction | Instance Type(s)             |
+|------------------|----------|-----------|----------------|---------------------|------------------------------|
+| EOA to EOA       | 2,475    | 2,459     | 51,639,000     | 21,000              | x2iezn.2xlarge               |
+| ERC20            | 550      | 680       | 24,963,480     | 36,711              | x2iezn.2xlarge               |
+| ERC721           | 550      | 649       | 37,965,851     | 58,499              | x2iezn.2xlarge               |
+
+### v1.1.0
+
+| Transaction Type | TPS Sent | TPS Mined | Gas per Second | Gas per Transaction | Instance Type(s)             |
+|------------------|----------|-----------|----------------|---------------------|------------------------------|
+| EOA to EOA       | 2,475    | 2,396     | 50,316,000     | 21,000              | x2iezn.2xlarge               |
+| ERC20            | 550      | 653       | 23,972,283     | 36,711              | x2iezn.2xlarge               |
+| ERC721           | 550      | 621       | 36,327,879     | 58,499              | x2iezn.2xlarge               |
+
+### v1.3.0
+
+| Transaction Type | TPS Sent | TPS Mined | Gas per Second | Gas per Transaction | Instance Type(s)             |
+|------------------|----------|-----------|----------------|---------------------|------------------------------|
+| EOA to EOA       | 3,000    | 2,577     | 54,117,000     | 21,000              | x2iezn.2xlarge               |
+| ERC20            | 820      | 813       | 23,005,250     | 28,297              | x2iezn.2xlarge               |
+| ERC721           | 750      | 746       | 37,393,367     | 50,125              | x2iezn.2xlarge               |
 
 ## Test Environment
 
@@ -29,7 +55,7 @@ The performance tests were conducted in a controlled environment to ensure accur
 ### Network Configuration
 
 - Network: Polygon Edge
-- Consensus Algorithm: PolyBFT (v1.0-rc1)
+- Consensus Algorithm: PolyBFT
 
 ### Instance Types
 

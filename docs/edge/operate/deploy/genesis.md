@@ -30,35 +30,42 @@ To create the chain configuration, we use the `polygon-edge genesis` command, wh
 
 | Flag                                       | Description                                               | Example                                          |
 |--------------------------------------------|-----------------------------------------------------------|--------------------------------------------------|
-| `--dir`                                    | Directory for the Polygon Edge genesis data               | `--dir ./genesis_data`                           |
-| `--chain-id`                               | ID of the chain                                           | `--chain-id 1234`                                |
-| `--name`                                   | Name for the chain                                        | `--name "My Polygon Chain"`                      |
-| `--premine`                                | Premined accounts and balances                            | `--premine 0x742d35Cc6634C0532925a3b844Bc454e4438f44e:1000000000000000000`|
-| `--block-gas-limit`                        | Maximum amount of gas used by all transactions in a block | `--block-gas-limit 10000000`                     |
-| `--burn-contract`                          | Burn contract blocks and addresses                        | `--burn-contract 100:0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
-| `--bootnode`                               | MultiAddr URL for p2p discovery bootstrap                | `--bootnode /ip4/127.0.0.1/tcp/30301/p2p/QmSomeNodeId` |
-| `--consensus`                              | Consensus protocol to be used                             | `--consensus ibft`                               |
-| `--epoch-size`                             | Epoch size for the chain                                  | `--epoch-size 100`                               |
-| `--ibft-validator-type`                    | Type of validators in IBFT                                | `--ibft-validator-type ecdsa`                    |
-| `--ibft-validator-prefix-path`             | Prefix path for validator folder directory                | `--ibft-validator-prefix-path ./validators`      |
-| `--ibft-validator`                         | Addresses to be used as IBFT validators                   | `--ibft-validator 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--pos`                                    | Flag to use Proof of Stake IBFT                           | `--is-pos true`                                  |
-| `--min-validator-count`                    | Minimum number of validators in the validator set for PoS | `--min-validator-count 4`                        |
-| `--max-validator-count`                    | Maximum number of validators in the validator set for PoS | `--max-validator-count 100`                      |
-| `--validators-path`                        | Root path containing polybft validators secrets           | `--validators-path ./validators`                 |
-| `--validators-prefix`                      | Folder prefix names for polybft validators secrets        | `--validators-prefix polybft-`                   |
-| `--validators`                             | Validators defined by user                                | `--validators /ip4/127.0.0.1/tcp/30301/p2p/QmSomeNodeId:0x742d35Cc6634C0532925a3b844Bc454e4438f44e:0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef`|
-| `--stake`                                  | Validators staked amount                                  | `--stake 0x742d35Cc6634C0532925a3b844Bc454e4438f44e:1000000000000000000`|
-| `--sprint-size`                            | Number of blocks included into a sprint                   | `--sprint-size 10`                               |
-| `--block-time`                             | Predefined period determining block creation frequency    | `--block-time 5s`                                |
-| `--epoch-reward`                           | Reward size for block sealing                             | `--epoch-reward 1000000000000000000`             |
-| `--trieroot`                               | Trie root from the corresponding triedb                   | `--trie-root 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef`|
-| `--native-token-config`                    | Configuration of native token                             | `--native-token-config "MyToken:MTK:18:true/false"`         |
-| `--reward-token-code`                      | Hex encoded reward token byte code                        | `--reward-token-code 0x606060...`                |
-| `--reward-wallet`                          | Configuration of reward wallet                            | `--reward-wallet 0x742d35Cc6634C0532925a3b844Bc454e4438f44e:1000000000000000000`|
-| `--grpc-address`                           | The GRPC interface     
+| `--block-gas-limit uint`                   | The maximum amount of gas used by all transactions in a block (default 5242880) | `--block-gas-limit 10000000` |
+| `--block-time duration`                   | The predefined period which determines block creation frequency (default 2s) | `--block-time 5s` |
+| `--block-time-drift uint`                 | Configuration for block time drift value (in seconds) (default 10) | |
+| `--block-tracker-poll-interval duration`  | Interval (number of seconds) at which block tracker polls for latest block at rootchain (default 1s) | |
+| `--bootnode stringArray`                  | MultiAddr URL for p2p discovery bootstrap. This flag can be used multiple times | `--bootnode /ip4/127.0.0.1/tcp/30301/p2p/QmSomeNodeId` |
+| `--burn-contract string` | The burn contract block and address (format: `<block>:<address>[:<burn> destination]`) | `--burn-contract 100:0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--chain-id uint`                         | The ID of the chain (default 100) | `--chain-id 1234` |
+| `--consensus string`                      | The consensus protocol to be used (default "polybft") | `--consensus ibft` |
+| `--dir string`                            | The directory for the Polygon Edge genesis data (default "./genesis.json") | `--dir ./genesis_data` |
+| `--epoch-reward uint`                     | Reward size for block sealing (default 1) | `--epoch-reward 1000000000000000000` |
+| `--epoch-size uint`                       | The epoch size for the chain (default 100000) | `--epoch-size 100` |
+| `--ibft-validator stringArray`            | Addresses to be used as IBFT validators, can be used multiple times. Needs to be present if ibft-validators-prefix-path is omitted | `--ibft-validator 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--ibft-validator-type string`            | The type of validators in IBFT (default "bls") | `--ibft-validator-type ecdsa` |
+| `--ibft-validators-prefix-path string`    | Prefix path for validator folder directory. Needs to be present if ibft-validator is omitted | `--ibft-validator-prefix-path ./validators` |
+| `--max-validator-count uint`              | The maximum number of validators in the validator set for PoS (default 9007199254740990) | `--max-validator-count 100` |
+| `--min-validator-count uint`              | The minimum number of validators in the validator set for PoS (default 1) | `--min-validator-count 4` |
+| `--name string`                           | The name for the chain (default "polygon-edge") | `--name "My Polygon Chain"` |
+| `--native-token-config string`            | Native token configuration, provided in the following format: <name:symbol:decimals count:mintable flag:[mintable token owner address]> | `--native-token-config "MyToken:MTK:18:true/false"` |
+| `--pos`                                   | The flag indicating that the client should use Proof of Stake IBFT. Defaults to Proof of Authority if flag is not provided or false | `--is-pos true` |
+| `--premine stringArray` | The premined accounts and balances (format: `<address>[:<balance>]`). Default premined balance: 1000000000000000000000000 | `--premine 0x742d35Cc6634C0532925a3b844Bc454e4438f44e:1000000000000000000` |
+| `--proxy-contracts-admin string`          | Admin for proxy contracts | |
+| `--reward-token-code string`              | Hex encoded reward token byte code | `--reward-token-code 0x606060...` |
+| `--reward-wallet string`                  | Configuration of reward wallet in format <address:amount> | `--reward-wallet 0x742d35Cc6634C0532925a3b844Bc454e4438f44e:1000000000000000000` |
+| `--sprint-size uint`                      | The number of block included into a sprint (default 5) | `--sprint-size 10` |
+| `--trieroot string`                       | Trie root from the corresponding triedb | `--trie-root 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef` |
+| `--validators stringArray` | Validators defined by user (format: `<P2P multi address>:<ECDSA address>:<public BLS key>`) | `--validators /ip4/127.0.0.1/tcp/30301/p2p/...` |
+| `--validators-path string`                | Root path containing polybft validators secrets (default "./") | `--validators-path ./validators` |
+| `--validators-prefix string`              | Folder prefix names for polybft validators secrets (default "test-chain-") | `--validators-prefix polybft-` |
 
 </details>
+
+:::caution Must enable ACLs before launching the network
+
+Keep in mind that allowlists must be enabled prior to launching the network. After the network is started, configuration of the allowlist will no longer be possible. The access control process will be initiated by the initial allowlisted addresses.
+
+:::
 
 <details>
 <summary>Access Control List Flags ↓</summary>
@@ -67,30 +74,36 @@ Contract deployer:
 
 | Flag                                       | Description                                               | Example                                          |
 |--------------------------------------------|-----------------------------------------------------------|--------------------------------------------------|
-| `--contract-deployer-allow-list-admin`     | Admin accounts in the contract deployer allow list        | `--contract-deployer-allow-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--contract-deployer-allow-list-enabled`   | Addresses enabled by default in the contract deployer allow list | `--contract-deployer-allow-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--contract-deployer-block-list-admin`     | Admin accounts in the contract deployer block list        | `--contract-deployer-block-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--contract-deployer-block-list-enabled`   | Addresses enabled by default in the contract deployer block list | `--contract-deployer-block-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
+| `--contract-deployer-allow-list-admin stringArray` | List of addresses to use as admin accounts in the contract deployer allow list | `--contract-deployer-allow-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--contract-deployer-allow-list-enabled stringArray` | List of addresses to enable by default in the contract deployer allow list | `--contract-deployer-allow-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--contract-deployer-block-list-admin stringArray` | List of addresses to use as admin accounts in the contract deployer block list | `--contract-deployer-block-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--contract-deployer-block-list-enabled stringArray` | List of addresses to enable by default in the contract deployer block list | `--contract-deployer-block-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
 
 Transactions:
 
 | Flag                                       | Description                                               | Example                                          |
 |--------------------------------------------|-----------------------------------------------------------|--------------------------------------------------|
-| `--transactions-allow-list-admin`          | Admin accounts in the transactions allow list             | `--transactions-allow-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--transactions-allow-list-enabled`        | Addresses enabled by default in the transactions allow list | `--transactions-allow-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--transactions-block-list-admin`          | Admin accounts in the transactions block list             | `--transactions-block-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--transactions-block-list-enabled`        | Addresses enabled by default in the transactions block list | `--transactions-block-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
+| `--transactions-allow-list-admin stringArray` | List of addresses to use as admin accounts in the transactions allow list | `--transactions-allow-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--transactions-allow-list-enabled stringArray` | List of addresses to enable by default in the transactions allow list | `--transactions-allow-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--transactions-block-list-admin stringArray` | List of addresses to use as admin accounts in the transactions block list | `--transactions-block-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--transactions-block-list-enabled stringArray` | List of addresses to enable by default in the transactions block list | `--transactions-block-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
 
 Bridge:
 
 | Flag                                       | Description                                               | Example                                          |
 |--------------------------------------------|-----------------------------------------------------------|--------------------------------------------------|
-| `--bridge-allow-list-admin`                | Admin accounts in the bridge allow list                   | `--bridge-allow-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--bridge-allow-list-enabled`              | Addresses enabled by default in the bridge allow list     | `--bridge-allow-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--bridge-block-list-admin`                | Admin accounts in the bridge block list                   | `--bridge-block-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
-| `--bridge-block-list-enabled`              | Addresses enabled by default in the bridge block list     | `--bridge-block-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e`|
+| `--bridge-allow-list-admin stringArray`   | List of addresses to use as admin accounts in the bridge allow list | `--bridge-allow-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--bridge-allow-list-enabled stringArray` | List of addresses to enable by default in the bridge allow list | `--bridge-allow-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--bridge-block-list-admin stringArray`   | List of addresses to use as admin accounts in the bridge block list | `--bridge-block-list-admin 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
+| `--bridge-block-list-enabled stringArray` | List of addresses to enable by default in the bridge block list | `--bridge-block-list-enabled 0x742d35Cc6634C0532925a3b844Bc454e4438f44e` |
 
 </details>
+
+:::note Base Fee Adjustments and Network Stability
+
+The `--base-fee-change-denom` parameter represents the value that bounds the amount the base fee can change between blocks. This ensures that the base fee doesn't fluctuate too wildly from one block to the next, providing stability and predictability in transaction costs for users. While dynamic adjustments to the base fee can help in managing network congestion, it's essential to strike a balance to maintain user trust and consistent transaction costs.
+
+:::
 
 :::note ACL gas cost considerations
 
@@ -98,74 +111,14 @@ While the use of alternative ACL-enabled contracts, such as bridge ACLs, offers 
 
 :::
 
-It's crucial to consider these parameters carefully, as they have a significant impact on the network's performance, security, and scalability. Informed decisions are vital to building a robust and efficient blockchain network.
-
-:::caution Must enable ACLs before launching the network
-
-Keep in mind that allowlists must be enabled prior to launching the network. After the network is started, configuration of the allowlist will no longer be possible. The access control process will be initiated by the initial allowlisted addresses.
-
-:::
-
 ## 2. Deployment Considerations
 
-### i. Difference between `chain-id` and `supernet-id`
-
-Edge-powered chains differentiates `chain-id` and `supernet-id` within the genesis file. 
-
-- The `chain-id` is a unique identifier for a childchain.
-- The `supernet-id` is a unique identifier that is automatically populated during the registration process with the `StakeManager` contract. There can be multiple Edge-powered chains registered within the same `StakeManager` - the `supernet-id` is used to distinguish them.
-
-Users can assign a custom `chain-id` to their Edge-powered chain via the genesis command. However, `supernet-id` doesn't function as a flag within this command. Instead, its value is derived from the `rootchain deploy` command during the registration process with the `StakeManager` contract.
-
-### ii. Create a Native Token and Premine
-
-| Flag                    | Description                                                                                                    |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `--premine`             | Specify premined accounts and their balances. Use the flag multiple times for multiple accounts.               |
-| `--native-token-config` | Configure the native token, including its name, symbol, decimal count, and whether it is mintable.             |
-
-> There is also an `--owner` flag only applicable for mintable native tokens and designates the account that has the permission to mint and burn tokens, in addition to the predicate.
-
-For example, the following command creates a native token named `MyToken` with the symbol `MTK`, `18` decimal places, and a total supply of `1,000,000` tokens. It also premines `1,000` tokens to the account at address `0x61324166B0202DB1E7502924326262274Fa4358F`.
-
-<details>
-<summary>Example ↓</summary>
-
-```bash
-./polygon-edge genesis --block-gas-limit 10000000 --epoch-size 10 \
-    --validators-path ./ --validators-prefix test-chain- \
-    --consensus polybft \
-    --premine 0x61324166B0202DB1E7502924326262274Fa4358F:1000000000000000000000 \
-    --native-token-config "MyToken:MTK:18:true" \
-    --reward-wallet 0x61324166B0202DB1E7502924326262274Fa4358F:1000000
-```
-
-</details>
-
-> Note that you can omit the `--native-token-config` flag if you don't want to create a native token.
-> For non-mintable native tokens, premining is limited to the `0x0` address - other accounts must bridge over assets from the rootchain.
-
-### iii. Enable EIP1559
-
-| Flag                      | Description                                                                                             |
-| ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `--burn-contract`         | Specify the burn contract address to enable the London hard fork and set where fees will be sent.       |
-| `--genesis-base-fee`      | Set the initial base fee (in GWEI) for the genesis block.                                               |
-
-For example, the following command enables EIP1559 by specifying the burn contract address and setting the genesis base fee to 2 GWEI:
-> The burn contract address must be specified in the format `<block>:<address>`. The genesis base fee value is in GWEI.
-
-<details>
-<summary>Example ↓</summary>
-
-```bash
-./polygon-edge genesis --block-gas-limit 10000000 --epoch-size 10 \
-    --validators-path ./ --validators-prefix test-chain- \
-    --consensus polybft \
-    --burn-contract 100:0x1234567890ABCDEF1234567890ABCDEF12345678
-```
-
-</details>
+| Consideration | Description | Details |
+| --- | --- | --- |
+| **Difference between `chain-id` and `supernet-id`** | - `chain-id`: Unique identifier for a childchain.<br/>- `supernet-id`: Identifier populated during registration with `StakeManager`. | Users can assign a custom `chain-id` via the genesis command. The `supernet-id` value is derived from the `rootchain deploy` command. |
+| **Create a Native Token and Premine** | Configure the native token and premine specific accounts. | - `--premine`: Specify premined accounts and balances.<br/>- `--native-token-config`: Configure the native token's details.<br/>- `--owner` (Note): For mintable native tokens, designates permissions. |
+| **Enable EIP1559** | Enable the London hard fork with specific configurations. | As of version 1.3.0, the `--genesis-base-fee` flag is not exposed. However, you can manually tweak `baseFee` and `baseFeeEM` in the `genesis.json` and restart the node for changes to take effect. |
+| **Contract Upgradability via Proxy Contracts** | Use proxy contracts for flexible and controlled upgrades. | - **Genesis Initialization**: Use `--proxy-contracts-admin` to specify upgrade permissions.<br/>- **Rootchain Deployment**: Uses `--proxy-contracts-admin` to define contract address while being able to upgrade logic.<br/>- **Stake Manager Deployment**: Uses `--proxy-contracts-admin` to define proxy admin for Staking Manager contract. |
 
 ## 3. Specify Validator Set & Generate Genesis
 
@@ -204,6 +157,7 @@ We also add the `--transactions-allow-list-admin` flag to specify the admin addr
 
 ```bash
 ./polygon-edge genesis --block-gas-limit 10000000 --epoch-size 10 \
+    --proxy-contracts-admin 0x61324166B0202DB1E7502924326262274Fa4358F \
     --validators-path ./ --validators-prefix test-chain- \
     --consensus polybft \
     --reward-wallet 0x61324166B0202DB1E7502924326262274Fa4358F:1000000 \
@@ -432,6 +386,7 @@ We also add the `--transactions-allow-list-admin` flag to specify the admin addr
 
 ```bash
 ./polygon-edge genesis --block-gas-limit 10000000 --epoch-size 10 \
+    --proxy-contracts-admin 0x61324166B0202DB1E7502924326262274Fa4358F \
     --validators "/ip4/127.0.0.1/tcp/30301/p2p/16Uiu2HAmMYyzK7c649Tnn6XdqFLP7fpPB2QWdck1Ee9vj5a7Nhg8:0x61324166B0202DB1E7502924326262274Fa4358F:06d8d9e6af67c28e85ac400b72c2e635e83234f8a380865e050a206554049a222c4792120d84977a6ca669df56ff3a1cf1cfeccddb650e7aacff4ed6c1d4e37b055858209f80117b3c0a6e7a28e456d4caf2270f430f9df2ba37221f23e9bbd313c9ef488e1849cc5c40d18284d019dde5ed86770309b9c24b70ceff6167a6ca" \
     --validators "/ip4/127.0.0.1/tcp/30302/p2p/16Uiu2HAmLXVapjR2Yx3B1taCmHnckQ1ph2xrawBjW2kvSErps9CX:0xFE5E166BA5EA50c04fCa00b07b59966E6C2E9570:0601da8856a6d3d3bb0f3bcbb90ea7b8c0db8271b9203e6123c6804aa3fc5f810be33287968ca1af2be11839516850a6ffef2337d99e679b7531efbbea2e3bf727a053c0cbede71da3d5f489b6ad862ccd8bb0bfb7fa379e3395d3b1142594a73020e87d63c298a3a4eba0ace65727f8659bab6389b9448b72512db72bbe937f" \
     --consensus polybft \

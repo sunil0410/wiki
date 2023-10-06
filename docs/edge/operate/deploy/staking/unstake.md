@@ -88,12 +88,12 @@ Once you have successfully unstaked, you will need to withdraw your unstaked tok
 
 This command will bridge the unstaked amount to the rootchain (`StakeManager`), where the given amount of tokens will become released on the given contract.
 
-#### Wait for checkpoint
+#### Wait for Checkpoint
 
 Next, you will need to wait for the exit event (bridge event) to be included in a checkpoint.
 You can confirm that the checkpoint has been successfully processed by checking the processed checkpoints on a blockchain explorer.
 
-### Send an exit transaction
+### Send an Exit Transaction
 
 Once the exit event has been included in a checkpoint, you can send an exit transaction to execute the transaction on the rootchain. To do so, use the `polygon-edge bridge exit` command.
 
@@ -122,7 +122,7 @@ Once the exit event has been included in a checkpoint, you can send an exit tran
 
 This will trigger the withdrawal of the specified amount of tokens from the rootchain.
 
-### Withdraw from root
+### Withdraw from Root
 
 Finally, you can withdraw your tokens from the rootchain to your address by using the `polygon-edge polybft withdraw-root` command.
 

@@ -176,6 +176,12 @@ The deployment guides will cover the steps outlined below. If you are deploying 
 
 ## Cloud Deployments
 
+:::caution Content disclaimer
+
+Please view the third-party content disclaimer [<ins>here</ins>](https://github.com/0xPolygon/wiki/blob/master/CONTENT_DISCLAIMER.md).
+
+:::
+
 | Platform | Guide |
 | --- | --- |
 | Amazon Web Services | To set up a devnet on AWS, you can refer to the AWS deployment guide available [<ins>here</ins>](https://github.com/maticnetwork/terraform-polygon-supernets). The guide provides comprehensive instructions on how to use Terraform to set up a Virtual Private Cloud (VPC), subnets, security groups, and EC2 instances, followed by instructions on configuring nodes using Ansible. |

@@ -67,12 +67,32 @@ values={[
 
 | Parameter | Description | Default Value | Mandatory | Example | Reconfigurable at Runtime |
 | :-------- | :---------- | :------------ | :-------- | :------ | :----------------------- |
+| `--block-tracker-poll-interval` | Interval (number of seconds) at which block tracker polls for latest block at rootchain. | 1s | NO | `genesis --block-tracker-poll-interval "1s"` | NO |
+| `--bridge-allow-list-admin` | List of addresses to use as admin accounts in the bridge allow list. | []string{} | NO | `genesis --bridge-allow-list-admin "0x2f82ad5785F6f3Fd242e7EC7a03c2cDfBA6cC6D1"` | NO |
+| `--bridge-allow-list-enabled` | List of addresses to enable by default in the bridge allow list. | []string{} | NO | `genesis --bridge-allow-list-enabled "0xbB39871E4e399b22428FdfA9E4e4Ca67842EA8Cd"` | NO |
+| `--bridge-block-list-admin` | List of addresses to use as admin accounts in the bridge block list. | N/A | NO | `genesis --bridge-block-list-admin "0xAddress1"` | NO |
+| `--bridge-block-list-enabled` | List of addresses to enable by default in the bridge block list. | N/A | NO | `genesis --bridge-block-list-enabled "0xAddress2"` | NO |
+| `--chain-id` | The ID of the chain. | 100 | NO | `genesis --chain-id "100"` | NO |
+| `--contract-deployer-allow-list-admin` | List of addresses to use as admin accounts in the contract deployer allow list. | N/A | NO | `genesis --contract-deployer-allow-list-admin "0xAddress3"` | NO |
+| `--contract-deployer-allow-list-enabled` | List of addresses to enable by default in the contract deployer allow list. | N/A | NO | `genesis --contract-deployer-allow-list-enabled "0xAddress4"` | NO |
+| `--contract-deployer-block-list-admin` | List of addresses to use as admin accounts in the contract deployer block list. | N/A | NO | `genesis --contract-deployer-block-list-admin "0xAddress5"` | NO |
+| `--contract-deployer-block-list-enabled` | List of addresses to enable by default in the contract deployer block list. | N/A | NO | `genesis --contract-deployer-block-list-enabled "0xAddress6"` | NO |
+| `--ibft-validator` | Addresses to be used as IBFT validators. | N/A | NO | `genesis --ibft-validator "0xAddress7"` | NO |
+| `--ibft-validator-type` | The type of validators in IBFT. | "bls" | NO | `genesis --ibft-validator-type "bls"` | NO |
+| `--ibft-validators-prefix-path` | Prefix path for validator folder directory. | N/A | NO | `genesis --ibft-validators-prefix-path "/path/to/validators"` | NO |
+| `--max-validator-count` | The maximum number of validators in the validator set for PoS. | 9007199254740990 | NO | `genesis --max-validator-count "9007199254740990"` | NO |
+| `--min-validator-count` | The minimum number of validators in the validator set for PoS. | 1 | NO | `genesis --min-validator-count "1"` | NO |
+| `--pos` | Flag indicating use of Proof of Stake IBFT. | N/A | NO | `genesis --pos` | NO |
+| `--proxy-contracts-admin` | Admin for proxy contracts. | N/A | NO | `genesis --proxy-contracts-admin "0xAddress8"` | NO |
+| `--reward-token-code` | Hex encoded reward token byte code. | N/A | NO | `genesis --reward-token-code "0xHexCode"` | NO |
+| `--transactions-allow-list-admin` | List of addresses to use as admin accounts in the transactions allow list. | N/A | NO | `genesis --transactions-allow-list-admin "0xAddress9"` | NO |
+| `--transactions-allow-list-enabled` | List of addresses to enable by default in the transactions allow list. | N/A | NO | `genesis --transactions-allow-list-enabled "0xAddress10"` | NO |
+| `--transactions-block-list-admin` | List of addresses to use as admin accounts in the transactions block list. | N/A | NO | `genesis --transactions-block-list-admin "0xAddress11"` | NO |
+| `--transactions-block-list-enabled` | List of addresses to enable by default in the transactions block list. | N/A | NO | `genesis --transactions-block-list-enabled "0xAddress12"` | NO |
 | `--block-gas-limit` | The maximum amount of gas used by all transactions in a block | 5242880 | NO | `genesis --block-gas-limit "10000000"` | NO |
 | `--block-time` | The predefined period which determines block creation frequency | 2s | NO | `genesis --block-time "10s"` | NO |
 | `--block-time-drift` | Configuration for block time drift value (in seconds). Defines the time slot in which a new block can be created | 10 | NO | `genesis --block-time-drift "20"` | NO |
 | `--bootnode` | MultiAddr URL for p2p discovery bootstrap. This flag can be used multiple times. | N/A | NO | `genesis --bootnode "/ip4/127.0.0.1/tcp/30301/p2p/16Uiu2HAmBW3zAvTEHGj5DDygJ5AzuvaRdY5wtSLNmkvXfaQensBu"` | NO |
-| `--bridge-allow-list-admin` | List of addresses to use as admin accounts in the bridge allow list. | []string{} | NO | `genesis --bridge-allow-list-admin "0x2f82ad5785F6f3Fd242e7EC7a03c2cDfBA6cC6D1"` | NO |
-| `--bridge-allow-list-enabled` | List of addresses to enable by default in the bridge allow list. | []string{} | NO | `genesis --bridge-allow-list-enabled "0xbB39871E4e399b22428FdfA9E4e4Ca67842EA8Cd"` | NO |
 | `--burn-contract` | The burn contract blocks and addresses (format: [block]:[address]) | []string{} | NO | `genesis --burn-contract "0:0x0000000000000000000000000000000000000000"` | NO |
 | `--consensus` | The consensus protocol to be used | "polybft" | NO | `genesis --consensus polybft` | NO |
 | `--dir` | Represents the file path for the genesis data | "./genesis.json" | NO | `genesis --dir "/data/genesis.json"` | NO |
@@ -85,10 +105,6 @@ values={[
 | `--validators` | Initial validator addresses for the chain | []string{} | YES | `genesis --validators "0x9c106ada8a2a36a9de8d67b347c07156033882e0"` | NO |
 | `--validators-path` | Root path containing polybft validators' secrets | "./" | NO | `genesis --validators-path "/data/validators"` | NO |
 | `--validators-secret` | Validators secrets | []string{} | NO | `genesis --validators-secret "0x0101010101010101010101010101010101010101010101010101010101010101"` | NO |
-| `--artifacts-path` | The path to the contract artifacts JSON | "" | YES | `genesis predeploy --artifacts-path "artifacts.json"` | NO |
-| `--chain` | The genesis file to update | "./genesis.json" | NO | `genesis predeploy --chain "/data/genesis.json"` | NO |
-| `--constructor-args` | The constructor arguments, if any | "" | NO | `genesis predeploy --constructor-args ""` | NO |
-| `--predeploy-address` | The address to predeploy to. Must be >= 0x0000000000000000000000000000000000001100 | "0x0000000000000000000000000000000000001100" | YES | `genesis predeploy --predeploy-address "0x0000000000000000000000000000000000001111"` | NO |
 
 :::info Mutually Exclusive Paramaters
 
@@ -137,6 +153,10 @@ values={[
 | `--log-to` string | Write all logs to the file at specified location instead of writing them to console. | “” | NO | Command: server Flag: --log-to “edge-log.log” | NO |
 | `--relayer` | Start the state sync relayer service. | FALSE | NO | Command: server Flag: --relayer | NO |
 | `--num-block-confirmations` uint | Minimal number of child blocks required for the parent block to be considered final. This parameter is used by the event Tracker when reading logs from the parent chain. | 64 | NO | Command: server Flag: --num-block-confirmations “2” | NO |
+| `--concurrent-requests-debug` uint | Maximal number of concurrent requests for debug endpoints. | 32 | NO | `server --concurrent-requests-debug "50"` | NO |
+| `--websocket-read-limit` uint | Maximum size in bytes for a message read from the peer by websocket. | 8192 | NO | `server --websocket-read-limit "16384"` | NO |
+| `--relayer-poll-interval` duration | Interval (number of seconds) at which relayer's tracker polls for latest block at childchain. | 1s | NO | `server --relayer-poll-interval "2s"` | NO |
+| `--metrics-interval` duration | The interval (in seconds) at which special metrics are generated. A value of zero means the metrics are disabled. | 8s | NO | `server --metrics-interval "10s"` | NO |
 
 :::info Mutually Exclusive Paramaters
 

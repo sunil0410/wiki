@@ -16,7 +16,7 @@ keywords:
 
 In this section, we'll walkthrough how to stake WMATIC on the associated rootchain.
 
-## i. Initial staking on the rootchain
+## i. Initial Staking on the Rootchain
 
 Each validator needs to perform initial staking on the rootchain `StakeManager` contract. This is done using the `polygon-edge polybft stake` command. **Note that this command is for testing purposes only.**
 
@@ -74,7 +74,7 @@ curl <mumbai-rpc-endpoint> \
 --native-root-token 0x559Dd13d8A3CAb3Ff127c408f2A08A8a2AEfC56c
 ```
 
-## ii. Finalize validator set on the rootchain
+## ii. Finalize Validator Set on the Rootchain
 
 After all validators from the genesis block have performed initial staking on the rootchain, the final step required before starting the chain is to finalize the genesis validator set on the `SupernetManager` contract on the rootchain. This can be done using the `polygon-edge polybft supernet` command.
 

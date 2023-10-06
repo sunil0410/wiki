@@ -39,7 +39,7 @@ This can be done using the `polygon-edge polybft whitelist-validators` command. 
 
 In the following example command, we are using a placeholder private key for the `CustomSupernetManager` contract deployer.
 
-> If running the demo geth instance, the test account private key has been hardcoded: `aa75e9a7d427efc732f8e4f1a5b7646adcc61fd5bae40f80d13c8419c9f43d6d`.
+> If running the demo Geth instance, the test account private key has been hardcoded: `aa75e9a7d427efc732f8e4f1a5b7646adcc61fd5bae40f80d13c8419c9f43d6d`.
 
 The `--addresses` flag is a comma-separated list of the first two validators generated earlier. The `--supernet-manager` flag specifies the actual `CustomSupernetManager` contract address that was deployed.
 
@@ -68,7 +68,7 @@ Each validator needs to register themselves on the `CustomSupernetManager` contr
 
 ```bash
 ./polygon-edge polybft register-validator --data-dir ./test-chain-1 \
---supernet-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr')
+  --supernet-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.customSupernetManagerAddr')
 ```
 
 ## 3. Initial staking on the rootchain
@@ -107,13 +107,13 @@ If you currently hold MATIC tokens, you can convert them to WMATIC through vario
 <details>
 <summary>Obtaining native root token address</summary>
 
-For example, if you are using the Mumbai test network, you can obtain the address of the MATIC testnet token by sending a GET request to the Mumbai network's JSON-RPC endpoint:
+For example, if you are using the Mumbai test network, you can obtain the address of the MATIC testnet token by sending a POST request to the Mumbai network's JSON-RPC endpoint:
 
 ```bash
 curl <mumbai-rpc-endpoint> \
--X POST \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0","method":"eth_contractAddress","params":["MaticToken"],"id":1}'
+  -X POST \
+  -H "Content-Type: application/json" \
+  --data '{"jsonrpc":"2.0","method":"eth_call","params":[{"to":"<token-contract-address>","data":"0x06fdde03"},"latest"],"id":1}'
 ```
 
 </details>
@@ -122,11 +122,11 @@ curl <mumbai-rpc-endpoint> \
 
 ```bash
 ./polygon-edge polybft stake \
---data-dir ./test-chain-1 \
---supernet-id $(cat genesis.json | jq -r '.params.engine.polybft.supernetID') \
---amount 1000000000000000000 \
---stake-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr') \
---stake-token $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeTokenAddr') \
+  --data-dir ./test-chain-1 \
+  --supernet-id $(cat genesis.json | jq -r '.params.engine.polybft.supernetID') \
+  --amount 1000000000000000000 \
+  --stake-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr') \
+  --stake-token $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeTokenAddr') \
 ```
 
 ## 4. Finalize validator set on the rootchain
@@ -138,11 +138,12 @@ The deployer of the `SupernetManager` contract can specify their hex-encoded pri
 In the following example command, we use a placeholder hex-encoded private key of the `SupernetManager` contract deployer. The addresses of the `SupernetManager` and `StakeManager` contracts are the addresses that were generated earlier. We also use the `--finalize-genesis-set` and `--enable-staking` flags to enable staking and finalize the genesis state.
 
 ```bash
-   ./polygon-edge polybft supernet --private-key 0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
-   --genesis /path/to/genesis/file \
-   --supernet-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.customSupernetManagerAddr') \
-   --stake-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr') \
-   --finalize-genesis-set --enable-staking
+./polygon-edge polybft supernet 
+  --private-key 0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
+  --genesis /path/to/genesis/file \
+  --supernet-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.customSupernetManagerAddr') \
+  --stake-manager $(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr') \
+  --finalize-genesis-set --enable-staking
 ```
 
 ## 5. Next Steps

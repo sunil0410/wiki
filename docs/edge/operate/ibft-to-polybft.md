@@ -108,9 +108,9 @@ Create a snapshot of the state trie using the trie root. This snapshot contains 
 
 ```bash
 ./polygon-edge regenesis \
---target-path ./trie_new \
---stateRoot 0xf5ef1a28c82226effb90f4465180ec3469226747818579673f4be929f1cd8663 \
---source-path ./test-chain-1/trie
+  --target-path ./trie_new \
+  --stateRoot 0xf5ef1a28c82226effb90f4465180ec3469226747818579673f4be929f1cd8663 \
+  --source-path ./test-chain-1/trie
 ```
 
 ### 3. Remove old chain data
@@ -137,9 +137,9 @@ Generate the genesis file for the new chain, using the trie root from the snapsh
 
 ```bash
 ./polygon-edge genesis --consensus polybft --bridge-json-rpc http://127.0.0.1:8545 \
---block-gas-limit 10000000 \
---epoch-size 10 \
---trieroot 0xf5ef1a28c82226effb90f4465180ec3469226747818579673f4be929f1cd8663
+  --block-gas-limit 10000000 \
+  --epoch-size 10 \
+  --trieroot 0xf5ef1a28c82226effb90f4465180ec3469226747818579673f4be929f1cd8663
 ```
 
 ### 6. Start your new PolyBFT chain

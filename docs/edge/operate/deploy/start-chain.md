@@ -49,12 +49,6 @@ To run an Edge cluster, we use the `polygon-edge server` command with the follow
 | `--seal`                         | The flag indicating that the client should seal blocks.                                                                                     |                                            |
 | `--secrets-config`               | The path to the SecretsManager config file. Used for Hashicorp Vault. If omitted, the local FS secrets manager is used.                     | `--secrets-config /path/to/secrets/config` |
 
-**Global Flags:**
-
-| Flag      | Description                                     | Example           |
-|-----------|-------------------------------------------------|-------------------|
-| `--json`  | Get all outputs in JSON format (default false). | `--json`          |
-
 </details>
 
   ```bash

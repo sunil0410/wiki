@@ -25,20 +25,14 @@ The `polygon-edge polybft-secrets` command is used to generate account secrets f
 
 | Flag            | Description                                                                                               | Example                    |
 |-----------------|-----------------------------------------------------------------------------------------------------------|----------------------------|
-| `--account`     | Indicates whether a new account should be created (default true).                                         |                            |
-| `--config`      | The path to the SecretsManager config file. If omitted, the local file system secrets manager is used.    | `--config /path/to/config` |
-| `--data-dir`    | The directory for the Polygon Edge data if the local file system is used.                                 | `--data-dir test-chain-`   |
-| `--insecure`    | Indicates whether the secrets stored on the local storage should be encrypted. Intended for testing purposes only. |                   |
-| `--network`     | Indicates whether a new Network key should be created (default true).                                     |                            |
-| `--num`         | Indicates how many secrets should be created, only for the local file system (default 1).                 | `--num 4`                  |
-| `--output`      | Indicates whether to output existing secrets.                                                             | `--output`                 |
-| `--private`     | Indicates whether the private key should be printed.                                                      | `--private`                |
-
-**Global Flags:**
-
-| Flag      | Description                                    | Example           |
-|-----------|------------------------------------------------|-------------------|
-| `--json`  | Get all outputs in JSON format (default false). | `--json`          |
+| `--account`     | The flag indicating whether a new account is created (default true).                                       |                            |
+| `--config`      | The path to the SecretsManager config file. If omitted, the local FS secrets manager is used.              | `--config /path/to/config` |
+| `--data-dir`    | The directory for the Polygon Edge data if the local FS is used.                                          | `--data-dir /path/to/dir`  |
+| `--insecure`    | The flag indicating whether the secrets stored on the local storage should be encrypted.                   |                            |
+| `--network`     | The flag indicating whether a new Network key is created (default true).                                   |                            |
+| `--num`         | The flag indicating how many secrets should be created, only for the local FS (default 1).                 | `--num 4`                  |
+| `--output`      | The flag indicating to output existing secrets.                                                           | `--output`                 |
+| `--private`     | The flag indicating whether the private key is printed.                                                   | `--private`                |
 
 </details>
 
