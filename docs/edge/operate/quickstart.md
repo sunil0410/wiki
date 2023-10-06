@@ -76,7 +76,8 @@ If you want to destroy the environment, use the following command:
 
 ### Explanation of the deployment script
 
-The deployment script is a wrapper script for starting an Edge test network with PolyBFT consensus engine. It offers the following functionality:
+The deployment script is a wrapper script for starting an Edge test network with PolyBFT consensus engine. 
+It offers the following functionality:
 
 - Initialize the network with either IBFT or PolyBFT consensus engine.
 - Create the genesis file for the test network.
@@ -92,6 +93,53 @@ For reference, it is referenced below.
 
 ```sh
 #!/usr/bin/env bash
+
+dp_error_flag=0
+
+# Check if jq is installed
+if [[ "$1" == "polybft" ]] && ! command -v jq >/dev/null 2>&1; then
+  echo "jq is not installed."
+  echo "Manual installation instructions: Visit https://jqlang.github.io/jq/ for more information."
+  dp_error_flag=1
+fi
+
+# Check if curl is installed
+if [[ "$1" == "polybft" ]] && ! command -v curl >/dev/null 2>&1; then
+  echo "curl is not installed."
+  echo "Manual installation instructions: Visit https://everything.curl.dev/get/ for more information."
+  dp_error_flag=1
+fi
+
+# Check if docker-compose is installed
+if [[ "$2" == "--docker" ]] && ! command -v docker-compose >/dev/null 2>&1; then
+  echo "docker-compose is not installed."
+  echo "Manual installation instructions: Visit https://docs.docker.com/compose/install/ for more information."
+  dp_error_flag=1
+fi
+
+# Stop script if any of the dependencies have failed
+if [[ "$dp_error_flag" -eq 1 ]]; then
+  echo "Missing dependencies. Please install them and run the script again."
+  exit 1
+fi
+
+function showhelp(){
+  echo "Usage: cluster {consensus} [{command}] [{flags}]"
+  echo "Consensus:"
+  echo "  ibft            Start Supernets test environment locally with ibft consensus"
+  echo "  polybft         Start Supernets test environment locally with polybft consensus"
+  echo "Commands:"
+  echo "  stop            Stop the running environment"
+  echo "  destroy         Destroy the running environment"
+  echo "  write-logs      Writes STDOUT and STDERR output to log file. Not applicable when using --docker flag."
+  echo "Flags:"
+  echo "  --docker        Run using Docker (requires docker-compose)."
+  echo "  --help          Display this help information"
+  echo "Examples:"
+  echo "  cluster polybft -- Run the script with the polybft consensus"
+  echo "  cluster polybft --docker -- Run the script with the polybft consensus using docker"
+  echo "  cluster polybft stop -- Stop the running environment"
+}
 
 function initIbftConsensus() {
   echo "Running with ibft consensus"
@@ -121,8 +169,10 @@ function createGenesis() {
     --premine 0x85da99c8a7c2c95964c8efd687e95e632fc533d6:1000000000000000000000 \
     --premine 0x0000000000000000000000000000000000000000 \
     --epoch-size 10 \
+    --reward-wallet 0xDEADBEEF:1000000 \
+    --native-token-config "Polygon:MATIC:18:true:$address1" \
     --burn-contract 0:0x0000000000000000000000000000000000000000 \
-    --reward-wallet 0xDEADBEEF:1000000
+    --proxy-contracts-admin 0x5aaeb6053f3e94c9b9a09f33669435e7ef1beaed
 }
 
 function initRootchain() {
@@ -136,16 +186,19 @@ function initRootchain() {
   fi
 
   set +e
-  t=1
-  while [ $t -gt 0 ]; do
-    nc -z 127.0.0.1 8545 </dev/null
-    t=$?
+  while true; do
+    if curl -sSf -o /dev/null http://127.0.0.1:8545; then
+      break
+    fi
     sleep 1
   done
   set -e
 
+  proxyContractsAdmin=0x5aaeb6053f3e94c9b9a09f33669435e7ef1beaed
+
   ./polygon-edge polybft stake-manager-deploy \
     --jsonrpc http://127.0.0.1:8545 \
+    --proxy-contracts-admin ${proxyContractsAdmin} \
     --test
 
   stakeManagerAddr=$(cat genesis.json | jq -r '.params.engine.polybft.bridge.stakeManagerAddr')
@@ -153,6 +206,8 @@ function initRootchain() {
 
   ./polygon-edge rootchain deploy \
     --stake-manager ${stakeManagerAddr} \
+    --stake-token ${stakeToken} \
+    --proxy-contracts-admin ${proxyContractsAdmin} \
     --test
 
   customSupernetManagerAddr=$(cat genesis.json | jq -r '.params.engine.polybft.bridge.customSupernetManagerAddr')
@@ -203,7 +258,7 @@ function startServerFromBinary() {
   if [ "$1" == "write-logs" ]; then
     echo "Writing validators logs to the files..."
     ./polygon-edge server --data-dir ./test-chain-1 --chain genesis.json \
-      --grpc-address :10000 --libp2p :30301 --jsonrpc :10002 \
+      --grpc-address :10000 --libp2p :30301 --jsonrpc :10002 --relayer \
       --num-block-confirmations 2 --seal --log-level DEBUG 2>&1 | tee ./validator-1.log &
     ./polygon-edge server --data-dir ./test-chain-2 --chain genesis.json \
       --grpc-address :20000 --libp2p :30302 --jsonrpc :20002 \
@@ -217,7 +272,7 @@ function startServerFromBinary() {
     wait
   else
     ./polygon-edge server --data-dir ./test-chain-1 --chain genesis.json \
-      --grpc-address :10000 --libp2p :30301 --jsonrpc :10002 \
+      --grpc-address :10000 --libp2p :30301 --jsonrpc :10002 --relayer \
       --num-block-confirmations 2 --seal --log-level DEBUG &
     ./polygon-edge server --data-dir ./test-chain-2 --chain genesis.json \
       --grpc-address :20000 --libp2p :30302 --jsonrpc :20002 \
@@ -233,8 +288,7 @@ function startServerFromBinary() {
 }
 
 function startServerFromDockerCompose() {
-  if [ "$1" != "polybft" ]
-  then
+  if [ "$1" != "polybft" ]; then
     export EDGE_CONSENSUS="$1"
   fi
 
@@ -250,6 +304,12 @@ function stopDockerEnvironment() {
 }
 
 set -e
+
+# Show help if help flag is entered or no arguments are provided
+if [[ "$1" == "--help" ]] || [[ $# -eq 0 ]]; then
+  showhelp
+  exit 0
+fi
 
 # Reset test-dirs
 rm -rf test-chain-*
@@ -299,7 +359,8 @@ case "$2" in
     startServerFromBinary $2
     exit 0
   else
-    echo "Unsupported consensus mode. Supported modes are: ibft and polybft "
+    echo "Unsupported consensus mode. Supported modes are: ibft and polybft."
+    showhelp
     exit 1
   fi
   ;;
