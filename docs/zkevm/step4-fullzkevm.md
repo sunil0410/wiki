@@ -81,20 +81,6 @@ vim ~/zkevm/mainnet/config/environments/testnet/public.genesis.config.json
 Edit the file changing the following parameters from `~/zkevm/zkevm-contracts/deployments/goerli_***/deploy_output.json`. **Keep in mind that `genesisBlockNumber` is called `deploymentBlockNumber` in `deploy_output.json`**.
 
 ```json
-{
-  "l1Config": {
-    "chainId": 5,
-    "polygonZkEVMAddress": "",
-    "maticTokenAddress": "",
-    "polygonZkEVMGlobalExitRootAddress": "" // deploymentBlockNumber from ~/zkevm/zkevm-contracts/deployments/goerli_***/deploy_output.json
-  },
-  "genesisBlockNumber": 9050589,
-  "root": "",
-  "genesis": {}
-}
-```
-
-```json
 "l1Config" : {
     "chainId": 5,
     "polygonZkEVMAddress": "", // From ~/zkevm-contracts/deployments/goerli_*/deploy_output.json polygonZkEVMAddress
