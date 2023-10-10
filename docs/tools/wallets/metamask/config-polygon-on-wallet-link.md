@@ -1,6 +1,6 @@
 ---
 id: config-polygon-on-wallet-link
-title: Configure Polygon on Wallet Link
+title: Wallet Link
 description: Set up Polygon Mainnet on Wallet Link.
 keywords:
   - wiki
