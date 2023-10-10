@@ -102,6 +102,7 @@ module.exports = {
             "tools/wallets/walletconnect",
             "tools/wallets/slashauth",
             "tools/wallets/plaid-wallet-onboard",
+            "tools/wallets/particle-network",
           ],
         },
       ],
