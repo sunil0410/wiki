@@ -119,5 +119,6 @@ Public RPCs may have rate limits or traffic restrictions. For dedicated free RPC
 - [Chain49](https://chain49.com/)
 - [Chainbase](https://chainbase.com/)
 - [Stackup](https://www.stackup.sh/)
+- [1RPC](https://1rpc.io/)
 
 For a complete list of public endpoints, visit [Alchemy's Chain Connect](https://www.alchemy.com/chain-connect/chain/polygon-pos) and [Chainlist](https://chainlist.org/?search=Polygon+Mainnet).
