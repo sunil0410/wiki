@@ -1,5 +1,5 @@
 ---
-id: lxly-bridge.md
+id: lxly-bridge
 title: LXLY Bridge
 sidebar_label: LXLY Bridge
 description: A simple overview description of the LXLY Bridge.
