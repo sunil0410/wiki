@@ -115,6 +115,7 @@ The following wallets are solutions that Polygon Technology has partnered with:
 | [Wirex](https://wirexapp.com/en/wirex-wallet)* 	| non-custodial 	| EOA 	| yes 	| no 	| no 	|  	|  	| mobile 	|
 | [XDeFi](https://www.xdefi.io/) 	| non-custodial 	| EOA 	| no 	| interface 	| no 	| no 	| no 	| browser 	|
 | [Zerion](https://zerion.io/) 	| non-custodial 	| EOA 	| no 	| yes 	| yes 	|yes|  	| mobile, browser 	|
+| [Particle Network](https://particle.network) 	| non-custodial  | hybrid 	| no 	| yes 	| yes 	| yes 	| yes 	| mobile, browser, api/sdk 	|
 
 :::info Non-native wallet support
 

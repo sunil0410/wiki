@@ -81,15 +81,6 @@ module.exports = {
             },
             {
               type: "category",
-              label: "Wallet Link",
-              link: {
-                type: "generated-index",
-              },
-              items: ["tools/wallets/metamask/config-polygon-on-wallet-link"],
-            },
-
-            {
-              type: "category",
               label: "Venly",
               link: {
                 type: "generated-index",
@@ -101,12 +92,14 @@ module.exports = {
                 "tools/wallets/venly/custom-tokens",
               ],
             },
+            "tools/wallets/metamask/config-polygon-on-wallet-link",
             "tools/wallets/fortmatic",
             "tools/wallets/portis",
             "tools/wallets/torus",
             "tools/wallets/walletconnect",
             "tools/wallets/slashauth",
             "tools/wallets/plaid-wallet-onboard",
+            "tools/wallets/particle-network",
           ],
         },
       ],
