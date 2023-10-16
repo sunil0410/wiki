@@ -30,11 +30,12 @@ Please view the third-party content disclaimer [<ins>here</ins>](https://github.
 To integrate your dApp with Oracles on Polygon, you can choose to go with one of the following solutions:
 
  1. [API3](api3.md)
- 2. [Chainlink](chainlink.md)
- 3. [BandChain](bandchain.md)
- 4. [Razor](razor.md)
- 5. [Tellor](tellor.md)
- 6. [UMA](optimisticoracle.md)
+ 2. [BandChain](bandchain.md)
+ 3. [Chainlink](chainlink.md)
+ 4. [UMA](optimisticoracle.md)
+ 5. [Razor](razor.md)
+ 6. [Tellor](tellor.md)
+ 7. [Umbrella Network](umbrella.md)
 
 ## Resources
 
