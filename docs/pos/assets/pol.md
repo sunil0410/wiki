@@ -21,28 +21,29 @@ There is a proposal to transition the native token of the Polygon PoS network fr
 
 ### What is POL?
 
-POL is the native token upgrade for the Polygon ecosystem, designed to support a wide range of activities and purposes, 
-including being used as a tool for network participation and security. By staking POL, participants can actively contribute 
-to the ecosystem as validators. Importantly, POL has many of the same rights and features as MATIC, is built on OpenZeppelin's ERC20 
-implementations, and supports [<ins>EIP-2612</ins>](https://eips.ethereum.org/EIPS/eip-2612) for signature-based permit approvals.
+POL is the native token upgrade for the Polygon ecosystem, designed for use in a wide range of activities and purposes, including as a tool for network participation and security. By staking POL, participants can actively contribute to the ecosystem as validators. Importantly, POL has many of the same features as MATIC, is built on OpenZeppelin's ERC20 implementations, and supports [<ins>EIP-2612</ins>](https://eips.ethereum.org/EIPS/eip-2612 for signature-based permit approvals.
 
 ### Do I Need to Do Anything Today as an Active Participant?
 
-**No**, as an active participant in the Polygon ecosystem, you're not required to take any immediate actions. However, we encourage active participants to engage in the governance and decision-making processes of the POL token proposal. Your involvement and input can play a significant role in shaping the future of the Polygon ecosystem.
+**No**, if you’re currently using MATIC in the Polygon PoS network, there is nothing to do in the near term. 
 
-You can participate in governance proposals to vote on various aspects of the Polygon ecosystem through the PIP program. Check out how to do so [<ins>here</ins>](/docs/category/proposals/).
+Separately, you are encouraged to engage in the governance and decision-making processes put forward by the recent PIPs. 
+Your involvement and input can play a significant role in shaping the future of the Polygon ecosystem.
+
+You can participate in governance proposals to vote on various aspects of the Polygon ecosystem through the PIP program.
+Check out how to do so [<ins>here</ins>](/docs/category/proposals/).
 
 ### **Do** I Need to Do Anything Today **as a Node Operator or Delegator?**
 
-**Nothing.** You can provide feedback on the proposed changes in the PIPs and monitor Github and the forum for new node software versions to remain compatible with your given chain when PIPs are approved by the community.
+**No**. You can provide feedback on the proposed changes in the PIPs and monitor Github and the forum for new node software versions to remain compatible with your given chain when PIPs are approved by the community.
 
 ### **Do** I Need to Do Anything **Today as an Application or Tooling Developer?**
 
-Please review the [<ins>PIPs</ins>](https://forum.polygon.technology/t/pip-17-polygon-ecosystem-token-pol/12912) and provide feedback on the proposed changes and analyze if any changes break your smart contracts. Developers of dApps on Polygon PoS should not see any breaking changes.
+**No**. You can review the [<ins>PIPs</ins>](https://forum.polygon.technology/t/pip-17-polygon-ecosystem-token-pol/12912) and provide feedback on the proposed changes and analyze if any changes break your smart contracts. Developers for applications on the Polygon PoS should not see any breaking changes.
 
 ### When Will POL Be Officially Upgraded?
 
-If the POL proposal is accepted by governance, the POL upgrade will take place in Q4 2023. The systems utilizing MATIC won't start transition until Q1 2024, allowing time for a smooth changeover and stakeholder preparation.
+If the POL proposal is supported by the community, the POL upgrade is estimated to take place in Q4 2023. The systems utilizing MATIC will not begin the transition until Q1 2024, allowing time for a smooth migration/upgrade and stakeholder preparation.
 
 ### What is the Initial Amount of POL Tokens?
 
@@ -77,9 +78,9 @@ The economic design of POL incorporates several key considerations to aim for st
 
 ### What Is the Purpose of Token Migration?
 
-Token migration serves the purpose of allowing for the upgrade from MATIC to POL. This migration operates on a **1-to-1 conversion** basis. 
+Token migration serves the purpose of allowing for the upgrade from MATIC to POL. This migration operates on a **1-to-1 conversion** basis.
 
-A migration smart contract facilitates this transition by accepting MATIC from users and providing an equal amount of POL tokens in return. The contract is designed to permit the entire supply of MATIC tokens to be migrated.
+A migration smart contract will allow users to upgrade from MATIC to POL by calling a smart contract function that will accept MATIC and provide an equal amount of POL in return.  The contract is designed to permit the entire supply of MATIC tokens to be upgraded.
 
 ### What Happens to the MATIC Tokens After Migration?
 
@@ -87,16 +88,16 @@ MATIC is held in the migration contract and can be used for unmigration.
 
 ### Can POL Tokens Be Reverted Back to MATIC?
 
-Yes, the migration contract includes a feature known as "**unmigration**." This allows users to convert their POL to an equivalent amount of MATIC. The ability to lock or unlock this feature is controlled by governance, providing flexibility in response to network conditions or security concerns.
-
+**Yes**, the migration contract includes a feature known as "unmigration." This allows users to convert their POL to an equivalent amount of MATIC. Governance controls this feature, providing flexibility in response to network conditions or security concerns.
 ## Bridging Mechanisms
 
 ### How Does the Modified Plasma Bridge Function?
 
 The Plasma Bridge will undergo modifications, with community approval, to change the native token of Polygon PoS to the new POL token. Specifically, the following changes are being proposed:
 
-- **Bridging POL to Polygon PoS**: If you bridge POL tokens to Polygon PoS, you will receive an equal amount of native tokens (POL) on Polygon PoS.
-- **Bridging POL to Ethereum**: When bridging native tokens (POL), the bridge will always disburse POL tokens.
+- **Bridging POL to Polygon PoS**: if you bridge POL tokens to Polygon PoS, you will receive 
+an equal amount of native tokens (POL) on Polygon PoS.
+- **Bridging POL to Ethereum****: when bridging native tokens (POL), the bridge will always disburse POL tokens.
 
 ### Are There Any Breaking Changes?
 
@@ -106,7 +107,7 @@ Yes, if an existing contract relies on receiving MATIC from a bridge and receive
 
 ### Who Holds the Authority to Govern the POL-based Contracts?
 
-The contracts are governed by the Polygon decentralized governance model. Changes can be proposed and voted on by the community via the PIP program.
+The contracts are governed by the Polygon decentralized governance model. **In accordance with the PIP process, the community can propose changes and provide feedback.**
 
 ### What Security Measures Are in Place?
 
