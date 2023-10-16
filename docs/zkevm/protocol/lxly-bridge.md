@@ -134,7 +134,7 @@ The below diagram captures the following flow of events, most of which are handl
 
 ## Conclusion
 
-Although the LXLY Bridge is still WIP, it designed to be Polygon's talisman to accomplishing multi-chain interoperability.
+Although the LXLY Bridge is still a work in progress, it is designed to be Polygon's talisman for accomplishing multi-chain interoperability.
 
 The LXLY Bridge currently works with the Polygon zkEVM as the L2 and the Ethereum network as L1.
 
