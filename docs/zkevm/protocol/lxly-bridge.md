@@ -12,7 +12,7 @@ keywords:
 
 ## Introduction
 
-The LXLY Bridge is an interoperability solution developed to enable cross-chain communication among Polygon chains. It enables communication between two L2 chains or between an L2 chain with Ethereum as the L1.
+The LXLY Bridge is an interoperability solution developed to enable cross-chain communication among Polygon chains. It enables communication between two L2 chains or between an L2 chain and Ethereum as the L1.
 
 The LXLY Bridge SC (or [PolygonZkEVMBridgeV2](https://github.com/0xPolygonHermez/zkevm-contracts/blob/feature/v2ForkID5/contracts/v2/PolygonZkEVMBridgeV2.sol)) is an improved and a more robust version of the [zkEVM Bridge](https://github.com/0xPolygonHermez/zkevm-contracts/blob/feature/v2ForkID5/contracts/PolygonZkEVMBridge.sol) deployed in the Polygon zkEVM _beta version_.
 
