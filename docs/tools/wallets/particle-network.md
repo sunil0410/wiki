@@ -34,7 +34,7 @@ Particle Wallet itself is available either in an application-embedded format, de
 **Key management mechanism**: MPC-TSS <br/>
 
 ## Integrating Particle Auth
-Our [Particle Auth](https://docs.particle.network/developers/auth-service/sdks/web) SDK represents the primary method of facilitating connection (wallet generation or login) and interaction with Particle.
+The [Particle Auth](https://docs.particle.network/developers/auth-service/sdks/web) SDK represents the primary method of facilitating connection (wallet generation or login) and interaction with Particle.
 
 #### Install dependencies
 ```js
