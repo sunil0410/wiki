@@ -21,7 +21,7 @@ There is a proposal to transition the native token of the Polygon PoS network fr
 
 ### What is POL?
 
-POL is the native token upgrade for the Polygon ecosystem, designed for use in a wide range of activities and purposes, including as a tool for network participation and security. By staking POL, participants can actively contribute to the ecosystem as validators. Importantly, POL has many of the same features as MATIC, is built on OpenZeppelin's ERC20 implementations, and supports [<ins>EIP-2612</ins>](https://eips.ethereum.org/EIPS/eip-2612 for signature-based permit approvals.
+POL is the native token upgrade for the Polygon ecosystem, designed for use in a wide range of activities and purposes, including as a tool for network participation and security. By staking POL, participants can actively contribute to the ecosystem as validators. Importantly, POL has many of the same features as MATIC, is built on OpenZeppelin's ERC20 implementations, and supports [<ins>EIP-2612</ins>](https://eips.ethereum.org/EIPS/eip-2612) for signature-based permit approvals.
 
 ### Do I Need to Do Anything Today as an Active Participant?
 
