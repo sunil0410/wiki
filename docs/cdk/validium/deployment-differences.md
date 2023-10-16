@@ -54,15 +54,15 @@ For quick reference, these components are outlined below.
 
 ### Summary of Key Differences
 
-| Feature / Aspect       | zkEVM                                                                                     | Validium                                                                                     |
-|-----------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Node Type**         | [zkEVM Node](https://github.com/0xPolygonHermez/zkevm-node)                                                                                | [Validium Node](https://github.com/0xPolygon/cdk-validium-node)                                                         |
-| **Data Availability** | On-chain                                                                                  | Off-chain via DACs + [DA Node](https://github.com/0xPolygon/cdk-data-availability)                                                                           |
-| **Components**        | zkEVM components**         | zkEVM components** + PostgreSQL database + on-chain committees                                                      |
-| **Additional Contracts** | None                                                                                    | Validium-specific DAC contract                               |
-| **Infrastructure Needs** | Standard infrastructure                                                                 | Dedicated infrastructure for data availability layer and DACs                                |
+| Feature / Aspect         | zkEVM                                                       | Validium                                                                           |
+| ------------------------ | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **Node Type**            | [zkEVM Node](https://github.com/0xPolygonHermez/zkevm-node) | [Validium Node](https://github.com/0xPolygon/cdk-validium-node)                    |
+| **Data Availability**    | On-chain                                                    | Off-chain via DACs + [DA Node](https://github.com/0xPolygon/cdk-data-availability) |
+| **Components**           | zkEVM components\*\*                                        | zkEVM components\*\* + PostgreSQL database + on-chain committees                   |
+| **Additional Contracts** | None                                                        | Validium-specific DAC contract                                                     |
+| **Infrastructure Needs** | Standard infrastructure                                     | Dedicated infrastructure for data availability layer and DACs                      |
 
-> **JSON RPC, Pool DB, Sequencer, Etherman, Synchronizer, State DB, Aggregator, Prover
+> \*\*JSON RPC, Pool DB, Sequencer, Etherman, Synchronizer, State DB, Aggregator, Prover
 
 ### Transaction Flow in CDK Validium
 
@@ -72,7 +72,7 @@ Unlike zkEVM, where all transaction data is published on L1, Validium only publi
 
 Deploying the CDK Validium involves a few key steps that are similar to setting up zkEVM, but with different configurations and additional components. The Validium deployment lives as its own source code with the added Data Availability (DA) layer and associated configurations.
 
-By following the steps below, you'll successfully deploy a CDK Validium instance. 
+By following the steps below, you'll successfully deploy a CDK Validium instance.
 
 :::info Polygon CDK is in public preview stage and subject to changes
 

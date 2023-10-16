@@ -32,10 +32,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      items: [
-        "pos/assets/matic",
-        "pos/assets/pol",
-      ],
+      items: ["pos/assets/matic", "pos/assets/pol"],
     },
     {
       type: "html",
@@ -309,7 +306,7 @@ module.exports = {
             },
           ],
         },
-       // "home/architecture/security-models",
+        // "home/architecture/security-models",
       ],
     },
     {
@@ -530,30 +527,30 @@ module.exports = {
         //"maintain/glossary",
       ],
     },
-      "pos/reference/snapshot-instructions-heimdall-bor",
-      "pos/reference/default-ports",
-      "pos/reference/pos-common-commands",
-      "pos/reference/pos-errors",
-      "pos/pos-faqs",
-      {
-        type: "html",
-        value: "Governance",
-        className: "sidebar-title",
+    "pos/reference/snapshot-instructions-heimdall-bor",
+    "pos/reference/default-ports",
+    "pos/reference/pos-common-commands",
+    "pos/reference/pos-errors",
+    "pos/pos-faqs",
+    {
+      type: "html",
+      value: "Governance",
+      className: "sidebar-title",
+    },
+    "pos/governance-pos",
+    {
+      type: "category",
+      label: "Proposals",
+      link: {
+        type: "generated-index",
       },
-      "pos/governance-pos",
-      {
-        type: "category",
-        label: "Proposals",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "pips/pips-overview",
-          "pips/how-to-propose",
-          "pips/pips-forum",
-          "pips/pips-community-guidelines",
-        ],
-      },
+      items: [
+        "pips/pips-overview",
+        "pips/how-to-propose",
+        "pips/pips-forum",
+        "pips/pips-community-guidelines",
+      ],
+    },
   ],
 
   /*
@@ -828,300 +825,297 @@ module.exports = {
    *
    */
 
-edge:[
-  {
-    type: "html",
-    value: "Polygon Edge",
-    className: "sidebar-title",
-  },
-  "edge/index",
-  "edge/what-is-edge",
-  "edge/operate/quickstart",
-  {
-    type: "category",
-    label: "System Design",
-    link: {
-      type: "generated-index",
+  edge: [
+    {
+      type: "html",
+      value: "Polygon Edge",
+      className: "sidebar-title",
     },
-    collapsed: true,
-    items: [
-      "edge/design/overview",
-      {
-        type: "category",
-        label: "Consensus",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "edge/design/consensus/polybft/polybft-overview",
-          "edge/design/consensus/polybft/ibft-overview",
-        ],
+    "edge/index",
+    "edge/what-is-edge",
+    "edge/operate/quickstart",
+    {
+      type: "category",
+      label: "System Design",
+      link: {
+        type: "generated-index",
       },
-      {
-        type: "category",
-        label: "Bridge",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "edge/design/bridge/overview",
-          "edge/design/bridge/statesync",
-          "edge/design/bridge/checkpoint",
-          {
-            type: "category",
-            label: "Assets",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/design/bridge/assets/erc/erc20",
-              "edge/design/bridge/assets/erc/erc721",
-              "edge/design/bridge/assets/erc/erc1155",
-            ],
+      collapsed: true,
+      items: [
+        "edge/design/overview",
+        {
+          type: "category",
+          label: "Consensus",
+          link: {
+            type: "generated-index",
           },
-        ],
-      },
-      "edge/design/libp2p",
-      {
-        type: "category",
-        label: "Runtime",
-        link: {
-          type: "generated-index",
+          items: [
+            "edge/design/consensus/polybft/polybft-overview",
+            "edge/design/consensus/polybft/ibft-overview",
+          ],
         },
-        items: [
-          "edge/design/runtime/runtime",
-          "edge/design/runtime/runtime-allowlist",
-        ],
-      },
-      "edge/design/blockchain",
-      "edge/design/mempool",
-      "edge/design/txpool",
-      "edge/design/txrelayer",
-      "edge/design/json-rpc",
-      "edge/design/grpc",
-    ],
-  },
-  {
-    type: "category",
-    label: "Build an Edge-Powered Chain",
-    link: {
-      type: "generated-index",
+        {
+          type: "category",
+          label: "Bridge",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "edge/design/bridge/overview",
+            "edge/design/bridge/statesync",
+            "edge/design/bridge/checkpoint",
+            {
+              type: "category",
+              label: "Assets",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/design/bridge/assets/erc/erc20",
+                "edge/design/bridge/assets/erc/erc721",
+                "edge/design/bridge/assets/erc/erc1155",
+              ],
+            },
+          ],
+        },
+        "edge/design/libp2p",
+        {
+          type: "category",
+          label: "Runtime",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "edge/design/runtime/runtime",
+            "edge/design/runtime/runtime-allowlist",
+          ],
+        },
+        "edge/design/blockchain",
+        "edge/design/mempool",
+        "edge/design/txpool",
+        "edge/design/txrelayer",
+        "edge/design/json-rpc",
+        "edge/design/grpc",
+      ],
     },
-    collapsed: true,
-    items: [
-      {
-        type: "category",
-        label: "Prepare Your Environment",
-        link: {
-          type: "generated-index",
-        },
-        collapsed: true,
-        items: [
-          "edge/operate/requirements",
-          "edge/operate/install",
-        ],
+    {
+      type: "category",
+      label: "Build an Edge-Powered Chain",
+      link: {
+        type: "generated-index",
       },
-      "edge/operate/ibft-to-polybft",
-      {
-        type: "category",
-        label: "Deploy a Chain",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "edge/operate/deploy/deploy-index",
-          "edge/operate/deploy/spawn-test-chain",
-          "edge/operate/deploy/how-to-generate-genesis",
-          "edge/operate/deploy/how-to-configure-rootchain",
-          "edge/operate/deploy/genesis-validators",
-          "edge/operate/deploy/how-to-start",
-        ],
-      },
-      {
-        type: "category",
-        label: "Operate Your Chain",
-        link: {
-          type: "generated-index",
-        },
-        collapsed: true,
-        items: [
-          {
-            type: "category",
-            label: "Access Control",
-            link: {
-              type: "generated-index",
-            },
-            collapsed: true,
-            items: [
-              "edge/operate/deploy/access-control/allowlist-add-remove",
-            ],
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Prepare Your Environment",
+          link: {
+            type: "generated-index",
           },
-          {
-            type: "category",
-            label: "Staking",
-            link: {
-              type: "generated-index",
-            },
-            collapsed: true,
-            items: [
-              "edge/operate/deploy/staking/how-to-stake",
-              "edge/operate/deploy/staking/unstake",
-            ],
-          },
-          {
-            type: "category",
-            label: "Transfers",
-            link: {
-              type: "generated-index",
-            },
-            collapsed: true,
-            items: [
-              "edge/operate/deploy/transfers/cross-chain-deposit",
-              "edge/operate/deploy/transfers/cross-chain-withdraw",
-            ],
-          },
-        ],
-      },
-      {
-        type: "category",
-        label: "Upgrade Your Chain",
-        link: {
-          type: "generated-index",
+          collapsed: true,
+          items: ["edge/operate/requirements", "edge/operate/install"],
         },
-        collapsed: true,
-        items: [
-          "edge/operate/deploy/upgrades/how-to-upgrade",
-          "edge/operate/deploy/upgrades/v1.1-hardforks",
-        ],
-      },
-    ],
-  },
-  {
-    type: "category",
-    label: "Reference",
-    link: {
-      type: "generated-index",
+        "edge/operate/ibft-to-polybft",
+        {
+          type: "category",
+          label: "Deploy a Chain",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "edge/operate/deploy/deploy-index",
+            "edge/operate/deploy/spawn-test-chain",
+            "edge/operate/deploy/how-to-generate-genesis",
+            "edge/operate/deploy/how-to-configure-rootchain",
+            "edge/operate/deploy/genesis-validators",
+            "edge/operate/deploy/how-to-start",
+          ],
+        },
+        {
+          type: "category",
+          label: "Operate Your Chain",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            {
+              type: "category",
+              label: "Access Control",
+              link: {
+                type: "generated-index",
+              },
+              collapsed: true,
+              items: [
+                "edge/operate/deploy/access-control/allowlist-add-remove",
+              ],
+            },
+            {
+              type: "category",
+              label: "Staking",
+              link: {
+                type: "generated-index",
+              },
+              collapsed: true,
+              items: [
+                "edge/operate/deploy/staking/how-to-stake",
+                "edge/operate/deploy/staking/unstake",
+              ],
+            },
+            {
+              type: "category",
+              label: "Transfers",
+              link: {
+                type: "generated-index",
+              },
+              collapsed: true,
+              items: [
+                "edge/operate/deploy/transfers/cross-chain-deposit",
+                "edge/operate/deploy/transfers/cross-chain-withdraw",
+              ],
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Upgrade Your Chain",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "edge/operate/deploy/upgrades/how-to-upgrade",
+            "edge/operate/deploy/upgrades/v1.1-hardforks",
+          ],
+        },
+      ],
     },
-    collapsed: true,
-    items: [
-      "edge/operate/param-reference",
-      {
-        type: "category",
-        label: "Smart Contract Interfaces",
-        link: {
-          type: "generated-index",
-        },
-        collapsed: true,
-        items: [
-          {
-            type: "category",
-            label: "ERC-20",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/interfaces/erc20/native-erc20",
-              "edge/interfaces/erc20/childerc20",
-              "edge/interfaces/erc20/childerc20-predicate",
-              "edge/interfaces/erc20/rooterc20-predicate",
-            ],
-          },
-          {
-            type: "category",
-            label: "ERC-721",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/interfaces/erc721/childerc721",
-              "edge/interfaces/erc721/childerc721-predicate",
-              "edge/interfaces/erc721/rooterc721-predicate",
-            ],
-          },
-          {
-            type: "category",
-            label: "ERC-1155",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/interfaces/erc1155/childerc1155",
-              "edge/interfaces/erc1155/childerc1155-predicate",
-              "edge/interfaces/erc1155/rooterc1155-predicate",
-            ],
-          },
-          "edge/interfaces/eip1559-interface",
-          {
-            type: "category",
-            label: "Network",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/interfaces/network/checkpoint-manager",
-              "edge/interfaces/network/exit-helper",
-              "edge/interfaces/network/state-receiver",
-              "edge/interfaces/network/state-sender",
-            ],
-          },
-          {
-            type: "category",
-            label: "Validators",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/interfaces/validators/validator",
-              "edge/interfaces/validators/validator-set-base",
-              "edge/interfaces/validators/root-validator-set",
-            ],
-          },
-          {
-            type: "category",
-            label: "Staking",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/interfaces/staking/stake-manager-interface",
-              "edge/interfaces/staking/supernets-manager-interface",
-              "edge/interfaces/staking/custom-supernet-manager-interface",
-            ],
-          },
-          {
-            type: "category",
-            label: "Cryptography",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "edge/interfaces/cryptography/bls",
-              "edge/interfaces/cryptography/bn256g2",
-            ],
-          },
-        ],
+    {
+      type: "category",
+      label: "Reference",
+      link: {
+        type: "generated-index",
       },
-      {
-        type: "category",
-        label: "RPC API Reference",
-        link: {
-          type: "generated-index",
+      collapsed: true,
+      items: [
+        "edge/operate/param-reference",
+        {
+          type: "category",
+          label: "Smart Contract Interfaces",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            {
+              type: "category",
+              label: "ERC-20",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/interfaces/erc20/native-erc20",
+                "edge/interfaces/erc20/childerc20",
+                "edge/interfaces/erc20/childerc20-predicate",
+                "edge/interfaces/erc20/rooterc20-predicate",
+              ],
+            },
+            {
+              type: "category",
+              label: "ERC-721",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/interfaces/erc721/childerc721",
+                "edge/interfaces/erc721/childerc721-predicate",
+                "edge/interfaces/erc721/rooterc721-predicate",
+              ],
+            },
+            {
+              type: "category",
+              label: "ERC-1155",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/interfaces/erc1155/childerc1155",
+                "edge/interfaces/erc1155/childerc1155-predicate",
+                "edge/interfaces/erc1155/rooterc1155-predicate",
+              ],
+            },
+            "edge/interfaces/eip1559-interface",
+            {
+              type: "category",
+              label: "Network",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/interfaces/network/checkpoint-manager",
+                "edge/interfaces/network/exit-helper",
+                "edge/interfaces/network/state-receiver",
+                "edge/interfaces/network/state-sender",
+              ],
+            },
+            {
+              type: "category",
+              label: "Validators",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/interfaces/validators/validator",
+                "edge/interfaces/validators/validator-set-base",
+                "edge/interfaces/validators/root-validator-set",
+              ],
+            },
+            {
+              type: "category",
+              label: "Staking",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/interfaces/staking/stake-manager-interface",
+                "edge/interfaces/staking/supernets-manager-interface",
+                "edge/interfaces/staking/custom-supernet-manager-interface",
+              ],
+            },
+            {
+              type: "category",
+              label: "Cryptography",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "edge/interfaces/cryptography/bls",
+                "edge/interfaces/cryptography/bn256g2",
+              ],
+            },
+          ],
         },
-        collapsed: true,
-        items: [
-          "edge/api/json-rpc-eth",
-          "edge/api/json-rpc-net",
-          "edge/api/json-rpc-web3",
-          "edge/api/json-rpc-txpool",
-          "edge/api/json-rpc-debug",
-          "edge/api/json-rpc-bridge",
-        ],
-      },
-      "edge/operate/performance",
-    ],
-  },
-  "edge/faq",
-],
+        {
+          type: "category",
+          label: "RPC API Reference",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "edge/api/json-rpc-eth",
+            "edge/api/json-rpc-net",
+            "edge/api/json-rpc-web3",
+            "edge/api/json-rpc-txpool",
+            "edge/api/json-rpc-debug",
+            "edge/api/json-rpc-bridge",
+          ],
+        },
+        "edge/operate/performance",
+      ],
+    },
+    "edge/faq",
+  ],
   /*
    *
    * ************************** CDK Section *************************
@@ -1149,247 +1143,248 @@ edge:[
     "cdk/cdk-program",
   ],
 
- /*
- *
- * ***************************** Specs Section **************************
- *
- * This section includes specifications, reference material, academia,
- * and research-grade material related to the Polygon stack.
- * 
- * **********************************************************************
- *
- */
+  /*
+   *
+   * ***************************** Specs Section **************************
+   *
+   * This section includes specifications, reference material, academia,
+   * and research-grade material related to the Polygon stack.
+   *
+   * **********************************************************************
+   *
+   */
 
- specs: [
-  //"specs/index",
-  {
-    type: "html",
-    value: "Pre-Specifications",
-    className: "sidebar-title",
-  },
-  {
-    type: "category",
-    label: "zkEVM",
-    link: {
-      type: "generated-index",
+  specs: [
+    //"specs/index",
+    {
+      type: "html",
+      value: "Pre-Specifications",
+      className: "sidebar-title",
     },
-    collapsed: true,
-    items: [
-      "zkevm/architecture",
-  {
-    type: "category",
-    label: "zkEVM Protocol",
-    link: {
-      type: "generated-index",
-    },
-    collapsed: true,
-    items: [
-      "zkevm/protocol/protocol-components",
-      "zkevm/protocol/state-management",
-      {
-        type: "category",
-        label: "Transaction Life Cycle",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "zkevm/protocol/l2-transaction-cycle-intro",
-          "zkevm/protocol/transaction-execution",
-          "zkevm/protocol/transaction-batching",
-          "zkevm/protocol/transaction-sequencing",
-          "zkevm/protocol/transaction-aggregation",
-        ],
+    {
+      type: "category",
+      label: "zkEVM",
+      link: {
+        type: "generated-index",
       },
-      "zkevm/protocol/incentive-mechanism",
-      "zkevm/protocol/upgradability",
-      "zkevm/protocol/admin-role",
-      "zkevm/protocol/zkevm-upgrades-process",
-      "zkevm/protocol/security-council",
-      {
-        type: "category",
-        label: "Malfunction Resistance",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "zkevm/protocol/sequencer-resistance",
-          "zkevm/protocol/aggregator-resistance",
-          "zkevm/protocol/emergency-state",
-        ],
-      },
-      {
-        type: "category",
-        label: "zkEVM Bridge",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "zkevm/protocol/zkevm-bridge",
-          "zkevm/protocol/exit-tree",
-          "zkevm/protocol/bridge-smart-contract",
-          "zkevm/protocol/flow-of-asset",
-        ],
-      },
-      "zkevm/protocol/evm-diff",
-    ],
-  },
-  "zkevm/zknode/zknode-overview",
-  {
-    type: "category",
-    label: "zkProver",
-    link: {
-      type: "generated-index",
-    },
-    collapsed: true,
-    items: [
-      "zkevm/zkProver/overview",
-      {
-        type: "category",
-        label: "Basic Concepts",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "zkevm/zkProver/zkprover-design",
-          {
-            type: "category",
-            label: "mFibonacci SM",
-            link: {
-              type: "generated-index",
-            },
-            items: [
-              "zkevm/zkProver/mfibonacci-overview",
-              "zkevm/zkProver/mfibonacci-example",
-              "zkevm/zkProver/commitment-scheme",
-              "zkevm/zkProver/verification-scheme",
-              "zkevm/zkProver/pil-stark",
-              "zkevm/zkProver/pil-stark-demo",
-            ],
+      collapsed: true,
+      items: [
+        "zkevm/architecture",
+        {
+          type: "category",
+          label: "zkEVM Protocol",
+          link: {
+            type: "generated-index",
           },
-          {
-            type: "category",
-            label: "Generic SM",
-            link: {
-              type: "generated-index",
+          collapsed: true,
+          items: [
+            "zkevm/protocol/protocol-components",
+            "zkevm/protocol/state-management",
+            {
+              type: "category",
+              label: "Transaction Life Cycle",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/protocol/l2-transaction-cycle-intro",
+                "zkevm/protocol/transaction-execution",
+                "zkevm/protocol/transaction-batching",
+                "zkevm/protocol/transaction-sequencing",
+                "zkevm/protocol/transaction-aggregation",
+              ],
             },
-            items: [
-              "zkevm/zkProver/intro-generic-sm",
-              "zkevm/zkProver/exec-trace-correct",
-              "zkevm/zkProver/ending-program",
-              "zkevm/zkProver/program-counter",
-              "zkevm/zkProver/plookup",
-            ],
+            "zkevm/protocol/incentive-mechanism",
+            "zkevm/protocol/upgradability",
+            "zkevm/protocol/admin-role",
+            "zkevm/protocol/zkevm-upgrades-process",
+            "zkevm/protocol/security-council",
+            {
+              type: "category",
+              label: "Malfunction Resistance",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/protocol/sequencer-resistance",
+                "zkevm/protocol/aggregator-resistance",
+                "zkevm/protocol/emergency-state",
+              ],
+            },
+            {
+              type: "category",
+              label: "zkEVM Bridge",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/protocol/zkevm-bridge",
+                "zkevm/protocol/exit-tree",
+                "zkevm/protocol/bridge-smart-contract",
+                "zkevm/protocol/flow-of-asset",
+              ],
+            },
+            "zkevm/protocol/lxly-bridge",
+            "zkevm/protocol/evm-diff",
+          ],
+        },
+        "zkevm/zknode/zknode-overview",
+        {
+          type: "category",
+          label: "zkProver",
+          link: {
+            type: "generated-index",
           },
-        ],
-      },
-      {
-        type: "category",
-        label: "Main State Machine",
-        link: {
-          type: "generated-index",
+          collapsed: true,
+          items: [
+            "zkevm/zkProver/overview",
+            {
+              type: "category",
+              label: "Basic Concepts",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/zkProver/zkprover-design",
+                {
+                  type: "category",
+                  label: "mFibonacci SM",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: [
+                    "zkevm/zkProver/mfibonacci-overview",
+                    "zkevm/zkProver/mfibonacci-example",
+                    "zkevm/zkProver/commitment-scheme",
+                    "zkevm/zkProver/verification-scheme",
+                    "zkevm/zkProver/pil-stark",
+                    "zkevm/zkProver/pil-stark-demo",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Generic SM",
+                  link: {
+                    type: "generated-index",
+                  },
+                  items: [
+                    "zkevm/zkProver/intro-generic-sm",
+                    "zkevm/zkProver/exec-trace-correct",
+                    "zkevm/zkProver/ending-program",
+                    "zkevm/zkProver/program-counter",
+                    "zkevm/zkProver/plookup",
+                  ],
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "Main State Machine",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/zkProver/evm-basics",
+                "zkevm/zkProver/intro-main-sm",
+                "zkevm/zkProver/the-processor",
+              ],
+            },
+            {
+              type: "category",
+              label: "STARK Recursion",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/zkProver/intro-stark-recursion",
+                "zkevm/zkProver/proving-tools",
+                "zkevm/zkProver/circom-intro-brief",
+                "zkevm/zkProver/stark-recursion-detail",
+                "zkevm/zkProver/recursion-sub-process",
+                "zkevm/zkProver/proving-architecture",
+                "zkevm/zkProver/circom-in-zkprover",
+                "zkevm/zkProver/proving-setup-phase",
+                "zkevm/zkProver/intermediate-recursion-steps",
+                "zkevm/zkProver/final-recursion-step",
+                "zkevm/zkProver/proof-generation-phase",
+              ],
+            },
+            {
+              type: "category",
+              label: "Storage SM",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/zkProver/intro-storage-sm",
+                "zkevm/zkProver/sparse-merkle-tree",
+                "zkevm/zkProver/simple-smt",
+                "zkevm/zkProver/detailed-smt-concepts",
+                "zkevm/zkProver/basic-smt-ops",
+                "zkevm/zkProver/construct-key-path",
+                "zkevm/zkProver/storage-sm-mechanism",
+                "zkevm/zkProver/executor-pil",
+              ],
+            },
+            "zkevm/zkProver/arithmetic-sm",
+            "zkevm/zkProver/binary-sm",
+            "zkevm/zkProver/memory-sm",
+            "zkevm/zkProver/mem-align-sm",
+            {
+              type: "category",
+              label: "Hashing SM",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "zkevm/zkProver/intro-hashing-sm",
+                "zkevm/zkProver/keccak-framework",
+                "zkevm/zkProver/paddingkk-sm",
+                "zkevm/zkProver/paddingkk-bit-sm",
+                "zkevm/zkProver/bits2field-sm",
+                "zkevm/zkProver/keccakf-sm",
+                "zkevm/zkProver/poseidon-sm",
+              ],
+            },
+          ],
         },
-        items: [
-          "zkevm/zkProver/evm-basics",
-          "zkevm/zkProver/intro-main-sm",
-          "zkevm/zkProver/the-processor",
-        ],
-      },
-      {
-        type: "category",
-        label: "STARK Recursion",
-        link: {
-          type: "generated-index",
+        {
+          type: "category",
+          label: "zk Assembly",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "zkevm/zkASM/introduction",
+            "zkevm/zkASM/basic-syntax",
+            "zkevm/zkASM/some-examples",
+          ],
         },
-        items: [
-          "zkevm/zkProver/intro-stark-recursion",
-          "zkevm/zkProver/proving-tools",
-          "zkevm/zkProver/circom-intro-brief",
-          "zkevm/zkProver/stark-recursion-detail",
-          "zkevm/zkProver/recursion-sub-process",
-          "zkevm/zkProver/proving-architecture",
-          "zkevm/zkProver/circom-in-zkprover",
-          "zkevm/zkProver/proving-setup-phase",
-          "zkevm/zkProver/intermediate-recursion-steps",
-          "zkevm/zkProver/final-recursion-step",
-          "zkevm/zkProver/proof-generation-phase",
-        ],
-      },
-      {
-        type: "category",
-        label: "Storage SM",
-        link: {
-          type: "generated-index",
+        {
+          type: "category",
+          label: "Polynomial Identity Language",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "zkevm/PIL/introduction",
+            "zkevm/PIL/simple-program",
+            "zkevm/PIL/pil-compile",
+            "zkevm/PIL/pil-config",
+            "zkevm/PIL/cyclic-nature",
+            "zkevm/PIL/pil-arguments",
+            "zkevm/PIL/connect-programs",
+            "zkevm/PIL/public-values",
+            "zkevm/PIL/permutation-arg",
+            "zkevm/PIL/connect-arg",
+            "zkevm/PIL/pil-plonk",
+            "zkevm/PIL/filling-polynomial",
+            "zkevm/PIL/generate-proof",
+          ],
         },
-        items: [
-          "zkevm/zkProver/intro-storage-sm",
-          "zkevm/zkProver/sparse-merkle-tree",
-          "zkevm/zkProver/simple-smt",
-          "zkevm/zkProver/detailed-smt-concepts",
-          "zkevm/zkProver/basic-smt-ops",
-          "zkevm/zkProver/construct-key-path",
-          "zkevm/zkProver/storage-sm-mechanism",
-          "zkevm/zkProver/executor-pil",
-        ],
-      },
-      "zkevm/zkProver/arithmetic-sm",
-      "zkevm/zkProver/binary-sm",
-      "zkevm/zkProver/memory-sm",
-      "zkevm/zkProver/mem-align-sm",
-      {
-        type: "category",
-        label: "Hashing SM",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "zkevm/zkProver/intro-hashing-sm",
-          "zkevm/zkProver/keccak-framework",
-          "zkevm/zkProver/paddingkk-sm",
-          "zkevm/zkProver/paddingkk-bit-sm",
-          "zkevm/zkProver/bits2field-sm",
-          "zkevm/zkProver/keccakf-sm",
-          "zkevm/zkProver/poseidon-sm",
-        ],
-      },
-    ],
-  },
-  {
-    type: "category",
-    label: "zk Assembly",
-    link: {
-      type: "generated-index",
+      ],
     },
-    collapsed: true,
-    items: [
-      "zkevm/zkASM/introduction",
-      "zkevm/zkASM/basic-syntax",
-      "zkevm/zkASM/some-examples",
-    ],
-  },
-  {
-    type: "category",
-    label: "Polynomial Identity Language",
-    link: {
-      type: "generated-index",
-    },
-    collapsed: true,
-    items: [
-      "zkevm/PIL/introduction",
-      "zkevm/PIL/simple-program",
-      "zkevm/PIL/pil-compile",
-      "zkevm/PIL/pil-config",
-      "zkevm/PIL/cyclic-nature",
-      "zkevm/PIL/pil-arguments",
-      "zkevm/PIL/connect-programs",
-      "zkevm/PIL/public-values",
-      "zkevm/PIL/permutation-arg",
-      "zkevm/PIL/connect-arg",
-      "zkevm/PIL/pil-plonk",
-      "zkevm/PIL/filling-polynomial",
-      "zkevm/PIL/generate-proof",
-    ],
-  },
   ],
-  },
-],
 };
