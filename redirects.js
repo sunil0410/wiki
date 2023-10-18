@@ -81,5 +81,9 @@ module.exports = [
       to: '/docs/edge/faq/',
       from: '/docs/supernets/supernets-faq/',
     },
+    {
+      to: '/docs/pos/validator/topup-heimdall-fee/',
+      from: '/docs/pos/operate/validator/topup-heimdall-fee',
+    }
   ];
   
