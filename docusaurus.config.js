@@ -398,6 +398,12 @@ module.exports = {
               target: '_self',
               rel: null,
             },
+            {
+              href: '/docs/tools/chain-indexer-framework/overview',
+              label: 'Chain Indexer Framework',
+              target: '_self',
+              rel: null,
+            },
           ],
         },
         {

@@ -687,6 +687,18 @@ module.exports = {
     },
   ],
 
+  chainindexerframework: [
+    {
+      type: "html",
+      value: "Chain Indexer Framework",
+      className: "sidebar-title",
+    },
+    "tools/chain-indexer-framework/overview",
+    "tools/chain-indexer-framework/usage",
+  ],
+  
+  
+
   contribute: [
     "contribute/contributor-guidelines",
     "contribute/bug-bounty-program",
