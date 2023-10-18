@@ -53,15 +53,15 @@ The initial amount of POL refers to the **total number** of POL when the upgrade
 
 ### Does the Amount of POL Increase Over Time?
 
-Yes, the number of POL will **increase 2% per year**.
+Yes, the amount of POL **will increase**, starting at 3% per year at genesis. Governance may change this rate through an upgrade of the `EmissionManager` contract.
 
 ### How is POL Minted?
 
 The `EmissionsManager` smart contract is responsible for initiating the upgrade to POL through a minting process. This contract is upgradeable, allowing for future changes through governance. It also ensures that the `StakeManager` and `Treasury` contracts receive their respective amounts of the newly minted tokens.
 
-### What Determines the Inflation Rate?
+### What Determines the Emission Rate?
 
-The inflation rate is governed by a variable named `mintPerSecondCap` in the primary POL smart contract. Additionally, the `EmissionManager` contract uses a constant called `INTEREST_PER_YEAR_LOG2` to calculate a **2% annual inflation rate, compounded per year**.
+The emission rate is governed by a variable named `mintPerSecondCap` in the primary POL smart contract. Additionally, the `EmissionManager` contract uses a constant called `INTEREST_PER_YEAR_LOG2` to calculate an **annual emission rate, compounded per year**.
 
 ### Can the Emission Rate Be Modified?
 
