@@ -687,6 +687,29 @@ module.exports = {
     },
   ],
 
+  /*
+   *
+   * *************************** Chain Indexer Framework Section *************************
+   *
+   * This section includes the official product documentation and
+   * reference material for chain-indexer-framework
+   *
+   * **********************************************************************
+   *
+   */
+
+  chainindexerframework: [
+    {
+      type: "html",
+      value: "Chain Indexer Framework",
+      className: "sidebar-title",
+    },
+    "tools/chain-indexer-framework/overview",
+    "tools/chain-indexer-framework/usage",
+  ],
+  
+  
+
   contribute: [
     "contribute/contributor-guidelines",
     "contribute/bug-bounty-program",
