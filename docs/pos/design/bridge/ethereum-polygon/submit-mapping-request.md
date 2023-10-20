@@ -30,29 +30,27 @@ The Polygon PoS bridge is available for both Polygon Mainnet as well as Mumbai T
 
 In order to map tokens between Ethereum and Polygon PoS, you may use the [Polygon Token Mapper](https://mapper.polygon.technology/). Open the link and click on the **Map New Token** button on the top right corner to initiate a new mapping request.
 
-<img src={useBaseUrl("img/token-mapping/mapping-tool.png")} />
+![image](https://github.com/0xPolygon/wiki/assets/104004697/c530ceed-cf6a-4c5e-a3fe-b493eef1c761)
+
+Click on Raise Mapping Request
+(A Google Form Pops Up)
+
+![image](https://github.com/0xPolygon/wiki/assets/104004697/0c08656f-3ffd-43ee-819e-722786d7015d)
 
 **Step 1 &rarr;** Choose the network on which you want to map your token. You may choose **Goerli-Mumbai** for Testnet, and **Ethereum-Polygon PoS** for the Mainnet.
 
 **Step 2 &rarr;** Select the type of token you are mapping - **ERC20**, **ERC721**, or **ERC1155**.
 
-**Step 3 &rarr;** Enter your **Ethereum/Goerli** token address in the **Ethereum Token Address** field. Make sure your token contract code has been verified on the **Ethereum/Goerli** blockchain explorers.
+**Step 2 &rarr;** Enter your **Ethereum/Goerli** token address in the  ** Root Contract Address (L1)**  field. Make sure your token contract code has been verified on the **Ethereum/Goerli** blockchain explorers.
 
-**Step 4 &rarr;** After adding the **Ethereum Token Address**, the corresponding fields viz. **Token Name, Token Symbol, and Token Decimal** will be automatically populated with the contract details.
+**Step 4 &rarr;** After adding the Select the type of token you are mapping - **ERC20**, **ERC721**, or **ERC1155**.
 
-**Step 5 &rarr;** Now, click on the **Begin Mapping** button to initiate the mapping process. As this involves an Ethereum transaction, you will need to connect your wallet to proceed.
+**Step 5 &rarr;** Now, click on the **Submit** button to initiate the mapping process.Our team will review the mapping request and gets back to you in 7 days.
 
-**Step 6 &rarr;** You will be shown a review modal with the token information and the estimated gas fees to complete the mapping. Verify the details and initiate the mapping transaction by selecting the **Pay Gas Fee To Map** button.
-
-After confirming the transaction from your wallet, you have to wait for the transaction to get completed on Ethereum. Once the transaction is completed, you will be shown the success modal with your child token address on the Polygon PoS network. You can continue to verify the mapping by checking the generated child token address on [Polygonscan](https://polygonscan.com/).
 
 For a successful Mainnet mapping, you may provide your token details [here](https://github.com/maticnetwork/polygon-token-list/issues/new/choose) to be added on the [**Polygon Token List**](https://api-polygon-tokens.polygon.technology/tokenlists/polygonTokens.tokenlist.json).
 
-:::tip Want a Custom Token Mapping?
 
-In case you want to [<ins>customize your token mapping</ins>](/pos/design/bridge/l1-l2-communication/fx-portal.md#do-i-need-a-custom-fxtunnel-implementation-), you can visit our [**<ins>FxPortal</ins>**](/pos/design/bridge/l1-l2-communication/fx-portal.md) documentation and use the information provided to build your FxTunnel implementation and map tokens.
-
-While using the **default FxPortal** tunnels, you can't modify the child contract code. In case you need a **custom child token**, you must go for your own **custom FxTunnel**.
 
 :::
 
