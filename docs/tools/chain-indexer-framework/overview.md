@@ -13,9 +13,9 @@ description: "An overview of the Chain Indexer Framework"
 
 ## Overview & Problem Statement
 
-The Chain Indexer Framework is a powerful blockchain data indexer framework designed for the development of flexible event-driven data pipelines on EVM blockchains. Built on the reliable foundation of Kafka,  the Chain Indexer Framework empowers developers to build robust and scalable applications that seamlessly process blockchain events and enable real-time data integration.
+The Chain Indexer Framework is a powerful blockchain data indexer framework designed for the development of flexible event-driven data pipelines on EVM blockchains. Built on the reliable foundation of Kafka, the Chain Indexer Framework empowers developers to build robust and scalable applications that seamlessly process blockchain events and enable real-time data integration.
 
-**Chain Indexer Framework** revolutionises the way developers interact with blockchain data, offering a fast, secure, and efficient method for data retrieval. By choosing **Chain Indexer Framework**, you're not just selecting a tool; you're opting for a more streamlined and efficient development process for your dApps. Before, we get into **Chain Indexer Framework,**  lets understand why we need it and what problem it solves. 
+**Chain Indexer Framework** revolutionises the way developers interact with blockchain data, offers a fast, secure, and efficient method for data retrieval. By choosing **Chain Indexer Framework** you are not just selecting a tool, but opting for a more streamlined and efficient development process for your dApps. Before we get into **Chain Indexer Framework**,  let us understand why we need it and the problem it solves.
 
 ### ***1. What is an EVM blockchain data indexer ?***
 
@@ -23,7 +23,7 @@ An EVM (Ethereum Virtual Machine) blockchain data indexer is a specialised searc
 
 ### ***2. Why Do DApps Need a Blockchain Data Indexer?***
 
-Without a data indexer like **Chain Indexer Framework**, querying blockchain data can be cumbersome and slow. Traditional methods require you to sift through enormous volumes of transaction records, smart contracts, and other types of data. This is like trying to find a single paragraph in an entire library of uncategorised books. Chain Indexer Framework makes this process fast and efficient, acting as a digital librarian that quickly retrieves the specific data you're looking for.
+Without a data indexer like **Chain Indexer Framework**, querying blockchain data can be cumbersome and slow. Traditional methods require developers to sift through enormous volumes of transaction records, smart contracts, and other types of data. This is like trying to find a single paragraph in an entire library of uncategorised books. Chain Indexer Framework makes this process fast and efficient, acting as a digital librarian that quickly retrieves the specific data the user is looking for.
 
 :::info An analogy to understand the problem in detail
     
@@ -39,33 +39,33 @@ The development complexity in building a blockchain data indexer arises from the
 
 ## **The Solution — Chain Indexer Framework**
 
-**Chain Indexer Framework** is a powerful developer tool/framework designed to index raw blockchain data, which can later be utilized by developers to build the backend layers of their decentralized applications (dApps) based on their specific dApp logic. Think of **Chain Indexer Framework** as a tool that helps you construct the "Search Engine" for blockchain data; it indexes, categorizes, and makes the data quickly and cost-effectively accessible to developers. Chainflow brings the power of advanced data indexing to dApps, simplifying and accelerating the process of fetching the data you need.
+**Chain Indexer Framework** is a powerful developer framework designed to index raw blockchain data, which can later be utilized by developers to build the backend layers of their decentralized applications (dApps) based on their specific dApp logic. Think of **Chain Indexer Framework** as a tool that helps you construct the "Search Engine" for blockchain data; it indexes, categorizes, and makes data to be quickly and cost-effectively accessible to developers. Chainflow brings the power of advanced data indexing to dApps, simplifying and accelerating the process of fetching the data developers need.
 
 :::note
 
-**Chain Indexer Framework** is a tool that gathers information from a blockchain and channels it into a data stream known as Kafka. This data is not yet ready for use. It must subsequently be transformed and stored in a database like Postgres or MongoDB. Only then can your decentralized application (dApp) utilize this data. Chainflow provides the framework/tools that enable you to transform the raw data based on your dApp's requirements.
+**Chain Indexer Framework** is a tool that gathers information from a blockchain and channels it into a data stream known as Kafka. However, such data is raw, and not yet ready for use. It must therefore be transformed and stored in a database like Postgres or MongoDB. Only then can a decentralized application (dApp) utilize it. Chainflow provides the framework/tools that enable developers to transform the raw data based on their inidividual dApp requirements.
 
 :::
 
-In short, **Chain Indexer Framework** handles the tedious task of collecting and preparing blockchain data for you. Afterward, you'll need to build your app's specific features, such as how to use that data, yourself. **Chain Indexer Framework** offers the foundational logic and helper functions that make this task much easier.
+In short, **Chain Indexer Framework** handles the tedious task of collecting and preparing blockchain data for developers. Afterward, developers will need to build specific features for their app, such as how to use the data. **Chain Indexer Framework** offers foundational logic and helper functions that make the task much easier.
 
 ### ***How does Chain Indexer Framework Work?***
 
-**Chain Indexer Framework** employs a combination of caching, distributed architecture, and advanced algorithms to quickly retrieve the data that a dApp might require. It takes raw blockchain data, indexes it, and helps converting it into easily accessible formats that developers can query using simple APIs.
+**Chain Indexer Framework** employs a combination of caching, distributed architecture, and advanced algorithms to quickly retrieve the data a dApp might require. It takes raw blockchain data, indexes it, and helps to convert it into easily accessible formats that developers can query using simple APIs.
 
-Initially, **Chain Indexer Framework** obtains the raw blockchain data via blockchain RPC and stores it in a Kafka stream. It provides the core logic and helper functions needed to transform this raw data. Additionally, it allows you to consume the data from the Kafka stream and store it in a separate database. You can then host the APIs for your dApp on top of this database.
+Initially, **Chain Indexer Framework** obtains the raw blockchain data via blockchain RPC and stores it in a Kafka stream. It provides the core logic and helper functions needed to transform this raw data. Additionally, it allows you to consume the data from the Kafka stream and stores it in a separate database. Developers can then host the APIs for their dApp on top of this database.
 
 ## Features & Benefits
 
 ### ***Why Choose Chain Indexer Framework?***
 
-1. **Open Source:** Anyone can fork, modify, and host the software on their own infrastructure. Unlike with third-party indexers, **Chain Indexer Framework** offers complete control to developers, enabling them to monitor the service closely to identify and resolve issues.
-2. **Cost Savings:** You can save money otherwise spent on third-party data indexers. There will be no restrictions on usage or API rate limits, as developers will host the service themselves.
+1. **Open Source:** Anyone can fork, modify, and host the software on their own infrastructure. Unlike common third-party indexers, **Chain Indexer Framework** offers complete control to developers, enabling them to monitor the service closely in order to identify and resolve issues.
+2. **Cost Savings:** developers can save money otherwise spent on third-party data indexers. There will be no restrictions on usage or API rate limits, as developers will host the service themselves.
 3. **Built Using TypeScript:** This developer-friendly programming language makes it easy to understand the code and implement changes. **Chain Indexer Framework** can be easily installed by downloading the NPM package and integrating it into your project.
-4. **One-Time Effort for Indexing Historical Blocks:** Once the raw blockchain data is indexed, you can build an unlimited number of application layers on top of it. There will be no need to make RPC calls to re-index historical blocks, as they will already be available in the Kafka Data Warehouse.
+4. **One-Time Effort for Indexing Historical Blocks:** Once the raw blockchain data is indexed, developers can build an unlimited number of application layers on top of it. There will be no need to make RPC calls to re-index historical blocks, as they will already be available in the Kafka Data Warehouse.
 5. **Modular Architecture:** **Chain Indexer Framework** features a modular architecture, simplifying debugging and bug-fixing processes for developers.
-6. **Instant Query:** Imagine a customer walking into your retail store and asking for a specific product. If your inventory is well-organized, you can instantly determine whether the item is in stock and where it's located. **Chain Indexer Framework** enables similar real-time data queries, making it easier for dApps to access and utilize blockchain data.
-7. **Event-Triggered Actions:** Consider how online stores send you notifications when an item is back in stock. **Chain Indexer Framework** can establish event triggers for specific blockchain activities, allowing dApps to automatically execute actions such as sending notifications or updating the user interface. 
+6. **Instant Query:** Imagine a customer walking into your retail store and asking for a specific product. If your inventory is well-organized, you can instantly determine whether the item is in stock and where it is located. **Chain Indexer Framework** enables similar real-time data queries, making it easier for dApps to access and utilize blockchain data.
+7. **Event-Triggered Actions:** Consider how online stores send customers notifications when an item is back in stock. **Chain Indexer Framework** can establish event triggers for specific blockchain activities, allowing dApps to automatically execute actions such as sending notifications or updating the user-interface.
 8. **Customization:** Just as some stores need to track perishable items differently from non-perishable ones, dApps often have unique data requirements. **Chain Indexer Framework’s** flexible architecture allows developers to customize data pipelines to meet their specific needs.
 9. **Scalability:** A small retail store might initially work with manual sorting, but as the business expands, automation becomes essential. **Chain Indexer Framework** can scale alongside your dApp's growth, handling increased data loads without sacrificing performance.
 10. **Improved User Experience:** Nothing frustrates a customer more than slow or unresponsive service. By providing faster and more reliable access to blockchain data, **Chain Indexer Framework** helps dApps offer a smoother, more responsive user experience.
